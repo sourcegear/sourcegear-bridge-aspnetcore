@@ -12,8 +12,8 @@ let package = Package(
             ),
     ],
     dependencies : [
-        .package(name: "sourcegear-bridge-lib-hook", path: "../sourcegear-bridge-lib-hook"),
-        .package(name: "sourcegear-bridge-dotnet", path: "../sourcegear-bridge-dotnet"),
+        .package(name: "sourcegear-bridge-lib-hook", url: "https://github.com/ericsink/sourcegear-bridge-lib-hook", .exact("0.2.0")),
+        .package(name: "sourcegear-bridge-dotnet", url: "https://github.com/ericsink/sourcegear-bridge-dotnet", .exact("0.2.0")),
     ],
     targets : [
         .target(
