@@ -183,7 +183,7 @@ public struct HealthChecksBuilderDelegateExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public static func AddCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>(check);
         return try AddCheck(builder: builder, name: name, check: del_check, tags: tags);
     }
@@ -212,7 +212,7 @@ public struct HealthChecksBuilderDelegateExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public static func AddCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>(check);
         return try AddCheck(builder: builder, name: name, check: del_check, tags: tags, timeout: timeout);
     }
@@ -297,7 +297,7 @@ public struct HealthChecksBuilderDelegateExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAsyncCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public static func AddAsyncCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>>(check);
         return try AddAsyncCheck(builder: builder, name: name, check: del_check, tags: tags);
     }
@@ -326,7 +326,7 @@ public struct HealthChecksBuilderDelegateExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAsyncCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public static func AddAsyncCheck(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder, name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>>(check);
         return try AddAsyncCheck(builder: builder, name: name, check: del_check, tags: tags, timeout: timeout);
     }
@@ -347,6 +347,9 @@ open class IHealthChecksBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -408,6 +411,9 @@ public final class HealthCheckPublisherOptions
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -438,7 +444,17 @@ public final class HealthCheckPublisherOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_Delay(System.TimeSpan)
+    // [IsSpecialName] void set_Delay(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions.set_Delay(System.TimeSpan)
+    public func set_Delay(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_void__set_Delay_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_Period()
 // docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions.get_Period
     public func get_Period() throws -> dotnet.System.TimeSpan {
@@ -450,7 +466,17 @@ public final class HealthCheckPublisherOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_Period(System.TimeSpan)
+    // [IsSpecialName] void set_Period(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions.set_Period(System.TimeSpan)
+    public func set_Period(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_void__set_Period_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Func<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,bool> get_Predicate()
 // docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions.get_Predicate
     public func get_Predicate() throws -> Optional<dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Bool>> {
@@ -478,7 +504,7 @@ public final class HealthCheckPublisherOptions
         }
     }
     // delegate closure overload
-    public func set_Predicate(value : @escaping (Optional<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration>) throws -> Bool) throws {
+    public func set_Predicate(value : @escaping (aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Swift.Bool>(value);
         return try set_Predicate(value: del_value);
     }
@@ -493,7 +519,17 @@ public final class HealthCheckPublisherOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_Timeout(System.TimeSpan)
+    // [IsSpecialName] void set_Timeout(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions.set_Timeout(System.TimeSpan)
+    public func set_Timeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_void__set_Timeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Gets or sets the initial delay applied after the application starts before executing
@@ -506,7 +542,9 @@ public final class HealthCheckPublisherOptions
         get {
             return try! get_Delay();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_Delay(System.TimeSpan)
+        set(v) {
+            return try! set_Delay(value: v);
+        }
     }
     /**
     
@@ -519,7 +557,9 @@ public final class HealthCheckPublisherOptions
         get {
             return try! get_Period();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_Period(System.TimeSpan)
+        set(v) {
+            return try! set_Period(value: v);
+        }
     }
     /**
     
@@ -547,7 +587,9 @@ public final class HealthCheckPublisherOptions
         get {
             return try! get_Timeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_Timeout(System.TimeSpan)
+        set(v) {
+            return try! set_Timeout(value: v);
+        }
     }
 } // HealthCheckPublisherOptions
 
@@ -567,6 +609,9 @@ open class HealthCheckService
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport> CheckHealthAsync(System.Threading.CancellationToken)
@@ -583,13 +628,13 @@ open class HealthCheckService
             
 
     */
-    open func CheckHealthAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport> {
+    open func CheckHealthAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport___CheckHealthAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport> CheckHealthAsync(System.Func<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,bool>, System.Threading.CancellationToken)
@@ -609,19 +654,19 @@ open class HealthCheckService
             
 
     */
-    open func CheckHealthAsync(predicate : Optional<dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Bool>>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport> {
+    open func CheckHealthAsync(predicate : Optional<dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Bool>>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport___CheckHealthAsync_0__2__System_Func_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckRegistration_bool__CancellationToken(&__thrown, self.get_handle(), (predicate?.get_handle()), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func CheckHealthAsync(predicate : @escaping (Optional<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration>) throws -> Bool, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport> {
+    open func CheckHealthAsync(predicate : @escaping (aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration) throws -> Bool, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport {
         let del_predicate = try dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Swift.Bool>(predicate);
-        return try CheckHealthAsync(predicate: del_predicate, cancellationToken: cancellationToken);
+        return try await CheckHealthAsync(predicate: del_predicate, cancellationToken: cancellationToken);
     }
 } // HealthCheckService
 
@@ -639,6 +684,9 @@ public final class HealthCheckServiceOptions
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckServiceOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -758,7 +806,7 @@ extension Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: check, tags: tags);
     }
     // delegate closure overload
-    public func AddCheck(name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public func AddCheck(name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>(check);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: del_check, tags: tags);
     }
@@ -770,7 +818,7 @@ extension Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: check, tags: tags, timeout: timeout);
     }
     // delegate closure overload
-    public func AddCheck(name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public func AddCheck(name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>(check);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: del_check, tags: tags, timeout: timeout);
     }
@@ -806,7 +854,7 @@ extension Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddAsyncCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: check, tags: tags);
     }
     // delegate closure overload
-    public func AddAsyncCheck(name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public func AddAsyncCheck(name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>>(check);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddAsyncCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: del_check, tags: tags);
     }
@@ -818,7 +866,7 @@ extension Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddAsyncCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: check, tags: tags, timeout: timeout);
     }
     // delegate closure overload
-    public func AddAsyncCheck(name : dotnet.System.String, check : @escaping (Optional<dotnet.System.Threading.CancellationToken>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
+    public func AddAsyncCheck(name : dotnet.System.String, check : @escaping (dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>, timeout : Optional<dotnet.System.TimeSpan>) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder {
         let del_check = try dotnet.System.Func_2<dotnet.System.Threading.CancellationToken,dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult>>(check);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HealthChecksBuilderDelegateExtensions.AddAsyncCheck(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHealthChecksBuilder(hndl: __copy_handle(self.get_handle())), name: name, check: del_check, tags: tags, timeout: timeout);
     }

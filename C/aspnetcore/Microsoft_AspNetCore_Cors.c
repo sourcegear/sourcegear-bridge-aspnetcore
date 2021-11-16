@@ -135,19 +135,24 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_CorsPolicy__get_Policy_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NULLABLE policyName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NULLABLE policyName), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL policy);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL result, SG_HNDL_NONNULL response);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL policy), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy, void (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL result, SG_HNDL_NONNULL response), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_String__get_PolicyName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_void__set_PolicyName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_CorsServiceCollectionExtensions_IServiceCollection__AddCors_0__1__IServiceCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_CorsServiceCollectionExtensions_IServiceCollection__AddCors_0__2__IServiceCollection_System_Action_Microsoft_AspNetCore_Cors_Infrastructure_CorsOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services, SG_HNDL_NONNULL setupAction);
 } _g_Microsoft_AspNetCore_Cors;
@@ -1151,6 +1156,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_get_type_handle) {
         my_init();
@@ -1172,6 +1185,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_cas
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NULLABLE policyName), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_create(__thrown, __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String, __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String, __deinit);
     return ret;
 }
 
@@ -1206,6 +1227,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_cast(SG_HN
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL policy), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy, void (* _Nonnull  __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL result, SG_HNDL_NONNULL response), const void* _Nonnull __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_create(__thrown, __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy, __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_CorsResult__EvaluatePolicy_0__2__HttpContext_CorsPolicy, __cb_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse, __pdata_Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_void__ApplyResult_0__2__CorsResult_HttpResponse, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_get_type_handle) {
         my_init();
@@ -1219,6 +1248,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_c
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1250,6 +1287,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Cors._fp_Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_create(__thrown, __deinit);
     return ret;
 }
 

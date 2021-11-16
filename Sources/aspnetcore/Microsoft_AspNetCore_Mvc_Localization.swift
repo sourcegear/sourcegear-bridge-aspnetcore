@@ -25,6 +25,9 @@ open class HtmlLocalizer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Localization.IStringLocalizer)
@@ -86,9 +89,6 @@ open class HtmlLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_LocalizedHtmlString__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -100,9 +100,6 @@ open class HtmlLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_LocalizedHtmlString__get_Item_0__2__String_ObjectArray(&__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());
@@ -199,6 +196,9 @@ open class HtmlLocalizerFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizerFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory)
@@ -279,6 +279,9 @@ open class HtmlLocalizer_1<TResource : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_1_get_type_handle(TResource.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory)
@@ -340,9 +343,6 @@ open class HtmlLocalizer_1<TResource : SGBridgeGenericValue>
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer`1.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_1_LocalizedHtmlString__get_Item_0__1__String(TResource.get_type_handle(), &__thrown, self.get_handle(), name.get_handle());
@@ -354,9 +354,6 @@ open class HtmlLocalizer_1<TResource : SGBridgeGenericValue>
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer`1.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_1_LocalizedHtmlString__get_Item_0__2__String_ObjectArray(TResource.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());
@@ -384,6 +381,9 @@ open class IHtmlLocalizer
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -459,9 +459,6 @@ open class IHtmlLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_LocalizedHtmlString__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -473,9 +470,6 @@ open class IHtmlLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_LocalizedHtmlString__get_Item_0__2__String_ObjectArray(&__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());
@@ -502,6 +496,9 @@ open class IHtmlLocalizerFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizerFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -574,6 +571,9 @@ open class IHtmlLocalizer_1<TResource : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_1_get_type_handle(TResource.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -602,6 +602,9 @@ open class IViewLocalizer
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_IViewLocalizer_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -628,6 +631,9 @@ open class LocalizedHtmlString
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_LocalizedHtmlString_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -791,6 +797,9 @@ open class ViewLocalizer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Localization_ViewLocalizer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
@@ -871,9 +880,6 @@ open class ViewLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_ViewLocalizer_LocalizedHtmlString__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -885,9 +891,6 @@ open class ViewLocalizer
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Localization_ViewLocalizer_LocalizedHtmlString__get_Item_0__2__String_ObjectArray(&__thrown, self.get_handle(), key.get_handle(), arguments.get_handle());
@@ -972,7 +975,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try AddViewLocalization(builder: builder, setupAction: del_setupAction);
     }
@@ -999,7 +1002,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try AddViewLocalization(builder: builder, format: format, setupAction: del_setupAction);
     }
@@ -1045,7 +1048,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction);
     }
@@ -1094,7 +1097,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format);
     }
@@ -1121,7 +1124,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1150,7 +1153,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1179,7 +1182,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1209,7 +1212,7 @@ public struct MvcLocalizationMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1282,7 +1285,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try AddViewLocalization(builder: builder, setupAction: del_setupAction);
     }
@@ -1309,7 +1312,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddViewLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try AddViewLocalization(builder: builder, format: format, setupAction: del_setupAction);
     }
@@ -1355,7 +1358,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction);
     }
@@ -1404,7 +1407,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format);
     }
@@ -1431,7 +1434,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1460,7 +1463,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1489,7 +1492,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1519,7 +1522,7 @@ public struct MvcLocalizationMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddMvcLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try AddMvcLocalization(builder: builder, localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1597,7 +1600,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddViewLocalization(setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddViewLocalization(setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -1609,7 +1612,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), format: format, setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddViewLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddViewLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), format: format, setupAction: del_setupAction);
     }
@@ -1628,7 +1631,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction);
     }
@@ -1647,7 +1650,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, format: format);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format);
     }
@@ -1659,7 +1662,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1671,7 +1674,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1684,7 +1687,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), format: format, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1696,7 +1699,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1723,7 +1726,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddViewLocalization(setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddViewLocalization(setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -1735,7 +1738,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), format: format, setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddViewLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddViewLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddViewLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), format: format, setupAction: del_setupAction);
     }
@@ -1754,7 +1757,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction);
     }
@@ -1773,7 +1776,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, format: format);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format);
     }
@@ -1785,7 +1788,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1797,7 +1800,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
@@ -1810,7 +1813,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), format: format, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);
     }
@@ -1822,7 +1825,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: dataAnnotationsLocalizationOptionsSetupAction);
     }
     // delegate closure overload
-    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddMvcLocalization(localizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void, format : aspnetcore.Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat, dataAnnotationsLocalizationOptionsSetupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_localizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(localizationOptionsSetupAction);
         let del_dataAnnotationsLocalizationOptionsSetupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(dataAnnotationsLocalizationOptionsSetupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcLocalizationMvcCoreBuilderExtensions.AddMvcLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), localizationOptionsSetupAction: del_localizationOptionsSetupAction, format: format, dataAnnotationsLocalizationOptionsSetupAction: del_dataAnnotationsLocalizationOptionsSetupAction);

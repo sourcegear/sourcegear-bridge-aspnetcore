@@ -56,9 +56,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_RequestCulture__get_RequestCulture_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_IRequestCultureProvider__get_Provider_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL httpContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_ProviderCultureResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_ProviderCultureResult_ctor_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL culture);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Localization_ProviderCultureResult_ctor_0__2__StringSegment_StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL culture, SG_HNDL_NONNULL uiCulture);
@@ -489,6 +491,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Localization_IRequestCultureFeature_cast(SG
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Localization_IRequestCultureFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Localization_IRequestCultureProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_get_type_handle) {
         my_init();
@@ -510,6 +520,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Localization_IRequestCultureProvider_cast(S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Localization_IRequestCultureProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL httpContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Localization._fp_Microsoft_AspNetCore_Localization_IRequestCultureProvider_create(__thrown, __cb_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext, __pdata_Microsoft_AspNetCore_Localization_IRequestCultureProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Localization_ProviderCultureResult___DetermineProviderCultureResult_0__1__HttpContext, __deinit);
     return ret;
 }
 

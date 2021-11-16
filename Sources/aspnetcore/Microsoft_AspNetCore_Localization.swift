@@ -76,7 +76,7 @@ public struct ApplicationBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseRequestLocalization(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, optionsAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseRequestLocalization(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, optionsAction : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_optionsAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>(optionsAction);
         return try UseRequestLocalization(app: app, optionsAction: del_optionsAction);
     }
@@ -118,6 +118,9 @@ open class RequestLocalizationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_RequestLocalizationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -525,6 +528,9 @@ open class AcceptLanguageHeaderRequestCultureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_AcceptLanguageHeaderRequestCultureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -605,6 +611,9 @@ open class CookieRequestCultureProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_CookieRequestCultureProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -744,6 +753,9 @@ open class CustomRequestCultureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_CustomRequestCultureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Func<Microsoft.AspNetCore.Http.HttpContext,System.Threading.Tasks.Task<Microsoft.AspNetCore.Localization.ProviderCultureResult>>)
@@ -794,6 +806,9 @@ open class IRequestCultureFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_IRequestCultureFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -848,6 +863,9 @@ open class IRequestCultureProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_IRequestCultureProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -896,6 +914,9 @@ open class ProviderCultureResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_ProviderCultureResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1038,6 +1059,9 @@ open class QueryStringRequestCultureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_QueryStringRequestCultureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1155,6 +1179,9 @@ open class RequestCulture
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_RequestCulture_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1298,6 +1325,9 @@ open class RequestCultureFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_RequestCultureFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Localization.RequestCulture, Microsoft.AspNetCore.Localization.IRequestCultureProvider)
@@ -1377,6 +1407,9 @@ open class RequestCultureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_RequestCultureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Localization.ProviderCultureResult> DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext)
@@ -1449,6 +1482,9 @@ open class RequestLocalizationMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Localization_RequestLocalizationMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1526,7 +1562,7 @@ public struct RequestLocalizationServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRequestLocalization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddRequestLocalization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>(configureOptions);
         return try AddRequestLocalization(services: services, configureOptions: del_configureOptions);
     }
@@ -1552,7 +1588,7 @@ public struct RequestLocalizationServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRequestLocalization<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddRequestLocalization<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions,UTService>(configureOptions);
         return try AddRequestLocalization(services: services, configureOptions: del_configureOptions);
     }
@@ -1595,7 +1631,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRequestLocalization(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), optionsAction: optionsAction);
     }
     // delegate closure overload
-    public func UseRequestLocalization(optionsAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseRequestLocalization(optionsAction : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_optionsAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>(optionsAction);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRequestLocalization(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), optionsAction: del_optionsAction);
     }
@@ -1621,7 +1657,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions.AddRequestLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddRequestLocalization(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddRequestLocalization(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions.AddRequestLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -1633,7 +1669,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions.AddRequestLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddRequestLocalization<UTService : SGBridgeGenericValue>(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddRequestLocalization<UTService : SGBridgeGenericValue>(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.RequestLocalizationOptions,UTService>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RequestLocalizationServiceCollectionExtensions.AddRequestLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

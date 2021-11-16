@@ -22,6 +22,9 @@ open class IdentityRole
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityRole_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -75,6 +78,9 @@ open class IdentityRoleClaim_1<TKey : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityRoleClaim_1_get_type_handle(TKey.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -298,6 +304,9 @@ open class IdentityRole_1<TKey : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityRole_1_get_type_handle(TKey.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -532,6 +541,9 @@ open class IdentityUser
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUser_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -585,6 +597,9 @@ open class IdentityUserClaim_1<TKey : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUserClaim_1_get_type_handle(TKey.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -809,6 +824,9 @@ open class IdentityUserLogin_1<TKey : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUserLogin_1_get_type_handle(TKey.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -995,6 +1013,9 @@ open class IdentityUserRole_1<TKey : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUserRole_1_get_type_handle(TKey.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1096,6 +1117,9 @@ open class IdentityUserToken_1<TKey : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUserToken_1_get_type_handle(TKey.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1282,6 +1306,9 @@ open class IdentityUser_1<TKey : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityUser_1_get_type_handle(TKey.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1931,6 +1958,9 @@ open class RoleStoreBase_4<TRole : SGBridgeGenericValue,TKey : SGBridgeGenericVa
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_RoleStoreBase_4_get_type_handle(TRole.get_type_handle(),TKey.get_type_handle(),TUserRole.get_type_handle(),TRoleClaim.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
@@ -2424,6 +2454,9 @@ open class UserStoreBase_5<TUser : SGBridgeGenericValue,TKey : SGBridgeGenericVa
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_UserStoreBase_5_get_type_handle(TUser.get_type_handle(),TKey.get_type_handle(),TUserClaim.get_type_handle(),TUserLogin.get_type_handle(),TUserToken.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3237,6 +3270,7 @@ open class UserStoreBase_5<TUser : SGBridgeGenericValue,TKey : SGBridgeGenericVa
         }
         }
     }
+// TODO COPE (returns closedgeneric of nullable): System.Threading.Tasks.Task<System.Nullable<System.DateTimeOffset>> GetLockoutEndDateAsync(TUser, System.Threading.CancellationToken)
     // System.Threading.Tasks.Task SetLockoutEndDateAsync(TUser, System.Nullable<System.DateTimeOffset>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.UserStoreBase`5.SetLockoutEndDateAsync(`0,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken)
     /**
@@ -3923,6 +3957,9 @@ open class UserStoreBase_8<TUser : SGBridgeGenericValue,TRole : SGBridgeGenericV
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_UserStoreBase_8_get_type_handle(TUser.get_type_handle(),TRole.get_type_handle(),TKey.get_type_handle(),TUserClaim.get_type_handle(),TUserRole.get_type_handle(),TUserLogin.get_type_handle(),TUserToken.get_type_handle(),TRoleClaim.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

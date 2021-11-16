@@ -60,6 +60,8 @@ int32_t Microsoft_Extensions_Primitives_IChangeToken_bool__get_HasChanged_0__0(S
 
 SG_HNDL_NONNULL Microsoft_Extensions_Primitives_IChangeToken_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Primitives_IChangeToken_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Primitives_IChangeToken_IDisposable__RegisterChangeCallback_0__2__System_Action_object__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE callback, SG_HNDL_NULLABLE state), const void* _Nonnull __pdata_Microsoft_Extensions_Primitives_IChangeToken_IDisposable__RegisterChangeCallback_0__2__System_Action_object__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Primitives_StringSegment_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringSegment_get_Empty(void);
@@ -174,7 +176,7 @@ SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringTokenizer_implicit_ctor(vo
 
 TYP Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_get_type_handle(void);
 
-SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_ctor_0__1__refStringTokenizer(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __tokenizer_ref_ptr);
+SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_ctor_0__1__refStringTokenizer(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __tokenizer_ref_ptr);
 
 void Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_void__Dispose_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
@@ -198,9 +200,9 @@ SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_ctor_0__1__StringAr
 
 SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__StringValues_StringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL values1, SG_HNDL_NONNULL values2);
 
-SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__inStringValues_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __values_in_ptr, SG_HNDL_NULLABLE value);
+SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__inStringValues_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __values_in_ptr, SG_HNDL_NULLABLE value);
 
-SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__String_inStringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value, SG_HNDL_NONNULL* _Nonnull __values_in_ptr);
+SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__String_inStringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value, SG_HNDL_NULLABLE* _Nonnull __values_in_ptr);
 
 int32_t Microsoft_Extensions_Primitives_StringValues_bool__Equals_0__1__StringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL other);
 
@@ -274,7 +276,7 @@ SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_implicit_ctor(void)
 
 TYP Microsoft_Extensions_Primitives_StringValues_Enumerator_get_type_handle(void);
 
-SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_Enumerator_ctor_0__1__refStringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __values_ref_ptr);
+SG_HNDL_NONNULL Microsoft_Extensions_Primitives_StringValues_Enumerator_ctor_0__1__refStringValues(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __values_ref_ptr);
 
 void Microsoft_Extensions_Primitives_StringValues_Enumerator_void__Dispose_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 

@@ -21,9 +21,9 @@ public struct OptionsBuilderExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func ValidateOnStart<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func ValidateOnStart<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___ValidateOnStart_1__1__Microsoft_Extensions_Options_OptionsBuilder_UTOptions_(UTOptions.get_type_handle(), &__thrown, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___ValidateOnStart_1__1__Microsoft_Extensions_Options_OptionsBuilder_UTOptions_(UTOptions.get_type_handle(), &__thrown, (optionsBuilder?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -95,6 +95,9 @@ open class ConsoleLifetimeOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_ConsoleLifetimeOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -216,6 +219,9 @@ open class HostBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_HostBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -297,9 +303,9 @@ open class HostBuilder
     - Returns: The same instance of the  for chaining.
 
     */
-    open /* method final */ func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.Hosting.HostBuilderContext,UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    open /* method final */ func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : Optional<dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.Hosting.HostBuilderContext,UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Hosting_HostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Hosting_HostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), (configureDelegate?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -387,9 +393,9 @@ open class HostBuilder
     - Returns: The same instance of the  for chaining.
 
     */
-    open /* method final */ func UseServiceProviderFactory<UTContainerBuilder : SGBridgeGenericValue>(factory : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceProviderFactory_1<UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    open /* method final */ func UseServiceProviderFactory<UTContainerBuilder : SGBridgeGenericValue>(factory : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceProviderFactory_1<UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Hosting_HostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Hosting_HostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), (factory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -472,6 +478,9 @@ open class HostOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_HostOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -496,7 +505,17 @@ open class HostOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_ShutdownTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_ShutdownTimeout(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Hosting.HostOptions.set_ShutdownTimeout(System.TimeSpan)
+    open func set_ShutdownTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Hosting_HostOptions_void__set_ShutdownTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior get_BackgroundServiceExceptionBehavior()
 // docid: M:Microsoft.Extensions.Hosting.HostOptions.get_BackgroundServiceExceptionBehavior
     open func get_BackgroundServiceExceptionBehavior() throws -> aspnetcore.Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior {
@@ -544,7 +563,9 @@ open class HostOptions
         get {
             return try! get_ShutdownTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_ShutdownTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_ShutdownTimeout(value: v);
+        }
     }
 } // HostOptions
 
@@ -597,9 +618,9 @@ public struct HostingHostBuilderExtensions {
     - Returns: The same instance of the  for chaining.
 
     */
-    public static func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(hostBuilder : Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder>, configureDelegate : dotnet.System.Action_1<UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    public static func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(hostBuilder : Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder>, configureDelegate : Optional<dotnet.System.Action_1<UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_IHostBuilder__ConfigureContainer_1__2__IHostBuilder_System_Action_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, hostBuilder?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_IHostBuilder__ConfigureContainer_1__2__IHostBuilder_System_Action_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, hostBuilder?.get_handle() ?? nil, (configureDelegate?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1037,6 +1058,9 @@ open class ApplicationLifetime
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_Internal_ApplicationLifetime_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILogger<Microsoft.Extensions.Hosting.Internal.ApplicationLifetime>)
@@ -1190,6 +1214,9 @@ open class ConsoleLifetime
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_Internal_ConsoleLifetime_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Hosting.ConsoleLifetimeOptions>, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Hosting.IHostApplicationLifetime, Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Hosting.HostOptions>)
@@ -1274,6 +1301,9 @@ open class HostingEnvironment
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_Internal_HostingEnvironment_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1453,7 +1483,7 @@ extension Microsoft_Extensions_Hosting_IHostBuilder {
 
 // EXTENSION METHOD Microsoft.Extensions.Hosting.IHostBuilder ConfigureContainer<TContainerBuilder>(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<TContainerBuilder>)
 extension Microsoft_Extensions_Hosting_IHostBuilder {
-    public func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : dotnet.System.Action_1<UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    public func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : Optional<dotnet.System.Action_1<UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         return try aspnetcore.Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.ConfigureContainer(hostBuilder: aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder(hndl: __copy_handle(self.get_handle())), configureDelegate: configureDelegate);
     }
     // delegate closure overload

@@ -81,6 +81,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_ServerSideBlazorBuilderExtensions_IServerSideBlazorBuilder__AddCircuitOptions_0__2__IServerSideBlazorBuilder_System_Action_Microsoft_AspNetCore_Components_Server_CircuitOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL configure);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_ServerSideBlazorBuilderExtensions_IServerSideBlazorBuilder__AddHubOptions_0__2__IServerSideBlazorBuilder_System_Action_Microsoft_AspNetCore_SignalR_HubOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL configure);
 } _g_Microsoft_AspNetCore_Components_Server;
@@ -670,6 +671,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilde
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Server._fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Components_Server._fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Server._fp_Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_create(__thrown, __deinit);
     return ret;
 }
 

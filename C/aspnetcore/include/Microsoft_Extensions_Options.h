@@ -372,6 +372,8 @@ void invoke_Microsoft_Extensions_Options_IConfigureNamedOptions_1_void__Configur
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IConfigureNamedOptions_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IConfigureNamedOptions_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Options_IConfigureNamedOptions_1_void__Configure_0__2__String_TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IConfigureNamedOptions_1_void__Configure_0__2__String_TOptions, void (* _Nonnull  __cb_Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IConfigureOptions_1_get_type_handle(TYP TOptions);
 
 void Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL options);
@@ -381,6 +383,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Options_IConfigureOptions_1_void
 void invoke_Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL options);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IConfigureOptions_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IConfigureOptions_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IConfigureOptions_1_void__Configure_0__1__TOptions, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_get_type_handle(TYP TOptions);
 
@@ -398,6 +402,8 @@ SG_HNDL_NULLABLE invoke_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_IChangeToken__GetChangeToken_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_IChangeToken__GetChangeToken_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IOptionsFactory_1_get_type_handle(TYP TOptions);
 
 GVAL Microsoft_Extensions_Options_IOptionsFactory_1_TOptions__Create_0__1__String(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
@@ -407,6 +413,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Options_IOptionsFactory_1_TOptio
 GVAL invoke_Microsoft_Extensions_Options_IOptionsFactory_1_TOptions__Create_0__1__String(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsFactory_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsFactory_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsFactory_1_TOptions__Create_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsFactory_1_TOptions__Create_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Options_IOptionsMonitorCache_1_get_type_handle(TYP TOptions);
 
@@ -436,6 +444,8 @@ int32_t invoke_Microsoft_Extensions_Options_IOptionsMonitorCache_1_bool__TryRemo
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsMonitorCache_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsMonitorCache_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitorCache_1_void__Clear_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitorCache_1_void__Clear_0__0, GVAL (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitorCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE createOptions), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitorCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitorCache_1_bool__TryAdd_0__2__String_TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitorCache_1_bool__TryAdd_0__2__String_TOptions, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitorCache_1_bool__TryRemove_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitorCache_1_bool__TryRemove_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IOptionsMonitor_1_get_type_handle(TYP TOptions);
 
 GVAL Microsoft_Extensions_Options_IOptionsMonitor_1_TOptions__Get_0__1__String(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
@@ -458,6 +468,8 @@ GVAL invoke_Microsoft_Extensions_Options_IOptionsMonitor_1_TOptions__get_Current
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsMonitor_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsMonitor_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitor_1_TOptions__Get_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitor_1_TOptions__Get_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE listener), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IOptionsSnapshot_1_get_type_handle(TYP TOptions);
 
 GVAL Microsoft_Extensions_Options_IOptionsSnapshot_1_TOptions__Get_0__1__String(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
@@ -467,6 +479,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Options_IOptionsSnapshot_1_TOpti
 GVAL invoke_Microsoft_Extensions_Options_IOptionsSnapshot_1_TOptions__Get_0__1__String(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsSnapshot_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptionsSnapshot_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_Options_IOptionsSnapshot_1_TOptions__Get_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IOptionsSnapshot_1_TOptions__Get_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Options_IOptions_1_get_type_handle(TYP TOptions);
 
@@ -478,6 +492,8 @@ GVAL invoke_Microsoft_Extensions_Options_IOptions_1_TOptions__get_Value_0__0(SG_
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptions_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IOptions_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IPostConfigureOptions_1_get_type_handle(TYP TOptions);
 
 void Microsoft_Extensions_Options_IPostConfigureOptions_1_void__PostConfigure_0__2__String_TOptions(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, GVAL options);
@@ -488,6 +504,8 @@ void invoke_Microsoft_Extensions_Options_IPostConfigureOptions_1_void__PostConfi
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IPostConfigureOptions_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IPostConfigureOptions_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Options_IPostConfigureOptions_1_void__PostConfigure_0__2__String_TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IPostConfigureOptions_1_void__PostConfigure_0__2__String_TOptions, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Options_IValidateOptions_1_get_type_handle(TYP TOptions);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Options_IValidateOptions_1_ValidateOptionsResult__Validate_0__2__String_TOptions(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, GVAL options);
@@ -497,6 +515,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Options_IValidateOptions_1_Valid
 SG_HNDL_NULLABLE invoke_Microsoft_Extensions_Options_IValidateOptions_1_ValidateOptionsResult__Validate_0__2__String_TOptions(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, GVAL options);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Options_IValidateOptions_1_cast(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Options_IValidateOptions_1_create(TYP TOptions, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Options_IValidateOptions_1_ValidateOptionsResult__Validate_0__2__String_TOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name, GVAL options), const void* _Nonnull __pdata_Microsoft_Extensions_Options_IValidateOptions_1_ValidateOptionsResult__Validate_0__2__String_TOptions, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Options_Options_get_DefaultName(void);
 

@@ -54,6 +54,8 @@ TYP Microsoft_Extensions_DependencyInjection_IServiceCollection_get_type_handle(
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceCollection_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceCollection_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_System_Collections_Generic_ICollection_1_void__Add_0__1__ServiceDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE item), const void* _Nonnull __pdata_System_Collections_Generic_ICollection_1_void__Add_0__1__ServiceDescriptor, void (* _Nonnull  __cb_System_Collections_Generic_ICollection_1_void__Clear_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_Generic_ICollection_1_void__Clear_0__0, int32_t (* _Nonnull  __cb_System_Collections_Generic_ICollection_1_bool__Contains_0__1__ServiceDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE item), const void* _Nonnull __pdata_System_Collections_Generic_ICollection_1_bool__Contains_0__1__ServiceDescriptor, void (* _Nonnull  __cb_System_Collections_Generic_ICollection_1_void__CopyTo_0__2__ServiceDescriptorArray_i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL array, int32_t arrayIndex), const void* _Nonnull __pdata_System_Collections_Generic_ICollection_1_void__CopyTo_0__2__ServiceDescriptorArray_i32, int32_t (* _Nonnull  __cb_System_Collections_Generic_ICollection_1_bool__Remove_0__1__ServiceDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE item), const void* _Nonnull __pdata_System_Collections_Generic_ICollection_1_bool__Remove_0__1__ServiceDescriptor, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_Microsoft_Extensions_DependencyInjection_ServiceDescriptor___GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_Microsoft_Extensions_DependencyInjection_ServiceDescriptor___GetEnumerator_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, int32_t (* _Nonnull  __cb_System_Collections_Generic_IList_1_i32__IndexOf_0__1__ServiceDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE item), const void* _Nonnull __pdata_System_Collections_Generic_IList_1_i32__IndexOf_0__1__ServiceDescriptor, void (* _Nonnull  __cb_System_Collections_Generic_IList_1_void__Insert_0__2__i32_ServiceDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index, SG_HNDL_NULLABLE item), const void* _Nonnull __pdata_System_Collections_Generic_IList_1_void__Insert_0__2__i32_ServiceDescriptor, void (* _Nonnull  __cb_System_Collections_Generic_IList_1_void__RemoveAt_0__1__i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index), const void* _Nonnull __pdata_System_Collections_Generic_IList_1_void__RemoveAt_0__1__i32, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_get_type_handle(TYP TContainerBuilder);
 
 GVAL Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_TContainerBuilder__CreateBuilder_0__1__IServiceCollection(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL services);
@@ -70,11 +72,15 @@ SG_HNDL_NONNULL invoke_Microsoft_Extensions_DependencyInjection_IServiceProvider
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_cast(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_create(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_TContainerBuilder__CreateBuilder_0__1__IServiceCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_TContainerBuilder__CreateBuilder_0__1__IServiceCollection, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_IServiceProvider__CreateServiceProvider_0__1__TContainerBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL containerBuilder), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_IServiceProvider__CreateServiceProvider_0__1__TContainerBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_get_type_handle(void);
 
 int32_t Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_bool__IsService_0__1__Type(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL serviceType);
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_bool__IsService_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL serviceType), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_bool__IsService_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_DependencyInjection_IServiceScope_get_type_handle(void);
 
@@ -82,17 +88,23 @@ SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScope_IServiceP
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScope_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScope_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_IServiceScope__CreateScope_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_IServiceScope__CreateScope_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_IServiceScope__CreateScope_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_DependencyInjection_ISupportRequiredService_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ISupportRequiredService_Object__GetRequiredService_0__1__Type(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL serviceType);
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ISupportRequiredService_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ISupportRequiredService_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_ISupportRequiredService_Object__GetRequiredService_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL serviceType), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_ISupportRequiredService_Object__GetRequiredService_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_DependencyInjection_ObjectFactory_get_type_handle(void);
 
@@ -102,7 +114,7 @@ SG_HNDL_NULLABLE Microsoft_Extensions_DependencyInjection_ObjectFactory_IAsyncRe
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ObjectFactory_Object__EndInvoke_0__1__IAsyncResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ObjectFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL serviceProvider, SG_HNDL_NULLABLE arguments));
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ObjectFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL serviceProvider, SG_HNDL_NULLABLE arguments), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_DependencyInjection_ServiceCollection_get_type_handle(void);
 

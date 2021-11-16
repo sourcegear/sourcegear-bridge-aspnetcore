@@ -24,6 +24,9 @@ open class DataAnnotationsValidator
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_DataAnnotationsValidator_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -54,6 +57,9 @@ public final class EditContext
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_EditContext_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -345,7 +351,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func add_OnFieldChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs>) throws -> Void) throws {
+    public func add_OnFieldChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs>(value);
         return try add_OnFieldChanged(value: del_value);
     }
@@ -361,7 +367,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func remove_OnFieldChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs>) throws -> Void) throws {
+    public func remove_OnFieldChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldChangedEventArgs>(value);
         return try remove_OnFieldChanged(value: del_value);
     }
@@ -377,7 +383,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func add_OnValidationRequested(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs>) throws -> Void) throws {
+    public func add_OnValidationRequested(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs>(value);
         return try add_OnValidationRequested(value: del_value);
     }
@@ -393,7 +399,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func remove_OnValidationRequested(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs>) throws -> Void) throws {
+    public func remove_OnValidationRequested(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationRequestedEventArgs>(value);
         return try remove_OnValidationRequested(value: del_value);
     }
@@ -409,7 +415,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func add_OnValidationStateChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs>) throws -> Void) throws {
+    public func add_OnValidationStateChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs>(value);
         return try add_OnValidationStateChanged(value: del_value);
     }
@@ -425,7 +431,7 @@ public final class EditContext
         }
     }
     // delegate closure overload
-    public func remove_OnValidationStateChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs>) throws -> Void) throws {
+    public func remove_OnValidationStateChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.ValidationStateChangedEventArgs>(value);
         return try remove_OnValidationStateChanged(value: del_value);
     }
@@ -512,6 +518,9 @@ public final class EditContextProperties
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_EditContextProperties_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -537,11 +546,12 @@ public final class EditContextProperties
     - Returns: True if the value was present, otherwise false.
 
     */
-    public func TryGetValue(key : dotnet.System.Object, value : inout dotnet.System.Object) throws -> Bool {
+    public func TryGetValue(key : dotnet.System.Object, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -571,9 +581,6 @@ public final class EditContextProperties
     }
     // [IsSpecialName] System.Object get_Item(System.Object)
 // docid: M:Microsoft.AspNetCore.Components.Forms.EditContextProperties.get_Item(System.Object)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(key : dotnet.System.Object) throws -> dotnet.System.Object {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Forms_EditContextProperties_Object__get_Item_0__1__Object(&__thrown, self.get_handle(), key.get_handle());
@@ -611,6 +618,9 @@ public final class FieldChangedEventArgs
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(ref Microsoft.AspNetCore.Components.Forms.FieldIdentifier)
@@ -622,9 +632,9 @@ public final class FieldChangedEventArgs
 
     - Parameter fieldIdentifier: The 
     */
-    public init(fieldIdentifier : inout aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldIdentifier) throws {
+    public init(fieldIdentifier : inout Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldIdentifier>) throws {
         var __thrown : NullableHandle = nil;
-            var _tmp_in_fieldIdentifier = fieldIdentifier.get_handle();
+            var _tmp_in_fieldIdentifier = (fieldIdentifier != nil) ? (fieldIdentifier!.get_handle()) : nil;
         let h = Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier(&__thrown, &_tmp_in_fieldIdentifier);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -672,6 +682,9 @@ public final class FieldIdentifier
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_FieldIdentifier_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -815,6 +828,9 @@ public final class ValidationMessageStore
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_ValidationMessageStore_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -970,9 +986,6 @@ public final class ValidationMessageStore
     }
     // [IsSpecialName] System.Collections.Generic.IEnumerable<System.String> get_Item(Microsoft.AspNetCore.Components.Forms.FieldIdentifier)
 // docid: M:Microsoft.AspNetCore.Components.Forms.ValidationMessageStore.get_Item(Microsoft.AspNetCore.Components.Forms.FieldIdentifier)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(fieldIdentifier : aspnetcore.Microsoft.AspNetCore.Components.Forms.FieldIdentifier) throws -> dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Forms_ValidationMessageStore_System_Collections_Generic_IEnumerable_string___get_Item_0__1__FieldIdentifier(&__thrown, self.get_handle(), fieldIdentifier.get_handle());
@@ -984,9 +997,6 @@ public final class ValidationMessageStore
     }
     // [IsSpecialName] System.Collections.Generic.IEnumerable<System.String> get_Item(System.Linq.Expressions.Expression<System.Func<System.Object>>)
 // docid: M:Microsoft.AspNetCore.Components.Forms.ValidationMessageStore.get_Item(System.Linq.Expressions.Expression{System.Func{System.Object}})
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(accessor : dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_1<dotnet.System.Object>>) throws -> dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Forms_ValidationMessageStore_System_Collections_Generic_IEnumerable_string___get_Item_0__1__System_Linq_Expressions_Expression_System_System_Func_object__(&__thrown, self.get_handle(), accessor.get_handle());
@@ -1012,6 +1022,9 @@ public final class ValidationRequestedEventArgs
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_ValidationRequestedEventArgs_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1061,6 +1074,9 @@ public final class ValidationStateChangedEventArgs
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_ValidationStateChangedEventArgs_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -34,8 +34,53 @@ public struct DistributedCacheEntryExtensions {
         }
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
+    // Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions.SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan)
+    /**
+    
+            Sets an absolute expiration time, relative to now.
+            
+
+    - Parameter options: The options to be operated on.
+    - Parameter relative: The expiration time, relative to now.
+    */
+    public static func SetAbsoluteExpiration(options : Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>, relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryExtensions_DistributedCacheEntryOptions__SetAbsoluteExpiration_0__2__DistributedCacheEntryOptions_TimeSpan(&__thrown, options?.get_handle() ?? nil, relative.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
+    // Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions.SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan)
+    /**
+    
+            Sets how long the cache entry can be inactive (e.g. not accessed) before it will be removed.
+            This will not extend the entry lifetime beyond the absolute expiration (if set).
+            
+
+    - Parameter options: The options to be operated on.
+    - Parameter offset: The sliding expiration time.
+    */
+    public static func SetSlidingExpiration(options : Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>, offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryExtensions_DistributedCacheEntryOptions__SetSlidingExpiration_0__2__DistributedCacheEntryOptions_TimeSpan(&__thrown, options?.get_handle() ?? nil, offset.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
 } // DistributedCacheEntryExtensions
 
 
@@ -52,6 +97,9 @@ open class DistributedCacheEntryOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -392,6 +440,9 @@ open class IDistributedCache
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Distributed_IDistributedCache_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -703,7 +754,31 @@ public struct CacheEntryExtensions {
         }
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Memory.ICacheEntry SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+    // Microsoft.Extensions.Caching.Memory.ICacheEntry SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan)
+    /**
+    
+            Sets an absolute expiration time, relative to now.
+            
+
+    - Parameter entry: The .
+    - Parameter relative: The  representing the expiration time relative to now.
+    - Returns: The  for chaining.
+
+    */
+    public static func SetAbsoluteExpiration(entry : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry>, relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Memory_CacheEntryExtensions_ICacheEntry__SetAbsoluteExpiration_0__2__ICacheEntry_TimeSpan(&__thrown, entry?.get_handle() ?? nil, relative.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
     // Microsoft.Extensions.Caching.Memory.ICacheEntry SetOptions(Microsoft.Extensions.Caching.Memory.ICacheEntry, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
 // docid: M:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetOptions(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
     /**
@@ -779,7 +854,32 @@ public struct CacheEntryExtensions {
         }
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Memory.ICacheEntry SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+    // Microsoft.Extensions.Caching.Memory.ICacheEntry SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan)
+    /**
+    
+            Sets how long the cache entry can be inactive (e.g. not accessed) before it will be removed.
+            This will not extend the entry lifetime beyond the absolute expiration (if set).
+            
+
+    - Parameter entry: The .
+    - Parameter offset: A  representing a sliding expiration.
+    - Returns: The  for chaining.
+
+    */
+    public static func SetSlidingExpiration(entry : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry>, offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Memory_CacheEntryExtensions_ICacheEntry__SetSlidingExpiration_0__2__ICacheEntry_TimeSpan(&__thrown, entry?.get_handle() ?? nil, offset.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
     // Microsoft.Extensions.Caching.Memory.ICacheEntry SetValue(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Object)
 // docid: M:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetValue(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Object)
     /**
@@ -847,9 +947,9 @@ public struct CacheExtensions {
     }
     // TItem GetOrCreate<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry,TItem>)
 // docid: M:Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreate``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,System.Func{Microsoft.Extensions.Caching.Memory.ICacheEntry,``0})
-    public static func GetOrCreate<UTItem : SGBridgeGenericValue>(cache : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.IMemoryCache>, key : Optional<dotnet.System.Object>, factory : dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry,UTItem>) throws -> UTItem {
+    public static func GetOrCreate<UTItem : SGBridgeGenericValue>(cache : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.IMemoryCache>, key : Optional<dotnet.System.Object>, factory : Optional<dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry,UTItem>>) throws -> UTItem {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Caching_Memory_CacheExtensions_UTItem__GetOrCreate_1__3__IMemoryCache_Object_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_UTItem_(UTItem.get_type_handle(), &__thrown, cache?.get_handle() ?? nil, key?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_Caching_Memory_CacheExtensions_UTItem__GetOrCreate_1__3__IMemoryCache_Object_System_Func_Microsoft_Extensions_Caching_Memory_ICacheEntry_UTItem_(UTItem.get_type_handle(), &__thrown, cache?.get_handle() ?? nil, key?.get_handle() ?? nil, (factory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -906,7 +1006,17 @@ public struct CacheExtensions {
             return UTItem(gval: __return);
         }
     }
-// TODO COPE (write_all_methods) (span) TItem Set<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, TItem, System.TimeSpan)
+    // TItem Set<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, TItem, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.CacheExtensions.Set``1(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,``0,System.TimeSpan)
+    public static func Set<UTItem : SGBridgeGenericValue>(cache : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.IMemoryCache>, key : Optional<dotnet.System.Object>, value : UTItem, absoluteExpirationRelativeToNow : dotnet.System.TimeSpan) throws -> UTItem {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Memory_CacheExtensions_UTItem__Set_1__4__IMemoryCache_Object_UTItem_TimeSpan(UTItem.get_type_handle(), &__thrown, cache?.get_handle() ?? nil, key?.get_handle() ?? nil, value.to_gval(), absoluteExpirationRelativeToNow.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return UTItem(gval: __return);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) bool TryGetValue<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, ref TItem)
 } // CacheExtensions
 
@@ -1060,6 +1170,9 @@ open class ICacheEntry
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_ICacheEntry_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1270,6 +1383,9 @@ open class IMemoryCache
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_IMemoryCache_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1333,11 +1449,12 @@ open class IMemoryCache
     - Returns: True if the key was found.
 
     */
-    open func TryGetValue(key : Optional<dotnet.System.Object>, value : inout dotnet.System.Object) throws -> Bool {
+    open func TryGetValue(key : Optional<dotnet.System.Object>, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Caching_Memory_IMemoryCache_bool__TryGetValue_0__2__Object_outObject(&__thrown, self.get_handle(), key?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1461,7 +1578,31 @@ public struct MemoryCacheEntryExtensions {
         }
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+    // Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan)
+    /**
+    
+            Sets an absolute expiration time, relative to now.
+            
+
+    - Parameter options: The .
+    - Parameter relative: The expiration time, relative to now.
+    - Returns: The  so that additional calls can be chained.
+
+    */
+    public static func SetAbsoluteExpiration(options : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>, relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Memory_MemoryCacheEntryExtensions_MemoryCacheEntryOptions__SetAbsoluteExpiration_0__2__MemoryCacheEntryOptions_TimeSpan(&__thrown, options?.get_handle() ?? nil, relative.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
     // Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetPriority(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, Microsoft.Extensions.Caching.Memory.CacheItemPriority)
 // docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetPriority(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.CacheItemPriority)
     /**
@@ -1512,7 +1653,32 @@ public struct MemoryCacheEntryExtensions {
         }
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+    // Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan)
+    /**
+    
+            Sets how long the cache entry can be inactive (e.g. not accessed) before it will be removed.
+            This will not extend the entry lifetime beyond the absolute expiration (if set).
+            
+
+    - Parameter options: The .
+    - Parameter offset: The sliding expiration time.
+    - Returns: The  so that additional calls can be chained.
+
+    */
+    public static func SetSlidingExpiration(options : Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions>, offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Caching_Memory_MemoryCacheEntryExtensions_MemoryCacheEntryOptions__SetSlidingExpiration_0__2__MemoryCacheEntryOptions_TimeSpan(&__thrown, options?.get_handle() ?? nil, offset.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
 } // MemoryCacheEntryExtensions
 
 
@@ -1529,6 +1695,9 @@ open class MemoryCacheEntryOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1788,6 +1957,9 @@ open class PostEvictionCallbackRegistration
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_PostEvictionCallbackRegistration_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1891,6 +2063,9 @@ public final class PostEvictionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Invoke(System.Object, System.Object, Microsoft.Extensions.Caching.Memory.EvictionReason, System.Object)
@@ -1930,15 +2105,15 @@ public final class PostEvictionDelegate
             return;
         }
     }
-    public init(_ callback : @escaping (Optional<dotnet.System.Object>, Optional<dotnet.System.Object>, aspnetcore.Microsoft.Extensions.Caching.Memory.EvictionReason, Optional<dotnet.System.Object>) throws -> Void) throws
+    public convenience init(_ __closure_Invoke : @escaping (Optional<dotnet.System.Object>, Optional<dotnet.System.Object>, aspnetcore.Microsoft.Extensions.Caching.Memory.EvictionReason, Optional<dotnet.System.Object>) throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, Swift.Int32, NullableHandle) -> Void =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, Swift.Int32, NullableHandle) -> Void =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, key : NullableHandle, value : NullableHandle, reason : Swift.Int32, state : NullableHandle) -> Void in
             do
             {
                 thrown.pointee = nil;
-                try callback((key != nil) ? (dotnet.System.Object(hndl: key!)) : nil, (value != nil) ? (dotnet.System.Object(hndl: value!)) : nil, aspnetcore.Microsoft.Extensions.Caching.Memory.EvictionReason(val: reason), (state != nil) ? (dotnet.System.Object(hndl: state!)) : nil);
+                try __closure_Invoke((key != nil) ? (dotnet.System.Object(hndl: key!)) : nil, (value != nil) ? (dotnet.System.Object(hndl: value!)) : nil, aspnetcore.Microsoft.Extensions.Caching.Memory.EvictionReason(val: reason), (state != nil) ? (dotnet.System.Object(hndl: state!)) : nil);
             }
             catch let e as dotnet.System.Exception
             {
@@ -1950,24 +2125,24 @@ public final class PostEvictionDelegate
                 thrown.pointee = __copy_handle(e.get_handle());
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, key : NullableHandle, value : NullableHandle, reason : Swift.Int32, state : NullableHandle) -> Void
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, key : NullableHandle, value : NullableHandle, reason : Swift.Int32, state : NullableHandle) -> Void
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, Swift.Int32, NullableHandle) -> Void;
-            f(thrown, key, value, reason, state);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, Swift.Int32, NullableHandle) -> Void;
+            f_interlude(thrown, key, value, reason, state);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // void Invoke(System.Object, System.Object, Microsoft.Extensions.Caching.Memory.EvictionReason, System.Object)
@@ -2003,6 +2178,9 @@ open class ISystemClock
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Internal_ISystemClock_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2041,6 +2219,9 @@ open class SystemClock
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Internal_SystemClock_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2116,10 +2297,18 @@ extension aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEn
 }
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
+extension aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions {
+    public func SetAbsoluteExpiration(relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions.SetAbsoluteExpiration(options: self, relative: relative);
+    }
+}
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions, System.TimeSpan)
+extension aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions {
+    public func SetSlidingExpiration(offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions.SetSlidingExpiration(options: self, offset: offset);
+    }
+}
 
 // EXTENSION METHOD System.String GetString(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String)
 extension Microsoft_Extensions_Caching_Distributed_IDistributedCache {
@@ -2216,7 +2405,11 @@ extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
 }
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.ICacheEntry SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Memory.ICacheEntry SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
+    public func SetAbsoluteExpiration(relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetAbsoluteExpiration(entry: aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry(hndl: __copy_handle(self.get_handle())), relative: relative);
+    }
+}
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.ICacheEntry SetOptions(Microsoft.Extensions.Caching.Memory.ICacheEntry, Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions)
 extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
@@ -2240,7 +2433,11 @@ extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
 }
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.ICacheEntry SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Memory.ICacheEntry SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.TimeSpan)
+extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
+    public func SetSlidingExpiration(offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Memory.CacheEntryExtensions.SetSlidingExpiration(entry: aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry(hndl: __copy_handle(self.get_handle())), offset: offset);
+    }
+}
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.ICacheEntry SetValue(Microsoft.Extensions.Caching.Memory.ICacheEntry, System.Object)
 extension Microsoft_Extensions_Caching_Memory_ICacheEntry {
@@ -2270,7 +2467,7 @@ extension Microsoft_Extensions_Caching_Memory_IMemoryCache {
 
 // EXTENSION METHOD TItem GetOrCreate<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, System.Func<Microsoft.Extensions.Caching.Memory.ICacheEntry,TItem>)
 extension Microsoft_Extensions_Caching_Memory_IMemoryCache {
-    public func GetOrCreate<UTItem : SGBridgeGenericValue>(key : Optional<dotnet.System.Object>, factory : dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry,UTItem>) throws -> UTItem {
+    public func GetOrCreate<UTItem : SGBridgeGenericValue>(key : Optional<dotnet.System.Object>, factory : Optional<dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Caching.Memory.ICacheEntry,UTItem>>) throws -> UTItem {
         return try aspnetcore.Microsoft.Extensions.Caching.Memory.CacheExtensions.GetOrCreate(cache: aspnetcore.Microsoft.Extensions.Caching.Memory.IMemoryCache(hndl: __copy_handle(self.get_handle())), key: key, factory: factory);
     }
     // delegate closure overload
@@ -2312,7 +2509,11 @@ extension Microsoft_Extensions_Caching_Memory_IMemoryCache {
 }
 
 // EXTENSION METHOD TItem Set<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, TItem, System.TimeSpan)
-// TODO COPE extension method (span) TItem Set<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, TItem, System.TimeSpan)
+extension Microsoft_Extensions_Caching_Memory_IMemoryCache {
+    public func Set<UTItem : SGBridgeGenericValue>(key : Optional<dotnet.System.Object>, value : UTItem, absoluteExpirationRelativeToNow : dotnet.System.TimeSpan) throws -> UTItem {
+        return try aspnetcore.Microsoft.Extensions.Caching.Memory.CacheExtensions.Set(cache: aspnetcore.Microsoft.Extensions.Caching.Memory.IMemoryCache(hndl: __copy_handle(self.get_handle())), key: key, value: value, absoluteExpirationRelativeToNow: absoluteExpirationRelativeToNow);
+    }
+}
 
 // EXTENSION METHOD bool TryGetValue<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, ref TItem)
 // TODO COPE extension method (unused generic param) bool TryGetValue<TItem>(Microsoft.Extensions.Caching.Memory.IMemoryCache, System.Object, ref TItem)
@@ -2356,7 +2557,11 @@ extension aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
 }
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+extension aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions {
+    public func SetAbsoluteExpiration(relative : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetAbsoluteExpiration(options: self, relative: relative);
+    }
+}
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetPriority(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, Microsoft.Extensions.Caching.Memory.CacheItemPriority)
 extension aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions {
@@ -2373,5 +2578,9 @@ extension aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions
 }
 
 // EXTENSION METHOD Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions, System.TimeSpan)
+extension aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions {
+    public func SetSlidingExpiration(offset : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions> {
+        return try aspnetcore.Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions.SetSlidingExpiration(options: self, offset: offset);
+    }
+}
 

@@ -20,9 +20,13 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_Stri
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_String__TransformOutbound_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_String__TransformOutbound_0__1__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Routing_IParameterPolicy_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IParameterPolicy_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IParameterPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Routing_IRouteConstraint_get_type_handle(void);
 
@@ -30,11 +34,15 @@ int32_t Microsoft_AspNetCore_Routing_IRouteConstraint_bool__Match_0__5__HttpCont
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteConstraint_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteConstraint_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteConstraint_bool__Match_0__5__HttpContext_IRouter_String_RouteValueDictionary_RouteDirection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE httpContext, SG_HNDL_NULLABLE route, SG_HNDL_NONNULL routeKey, SG_HNDL_NONNULL values, int32_t routeDirection), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteConstraint_bool__Match_0__5__HttpContext_IRouter_String_RouteValueDictionary_RouteDirection, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Routing_IRouteHandler_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteHandler_RequestDelegate__GetRequestHandler_0__2__HttpContext_RouteData(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL routeData);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteHandler_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteHandler_RequestDelegate__GetRequestHandler_0__2__HttpContext_RouteData)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL routeData), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteHandler_RequestDelegate__GetRequestHandler_0__2__HttpContext_RouteData, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Routing_IRouter_get_type_handle(void);
 
@@ -44,6 +52,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtua
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouter_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Routing_IRoutingFeature_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_IRoutingFeature_RouteData__get_RouteData_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -51,6 +61,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_IRoutingFeature_RouteData__get_Rou
 void Microsoft_AspNetCore_Routing_IRoutingFeature_void__set_RouteData_0__1__RouteData(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRoutingFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRoutingFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Routing_LinkGenerator_get_type_handle(void);
 

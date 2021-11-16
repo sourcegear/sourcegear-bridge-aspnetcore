@@ -23,6 +23,9 @@ open class AllowAnonymousAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AllowAnonymousAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -52,6 +55,9 @@ open class AuthorizationFailure
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationFailure_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -196,6 +202,9 @@ open class AuthorizationFailureReason
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationFailureReason_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Authorization.IAuthorizationHandler, System.String)
@@ -277,6 +286,9 @@ open class AuthorizationHandlerContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationHandlerContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -532,6 +544,9 @@ open class AuthorizationHandler_1<TRequirement : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationHandler_1_get_type_handle(TRequirement.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
@@ -543,13 +558,13 @@ open class AuthorizationHandler_1<TRequirement : SGBridgeGenericValue>
 
     - Parameter context: The authorization context.
     */
-    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationHandler_1_Task__HandleAsync_0__1__AuthorizationHandlerContext(TRequirement.get_type_handle(), &__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // AuthorizationHandler_1
@@ -571,6 +586,9 @@ open class AuthorizationHandler_2<TRequirement : SGBridgeGenericValue,TResource 
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationHandler_2_get_type_handle(TRequirement.get_type_handle(),TResource.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
@@ -582,13 +600,13 @@ open class AuthorizationHandler_2<TRequirement : SGBridgeGenericValue,TResource 
 
     - Parameter context: The authorization context.
     */
-    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationHandler_2_Task__HandleAsync_0__1__AuthorizationHandlerContext(TRequirement.get_type_handle(), TResource.get_type_handle(), &__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // AuthorizationHandler_2
@@ -607,6 +625,9 @@ open class AuthorizationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -660,7 +681,7 @@ open class AuthorizationOptions
         }
     }
     // delegate closure overload
-    open func AddPolicy(name : dotnet.System.String, configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder>) throws -> Void) throws {
+    open func AddPolicy(name : dotnet.System.String, configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder) throws -> Void) throws {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder>(configurePolicy);
         return try AddPolicy(name: name, configurePolicy: del_configurePolicy);
     }
@@ -825,6 +846,9 @@ open class AuthorizationPolicy
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationPolicy_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>, System.Collections.Generic.IEnumerable<System.String>)
@@ -913,13 +937,13 @@ open class AuthorizationPolicy
             
 
     */
-    open class func CombineAsync(policyProvider : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider, authorizeData : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizeData>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open class func CombineAsync(policyProvider : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider, authorizeData : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizeData>) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationPolicy_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___CombineAsync_0__2__IAuthorizationPolicyProvider_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authorization_IAuthorizeData_(&__thrown, policyProvider.get_handle(), authorizeData.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> get_Requirements()
@@ -984,6 +1008,9 @@ open class AuthorizationPolicyBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationPolicyBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1252,7 +1279,7 @@ open class AuthorizationPolicyBuilder
         }
     }
     // delegate closure overload
-    open func RequireAssertion(handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext>) throws -> Bool) throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder {
+    open func RequireAssertion(handler : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> Bool) throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder {
         let del_handler = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Swift.Bool>(handler);
         return try RequireAssertion(handler: del_handler);
     }
@@ -1277,7 +1304,7 @@ open class AuthorizationPolicyBuilder
         }
     }
     // delegate closure overload
-    open func RequireAssertion(handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool>) throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder {
+    open func RequireAssertion(handler : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task_1<Bool>) throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder {
         let del_handler = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,dotnet.System.Threading.Tasks.Task_1<Swift.Bool>>(handler);
         return try RequireAssertion(handler: del_handler);
     }
@@ -1396,6 +1423,9 @@ open class AuthorizationResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1527,13 +1557,13 @@ public struct AuthorizationServiceExtensions {
             
 
     */
-    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirement : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirement : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationServiceExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__4__IAuthorizationService_ClaimsPrincipal_Object_IAuthorizationRequirement(&__thrown, service.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, requirement.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, System.Object, Microsoft.AspNetCore.Authorization.AuthorizationPolicy)
@@ -1553,13 +1583,13 @@ public struct AuthorizationServiceExtensions {
             
 
     */
-    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationServiceExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__4__IAuthorizationService_ClaimsPrincipal_Object_AuthorizationPolicy(&__thrown, service.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, policy.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authorization.AuthorizationPolicy)
@@ -1578,13 +1608,13 @@ public struct AuthorizationServiceExtensions {
             
 
     */
-    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationServiceExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__IAuthorizationService_ClaimsPrincipal_AuthorizationPolicy(&__thrown, service.get_handle(), user.get_handle(), policy.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, System.String)
@@ -1603,13 +1633,13 @@ public struct AuthorizationServiceExtensions {
             
 
     */
-    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    public static func AuthorizeAsync(service : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService, user : dotnet.System.Security.Claims.ClaimsPrincipal, policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_AuthorizationServiceExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__IAuthorizationService_ClaimsPrincipal_String(&__thrown, service.get_handle(), user.get_handle(), policyName.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // AuthorizationServiceExtensions
@@ -1629,6 +1659,9 @@ open class AuthorizeAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizeAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1805,6 +1838,9 @@ open class DefaultAuthorizationEvaluator
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_DefaultAuthorizationEvaluator_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1855,6 +1891,9 @@ open class DefaultAuthorizationHandlerContextFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerContextFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1913,6 +1952,9 @@ open class DefaultAuthorizationHandlerProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationHandler>)
@@ -1937,13 +1979,13 @@ open class DefaultAuthorizationHandlerProvider
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider.GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
     */
-    open /* method final */ func GetHandlersAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationHandler>> {
+    open /* method final */ func GetHandlersAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws -> dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationHandler> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerProvider_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authorization_IAuthorizationHandler____GetHandlersAsync_0__1__AuthorizationHandlerContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // DefaultAuthorizationHandlerProvider
@@ -1964,6 +2006,9 @@ open class DefaultAuthorizationPolicyProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1995,13 +2040,13 @@ open class DefaultAuthorizationPolicyProvider
     - Returns: The default authorization policy.
 
     */
-    open /* method final */ func GetDefaultPolicyAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open /* method final */ func GetDefaultPolicyAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetDefaultPolicyAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationPolicy> GetFallbackPolicyAsync()
@@ -2014,13 +2059,13 @@ open class DefaultAuthorizationPolicyProvider
     - Returns: The fallback authorization policy.
 
     */
-    open /* method final */ func GetFallbackPolicyAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open /* method final */ func GetFallbackPolicyAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetFallbackPolicyAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationPolicy> GetPolicyAsync(System.String)
@@ -2034,13 +2079,13 @@ open class DefaultAuthorizationPolicyProvider
     - Returns: The named .
 
     */
-    open func GetPolicyAsync(policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open func GetPolicyAsync(policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetPolicyAsync_0__1__String(&__thrown, self.get_handle(), policyName.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // DefaultAuthorizationPolicyProvider
@@ -2060,6 +2105,9 @@ open class DefaultAuthorizationService
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_DefaultAuthorizationService_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2102,13 +2150,13 @@ open class DefaultAuthorizationService
             
 
     */
-    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirements : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirements : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationService_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__ClaimsPrincipal_Object_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement_(&__thrown, self.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, requirements.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(System.Security.Claims.ClaimsPrincipal, System.Object, System.String)
@@ -2127,13 +2175,13 @@ open class DefaultAuthorizationService
             
 
     */
-    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_DefaultAuthorizationService_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__ClaimsPrincipal_Object_String(&__thrown, self.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, policyName.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // DefaultAuthorizationService
@@ -2153,6 +2201,9 @@ open class IAuthorizationEvaluator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationEvaluator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2201,6 +2252,9 @@ open class IAuthorizationHandler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationHandler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2219,13 +2273,13 @@ open class IAuthorizationHandler
 
     - Parameter context: The authorization information.
     */
-    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationHandler_Task__HandleAsync_0__1__AuthorizationHandlerContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IAuthorizationHandler
@@ -2245,6 +2299,9 @@ open class IAuthorizationHandlerContextFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationHandlerContextFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2298,6 +2355,9 @@ open class IAuthorizationHandlerProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationHandlerProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2318,13 +2378,13 @@ open class IAuthorizationHandlerProvider
     - Returns: The list of handlers.
 
     */
-    open func GetHandlersAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationHandler>> {
+    open func GetHandlersAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws -> dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationHandler> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationHandlerProvider_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authorization_IAuthorizationHandler____GetHandlersAsync_0__1__AuthorizationHandlerContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IAuthorizationHandlerProvider
@@ -2344,6 +2404,9 @@ open class IAuthorizationPolicyProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2365,13 +2428,13 @@ open class IAuthorizationPolicyProvider
     - Returns: The named .
 
     */
-    open func GetPolicyAsync(policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open func GetPolicyAsync(policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetPolicyAsync_0__1__String(&__thrown, self.get_handle(), policyName.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationPolicy> GetDefaultPolicyAsync()
@@ -2384,13 +2447,13 @@ open class IAuthorizationPolicyProvider
     - Returns: The default authorization policy.
 
     */
-    open func GetDefaultPolicyAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open func GetDefaultPolicyAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetDefaultPolicyAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationPolicy> GetFallbackPolicyAsync()
@@ -2403,13 +2466,13 @@ open class IAuthorizationPolicyProvider
     - Returns: The fallback authorization policy.
 
     */
-    open func GetFallbackPolicyAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy> {
+    open func GetFallbackPolicyAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationPolicy___GetFallbackPolicyAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IAuthorizationPolicyProvider
@@ -2429,6 +2492,9 @@ open class IAuthorizationRequirement
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationRequirement_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2456,6 +2522,9 @@ open class IAuthorizationService
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationService_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2485,13 +2554,13 @@ open class IAuthorizationService
             
 
     */
-    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirements : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirements : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationService_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__ClaimsPrincipal_Object_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authorization_IAuthorizationRequirement_(&__thrown, self.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, requirements.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(System.Security.Claims.ClaimsPrincipal, System.Object, System.String)
@@ -2514,13 +2583,13 @@ open class IAuthorizationService
             
 
     */
-    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
+    open func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationService_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_AuthorizationResult___AuthorizeAsync_0__3__ClaimsPrincipal_Object_String(&__thrown, self.get_handle(), user.get_handle(), resource?.get_handle() ?? nil, policyName.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IAuthorizationService
@@ -2545,6 +2614,9 @@ open class AssertionRequirement
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Infrastructure_AssertionRequirement_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2593,13 +2665,13 @@ open class AssertionRequirement
 
     - Parameter context: The authorization information.
     */
-    open /* method final */ func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Infrastructure_AssertionRequirement_Task__HandleAsync_0__1__AuthorizationHandlerContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.String ToString()
@@ -2658,6 +2730,9 @@ open class OperationAuthorizationRequirement
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Infrastructure_OperationAuthorizationRequirement_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2740,6 +2815,9 @@ open class PassThroughAuthorizationHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Infrastructure_PassThroughAuthorizationHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2762,13 +2840,13 @@ open class PassThroughAuthorizationHandler
 
     - Parameter context: The authorization context.
     */
-    open /* method final */ func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func HandleAsync(context : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Infrastructure_PassThroughAuthorizationHandler_Task__HandleAsync_0__1__AuthorizationHandlerContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // PassThroughAuthorizationHandler
@@ -2826,7 +2904,7 @@ public struct AuthorizationServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAuthorizationCore(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddAuthorizationCore(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>(configure);
         return try AddAuthorizationCore(services: services, configure: del_configure);
     }
@@ -2881,29 +2959,29 @@ public protocol Microsoft_AspNetCore_Authorization_IAuthorizationService
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, System.Object, Microsoft.AspNetCore.Authorization.IAuthorizationRequirement)
 extension Microsoft_AspNetCore_Authorization_IAuthorizationService {
-    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirement : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
-        return try aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, resource: resource, requirement: requirement);
+    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, requirement : aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationRequirement) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
+        return try await aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, resource: resource, requirement: requirement);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, System.Object, Microsoft.AspNetCore.Authorization.AuthorizationPolicy)
 extension Microsoft_AspNetCore_Authorization_IAuthorizationService {
-    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
-        return try aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, resource: resource, policy: policy);
+    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, resource : Optional<dotnet.System.Object>, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
+        return try await aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, resource: resource, policy: policy);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authorization.AuthorizationPolicy)
 extension Microsoft_AspNetCore_Authorization_IAuthorizationService {
-    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
-        return try aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, policy: policy);
+    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
+        return try await aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, policy: policy);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.IAuthorizationService, System.Security.Claims.ClaimsPrincipal, System.String)
 extension Microsoft_AspNetCore_Authorization_IAuthorizationService {
-    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, policyName : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult> {
-        return try aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, policyName: policyName);
+    public func AuthorizeAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, policyName : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationResult {
+        return try await aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationServiceExtensions.AuthorizeAsync(service: aspnetcore.Microsoft.AspNetCore.Authorization.IAuthorizationService(hndl: __copy_handle(self.get_handle())), user: user, policyName: policyName);
     }
 }
 
@@ -2920,7 +2998,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddAuthorizationCore(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddAuthorizationCore(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorizationCore(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

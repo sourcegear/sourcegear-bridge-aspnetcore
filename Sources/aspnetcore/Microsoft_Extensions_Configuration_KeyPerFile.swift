@@ -102,7 +102,7 @@ public struct KeyPerFileConfigurationBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddKeyPerFile(builder : aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder, configureSource : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder {
+    public static func AddKeyPerFile(builder : aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder, configureSource : @escaping (aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder {
         let del_configureSource = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource>(configureSource);
         return try AddKeyPerFile(builder: builder, configureSource: del_configureSource);
     }
@@ -126,6 +126,9 @@ open class KeyPerFileConfigurationProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -213,6 +216,9 @@ open class KeyPerFileConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -324,7 +330,7 @@ open class KeyPerFileConfigurationSource
         }
     }
     // delegate closure overload
-    open func set_IgnoreCondition(value : @escaping (Optional<dotnet.System.String>) throws -> Bool) throws {
+    open func set_IgnoreCondition(value : @escaping (dotnet.System.String) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.String,Swift.Bool>(value);
         return try set_IgnoreCondition(value: del_value);
     }
@@ -552,7 +558,7 @@ extension Microsoft_Extensions_Configuration_IConfigurationBuilder {
         return try aspnetcore.Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile(builder: aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder(hndl: __copy_handle(self.get_handle())), configureSource: configureSource);
     }
     // delegate closure overload
-    public func AddKeyPerFile(configureSource : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder {
+    public func AddKeyPerFile(configureSource : @escaping (aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder {
         let del_configureSource = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource>(configureSource);
         return try aspnetcore.Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile(builder: aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder(hndl: __copy_handle(self.get_handle())), configureSource: del_configureSource);
     }

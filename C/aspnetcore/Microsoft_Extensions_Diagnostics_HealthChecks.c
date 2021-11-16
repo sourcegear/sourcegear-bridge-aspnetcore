@@ -40,6 +40,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL registration);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL registration), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions_TimeSpan__get_Delay_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -326,6 +327,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Diagnostics_HealthChecks._fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL registration), const void* _Nonnull __pdata_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Diagnostics_HealthChecks._fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Diagnostics_HealthChecks._fp_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_create(__thrown, __cb_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration, __pdata_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder_IHealthChecksBuilder__Add_0__1__HealthCheckRegistration, __deinit);
     return ret;
 }
 

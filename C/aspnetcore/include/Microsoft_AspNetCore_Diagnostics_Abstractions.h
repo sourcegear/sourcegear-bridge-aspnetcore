@@ -68,11 +68,15 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Diagnostics_ICompilationException_System_C
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_ICompilationException_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_ICompilationException_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL errorContext, SG_HNDL_NONNULL next);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errorContext, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_get_type_handle(void);
 
@@ -86,11 +90,15 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_Route
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_String__get_Path_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_get_type_handle(void);
 
@@ -99,6 +107,8 @@ int32_t Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_bool__get_Enabl
 void Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_void__set_Enabled_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_get_type_handle(void);
 
@@ -115,6 +125,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_St
 void Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_void__set_OriginalQueryString_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

@@ -34,22 +34,27 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Diagnostics_CompilationFailure___get_CompilationFailures_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL errorContext, SG_HNDL_NONNULL next);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errorContext, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_Exception__get_Error_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_String__get_Path_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_Endpoint__get_Endpoint_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_RouteValueDictionary__get_RouteValues_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_String__get_Path_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_bool__get_Enabled_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_void__set_Enabled_0__1__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_String__get_OriginalPathBase_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_void__set_OriginalPathBase_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
@@ -58,6 +63,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_String__get_OriginalQueryString_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_void__set_OriginalQueryString_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_AspNetCore_Diagnostics_Abstractions;
 
 static void my_init() {
@@ -280,6 +286,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_ICompilationException_cast(SG_H
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_ICompilationException_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_ICompilationException_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_get_type_handle) {
         my_init();
@@ -301,6 +315,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_c
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errorContext, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_create(__thrown, __cb_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_, __pdata_Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_, __deinit);
     return ret;
 }
 
@@ -352,6 +374,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_cast(S
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_get_type_handle) {
         my_init();
@@ -373,6 +403,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -404,6 +442,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_cast(SG
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -465,6 +511,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_cas
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Diagnostics_Abstractions._fp_Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_create(__thrown, __deinit);
     return ret;
 }
 

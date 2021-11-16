@@ -34,6 +34,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDat
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_DataProtection_IDataProtector_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL plaintext);
@@ -42,11 +44,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unpr
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtector_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtector_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintext), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protectedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_DataProtection_Infrastructure_IApplicationDiscriminator_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_DataProtection_Infrastructure_IApplicationDiscriminator_String__get_Discriminator_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Infrastructure_IApplicationDiscriminator_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Infrastructure_IApplicationDiscriminator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

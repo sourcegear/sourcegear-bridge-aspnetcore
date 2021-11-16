@@ -67,17 +67,20 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IApplicationLifetime_CancellationToken__get_ApplicationStopped_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IApplicationLifetime_CancellationToken__get_ApplicationStopping_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IApplicationLifetime_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IApplicationLifetime_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_IServiceProvider__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHost_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_CancellationToken__get_ApplicationStarted_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_CancellationToken__get_ApplicationStopped_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_CancellationToken__get_ApplicationStopping_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE configureDelegate);
@@ -94,6 +97,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_invoke_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE factory);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_System_Collections_Generic_IDictionary_object_object___get_Properties_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE factory), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE factory), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_String__get_ApplicationName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_void__set_ApplicationName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
@@ -104,14 +108,17 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_String__get_EnvironmentName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_void__set_EnvironmentName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostEnvironment_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostLifetime_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostLifetime_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostLifetime_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostedService_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostedService_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostedService_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_String__get_ApplicationName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_void__set_ApplicationName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
@@ -122,6 +129,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_String__get_EnvironmentName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_void__set_EnvironmentName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_IHostingEnvironment_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_Extensions_Hosting_Abstractions;
 
 static void my_init() {
@@ -592,6 +600,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IApplicationLifetime_cast(SG_HNDL_N
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IApplicationLifetime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IApplicationLifetime_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IApplicationLifetime_create(__thrown, __cb_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0, __pdata_Microsoft_Extensions_Hosting_IApplicationLifetime_void__StopApplication_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Hosting_IHost_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHost_get_type_handle) {
         my_init();
@@ -629,6 +645,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHost_cast(SG_HNDL_NULLABLE * _Nonn
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHost_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHost_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHost_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHost_create(__thrown, __cb_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHost_Task__StartAsync_0__1__CancellationToken, __cb_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHost_Task__StopAsync_0__1__CancellationToken, __cb_System_IDisposable_void__Dispose_0__0, __pdata_System_IDisposable_void__Dispose_0__0, __deinit);
     return ret;
 }
 
@@ -676,6 +700,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostApplicationLifetime_cast(SG_HN
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostApplicationLifetime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_create(__thrown, __cb_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0, __pdata_Microsoft_Extensions_Hosting_IHostApplicationLifetime_void__StopApplication_0__0, __deinit);
     return ret;
 }
 
@@ -807,6 +839,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostBuilder_cast(SG_HNDL_NULLABLE 
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE configureDelegate), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE factory), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE factory), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostBuilder_create(__thrown, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHost__Build_0__0, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureHostConfiguration_0__1__System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_, __cb_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__, __pdata_Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder__, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Hosting_IHostEnvironment_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostEnvironment_get_type_handle) {
         my_init();
@@ -883,6 +923,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostEnvironment_cast(SG_HNDL_NULLA
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostEnvironment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostEnvironment_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostEnvironment_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Hosting_IHostLifetime_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostLifetime_get_type_handle) {
         my_init();
@@ -915,6 +963,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostLifetime_cast(SG_HNDL_NULLABLE
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostLifetime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostLifetime_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostLifetime_create(__thrown, __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__StopAsync_0__1__CancellationToken, __cb_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHostLifetime_Task__WaitForStartAsync_0__1__CancellationToken, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Hosting_IHostedService_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostedService_get_type_handle) {
         my_init();
@@ -944,6 +1000,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostedService_cast(SG_HNDL_NULLABL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostedService_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostedService_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostedService_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostedService_create(__thrown, __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StartAsync_0__1__CancellationToken, __cb_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken, __pdata_Microsoft_Extensions_Hosting_IHostedService_Task__StopAsync_0__1__CancellationToken, __deinit);
     return ret;
 }
 
@@ -1020,6 +1084,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostingEnvironment_cast(SG_HNDL_NU
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostingEnvironment_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Hosting_IHostingEnvironment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostingEnvironment_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Hosting_Abstractions._fp_Microsoft_Extensions_Hosting_IHostingEnvironment_create(__thrown, __deinit);
     return ret;
 }
 

@@ -23,6 +23,9 @@ open class IResponseCachingFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }

@@ -22,6 +22,9 @@ open class IISOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_IISOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -171,6 +174,9 @@ open class IISDefaults
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IISIntegration_IISDefaults_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String AuthenticationScheme
@@ -241,6 +247,9 @@ open class IISHostingStartup
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IISIntegration_IISHostingStartup_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -288,6 +297,9 @@ open class IISMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IISIntegration_IISMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

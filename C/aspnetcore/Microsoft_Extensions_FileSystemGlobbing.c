@@ -75,14 +75,17 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_System_Collections_Generic_IList_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment___get_Segments_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__get_CanProduceStem_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE onDeclare);
     void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -90,12 +93,14 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE directory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE file);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE onDeclare), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE directory), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase, int32_t (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE directory), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE file), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_System_Collections_Generic_IList_System_Collections_Generic_System_Collections_Generic_IList_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment____get_Contains_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_System_Collections_Generic_IList_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment___get_EndsWith_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_System_Collections_Generic_IList_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment___get_Segments_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_System_Collections_Generic_IList_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment___get_StartsWith_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext_ctor_0__4__System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern__System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern__DirectoryInfoBase_StringComparison)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE includePatterns, SG_HNDL_NULLABLE excludePatterns, SG_HNDL_NULLABLE directoryInfo, int32_t comparison);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext_PatternMatchingResult__Execute_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -177,6 +182,8 @@ struct {
     void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_InStem)(SG_HNDL_NONNULL __self_h, int32_t __v);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_IsNotApplicable)(SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_IsNotApplicable)(SG_HNDL_NONNULL __self_h, int32_t __v);
+    SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroup)(SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_SegmentGroup)(SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE __v);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroupIndex)(SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_SegmentGroupIndex)(SG_HNDL_NONNULL __self_h, int32_t __v);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentIndex)(SG_HNDL_NONNULL __self_h);
@@ -763,6 +770,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_create(__thrown, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_get_type_handle) {
         my_init();
@@ -795,6 +810,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_ca
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_create(__thrown, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool__Match_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_get_type_handle) {
         my_init();
@@ -824,6 +847,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_cast(S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_create(__thrown, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __deinit);
     return ret;
 }
 
@@ -880,6 +911,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE onDeclare), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0, void (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE directory), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase, int32_t (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE directory), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE file), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_create(__thrown, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__Declare_0__1__System_Action_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_bool_, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PopDirectory_0__0, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_void__PushDirectory_0__1__DirectoryInfoBase, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_bool__Test_0__1__DirectoryInfoBase, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_PatternTestResult__Test_0__1__FileInfoBase, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_get_type_handle) {
         my_init();
@@ -925,6 +964,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_create(__thrown, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForExclude_0__0, __cb_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __pdata_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_IPatternContext__CreatePatternContextForInclude_0__0, __deinit);
     return ret;
 }
 
@@ -1562,6 +1609,21 @@ void Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternCon
         my_init();
     }
     _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_IsNotApplicable(__self_h, __v);
+}
+
+SG_HNDL_NULLABLE Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroup(SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroup) {
+        my_init();
+    }
+    SG_HNDL_NULLABLE ret = _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroup(__self_h);
+    return ret;
+}
+
+void Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_SegmentGroup(SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE __v) {
+    if (!_g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_SegmentGroup) {
+        my_init();
+    }
+    _g_Microsoft_Extensions_FileSystemGlobbing._fp_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_set_SegmentGroup(__self_h, __v);
 }
 
 int32_t Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_SegmentGroupIndex(SG_HNDL_NONNULL __self_h) {

@@ -23,6 +23,9 @@ public final class FilePatternMatch
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_FilePatternMatch_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -175,6 +178,9 @@ open class InMemoryDirectoryInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_InMemoryDirectoryInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -337,6 +343,9 @@ open class Matcher
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Matcher_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -632,6 +641,9 @@ open class PatternMatchingResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_PatternMatchingResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch>)
@@ -753,6 +765,9 @@ open class DirectoryInfoBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase> EnumerateFileSystemInfos()
@@ -843,6 +858,9 @@ open class DirectoryInfoWrapper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoWrapper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1013,6 +1031,9 @@ open class FileInfoBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // FileInfoBase
@@ -1031,6 +1052,9 @@ open class FileInfoWrapper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoWrapper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1147,6 +1171,9 @@ open class FileSystemInfoBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_FullName()
@@ -1251,6 +1278,9 @@ open class ILinearPattern
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1293,6 +1323,9 @@ open class IPathSegment
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1343,6 +1376,9 @@ open class IPattern
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1401,6 +1437,9 @@ open class IPatternContext
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1491,6 +1530,9 @@ open class IRaggedPattern
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1578,6 +1620,9 @@ open class MatcherContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>, System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>, Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase, System.StringComparison)
@@ -1624,6 +1669,9 @@ public final class PatternTestResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternTestResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1700,6 +1748,9 @@ open class CurrentPathSegment
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_CurrentPathSegment_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1751,6 +1802,9 @@ open class LiteralPathSegment
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_LiteralPathSegment_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1846,6 +1900,9 @@ open class ParentPathSegment
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_ParentPathSegment_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1897,6 +1954,9 @@ open class RecursiveWildcardSegment
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_RecursiveWildcardSegment_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1950,13 +2010,16 @@ open class WildcardPathSegment
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_WildcardPathSegment_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment MatchAll
     open class var MatchAll : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment> {
         get {
-        let __h = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_WildcardPathSegment_get_MatchAll();
-        let __return = (__h != nil) ? aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_WildcardPathSegment_get_MatchAll();
+        let __return = (__h___return != nil) ? aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -2073,6 +2136,9 @@ open class PatternContextLinear
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
@@ -2119,6 +2185,9 @@ public final class PatternContextLinear_FrameData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_FrameData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2177,6 +2246,9 @@ open class PatternContextLinearExclude
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
@@ -2211,6 +2283,9 @@ open class PatternContextLinearInclude
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearInclude_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2262,6 +2337,9 @@ open class PatternContextRagged
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2321,6 +2399,9 @@ public final class PatternContextRagged_FrameData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public var Stem : Optional<dotnet.System.String> {
@@ -2378,6 +2459,9 @@ open class PatternContextRaggedExclude
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
@@ -2412,6 +2496,9 @@ open class PatternContextRaggedInclude
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedInclude_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2464,6 +2551,9 @@ open class PatternContext_1<TFrame : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1_get_type_handle(TFrame.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2541,6 +2631,9 @@ open class PatternBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileSystemGlobbing_Internal_Patterns_PatternBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -7,18 +7,6 @@
 extern void (*_sg_resolve_jumptable)(const char*, int, void*);
 
 struct {
-    TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_get_type_handle)(void);
-    void (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL convention);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL httpMethods, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL handler);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate);
@@ -26,6 +14,15 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL httpMethods, SG_HNDL_NONNULL requestDelegate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_RequestDelegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL httpMethods, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL handler);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRoutingApplicationBuilderExtensions_IApplicationBuilder__UseRouting_0__1__IApplicationBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_EndpointRoutingApplicationBuilderExtensions_IApplicationBuilder__UseEndpoints_0__2__IApplicationBuilder_System_Action_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL configure);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_FallbackEndpointRouteBuilderExtensions_get_DefaultPattern)(void);
@@ -36,6 +33,10 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MapRouteRouteBuilderExtensions_IRouteBuilder__MapRoute_0__4__IRouteBuilder_String_String_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MapRouteRouteBuilderExtensions_IRouteBuilder__MapRoute_0__5__IRouteBuilder_String_String_Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults, SG_HNDL_NULLABLE constraints);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MapRouteRouteBuilderExtensions_IRouteBuilder__MapRoute_0__6__IRouteBuilder_String_String_Object_Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults, SG_HNDL_NULLABLE constraints, SG_HNDL_NULLABLE dataTokens);
+    TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_get_type_handle)(void);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpointConventionBuilders);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL convention);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouterMiddleware_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouterMiddleware_ctor_0__3__RequestDelegate_ILoggerFactory_IRouter)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next, SG_HNDL_NONNULL loggerFactory, SG_HNDL_NONNULL router);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RouterMiddleware_Task__Invoke_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext);
@@ -60,6 +61,22 @@ struct {
     GVAL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_RoutingEndpointConventionBuilderExtensions_UTBuilder__WithGroupName_1__2__UTBuilder_String)(TYP TBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL builder, SG_HNDL_NONNULL endpointGroupName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Builder_RoutingEndpointConventionBuilderExtensions_UTBuilder__WithGroupName_1__2__UTBuilder_String)(TYP TBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown);
     GVAL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Builder_RoutingEndpointConventionBuilderExtensions_UTBuilder__WithGroupName_1__2__UTBuilder_String)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL builder, SG_HNDL_NONNULL endpointGroupName);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ExcludeFromDescription_0__1__RouteHandlerBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray)(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray)(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_0__5__RouteHandlerBuilder_i32_Type_String_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE responseType, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesProblem_0__3__RouteHandlerBuilder_i32_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesValidationProblem_0__3__RouteHandlerBuilder_i32_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__WithTags_0__2__RouteHandlerBuilder_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL tags);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__4__RouteHandlerBuilder_Type_String_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__5__RouteHandlerBuilder_Type_bool_String_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_CompositeEndpointDataSource_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_CompositeEndpointDataSource_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Routing_EndpointDataSource_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpointDataSources);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_CompositeEndpointDataSource_IChangeToken__GetChangeToken_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -114,41 +131,52 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_System_Collections_Generic_IReadOnlyDictionary_string_object___get_DataTokens_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_bool__get_IsDynamic_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_get_type_handle)(TYP TAddress);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress)(TYP TAddress, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL address);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress)(TYP TAddress, SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL address);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_cast)(TYP TAddress, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_create)(TYP TAddress, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL address), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_String__get_EndpointGroupName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_String__get_EndpointName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IServiceProvider__get_ServiceProvider_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_System_Collections_Generic_ICollection_Microsoft_AspNetCore_Routing_EndpointDataSource___get_DataSources_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_bool__get_ExcludeFromDescription_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHostMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHostMetadata_System_Collections_Generic_IReadOnlyList_string___get_Hosts_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHostMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHostMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_bool__get_AcceptCorsPreflight_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_System_Collections_Generic_IReadOnlyList_string___get_HttpMethods_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL inlineConstraint);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL inlineConstraint), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_INamedRouter_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_INamedRouter_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_INamedRouter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_INamedRouter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_IApplicationBuilder__get_ApplicationBuilder_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -157,18 +185,23 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_IServiceProvider__get_ServiceProvider_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_System_Collections_Generic_IList_Microsoft_AspNetCore_Routing_IRouter___get_Routes_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteCollection_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL router);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteCollection_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteCollection_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL router), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_String__get_RouteName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_bool__get_SuppressLinkGeneration_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_bool__get_SuppressMatching_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_InlineRouteParameterParser_TemplatePart__ParseRouteParameter_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeParameter);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_LinkGeneratorEndpointNameAddressExtensions_String__GetPathByName_0__7__LinkGenerator_HttpContext_String_Object_System_Nullable_Microsoft_AspNetCore_Http_PathString__FragmentString_LinkOptions)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL endpointName, SG_HNDL_NULLABLE values, SG_HNDL_NULLABLE pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_LinkGeneratorEndpointNameAddressExtensions_String__GetPathByName_0__6__LinkGenerator_String_Object_PathString_FragmentString_LinkOptions)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL endpointName, SG_HNDL_NULLABLE values, SG_HNDL_NONNULL pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options);
@@ -280,6 +313,11 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandler_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandler_Task__RouteAsync_0__1__RouteContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandler_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_get_type_handle)(void);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_bool__get_ThrowOnBadRequest_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_void__set_ThrowOnBadRequest_0__1__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteNameMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteNameMetadata_ctor_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE routeName);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_RouteNameMetadata_String__get_RouteName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -455,6 +493,8 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_type_handle)(TYP TMetadata);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_Default)(void);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_set_Default)(SG_HNDL_NONNULL __v);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_i32__Compare_0__2__Endpoint_Endpoint)(TYP TMetadata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE x, SG_HNDL_NULLABLE y);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_i32__Compare_0__2__Endpoint_Endpoint)(TYP TMetadata, SG_HNDL_NULLABLE * _Nonnull __thrown);
     int32_t (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_i32__Compare_0__2__Endpoint_Endpoint)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE x, SG_HNDL_NULLABLE y);
@@ -481,18 +521,22 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_System_Collections_Generic_IComparer_Microsoft_AspNetCore_Http_Endpoint___get_Comparer_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoints);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL candidates);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL candidates), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoints);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoints);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t exitDestination, SG_HNDL_NONNULL edges);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t exitDestination, SG_HNDL_NONNULL edges), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parameterName, SG_HNDL_NONNULL literal);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameterName, SG_HNDL_NONNULL literal), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable_i32__GetDestination_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -608,7 +652,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_RouteTemplate_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_TemplateValuesResult__GetValues_0__2__RouteValueDictionary_RouteValueDictionary)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE ambientValues, SG_HNDL_NONNULL values);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpContext, SG_HNDL_NONNULL combinedValues, SG_HNDL_NONNULL* _Nonnull __parameterName_out_ptr, SG_HNDL_NONNULL* _Nonnull __constraint_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpContext, SG_HNDL_NONNULL combinedValues, SG_HNDL_NULLABLE* _Nonnull __parameterName_out_ptr, SG_HNDL_NULLABLE* _Nonnull __constraint_out_ptr);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_String__BindValues_0__1__RouteValueDictionary)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL acceptedValues);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__RoutePartsEqual_0__2__Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE a, SG_HNDL_NULLABLE b);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -751,101 +795,6 @@ static void my_init() {
     _sg_resolve_jumptable("Microsoft_AspNetCore_Routing", 28, &_g_Microsoft_AspNetCore_Routing);
 }
 
-TYP Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_get_type_handle(void) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_get_type_handle) {
-        my_init();
-    }
-    TYP ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_get_type_handle();
-    return ret;
-}
-
-void Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL convention) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_) {
-        my_init();
-    }
-    _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(__thrown, __self_h, convention);
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_cast) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_cast(__thrown, __h);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL httpMethods, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(__thrown, endpoints, pattern, httpMethods, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(__thrown, endpoints, handler);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
-    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
-    return ret;
-}
-
 SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_RequestDelegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL requestDelegate) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_RequestDelegate) {
         my_init();
@@ -899,6 +848,78 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEnd
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_IEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_RequestDelegate(__thrown, endpoints, pattern, requestDelegate);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL httpMethods, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(__thrown, endpoints, pattern, httpMethods, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(__thrown, endpoints, pattern, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(__thrown, endpoints, handler);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NONNULL handler) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(__thrown, endpoints, pattern, handler);
     return ret;
 }
 
@@ -978,6 +999,37 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_MapRouteRouteBuilderExtensions_IRou
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_MapRouteRouteBuilderExtensions_IRouteBuilder__MapRoute_0__6__IRouteBuilder_String_String_Object_Object_Object(__thrown, routeBuilder, name, template_, defaults, constraints, dataTokens);
+    return ret;
+}
+
+TYP Microsoft_AspNetCore_Builder_RouteHandlerBuilder_get_type_handle(void) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_get_type_handle) {
+        my_init();
+    }
+    TYP ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_get_type_handle();
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_RouteHandlerBuilder_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpointConventionBuilders) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_(__thrown, endpointConventionBuilders);
+    return ret;
+}
+
+void Microsoft_AspNetCore_Builder_RouteHandlerBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL convention) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(__thrown, __self_h, convention);
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_RouteHandlerBuilder_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_cast) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Builder_RouteHandlerBuilder_cast(__thrown, __h);
     return ret;
 }
 
@@ -1170,6 +1222,134 @@ GVAL invoke_Microsoft_AspNetCore_Builder_RoutingEndpointConventionBuilderExtensi
         my_init();
     }
     GVAL ret = _g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Builder_RoutingEndpointConventionBuilderExtensions_UTBuilder__WithGroupName_1__2__UTBuilder_String(____hdel, __thrown, builder, endpointGroupName);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ExcludeFromDescription_0__1__RouteHandlerBuilder(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ExcludeFromDescription_0__1__RouteHandlerBuilder) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ExcludeFromDescription_0__1__RouteHandlerBuilder(__thrown, builder);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(TResponse, __thrown, builder, statusCode, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(TResponse, __thrown);
+    return ret;
+}
+
+SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_1__4__RouteHandlerBuilder_i32_String_StringArray(____hdel, __thrown, builder, statusCode, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_0__5__RouteHandlerBuilder_i32_Type_String_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE responseType, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_0__5__RouteHandlerBuilder_i32_Type_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_0__5__RouteHandlerBuilder_i32_Type_String_StringArray(__thrown, builder, statusCode, responseType, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesProblem_0__3__RouteHandlerBuilder_i32_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesProblem_0__3__RouteHandlerBuilder_i32_String) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesProblem_0__3__RouteHandlerBuilder_i32_String(__thrown, builder, statusCode, contentType);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesValidationProblem_0__3__RouteHandlerBuilder_i32_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesValidationProblem_0__3__RouteHandlerBuilder_i32_String) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesValidationProblem_0__3__RouteHandlerBuilder_i32_String(__thrown, builder, statusCode, contentType);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__WithTags_0__2__RouteHandlerBuilder_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL tags) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__WithTags_0__2__RouteHandlerBuilder_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__WithTags_0__2__RouteHandlerBuilder_StringArray(__thrown, builder, tags);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(TRequest, __thrown, builder, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(TRequest, __thrown);
+    return ret;
+}
+
+SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__3__RouteHandlerBuilder_String_StringArray(____hdel, __thrown, builder, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(TRequest, __thrown, builder, isOptional, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_specialize_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(TRequest, __thrown);
+    return ret;
+}
+
+SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_invoke_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_1__4__RouteHandlerBuilder_bool_String_StringArray(____hdel, __thrown, builder, isOptional, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__4__RouteHandlerBuilder_Type_String_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__4__RouteHandlerBuilder_Type_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__4__RouteHandlerBuilder_Type_String_StringArray(__thrown, builder, requestType, contentType, additionalContentTypes);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__5__RouteHandlerBuilder_Type_bool_String_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, int32_t isOptional, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__5__RouteHandlerBuilder_Type_bool_String_StringArray) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__5__RouteHandlerBuilder_Type_bool_String_StringArray(__thrown, builder, requestType, isOptional, contentType, additionalContentTypes);
     return ret;
 }
 
@@ -1605,6 +1785,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IDataTokensMetadata_cast(SG_HNDL_NU
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IDataTokensMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDataTokensMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_get_type_handle) {
         my_init();
@@ -1626,6 +1814,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_cast(SG_HN
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1669,6 +1865,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_cast(TYP T
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_create(TYP TAddress, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL address), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_create(TAddress, __thrown, __cb_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress, __pdata_Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Http_Endpoint___FindEndpoints_0__1__TAddress, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_get_type_handle) {
         my_init();
@@ -1693,6 +1897,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IEndpointNameMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_get_type_handle) {
         my_init();
@@ -1714,6 +1926,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointNameMetadata_cast(SG_HNDL_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointNameMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointNameMetadata_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1757,6 +1977,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_cast(SG_HNDL_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0, __pdata_Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_IApplicationBuilder__CreateApplicationBuilder_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_get_type_handle) {
         my_init();
@@ -1781,6 +2009,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IHostMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHostMetadata_get_type_handle) {
         my_init();
@@ -1802,6 +2038,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IHostMetadata_cast(SG_HNDL_NULLABLE
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHostMetadata_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IHostMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHostMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHostMetadata_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1837,6 +2081,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IHttpMethodMetadata_cast(SG_HNDL_NU
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IHttpMethodMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IHttpMethodMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IInlineConstraintResolver_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_get_type_handle) {
         my_init();
@@ -1861,6 +2113,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IInlineConstraintResolver_cast(SG_H
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IInlineConstraintResolver_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL inlineConstraint), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_create(__thrown, __cb_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String, __pdata_Microsoft_AspNetCore_Routing_IInlineConstraintResolver_IRouteConstraint__ResolveConstraint_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_INamedRouter_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_INamedRouter_get_type_handle) {
         my_init();
@@ -1882,6 +2142,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_INamedRouter_cast(SG_HNDL_NULLABLE 
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_INamedRouter_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_INamedRouter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_INamedRouter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_INamedRouter_create(__thrown, __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, __deinit);
     return ret;
 }
 
@@ -1948,6 +2216,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteBuilder_cast(SG_HNDL_NULLABLE
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0, __pdata_Microsoft_AspNetCore_Routing_IRouteBuilder_IRouter__Build_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_IRouteCollection_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteCollection_get_type_handle) {
         my_init();
@@ -1968,6 +2244,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteCollection_cast(SG_HNDL_NULLA
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteCollection_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteCollection_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL router), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteCollection_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteCollection_create(__thrown, __cb_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter, __pdata_Microsoft_AspNetCore_Routing_IRouteCollection_void__Add_0__1__IRouter, __cb_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, __pdata_Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext, __cb_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, __pdata_Microsoft_AspNetCore_Routing_IRouter_VirtualPathData__GetVirtualPath_0__1__VirtualPathContext, __deinit);
     return ret;
 }
 
@@ -1995,6 +2279,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteNameMetadata_cast(SG_HNDL_NUL
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_IRouteNameMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_IRouteNameMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_get_type_handle) {
         my_init();
@@ -2019,6 +2311,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_get_type_handle) {
         my_init();
@@ -2040,6 +2340,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_cast(SG_H
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_create(__thrown, __deinit);
     return ret;
 }
 
@@ -2916,6 +3224,45 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_RouteHandler_cast(SG_HNDL_NULLABLE 
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandler_cast(__thrown, __h);
+    return ret;
+}
+
+TYP Microsoft_AspNetCore_Routing_RouteHandlerOptions_get_type_handle(void) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_get_type_handle) {
+        my_init();
+    }
+    TYP ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_get_type_handle();
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_RouteHandlerOptions_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_ctor_0__0) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_ctor_0__0(__thrown);
+    return ret;
+}
+
+int32_t Microsoft_AspNetCore_Routing_RouteHandlerOptions_bool__get_ThrowOnBadRequest_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_bool__get_ThrowOnBadRequest_0__0) {
+        my_init();
+    }
+    int32_t ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_bool__get_ThrowOnBadRequest_0__0(__thrown, __self_h);
+    return ret;
+}
+
+void Microsoft_AspNetCore_Routing_RouteHandlerOptions_void__set_ThrowOnBadRequest_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_void__set_ThrowOnBadRequest_0__1__bool) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_void__set_ThrowOnBadRequest_0__1__bool(__thrown, __self_h, value);
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_RouteHandlerOptions_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_cast) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_RouteHandlerOptions_cast(__thrown, __h);
     return ret;
 }
 
@@ -4304,6 +4651,21 @@ TYP Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_type_ha
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_Default(void) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_Default) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_Default();
+    return ret;
+}
+
+void Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_set_Default(SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_set_Default) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_set_Default(__v);
+}
+
 int32_t Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_i32__Compare_0__2__Endpoint_Endpoint(TYP TMetadata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE x, SG_HNDL_NULLABLE y) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_i32__Compare_0__2__Endpoint_Endpoint) {
         my_init();
@@ -4512,6 +4874,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_ca
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_get_type_handle) {
         my_init();
@@ -4541,6 +4911,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL candidates), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_create(__thrown, __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __cb_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet, __pdata_Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet, __deinit);
     return ret;
 }
 
@@ -4584,6 +4962,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_cast(SG
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t exitDestination, SG_HNDL_NONNULL edges), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_create(__thrown, __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_bool__AppliesToEndpoints_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge___GetEdges_0__1__System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Http_Endpoint_, __cb_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_, __pdata_Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_PolicyJumpTable__BuildJumpTable_0__2__i32_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_get_type_handle) {
         my_init();
@@ -4605,6 +4991,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatch
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameterName, SG_HNDL_NONNULL literal), const void* _Nonnull __pdata_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_create(__thrown, __cb_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String, __pdata_Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_bool__MatchesLiteral_0__2__String_String, __deinit);
     return ret;
 }
 
@@ -5526,7 +5920,7 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_Template_TemplateBinder_TemplateVa
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpContext, SG_HNDL_NONNULL combinedValues, SG_HNDL_NONNULL* _Nonnull __parameterName_out_ptr, SG_HNDL_NONNULL* _Nonnull __constraint_out_ptr) {
+int32_t Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpContext, SG_HNDL_NONNULL combinedValues, SG_HNDL_NULLABLE* _Nonnull __parameterName_out_ptr, SG_HNDL_NULLABLE* _Nonnull __constraint_out_ptr) {
     if (!_g_Microsoft_AspNetCore_Routing._fp_Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint) {
         my_init();
     }

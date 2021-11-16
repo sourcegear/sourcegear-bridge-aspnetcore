@@ -54,7 +54,7 @@ public struct EncoderServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddWebEncoders(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddWebEncoders(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions>(setupAction);
         return try AddWebEncoders(services: services, setupAction: del_setupAction);
     }
@@ -78,6 +78,9 @@ public final class WebEncoderOptions
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_WebEncoders_WebEncoderOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -151,6 +154,9 @@ public final class HtmlTestEncoder
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_WebEncoders_Testing_HtmlTestEncoder_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -281,6 +287,9 @@ open class JavaScriptTestEncoder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_WebEncoders_Testing_JavaScriptTestEncoder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -409,6 +418,9 @@ open class UrlTestEncoder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_WebEncoders_Testing_UrlTestEncoder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -543,7 +555,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.EncoderServiceCollectionExtensions.AddWebEncoders(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddWebEncoders(setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddWebEncoders(setupAction : @escaping (aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.WebEncoders.WebEncoderOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.EncoderServiceCollectionExtensions.AddWebEncoders(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

@@ -22,6 +22,8 @@ void Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_void__set_Vary
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 
 #ifdef __cplusplus
 }

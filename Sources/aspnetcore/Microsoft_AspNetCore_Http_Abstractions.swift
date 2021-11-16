@@ -22,6 +22,9 @@ open class EndpointBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_EndpointBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Http.Endpoint Build()
@@ -70,7 +73,7 @@ open class EndpointBuilder
         }
     }
     // delegate closure overload
-    open func set_RequestDelegate(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_RequestDelegate(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(value);
         return try set_RequestDelegate(value: del_value);
     }
@@ -168,6 +171,9 @@ open class IApplicationBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_IApplicationBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -198,7 +204,7 @@ open class IApplicationBuilder
         }
     }
     // delegate closure overload
-    open func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    open func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate,aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -303,6 +309,9 @@ open class IEndpointConventionBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -331,7 +340,7 @@ open class IEndpointConventionBuilder
         }
     }
     // delegate closure overload
-    open func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
+    open func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
         let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
         return try Add(convention: del_convention);
     }
@@ -340,6 +349,34 @@ open class IEndpointConventionBuilder
 
 // type: Microsoft.AspNetCore.Builder.MapExtensions
 public struct MapExtensions {
+    // Microsoft.AspNetCore.Builder.IApplicationBuilder Map(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
+// docid: M:Microsoft.AspNetCore.Builder.MapExtensions.Map(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder})
+    /**
+    
+            Branches the request pipeline based on matches of the given request path. If the request path starts with
+            the given path, the branch is executed.
+            
+
+    - Parameter app: The  instance.
+    - Parameter pathMatch: The request path to match.
+    - Parameter configuration: The branch to take for positive path matches.
+    - Returns: The  instance.
+
+    */
+    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : dotnet.System.String, configuration : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_MapExtensions_IApplicationBuilder__Map_0__3__IApplicationBuilder_String_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_(&__thrown, app.get_handle(), pathMatch.get_handle(), configuration.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl : __return);
+        }
+    }
+    // delegate closure overload
+    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : dotnet.System.String, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+        let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
+        return try Map(app: app, pathMatch: pathMatch, configuration: del_configuration);
+    }
     // Microsoft.AspNetCore.Builder.IApplicationBuilder Map(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString, System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
 // docid: M:Microsoft.AspNetCore.Builder.MapExtensions.Map(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Http.PathString,System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder})
     /**
@@ -364,7 +401,7 @@ public struct MapExtensions {
         }
     }
     // delegate closure overload
-    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try Map(app: app, pathMatch: pathMatch, configuration: del_configuration);
     }
@@ -393,7 +430,7 @@ public struct MapExtensions {
         }
     }
     // delegate closure overload
-    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, preserveMatchedPathSegment : Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func Map(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, preserveMatchedPathSegment : Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try Map(app: app, pathMatch: pathMatch, preserveMatchedPathSegment: preserveMatchedPathSegment, configuration: del_configuration);
     }
@@ -425,7 +462,7 @@ public struct MapWhenExtensions {
         }
     }
     // delegate closure overload
-    public static func MapWhen(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, predicate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func MapWhen(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, predicate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_predicate = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(predicate);
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try MapWhen(app: app, predicate: del_predicate, configuration: del_configuration);
@@ -455,7 +492,7 @@ public struct RunExtensions {
         }
     }
     // delegate closure overload
-    public static func Run(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    public static func Run(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try Run(app: app, handler: del_handler);
     }
@@ -496,7 +533,7 @@ public struct UseExtensions {
         }
     }
     // delegate closure overload
-    public static func Use(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, Optional<dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func Use(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext, dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>,dotnet.System.Threading.Tasks.Task>(middleware);
         return try Use(app: app, middleware: del_middleware);
     }
@@ -523,7 +560,7 @@ public struct UseExtensions {
         }
     }
     // delegate closure overload
-    public static func Use(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func Use(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext, aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate,dotnet.System.Threading.Tasks.Task>(middleware);
         return try Use(app: app, middleware: del_middleware);
     }
@@ -609,7 +646,7 @@ public struct UseWhenExtensions {
         }
     }
     // delegate closure overload
-    public static func UseWhen(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, predicate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseWhen(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, predicate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_predicate = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(predicate);
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try UseWhen(app: app, predicate: del_predicate, configuration: del_configuration);
@@ -633,6 +670,9 @@ open class MapMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_Extensions_MapMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -691,6 +731,9 @@ open class MapOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_Extensions_MapOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -754,7 +797,7 @@ open class MapOptions
         }
     }
     // delegate closure overload
-    open func set_Branch(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_Branch(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(value);
         return try set_Branch(value: del_value);
     }
@@ -840,6 +883,9 @@ open class MapWhenMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_Extensions_MapWhenMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions)
@@ -898,6 +944,9 @@ open class MapWhenOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_Extensions_MapWhenOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -938,7 +987,7 @@ open class MapWhenOptions
         }
     }
     // delegate closure overload
-    open func set_Predicate(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool) throws {
+    open func set_Predicate(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(value);
         return try set_Predicate(value: del_value);
     }
@@ -969,7 +1018,7 @@ open class MapWhenOptions
         }
     }
     // delegate closure overload
-    open func set_Branch(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_Branch(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(value);
         return try set_Branch(value: del_value);
     }
@@ -1017,6 +1066,9 @@ open class UsePathBaseMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_Extensions_UsePathBaseMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1083,6 +1135,9 @@ open class ICorsMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1113,6 +1168,9 @@ open class BadHttpRequestException
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_BadHttpRequestException_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1231,6 +1289,9 @@ open class ConnectionInfo
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_ConnectionInfo_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<System.Security.Cryptography.X509Certificates.X509Certificate2> GetClientCertificateAsync(System.Threading.CancellationToken)
@@ -1243,13 +1304,13 @@ open class ConnectionInfo
     - Returns: Asynchronously returns an . Can be null.
 
     */
-    open func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2> {
+    open func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_ConnectionInfo_System_Threading_Tasks_Task_System_Security_Cryptography_X509Certificates_X509Certificate2___GetClientCertificateAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // void RequestClose()
@@ -1513,6 +1574,9 @@ open class CookieBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_CookieBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1990,6 +2054,9 @@ open class Endpoint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Endpoint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Http.EndpointMetadataCollection, System.String)
@@ -2177,6 +2244,9 @@ public final class EndpointMetadataCollection
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_EndpointMetadataCollection_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.Http.EndpointMetadataCollection Empty
@@ -2262,9 +2332,6 @@ public final class EndpointMetadataCollection
     }
     // [IsSpecialName] System.Object get_Item(System.Int32)
 // docid: M:Microsoft.AspNetCore.Http.EndpointMetadataCollection.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(index : Swift.Int32) throws -> dotnet.System.Object {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_EndpointMetadataCollection_Object__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -2304,6 +2371,9 @@ public final class EndpointMetadataCollection_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_EndpointMetadataCollection_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2410,6 +2480,9 @@ public final class FragmentString
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_FragmentString_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2783,6 +2856,9 @@ public final class HostString
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HostString_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -3137,6 +3213,9 @@ open class HttpContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HttpContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4064,6 +4143,9 @@ open class HttpRequest
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HttpRequest_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.IFormCollection> ReadFormAsync(System.Threading.CancellationToken)
@@ -4076,13 +4158,13 @@ open class HttpRequest
     - Returns: 
 
     */
-    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
+    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpRequest_System_Threading_Tasks_Task_Microsoft_AspNetCore_Http_IFormCollection___ReadFormAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.HttpContext get_HttpContext()
@@ -4734,6 +4816,9 @@ open class HttpResponse
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HttpResponse_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void OnStarting(System.Func<System.Object,System.Threading.Tasks.Task>, System.Object)
@@ -4757,7 +4842,7 @@ open class HttpResponse
         }
     }
     // delegate closure overload
-    open func OnStarting(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnStarting(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnStarting(callback: del_callback, state: state);
     }
@@ -4805,7 +4890,7 @@ open class HttpResponse
         }
     }
     // delegate closure overload
-    open func OnCompleted(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnCompleted(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnCompleted(callback: del_callback, state: state);
     }
@@ -4916,13 +5001,13 @@ open class HttpResponse
 
     - Parameter cancellationToken: 
     */
-    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponse_Task__StartAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CompleteAsync()
@@ -4936,13 +5021,13 @@ open class HttpResponse
     - Returns: 
 
     */
-    open func CompleteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func CompleteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponse_Task__CompleteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.HttpContext get_HttpContext()
@@ -5217,13 +5302,13 @@ public struct HttpResponseWritingExtensions {
     - Returns: A task that represents the completion of the write operation.
 
     */
-    public static func WriteAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, text : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, text : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseWritingExtensions_Task__WriteAsync_0__3__HttpResponse_String_CancellationToken(&__thrown, response.get_handle(), text.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Text.Encoding, System.Threading.CancellationToken)
@@ -5240,13 +5325,13 @@ public struct HttpResponseWritingExtensions {
     - Returns: A task that represents the completion of the write operation.
 
     */
-    public static func WriteAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, text : dotnet.System.String, encoding : dotnet.System.Text.Encoding, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, text : dotnet.System.String, encoding : dotnet.System.Text.Encoding, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseWritingExtensions_Task__WriteAsync_0__4__HttpResponse_String_Encoding_CancellationToken(&__thrown, response.get_handle(), text.get_handle(), encoding.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HttpResponseWritingExtensions
@@ -5266,6 +5351,9 @@ open class IHttpContextAccessor
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IHttpContextAccessor_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5319,6 +5407,9 @@ open class IHttpContextFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IHttpContextFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5385,6 +5476,9 @@ open class IMiddleware
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IMiddleware_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5406,19 +5500,19 @@ open class IMiddleware
     - Returns: A  that represents the execution of this middleware.
 
     */
-    open func InvokeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IMiddleware_Task__InvokeAsync_0__2__HttpContext_RequestDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func InvokeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(next);
-        return try InvokeAsync(context: context, next: del_next);
+        return try await InvokeAsync(context: context, next: del_next);
     }
 } // IMiddleware
 
@@ -5437,6 +5531,9 @@ open class IMiddlewareFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IMiddlewareFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5507,6 +5604,9 @@ open class IResult
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IResult_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5527,13 +5627,13 @@ open class IResult
     - Returns: A task that represents the asynchronous execute operation.
 
     */
-    open func ExecuteAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IResult_Task__ExecuteAsync_0__1__HttpContext(&__thrown, self.get_handle(), httpContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IResult
@@ -5553,6 +5653,9 @@ public final class PathString
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_PathString_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6153,6 +6256,9 @@ public final class QueryString
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_QueryString_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.Http.QueryString Empty
@@ -6564,6 +6670,9 @@ public final class RequestDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_RequestDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Http.HttpContext)
@@ -6603,16 +6712,36 @@ public final class RequestDelegate
         return dotnet.System.Threading.Tasks.Task(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws
+    public convenience init(_ __closure_Invoke : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, context : NonnullHandle) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(aspnetcore.Microsoft.AspNetCore.Http.HttpContext(hndl: context));
-                return __copy_handle(ret.get_handle());
+                let tcs = try System.Threading.Tasks.TaskCompletionSource();
+                Task
+                {
+                    do
+                    {
+                    try await __closure_Invoke(aspnetcore.Microsoft.AspNetCore.Http.HttpContext(hndl: context));
+                    try tcs.SetResult();
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -6626,24 +6755,24 @@ public final class RequestDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, context : NonnullHandle) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, context : NonnullHandle) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
-            return f(thrown, context);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
+            return f_interlude(thrown, context);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Http_RequestDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Http.HttpContext)
@@ -6673,6 +6802,9 @@ public final class RequestDelegateResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_RequestDelegateResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7756,6 +7888,9 @@ open class WebSocketManager
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_WebSocketManager_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<System.Net.WebSockets.WebSocket> AcceptWebSocketAsync()
@@ -7768,13 +7903,13 @@ open class WebSocketManager
     - Returns: A task representing the completion of the transition.
 
     */
-    open func AcceptWebSocketAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Net.WebSockets.WebSocket> {
+    open func AcceptWebSocketAsync() async throws -> dotnet.System.Net.WebSockets.WebSocket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_WebSocketManager_System_Threading_Tasks_Task_System_Net_WebSockets_WebSocket___AcceptWebSocketAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<System.Net.WebSockets.WebSocket> AcceptWebSocketAsync(System.String)
@@ -7788,13 +7923,13 @@ open class WebSocketManager
     - Returns: A task representing the completion of the transition.
 
     */
-    open func AcceptWebSocketAsync(subProtocol : Optional<dotnet.System.String>) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Net.WebSockets.WebSocket> {
+    open func AcceptWebSocketAsync(subProtocol : Optional<dotnet.System.String>) async throws -> dotnet.System.Net.WebSockets.WebSocket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_WebSocketManager_System_Threading_Tasks_Task_System_Net_WebSockets_WebSocket___AcceptWebSocketAsync_0__1__String(&__thrown, self.get_handle(), subProtocol?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<System.Net.WebSockets.WebSocket> AcceptWebSocketAsync(Microsoft.AspNetCore.Http.WebSocketAcceptContext)
@@ -7808,13 +7943,13 @@ open class WebSocketManager
     - Returns: 
 
     */
-    open func AcceptWebSocketAsync(acceptContext : aspnetcore.Microsoft.AspNetCore.Http.WebSocketAcceptContext) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Net.WebSockets.WebSocket> {
+    open func AcceptWebSocketAsync(acceptContext : aspnetcore.Microsoft.AspNetCore.Http.WebSocketAcceptContext) async throws -> dotnet.System.Net.WebSockets.WebSocket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_WebSocketManager_System_Threading_Tasks_Task_System_Net_WebSockets_WebSocket___AcceptWebSocketAsync_0__1__WebSocketAcceptContext(&__thrown, self.get_handle(), acceptContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_IsWebSocketRequest()
@@ -7883,6 +8018,9 @@ open class IEndpointFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IEndpointFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -7937,6 +8075,9 @@ open class IRouteValuesFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IRouteValuesFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -7990,6 +8131,9 @@ open class IAcceptsMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8025,6 +8169,17 @@ open class IAcceptsMetadata
         }
         }
     }
+    // [IsSpecialName] bool get_IsOptional()
+// docid: M:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata.get_IsOptional
+    open func get_IsOptional() throws -> Bool {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata_bool__get_IsOptional_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
 } // IAcceptsMetadata
 
 
@@ -8042,6 +8197,9 @@ open class IFromBodyMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IFromBodyMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8080,6 +8238,9 @@ open class IFromHeaderMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IFromHeaderMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8123,6 +8284,9 @@ open class IFromQueryMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IFromQueryMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8164,6 +8328,9 @@ open class IFromRouteMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IFromRouteMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8207,6 +8374,9 @@ open class IFromServiceMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Metadata_IFromServiceMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8217,6 +8387,114 @@ open class IFromServiceMetadata
     deinit { __drop_handle(self.h); }
 
 } // IFromServiceMetadata
+
+
+// type: Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata
+    /**
+    
+            Defines a contract for outline the response type returned from an endpoint.
+            
+
+    */
+open class IProducesResponseTypeMetadata
+    :
+    SGBridgeGenericValue,
+    Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata
+{
+    open class func get_type_handle() -> TypeHandle {
+        return Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    let h : NonnullHandle;
+    public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
+    public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
+    public required init(gval: GVal) { self.h = NonnullHandle(bitPattern: Swift.Int(truncatingIfNeeded: gval))!; }
+    public required init(hndl: NonnullHandle) { self.h = hndl; }
+    public func get_handle() -> NonnullHandle { return self.h; }
+
+    deinit { __drop_handle(self.h); }
+
+    // [IsSpecialName] System.Type get_Type()
+// docid: M:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata.get_Type
+    open func get_Type() throws -> Optional<dotnet.System.Type_> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata_Type__get_Type_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return dotnet.System.Type_(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
+    // [IsSpecialName] System.Int32 get_StatusCode()
+// docid: M:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata.get_StatusCode
+    open func get_StatusCode() throws -> Swift.Int32 {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata_i32__get_StatusCode_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return __return;
+        }
+    }
+    // [IsSpecialName] System.Collections.Generic.IEnumerable<System.String> get_ContentTypes()
+// docid: M:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata.get_ContentTypes
+    open func get_ContentTypes() throws -> dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata_System_Collections_Generic_IEnumerable_string___get_ContentTypes_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.Collections.Generic.IEnumerable_1(hndl : __return);
+        }
+    }
+} // IProducesResponseTypeMetadata
+
+
+// type: Microsoft.AspNetCore.Http.Metadata.ITagsMetadata
+    /**
+    
+            Defines a contract used to specify a collection of tags in .
+            
+
+    */
+open class ITagsMetadata
+    :
+    SGBridgeGenericValue,
+    Microsoft_AspNetCore_Http_Metadata_ITagsMetadata
+{
+    open class func get_type_handle() -> TypeHandle {
+        return Microsoft_AspNetCore_Http_Metadata_ITagsMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    let h : NonnullHandle;
+    public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
+    public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
+    public required init(gval: GVal) { self.h = NonnullHandle(bitPattern: Swift.Int(truncatingIfNeeded: gval))!; }
+    public required init(hndl: NonnullHandle) { self.h = hndl; }
+    public func get_handle() -> NonnullHandle { return self.h; }
+
+    deinit { __drop_handle(self.h); }
+
+    // [IsSpecialName] System.Collections.Generic.IReadOnlyList<System.String> get_Tags()
+// docid: M:Microsoft.AspNetCore.Http.Metadata.ITagsMetadata.get_Tags
+    open func get_Tags() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Metadata_ITagsMetadata_System_Collections_Generic_IReadOnlyList_string___get_Tags_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.Collections.Generic.IReadOnlyList_1(hndl : __return);
+        }
+    }
+} // ITagsMetadata
 
 
 }
@@ -8238,6 +8516,9 @@ open class RouteValueDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteValueDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8369,11 +8650,12 @@ open class RouteValueDictionary
             
 
     */
-    open func Remove(key : dotnet.System.String, value : inout dotnet.System.Object) throws -> Bool {
+    open func Remove(key : dotnet.System.String, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Routing_RouteValueDictionary_bool__Remove_0__2__String_outObject(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -8406,11 +8688,12 @@ open class RouteValueDictionary
 // docid: M:Microsoft.AspNetCore.Routing.RouteValueDictionary.TryGetValue(System.String,System.Object@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout dotnet.System.Object) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Routing_RouteValueDictionary_bool__TryGetValue_0__2__String_outObject(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -8464,9 +8747,6 @@ open class RouteValueDictionary
     }
     // [IsSpecialName] System.Object get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.RouteValueDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_RouteValueDictionary_Object__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -8538,6 +8818,9 @@ public final class RouteValueDictionary_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteValueDictionary_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8727,13 +9010,37 @@ public protocol Microsoft_AspNetCore_Http_Metadata_IFromServiceMetadata
 {
 }
 
+public protocol Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata
+    :
+    SGBridgeGetHandle
+{
+}
+
+public protocol Microsoft_AspNetCore_Http_Metadata_ITagsMetadata
+    :
+    SGBridgeGetHandle
+{
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.IApplicationBuilder Map(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
+extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
+    public func Map(pathMatch : dotnet.System.String, configuration : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, configuration: configuration);
+    }
+    // delegate closure overload
+    public func Map(pathMatch : dotnet.System.String, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+        let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
+        return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, configuration: del_configuration);
+    }
+}
+
 // EXTENSION METHOD Microsoft.AspNetCore.Builder.IApplicationBuilder Map(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Http.PathString, System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
 extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
     public func Map(pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, configuration : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, configuration: configuration);
     }
     // delegate closure overload
-    public func Map(pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func Map(pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, configuration: del_configuration);
     }
@@ -8745,7 +9052,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, preserveMatchedPathSegment: preserveMatchedPathSegment, configuration: configuration);
     }
     // delegate closure overload
-    public func Map(pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, preserveMatchedPathSegment : Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func Map(pathMatch : aspnetcore.Microsoft.AspNetCore.Http.PathString, preserveMatchedPathSegment : Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapExtensions.Map(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), pathMatch: pathMatch, preserveMatchedPathSegment: preserveMatchedPathSegment, configuration: del_configuration);
     }
@@ -8757,7 +9064,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapWhenExtensions.MapWhen(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), predicate: predicate, configuration: configuration);
     }
     // delegate closure overload
-    public func MapWhen(predicate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func MapWhen(predicate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_predicate = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(predicate);
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try aspnetcore.Microsoft.AspNetCore.Builder.MapWhenExtensions.MapWhen(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), predicate: del_predicate, configuration: del_configuration);
@@ -8770,7 +9077,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         try aspnetcore.Microsoft.AspNetCore.Builder.RunExtensions.Run(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), handler: handler);
     }
     // delegate closure overload
-    public func Run(handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    public func Run(handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         try aspnetcore.Microsoft.AspNetCore.Builder.RunExtensions.Run(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), handler: del_handler);
     }
@@ -8782,7 +9089,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseExtensions.Use(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), middleware: middleware);
     }
     // delegate closure overload
-    public func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, Optional<dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext, dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>,dotnet.System.Threading.Tasks.Task>(middleware);
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseExtensions.Use(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), middleware: del_middleware);
     }
@@ -8794,7 +9101,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseExtensions.Use(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), middleware: middleware);
     }
     // delegate closure overload
-    public func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext, aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate,dotnet.System.Threading.Tasks.Task>(middleware);
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseExtensions.Use(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), middleware: del_middleware);
     }
@@ -8823,7 +9130,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseWhenExtensions.UseWhen(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), predicate: predicate, configuration: configuration);
     }
     // delegate closure overload
-    public func UseWhen(predicate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseWhen(predicate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_predicate = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(predicate);
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try aspnetcore.Microsoft.AspNetCore.Builder.UseWhenExtensions.UseWhen(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), predicate: del_predicate, configuration: del_configuration);
@@ -8874,15 +9181,15 @@ extension Microsoft_AspNetCore_Http_IHeaderDictionary {
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsync(text : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(response: self, text: text, cancellationToken: cancellationToken);
+    public func WriteAsync(text : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(response: self, text: text, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Text.Encoding, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsync(text : dotnet.System.String, encoding : dotnet.System.Text.Encoding, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(response: self, text: text, encoding: encoding, cancellationToken: cancellationToken);
+    public func WriteAsync(text : dotnet.System.String, encoding : dotnet.System.Text.Encoding, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseWritingExtensions.WriteAsync(response: self, text: text, encoding: encoding, cancellationToken: cancellationToken);
     }
 }
 

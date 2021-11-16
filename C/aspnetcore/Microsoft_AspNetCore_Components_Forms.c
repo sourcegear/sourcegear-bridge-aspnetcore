@@ -37,13 +37,13 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextDataAnnotationsExtensions_IDisposable__EnableDataAnnotationsValidation_0__1__EditContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL editContext);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__Remove_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_Object__get_Item_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_void__set_Item_0__2__Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_get_type_handle)(void);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __fieldIdentifier_in_ptr);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __fieldIdentifier_in_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_FieldIdentifier__get_FieldIdentifier_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Forms_FieldIdentifier_get_type_handle)(void);
@@ -315,7 +315,7 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_EditContextProperties_ctor
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr) {
+int32_t Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr) {
     if (!_g_Microsoft_AspNetCore_Components_Forms._fp_Microsoft_AspNetCore_Components_Forms_EditContextProperties_bool__TryGetValue_0__2__Object_outObject) {
         my_init();
     }
@@ -362,7 +362,7 @@ TYP Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_get_type_handle(
     return ret;
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __fieldIdentifier_in_ptr) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __fieldIdentifier_in_ptr) {
     if (!_g_Microsoft_AspNetCore_Components_Forms._fp_Microsoft_AspNetCore_Components_Forms_FieldChangedEventArgs_ctor_0__1__inFieldIdentifier) {
         my_init();
     }

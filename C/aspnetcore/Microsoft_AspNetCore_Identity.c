@@ -50,8 +50,10 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_IdentityBuilderExtensions_IdentityBuilder__AddDefaultTokenProviders_0__1__IdentityBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE builder);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_IdentityBuilderExtensions_IdentityBuilder__AddSignInManager_0__1__IdentityBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE builder);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Identity_IdentityBuilderExtensions_IdentityBuilder__AddSignInManager_1__1__IdentityBuilder)(TYP TSignInManager, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE builder);
@@ -589,6 +591,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Identity_ISecurityStampValidator_cast(SG_HN
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Identity_ISecurityStampValidator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ISecurityStampValidator_create(__thrown, __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_get_type_handle) {
         my_init();
@@ -602,6 +612,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_c
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Identity._fp_Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_create(__thrown, __cb_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, __pdata_Microsoft_AspNetCore_Identity_ISecurityStampValidator_Task__ValidateAsync_0__1__CookieValidatePrincipalContext, __deinit);
     return ret;
 }
 

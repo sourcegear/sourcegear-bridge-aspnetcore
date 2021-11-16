@@ -54,7 +54,7 @@ public struct KestrelServerOptionsSystemdExtensions {
         }
     }
     // delegate closure overload
-    public static func UseSystemd(options : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions {
+    public static func UseSystemd(options : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try UseSystemd(options: options, configure: del_configure);
     }
@@ -200,7 +200,7 @@ public struct ListenOptionsHttpsExtensions {
         }
     }
     // delegate closure overload
-    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, fileName : dotnet.System.String, password : Optional<dotnet.System.String>, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, fileName : dotnet.System.String, password : Optional<dotnet.System.String>, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try UseHttps(listenOptions: listenOptions, fileName: fileName, password: password, configureOptions: del_configureOptions);
     }
@@ -299,7 +299,7 @@ public struct ListenOptionsHttpsExtensions {
         }
     }
     // delegate closure overload
-    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, storeName : dotnet.System.Security.Cryptography.X509Certificates.StoreName, subject : dotnet.System.String, allowInvalid : Bool, location : dotnet.System.Security.Cryptography.X509Certificates.StoreLocation, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, storeName : dotnet.System.Security.Cryptography.X509Certificates.StoreName, subject : dotnet.System.String, allowInvalid : Bool, location : dotnet.System.Security.Cryptography.X509Certificates.StoreLocation, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try UseHttps(listenOptions: listenOptions, storeName: storeName, subject: subject, allowInvalid: allowInvalid, location: location, configureOptions: del_configureOptions);
     }
@@ -347,7 +347,7 @@ public struct ListenOptionsHttpsExtensions {
         }
     }
     // delegate closure overload
-    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, serverCertificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, serverCertificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try UseHttps(listenOptions: listenOptions, serverCertificate: serverCertificate, configureOptions: del_configureOptions);
     }
@@ -373,7 +373,7 @@ public struct ListenOptionsHttpsExtensions {
         }
     }
     // delegate closure overload
-    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try UseHttps(listenOptions: listenOptions, configureOptions: del_configureOptions);
     }
@@ -427,7 +427,35 @@ public struct ListenOptionsHttpsExtensions {
         let del_serverOptionsSelectionCallback = try dotnet.System.Net.Security.ServerOptionsSelectionCallback(serverOptionsSelectionCallback);
         return try UseHttps(listenOptions: listenOptions, serverOptionsSelectionCallback: del_serverOptionsSelectionCallback, state: state);
     }
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, System.Net.Security.ServerOptionsSelectionCallback, System.Object, System.TimeSpan)
+    // Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, System.Net.Security.ServerOptionsSelectionCallback, System.Object, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.TimeSpan)
+    /**
+    
+            Configure Kestrel to use HTTPS. This does not use default certificates or other defaults specified via config or
+            .
+            
+
+    - Parameter listenOptions: The  to configure.
+    - Parameter serverOptionsSelectionCallback: Callback to configure HTTPS options.
+    - Parameter state: State for the .
+    - Parameter handshakeTimeout: Specifies the maximum amount of time allowed for the TLS/SSL handshake. This must be positive and finite.
+    - Returns: The .
+
+    */
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, serverOptionsSelectionCallback : dotnet.System.Net.Security.ServerOptionsSelectionCallback, state : dotnet.System.Object, handshakeTimeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Hosting_ListenOptionsHttpsExtensions_ListenOptions__UseHttps_0__4__ListenOptions_ServerOptionsSelectionCallback_Object_TimeSpan(&__thrown, listenOptions.get_handle(), serverOptionsSelectionCallback.get_handle(), state.get_handle(), handshakeTimeout.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions(hndl : __return);
+        }
+    }
+    // delegate closure overload
+    public static func UseHttps(listenOptions : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, serverOptionsSelectionCallback : @escaping (dotnet.System.Net.Security.SslStream, dotnet.System.Net.Security.SslClientHelloInfo, Optional<dotnet.System.Object>, dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Net.Security.SslServerAuthenticationOptions>, state : dotnet.System.Object, handshakeTimeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+        let del_serverOptionsSelectionCallback = try dotnet.System.Net.Security.ServerOptionsSelectionCallback(serverOptionsSelectionCallback);
+        return try UseHttps(listenOptions: listenOptions, serverOptionsSelectionCallback: del_serverOptionsSelectionCallback, state: state, handshakeTimeout: handshakeTimeout);
+    }
     // Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions)
 // docid: M:Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions,Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions)
     /**
@@ -471,6 +499,9 @@ open class EndpointConfiguration
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_EndpointConfiguration_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -579,6 +610,9 @@ open class KestrelConfigurationLoader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_KestrelConfigurationLoader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader Endpoint(System.String, System.Action<Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration>)
@@ -599,7 +633,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func Endpoint(name : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func Endpoint(name : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration>(configureOptions);
         return try Endpoint(name: name, configureOptions: del_configureOptions);
     }
@@ -638,7 +672,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func Endpoint(address : dotnet.System.Net.IPAddress, port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func Endpoint(address : dotnet.System.Net.IPAddress, port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try Endpoint(address: address, port: port, configure: del_configure);
     }
@@ -677,7 +711,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func Endpoint(endPoint : dotnet.System.Net.IPEndPoint, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func Endpoint(endPoint : dotnet.System.Net.IPEndPoint, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try Endpoint(endPoint: endPoint, configure: del_configure);
     }
@@ -718,7 +752,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func LocalhostEndpoint(port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func LocalhostEndpoint(port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try LocalhostEndpoint(port: port, configure: del_configure);
     }
@@ -757,7 +791,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func AnyIPEndpoint(port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func AnyIPEndpoint(port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try AnyIPEndpoint(port: port, configure: del_configure);
     }
@@ -796,7 +830,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func UnixSocketEndpoint(socketPath : dotnet.System.String, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func UnixSocketEndpoint(socketPath : dotnet.System.String, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try UnixSocketEndpoint(socketPath: socketPath, configure: del_configure);
     }
@@ -835,7 +869,7 @@ open class KestrelConfigurationLoader
         }
     }
     // delegate closure overload
-    open func HandleEndpoint(handle : Swift.UInt64, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
+    open func HandleEndpoint(handle : Swift.UInt64, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try HandleEndpoint(handle: handle, configure: del_configure);
     }
@@ -934,6 +968,9 @@ public final class BadHttpRequestException
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_BadHttpRequestException_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Int32 get_StatusCode()
@@ -968,6 +1005,9 @@ open class Http2Limits
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Http2Limits_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1125,7 +1165,17 @@ open class Http2Limits
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_KeepAlivePingDelay(System.TimeSpan)
+    // [IsSpecialName] void set_KeepAlivePingDelay(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits.set_KeepAlivePingDelay(System.TimeSpan)
+    open func set_KeepAlivePingDelay(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_Http2Limits_void__set_KeepAlivePingDelay_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_KeepAlivePingTimeout()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits.get_KeepAlivePingTimeout
     open func get_KeepAlivePingTimeout() throws -> dotnet.System.TimeSpan {
@@ -1137,7 +1187,17 @@ open class Http2Limits
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_KeepAlivePingTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_KeepAlivePingTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits.set_KeepAlivePingTimeout(System.TimeSpan)
+    open func set_KeepAlivePingTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_Http2Limits_void__set_KeepAlivePingTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Limits the size of the header compression tables, in octets, the HPACK encoder and decoder on the server can use.
@@ -1208,7 +1268,9 @@ open class Http2Limits
         get {
             return try! get_KeepAlivePingDelay();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_KeepAlivePingDelay(System.TimeSpan)
+        set(v) {
+            return try! set_KeepAlivePingDelay(value: v);
+        }
     }
     /**
     
@@ -1227,7 +1289,9 @@ open class Http2Limits
         get {
             return try! get_KeepAlivePingTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_KeepAlivePingTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_KeepAlivePingTimeout(value: v);
+        }
     }
     /**
     
@@ -1296,6 +1360,9 @@ open class Http3Limits
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Http3Limits_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1430,6 +1497,9 @@ open class KestrelServer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>, Microsoft.AspNetCore.Connections.IConnectionListenerFactory, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1456,26 +1526,26 @@ open class KestrelServer
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync``1(Microsoft.AspNetCore.Hosting.Server.IHttpApplication{``0},System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func StartAsync<UTContext : SGBridgeGenericValue>(application : aspnetcore.Microsoft.AspNetCore.Hosting.Server.IHttpApplication_1<UTContext>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func StartAsync<UTContext : SGBridgeGenericValue>(application : aspnetcore.Microsoft.AspNetCore.Hosting.Server.IHttpApplication_1<UTContext>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer_Task__StartAsync_1__2__Microsoft_AspNetCore_Hosting_Server_IHttpApplication_UTContext__CancellationToken(UTContext.get_type_handle(), &__thrown, self.get_handle(), application.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task StopAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StopAsync(System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer_Task__StopAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Dispose()
@@ -1547,6 +1617,9 @@ open class KestrelServerLimits
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerLimits_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1704,7 +1777,17 @@ open class KestrelServerLimits
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_KeepAliveTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_KeepAliveTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits.set_KeepAliveTimeout(System.TimeSpan)
+    open func set_KeepAliveTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerLimits_void__set_KeepAliveTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_RequestHeadersTimeout()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits.get_RequestHeadersTimeout
     open func get_RequestHeadersTimeout() throws -> dotnet.System.TimeSpan {
@@ -1716,7 +1799,17 @@ open class KestrelServerLimits
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_RequestHeadersTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_RequestHeadersTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits.set_RequestHeadersTimeout(System.TimeSpan)
+    open func set_RequestHeadersTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerLimits_void__set_RequestHeadersTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Nullable<System.Int64> get_MaxConcurrentConnections()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits.get_MaxConcurrentConnections
     open func get_MaxConcurrentConnections() throws -> Optional<Swift.Int64> {
@@ -1868,7 +1961,9 @@ open class KestrelServerLimits
         get {
             return try! get_KeepAliveTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_KeepAliveTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_KeepAliveTimeout(value: v);
+        }
     }
     /**
     
@@ -2049,7 +2144,9 @@ open class KestrelServerLimits
         get {
             return try! get_RequestHeadersTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_RequestHeadersTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_RequestHeadersTimeout(value: v);
+        }
     }
 } // KestrelServerLimits
 
@@ -2067,6 +2164,9 @@ open class KestrelServerOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2100,7 +2200,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ConfigureEndpointDefaults(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func ConfigureEndpointDefaults(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configureOptions);
         return try ConfigureEndpointDefaults(configureOptions: del_configureOptions);
     }
@@ -2123,7 +2223,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ConfigureHttpsDefaults(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws {
+    open func ConfigureHttpsDefaults(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try ConfigureHttpsDefaults(configureOptions: del_configureOptions);
     }
@@ -2229,7 +2329,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func Listen(address : dotnet.System.Net.IPAddress, port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func Listen(address : dotnet.System.Net.IPAddress, port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try Listen(address: address, port: port, configure: del_configure);
     }
@@ -2287,7 +2387,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func Listen(endPoint : dotnet.System.Net.IPEndPoint, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func Listen(endPoint : dotnet.System.Net.IPEndPoint, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try Listen(endPoint: endPoint, configure: del_configure);
     }
@@ -2310,7 +2410,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func Listen(endPoint : dotnet.System.Net.EndPoint, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func Listen(endPoint : dotnet.System.Net.EndPoint, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try Listen(endPoint: endPoint, configure: del_configure);
     }
@@ -2351,7 +2451,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ListenLocalhost(port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func ListenLocalhost(port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try ListenLocalhost(port: port, configure: del_configure);
     }
@@ -2390,7 +2490,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ListenAnyIP(port : Swift.Int32, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func ListenAnyIP(port : Swift.Int32, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try ListenAnyIP(port: port, configure: del_configure);
     }
@@ -2430,7 +2530,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ListenUnixSocket(socketPath : dotnet.System.String, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func ListenUnixSocket(socketPath : dotnet.System.String, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try ListenUnixSocket(socketPath: socketPath, configure: del_configure);
     }
@@ -2470,7 +2570,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func ListenHandle(handle : Swift.UInt64, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws {
+    open func ListenHandle(handle : Swift.UInt64, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try ListenHandle(handle: handle, configure: del_configure);
     }
@@ -2607,7 +2707,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func set_RequestHeaderEncodingSelector(value : @escaping (Optional<dotnet.System.String>) throws -> dotnet.System.Text.Encoding) throws {
+    open func set_RequestHeaderEncodingSelector(value : @escaping (dotnet.System.String) throws -> dotnet.System.Text.Encoding) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.String,dotnet.System.Text.Encoding>(value);
         return try set_RequestHeaderEncodingSelector(value: del_value);
     }
@@ -2634,7 +2734,7 @@ open class KestrelServerOptions
         }
     }
     // delegate closure overload
-    open func set_ResponseHeaderEncodingSelector(value : @escaping (Optional<dotnet.System.String>) throws -> dotnet.System.Text.Encoding) throws {
+    open func set_ResponseHeaderEncodingSelector(value : @escaping (dotnet.System.String) throws -> dotnet.System.Text.Encoding) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.String,dotnet.System.Text.Encoding>(value);
         return try set_ResponseHeaderEncodingSelector(value: del_value);
     }
@@ -2869,6 +2969,9 @@ open class ListenOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_ListenOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.String ToString()
@@ -2911,7 +3014,7 @@ open class ListenOptions
         }
     }
     // delegate closure overload
-    open /* method final */ func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    open /* method final */ func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate,aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -3201,9 +3304,31 @@ open class MinDataRate
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_MinDataRate_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
-// TODO COPE ctor (span) .ctor(System.Double, System.TimeSpan)
+    // .ctor(System.Double, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate.#ctor(System.Double,System.TimeSpan)
+    /**
+    
+            Creates a new instance of .
+            
+
+    - Parameter bytesPerSecond: The minimum rate in bytes/second at which data should be processed.
+    - Parameter gracePeriod: The amount of time to delay enforcement of ,
+            starting at the time data is first read or written.
+    */
+    public init(bytesPerSecond : Swift.Double, gracePeriod : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Server_Kestrel_Core_MinDataRate_ctor_0__2__f64_TimeSpan(&__thrown, bytesPerSecond, gracePeriod.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
     // System.String ToString()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate.ToString
     open override func ToString() throws -> dotnet.System.String {
@@ -3281,6 +3406,9 @@ open class IConnectionTimeoutFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3290,8 +3418,42 @@ open class IConnectionTimeoutFeature
 
     deinit { __drop_handle(self.h); }
 
-// TODO COPE (write_all_methods) (span) void SetTimeout(System.TimeSpan)
-// TODO COPE (write_all_methods) (span) void ResetTimeout(System.TimeSpan)
+    // void SetTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature.SetTimeout(System.TimeSpan)
+    /**
+    
+            Close the connection after the specified positive finite 
+            unless the timeout is canceled or reset. This will fail if there is an ongoing timeout.
+            
+
+    */
+    open func SetTimeout(timeSpan : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), timeSpan.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // void ResetTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature.ResetTimeout(System.TimeSpan)
+    /**
+    
+            Close the connection after the specified positive finite 
+            unless the timeout is canceled or reset. This will cancel any ongoing timeouts.
+            
+
+    */
+    open func ResetTimeout(timeSpan : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), timeSpan.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // void CancelTimeout()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature.CancelTimeout
     /**
@@ -3328,6 +3490,9 @@ open class IDecrementConcurrentConnectionCountFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3373,6 +3538,9 @@ open class IHttp2StreamIdFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3412,6 +3580,9 @@ open class IHttpMinRequestBodyDataRateFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3468,6 +3639,9 @@ open class IHttpMinResponseDataRateFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3520,6 +3694,9 @@ open class ITlsApplicationProtocolFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3648,6 +3825,9 @@ open class HttpParser_1<TRequestHandler : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpParser_1_get_type_handle(TRequestHandler.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3672,6 +3852,8 @@ open class HttpParser_1<TRequestHandler : SGBridgeGenericValue>
             super.init(hndl: h);
         }
     }
+// TODO COPE (parm byref span): bool ParseRequestLine(TRequestHandler, ref System.Buffers.SequenceReader<System.Byte>)
+// TODO COPE (parm byref span): bool ParseHeaders(TRequestHandler, ref System.Buffers.SequenceReader<System.Byte>)
 } // HttpParser_1
 
 
@@ -3768,6 +3950,9 @@ public final class HttpVersionAndMethod
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpVersionAndMethod_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public var Method : aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpMethod {
@@ -3859,6 +4044,9 @@ open class IHttpHeadersHandler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3904,6 +4092,9 @@ open class IHttpRequestLineHandler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3925,6 +4116,9 @@ public final class TargetOffsetPathLength
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4115,6 +4309,9 @@ open class HttpsConnectionAdapterOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Https_HttpsConnectionAdapterOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4257,7 +4454,7 @@ open class HttpsConnectionAdapterOptions
         }
     }
     // delegate closure overload
-    open func set_ClientCertificateValidation(value : @escaping (Optional<dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2>, Optional<dotnet.System.Security.Cryptography.X509Certificates.X509Chain>, dotnet.System.Net.Security.SslPolicyErrors) throws -> Bool) throws {
+    open func set_ClientCertificateValidation(value : @escaping (dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2, Optional<dotnet.System.Security.Cryptography.X509Certificates.X509Chain>, dotnet.System.Net.Security.SslPolicyErrors) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_4<dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2,dotnet.System.Security.Cryptography.X509Certificates.X509Chain,dotnet.System.Net.Security.SslPolicyErrors,Swift.Bool>(value);
         return try set_ClientCertificateValidation(value: del_value);
     }
@@ -4332,7 +4529,7 @@ open class HttpsConnectionAdapterOptions
         }
     }
     // delegate closure overload
-    open func set_OnAuthenticate(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext>, Optional<dotnet.System.Net.Security.SslServerAuthenticationOptions>) throws -> Void) throws {
+    open func set_OnAuthenticate(value : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext, dotnet.System.Net.Security.SslServerAuthenticationOptions) throws -> Void) throws {
         let del_value = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext,dotnet.System.Net.Security.SslServerAuthenticationOptions>(value);
         return try set_OnAuthenticate(value: del_value);
     }
@@ -4347,7 +4544,17 @@ open class HttpsConnectionAdapterOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions.set_HandshakeTimeout(System.TimeSpan)
+    open func set_HandshakeTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Https_HttpsConnectionAdapterOptions_void__set_HandshakeTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Specifies whether the certificate revocation list is checked during authentication.
@@ -4402,7 +4609,9 @@ open class HttpsConnectionAdapterOptions
         get {
             return try! get_HandshakeTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_HandshakeTimeout(value: v);
+        }
     }
     /**
     
@@ -4489,6 +4698,9 @@ open class TlsHandshakeCallbackContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4741,6 +4953,9 @@ open class TlsHandshakeCallbackOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4777,7 +4992,7 @@ open class TlsHandshakeCallbackOptions
         }
     }
     // delegate closure overload
-    open func set_OnConnection(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext>) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Net.Security.SslServerAuthenticationOptions>) throws {
+    open func set_OnConnection(value : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Net.Security.SslServerAuthenticationOptions>) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext,dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Net.Security.SslServerAuthenticationOptions>>(value);
         return try set_OnConnection(value: del_value);
     }
@@ -4818,7 +5033,17 @@ open class TlsHandshakeCallbackOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions.set_HandshakeTimeout(System.TimeSpan)
+    open func set_HandshakeTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackOptions_void__set_HandshakeTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Specifies the maximum amount of time allowed for the TLS/SSL handshake. This must be positive
@@ -4830,7 +5055,9 @@ open class TlsHandshakeCallbackOptions
         get {
             return try! get_HandshakeTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_HandshakeTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_HandshakeTimeout(value: v);
+        }
     }
     /**
     
@@ -4930,7 +5157,7 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptio
         return try aspnetcore.Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions.UseSystemd(options: self, configure: configure);
     }
     // delegate closure overload
-    public func UseSystemd(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions {
+    public func UseSystemd(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.KestrelServerOptionsSystemdExtensions.UseSystemd(options: self, configure: del_configure);
     }
@@ -4977,7 +5204,7 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, fileName: fileName, password: password, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseHttps(fileName : dotnet.System.String, password : Optional<dotnet.System.String>, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public func UseHttps(fileName : dotnet.System.String, password : Optional<dotnet.System.String>, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, fileName: fileName, password: password, configureOptions: del_configureOptions);
     }
@@ -5010,7 +5237,7 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, storeName: storeName, subject: subject, allowInvalid: allowInvalid, location: location, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseHttps(storeName : dotnet.System.Security.Cryptography.X509Certificates.StoreName, subject : dotnet.System.String, allowInvalid : Bool, location : dotnet.System.Security.Cryptography.X509Certificates.StoreLocation, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public func UseHttps(storeName : dotnet.System.Security.Cryptography.X509Certificates.StoreName, subject : dotnet.System.String, allowInvalid : Bool, location : dotnet.System.Security.Cryptography.X509Certificates.StoreLocation, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, storeName: storeName, subject: subject, allowInvalid: allowInvalid, location: location, configureOptions: del_configureOptions);
     }
@@ -5029,7 +5256,7 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, serverCertificate: serverCertificate, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseHttps(serverCertificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public func UseHttps(serverCertificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, serverCertificate: serverCertificate, configureOptions: del_configureOptions);
     }
@@ -5041,7 +5268,7 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseHttps(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public func UseHttps(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, configureOptions: del_configureOptions);
     }
@@ -5067,7 +5294,16 @@ extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
 }
 
 // EXTENSION METHOD Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, System.Net.Security.ServerOptionsSelectionCallback, System.Object, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, System.Net.Security.ServerOptionsSelectionCallback, System.Object, System.TimeSpan)
+extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+    public func UseHttps(serverOptionsSelectionCallback : dotnet.System.Net.Security.ServerOptionsSelectionCallback, state : dotnet.System.Object, handshakeTimeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+        return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, serverOptionsSelectionCallback: serverOptionsSelectionCallback, state: state, handshakeTimeout: handshakeTimeout);
+    }
+    // delegate closure overload
+    public func UseHttps(serverOptionsSelectionCallback : @escaping (dotnet.System.Net.Security.SslStream, dotnet.System.Net.Security.SslClientHelloInfo, Optional<dotnet.System.Object>, dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Net.Security.SslServerAuthenticationOptions>, state : dotnet.System.Object, handshakeTimeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {
+        let del_serverOptionsSelectionCallback = try dotnet.System.Net.Security.ServerOptionsSelectionCallback(serverOptionsSelectionCallback);
+        return try aspnetcore.Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(listenOptions: self, serverOptionsSelectionCallback: del_serverOptionsSelectionCallback, state: state, handshakeTimeout: handshakeTimeout);
+    }
+}
 
 // EXTENSION METHOD Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions UseHttps(Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions, Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions)
 extension aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions {

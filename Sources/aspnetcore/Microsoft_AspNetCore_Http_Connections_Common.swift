@@ -23,6 +23,9 @@ open class AvailableTransport
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_AvailableTransport_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -247,6 +250,9 @@ open class NegotiationResponse
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_NegotiationResponse_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

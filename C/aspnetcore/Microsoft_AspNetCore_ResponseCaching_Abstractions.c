@@ -11,6 +11,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_StringArray__get_VaryByQueryKeys_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_void__set_VaryByQueryKeys_0__1__StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_AspNetCore_ResponseCaching_Abstractions;
 
 static void my_init() {
@@ -45,6 +46,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_cas
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_ResponseCaching_Abstractions._fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_ResponseCaching_Abstractions._fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_ResponseCaching_Abstractions._fp_Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_create(__thrown, __deinit);
     return ret;
 }
 

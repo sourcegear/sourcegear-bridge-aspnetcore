@@ -15,6 +15,9 @@ open class EntryWrittenEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EntryWrittenEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -70,6 +73,9 @@ public final class EntryWrittenEventHandler
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EntryWrittenEventHandler_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Invoke(System.Object, System.Diagnostics.EntryWrittenEventArgs)
@@ -109,15 +115,15 @@ public final class EntryWrittenEventHandler
             return;
         }
     }
-    public init(_ callback : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.System.Diagnostics.EntryWrittenEventArgs>) throws -> Void) throws
+    public convenience init(_ __closure_Invoke : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.System.Diagnostics.EntryWrittenEventArgs>) throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle) -> Void =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle) -> Void =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, sender : NullableHandle, e : NullableHandle) -> Void in
             do
             {
                 thrown.pointee = nil;
-                try callback((sender != nil) ? (dotnet.System.Object(hndl: sender!)) : nil, (e != nil) ? (aspnetcore.System.Diagnostics.EntryWrittenEventArgs(hndl: e!)) : nil);
+                try __closure_Invoke((sender != nil) ? (dotnet.System.Object(hndl: sender!)) : nil, (e != nil) ? (aspnetcore.System.Diagnostics.EntryWrittenEventArgs(hndl: e!)) : nil);
             }
             catch let e as dotnet.System.Exception
             {
@@ -129,24 +135,24 @@ public final class EntryWrittenEventHandler
                 thrown.pointee = __copy_handle(e.get_handle());
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, sender : NullableHandle, e : NullableHandle) -> Void
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, sender : NullableHandle, e : NullableHandle) -> Void
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle) -> Void;
-            f(thrown, sender, e);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle) -> Void;
+            f_interlude(thrown, sender, e);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = System_Diagnostics_EntryWrittenEventHandler_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // void Invoke(System.Object, System.Diagnostics.EntryWrittenEventArgs)
@@ -170,6 +176,9 @@ open class EventInstance
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventInstance_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -296,6 +305,9 @@ open class EventLog
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventLog_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1041,6 +1053,9 @@ public final class EventLogEntry
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventLogEntry_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // bool Equals(System.Diagnostics.EventLogEntry)
@@ -1319,6 +1334,9 @@ open class EventLogEntryCollection
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventLogEntryCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void CopyTo(System.Diagnostics.EventLogEntry[], System.Int32)
@@ -1360,9 +1378,6 @@ open class EventLogEntryCollection
     }
     // [IsSpecialName] System.Diagnostics.EventLogEntry get_Item(System.Int32)
 // docid: M:System.Diagnostics.EventLogEntryCollection.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(index : Swift.Int32) throws -> Optional<aspnetcore.System.Diagnostics.EventLogEntry> {
         var __thrown : NullableHandle = nil;
         let __return = System_Diagnostics_EventLogEntryCollection_EventLogEntry__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -1440,6 +1455,9 @@ public final class EventLogTraceListener
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventLogTraceListener_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1624,6 +1642,9 @@ open class EventSourceCreationData
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_EventSourceCreationData_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1922,6 +1943,9 @@ open class EventBookmark
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventBookmark_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // EventBookmark
@@ -1934,6 +1958,9 @@ public final class EventKeyword
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventKeyword_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2004,6 +2031,9 @@ public final class EventLevel
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLevel_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_DisplayName()
@@ -2073,6 +2103,9 @@ open class EventLogConfiguration
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogConfiguration_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2537,6 +2570,9 @@ open class EventLogException
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2609,6 +2645,9 @@ public final class EventLogInformation
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogInformation_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2751,6 +2790,9 @@ open class EventLogInvalidDataException
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogInvalidDataException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2831,6 +2873,9 @@ public final class EventLogLink
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogLink_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2936,6 +2981,9 @@ open class EventLogNotFoundException
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogNotFoundException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2983,6 +3031,9 @@ open class EventLogPropertySelector
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogPropertySelector_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<System.String>)
@@ -3017,6 +3068,9 @@ open class EventLogProviderDisabledException
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogProviderDisabledException_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3063,6 +3117,9 @@ open class EventLogQuery
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogQuery_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3194,6 +3251,9 @@ open class EventLogReader
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogReader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
@@ -3277,7 +3337,21 @@ open class EventLogReader
         }
         }
     }
-// TODO COPE (write_all_methods) (span) System.Diagnostics.Eventing.Reader.EventRecord ReadEvent(System.TimeSpan)
+    // System.Diagnostics.Eventing.Reader.EventRecord ReadEvent(System.TimeSpan)
+// docid: M:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)
+    open func ReadEvent(timeout : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.System.Diagnostics.Eventing.Reader.EventRecord> {
+        var __thrown : NullableHandle = nil;
+        let __return = System_Diagnostics_Eventing_Reader_EventLogReader_EventRecord__ReadEvent_0__1__TimeSpan(&__thrown, self.get_handle(), timeout.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.System.Diagnostics.Eventing.Reader.EventRecord(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
     // void Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
     open func Seek(bookmark : Optional<aspnetcore.System.Diagnostics.Eventing.Reader.EventBookmark>) throws {
@@ -3372,6 +3446,9 @@ open class EventLogReadingException
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogReadingException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3417,6 +3494,9 @@ open class EventLogRecord
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogRecord_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3904,6 +3984,9 @@ open class EventLogSession
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogSession_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4103,6 +4186,9 @@ public final class EventLogStatus
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogStatus_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_LogName()
@@ -4194,6 +4280,9 @@ open class EventLogWatcher
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventLogWatcher_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4324,6 +4413,9 @@ public final class EventMetadata
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventMetadata_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4510,6 +4602,9 @@ public final class EventOpcode
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventOpcode_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_DisplayName()
@@ -4579,6 +4674,9 @@ public final class EventProperty
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventProperty_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Object get_Value()
@@ -4612,6 +4710,9 @@ open class EventRecord
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventRecord_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5106,6 +5207,9 @@ public final class EventRecordWrittenEventArgs
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventRecordWrittenEventArgs_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Exception get_EventException()
@@ -5158,6 +5262,9 @@ public final class EventTask
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_EventTask_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5272,6 +5379,9 @@ open class ProviderMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Diagnostics_Eventing_Reader_ProviderMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -23,6 +23,9 @@ open class CacheControlHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_CacheControlHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String PublicString
@@ -269,11 +272,12 @@ open class CacheControlHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.CacheControlHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.CacheControlHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.CacheControlHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.CacheControlHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -873,6 +877,9 @@ open class ContentDispositionHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
@@ -1001,11 +1008,12 @@ open class ContentDispositionHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.ContentDispositionHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.ContentDispositionHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.ContentDispositionHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.ContentDispositionHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1387,6 +1395,9 @@ open class ContentRangeHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_ContentRangeHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Int64, System.Int64, System.Int64)
@@ -1692,6 +1703,9 @@ open class CookieHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_CookieHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
@@ -1776,11 +1790,12 @@ open class CookieHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1840,11 +1855,12 @@ open class CookieHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>) throws -> Bool {
+    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1864,11 +1880,12 @@ open class CookieHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.CookieHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1990,6 +2007,9 @@ open class EntityTagHeaderValue
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_EntityTagHeaderValue_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2200,11 +2220,12 @@ open class EntityTagHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>) throws -> Bool {
+    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -2224,11 +2245,12 @@ open class EntityTagHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.EntityTagHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -3399,6 +3421,7 @@ public struct HeaderQuality {
 
 // type: Microsoft.Net.Http.Headers.HeaderUtilities
 public struct HeaderUtilities {
+// TODO COPE (parm byref nullable of): bool TryParseSeconds(Microsoft.Extensions.Primitives.StringValues, System.String, ref System.Nullable<System.TimeSpan>)
     // bool ContainsCacheDirective(Microsoft.Extensions.Primitives.StringValues, System.String)
 // docid: M:Microsoft.Net.Http.Headers.HeaderUtilities.ContainsCacheDirective(Microsoft.Extensions.Primitives.StringValues,System.String)
     /**
@@ -3683,6 +3706,9 @@ open class MediaTypeHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_MediaTypeHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
@@ -3885,11 +3911,12 @@ open class MediaTypeHeaderValue
     - Returns: True if the value was successfully parsed.
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -3950,11 +3977,12 @@ open class MediaTypeHeaderValue
     - Returns: True if the value was successfully parsed.
 
     */
-    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>) throws -> Bool {
+    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -3974,11 +4002,12 @@ open class MediaTypeHeaderValue
     - Returns: True if the value was successfully parsed.
 
     */
-    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.MediaTypeHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -4418,6 +4447,9 @@ open class MediaTypeHeaderValueComparer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_MediaTypeHeaderValueComparer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Int32 Compare(Microsoft.Net.Http.Headers.MediaTypeHeaderValue, Microsoft.Net.Http.Headers.MediaTypeHeaderValue)
@@ -4471,6 +4503,9 @@ open class NameValueHeaderValue
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_NameValueHeaderValue_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4645,11 +4680,12 @@ open class NameValueHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -4709,11 +4745,12 @@ open class NameValueHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>) throws -> Bool {
+    open class func TryParseList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(&__thrown, (input?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -4733,11 +4770,12 @@ open class NameValueHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseStrictList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(&__thrown, (input?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.NameValueHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -4880,6 +4918,9 @@ open class RangeConditionHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_RangeConditionHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.DateTimeOffset)
@@ -5007,11 +5048,12 @@ open class RangeConditionHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.RangeConditionHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.RangeConditionHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.RangeConditionHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.RangeConditionHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -5087,6 +5129,9 @@ open class RangeHeaderValue
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_RangeHeaderValue_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5288,6 +5333,9 @@ open class RangeItemHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_RangeItemHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Nullable<System.Int64>, System.Nullable<System.Int64>)
@@ -5477,6 +5525,9 @@ open class SetCookieHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_SetCookieHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
@@ -5583,11 +5634,12 @@ open class SetCookieHeaderValue
     - Returns:  if input is a valid , otherwise .
 
     */
-    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue) throws -> Bool {
+    open class func TryParse(input : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, parsedValue : inout Optional<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValue = parsedValue.get_handle();
+            var _tmp_out_parsedValue = (parsedValue != nil) ? (parsedValue!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue(&__thrown, input.get_handle(), &_tmp_out_parsedValue);
-        let _tmp2_parsedValue = aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue(hndl: _tmp_out_parsedValue);
+        let __h__tmp2_parsedValue = _tmp_out_parsedValue;
+        let _tmp2_parsedValue = (__h__tmp2_parsedValue != nil) ? aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue(hndl: __h__tmp2_parsedValue!) : nil;
             parsedValue = _tmp2_parsedValue;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -5647,11 +5699,12 @@ open class SetCookieHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>) throws -> Bool {
+    open class func TryParseList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -5671,11 +5724,12 @@ open class SetCookieHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(inputs : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(&__thrown, (inputs?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.SetCookieHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -6101,6 +6155,9 @@ open class StringWithQualityHeaderValue
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
@@ -6275,11 +6332,12 @@ open class StringWithQualityHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>) throws -> Bool {
+    open class func TryParseList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(&__thrown, (input?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -6299,11 +6357,12 @@ open class StringWithQualityHeaderValue
     - Returns:  if all inputs are valid , otherwise .
 
     */
-    open class func TryParseStrictList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>) throws -> Bool {
+    open class func TryParseStrictList(input : Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>, parsedValues : inout Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parsedValues = parsedValues.get_handle();
+            var _tmp_out_parsedValues = (parsedValues != nil) ? (parsedValues!.get_handle()) : nil;
         let __return = Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(&__thrown, (input?.get_handle()), &_tmp_out_parsedValues);
-        let _tmp2_parsedValues = dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>(hndl : _tmp_out_parsedValues);
+        let __h__tmp2_parsedValues = _tmp_out_parsedValues;
+        let _tmp2_parsedValues = (__h__tmp2_parsedValues != nil) ? dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Net.Http.Headers.StringWithQualityHeaderValue>(hndl: __h__tmp2_parsedValues!) : nil;
             parsedValues = _tmp2_parsedValues;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -6375,6 +6434,9 @@ open class StringWithQualityHeaderValueComparer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Net_Http_Headers_StringWithQualityHeaderValueComparer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

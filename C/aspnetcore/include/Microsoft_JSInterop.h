@@ -58,6 +58,8 @@ GVAL invoke_Microsoft_JSInterop_IJSInProcessObjectReference_UTValue__Invoke_1__2
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSInProcessObjectReference_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSInProcessObjectReference_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSInProcessObjectReference_UTValue__Invoke_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSInProcessObjectReference_UTValue__Invoke_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NONNULL cancellationToken, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_JSInterop_IJSInProcessRuntime_get_type_handle(void);
 
 GVAL Microsoft_JSInterop_IJSInProcessRuntime_UTResult__Invoke_1__2__String_ObjectArray(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args);
@@ -67,6 +69,8 @@ SG_HNDL_NONNULL specialize_Microsoft_JSInterop_IJSInProcessRuntime_UTResult__Inv
 GVAL invoke_Microsoft_JSInterop_IJSInProcessRuntime_UTResult__Invoke_1__2__String_ObjectArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args);
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSInProcessRuntime_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSInProcessRuntime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSInProcessRuntime_UTResult__Invoke_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSInProcessRuntime_UTResult__Invoke_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NONNULL cancellationToken, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_JSInterop_IJSObjectReference_get_type_handle(void);
 
@@ -84,6 +88,8 @@ SG_HNDL_NONNULL invoke_Microsoft_JSInterop_IJSObjectReference_System_Threading_T
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSObjectReference_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSObjectReference_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NONNULL cancellationToken, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_JSInterop_IJSRuntime_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args);
@@ -100,6 +106,8 @@ SG_HNDL_NONNULL invoke_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_Val
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSRuntime_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSRuntime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NONNULL cancellationToken, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSRuntime_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_JSInterop_IJSStreamReference_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSStreamReference_System_Threading_Tasks_ValueTask_System_IO_Stream___OpenReadStreamAsync_0__2__i64_CancellationToken(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int64_t maxAllowedSize, SG_HNDL_NONNULL cancellationToken);
@@ -107,6 +115,8 @@ SG_HNDL_NONNULL Microsoft_JSInterop_IJSStreamReference_System_Threading_Tasks_Va
 int64_t Microsoft_JSInterop_IJSStreamReference_i64__get_Length_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSStreamReference_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSStreamReference_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSStreamReference_System_Threading_Tasks_ValueTask_System_IO_Stream___OpenReadStreamAsync_0__2__i64_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t maxAllowedSize, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSStreamReference_System_Threading_Tasks_ValueTask_System_IO_Stream___OpenReadStreamAsync_0__2__i64_CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_JSInterop_IJSUnmarshalledObjectReference_get_type_handle(void);
 
@@ -136,6 +146,8 @@ GVAL invoke_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeU
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSUnmarshalledObjectReference_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSUnmarshalledObjectReference_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_1__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_1__1__String, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_2__2__String_UT0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_2__2__String_UT0, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_3__3__String_UT0_UT1)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0, GVAL arg1), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_3__3__String_UT0_UT1, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_4__4__String_UT0_UT1_UT2)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0, GVAL arg1, GVAL arg2), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledObjectReference_UTResult__InvokeUnmarshalled_4__4__String_UT0_UT1_UT2, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSInProcessObjectReference_UTValue__Invoke_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSInProcessObjectReference_UTValue__Invoke_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__2__String_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, SG_HNDL_NONNULL cancellationToken, SG_HNDL_NULLABLE args), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSObjectReference_System_Threading_Tasks_ValueTask_UTValue___InvokeAsync_1__3__String_CancellationToken_ObjectArray, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_JSInterop_IJSUnmarshalledRuntime_get_type_handle(void);
 
 GVAL Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_1__1__String(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL identifier);
@@ -164,6 +176,8 @@ GVAL invoke_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshal
 
 SG_HNDL_NONNULL Microsoft_JSInterop_IJSUnmarshalledRuntime_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_JSInterop_IJSUnmarshalledRuntime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_1__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_1__1__String, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_2__2__String_UT0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_2__2__String_UT0, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_3__3__String_UT0_UT1)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0, GVAL arg1), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_3__3__String_UT0_UT1, GVAL (* _Nonnull  __cb_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_4__4__String_UT0_UT1_UT2)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL identifier, GVAL arg0, GVAL arg1, GVAL arg2), const void* _Nonnull __pdata_Microsoft_JSInterop_IJSUnmarshalledRuntime_UTResult__InvokeUnmarshalled_4__4__String_UT0_UT1_UT2, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_JSInterop_JSCallResultType_get_type_handle(void);
 
 int32_t Microsoft_JSInterop_JSCallResultType_get_Default(void);
@@ -171,6 +185,8 @@ int32_t Microsoft_JSInterop_JSCallResultType_get_Default(void);
 int32_t Microsoft_JSInterop_JSCallResultType_get_JSObjectReference(void);
 
 int32_t Microsoft_JSInterop_JSCallResultType_get_JSStreamReference(void);
+
+int32_t Microsoft_JSInterop_JSCallResultType_get_JSVoidResult(void);
 
 TYP Microsoft_JSInterop_JSDisconnectedException_get_type_handle(void);
 
@@ -347,6 +363,12 @@ SG_HNDL_NULLABLE Microsoft_JSInterop_Infrastructure_DotNetInvocationResult_Strin
 int32_t Microsoft_JSInterop_Infrastructure_DotNetInvocationResult_bool__get_Success_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_JSInterop_Infrastructure_DotNetInvocationResult_implicit_ctor(void);
+
+TYP Microsoft_JSInterop_Infrastructure_IJSVoidResult_get_type_handle(void);
+
+SG_HNDL_NONNULL Microsoft_JSInterop_Infrastructure_IJSVoidResult_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_JSInterop_Infrastructure_IJSVoidResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

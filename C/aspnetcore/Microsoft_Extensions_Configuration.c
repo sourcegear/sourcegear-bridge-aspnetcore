@@ -16,7 +16,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_IChangeToken__GetReloadToken_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Load_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Set_0__2__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value);
-    int32_t (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationSource_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ChainedConfigurationSource_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -52,7 +52,7 @@ struct {
     void (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_void__Load_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_void__Set_0__2__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_String__ToString_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
-    int32_t (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationReloadToken_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Configuration_ConfigurationReloadToken_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -183,7 +183,7 @@ void Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Set_0
     _g_Microsoft_Extensions_Configuration._fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Set_0__2__String_String(__thrown, __self_h, key, value);
 }
 
-int32_t Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr) {
+int32_t Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr) {
     if (!_g_Microsoft_Extensions_Configuration._fp_Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString) {
         my_init();
     }
@@ -465,7 +465,7 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Configuration_ConfigurationProvider_String
     return ret;
 }
 
-int32_t Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr) {
+int32_t Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr) {
     if (!_g_Microsoft_Extensions_Configuration._fp_Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString) {
         my_init();
     }

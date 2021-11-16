@@ -18,9 +18,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL methodName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL streamId);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL invocationId), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL methodName), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL streamId), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage_ctor_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL invocationId);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -44,8 +46,8 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_CompletionMessage_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_void__WriteRequestMessage_0__2__HandshakeRequestMessage_System_Buffers_IBufferWriter_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL requestMessage, SG_HNDL_NONNULL output);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_void__WriteResponseMessage_0__2__HandshakeResponseMessage_System_Buffers_IBufferWriter_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL responseMessage, SG_HNDL_NONNULL output);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __buffer_ref_ptr, SG_HNDL_NONNULL* _Nonnull __responseMessage_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __buffer_ref_ptr, SG_HNDL_NONNULL* _Nonnull __requestMessage_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __buffer_ref_ptr, SG_HNDL_NULLABLE* _Nonnull __responseMessage_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __buffer_ref_ptr, SG_HNDL_NULLABLE* _Nonnull __requestMessage_out_ptr);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage_ctor_0__2__String_i32)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protocol, int32_t version);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage_String__get_Protocol_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -78,7 +80,7 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HubProtocolConstants_get_CloseMessageType)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_HubProtocolExtensions_u8Array__GetMessageBytes_0__2__IHubProtocol_HubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL hubProtocol, SG_HNDL_NONNULL message);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_get_type_handle)(void);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NONNULL* _Nonnull __message_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL message, SG_HNDL_NONNULL output);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL message);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t version);
@@ -86,6 +88,7 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_i32__get_Version_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_TransferFormat__get_TransferFormat_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage, void (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL message, SG_HNDL_NONNULL output), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL message), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t version), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage_ctor_0__3__String_String_ExceptionDispatchInfo)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE invocationId, SG_HNDL_NONNULL target, SG_HNDL_NONNULL bindingFailure);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage_ExceptionDispatchInfo__get_BindingFailure_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -211,6 +214,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_IInvocationBinder_cast(SG_HNDL_NULL
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_IInvocationBinder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL invocationId), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL methodName), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL streamId), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_IInvocationBinder_create(__thrown, __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String, __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetReturnType_0__1__String, __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String, __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_System_Collections_Generic_IReadOnlyList_System_Type___GetParameterTypes_0__1__String, __cb_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String, __pdata_Microsoft_AspNetCore_SignalR_IInvocationBinder_Type__GetStreamItemType_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_SignalR_ISignalRBuilder_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_get_type_handle) {
         my_init();
@@ -232,6 +243,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_ISignalRBuilder_cast(SG_HNDL_NULLAB
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_ISignalRBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_ISignalRBuilder_create(__thrown, __deinit);
     return ret;
 }
 
@@ -416,7 +435,7 @@ void Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_void__WriteResponse
     _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_void__WriteResponseMessage_0__2__HandshakeResponseMessage_System_Buffers_IBufferWriter_u8_(__thrown, responseMessage, output);
 }
 
-int32_t Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __buffer_ref_ptr, SG_HNDL_NONNULL* _Nonnull __responseMessage_out_ptr) {
+int32_t Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __buffer_ref_ptr, SG_HNDL_NULLABLE* _Nonnull __responseMessage_out_ptr) {
     if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage) {
         my_init();
     }
@@ -424,7 +443,7 @@ int32_t Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRe
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL* _Nonnull __buffer_ref_ptr, SG_HNDL_NONNULL* _Nonnull __requestMessage_out_ptr) {
+int32_t Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __buffer_ref_ptr, SG_HNDL_NULLABLE* _Nonnull __requestMessage_out_ptr) {
     if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage) {
         my_init();
     }
@@ -686,7 +705,7 @@ TYP Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_get_type_handle(void) {
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NONNULL* _Nonnull __message_out_ptr) {
+int32_t Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr) {
     if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage) {
         my_init();
     }
@@ -746,6 +765,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_cast(SG_HNDL_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage, void (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL message, SG_HNDL_NONNULL output), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL message), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t version), const void* _Nonnull __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR_Common._fp_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_create(__thrown, __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage, __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage, __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_, __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_, __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage, __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage, __cb_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32, __pdata_Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__IsVersionSupported_0__1__i32, __deinit);
     return ret;
 }
 

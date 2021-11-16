@@ -25,6 +25,7 @@ struct {
     void (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL callback, GVAL state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_IExternalScopeProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_IExternalScopeProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL callback, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -34,18 +35,23 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t logLevel, SG_HNDL_NONNULL eventId, GVAL state, SG_HNDL_NULLABLE exception, SG_HNDL_NONNULL formatter);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel, SG_HNDL_NONNULL eventId, GVAL state, SG_HNDL_NULLABLE exception, SG_HNDL_NONNULL formatter), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerFactory_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL provider);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL categoryName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL provider), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL categoryName), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL categoryName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILoggerProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL categoryName), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_1_get_type_handle)(TYP TCategoryName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_1_cast)(TYP TCategoryName, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ILogger_1_create)(TYP TCategoryName, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel, SG_HNDL_NONNULL eventId, GVAL state, SG_HNDL_NULLABLE exception, SG_HNDL_NONNULL formatter), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_ISupportExternalScope_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL scopeProvider);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ISupportExternalScope_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_ISupportExternalScope_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL scopeProvider), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_LogDefineOptions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_LogDefineOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     int32_t (* _Nonnull  _fp_Microsoft_Extensions_Logging_LogDefineOptions_bool__get_SkipEnabledCheck_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -218,6 +224,8 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLoggerProvider_NullLoggerProvider__get_Instance_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLoggerProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_type_handle)(TYP T);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_Instance)(void);
+    void (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_set_Instance)(SG_HNDL_NONNULL __v);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_ctor_0__0)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_IDisposable__BeginScope_1__1__UTState)(TYP T, TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_IDisposable__BeginScope_1__1__UTState)(TYP T, TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -377,6 +385,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_IExternalScopeProvider_cast(SG_HNDL
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_IExternalScopeProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL callback, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_IExternalScopeProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_IExternalScopeProvider_create(__thrown, __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState, __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_void__ForEachScope_1__2__System_Action_object_UTState__UTState, __cb_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object, __pdata_Microsoft_Extensions_Logging_IExternalScopeProvider_IDisposable__Push_0__1__Object, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Logging_ILogger_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_get_type_handle) {
         my_init();
@@ -447,6 +463,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILogger_cast(SG_HNDL_NULLABLE * _No
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILogger_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel, SG_HNDL_NONNULL eventId, GVAL state, SG_HNDL_NULLABLE exception, SG_HNDL_NONNULL formatter), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_create(__thrown, __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Logging_ILoggerFactory_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerFactory_get_type_handle) {
         my_init();
@@ -478,6 +502,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggerFactory_cast(SG_HNDL_NULLABL
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL provider), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL categoryName), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerFactory_create(__thrown, __cb_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider, __pdata_Microsoft_Extensions_Logging_ILoggerFactory_void__AddProvider_0__1__ILoggerProvider, __cb_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String, __pdata_Microsoft_Extensions_Logging_ILoggerFactory_ILogger__CreateLogger_0__1__String, __cb_System_IDisposable_void__Dispose_0__0, __pdata_System_IDisposable_void__Dispose_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Logging_ILoggerProvider_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerProvider_get_type_handle) {
         my_init();
@@ -502,6 +534,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggerProvider_cast(SG_HNDL_NULLAB
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggerProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL categoryName), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILoggerProvider_create(__thrown, __cb_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String, __pdata_Microsoft_Extensions_Logging_ILoggerProvider_ILogger__CreateLogger_0__1__String, __cb_System_IDisposable_void__Dispose_0__0, __pdata_System_IDisposable_void__Dispose_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Logging_ILogger_1_get_type_handle(TYP TCategoryName) {
     if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_1_get_type_handle) {
         my_init();
@@ -515,6 +555,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILogger_1_cast(TYP TCategoryName, S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_1_cast(TCategoryName, __thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILogger_1_create(TYP TCategoryName, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL state), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t logLevel, SG_HNDL_NONNULL eventId, GVAL state, SG_HNDL_NULLABLE exception, SG_HNDL_NONNULL formatter), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ILogger_1_create(TCategoryName, __thrown, __cb_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, __pdata_Microsoft_Extensions_Logging_ILogger_IDisposable__BeginScope_1__1__UTState, __cb_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, __pdata_Microsoft_Extensions_Logging_ILogger_bool__IsEnabled_0__1__LogLevel, __cb_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, __pdata_Microsoft_Extensions_Logging_ILogger_void__Log_1__5__LogLevel_EventId_UTState_Exception_System_Func_UTState_System_Exception_string_, __deinit);
     return ret;
 }
 
@@ -538,6 +586,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_ISupportExternalScope_cast(SG_HNDL_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ISupportExternalScope_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ISupportExternalScope_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL scopeProvider), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ISupportExternalScope_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_ISupportExternalScope_create(__thrown, __cb_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider, __pdata_Microsoft_Extensions_Logging_ISupportExternalScope_void__SetScopeProvider_0__1__IExternalScopeProvider, __deinit);
     return ret;
 }
 
@@ -1873,6 +1929,21 @@ TYP Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_type_handle(TYP T
     }
     TYP ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_type_handle(T);
     return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_Instance(void) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_Instance) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_Instance();
+    return ret;
+}
+
+void Microsoft_Extensions_Logging_Abstractions_NullLogger_1_set_Instance(SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_set_Instance) {
+        my_init();
+    }
+    _g_Microsoft_Extensions_Logging_Abstractions._fp_Microsoft_Extensions_Logging_Abstractions_NullLogger_1_set_Instance(__v);
 }
 
 SG_HNDL_NONNULL Microsoft_Extensions_Logging_Abstractions_NullLogger_1_ctor_0__0(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown) {

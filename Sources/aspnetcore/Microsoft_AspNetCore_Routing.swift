@@ -8,261 +8,6 @@ import dotnet;
 // Microsoft.AspNetCore
 // Microsoft.AspNetCore.Builder
 extension Microsoft.AspNetCore.Builder {
-// type: Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder
-    /**
-    
-            Builds conventions that will be used for customization of MapAction  instances.
-            
-
-    */
-public final class DelegateEndpointConventionBuilder
-    :
-    dotnet.System.Object,
-    Microsoft_AspNetCore_Builder_IEndpointConventionBuilder
-{
-    public class override func get_type_handle() -> TypeHandle {
-        return Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_get_type_handle();
-    }
-    public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
-    public required init(gval: GVal) { super.init(gval: gval); }
-    // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder.Add(System.Action{Microsoft.AspNetCore.Builder.EndpointBuilder})
-    /**
-    
-            Adds the specified convention to the builder. Conventions are used to customize  instances.
-            
-
-    - Parameter convention: The convention to add to the builder.
-    */
-    public func Add(convention : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws {
-        var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Builder_DelegateEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(&__thrown, self.get_handle(), convention.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-            return;
-        }
-    }
-    // delegate closure overload
-    public func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
-        let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
-        return try Add(convention: del_convention);
-    }
-} // DelegateEndpointConventionBuilder
-
-
-// type: Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions
-public struct DelegateEndpointRouteBuilderExtensions {
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP GET requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapGet(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP POST requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapPost(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP PUT requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapPut(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP DELETE requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapDelete(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Collections.Generic.IEnumerable{System.String},System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP requests
-            for the specified HTTP methods and pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Parameter httpMethods: HTTP methods that the endpoint will match.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapMethods(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), httpMethods.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,Microsoft.AspNetCore.Routing.Patterns.RoutePattern,System.Delegate)
-    /**
-    
-            Adds a  to the  that matches HTTP requests
-            for the specified pattern.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Delegate)
-    /**
-    
-            Adds a specialized  to the  that will match
-            requests for non-file-names with the lowest possible priority.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(&__thrown, endpoints.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-    // Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-// docid: M:Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
-    /**
-    
-            Adds a specialized  to the  that will match
-            the provided pattern with the lowest possible priority.
-            
-
-    - Parameter endpoints: The  to add the route to.
-    - Parameter pattern: The route pattern.
-    - Parameter handler: The delegate executed when the endpoint is matched.
-    - Returns: A  that can be used to further customize the endpoint.
-
-    */
-    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Builder_DelegateEndpointRouteBuilderExtensions_DelegateEndpointConventionBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
-        if let __ex =  __thrown {
-            throw dotnet.System.Exception(hndl: __ex);
-        } else {
-        return aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder(hndl : __return);
-        }
-    }
-} // DelegateEndpointRouteBuilderExtensions
-
-
 // type: Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions
 public struct EndpointRouteBuilderExtensions {
     // Microsoft.AspNetCore.Builder.IEndpointConventionBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, Microsoft.AspNetCore.Http.RequestDelegate)
@@ -289,7 +34,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapGet(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapGet(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapGet(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -317,7 +62,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPost(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapPost(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapPost(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -345,7 +90,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPut(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapPut(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapPut(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -373,7 +118,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapDelete(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapDelete(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapDelete(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -402,7 +147,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMethods(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapMethods(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapMethods(endpoints: endpoints, pattern: pattern, httpMethods: httpMethods, requestDelegate: del_requestDelegate);
     }
@@ -430,7 +175,7 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try Map(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -458,9 +203,216 @@ public struct EndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try Map(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP GET requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapGet(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapGet_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP POST requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapPost(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPost_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP PUT requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapPut(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapPut_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP DELETE requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapDelete(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapDelete_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Collections.Generic.IEnumerable{System.String},System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP requests
+            for the specified HTTP methods and pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Parameter httpMethods: HTTP methods that the endpoint will match.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapMethods(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapMethods_0__4__IEndpointRouteBuilder_String_System_Collections_Generic_IEnumerable_string__Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), httpMethods.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,Microsoft.AspNetCore.Routing.Patterns.RoutePattern,System.Delegate)
+    /**
+    
+            Adds a  to the  that matches HTTP requests
+            for the specified pattern.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func Map(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__Map_0__3__IEndpointRouteBuilder_RoutePattern_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.Delegate)
+    /**
+    
+            Adds a specialized  to the  that will match
+            requests for non-file-names with the lowest possible priority.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__2__IEndpointRouteBuilder_Delegate(&__thrown, endpoints.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+// docid: M:Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,System.Delegate)
+    /**
+    
+            Adds a specialized  to the  that will match
+            the provided pattern with the lowest possible priority.
+            
+
+    - Parameter endpoints: The  to add the route to.
+    - Parameter pattern: The route pattern.
+    - Parameter handler: The delegate executed when the endpoint is matched.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Builder_EndpointRouteBuilderExtensions_RouteHandlerBuilder__MapFallback_0__3__IEndpointRouteBuilder_String_Delegate(&__thrown, endpoints.get_handle(), pattern.get_handle(), handler.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
     }
 } // EndpointRouteBuilderExtensions
 
@@ -512,7 +464,7 @@ public struct EndpointRoutingApplicationBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseEndpoints(builder : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseEndpoints(builder : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder>(configure);
         return try UseEndpoints(builder: builder, configure: del_configure);
     }
@@ -557,7 +509,7 @@ public struct FallbackEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapFallback(endpoints: endpoints, requestDelegate: del_requestDelegate);
     }
@@ -585,7 +537,7 @@ public struct FallbackEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public static func MapFallback(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try MapFallback(endpoints: endpoints, pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -711,6 +663,71 @@ public struct MapRouteRouteBuilderExtensions {
 } // MapRouteRouteBuilderExtensions
 
 
+// type: Microsoft.AspNetCore.Builder.RouteHandlerBuilder
+    /**
+    
+            Builds conventions that will be used for customization of MapAction  instances.
+            
+
+    */
+public final class RouteHandlerBuilder
+    :
+    dotnet.System.Object,
+    Microsoft_AspNetCore_Builder_IEndpointConventionBuilder
+{
+    public class override func get_type_handle() -> TypeHandle {
+        return Microsoft_AspNetCore_Builder_RouteHandlerBuilder_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
+    public required init(gval: GVal) { super.init(gval: gval); }
+    // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder>)
+// docid: M:Microsoft.AspNetCore.Builder.RouteHandlerBuilder.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Builder.IEndpointConventionBuilder})
+    /**
+    
+            Instantiates a new  given multiple
+             instances.
+            
+
+    - Parameter endpointConventionBuilders: A list of  instances.
+    */
+    public init(endpointConventionBuilders : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder>) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Builder_RouteHandlerBuilder_ctor_0__1__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_(&__thrown, endpointConventionBuilders.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
+    // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
+// docid: M:Microsoft.AspNetCore.Builder.RouteHandlerBuilder.Add(System.Action{Microsoft.AspNetCore.Builder.EndpointBuilder})
+    /**
+    
+            Adds the specified convention to the builder. Conventions are used to customize  instances.
+            
+
+    - Parameter convention: The convention to add to the builder.
+    */
+    public func Add(convention : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Builder_RouteHandlerBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_(&__thrown, self.get_handle(), convention.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // delegate closure overload
+    public func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
+        let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
+        return try Add(convention: del_convention);
+    }
+} // RouteHandlerBuilder
+
+
 // type: Microsoft.AspNetCore.Builder.RouterMiddleware
     /**
     
@@ -724,6 +741,9 @@ open class RouterMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_RouterMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -815,7 +835,7 @@ public struct RoutingBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseRouter(builder : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseRouter(builder : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, action : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder>(action);
         return try UseRouter(builder: builder, action: del_action);
     }
@@ -894,7 +914,7 @@ public struct RoutingEndpointConventionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func WithDisplayName<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, func_ : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> dotnet.System.String) throws -> UTBuilder {
+    public static func WithDisplayName<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, func_ : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> dotnet.System.String) throws -> UTBuilder {
         let del_func_ = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder,dotnet.System.String>(func_);
         return try WithDisplayName(builder: builder, func_: del_func_);
     }
@@ -973,6 +993,181 @@ public struct RoutingEndpointConventionBuilderExtensions {
 
 }
 
+// Microsoft.AspNetCore.Http
+extension Microsoft.AspNetCore.Http {
+// type: Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions
+public struct OpenApiRouteHandlerBuilderExtensions {
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder ExcludeFromDescription(Microsoft.AspNetCore.Builder.RouteHandlerBuilder)
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ExcludeFromDescription(Microsoft.AspNetCore.Builder.RouteHandlerBuilder)
+    /**
+    
+            Adds the  to  for all builders
+            produced by .
+            
+
+    - Parameter builder: The .
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func ExcludeFromDescription(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ExcludeFromDescription_0__1__RouteHandlerBuilder(&__thrown, builder.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+// TODO COPE (write_all_methods) (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Produces<TResponse>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String, System.String[])
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder Produces(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.Type, System.String, System.String[])
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Produces(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.Int32,System.Type,System.String,System.String[])
+    /**
+    
+            Adds an  to  for all builders
+            produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter statusCode: The response status code.
+    - Parameter responseType: The type of the response. Defaults to null.
+    - Parameter contentType: The response content type. Defaults to "application/json" if responseType is not null, otherwise defaults to null.
+    - Parameter additionalContentTypes: Additional response content types the endpoint produces for the supplied status code.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func Produces(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, statusCode : Swift.Int32, responseType : Optional<dotnet.System.Type_> = nil, contentType : Optional<dotnet.System.String> = nil, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Produces_0__5__RouteHandlerBuilder_i32_Type_String_StringArray(&__thrown, builder.get_handle(), statusCode, responseType?.get_handle() ?? nil, contentType?.get_handle() ?? nil, additionalContentTypes.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder ProducesProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String)
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ProducesProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.Int32,System.String)
+    /**
+    
+            Adds an  with a  type
+            to  for all builders produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter statusCode: The response status code.
+    - Parameter contentType: The response content type. Defaults to "application/problem+json".
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func ProducesProblem(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, statusCode : Swift.Int32, contentType : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesProblem_0__3__RouteHandlerBuilder_i32_String(&__thrown, builder.get_handle(), statusCode, contentType?.get_handle() ?? nil);
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder ProducesValidationProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String)
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ProducesValidationProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.Int32,System.String)
+    /**
+    
+            Adds an  with a  type
+            to  for all builders produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter statusCode: The response status code. Defaults to .
+    - Parameter contentType: The response content type. Defaults to "application/problem+json".
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func ProducesValidationProblem(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, statusCode : Swift.Int32 = 400, contentType : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__ProducesValidationProblem_0__3__RouteHandlerBuilder_i32_String(&__thrown, builder.get_handle(), statusCode, contentType?.get_handle() ?? nil);
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder WithTags(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.String[])
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.WithTags(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.String[])
+    /**
+    
+            Adds the  to  for all builders
+            produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter tags: A collection of tags to be associated with the endpoint.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func WithTags(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, tags : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__WithTags_0__2__RouteHandlerBuilder_StringArray(&__thrown, builder.get_handle(), tags.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+// TODO COPE (write_all_methods) (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.String, System.String[])
+// TODO COPE (write_all_methods) (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, bool, System.String, System.String[])
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Type, System.String, System.String[])
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.Type,System.String,System.String[])
+    /**
+    
+            Adds  to  for all builders
+            produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter requestType: The type of the request body.
+    - Parameter contentType: The request content type that the endpoint accepts.
+    - Parameter additionalContentTypes: The list of additional request content types that the endpoint accepts.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func Accepts(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, requestType : dotnet.System.Type_, contentType : dotnet.System.String, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__4__RouteHandlerBuilder_Type_String_StringArray(&__thrown, builder.get_handle(), requestType.get_handle(), contentType.get_handle(), additionalContentTypes.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Type, bool, System.String, System.String[])
+// docid: M:Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder,System.Type,System.Boolean,System.String,System.String[])
+    /**
+    
+            Adds  to  for all builders
+            produced by .
+            
+
+    - Parameter builder: The .
+    - Parameter requestType: The type of the request body.
+    - Parameter isOptional: Sets a value that determines if the request body is optional.
+    - Parameter contentType: The request content type that the endpoint accepts.
+    - Parameter additionalContentTypes: The list of additional request content types that the endpoint accepts.
+    - Returns: A  that can be used to further customize the endpoint.
+
+    */
+    public static func Accepts(builder : aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder, requestType : dotnet.System.Type_, isOptional : Bool, contentType : dotnet.System.String, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_OpenApiRouteHandlerBuilderExtensions_RouteHandlerBuilder__Accepts_0__5__RouteHandlerBuilder_Type_bool_String_StringArray(&__thrown, builder.get_handle(), requestType.get_handle(), Swift.Int32(isOptional ? 1 : 0), contentType.get_handle(), additionalContentTypes.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder(hndl : __return);
+        }
+    }
+} // OpenApiRouteHandlerBuilderExtensions
+
+
+}
+
 // Microsoft.AspNetCore.Routing
 extension Microsoft.AspNetCore.Routing {
 // type: Microsoft.AspNetCore.Routing.CompositeEndpointDataSource
@@ -988,6 +1183,9 @@ public final class CompositeEndpointDataSource
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_CompositeEndpointDataSource_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1093,6 +1291,9 @@ public final class DataTokensMetadata
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_DataTokensMetadata_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>)
@@ -1151,6 +1352,9 @@ public final class DefaultEndpointDataSource
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_DefaultEndpointDataSource_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1252,6 +1456,9 @@ open class DefaultInlineConstraintResolver
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_DefaultInlineConstraintResolver_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Routing.RouteOptions>, System.IServiceProvider)
@@ -1306,6 +1513,9 @@ open class EndpointDataSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_EndpointDataSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1369,6 +1579,9 @@ public final class EndpointGroupNameAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_EndpointGroupNameAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -1425,6 +1638,9 @@ public final class EndpointNameAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_EndpointNameAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -1480,6 +1696,9 @@ open class EndpointNameMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_EndpointNameMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1541,6 +1760,9 @@ public final class ExcludeFromDescriptionAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_ExcludeFromDescriptionAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1589,6 +1811,9 @@ public final class HostAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_HostAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1676,6 +1901,9 @@ public final class HttpMethodMetadata
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_HttpMethodMetadata_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1787,6 +2015,9 @@ open class IDataTokensMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IDataTokensMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1826,6 +2057,9 @@ open class IDynamicEndpointMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1864,6 +2098,9 @@ open class IEndpointAddressScheme_1<TAddress : SGBridgeGenericValue>
     public typealias TAddress_IEndpointAddressScheme_1 = TAddress;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_get_type_handle(TAddress.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1912,6 +2149,9 @@ open class IEndpointGroupNameMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1949,6 +2189,9 @@ open class IEndpointNameMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IEndpointNameMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1988,6 +2231,9 @@ open class IEndpointRouteBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2057,6 +2303,9 @@ open class IExcludeFromDescriptionMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2095,6 +2344,9 @@ open class IHostMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IHostMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2132,6 +2384,9 @@ open class IHttpMethodMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IHttpMethodMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2181,6 +2436,9 @@ open class IInlineConstraintResolver
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IInlineConstraintResolver_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2234,6 +2492,9 @@ open class INamedRouter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_INamedRouter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2276,6 +2537,9 @@ open class IRouteBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouteBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2381,6 +2645,9 @@ open class IRouteCollection
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouteCollection_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2427,6 +2694,9 @@ open class IRouteNameMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouteNameMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2470,6 +2740,9 @@ open class ISuppressLinkGenerationMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2508,6 +2781,9 @@ open class ISuppressMatchingMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2873,6 +3149,9 @@ open class LinkParser
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_LinkParser_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Routing.RouteValueDictionary ParsePathByAddress<TAddress>(TAddress, Microsoft.AspNetCore.Http.PathString)
@@ -2959,6 +3238,9 @@ open class MatcherPolicy
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_MatcherPolicy_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Int32 get_Order()
@@ -3001,6 +3283,9 @@ open class ParameterPolicyFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_ParameterPolicyFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3096,7 +3381,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapRoute(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapRoute(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapRoute(builder: builder, template: template, handler: del_handler);
     }
@@ -3124,7 +3409,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewareRoute(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewareRoute(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewareRoute(builder: builder, template: template, action: del_action);
     }
@@ -3152,7 +3437,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapDelete(builder: builder, template: template, handler: del_handler);
     }
@@ -3180,7 +3465,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewareDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewareDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewareDelete(builder: builder, template: template, action: del_action);
     }
@@ -3208,7 +3493,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapDelete(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try MapDelete(builder: builder, template: template, handler: del_handler);
     }
@@ -3236,7 +3521,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapGet(builder: builder, template: template, handler: del_handler);
     }
@@ -3264,7 +3549,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewareGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewareGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewareGet(builder: builder, template: template, action: del_action);
     }
@@ -3292,7 +3577,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapGet(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try MapGet(builder: builder, template: template, handler: del_handler);
     }
@@ -3320,7 +3605,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapPost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapPost(builder: builder, template: template, handler: del_handler);
     }
@@ -3348,7 +3633,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewarePost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewarePost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewarePost(builder: builder, template: template, action: del_action);
     }
@@ -3376,7 +3661,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapPost(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try MapPost(builder: builder, template: template, handler: del_handler);
     }
@@ -3404,7 +3689,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapPut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapPut(builder: builder, template: template, handler: del_handler);
     }
@@ -3432,7 +3717,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewarePut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewarePut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewarePut(builder: builder, template: template, action: del_action);
     }
@@ -3460,7 +3745,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapPut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapPut(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try MapPut(builder: builder, template: template, handler: del_handler);
     }
@@ -3489,7 +3774,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try MapVerb(builder: builder, verb: verb, template: template, handler: del_handler);
     }
@@ -3518,7 +3803,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try MapVerb(builder: builder, verb: verb, template: template, handler: del_handler);
     }
@@ -3547,7 +3832,7 @@ public struct RequestDelegateRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapMiddlewareVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public static func MapMiddlewareVerb(builder : aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder, verb : dotnet.System.String, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try MapMiddlewareVerb(builder: builder, verb: verb, template: template, action: del_action);
     }
@@ -3567,6 +3852,9 @@ open class Route
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Route_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3682,6 +3970,9 @@ open class RouteBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, Microsoft.AspNetCore.Routing.IInlineConstraintResolver, Microsoft.AspNetCore.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<System.String,System.Object>, Microsoft.AspNetCore.Routing.RouteValueDictionary)
@@ -3711,13 +4002,13 @@ open class RouteBase
 // docid: M:Microsoft.AspNetCore.Routing.RouteBase.RouteAsync(Microsoft.AspNetCore.Routing.RouteContext)
     /**
     */
-    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_RouteBase_Task__RouteAsync_0__1__RouteContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Routing.VirtualPathData GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext)
@@ -3948,6 +4239,9 @@ open class RouteBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Builder.IApplicationBuilder)
@@ -4097,7 +4391,7 @@ open class RouteBuilder
 // type: Microsoft.AspNetCore.Routing.RouteCollection
     /**
     
-            Supports managing a collection fo multiple routes.
+            Supports managing a collection for multiple routes.
             
 
     */
@@ -4109,6 +4403,9 @@ open class RouteCollection
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteCollection_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4140,13 +4437,13 @@ open class RouteCollection
 // docid: M:Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(Microsoft.AspNetCore.Routing.RouteContext)
     /**
     */
-    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_RouteCollection_Task__RouteAsync_0__1__RouteContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Routing.VirtualPathData GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext)
@@ -4179,9 +4476,6 @@ open class RouteCollection
     }
     // [IsSpecialName] Microsoft.AspNetCore.Routing.IRouter get_Item(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.RouteCollection.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(index : Swift.Int32) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouter {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_RouteCollection_IRouter__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -4218,6 +4512,9 @@ open class RouteConstraintBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteConstraintBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4367,6 +4664,9 @@ open class RouteCreationException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteCreationException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -4423,6 +4723,9 @@ public final class RouteEndpoint
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteEndpoint_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4510,6 +4813,9 @@ public final class RouteEndpointBuilder
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteEndpointBuilder_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4637,6 +4943,9 @@ open class RouteHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate)
@@ -4691,16 +5000,87 @@ open class RouteHandler
 // docid: M:Microsoft.AspNetCore.Routing.RouteHandler.RouteAsync(Microsoft.AspNetCore.Routing.RouteContext)
     /**
     */
-    open /* method final */ func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_RouteHandler_Task__RouteAsync_0__1__RouteContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // RouteHandler
+
+
+// type: Microsoft.AspNetCore.Routing.RouteHandlerOptions
+    /**
+    
+            Options for controlling the behavior of 
+            and similar methods.
+            
+
+    */
+public final class RouteHandlerOptions
+    :
+    dotnet.System.Object
+{
+    public class override func get_type_handle() -> TypeHandle {
+        return Microsoft_AspNetCore_Routing_RouteHandlerOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
+    public required init(gval: GVal) { super.init(gval: gval); }
+    // .ctor()
+// docid: M:Microsoft.AspNetCore.Routing.RouteHandlerOptions.#ctor
+    public override init() throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Routing_RouteHandlerOptions_ctor_0__0(&__thrown);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
+    // [IsSpecialName] bool get_ThrowOnBadRequest()
+// docid: M:Microsoft.AspNetCore.Routing.RouteHandlerOptions.get_ThrowOnBadRequest
+    public func get_ThrowOnBadRequest() throws -> Bool {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Routing_RouteHandlerOptions_bool__get_ThrowOnBadRequest_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    // [IsSpecialName] void set_ThrowOnBadRequest(bool)
+// docid: M:Microsoft.AspNetCore.Routing.RouteHandlerOptions.set_ThrowOnBadRequest(System.Boolean)
+    public func set_ThrowOnBadRequest(value : Bool) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Routing_RouteHandlerOptions_void__set_ThrowOnBadRequest_0__1__bool(&__thrown, self.get_handle(), Swift.Int32(value ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    /**
+    
+            Controls whether endpoints should throw a  in addition to
+            writing a  log when handling invalid requests.
+            
+
+    */
+    public var ThrowOnBadRequest : Bool {
+        get {
+            return try! get_ThrowOnBadRequest();
+        }
+        set(v) {
+            return try! set_ThrowOnBadRequest(value: v);
+        }
+    }
+} // RouteHandlerOptions
 
 
 // type: Microsoft.AspNetCore.Routing.RouteNameMetadata
@@ -4717,6 +5097,9 @@ public final class RouteNameMetadata
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteNameMetadata_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4780,6 +5163,9 @@ open class RouteOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5004,6 +5390,9 @@ open class RouteValueEqualityComparer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteValueEqualityComparer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.Routing.RouteValueEqualityComparer Default
@@ -5072,6 +5461,9 @@ open class RouteValuesAddress
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteValuesAddress_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5220,6 +5612,9 @@ open class RoutingFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RoutingFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5288,6 +5683,9 @@ public final class SuppressLinkGenerationMetadata
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_SuppressLinkGenerationMetadata_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5341,6 +5739,9 @@ public final class SuppressMatchingMetadata
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_SuppressMatchingMetadata_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5397,6 +5798,9 @@ open class AlphaRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_AlphaRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5435,6 +5839,9 @@ open class BoolRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_BoolRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5481,6 +5888,9 @@ open class CompositeRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_CompositeRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5557,6 +5967,9 @@ open class DateTimeRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_DateTimeRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5603,6 +6016,9 @@ open class DecimalRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_DecimalRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5648,6 +6064,9 @@ open class DoubleRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_DoubleRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5697,6 +6116,9 @@ open class FileNameRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_FileNameRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5742,6 +6164,9 @@ open class FloatRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_FloatRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5791,6 +6216,9 @@ open class GuidRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_GuidRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5835,6 +6263,9 @@ open class HttpMethodRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_HttpMethodRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5912,6 +6343,9 @@ open class IntRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_IntRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5957,6 +6391,9 @@ open class LengthRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_LengthRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6076,6 +6513,9 @@ open class LongRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_LongRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6121,6 +6561,9 @@ open class MaxLengthRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_MaxLengthRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6197,6 +6640,9 @@ open class MaxRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_MaxRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Int64)
@@ -6272,6 +6718,9 @@ open class MinLengthRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_MinLengthRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Int32)
@@ -6346,6 +6795,9 @@ open class MinRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_MinRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6424,6 +6876,9 @@ open class NonFileNameRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_NonFileNameRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6468,6 +6923,9 @@ open class OptionalRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_OptionalRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6543,6 +7001,9 @@ open class RangeRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_RangeRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6639,6 +7100,9 @@ open class RegexInlineRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_RegexInlineRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -6678,6 +7142,9 @@ open class RegexRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_RegexRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6771,6 +7238,9 @@ open class RequiredRouteConstraint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_RequiredRouteConstraint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6816,6 +7286,9 @@ open class StringRouteConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Constraints_StringRouteConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6881,6 +7354,9 @@ open class DfaGraphWriter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Internal_DfaGraphWriter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider)
@@ -6943,6 +7419,9 @@ public final class CandidateSet
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_CandidateSet_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.Endpoint[], Microsoft.AspNetCore.Routing.RouteValueDictionary[], System.Int32[])
@@ -6972,6 +7451,7 @@ public final class CandidateSet
             super.init(hndl: h);
         }
     }
+// TODO COPE (returns_byref): [IsSpecialName] ref Microsoft.AspNetCore.Routing.Matching.CandidateState get_Item(System.Int32)
     // bool IsValidCandidate(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.CandidateSet.IsValidCandidate(System.Int32)
     /**
@@ -7113,6 +7593,9 @@ public final class CandidateState
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_CandidateState_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -7224,6 +7707,9 @@ public final class EndpointMetadataComparer
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // EndpointMetadataComparer
@@ -7245,8 +7731,24 @@ open class EndpointMetadataComparer_1<TMetadata : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_type_handle(TMetadata.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // static field:  Default
+    /**
+    
+            A default instance of the .
+            
+
+    */
+    open class var Default : aspnetcore.Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer_1<TMetadata> {
+        get {
+        let __return = aspnetcore.Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer_1<TMetadata>(hndl: Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_get_Default());
+            return __return;
+        }
+    }
     // System.Int32 Compare(Microsoft.AspNetCore.Http.Endpoint, Microsoft.AspNetCore.Http.Endpoint)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.EndpointMetadataComparer`1.Compare(Microsoft.AspNetCore.Http.Endpoint,Microsoft.AspNetCore.Http.Endpoint)
     /**
@@ -7292,6 +7794,9 @@ open class EndpointSelector
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_EndpointSelector_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task SelectAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Routing.Matching.CandidateSet)
@@ -7306,13 +7811,13 @@ open class EndpointSelector
     - Returns: A  that completes asynchronously once endpoint selection is complete.
 
     */
-    open func SelectAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SelectAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_Matching_EndpointSelector_Task__SelectAsync_0__2__HttpContext_CandidateSet(&__thrown, self.get_handle(), httpContext.get_handle(), candidates.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // EndpointSelector
@@ -7336,6 +7841,9 @@ public final class HostMatcherPolicy
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_HostMatcherPolicy_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -7353,13 +7861,13 @@ public final class HostMatcherPolicy
 // docid: M:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy.ApplyAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet)
     /**
     */
-    public func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) throws -> dotnet.System.Threading.Tasks.Task {
+    public func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_Matching_HostMatcherPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet(&__thrown, self.get_handle(), httpContext.get_handle(), candidates.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge> GetEdges(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Http.Endpoint>)
@@ -7445,6 +7953,9 @@ public final class HttpMethodMatcherPolicy
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_HttpMethodMatcherPolicy_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -7470,13 +7981,13 @@ public final class HttpMethodMatcherPolicy
     - Returns: 
 
     */
-    public func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) throws -> dotnet.System.Threading.Tasks.Task {
+    public func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_Matching_HttpMethodMatcherPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet(&__thrown, self.get_handle(), httpContext.get_handle(), candidates.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Routing.Matching.PolicyNodeEdge> GetEdges(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Http.Endpoint>)
@@ -7585,6 +8096,9 @@ open class IEndpointComparerPolicy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -7625,6 +8139,9 @@ open class IEndpointSelectorPolicy
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -7670,13 +8187,13 @@ open class IEndpointSelectorPolicy
             
     - Parameter candidates: The .
     */
-    open func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ApplyAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, candidates : aspnetcore.Microsoft.AspNetCore.Routing.Matching.CandidateSet) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_Task__ApplyAsync_0__2__HttpContext_CandidateSet(&__thrown, self.get_handle(), httpContext.get_handle(), candidates.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IEndpointSelectorPolicy
@@ -7696,6 +8213,9 @@ open class INodeBuilderPolicy
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -7789,6 +8309,9 @@ open class IParameterLiteralNodeMatchingPolicy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -7836,6 +8359,9 @@ open class PolicyJumpTable
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Int32 GetDestination(Microsoft.AspNetCore.Http.HttpContext)
@@ -7873,6 +8399,9 @@ public final class PolicyJumpTableEdge
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_PolicyJumpTableEdge_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7961,6 +8490,9 @@ public final class PolicyNodeEdge
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Matching_PolicyNodeEdge_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8054,6 +8586,9 @@ public final class RoutePattern
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePattern_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8294,6 +8829,9 @@ public final class RoutePatternException
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternException_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8988,6 +9526,9 @@ public final class RoutePatternLiteralPart
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternLiteralPart_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_Content()
@@ -9089,6 +9630,9 @@ public final class RoutePatternParameterPart
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPart_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9270,6 +9814,9 @@ public final class RoutePatternParameterPolicyReference
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPolicyReference_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_Content()
@@ -9340,6 +9887,9 @@ open class RoutePatternPart
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9508,6 +10058,9 @@ public final class RoutePatternPathSegment
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternPathSegment_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] bool get_IsSimple()
@@ -9573,6 +10126,9 @@ public final class RoutePatternSeparatorPart
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternSeparatorPart_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_Content()
@@ -9613,6 +10169,9 @@ open class RoutePatternTransformer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Patterns_RoutePatternTransformer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9664,6 +10223,9 @@ open class InlineConstraint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_InlineConstraint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9786,6 +10348,9 @@ open class RouteTemplate
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_RouteTemplate_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9982,6 +10547,9 @@ open class TemplateBinder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplateBinder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Routing.Template.TemplateValuesResult GetValues(Microsoft.AspNetCore.Routing.RouteValueDictionary, Microsoft.AspNetCore.Routing.RouteValueDictionary)
@@ -10023,14 +10591,16 @@ open class TemplateBinder
     - Returns:  if constraints were processed succesfully and false otherwise.
 
     */
-    open func TryProcessConstraints(httpContext : Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, combinedValues : aspnetcore.Microsoft.AspNetCore.Routing.RouteValueDictionary, parameterName : inout dotnet.System.String, constraint : inout aspnetcore.Microsoft.AspNetCore.Routing.IRouteConstraint) throws -> Bool {
+    open func TryProcessConstraints(httpContext : Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, combinedValues : aspnetcore.Microsoft.AspNetCore.Routing.RouteValueDictionary, parameterName : inout Optional<dotnet.System.String>, constraint : inout Optional<aspnetcore.Microsoft.AspNetCore.Routing.IRouteConstraint>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_parameterName = parameterName.get_handle();
-            var _tmp_out_constraint = constraint.get_handle();
+            var _tmp_out_parameterName = (parameterName != nil) ? (parameterName!.get_handle()) : nil;
+            var _tmp_out_constraint = (constraint != nil) ? (constraint!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Routing_Template_TemplateBinder_bool__TryProcessConstraints_0__4__HttpContext_RouteValueDictionary_outString_outIRouteConstraint(&__thrown, self.get_handle(), httpContext?.get_handle() ?? nil, combinedValues.get_handle(), &_tmp_out_parameterName, &_tmp_out_constraint);
-        let _tmp2_parameterName = dotnet.System.String(hndl: _tmp_out_parameterName);
+        let __h__tmp2_parameterName = _tmp_out_parameterName;
+        let _tmp2_parameterName = (__h__tmp2_parameterName != nil) ? dotnet.System.String(hndl: __h__tmp2_parameterName!) : nil;
             parameterName = _tmp2_parameterName;
-        let _tmp2_constraint = aspnetcore.Microsoft.AspNetCore.Routing.IRouteConstraint(hndl: _tmp_out_constraint);
+        let __h__tmp2_constraint = _tmp_out_constraint;
+        let _tmp2_constraint = (__h__tmp2_constraint != nil) ? aspnetcore.Microsoft.AspNetCore.Routing.IRouteConstraint(hndl: __h__tmp2_constraint!) : nil;
             constraint = _tmp2_constraint;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -10100,6 +10670,9 @@ open class TemplateBinderFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplateBinderFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Routing.Template.TemplateBinder Create(Microsoft.AspNetCore.Routing.Template.RouteTemplate, Microsoft.AspNetCore.Routing.RouteValueDictionary)
@@ -10160,6 +10733,9 @@ open class TemplateMatcher
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplateMatcher_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -10290,6 +10866,9 @@ open class TemplatePart
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplatePart_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -10351,7 +10930,7 @@ open class TemplatePart
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplatePart.CreateParameter(System.String,System.Boolean,System.Boolean,System.Object,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Routing.Template.InlineConstraint})
     /**
     
-            Creates a  representing a paramter part.
+            Creates a  representing a parameter part.
             
 
     - Parameter name: The name of the parameter.
@@ -10514,7 +11093,7 @@ open class TemplatePart
     }
     /**
     
-            The default value for route paramters. Can be null.
+            The default value for route parameters. Can be null.
             
 
     */
@@ -10525,7 +11104,7 @@ open class TemplatePart
     }
     /**
     
-            The constraints associates with a route paramter.
+            The constraints associates with a route parameter.
             
 
     */
@@ -10605,7 +11184,7 @@ open class TemplatePart
     }
     /**
     
-            The textual representation of the route paramter. Can be null. Used to represent route seperators and literal parts.
+            The textual representation of the route parameter. Can be null. Used to represent route seperators and literal parts.
             
 
     */
@@ -10630,6 +11209,9 @@ open class TemplateSegment
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplateSegment_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -10748,6 +11330,9 @@ open class TemplateValuesResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Template_TemplateValuesResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -10853,6 +11438,9 @@ open class InboundMatch
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_InboundMatch_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -10964,6 +11552,9 @@ open class InboundRouteEntry
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_InboundRouteEntry_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11267,6 +11858,9 @@ open class OutboundMatch
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_OutboundMatch_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -11377,6 +11971,9 @@ open class OutboundRouteEntry
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_OutboundRouteEntry_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11761,6 +12358,9 @@ open class TreeRouteBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_TreeRouteBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry MapInbound(Microsoft.AspNetCore.Routing.IRouter, Microsoft.AspNetCore.Routing.Template.RouteTemplate, System.String, System.Int32)
@@ -11955,6 +12555,9 @@ open class TreeRouter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_TreeRouter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String RouteGroupKey
@@ -11967,8 +12570,8 @@ open class TreeRouter
     */
     open class var RouteGroupKey : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Routing_Tree_TreeRouter_get_RouteGroupKey();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Routing_Tree_TreeRouter_get_RouteGroupKey();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -12044,6 +12647,9 @@ open class UrlMatchingNode
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_UrlMatchingNode_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12356,6 +12962,9 @@ open class UrlMatchingTree
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_Tree_UrlMatchingTree_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Int32)
@@ -12474,7 +13083,7 @@ public struct RoutingServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRouting(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddRouting(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions>(configureOptions);
         return try AddRouting(services: services, configureOptions: del_configureOptions);
     }
@@ -12606,76 +13215,13 @@ public protocol Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatch
 {
 }
 
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapGet(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapGet(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapPost(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapPost(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapPut(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapPut(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapDelete(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapDelete(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapMethods(pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapMethods(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, httpMethods: httpMethods, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func Map(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func Map(pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapFallback(handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), handler: handler);
-    }
-}
-
-// EXTENSION METHOD Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
-extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
-    public func MapFallback(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointConventionBuilder {
-        return try aspnetcore.Microsoft.AspNetCore.Builder.DelegateEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
-    }
-}
-
 // EXTENSION METHOD Microsoft.AspNetCore.Builder.IEndpointConventionBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, Microsoft.AspNetCore.Http.RequestDelegate)
 extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
     public func MapGet(pattern : dotnet.System.String, requestDelegate : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapGet(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapGet(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapGet(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapGet(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12687,7 +13233,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPost(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapPost(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapPost(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPost(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12699,7 +13245,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPut(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapPut(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapPut(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPut(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12711,7 +13257,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapDelete(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapDelete(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapDelete(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapDelete(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12723,7 +13269,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapMethods(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, httpMethods: httpMethods, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapMethods(pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapMethods(pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapMethods(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, httpMethods: httpMethods, requestDelegate: del_requestDelegate);
     }
@@ -12735,7 +13281,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func Map(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func Map(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12747,9 +13293,72 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func Map(pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func Map(pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapGet(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapGet(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapGet(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapPost(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapPost(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPost(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapPut(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapPut(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapPut(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapDelete(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapDelete(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapDelete(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapMethods(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Collections.Generic.IEnumerable<System.String>, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapMethods(pattern : dotnet.System.String, httpMethods : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapMethods(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, httpMethods: httpMethods, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func Map(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Map(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func Map(pattern : aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePattern, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.Map(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapFallback(handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), handler: handler);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder MapFallback(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, System.String, System.Delegate)
+extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
+    public func MapFallback(pattern : dotnet.System.String, handler : dotnet.System.Delegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, handler: handler);
     }
 }
 
@@ -12766,7 +13375,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(builder: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func UseEndpoints(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseEndpoints(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(builder: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -12778,7 +13387,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.FallbackEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapFallback(requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapFallback(requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.FallbackEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), requestDelegate: del_requestDelegate);
     }
@@ -12790,7 +13399,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.FallbackEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: requestDelegate);
     }
     // delegate closure overload
-    public func MapFallback(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
+    public func MapFallback(pattern : dotnet.System.String, requestDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IEndpointConventionBuilder {
         let del_requestDelegate = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(requestDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Builder.FallbackEndpointRouteBuilderExtensions.MapFallback(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, requestDelegate: del_requestDelegate);
     }
@@ -12837,7 +13446,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.RoutingBuilderExtensions.UseRouter(builder: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), action: action);
     }
     // delegate closure overload
-    public func UseRouter(action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseRouter(action : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Builder.RoutingBuilderExtensions.UseRouter(builder: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), action: del_action);
     }
@@ -12860,6 +13469,64 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
 
 // EXTENSION METHOD TBuilder WithGroupName<TBuilder>(TBuilder, System.String)
 // TODO COPE extension method on generic param type
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder ExcludeFromDescription(Microsoft.AspNetCore.Builder.RouteHandlerBuilder)
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func ExcludeFromDescription() throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ExcludeFromDescription(builder: self);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Produces<TResponse>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String, System.String[])
+// TODO COPE extension method (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Produces<TResponse>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String, System.String[])
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Produces(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.Type, System.String, System.String[])
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func Produces(statusCode : Swift.Int32, responseType : Optional<dotnet.System.Type_> = nil, contentType : Optional<dotnet.System.String> = nil, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Produces(builder: self, statusCode: statusCode, responseType: responseType, contentType: contentType, additionalContentTypes: additionalContentTypes);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder ProducesProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String)
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func ProducesProblem(statusCode : Swift.Int32, contentType : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ProducesProblem(builder: self, statusCode: statusCode, contentType: contentType);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder ProducesValidationProblem(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Int32, System.String)
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func ProducesValidationProblem(statusCode : Swift.Int32 = 400, contentType : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.ProducesValidationProblem(builder: self, statusCode: statusCode, contentType: contentType);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder WithTags(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.String[])
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func WithTags(tags : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.WithTags(builder: self, tags: tags);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.String, System.String[])
+// TODO COPE extension method (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.String, System.String[])
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, bool, System.String, System.String[])
+// TODO COPE extension method (unused generic param) Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts<TRequest>(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, bool, System.String, System.String[])
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Type, System.String, System.String[])
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func Accepts(requestType : dotnet.System.Type_, contentType : dotnet.System.String, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Accepts(builder: self, requestType: requestType, contentType: contentType, additionalContentTypes: additionalContentTypes);
+    }
+}
+
+// EXTENSION METHOD Microsoft.AspNetCore.Builder.RouteHandlerBuilder Accepts(Microsoft.AspNetCore.Builder.RouteHandlerBuilder, System.Type, bool, System.String, System.String[])
+extension aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+    public func Accepts(requestType : dotnet.System.Type_, isOptional : Bool, contentType : dotnet.System.String, additionalContentTypes : dotnet.System_Arr<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Builder.RouteHandlerBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Http.OpenApiRouteHandlerBuilderExtensions.Accepts(builder: self, requestType: requestType, isOptional: isOptional, contentType: contentType, additionalContentTypes: additionalContentTypes);
+    }
+}
 
 // EXTENSION METHOD System.String GetPathByName(Microsoft.AspNetCore.Routing.LinkGenerator, Microsoft.AspNetCore.Http.HttpContext, System.String, System.Object, System.Nullable<Microsoft.AspNetCore.Http.PathString>, Microsoft.AspNetCore.Http.FragmentString, Microsoft.AspNetCore.Routing.LinkOptions)
 extension aspnetcore.Microsoft.AspNetCore.Routing.LinkGenerator {
@@ -12930,7 +13597,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapRoute(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapRoute(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapRoute(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapRoute(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -12942,7 +13609,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareRoute(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewareRoute(template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewareRoute(template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareRoute(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: del_action);
     }
@@ -12954,7 +13621,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapDelete(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapDelete(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -12966,7 +13633,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewareDelete(template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewareDelete(template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: del_action);
     }
@@ -12978,7 +13645,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapDelete(template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapDelete(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapDelete(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -12990,7 +13657,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapGet(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapGet(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13002,7 +13669,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewareGet(template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewareGet(template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: del_action);
     }
@@ -13014,7 +13681,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapGet(template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapGet(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapGet(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13026,7 +13693,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapPost(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapPost(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13038,7 +13705,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewarePost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewarePost(template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewarePost(template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewarePost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: del_action);
     }
@@ -13050,7 +13717,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapPost(template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapPost(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPost(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13062,7 +13729,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapPut(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapPut(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13074,7 +13741,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewarePut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewarePut(template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewarePut(template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewarePut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, action: del_action);
     }
@@ -13086,7 +13753,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapPut(template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapPut(template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapPut(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), template: template, handler: del_handler);
     }
@@ -13098,7 +13765,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapVerb(verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest>, Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpResponse>, Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteData>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapVerb(verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, aspnetcore.Microsoft.AspNetCore.Routing.RouteData) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try dotnet.System.Func_4<aspnetcore.Microsoft.AspNetCore.Http.HttpRequest,aspnetcore.Microsoft.AspNetCore.Http.HttpResponse,aspnetcore.Microsoft.AspNetCore.Routing.RouteData,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, handler: del_handler);
     }
@@ -13110,7 +13777,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, handler: handler);
     }
     // delegate closure overload
-    public func MapVerb(verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapVerb(verb : dotnet.System.String, template : dotnet.System.String, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_handler = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(handler);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, handler: del_handler);
     }
@@ -13122,7 +13789,7 @@ extension Microsoft_AspNetCore_Routing_IRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, action: action);
     }
     // delegate closure overload
-    public func MapMiddlewareVerb(verb : dotnet.System.String, template : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
+    public func MapMiddlewareVerb(verb : dotnet.System.String, template : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(action);
         return try aspnetcore.Microsoft.AspNetCore.Routing.RequestDelegateRouteBuilderExtensions.MapMiddlewareVerb(builder: aspnetcore.Microsoft.AspNetCore.Routing.IRouteBuilder(hndl: __copy_handle(self.get_handle())), verb: verb, template: template, action: del_action);
     }
@@ -13141,7 +13808,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions.AddRouting(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddRouting(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddRouting(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Routing.RouteOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.RoutingServiceCollectionExtensions.AddRouting(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

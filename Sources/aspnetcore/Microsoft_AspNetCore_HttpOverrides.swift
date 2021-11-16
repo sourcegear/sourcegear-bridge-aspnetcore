@@ -102,6 +102,9 @@ open class ForwardedHeadersOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_ForwardedHeadersOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -593,6 +596,9 @@ open class HttpMethodOverrideOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_HttpMethodOverrideOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -668,6 +674,9 @@ open class CertificateForwardingMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpOverrides_CertificateForwardingMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions>)
@@ -728,8 +737,27 @@ open class CertificateForwardingOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // instance field: System.Func`2[[System.String, System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography.X509Certificates, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]] HeaderConverter
+    /**
+    
+            The function used to convert the header to an instance of .
+            
+
+    */
+    open var HeaderConverter : dotnet.System.Func_2<dotnet.System.String,dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2> {
+        get {
+        let __return = dotnet.System.Func_2<dotnet.System.String,dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2>(hndl: Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_HeaderConverter(self.get_handle()));
+            return __return;
+        }
+        set(v) {
+            Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_set_HeaderConverter(self.get_handle(), v.get_handle());
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions.#ctor
     public override init() throws {
@@ -1016,6 +1044,9 @@ open class ForwardedHeadersMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpOverrides_ForwardedHeadersMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.ForwardedHeadersOptions>)
@@ -1091,6 +1122,9 @@ open class HttpMethodOverrideMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpOverrides_HttpMethodOverrideMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.HttpMethodOverrideOptions>)
@@ -1146,6 +1180,9 @@ open class IPNetwork
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpOverrides_IPNetwork_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1265,7 +1302,7 @@ public struct CertificateForwardingServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCertificateForwarding(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddCertificateForwarding(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions>(configure);
         return try AddCertificateForwarding(services: services, configure: del_configure);
     }
@@ -1317,7 +1354,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CertificateForwardingServiceExtensions.AddCertificateForwarding(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddCertificateForwarding(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddCertificateForwarding(configure : @escaping (aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpOverrides.CertificateForwardingOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CertificateForwardingServiceExtensions.AddCertificateForwarding(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

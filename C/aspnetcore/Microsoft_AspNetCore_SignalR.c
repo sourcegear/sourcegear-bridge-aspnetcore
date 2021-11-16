@@ -18,6 +18,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Builder_HubEndpointRouteBuilderExtensions_HubEndpointConventionBuilder__MapHub_1__3__IEndpointRouteBuilder_String_System_Action_Microsoft_AspNetCore_Http_Connections_HttpConnectionDispatcherOptions_)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoints, SG_HNDL_NONNULL pattern, SG_HNDL_NULLABLE configureOptions);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL convention), const void* _Nonnull __pdata_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_GetHttpContextExtensions_HttpContext__GetHttpContext_0__1__HubCallerContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_GetHttpContextExtensions_HttpContext__GetHttpContext_0__1__HubConnectionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection);
 } _g_Microsoft_AspNetCore_SignalR;
@@ -110,6 +111,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_cast(
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR._fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL convention), const void* _Nonnull __pdata_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_SignalR._fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_SignalR._fp_Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_, __pdata_Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_void__Add_0__1__System_Action_Microsoft_AspNetCore_Builder_EndpointBuilder_, __deinit);
     return ret;
 }
 

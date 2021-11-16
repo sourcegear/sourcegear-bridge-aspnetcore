@@ -26,6 +26,9 @@ open class AutoValidateAntiforgeryTokenAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_AutoValidateAntiforgeryTokenAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -127,6 +130,9 @@ open class Controller
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Controller_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -493,19 +499,19 @@ open class Controller
     - Returns: A  instance.
 
     */
-    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Controller_Task__OnActionExecutionAsync_0__2__ActionExecutingContext_ActionExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate(next);
-        return try OnActionExecutionAsync(context: context, next: del_next);
+        return try await OnActionExecutionAsync(context: context, next: del_next);
     }
     // void Dispose()
 // docid: M:Microsoft.AspNetCore.Mvc.Controller.Dispose
@@ -631,6 +637,9 @@ open class CookieTempDataProviderOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_CookieTempDataProviderOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -715,6 +724,9 @@ open class IViewComponentHelper
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_IViewComponentHelper_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -741,13 +753,13 @@ open class IViewComponentHelper
             
 
     */
-    open func InvokeAsync(name : dotnet.System.String, arguments : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    open func InvokeAsync(name : dotnet.System.String, arguments : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_IViewComponentHelper_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__String_Object(&__thrown, self.get_handle(), name.get_handle(), arguments?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(System.Type, System.Object)
@@ -767,13 +779,13 @@ open class IViewComponentHelper
             
 
     */
-    open func InvokeAsync(componentType : dotnet.System.Type_, arguments : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    open func InvokeAsync(componentType : dotnet.System.Type_, arguments : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_IViewComponentHelper_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__Type_Object(&__thrown, self.get_handle(), componentType.get_handle(), arguments?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IViewComponentHelper
@@ -793,6 +805,9 @@ open class IViewComponentResult
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_IViewComponentResult_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -866,6 +881,9 @@ open class IgnoreAntiforgeryTokenAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_IgnoreAntiforgeryTokenAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -933,6 +951,9 @@ open class MvcViewOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_MvcViewOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1046,6 +1067,9 @@ open class PageRemoteAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_PageRemoteAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1157,6 +1181,9 @@ open class PartialViewResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_PartialViewResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1174,13 +1201,13 @@ open class PartialViewResult
 // docid: M:Microsoft.AspNetCore.Mvc.PartialViewResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
     /**
     */
-    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_PartialViewResult_Task__ExecuteResultAsync_0__1__ActionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Nullable<System.Int32> get_StatusCode()
@@ -1455,6 +1482,9 @@ open class RemoteAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RemoteAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -1542,6 +1572,9 @@ open class RemoteAttributeBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RemoteAttributeBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1729,6 +1762,9 @@ open class SkipStatusCodePagesAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_SkipStatusCodePagesAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1786,6 +1822,9 @@ public final class TempDataAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TempDataAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1862,6 +1901,9 @@ open class ValidateAntiForgeryTokenAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ValidateAntiForgeryTokenAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1960,6 +2002,9 @@ open class ViewComponent
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponent_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2409,6 +2454,9 @@ open class ViewComponentAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponentAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2481,6 +2529,9 @@ open class ViewComponentResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponentResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2498,13 +2549,13 @@ open class ViewComponentResult
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponentResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
     /**
     */
-    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponentResult_Task__ExecuteResultAsync_0__1__ActionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Object get_Arguments()
@@ -2821,6 +2872,9 @@ public final class ViewDataAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewDataAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2893,6 +2947,9 @@ open class ViewResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2910,13 +2967,13 @@ open class ViewResult
 // docid: M:Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
     /**
     */
-    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewResult_Task__ExecuteResultAsync_0__1__ActionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Nullable<System.Int32> get_StatusCode()
@@ -3193,6 +3250,9 @@ public final class AfterViewComponentEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3204,8 +3264,8 @@ public final class AfterViewComponentEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3351,6 +3411,9 @@ public final class AfterViewEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3362,8 +3425,8 @@ public final class AfterViewEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3455,6 +3518,9 @@ public final class BeforeViewComponentEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3466,8 +3532,8 @@ public final class BeforeViewComponentEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3586,6 +3652,9 @@ public final class BeforeViewEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3597,8 +3666,8 @@ public final class BeforeViewEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3690,6 +3759,9 @@ public final class ViewComponentAfterViewExecuteEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3701,8 +3773,8 @@ public final class ViewComponentAfterViewExecuteEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3821,6 +3893,9 @@ public final class ViewComponentBeforeViewExecuteEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3832,8 +3907,8 @@ public final class ViewComponentBeforeViewExecuteEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -3952,6 +4027,9 @@ public final class ViewFoundEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3963,8 +4041,8 @@ public final class ViewFoundEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -4133,6 +4211,9 @@ public final class ViewNotFoundEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -4144,8 +4225,8 @@ public final class ViewNotFoundEventData
     */
     public class var EventName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData_get_EventName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData_get_EventName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -4795,9 +4876,9 @@ public struct HtmlHelperDisplayExtensions {
     - Returns: A new  containing the created HTML.
 
     */
-    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4827,9 +4908,9 @@ public struct HtmlHelperDisplayExtensions {
     - Returns: A new  containing the created HTML.
 
     */
-    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), additionalViewData?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), additionalViewData?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4855,9 +4936,9 @@ public struct HtmlHelperDisplayExtensions {
     - Returns: A new  containing the created HTML.
 
     */
-    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4888,9 +4969,9 @@ public struct HtmlHelperDisplayExtensions {
     - Returns: A new  containing the created HTML.
 
     */
-    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil, additionalViewData?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil, additionalViewData?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4920,9 +5001,9 @@ public struct HtmlHelperDisplayExtensions {
     - Returns: A new  containing the created HTML.
 
     */
-    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, htmlFieldName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DisplayFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, htmlFieldName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil, htmlFieldName?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperDisplayExtensions_IHtmlContent__DisplayFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil, htmlFieldName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5354,9 +5435,9 @@ public struct HtmlHelperEditorExtensions {
     - Returns: A new  containing the <input> element(s).
 
     */
-    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5386,9 +5467,9 @@ public struct HtmlHelperEditorExtensions {
     - Returns: A new  containing the <input> element(s).
 
     */
-    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), additionalViewData?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), additionalViewData?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5414,9 +5495,9 @@ public struct HtmlHelperEditorExtensions {
     - Returns: A new  containing the <input> element(s).
 
     */
-    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5447,9 +5528,9 @@ public struct HtmlHelperEditorExtensions {
     - Returns: A new  containing the <input> element(s).
 
     */
-    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, additionalViewData : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil, additionalViewData?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil, additionalViewData?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5479,9 +5560,9 @@ public struct HtmlHelperEditorExtensions {
     - Returns: A new  containing the <input> element(s).
 
     */
-    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, htmlFieldName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func EditorFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, templateName : Optional<dotnet.System.String>, htmlFieldName : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), templateName?.get_handle() ?? nil, htmlFieldName?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperEditorExtensions_IHtmlContent__EditorFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), templateName?.get_handle() ?? nil, htmlFieldName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6428,9 +6509,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> elements.
 
     */
-    public static func CheckBoxFor<UTModel : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,Bool>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func CheckBoxFor<UTModel : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,Bool>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__CheckBoxFor_1__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_bool__(UTModel.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__CheckBoxFor_1__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_bool__(UTModel.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6519,9 +6600,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func HiddenFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func HiddenFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__HiddenFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__HiddenFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6598,9 +6679,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func PasswordFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func PasswordFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__PasswordFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__PasswordFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6750,9 +6831,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func RadioButtonFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, value : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func RadioButtonFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, value : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__RadioButtonFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), value?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__RadioButtonFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), value?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6915,9 +6996,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6948,9 +7029,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, format : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, format : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), format?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), format?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6983,9 +7064,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <input> element.
 
     */
-    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func TextBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7146,9 +7227,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <textarea> element.
 
     */
-    public static func TextAreaFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func TextAreaFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextAreaFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextAreaFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7180,9 +7261,9 @@ public struct HtmlHelperInputExtensions {
     - Returns: A new  containing the <textarea> element.
 
     */
-    public static func TextAreaFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func TextAreaFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextAreaFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperInputExtensions_IHtmlContent__TextAreaFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7261,9 +7342,9 @@ public struct HtmlHelperLabelExtensions {
     - Returns: A new  containing the <label> element.
 
     */
-    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7287,9 +7368,9 @@ public struct HtmlHelperLabelExtensions {
     - Returns: A new  containing the <label> element.
 
     */
-    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, labelText : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, labelText : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), labelText?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), labelText?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7317,9 +7398,9 @@ public struct HtmlHelperLabelExtensions {
     - Returns: A new  containing the <label> element.
 
     */
-    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func LabelFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperLabelExtensions_IHtmlContent__LabelFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), htmlAttributes?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8464,9 +8545,9 @@ public struct HtmlHelperSelectExtensions {
     - Returns: A new  containing the <select> element.
 
     */
-    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), (selectList?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), (selectList?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8504,9 +8585,9 @@ public struct HtmlHelperSelectExtensions {
     - Returns: A new  containing the <select> element.
 
     */
-    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem__Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), (selectList?.get_handle()), htmlAttributes?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem__Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), (selectList?.get_handle()), htmlAttributes?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8543,9 +8624,9 @@ public struct HtmlHelperSelectExtensions {
     - Returns: A new  containing the <select> element.
 
     */
-    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>, optionLabel : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func DropDownListFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>, optionLabel : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem__String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), (selectList?.get_handle()), optionLabel?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__DropDownListFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem__String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), (selectList?.get_handle()), optionLabel?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8648,9 +8729,9 @@ public struct HtmlHelperSelectExtensions {
     - Returns: A new  containing the <select> element.
 
     */
-    public static func ListBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func ListBoxFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, selectList : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__ListBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), (selectList?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperSelectExtensions_IHtmlContent__ListBoxFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), (selectList?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8864,9 +8945,9 @@ public struct HtmlHelperValidationExtensions {
             
 
     */
-    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8899,9 +8980,9 @@ public struct HtmlHelperValidationExtensions {
             
 
     */
-    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), message?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__3__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), message?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8940,9 +9021,9 @@ public struct HtmlHelperValidationExtensions {
             
 
     */
-    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>, htmlAttributes : Optional<dotnet.System.Object>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), message?.get_handle() ?? nil, htmlAttributes?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_Object(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), message?.get_handle() ?? nil, htmlAttributes?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8979,9 +9060,9 @@ public struct HtmlHelperValidationExtensions {
             
 
     */
-    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>, tag : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func ValidationMessageFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>, message : Optional<dotnet.System.String>, tag : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()), message?.get_handle() ?? nil, tag?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValidationExtensions_IHtmlContent__ValidationMessageFor_2__4__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult___String_String(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()), message?.get_handle() ?? nil, tag?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -9352,9 +9433,9 @@ public struct HtmlHelperValueExtensions {
     - Returns: A  containing the formatted value.
 
     */
-    public static func ValueFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<dotnet.System.String> {
+    public static func ValueFor<UTModel : SGBridgeGenericValue,UTResult : SGBridgeGenericValue>(htmlHelper : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTResult>>>) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValueExtensions_String__ValueFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_Rendering_HtmlHelperValueExtensions_String__ValueFor_2__2__Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTResult__(UTModel.get_type_handle(), UTResult.get_type_handle(), &__thrown, (htmlHelper?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -9444,6 +9525,9 @@ open class IHtmlHelper
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -10689,6 +10773,9 @@ open class IHtmlHelper_1<TModel : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1_get_type_handle(TModel.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -11394,6 +11481,9 @@ open class IJsonHelper
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_IJsonHelper_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -11446,6 +11536,9 @@ open class MultiSelectList
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_MultiSelectList_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11719,6 +11812,9 @@ open class MvcForm
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_MvcForm_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Rendering.ViewContext, System.Text.Encodings.Web.HtmlEncoder)
@@ -11878,6 +11974,9 @@ open class SelectList
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_SelectList_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.IEnumerable)
@@ -12030,6 +12129,9 @@ open class SelectListGroup
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_SelectListGroup_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -12137,6 +12239,9 @@ open class SelectListItem
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12436,6 +12541,9 @@ open class TagBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_TagBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12932,13 +13040,13 @@ public struct ViewComponentHelperExtensions {
             
 
     */
-    public static func InvokeAsync(helper : aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper, name : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func InvokeAsync(helper : aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper, name : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Rendering_ViewComponentHelperExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__IViewComponentHelper_String(&__thrown, helper.get_handle(), name.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(Microsoft.AspNetCore.Mvc.IViewComponentHelper, System.Type)
@@ -12954,13 +13062,13 @@ public struct ViewComponentHelperExtensions {
             
 
     */
-    public static func InvokeAsync(helper : aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper, componentType : dotnet.System.Type_) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    public static func InvokeAsync(helper : aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper, componentType : dotnet.System.Type_) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Rendering_ViewComponentHelperExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__IViewComponentHelper_Type(&__thrown, helper.get_handle(), componentType.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync<TComponent>(Microsoft.AspNetCore.Mvc.IViewComponentHelper, System.Object)
@@ -12981,6 +13089,9 @@ open class ViewContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Rendering_ViewContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13517,6 +13628,9 @@ open class ContentViewComponentResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ContentViewComponentResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -13566,13 +13680,13 @@ open class ContentViewComponentResult
     - Returns: A completed .
 
     */
-    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponents_ContentViewComponentResult_Task__ExecuteAsync_0__1__ViewComponentContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_Content()
@@ -13614,6 +13728,9 @@ open class DefaultViewComponentDescriptorCollectionProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorCollectionProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13675,6 +13792,9 @@ open class DefaultViewComponentDescriptorProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager)
@@ -13729,6 +13849,9 @@ open class DefaultViewComponentFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13814,6 +13937,9 @@ open class DefaultViewComponentHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector, Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory, Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope)
@@ -13857,26 +13983,26 @@ open class DefaultViewComponentHelper
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(System.String,System.Object)
     /**
     */
-    open /* method final */ func InvokeAsync(name : dotnet.System.String, arguments : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    open /* method final */ func InvokeAsync(name : dotnet.System.String, arguments : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentHelper_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__String_Object(&__thrown, self.get_handle(), name.get_handle(), arguments?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(System.Type, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(System.Type,System.Object)
     /**
     */
-    open /* method final */ func InvokeAsync(componentType : dotnet.System.Type_, arguments : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
+    open /* method final */ func InvokeAsync(componentType : dotnet.System.Type_, arguments : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentHelper_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_IHtmlContent___InvokeAsync_0__2__Type_Object(&__thrown, self.get_handle(), componentType.get_handle(), arguments?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // DefaultViewComponentHelper
@@ -13896,6 +14022,9 @@ open class DefaultViewComponentSelector
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentSelector_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13952,6 +14081,9 @@ open class HtmlContentViewComponentResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_HtmlContentViewComponentResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Html.IHtmlContent)
@@ -14000,13 +14132,13 @@ open class HtmlContentViewComponentResult
     - Returns: A completed .
 
     */
-    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponents_HtmlContentViewComponentResult_Task__ExecuteAsync_0__1__ViewComponentContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Html.IHtmlContent get_EncodedContent()
@@ -14048,6 +14180,9 @@ open class IViewComponentActivator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentActivator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -14144,6 +14279,9 @@ open class IViewComponentDescriptorCollectionProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorCollectionProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -14185,6 +14323,9 @@ open class IViewComponentDescriptorProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -14235,6 +14376,9 @@ open class IViewComponentFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -14327,6 +14471,9 @@ open class IViewComponentInvoker
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvoker_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -14379,6 +14526,9 @@ open class IViewComponentInvokerFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvokerFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -14429,6 +14579,9 @@ open class IViewComponentSelector
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentSelector_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -14481,6 +14634,9 @@ open class ServiceBasedViewComponentActivator
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ServiceBasedViewComponentActivator_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -14541,6 +14697,9 @@ open class ViewComponentContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -14814,6 +14973,9 @@ open class ViewComponentContextAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContextAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -14841,8 +15003,8 @@ public struct ViewComponentConventions {
     */
     public static var ViewComponentSuffix : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentConventions_get_ViewComponentSuffix();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentConventions_get_ViewComponentSuffix();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -14933,6 +15095,9 @@ open class ViewComponentDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15250,6 +15415,9 @@ open class ViewComponentDescriptorCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptorCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor>, System.Int32)
@@ -15339,6 +15507,9 @@ open class ViewComponentFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -15396,6 +15567,9 @@ open class ViewComponentFeatureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeatureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -15439,6 +15613,9 @@ open class ViewViewComponentResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewComponents_ViewViewComponentResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15484,13 +15661,13 @@ open class ViewViewComponentResult
     - Returns: A  which will complete when view rendering is completed.
 
     */
-    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewComponents_ViewViewComponentResult_Task__ExecuteAsync_0__1__ViewComponentContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_ViewName()
@@ -15668,6 +15845,9 @@ open class CompositeViewEngine
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewEngines_CompositeViewEngine_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>)
@@ -15751,6 +15931,9 @@ open class ICompositeViewEngine
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -15789,6 +15972,9 @@ open class IView
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewEngines_IView_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -15809,13 +15995,13 @@ open class IView
     - Returns: A  that on completion renders the view.
 
     */
-    open func RenderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RenderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewEngines_IView_Task__RenderAsync_0__1__ViewContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_Path()
@@ -15846,6 +16032,9 @@ open class IViewEngine
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -15918,6 +16107,9 @@ open class ViewEngineResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewEngines_ViewEngineResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -16129,6 +16321,9 @@ open class AttributeDictionary
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -16261,11 +16456,12 @@ open class AttributeDictionary
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary.TryGetValue(System.String,System.String@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout dotnet.System.String) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_bool__TryGetValue_0__2__String_outString(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -16319,9 +16515,6 @@ open class AttributeDictionary
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_String__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -16393,6 +16586,9 @@ public final class AttributeDictionary_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -16493,6 +16689,9 @@ open class CookieTempDataProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_CookieTempDataProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String CookieName
@@ -16504,8 +16703,8 @@ open class CookieTempDataProvider
     */
     open class var CookieName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_CookieTempDataProvider_get_CookieName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_CookieTempDataProvider_get_CookieName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -16590,6 +16789,9 @@ open class DefaultHtmlGenerator
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultHtmlGenerator_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -17130,6 +17332,9 @@ open class DefaultValidationHtmlAttributeProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultValidationHtmlAttributeProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache)
@@ -17182,6 +17387,9 @@ open class FormContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_FormContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -17431,6 +17639,9 @@ open class HtmlHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String ValidationInputCssClassName
@@ -17442,8 +17653,8 @@ open class HtmlHelper
     */
     open class var ValidationInputCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationInputCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationInputCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -17456,8 +17667,8 @@ open class HtmlHelper
     */
     open class var ValidationInputValidCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationInputValidCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationInputValidCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -17470,8 +17681,8 @@ open class HtmlHelper
     */
     open class var ValidationMessageCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationMessageCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationMessageCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -17484,8 +17695,8 @@ open class HtmlHelper
     */
     open class var ValidationMessageValidCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationMessageValidCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationMessageValidCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -17498,8 +17709,8 @@ open class HtmlHelper
     */
     open class var ValidationSummaryCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationSummaryCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationSummaryCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -17512,8 +17723,8 @@ open class HtmlHelper
     */
     open class var ValidationSummaryValidCssClassName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationSummaryValidCssClassName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_get_ValidationSummaryValidCssClassName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -18395,6 +18606,9 @@ open class HtmlHelperOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelperOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -18654,6 +18868,9 @@ open class HtmlHelper_1<TModel : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_1_get_type_handle(TModel.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -19034,6 +19251,9 @@ open class IAntiforgeryPolicy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_IAntiforgeryPolicy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -19060,6 +19280,9 @@ open class IFileVersionProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_IFileVersionProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -19112,6 +19335,9 @@ open class IHtmlGenerator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -20002,6 +20228,9 @@ open class IModelExpressionProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -20024,9 +20253,9 @@ open class IModelExpressionProvider
     - Returns: A new  instance describing the given .
 
     */
-    open func CreateModelExpression<UTModel : SGBridgeGenericValue,UTValue : SGBridgeGenericValue>(viewData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTValue>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
+    open func CreateModelExpression<UTModel : SGBridgeGenericValue,UTValue : SGBridgeGenericValue>(viewData : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTValue>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider_ModelExpression__CreateModelExpression_2__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTValue__(UTModel.get_type_handle(), UTValue.get_type_handle(), &__thrown, self.get_handle(), nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider_ModelExpression__CreateModelExpression_2__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTValue__(UTModel.get_type_handle(), UTValue.get_type_handle(), &__thrown, self.get_handle(), (viewData?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -20058,6 +20287,9 @@ open class ITempDataDictionary
     public typealias T_IEnumerable_1 = dotnet.System.Collections.Generic.KeyValuePair_2<dotnet.System.String,dotnet.System.Object>;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionary_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -20181,6 +20413,9 @@ open class ITempDataDictionaryFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionaryFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -20235,6 +20470,9 @@ open class ITempDataProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -20305,6 +20543,9 @@ open class IViewContextAware
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -20434,6 +20675,9 @@ open class ModelExplorer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExplorer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -20888,6 +21132,9 @@ public final class ModelExpression
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer)
@@ -21035,6 +21282,9 @@ open class ModelExpressionProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
@@ -21083,9 +21333,9 @@ open class ModelExpressionProvider
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpressionProvider.CreateModelExpression``2(Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
     /**
     */
-    open /* method final */ func CreateModelExpression<UTModel : SGBridgeGenericValue,UTValue : SGBridgeGenericValue>(viewData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTValue>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
+    open /* method final */ func CreateModelExpression<UTModel : SGBridgeGenericValue,UTValue : SGBridgeGenericValue>(viewData : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>>, expression : Optional<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,UTValue>>>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_ModelExpression__CreateModelExpression_2__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTValue__(UTModel.get_type_handle(), UTValue.get_type_handle(), &__thrown, self.get_handle(), nil, (expression?.get_handle()));
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_ModelExpression__CreateModelExpression_2__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__System_Linq_Expressions_Expression_System_System_Func_UTModel_UTValue__(UTModel.get_type_handle(), UTValue.get_type_handle(), &__thrown, self.get_handle(), (viewData?.get_handle()), (expression?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -21109,9 +21359,9 @@ open class ModelExpressionProvider
     - Returns: A new  instance describing the given .
 
     */
-    open func CreateModelExpression<UTModel : SGBridgeGenericValue>(viewData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>, expression : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
+    open func CreateModelExpression<UTModel : SGBridgeGenericValue>(viewData : Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary_1<UTModel>>, expression : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_ModelExpression__CreateModelExpression_1__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__String(UTModel.get_type_handle(), &__thrown, self.get_handle(), nil, expression?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_ModelExpression__CreateModelExpression_1__2__Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_UTModel__String(UTModel.get_type_handle(), &__thrown, self.get_handle(), (viewData?.get_handle()), expression?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -21173,6 +21423,9 @@ open class PartialViewResultExecutor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_PartialViewResultExecutor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory, Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory, System.Diagnostics.DiagnosticListener, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
@@ -21233,26 +21486,26 @@ open class PartialViewResultExecutor
     - Returns: A  which will complete when view execution is completed.
 
     */
-    open func ExecuteAsync(actionContext : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, view : aspnetcore.Microsoft.AspNetCore.Mvc.ViewEngines.IView, viewResult : aspnetcore.Microsoft.AspNetCore.Mvc.PartialViewResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(actionContext : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, view : aspnetcore.Microsoft.AspNetCore.Mvc.ViewEngines.IView, viewResult : aspnetcore.Microsoft.AspNetCore.Mvc.PartialViewResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_PartialViewResultExecutor_Task__ExecuteAsync_0__3__ActionContext_IView_PartialViewResult(&__thrown, self.get_handle(), actionContext.get_handle(), view.get_handle(), viewResult.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext, Microsoft.AspNetCore.Mvc.PartialViewResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.PartialViewResultExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.PartialViewResult)
     /**
     */
-    open func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.PartialViewResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.PartialViewResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_PartialViewResultExecutor_Task__ExecuteAsync_0__2__ActionContext_PartialViewResult(&__thrown, self.get_handle(), context.get_handle(), result.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // PartialViewResultExecutor
@@ -21274,6 +21527,9 @@ open class SaveTempDataAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_SaveTempDataAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -21375,6 +21631,9 @@ open class SessionStateTempDataProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_SessionStateTempDataProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer)
@@ -21443,6 +21702,9 @@ open class StringHtmlContent
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_StringHtmlContent_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -21489,6 +21751,9 @@ open class TempDataDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -21662,11 +21927,12 @@ open class TempDataDictionary
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.TryGetValue(System.String,System.Object@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout dotnet.System.Object) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionary_bool__TryGetValue_0__2__String_outObject(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -21709,9 +21975,6 @@ open class TempDataDictionary
     }
     // [IsSpecialName] System.Object get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionary_Object__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -21775,6 +22038,9 @@ open class TempDataDictionaryFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionaryFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider)
@@ -21828,6 +22094,9 @@ open class TemplateInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_TemplateInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -22049,8 +22318,120 @@ public final class TryGetValueDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // bool Invoke(System.Object, System.String, ref System.Object)
+// docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TryGetValueDelegate.Invoke(System.Object,System.String,System.Object@)
+    public func Invoke(dictionary : Optional<dotnet.System.Object>, key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.Object>) throws -> Bool {
+        var __thrown : NullableHandle = nil;
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_bool__Invoke_0__3__Object_String_outObject(&__thrown, self.get_handle(), dictionary?.get_handle() ?? nil, key?.get_handle() ?? nil, &_tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
+            value = _tmp2_value;
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    // System.IAsyncResult BeginInvoke(System.Object, System.String, ref System.Object, System.AsyncCallback, System.Object)
+// docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TryGetValueDelegate.BeginInvoke(System.Object,System.String,System.Object@,System.AsyncCallback,System.Object)
+    public func BeginInvoke(dictionary : Optional<dotnet.System.Object>, key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.Object>, callback : Optional<dotnet.System.AsyncCallback>, object : Optional<dotnet.System.Object>) throws -> Optional<dotnet.System.IAsyncResult> {
+        var __thrown : NullableHandle = nil;
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_IAsyncResult__BeginInvoke_0__5__Object_String_outObject_AsyncCallback_Object(&__thrown, self.get_handle(), dictionary?.get_handle() ?? nil, key?.get_handle() ?? nil, &_tmp_out_value, callback?.get_handle() ?? nil, object?.get_handle() ?? nil);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
+            value = _tmp2_value;
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return dotnet.System.IAsyncResult(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
+    // bool EndInvoke(ref System.Object, System.IAsyncResult)
+// docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TryGetValueDelegate.EndInvoke(System.Object@,System.IAsyncResult)
+    public func EndInvoke(value : inout Optional<dotnet.System.Object>, result : Optional<dotnet.System.IAsyncResult>) throws -> Bool {
+        var __thrown : NullableHandle = nil;
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_bool__EndInvoke_0__2__outObject_IAsyncResult(&__thrown, self.get_handle(), &_tmp_out_value, result?.get_handle() ?? nil);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
+            value = _tmp2_value;
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    public convenience init(_ __closure_Invoke : @escaping (Optional<dotnet.System.Object>, Optional<dotnet.System.String>, inout Optional<dotnet.System.Object>) throws -> Bool) throws
+    {
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, UnsafeMutablePointer<NullableHandle>) -> Swift.Int32 =
+        {
+            (thrown : UnsafeMutablePointer<NullableHandle>, dictionary : NullableHandle, key : NullableHandle, value : UnsafeMutablePointer<NullableHandle>) -> Swift.Int32 in
+            do
+            {
+                thrown.pointee = nil;
+            var _tmp_out_value = (value.pointee != nil) ? (dotnet.System.Object(hndl: value.pointee!)) : nil;
+                let ret = try __closure_Invoke((dictionary != nil) ? (dotnet.System.Object(hndl: dictionary!)) : nil, (key != nil) ? (dotnet.System.String(hndl: key!)) : nil, &_tmp_out_value);
+            value.pointee = (_tmp_out_value != nil) ? (_tmp_out_value!.get_handle()) : nil;
+                return ret ? 1 : 0;
+            }
+            catch let e as dotnet.System.Exception
+            {
+                thrown.pointee = __copy_handle(e.get_handle());
+                return 0;
+            }
+            catch
+            {
+                let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                thrown.pointee = __copy_handle(e.get_handle());
+                return 0;
+            }
+        };
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, dictionary : NullableHandle, key : NullableHandle, value : UnsafeMutablePointer<NullableHandle>) -> Swift.Int32
+        {
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NullableHandle, NullableHandle, UnsafeMutablePointer<NullableHandle>) -> Swift.Int32;
+            return f_interlude(thrown, dictionary, key, value);
+        }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_create(
+            &__thrown,
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
+            );
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h);
+        }
+    }
+    // bool Invoke(System.Object, System.String, ref System.Object)
+// docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TryGetValueDelegate.Invoke(System.Object,System.String,System.Object@)
+    public func callAsFunction(dictionary : Optional<dotnet.System.Object>, key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.Object>) throws -> Bool {
+        var __thrown : NullableHandle = nil;
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
+        let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_TryGetValueDelegate_bool__Invoke_0__3__Object_String_outObject(&__thrown, self.get_handle(), dictionary?.get_handle() ?? nil, key?.get_handle() ?? nil, &_tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
+            value = _tmp2_value;
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
 } // TryGetValueDelegate
 
 
@@ -22096,6 +22477,9 @@ open class ValidationHtmlAttributeProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ValidationHtmlAttributeProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -22168,6 +22552,9 @@ open class ViewComponentResultExecutor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewComponentResultExecutor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
@@ -22197,13 +22584,13 @@ open class ViewComponentResultExecutor
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewComponentResultExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewComponentResult)
     /**
     */
-    open func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponentResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponentResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewComponentResultExecutor_Task__ExecuteAsync_0__2__ActionContext_ViewComponentResult(&__thrown, self.get_handle(), context.get_handle(), result.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ViewComponentResultExecutor
@@ -22224,6 +22611,9 @@ open class ViewContextAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewContextAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -22255,6 +22645,9 @@ open class ViewDataDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -22452,11 +22845,12 @@ open class ViewDataDictionary
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.TryGetValue(System.String,System.Object@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout dotnet.System.Object) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_bool__TryGetValue_0__2__String_outObject(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Object(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Object(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -22654,9 +23048,6 @@ open class ViewDataDictionary
     }
     // [IsSpecialName] System.Object get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(index : dotnet.System.String) throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_Object__get_Item_0__1__String(&__thrown, self.get_handle(), index.get_handle());
@@ -22790,6 +23181,9 @@ open class ViewDataDictionaryAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -22819,6 +23213,9 @@ open class ViewDataDictionaryControllerPropertyActivator
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryControllerPropertyActivator_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -22886,6 +23283,9 @@ open class ViewDataDictionary_1<TModel : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_1_get_type_handle(TModel.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -23048,6 +23448,9 @@ open class ViewDataInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -23224,6 +23627,9 @@ open class ViewExecutor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewExecutor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String DefaultContentType
@@ -23283,13 +23689,13 @@ open class ViewExecutor
     - Returns: A  which will complete when view execution is completed.
 
     */
-    open func ExecuteAsync(actionContext : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, view : aspnetcore.Microsoft.AspNetCore.Mvc.ViewEngines.IView, viewData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary, tempData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary, contentType : Optional<dotnet.System.String>, statusCode : Optional<Swift.Int32>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(actionContext : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, view : aspnetcore.Microsoft.AspNetCore.Mvc.ViewEngines.IView, viewData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary, tempData : aspnetcore.Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary, contentType : Optional<dotnet.System.String>, statusCode : Optional<Swift.Int32>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewExecutor_Task__ExecuteAsync_0__6__ActionContext_IView_ViewDataDictionary_ITempDataDictionary_String_System_Nullable_i32_(&__thrown, self.get_handle(), actionContext.get_handle(), view.get_handle(), viewData.get_handle(), tempData.get_handle(), contentType?.get_handle() ?? nil, (statusCode != nil) ? System_Int32_box(statusCode!) : nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ViewExecutor
@@ -23308,6 +23714,9 @@ open class ViewResultExecutor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_ViewResultExecutor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -23360,13 +23769,13 @@ open class ViewResultExecutor
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(Microsoft.AspNetCore.Mvc.ActionContext,Microsoft.AspNetCore.Mvc.ViewResult)
     /**
     */
-    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.ViewResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ExecuteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.ViewResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewResultExecutor_Task__ExecuteAsync_0__2__ActionContext_ViewResult(&__thrown, self.get_handle(), context.get_handle(), result.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ViewResultExecutor
@@ -23389,6 +23798,9 @@ open class IViewBufferScope
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_IViewBufferScope_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -23484,6 +23896,9 @@ public final class ViewBufferValue
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_ViewBufferValue_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -23572,6 +23987,9 @@ open class TempDataSerializer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ViewFeatures_Infrastructure_TempDataSerializer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -25196,15 +25614,15 @@ extension Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper {
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(Microsoft.AspNetCore.Mvc.IViewComponentHelper, System.String)
 extension Microsoft_AspNetCore_Mvc_IViewComponentHelper {
-    public func InvokeAsync(name : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
-        return try aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(helper: aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper(hndl: __copy_handle(self.get_handle())), name: name);
+    public func InvokeAsync(name : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
+        return try await aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(helper: aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper(hndl: __copy_handle(self.get_handle())), name: name);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(Microsoft.AspNetCore.Mvc.IViewComponentHelper, System.Type)
 extension Microsoft_AspNetCore_Mvc_IViewComponentHelper {
-    public func InvokeAsync(componentType : dotnet.System.Type_) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent> {
-        return try aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(helper: aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper(hndl: __copy_handle(self.get_handle())), componentType: componentType);
+    public func InvokeAsync(componentType : dotnet.System.Type_) async throws -> aspnetcore.Microsoft.AspNetCore.Html.IHtmlContent {
+        return try await aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(helper: aspnetcore.Microsoft.AspNetCore.Mvc.IViewComponentHelper(hndl: __copy_handle(self.get_handle())), componentType: componentType);
     }
 }
 

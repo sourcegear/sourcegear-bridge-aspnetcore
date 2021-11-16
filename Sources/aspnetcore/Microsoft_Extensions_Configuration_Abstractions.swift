@@ -22,9 +22,9 @@ public struct ConfigurationExtensions {
     - Returns: The .
 
     */
-    public static func Add<UTSource : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>, configureSource : dotnet.System.Action_1<UTSource>) throws -> Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder> {
+    public static func Add<UTSource : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>, configureSource : Optional<dotnet.System.Action_1<UTSource>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Configuration_ConfigurationExtensions_IConfigurationBuilder__Add_1__2__IConfigurationBuilder_System_Action_UTSource_(UTSource.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_Configuration_ConfigurationExtensions_IConfigurationBuilder__Add_1__2__IConfigurationBuilder_System_Action_UTSource_(UTSource.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, (configureSource?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -167,6 +167,9 @@ public final class ConfigurationKeyNameAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationKeyNameAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -214,8 +217,8 @@ public struct ConfigurationPath {
     */
     public static var KeyDelimiter : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Configuration_ConfigurationPath_get_KeyDelimiter();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Configuration_ConfigurationPath_get_KeyDelimiter();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -361,6 +364,9 @@ open class IConfiguration
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfiguration_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -442,9 +448,6 @@ open class IConfiguration
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.Extensions.Configuration.IConfiguration.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : Optional<dotnet.System.String>) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Configuration_IConfiguration_String__get_Item_0__1__String(&__thrown, self.get_handle(), key?.get_handle() ?? nil);
@@ -486,6 +489,9 @@ open class IConfigurationBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfigurationBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -591,6 +597,9 @@ open class IConfigurationProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfigurationProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -699,11 +708,12 @@ open class IConfigurationProvider
     - Returns: True if a value for the specified key was found, otherwise false.
 
     */
-    open func TryGet(key : Optional<dotnet.System.String>, value : inout dotnet.System.String) throws -> Bool {
+    open func TryGet(key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Configuration_IConfigurationProvider_bool__TryGet_0__2__String_outString(&__thrown, self.get_handle(), key?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -729,6 +739,9 @@ open class IConfigurationRoot
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfigurationRoot_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -789,6 +802,9 @@ open class IConfigurationSection
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfigurationSection_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -873,6 +889,9 @@ open class IConfigurationSource
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_IConfigurationSource_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -951,7 +970,7 @@ public protocol Microsoft_Extensions_Configuration_IConfigurationSource
 
 // EXTENSION METHOD Microsoft.Extensions.Configuration.IConfigurationBuilder Add<TSource>(Microsoft.Extensions.Configuration.IConfigurationBuilder, System.Action<TSource>)
 extension Microsoft_Extensions_Configuration_IConfigurationBuilder {
-    public func Add<UTSource : SGBridgeGenericValue>(configureSource : dotnet.System.Action_1<UTSource>) throws -> Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder> {
+    public func Add<UTSource : SGBridgeGenericValue>(configureSource : Optional<dotnet.System.Action_1<UTSource>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder> {
         return try aspnetcore.Microsoft.Extensions.Configuration.ConfigurationExtensions.Add(builder: aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder(hndl: __copy_handle(self.get_handle())), configureSource: configureSource);
     }
     // delegate closure overload

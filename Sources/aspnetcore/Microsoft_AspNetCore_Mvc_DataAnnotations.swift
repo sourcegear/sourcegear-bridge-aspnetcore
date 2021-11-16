@@ -23,6 +23,9 @@ public final class HiddenInputAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_HiddenInputAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -101,6 +104,9 @@ open class AttributeAdapterBase_1<TAttribute : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_AttributeAdapterBase_1_get_type_handle(TAttribute.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(TAttribute, Microsoft.Extensions.Localization.IStringLocalizer)
@@ -154,6 +160,9 @@ open class IAttributeAdapter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -200,6 +209,9 @@ open class IValidationAttributeAdapterProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -255,8 +267,27 @@ open class MvcDataAnnotationsLocalizationOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // instance field: System.Func`3[[System.Type, System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]] DataAnnotationLocalizerProvider
+    /**
+    
+            The delegate to invoke for creating .
+            
+
+    */
+    open var DataAnnotationLocalizerProvider : dotnet.System.Func_3<dotnet.System.Type_,aspnetcore.Microsoft.Extensions.Localization.IStringLocalizerFactory,aspnetcore.Microsoft.Extensions.Localization.IStringLocalizer> {
+        get {
+        let __return = dotnet.System.Func_3<dotnet.System.Type_,aspnetcore.Microsoft.Extensions.Localization.IStringLocalizerFactory,aspnetcore.Microsoft.Extensions.Localization.IStringLocalizer>(hndl: Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_DataAnnotationLocalizerProvider(self.get_handle()));
+            return __return;
+        }
+        set(v) {
+            Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_set_DataAnnotationLocalizerProvider(self.get_handle(), v.get_handle());
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions.#ctor
     public override init() throws {
@@ -284,6 +315,9 @@ public final class RequiredAttributeAdapter
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_RequiredAttributeAdapter_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -350,6 +384,9 @@ open class ValidationAttributeAdapterProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapterProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -405,6 +442,9 @@ open class ValidationAttributeAdapter_1<TAttribute : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapter_1_get_type_handle(TAttribute.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -479,6 +519,9 @@ open class ValidationProviderAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationProviderAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -556,7 +599,7 @@ public struct MvcDataAnnotationsMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddDataAnnotationsLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddDataAnnotationsLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(setupAction);
         return try AddDataAnnotationsLocalization(builder: builder, setupAction: del_setupAction);
     }
@@ -628,7 +671,7 @@ public struct MvcDataAnnotationsMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddDataAnnotationsLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddDataAnnotationsLocalization(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(setupAction);
         return try AddDataAnnotationsLocalization(builder: builder, setupAction: del_setupAction);
     }
@@ -664,7 +707,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcBuilderExtensions.AddDataAnnotationsLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddDataAnnotationsLocalization(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddDataAnnotationsLocalization(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcBuilderExtensions.AddDataAnnotationsLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -690,7 +733,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions.AddDataAnnotationsLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddDataAnnotationsLocalization(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddDataAnnotationsLocalization(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.DataAnnotations.MvcDataAnnotationsLocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcDataAnnotationsMvcCoreBuilderExtensions.AddDataAnnotationsLocalization(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

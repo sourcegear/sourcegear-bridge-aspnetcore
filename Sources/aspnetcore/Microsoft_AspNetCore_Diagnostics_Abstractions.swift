@@ -22,6 +22,9 @@ open class CompilationFailure
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_CompilationFailure_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.String, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Diagnostics.DiagnosticMessage>)
@@ -215,6 +218,9 @@ open class DiagnosticMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_DiagnosticMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -425,6 +431,9 @@ open class ErrorContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_ErrorContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, System.Exception)
@@ -508,6 +517,9 @@ open class ICompilationException
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_ICompilationException_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -550,6 +562,9 @@ open class IDeveloperPageExceptionFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -571,19 +586,19 @@ open class IDeveloperPageExceptionFilter
     - Returns: A task the completes when the handler is done executing.
 
     */
-    open func HandleExceptionAsync(errorContext : aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext, next : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext,dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleExceptionAsync(errorContext : aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext, next : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext,dotnet.System.Threading.Tasks.Task>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_Task__HandleExceptionAsync_0__2__ErrorContext_System_Func_Microsoft_AspNetCore_Diagnostics_ErrorContext_Task_(&__thrown, self.get_handle(), errorContext.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func HandleExceptionAsync(errorContext : aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext, next : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleExceptionAsync(errorContext : aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext, next : @escaping (aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext) throws -> dotnet.System.Threading.Tasks.Task) async throws {
         let del_next = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.ErrorContext,dotnet.System.Threading.Tasks.Task>(next);
-        return try HandleExceptionAsync(errorContext: errorContext, next: del_next);
+        return try await HandleExceptionAsync(errorContext: errorContext, next: del_next);
     }
 } // IDeveloperPageExceptionFilter
 
@@ -602,6 +617,9 @@ open class IExceptionHandlerFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -683,6 +701,9 @@ open class IExceptionHandlerPathFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -720,6 +741,9 @@ open class IStatusCodePagesFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -771,6 +795,9 @@ open class IStatusCodeReExecuteFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

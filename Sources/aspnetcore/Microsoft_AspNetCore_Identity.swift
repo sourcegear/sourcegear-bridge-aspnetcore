@@ -22,6 +22,9 @@ open class AspNetRoleManager_1<TRole : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_AspNetRoleManager_1_get_type_handle(TRole.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Identity.IRoleStore<TRole>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IRoleValidator<TRole>>, Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.RoleManager<TRole>>, Microsoft.AspNetCore.Http.IHttpContextAccessor)
@@ -38,9 +41,9 @@ open class AspNetRoleManager_1<TRole : SGBridgeGenericValue>
     - Parameter logger: The logger used to log messages, warnings and errors.
     - Parameter contextAccessor: The accessor used to access the .
     */
-    public init(store : aspnetcore.Microsoft.AspNetCore.Identity.IRoleStore_1<TRole>, roleValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IRoleValidator_1<TRole>>>, keyNormalizer : Optional<aspnetcore.Microsoft.AspNetCore.Identity.ILookupNormalizer>, errors : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IdentityErrorDescriber>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.RoleManager_1<TRole>>>, contextAccessor : Optional<aspnetcore.Microsoft.AspNetCore.Http.IHttpContextAccessor>) throws {
+    public init(store : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IRoleStore_1<TRole>>, roleValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IRoleValidator_1<TRole>>>, keyNormalizer : Optional<aspnetcore.Microsoft.AspNetCore.Identity.ILookupNormalizer>, errors : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IdentityErrorDescriber>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.RoleManager_1<TRole>>>, contextAccessor : Optional<aspnetcore.Microsoft.AspNetCore.Http.IHttpContextAccessor>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_AspNetCore_Identity_AspNetRoleManager_1_ctor_0__6__Microsoft_AspNetCore_Identity_IRoleStore_TRole__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IRoleValidator_TRole___ILookupNormalizer_IdentityErrorDescriber_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_RoleManager_TRole___IHttpContextAccessor(TRole.get_type_handle(), &__thrown, nil, (roleValidators?.get_handle()), keyNormalizer?.get_handle() ?? nil, errors?.get_handle() ?? nil, (logger?.get_handle()), contextAccessor?.get_handle() ?? nil);
+        let h = Microsoft_AspNetCore_Identity_AspNetRoleManager_1_ctor_0__6__Microsoft_AspNetCore_Identity_IRoleStore_TRole__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IRoleValidator_TRole___ILookupNormalizer_IdentityErrorDescriber_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_RoleManager_TRole___IHttpContextAccessor(TRole.get_type_handle(), &__thrown, (store?.get_handle()), (roleValidators?.get_handle()), keyNormalizer?.get_handle() ?? nil, errors?.get_handle() ?? nil, (logger?.get_handle()), contextAccessor?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -64,6 +67,9 @@ open class AspNetUserManager_1<TUser : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_AspNetUserManager_1_get_type_handle(TUser.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Identity.IUserStore<TUser>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>, Microsoft.AspNetCore.Identity.IPasswordHasher<TUser>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IUserValidator<TUser>>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IPasswordValidator<TUser>>, Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, System.IServiceProvider, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.UserManager<TUser>>)
@@ -83,9 +89,9 @@ open class AspNetUserManager_1<TUser : SGBridgeGenericValue>
     - Parameter services: The  used to resolve services.
     - Parameter logger: The logger used to log messages, warnings and errors.
     */
-    public override init(store : aspnetcore.Microsoft.AspNetCore.Identity.IUserStore_1<TUser>, optionsAccessor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.IdentityOptions>>, passwordHasher : aspnetcore.Microsoft.AspNetCore.Identity.IPasswordHasher_1<TUser>, userValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IUserValidator_1<TUser>>>, passwordValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IPasswordValidator_1<TUser>>>, keyNormalizer : Optional<aspnetcore.Microsoft.AspNetCore.Identity.ILookupNormalizer>, errors : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IdentityErrorDescriber>, services : Optional<dotnet.System.IServiceProvider>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>>) throws {
+    public override init(store : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IUserStore_1<TUser>>, optionsAccessor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.IdentityOptions>>, passwordHasher : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IPasswordHasher_1<TUser>>, userValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IUserValidator_1<TUser>>>, passwordValidators : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Identity.IPasswordValidator_1<TUser>>>, keyNormalizer : Optional<aspnetcore.Microsoft.AspNetCore.Identity.ILookupNormalizer>, errors : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IdentityErrorDescriber>, services : Optional<dotnet.System.IServiceProvider>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_AspNetCore_Identity_AspNetUserManager_1_ctor_0__9__Microsoft_AspNetCore_Identity_IUserStore_TUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_TUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IUserValidator_TUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IPasswordValidator_TUser___ILookupNormalizer_IdentityErrorDescriber_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_UserManager_TUser__(TUser.get_type_handle(), &__thrown, nil, (optionsAccessor?.get_handle()), nil, (userValidators?.get_handle()), (passwordValidators?.get_handle()), keyNormalizer?.get_handle() ?? nil, errors?.get_handle() ?? nil, services?.get_handle() ?? nil, (logger?.get_handle()));
+        let h = Microsoft_AspNetCore_Identity_AspNetUserManager_1_ctor_0__9__Microsoft_AspNetCore_Identity_IUserStore_TUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_TUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IUserValidator_TUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_IPasswordValidator_TUser___ILookupNormalizer_IdentityErrorDescriber_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_UserManager_TUser__(TUser.get_type_handle(), &__thrown, (store?.get_handle()), (optionsAccessor?.get_handle()), (passwordHasher?.get_handle()), (userValidators?.get_handle()), (passwordValidators?.get_handle()), keyNormalizer?.get_handle() ?? nil, errors?.get_handle() ?? nil, services?.get_handle() ?? nil, (logger?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -108,6 +114,9 @@ open class DataProtectionTokenProviderOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_DataProtectionTokenProviderOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -159,7 +168,17 @@ open class DataProtectionTokenProviderOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_TokenLifespan(System.TimeSpan)
+    // [IsSpecialName] void set_TokenLifespan(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Identity.DataProtectionTokenProviderOptions.set_TokenLifespan(System.TimeSpan)
+    open func set_TokenLifespan(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Identity_DataProtectionTokenProviderOptions_void__set_TokenLifespan_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Gets or sets the name of the . Defaults to DataProtectorTokenProvider.
@@ -184,7 +203,9 @@ open class DataProtectionTokenProviderOptions
         get {
             return try! get_TokenLifespan();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_TokenLifespan(System.TimeSpan)
+        set(v) {
+            return try! set_TokenLifespan(value: v);
+        }
     }
 } // DataProtectionTokenProviderOptions
 
@@ -202,6 +223,9 @@ open class DataProtectorTokenProvider_1<TUser : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_get_type_handle(TUser.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -238,9 +262,9 @@ open class DataProtectorTokenProvider_1<TUser : SGBridgeGenericValue>
     - Returns: A  representing the generated token.
 
     */
-    open func GenerateAsync(purpose : Optional<dotnet.System.String>, manager : aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<dotnet.System.String>> {
+    open func GenerateAsync(purpose : Optional<dotnet.System.String>, manager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<dotnet.System.String>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_string___GenerateAsync_0__3__String_Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), purpose?.get_handle() ?? nil, nil, user.to_gval());
+        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_string___GenerateAsync_0__3__String_Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), purpose?.get_handle() ?? nil, (manager?.get_handle()), user.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -268,9 +292,9 @@ open class DataProtectorTokenProvider_1<TUser : SGBridgeGenericValue>
             
 
     */
-    open func ValidateAsync(purpose : Optional<dotnet.System.String>, token : Optional<dotnet.System.String>, manager : aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<Bool>> {
+    open func ValidateAsync(purpose : Optional<dotnet.System.String>, token : Optional<dotnet.System.String>, manager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<Bool>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_bool___ValidateAsync_0__4__String_String_Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), purpose?.get_handle() ?? nil, token?.get_handle() ?? nil, nil, user.to_gval());
+        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_bool___ValidateAsync_0__4__String_String_Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), purpose?.get_handle() ?? nil, token?.get_handle() ?? nil, (manager?.get_handle()), user.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -297,9 +321,9 @@ open class DataProtectorTokenProvider_1<TUser : SGBridgeGenericValue>
             
 
     */
-    open func CanGenerateTwoFactorTokenAsync(manager : aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<Bool>> {
+    open func CanGenerateTwoFactorTokenAsync(manager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>, user : TUser) throws -> Optional<dotnet.System.Threading.Tasks.Task_1<Bool>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_bool___CanGenerateTwoFactorTokenAsync_0__2__Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), nil, user.to_gval());
+        let __return = Microsoft_AspNetCore_Identity_DataProtectorTokenProvider_1_System_Threading_Tasks_Task_bool___CanGenerateTwoFactorTokenAsync_0__2__Microsoft_AspNetCore_Identity_UserManager_TUser__TUser(TUser.get_type_handle(), &__thrown, self.get_handle(), (manager?.get_handle()), user.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -378,6 +402,9 @@ open class ExternalLoginInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_ExternalLoginInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -541,6 +568,9 @@ open class ISecurityStampValidator
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_ISecurityStampValidator_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -594,6 +624,9 @@ open class ITwoFactorSecurityStampValidator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_ITwoFactorSecurityStampValidator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -676,6 +709,9 @@ open class IdentityConstants
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityConstants_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String ApplicationScheme
@@ -687,8 +723,8 @@ open class IdentityConstants
     */
     open class var ApplicationScheme : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Identity_IdentityConstants_get_ApplicationScheme();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Identity_IdentityConstants_get_ApplicationScheme();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -701,8 +737,8 @@ open class IdentityConstants
     */
     open class var ExternalScheme : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Identity_IdentityConstants_get_ExternalScheme();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Identity_IdentityConstants_get_ExternalScheme();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -715,8 +751,8 @@ open class IdentityConstants
     */
     open class var TwoFactorRememberMeScheme : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Identity_IdentityConstants_get_TwoFactorRememberMeScheme();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Identity_IdentityConstants_get_TwoFactorRememberMeScheme();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -729,8 +765,8 @@ open class IdentityConstants
     */
     open class var TwoFactorUserIdScheme : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Identity_IdentityConstants_get_TwoFactorUserIdScheme();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Identity_IdentityConstants_get_TwoFactorUserIdScheme();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -916,6 +952,9 @@ open class IdentityCookiesBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_IdentityCookiesBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1107,6 +1146,9 @@ open class SecurityStampRefreshingPrincipalContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_SecurityStampRefreshingPrincipalContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1248,6 +1290,9 @@ open class SecurityStampValidatorOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1272,7 +1317,17 @@ open class SecurityStampValidatorOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_ValidationInterval(System.TimeSpan)
+    // [IsSpecialName] void set_ValidationInterval(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions.set_ValidationInterval(System.TimeSpan)
+    open func set_ValidationInterval(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions_void__set_ValidationInterval_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Func<Microsoft.AspNetCore.Identity.SecurityStampRefreshingPrincipalContext,System.Threading.Tasks.Task> get_OnRefreshingPrincipal()
 // docid: M:Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions.get_OnRefreshingPrincipal
     open func get_OnRefreshingPrincipal() throws -> Optional<dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Identity.SecurityStampRefreshingPrincipalContext,dotnet.System.Threading.Tasks.Task>> {
@@ -1328,7 +1383,9 @@ open class SecurityStampValidatorOptions
         get {
             return try! get_ValidationInterval();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_ValidationInterval(System.TimeSpan)
+        set(v) {
+            return try! set_ValidationInterval(value: v);
+        }
     }
 } // SecurityStampValidatorOptions
 
@@ -1348,6 +1405,9 @@ open class SecurityStampValidator_1<TUser : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_SecurityStampValidator_1_get_type_handle(TUser.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>, Microsoft.AspNetCore.Identity.SignInManager<TUser>, Microsoft.AspNetCore.Authentication.ISystemClock, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1362,9 +1422,9 @@ open class SecurityStampValidator_1<TUser : SGBridgeGenericValue>
     - Parameter clock: The system clock.
     - Parameter logger: The logger.
     */
-    public init(options : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>>, signInManager : aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>, clock : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.ISystemClock>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory>) throws {
+    public init(options : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>>, signInManager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>>, clock : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.ISystemClock>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_AspNetCore_Identity_SecurityStampValidator_1_ctor_0__4__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions__Microsoft_AspNetCore_Identity_SignInManager_TUser__ISystemClock_ILoggerFactory(TUser.get_type_handle(), &__thrown, (options?.get_handle()), nil, clock?.get_handle() ?? nil, logger?.get_handle() ?? nil);
+        let h = Microsoft_AspNetCore_Identity_SecurityStampValidator_1_ctor_0__4__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions__Microsoft_AspNetCore_Identity_SignInManager_TUser__ISystemClock_ILoggerFactory(TUser.get_type_handle(), &__thrown, (options?.get_handle()), (signInManager?.get_handle()), clock?.get_handle() ?? nil, logger?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1532,6 +1592,9 @@ open class SignInManager_1<TUser : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_SignInManager_1_get_type_handle(TUser.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Identity.UserManager<TUser>, Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory<TUser>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.SignInManager<TUser>>, Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider, Microsoft.AspNetCore.Identity.IUserConfirmation<TUser>)
@@ -1549,9 +1612,9 @@ open class SignInManager_1<TUser : SGBridgeGenericValue>
     - Parameter schemes: The scheme provider that is used enumerate the authentication schemes.
     - Parameter confirmation: The  used check whether a user account is confirmed.
     */
-    public init(userManager : aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>, contextAccessor : Optional<aspnetcore.Microsoft.AspNetCore.Http.IHttpContextAccessor>, claimsFactory : aspnetcore.Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory_1<TUser>, optionsAccessor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.IdentityOptions>>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>>>, schemes : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider>, confirmation : aspnetcore.Microsoft.AspNetCore.Identity.IUserConfirmation_1<TUser>) throws {
+    public init(userManager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>, contextAccessor : Optional<aspnetcore.Microsoft.AspNetCore.Http.IHttpContextAccessor>, claimsFactory : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory_1<TUser>>, optionsAccessor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.IdentityOptions>>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>>>, schemes : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider>, confirmation : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IUserConfirmation_1<TUser>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_AspNetCore_Identity_SignInManager_1_ctor_0__7__Microsoft_AspNetCore_Identity_UserManager_TUser__IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_TUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_SignInManager_TUser___IAuthenticationSchemeProvider_Microsoft_AspNetCore_Identity_IUserConfirmation_TUser_(TUser.get_type_handle(), &__thrown, nil, contextAccessor?.get_handle() ?? nil, nil, (optionsAccessor?.get_handle()), (logger?.get_handle()), schemes?.get_handle() ?? nil, nil);
+        let h = Microsoft_AspNetCore_Identity_SignInManager_1_ctor_0__7__Microsoft_AspNetCore_Identity_UserManager_TUser__IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_TUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_Microsoft_AspNetCore_Identity_SignInManager_TUser___IAuthenticationSchemeProvider_Microsoft_AspNetCore_Identity_IUserConfirmation_TUser_(TUser.get_type_handle(), &__thrown, (userManager?.get_handle()), contextAccessor?.get_handle() ?? nil, (claimsFactory?.get_handle()), (optionsAccessor?.get_handle()), (logger?.get_handle()), schemes?.get_handle() ?? nil, (confirmation?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2320,9 +2383,9 @@ open class SignInManager_1<TUser : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_UserManager(Microsoft.AspNetCore.Identity.UserManager<TUser>)
 // docid: M:Microsoft.AspNetCore.Identity.SignInManager`1.set_UserManager(Microsoft.AspNetCore.Identity.UserManager{`0})
-    open func set_UserManager(value : aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>) throws {
+    open func set_UserManager(value : Optional<aspnetcore.Microsoft.AspNetCore.Identity.UserManager_1<TUser>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Identity_SignInManager_1_void__set_UserManager_0__1__Microsoft_AspNetCore_Identity_UserManager_TUser_(TUser.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Identity_SignInManager_1_void__set_UserManager_0__1__Microsoft_AspNetCore_Identity_UserManager_TUser_(TUser.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2346,9 +2409,9 @@ open class SignInManager_1<TUser : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_ClaimsFactory(Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory<TUser>)
 // docid: M:Microsoft.AspNetCore.Identity.SignInManager`1.set_ClaimsFactory(Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{`0})
-    open func set_ClaimsFactory(value : aspnetcore.Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory_1<TUser>) throws {
+    open func set_ClaimsFactory(value : Optional<aspnetcore.Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory_1<TUser>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Identity_SignInManager_1_void__set_ClaimsFactory_0__1__Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_TUser_(TUser.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Identity_SignInManager_1_void__set_ClaimsFactory_0__1__Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_TUser_(TUser.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2495,6 +2558,9 @@ open class TwoFactorSecurityStampValidator_1<TUser : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1_get_type_handle(TUser.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>, Microsoft.AspNetCore.Identity.SignInManager<TUser>, Microsoft.AspNetCore.Authentication.ISystemClock, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -2509,9 +2575,9 @@ open class TwoFactorSecurityStampValidator_1<TUser : SGBridgeGenericValue>
     - Parameter clock: The system clock.
     - Parameter logger: The logger.
     */
-    public override init(options : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>>, signInManager : aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>, clock : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.ISystemClock>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory>) throws {
+    public override init(options : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Identity.SecurityStampValidatorOptions>>, signInManager : Optional<aspnetcore.Microsoft.AspNetCore.Identity.SignInManager_1<TUser>>, clock : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.ISystemClock>, logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1_ctor_0__4__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions__Microsoft_AspNetCore_Identity_SignInManager_TUser__ISystemClock_ILoggerFactory(TUser.get_type_handle(), &__thrown, (options?.get_handle()), nil, clock?.get_handle() ?? nil, logger?.get_handle() ?? nil);
+        let h = Microsoft_AspNetCore_Identity_TwoFactorSecurityStampValidator_1_ctor_0__4__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_SecurityStampValidatorOptions__Microsoft_AspNetCore_Identity_SignInManager_TUser__ISystemClock_ILoggerFactory(TUser.get_type_handle(), &__thrown, (options?.get_handle()), (signInManager?.get_handle()), clock?.get_handle() ?? nil, logger?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {

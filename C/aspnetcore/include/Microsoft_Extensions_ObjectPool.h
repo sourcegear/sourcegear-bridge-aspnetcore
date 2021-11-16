@@ -84,6 +84,8 @@ int32_t invoke_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Retur
 
 SG_HNDL_NONNULL Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_cast(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_create(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0, int32_t (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL obj), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_ctor_0__1__ObjectPoolProvider(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL inner);

@@ -22,6 +22,9 @@ open class JsonHubProtocolOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_JsonHubProtocolOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -92,6 +95,9 @@ public final class JsonHubProtocol
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -146,14 +152,16 @@ public final class JsonHubProtocol
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.TryParseMessage(System.Buffers.ReadOnlySequence{System.Byte}@,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage@)
     /**
     */
-    public func TryParseMessage(input : inout dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>, binder : aspnetcore.Microsoft.AspNetCore.SignalR.IInvocationBinder, message : inout aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage) throws -> Bool {
+    public func TryParseMessage(input : inout Optional<dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>>, binder : aspnetcore.Microsoft.AspNetCore.SignalR.IInvocationBinder, message : inout Optional<aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_input = input.get_handle();
-            var _tmp_out_message = message.get_handle();
+            var _tmp_ref_input = (input != nil) ? (input!.get_handle()) : nil;
+            var _tmp_out_message = (message != nil) ? (message!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(&__thrown, self.get_handle(), &_tmp_ref_input, binder.get_handle(), &_tmp_out_message);
-        let _tmp2_input = dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl : _tmp_ref_input);
+        let __h__tmp2_input = _tmp_ref_input;
+        let _tmp2_input = (__h__tmp2_input != nil) ? dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl: __h__tmp2_input!) : nil;
             input = _tmp2_input;
-        let _tmp2_message = aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage(hndl: _tmp_out_message);
+        let __h__tmp2_message = _tmp_out_message;
+        let _tmp2_message = (__h__tmp2_message != nil) ? aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage(hndl: __h__tmp2_message!) : nil;
             message = _tmp2_message;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -295,7 +303,7 @@ public struct JsonProtocolDependencyInjectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddJsonProtocol<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions>) throws -> Void) throws -> UTBuilder {
+    public static func AddJsonProtocol<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions) throws -> Void) throws -> UTBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.SignalR.JsonHubProtocolOptions>(configure);
         return try AddJsonProtocol(builder: builder, configure: del_configure);
     }

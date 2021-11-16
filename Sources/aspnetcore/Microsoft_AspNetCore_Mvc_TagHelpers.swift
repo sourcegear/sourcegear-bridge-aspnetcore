@@ -86,6 +86,9 @@ open class AnchorTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -594,6 +597,9 @@ open class CacheTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String CacheKeyPrefix
@@ -605,8 +611,8 @@ open class CacheTagHelper
     */
     open class var CacheKeyPrefix : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelper_get_CacheKeyPrefix();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelper_get_CacheKeyPrefix();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -699,6 +705,9 @@ open class CacheTagHelperBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1232,6 +1241,9 @@ open class CacheTagHelperMemoryCacheFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperMemoryCacheFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelperOptions>)
@@ -1294,6 +1306,9 @@ open class CacheTagHelperOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_CacheTagHelperOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1361,6 +1376,9 @@ public final class ComponentTagHelper
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_ComponentTagHelper_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1565,6 +1583,9 @@ open class DistributedCacheTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_DistributedCacheTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String CacheKeyPrefix
@@ -1576,8 +1597,8 @@ open class DistributedCacheTagHelper
     */
     open class var CacheKeyPrefix : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Mvc_TagHelpers_DistributedCacheTagHelper_get_CacheKeyPrefix();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Mvc_TagHelpers_DistributedCacheTagHelper_get_CacheKeyPrefix();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -1676,6 +1697,9 @@ open class EnvironmentTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_EnvironmentTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1867,6 +1891,9 @@ open class FormActionTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_FormActionTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2295,6 +2322,9 @@ open class FormTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2801,6 +2831,9 @@ open class GlobbingUrlBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_GlobbingUrlBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.FileProviders.IFileProvider, Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.AspNetCore.Http.PathString)
@@ -2939,6 +2972,9 @@ open class ImageTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3108,6 +3144,9 @@ open class InputTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3418,6 +3457,9 @@ open class LabelTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_LabelTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -3569,6 +3611,9 @@ open class LinkTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4089,6 +4134,9 @@ open class OptionTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -4240,6 +4288,9 @@ open class PartialTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4573,6 +4624,9 @@ open class PersistComponentStateTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_PersistComponentStateTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4743,6 +4797,9 @@ open class RenderAtEndOfFormTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4860,6 +4917,9 @@ open class ScriptTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_ScriptTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5295,6 +5355,9 @@ open class SelectTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -5646,6 +5709,9 @@ open class TextAreaTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_TextAreaTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -5835,6 +5901,9 @@ open class ValidationMessageTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_ValidationMessageTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -5988,6 +6057,9 @@ open class ValidationSummaryTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_ValidationSummaryTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -6137,6 +6209,9 @@ open class CacheTagKey
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_CacheTagKey_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
@@ -6280,6 +6355,9 @@ open class DistributedCacheTagHelperFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6343,6 +6421,9 @@ open class DistributedCacheTagHelperFormattingContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperFormattingContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6428,6 +6509,9 @@ open class DistributedCacheTagHelperService
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperService_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperStorage, Microsoft.AspNetCore.Mvc.TagHelpers.Cache.IDistributedCacheTagHelperFormatter, System.Text.Encodings.Web.HtmlEncoder, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -6486,6 +6570,9 @@ open class DistributedCacheTagHelperStorage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_DistributedCacheTagHelperStorage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6559,6 +6646,9 @@ open class IDistributedCacheTagHelperFormatter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperFormatter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -6636,6 +6726,9 @@ open class IDistributedCacheTagHelperService
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperService_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -6690,6 +6783,9 @@ open class IDistributedCacheTagHelperStorage
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_TagHelpers_Cache_IDistributedCacheTagHelperStorage_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

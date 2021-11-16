@@ -42,6 +42,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown);
     int32_t (* _Nonnull  _fp_invoke_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL obj);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_cast)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_create)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0, int32_t (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL obj), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_ctor_0__1__ObjectPoolProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL inner);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_Microsoft_Extensions_ObjectPool_ObjectPool_UT___Create_1__1__Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_UT_)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL policy);
@@ -375,6 +376,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_cast(TYP T
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_ObjectPool._fp_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_cast(T, __thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_create(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0, int32_t (* _Nonnull  __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL obj), const void* _Nonnull __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_ObjectPool._fp_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_ObjectPool._fp_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_create(T, __thrown, __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0, __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_T__Create_0__0, __cb_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T, __pdata_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_bool__Return_0__1__T, __deinit);
     return ret;
 }
 

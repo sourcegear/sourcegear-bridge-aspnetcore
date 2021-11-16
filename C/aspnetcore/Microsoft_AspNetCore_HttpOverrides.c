@@ -47,6 +47,8 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingMiddleware_Task__Invoke_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL httpContext);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingMiddleware_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_type_handle)(void);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_HeaderConverter)(SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_set_HeaderConverter)(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_String__get_CertificateHeader_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_void__set_CertificateHeader_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
@@ -392,6 +394,21 @@ TYP Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_type_han
     }
     TYP ret = _g_Microsoft_AspNetCore_HttpOverrides._fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_type_handle();
     return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_HeaderConverter(SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_AspNetCore_HttpOverrides._fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_HeaderConverter) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_HttpOverrides._fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_get_HeaderConverter(__self_h);
+    return ret;
+}
+
+void Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_set_HeaderConverter(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_AspNetCore_HttpOverrides._fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_set_HeaderConverter) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_HttpOverrides._fp_Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_set_HeaderConverter(__self_h, __v);
 }
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_HttpOverrides_CertificateForwardingOptions_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown) {

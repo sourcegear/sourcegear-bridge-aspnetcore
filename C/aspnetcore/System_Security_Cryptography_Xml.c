@@ -196,6 +196,7 @@ struct {
     TYP (* _Nonnull  _fp_System_Security_Cryptography_Xml_IRelDecryptor_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE encryptionMethod, SG_HNDL_NULLABLE keyInfo, SG_HNDL_NULLABLE toDecrypt);
     SG_HNDL_NONNULL (* _Nonnull  _fp_System_Security_Cryptography_Xml_IRelDecryptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_System_Security_Cryptography_Xml_IRelDecryptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE encryptionMethod, SG_HNDL_NULLABLE keyInfo, SG_HNDL_NULLABLE toDecrypt), const void* _Nonnull __pdata_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_System_Security_Cryptography_Xml_KeyInfo_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_System_Security_Cryptography_Xml_KeyInfo_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_System_Security_Cryptography_Xml_KeyInfo_void__AddClause_0__1__KeyInfoClause)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE clause);
@@ -388,7 +389,7 @@ struct {
     int32_t (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignature_0__1__AsymmetricAlgorithm)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key);
     int32_t (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignature_0__1__KeyedHashAlgorithm)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE macAlg);
     int32_t (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignature_0__2__X509Certificate2_bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE certificate, int32_t verifySignatureOnly);
-    int32_t (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __signingKey_out_ptr);
+    int32_t (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __signingKey_out_ptr);
     void (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_void__ComputeSignature_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_void__ComputeSignature_0__1__KeyedHashAlgorithm)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE macAlg);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_System_Security_Cryptography_Xml_SignedXml_XmlElement__GetIdElement_0__2__XmlDocument_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE document, SG_HNDL_NULLABLE idValue);
@@ -1993,6 +1994,14 @@ SG_HNDL_NONNULL System_Security_Cryptography_Xml_IRelDecryptor_cast(SG_HNDL_NULL
     return ret;
 }
 
+SG_HNDL_NONNULL System_Security_Cryptography_Xml_IRelDecryptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE encryptionMethod, SG_HNDL_NULLABLE keyInfo, SG_HNDL_NULLABLE toDecrypt), const void* _Nonnull __pdata_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_System_Security_Cryptography_Xml._fp_System_Security_Cryptography_Xml_IRelDecryptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_System_Security_Cryptography_Xml._fp_System_Security_Cryptography_Xml_IRelDecryptor_create(__thrown, __cb_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream, __pdata_System_Security_Cryptography_Xml_IRelDecryptor_Stream__Decrypt_0__3__EncryptionMethod_KeyInfo_Stream, __deinit);
+    return ret;
+}
+
 TYP System_Security_Cryptography_Xml_KeyInfo_get_type_handle(void) {
     if (!_g_System_Security_Cryptography_Xml._fp_System_Security_Cryptography_Xml_KeyInfo_get_type_handle) {
         my_init();
@@ -3477,7 +3486,7 @@ int32_t System_Security_Cryptography_Xml_SignedXml_bool__CheckSignature_0__2__X5
     return ret;
 }
 
-int32_t System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __signingKey_out_ptr) {
+int32_t System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __signingKey_out_ptr) {
     if (!_g_System_Security_Cryptography_Xml._fp_System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm) {
         my_init();
     }

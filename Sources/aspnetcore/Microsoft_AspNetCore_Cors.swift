@@ -53,7 +53,7 @@ public struct CorsEndpointConventionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func RequireCors<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>) throws -> Void) throws -> UTBuilder {
+    public static func RequireCors<UTBuilder : SGBridgeGenericValue>(builder : UTBuilder, configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder) throws -> Void) throws -> UTBuilder {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>(configurePolicy);
         return try RequireCors(builder: builder, configurePolicy: del_configurePolicy);
     }
@@ -125,7 +125,7 @@ public struct CorsMiddlewareExtensions {
         }
     }
     // delegate closure overload
-    public static func UseCors(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseCors(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>(configurePolicy);
         return try UseCors(app: app, configurePolicy: del_configurePolicy);
     }
@@ -151,6 +151,9 @@ open class CorsPolicyMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_CorsPolicyMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -209,6 +212,9 @@ open class DisableCorsAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_DisableCorsAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -236,6 +242,9 @@ open class EnableCorsAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_EnableCorsAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -479,6 +488,9 @@ open class CorsMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Cors.Infrastructure.ICorsService, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -573,6 +585,9 @@ open class CorsOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -623,7 +638,7 @@ open class CorsOptions
         }
     }
     // delegate closure overload
-    open func AddDefaultPolicy(configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>) throws -> Void) throws {
+    open func AddDefaultPolicy(configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder) throws -> Void) throws {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>(configurePolicy);
         return try AddDefaultPolicy(configurePolicy: del_configurePolicy);
     }
@@ -666,7 +681,7 @@ open class CorsOptions
         }
     }
     // delegate closure overload
-    open func AddPolicy(name : dotnet.System.String, configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>) throws -> Void) throws {
+    open func AddPolicy(name : dotnet.System.String, configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder) throws -> Void) throws {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>(configurePolicy);
         return try AddPolicy(name: name, configurePolicy: del_configurePolicy);
     }
@@ -746,6 +761,9 @@ open class CorsPolicy
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -843,7 +861,7 @@ open class CorsPolicy
         }
     }
     // delegate closure overload
-    open func set_IsOriginAllowed(value : @escaping (Optional<dotnet.System.String>) throws -> Bool) throws {
+    open func set_IsOriginAllowed(value : @escaping (dotnet.System.String) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.String,Swift.Bool>(value);
         return try set_IsOriginAllowed(value: del_value);
     }
@@ -1071,6 +1089,9 @@ open class CorsPolicyBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicyBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String[])
@@ -1284,7 +1305,27 @@ open class CorsPolicyBuilder
         return aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder SetPreflightMaxAge(System.TimeSpan)
+    // Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder SetPreflightMaxAge(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.SetPreflightMaxAge(System.TimeSpan)
+    /**
+    
+            Sets the preflightMaxAge for the underlying policy.
+            
+
+    - Parameter preflightMaxAge: A positive  indicating the time a preflight
+            request can be cached.
+    - Returns: The current policy builder.
+
+    */
+    open func SetPreflightMaxAge(preflightMaxAge : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicyBuilder_CorsPolicyBuilder__SetPreflightMaxAge_0__1__TimeSpan(&__thrown, self.get_handle(), preflightMaxAge.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder(hndl : __return);
+        }
+    }
     // Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder SetIsOriginAllowed(System.Func<System.String,bool>)
 // docid: M:Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder.SetIsOriginAllowed(System.Func{System.String,System.Boolean})
     /**
@@ -1306,7 +1347,7 @@ open class CorsPolicyBuilder
         }
     }
     // delegate closure overload
-    open func SetIsOriginAllowed(isOriginAllowed : @escaping (Optional<dotnet.System.String>) throws -> Bool) throws -> aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder {
+    open func SetIsOriginAllowed(isOriginAllowed : @escaping (dotnet.System.String) throws -> Bool) throws -> aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder {
         let del_isOriginAllowed = try dotnet.System.Func_2<dotnet.System.String,Swift.Bool>(isOriginAllowed);
         return try SetIsOriginAllowed(isOriginAllowed: del_isOriginAllowed);
     }
@@ -1366,6 +1407,9 @@ open class CorsResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1706,6 +1750,9 @@ open class CorsService
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_CorsService_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1830,6 +1877,9 @@ open class DefaultCorsPolicyProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_DefaultCorsPolicyProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>)
@@ -1854,13 +1904,13 @@ open class DefaultCorsPolicyProvider
 // docid: M:Microsoft.AspNetCore.Cors.Infrastructure.DefaultCorsPolicyProvider.GetPolicyAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)
     /**
     */
-    open /* method final */ func GetPolicyAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policyName : Optional<dotnet.System.String>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy> {
+    open /* method final */ func GetPolicyAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policyName : Optional<dotnet.System.String>) async throws -> aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Cors_Infrastructure_DefaultCorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String(&__thrown, self.get_handle(), context.get_handle(), policyName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // DefaultCorsPolicyProvider
@@ -1881,6 +1931,9 @@ open class ICorsPolicyMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1920,6 +1973,9 @@ open class ICorsPolicyProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1941,13 +1997,13 @@ open class ICorsPolicyProvider
     - Returns: A 
 
     */
-    open func GetPolicyAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policyName : Optional<dotnet.System.String>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy> {
+    open func GetPolicyAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policyName : Optional<dotnet.System.String>) async throws -> aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Cors_Infrastructure_ICorsPolicyProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Cors_Infrastructure_CorsPolicy___GetPolicyAsync_0__2__HttpContext_String(&__thrown, self.get_handle(), context.get_handle(), policyName?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // ICorsPolicyProvider
@@ -1967,6 +2023,9 @@ open class ICorsService
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_ICorsService_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2037,6 +2096,9 @@ open class IDisableCorsAttribute
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_IDisableCorsAttribute_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2064,6 +2126,9 @@ open class IEnableCorsAttribute
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Cors_Infrastructure_IEnableCorsAttribute_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2154,7 +2219,7 @@ public struct CorsServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCors(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddCors(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try AddCors(services: services, setupAction: del_setupAction);
     }
@@ -2221,7 +2286,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configurePolicy: configurePolicy);
     }
     // delegate closure overload
-    public func UseCors(configurePolicy : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseCors(configurePolicy : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configurePolicy = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicyBuilder>(configurePolicy);
         return try aspnetcore.Microsoft.AspNetCore.Builder.CorsMiddlewareExtensions.UseCors(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configurePolicy: del_configurePolicy);
     }
@@ -2240,7 +2305,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions.AddCors(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddCors(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddCors(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CorsServiceCollectionExtensions.AddCors(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

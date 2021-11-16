@@ -99,6 +99,9 @@ open class ActivatorUtilitiesConstructorAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ActivatorUtilitiesConstructorAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -132,6 +135,9 @@ public final class AsyncServiceScope
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_AsyncServiceScope_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -223,6 +229,9 @@ open class IServiceCollection
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServiceCollection_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -250,6 +259,9 @@ open class IServiceProviderFactory_1<TContainerBuilder : SGBridgeGenericValue>
     public typealias TContainerBuilder_IServiceProviderFactory_1 = TContainerBuilder;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_get_type_handle(TContainerBuilder.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -318,6 +330,9 @@ open class IServiceProviderIsService
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -369,6 +384,9 @@ open class IServiceScope
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServiceScope_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -407,6 +425,9 @@ open class IServiceScopeFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -462,6 +483,9 @@ open class ISupportRequiredService
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ISupportRequiredService_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -510,6 +534,9 @@ public final class ObjectFactory
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ObjectFactory_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Object Invoke(System.IServiceProvider, System.Object[])
@@ -549,15 +576,15 @@ public final class ObjectFactory
         return dotnet.System.Object(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (dotnet.System.IServiceProvider, Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Object) throws
+    public convenience init(_ __closure_Invoke : @escaping (dotnet.System.IServiceProvider, Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Object) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NullableHandle) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NullableHandle) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, serviceProvider : NonnullHandle, arguments : NullableHandle) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(dotnet.System.IServiceProvider(hndl: serviceProvider), (arguments != nil) ? (dotnet.System_Arr(hndl: arguments!)) : nil);
+                let ret = try __closure_Invoke(dotnet.System.IServiceProvider(hndl: serviceProvider), (arguments != nil) ? (dotnet.System_Arr(hndl: arguments!)) : nil);
                 return __copy_handle(ret.get_handle());
             }
             catch let e as dotnet.System.Exception
@@ -572,24 +599,24 @@ public final class ObjectFactory
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, serviceProvider : NonnullHandle, arguments : NullableHandle) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, serviceProvider : NonnullHandle, arguments : NullableHandle) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NullableHandle) -> NonnullHandle;
-            return f(thrown, serviceProvider, arguments);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NullableHandle) -> NonnullHandle;
+            return f_interlude(thrown, serviceProvider, arguments);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_Extensions_DependencyInjection_ObjectFactory_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Object Invoke(System.IServiceProvider, System.Object[])
@@ -620,6 +647,9 @@ open class ServiceCollection
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ServiceCollection_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -762,9 +792,6 @@ open class ServiceCollection
     }
     // [IsSpecialName] Microsoft.Extensions.DependencyInjection.ServiceDescriptor get_Item(System.Int32)
 // docid: M:Microsoft.Extensions.DependencyInjection.ServiceCollection.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(index : Swift.Int32) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_DependencyInjection_ServiceCollection_ServiceDescriptor__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -851,7 +878,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddScoped(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddScoped(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try AddScoped(services: services, serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -904,7 +931,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddScoped<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddScoped<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try AddScoped(services: services, implementationFactory: del_implementationFactory);
     }
@@ -957,7 +984,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddSingleton(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddSingleton(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try AddSingleton(services: services, serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -1034,7 +1061,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddSingleton<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddSingleton<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try AddSingleton(services: services, implementationFactory: del_implementationFactory);
     }
@@ -1110,7 +1137,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddTransient(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddTransient(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try AddTransient(services: services, serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -1163,7 +1190,7 @@ public struct ServiceCollectionServiceExtensions {
         }
     }
     // delegate closure overload
-    public static func AddTransient<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddTransient<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try AddTransient(services: services, implementationFactory: del_implementationFactory);
     }
@@ -1185,6 +1212,9 @@ open class ServiceDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ServiceDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1273,7 +1303,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Describe(serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object, lifetime : aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceLifetime) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Describe(serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object, lifetime : aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceLifetime) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try Describe(serviceType: serviceType, implementationFactory: del_implementationFactory, lifetime: lifetime);
     }
@@ -1325,7 +1355,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Scoped(service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Scoped(service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try Scoped(service: service, implementationFactory: del_implementationFactory);
     }
@@ -1375,7 +1405,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Scoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Scoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try Scoped(implementationFactory: del_implementationFactory);
     }
@@ -1405,7 +1435,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Singleton(serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Singleton(serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try Singleton(serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -1478,7 +1508,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Singleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Singleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try Singleton(implementationFactory: del_implementationFactory);
     }
@@ -1543,7 +1573,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Transient(service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Transient(service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try Transient(service: service, implementationFactory: del_implementationFactory);
     }
@@ -1593,7 +1623,7 @@ open class ServiceDescriptor
         }
     }
     // delegate closure overload
-    open class func Transient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
+    open class func Transient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceDescriptor {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try Transient(implementationFactory: del_implementationFactory);
     }
@@ -2079,7 +2109,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddScoped(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public static func TryAddScoped(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try TryAddScoped(collection: collection, service: service, implementationFactory: del_implementationFactory);
     }
@@ -2128,7 +2158,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddScoped<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public static func TryAddScoped<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try TryAddScoped(services: services, implementationFactory: del_implementationFactory);
     }
@@ -2176,7 +2206,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddSingleton(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public static func TryAddSingleton(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try TryAddSingleton(collection: collection, service: service, implementationFactory: del_implementationFactory);
     }
@@ -2225,7 +2255,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddSingleton<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public static func TryAddSingleton<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try TryAddSingleton(services: services, implementationFactory: del_implementationFactory);
     }
@@ -2294,7 +2324,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddTransient(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public static func TryAddTransient(collection : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try TryAddTransient(collection: collection, service: service, implementationFactory: del_implementationFactory);
     }
@@ -2343,7 +2373,7 @@ public struct ServiceCollectionDescriptorExtensions {
         }
     }
     // delegate closure overload
-    public static func TryAddTransient<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public static func TryAddTransient<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try TryAddTransient(services: services, implementationFactory: del_implementationFactory);
     }
@@ -2467,7 +2497,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddScoped(service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public func TryAddScoped(service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: del_implementationFactory);
     }
@@ -2489,7 +2519,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddScoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public func TryAddScoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }
@@ -2511,7 +2541,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddSingleton(service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public func TryAddSingleton(service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: del_implementationFactory);
     }
@@ -2533,7 +2563,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddSingleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public func TryAddSingleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }
@@ -2562,7 +2592,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddTransient(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddTransient(service : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws {
+    public func TryAddTransient(service : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddTransient(collection: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), service: service, implementationFactory: del_implementationFactory);
     }
@@ -2584,7 +2614,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func TryAddTransient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws {
+    public func TryAddTransient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         try aspnetcore.Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }
@@ -2606,7 +2636,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddScoped(serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddScoped(serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -2628,7 +2658,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddScoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddScoped<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddScoped(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }
@@ -2653,7 +2683,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddSingleton(serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddSingleton(serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -2682,7 +2712,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddSingleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddSingleton<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }
@@ -2714,7 +2744,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddTransient(serviceType : dotnet.System.Type_, implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddTransient(serviceType : dotnet.System.Type_, implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> dotnet.System.Object) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,dotnet.System.Object>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), serviceType: serviceType, implementationFactory: del_implementationFactory);
     }
@@ -2736,7 +2766,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
-    public func AddTransient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddTransient<UTService : SGBridgeGenericValue>(implementationFactory : @escaping (dotnet.System.IServiceProvider) throws -> UTService) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_implementationFactory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,UTService>(implementationFactory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: del_implementationFactory);
     }

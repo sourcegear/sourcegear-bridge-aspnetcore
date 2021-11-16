@@ -23,6 +23,9 @@ open class AuthenticationFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -126,6 +129,9 @@ open class AuthenticationHandlerProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationHandlerProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider)
@@ -158,13 +164,13 @@ open class AuthenticationHandlerProvider
     - Returns: The handler instance.
 
     */
-    open /* method final */ func GetHandlerAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, authenticationScheme : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.IAuthenticationHandler> {
+    open /* method final */ func GetHandlerAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, authenticationScheme : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.IAuthenticationHandler {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationHandlerProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_IAuthenticationHandler___GetHandlerAsync_0__2__HttpContext_String(&__thrown, self.get_handle(), context.get_handle(), authenticationScheme.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider get_Schemes()
@@ -207,6 +213,9 @@ open class AuthenticationSchemeProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)
@@ -240,13 +249,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme that will be used by default for .
 
     */
-    open func GetDefaultAuthenticateSchemeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetDefaultAuthenticateSchemeAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetDefaultAuthenticateSchemeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GetDefaultChallengeSchemeAsync()
@@ -261,13 +270,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme that will be used by default for .
 
     */
-    open func GetDefaultChallengeSchemeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetDefaultChallengeSchemeAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetDefaultChallengeSchemeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GetDefaultForbidSchemeAsync()
@@ -282,13 +291,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme that will be used by default for .
 
     */
-    open func GetDefaultForbidSchemeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetDefaultForbidSchemeAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetDefaultForbidSchemeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GetDefaultSignInSchemeAsync()
@@ -303,13 +312,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme that will be used by default for .
 
     */
-    open func GetDefaultSignInSchemeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetDefaultSignInSchemeAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetDefaultSignInSchemeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GetDefaultSignOutSchemeAsync()
@@ -324,13 +333,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme that will be used by default for .
 
     */
-    open func GetDefaultSignOutSchemeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetDefaultSignOutSchemeAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetDefaultSignOutSchemeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationScheme> GetSchemeAsync(System.String)
@@ -344,13 +353,13 @@ open class AuthenticationSchemeProvider
     - Returns: The scheme or null if not found.
 
     */
-    open func GetSchemeAsync(name : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
+    open func GetSchemeAsync(name : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationScheme___GetSchemeAsync_0__1__String(&__thrown, self.get_handle(), name.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authentication.AuthenticationScheme>> GetRequestHandlerSchemesAsync()
@@ -363,13 +372,13 @@ open class AuthenticationSchemeProvider
     - Returns: The schemes in priority order for request handling
 
     */
-    open func GetRequestHandlerSchemesAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme>> {
+    open func GetRequestHandlerSchemesAsync() async throws -> dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authentication_AuthenticationScheme____GetRequestHandlerSchemesAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // bool TryAddScheme(Microsoft.AspNetCore.Authentication.AuthenticationScheme)
@@ -432,13 +441,13 @@ open class AuthenticationSchemeProvider
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider.GetAllSchemesAsync
     /**
     */
-    open func GetAllSchemesAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme>> {
+    open func GetAllSchemesAsync() async throws -> dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Authentication_AuthenticationScheme____GetAllSchemesAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // AuthenticationSchemeProvider
@@ -458,6 +467,9 @@ open class AuthenticationService
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationService_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -494,13 +506,13 @@ open class AuthenticationService
     - Returns: The result.
 
     */
-    open func AuthenticateAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult> {
+    open func AuthenticateAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationService_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticateResult___AuthenticateAsync_0__2__HttpContext_String(&__thrown, self.get_handle(), context.get_handle(), scheme?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ChallengeAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -516,13 +528,13 @@ open class AuthenticationService
     - Returns: A task.
 
     */
-    open func ChallengeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ChallengeAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationService_Task__ChallengeAsync_0__3__HttpContext_String_AuthenticationProperties(&__thrown, self.get_handle(), context.get_handle(), scheme?.get_handle() ?? nil, properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ForbidAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -538,13 +550,13 @@ open class AuthenticationService
     - Returns: A task.
 
     */
-    open func ForbidAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ForbidAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationService_Task__ForbidAsync_0__3__HttpContext_String_AuthenticationProperties(&__thrown, self.get_handle(), context.get_handle(), scheme?.get_handle() ?? nil, properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SignInAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -561,13 +573,13 @@ open class AuthenticationService
     - Returns: A task.
 
     */
-    open func SignInAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, principal : dotnet.System.Security.Claims.ClaimsPrincipal, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SignInAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, principal : dotnet.System.Security.Claims.ClaimsPrincipal, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationService_Task__SignInAsync_0__4__HttpContext_String_ClaimsPrincipal_AuthenticationProperties(&__thrown, self.get_handle(), context.get_handle(), scheme?.get_handle() ?? nil, principal.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SignOutAsync(Microsoft.AspNetCore.Http.HttpContext, System.String, Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -583,13 +595,13 @@ open class AuthenticationService
     - Returns: A task.
 
     */
-    open func SignOutAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SignOutAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : Optional<dotnet.System.String>, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationService_Task__SignOutAsync_0__3__HttpContext_String_AuthenticationProperties(&__thrown, self.get_handle(), context.get_handle(), scheme?.get_handle() ?? nil, properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider get_Schemes()
@@ -698,6 +710,9 @@ open class NoopClaimsTransformation
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_NoopClaimsTransformation_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -722,13 +737,13 @@ open class NoopClaimsTransformation
     - Returns: The principal unchanged.
 
     */
-    open func TransformAsync(principal : dotnet.System.Security.Claims.ClaimsPrincipal) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Security.Claims.ClaimsPrincipal> {
+    open func TransformAsync(principal : dotnet.System.Security.Claims.ClaimsPrincipal) async throws -> dotnet.System.Security.Claims.ClaimsPrincipal {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_NoopClaimsTransformation_System_Threading_Tasks_Task_System_Security_Claims_ClaimsPrincipal___TransformAsync_0__1__ClaimsPrincipal(&__thrown, self.get_handle(), principal.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // NoopClaimsTransformation
@@ -784,7 +799,7 @@ public struct AuthenticationCoreServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAuthenticationCore(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddAuthenticationCore(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>(configureOptions);
         return try AddAuthenticationCore(services: services, configureOptions: del_configureOptions);
     }
@@ -808,7 +823,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthenticationCoreServiceCollectionExtensions.AddAuthenticationCore(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddAuthenticationCore(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddAuthenticationCore(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthenticationCoreServiceCollectionExtensions.AddAuthenticationCore(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

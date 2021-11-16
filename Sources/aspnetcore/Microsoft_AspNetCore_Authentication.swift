@@ -22,6 +22,9 @@ open class AccessDeniedContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AccessDeniedContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions)
@@ -216,6 +219,9 @@ open class AuthenticationBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
@@ -263,7 +269,7 @@ open class AuthenticationBuilder
         }
     }
     // delegate closure overload
-    open func AddPolicyScheme(authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.PolicySchemeOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    open func AddPolicyScheme(authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.PolicySchemeOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.PolicySchemeOptions>(configureOptions);
         return try AddPolicyScheme(authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: del_configureOptions);
     }
@@ -307,6 +313,9 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task InitializeAsync(Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Http.HttpContext)
@@ -321,52 +330,52 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     - Returns: 
 
     */
-    open /* method final */ func InitializeAsync(scheme : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func InitializeAsync(scheme : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Task__InitializeAsync_0__2__AuthenticationScheme_HttpContext(TOptions.get_type_handle(), &__thrown, self.get_handle(), scheme.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticateResult> AuthenticateAsync()
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync
     /**
     */
-    open /* method final */ func AuthenticateAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult> {
+    open /* method final */ func AuthenticateAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticateResult___AuthenticateAsync_0__0(TOptions.get_type_handle(), &__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open /* method final */ func ChallengeAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ChallengeAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Task__ChallengeAsync_0__1__AuthenticationProperties(TOptions.get_type_handle(), &__thrown, self.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open /* method final */ func ForbidAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ForbidAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_AuthenticationHandler_1_Task__ForbidAsync_0__1__AuthenticationProperties(TOptions.get_type_handle(), &__thrown, self.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.AuthenticationScheme get_Scheme()
@@ -429,6 +438,9 @@ open class AuthenticationMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -521,6 +533,9 @@ open class AuthenticationSchemeOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_AuthenticationSchemeOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -831,7 +846,7 @@ open class AuthenticationSchemeOptions
         }
     }
     // delegate closure overload
-    open func set_ForwardDefaultSelector(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> dotnet.System.String) throws {
+    open func set_ForwardDefaultSelector(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.String) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,dotnet.System.String>(value);
         return try set_ForwardDefaultSelector(value: del_value);
     }
@@ -1055,6 +1070,9 @@ open class BaseContext_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_BaseContext_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.AuthenticationScheme get_Scheme()
@@ -1184,6 +1202,9 @@ open class HandleRequestContext_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_HandleRequestContext_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void HandleResponse()
@@ -1273,6 +1294,9 @@ open class HandleRequestResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_HandleRequestResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1512,6 +1536,9 @@ open class IDataSerializer_1<TModel : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_IDataSerializer_1_get_type_handle(TModel.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1579,6 +1606,9 @@ open class ISecureDataFormat_1<TData : SGBridgeGenericValue>
     public typealias TData_ISecureDataFormat_1 = TData;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_get_type_handle(TData.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1689,6 +1719,9 @@ open class ISystemClock
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_ISystemClock_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1756,6 +1789,9 @@ open class PolicySchemeHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PolicySchemeHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.PolicySchemeOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
@@ -1796,6 +1832,9 @@ open class PolicySchemeOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PolicySchemeOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1825,6 +1864,9 @@ open class PrincipalContext_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PrincipalContext_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1885,6 +1927,9 @@ open class PropertiesContext_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PropertiesContext_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.AuthenticationProperties get_Properties()
@@ -1941,6 +1986,9 @@ open class PropertiesDataFormat
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PropertiesDataFormat_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.IDataProtector)
@@ -1977,6 +2025,9 @@ open class PropertiesSerializer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_PropertiesSerializer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2090,6 +2141,9 @@ open class RedirectContext_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RedirectContext_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, TOptions, Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String)
@@ -2166,6 +2220,9 @@ open class RemoteAuthenticationContext_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RemoteAuthenticationContext_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2319,6 +2376,9 @@ open class RemoteAuthenticationEvents
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RemoteAuthenticationEvents_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2406,7 +2466,7 @@ open class RemoteAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnAccessDenied(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AccessDeniedContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnAccessDenied(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.AccessDeniedContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.AccessDeniedContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnAccessDenied(value: del_value);
     }
@@ -2433,7 +2493,7 @@ open class RemoteAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnRemoteFailure(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RemoteFailureContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRemoteFailure(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RemoteFailureContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RemoteFailureContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRemoteFailure(value: del_value);
     }
@@ -2460,7 +2520,7 @@ open class RemoteAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnTicketReceived(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.TicketReceivedContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnTicketReceived(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.TicketReceivedContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.TicketReceivedContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnTicketReceived(value: del_value);
     }
@@ -2525,6 +2585,9 @@ open class RemoteAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<bool> ShouldHandleRequestAsync()
@@ -2537,13 +2600,13 @@ open class RemoteAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     - Returns:  to handle the operation, otherwise .
 
     */
-    open func ShouldHandleRequestAsync() throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func ShouldHandleRequestAsync() async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_System_Threading_Tasks_Task_bool___ShouldHandleRequestAsync_0__0(TOptions.get_type_handle(), &__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> HandleRequestAsync()
@@ -2556,13 +2619,13 @@ open class RemoteAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     - Returns:  if authentication was handled, otherwise .
 
     */
-    open func HandleRequestAsync() throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func HandleRequestAsync() async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_RemoteAuthenticationHandler_1_System_Threading_Tasks_Task_bool___HandleRequestAsync_0__0(TOptions.get_type_handle(), &__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // RemoteAuthenticationHandler_1
@@ -2581,6 +2644,9 @@ open class RemoteAuthenticationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2647,7 +2713,17 @@ open class RemoteAuthenticationOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_BackchannelTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_BackchannelTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.set_BackchannelTimeout(System.TimeSpan)
+    open func set_BackchannelTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions_void__set_BackchannelTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Net.Http.HttpMessageHandler get_BackchannelHttpHandler()
 // docid: M:Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.get_BackchannelHttpHandler
     open func get_BackchannelHttpHandler() throws -> Optional<dotnet.System.Net.Http.HttpMessageHandler> {
@@ -2825,7 +2901,17 @@ open class RemoteAuthenticationOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_RemoteAuthenticationTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_RemoteAuthenticationTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.set_RemoteAuthenticationTimeout(System.TimeSpan)
+    open func set_RemoteAuthenticationTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Authentication_RemoteAuthenticationOptions_void__set_RemoteAuthenticationTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.RemoteAuthenticationEvents get_Events()
 // docid: M:Microsoft.AspNetCore.Authentication.RemoteAuthenticationOptions.get_Events
     open override func get_Events() throws -> aspnetcore.Microsoft.AspNetCore.Authentication.RemoteAuthenticationEvents {
@@ -2949,7 +3035,9 @@ open class RemoteAuthenticationOptions
         get {
             return try! get_BackchannelTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_BackchannelTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_BackchannelTimeout(value: v);
+        }
     }
     /**
     
@@ -3006,7 +3094,9 @@ open class RemoteAuthenticationOptions
         get {
             return try! get_RemoteAuthenticationTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_RemoteAuthenticationTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_RemoteAuthenticationTimeout(value: v);
+        }
     }
     /**
     
@@ -3074,6 +3164,9 @@ open class RemoteFailureContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RemoteFailureContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3195,6 +3288,9 @@ open class RequestPathBaseCookieBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_RequestPathBaseCookieBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3241,6 +3337,9 @@ open class ResultContext_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_ResultContext_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3429,6 +3528,9 @@ open class SecureDataFormat_1<TData : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_SecureDataFormat_1_get_type_handle(TData.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Authentication.IDataSerializer<TData>, Microsoft.AspNetCore.DataProtection.IDataProtector)
@@ -3520,6 +3622,9 @@ open class SignInAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_SignInAuthenticationHandler_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
@@ -3547,13 +3652,13 @@ open class SignInAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
 // docid: M:Microsoft.AspNetCore.Authentication.SignInAuthenticationHandler`1.SignInAsync(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open func SignInAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SignInAsync(user : dotnet.System.Security.Claims.ClaimsPrincipal, properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_SignInAuthenticationHandler_1_Task__SignInAsync_0__2__ClaimsPrincipal_AuthenticationProperties(TOptions.get_type_handle(), &__thrown, self.get_handle(), user.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // SignInAuthenticationHandler_1
@@ -3573,6 +3678,9 @@ open class SignOutAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3601,13 +3709,13 @@ open class SignOutAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
 // docid: M:Microsoft.AspNetCore.Authentication.SignOutAuthenticationHandler`1.SignOutAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open func SignOutAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SignOutAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_SignOutAuthenticationHandler_1_Task__SignOutAsync_0__1__AuthenticationProperties(TOptions.get_type_handle(), &__thrown, self.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // SignOutAuthenticationHandler_1
@@ -3627,6 +3735,9 @@ open class SystemClock
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_SystemClock_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3681,6 +3792,9 @@ open class TicketDataFormat
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_TicketDataFormat_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.IDataProtector)
@@ -3717,6 +3831,9 @@ open class TicketReceivedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_TicketReceivedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3797,6 +3914,9 @@ open class TicketSerializer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_TicketSerializer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4010,7 +4130,7 @@ public struct AuthenticationServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAuthentication(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddAuthentication(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>(configureOptions);
         return try AddAuthentication(services: services, configureOptions: del_configureOptions);
     }
@@ -4075,7 +4195,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddAuthentication(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddAuthentication(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AuthenticationServiceCollectionExtensions.AddAuthentication(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

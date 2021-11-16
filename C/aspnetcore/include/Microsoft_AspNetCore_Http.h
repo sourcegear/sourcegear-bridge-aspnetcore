@@ -560,6 +560,8 @@ void Microsoft_AspNetCore_Http_Features_IHttpActivityFeature_void__set_Activity_
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_IHttpActivityFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_IHttpActivityFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Http_Features_ItemsFeature_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_ItemsFeature_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);

@@ -23,6 +23,9 @@ public final class EventId
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_EventId_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -226,6 +229,9 @@ open class IExternalScopeProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_IExternalScopeProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -297,6 +303,9 @@ open class ILogger
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ILogger_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -394,6 +403,9 @@ open class ILoggerFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ILoggerFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -460,6 +472,9 @@ open class ILoggerProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ILoggerProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -511,6 +526,9 @@ open class ILogger_1<TCategoryName : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ILogger_1_get_type_handle(TCategoryName.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -537,6 +555,9 @@ open class ISupportExternalScope
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ISupportExternalScope_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -581,6 +602,9 @@ open class LogDefineOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LogDefineOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1384,6 +1408,9 @@ open class LoggerExternalScopeProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerExternalScopeProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1563,6 +1590,9 @@ public final class LoggerMessageAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerMessageAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1808,6 +1838,9 @@ open class Logger_1<T : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Logger_1_get_type_handle(T.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1848,6 +1881,9 @@ public final class LogEntry_1<TState : SGBridgeGenericValue>
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Abstractions_LogEntry_1_get_type_handle(TState.get_type_handle());
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2036,6 +2072,9 @@ open class NullLogger
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Abstractions_NullLogger_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.IDisposable BeginScope<TState>(TState)
@@ -2123,6 +2162,9 @@ open class NullLoggerFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Abstractions_NullLoggerFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2214,6 +2256,9 @@ open class NullLoggerProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Abstractions_NullLoggerProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.Extensions.Logging.ILogger CreateLogger(System.String)
@@ -2282,8 +2327,24 @@ open class NullLogger_1<T : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_type_handle(T.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // static field:  Instance
+    /**
+    
+            Returns an instance of .
+            
+
+    */
+    open class var Instance : aspnetcore.Microsoft.Extensions.Logging.Abstractions.NullLogger_1<T> {
+        get {
+        let __return = aspnetcore.Microsoft.Extensions.Logging.Abstractions.NullLogger_1<T>(hndl: Microsoft_Extensions_Logging_Abstractions_NullLogger_1_get_Instance());
+            return __return;
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Logging.Abstractions.NullLogger`1.#ctor
     public override init() throws {

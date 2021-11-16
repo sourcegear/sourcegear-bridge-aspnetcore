@@ -68,6 +68,9 @@ open class DeveloperExceptionPageOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_DeveloperExceptionPageOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -236,7 +239,7 @@ public struct ExceptionHandlerExtensions {
         }
     }
     // delegate closure overload
-    public static func UseExceptionHandler(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseExceptionHandler(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configure);
         return try UseExceptionHandler(app: app, configure: del_configure);
     }
@@ -278,6 +281,9 @@ open class ExceptionHandlerOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_ExceptionHandlerOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -341,7 +347,7 @@ open class ExceptionHandlerOptions
         }
     }
     // delegate closure overload
-    open func set_ExceptionHandler(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_ExceptionHandler(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(value);
         return try set_ExceptionHandler(value: del_value);
     }
@@ -486,7 +492,7 @@ public struct StatusCodePagesExtensions {
         }
     }
     // delegate closure overload
-    public static func UseStatusCodePages(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseStatusCodePages(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, handler : @escaping (aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_handler = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext,dotnet.System.Threading.Tasks.Task>(handler);
         return try UseStatusCodePages(app: app, handler: del_handler);
     }
@@ -559,7 +565,7 @@ public struct StatusCodePagesExtensions {
         }
     }
     // delegate closure overload
-    public static func UseStatusCodePages(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public static func UseStatusCodePages(app : aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder, configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try UseStatusCodePages(app: app, configuration: del_configuration);
     }
@@ -602,6 +608,9 @@ open class StatusCodePagesOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_StatusCodePagesOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -646,7 +655,7 @@ open class StatusCodePagesOptions
         }
     }
     // delegate closure overload
-    open func set_HandleAsync(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_HandleAsync(value : @escaping (aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_HandleAsync(value: del_value);
     }
@@ -769,6 +778,9 @@ open class WelcomePageOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_WelcomePageOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -839,6 +851,9 @@ open class DeveloperExceptionPageMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_DeveloperExceptionPageMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.DeveloperExceptionPageOptions>, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Hosting.IWebHostEnvironment, System.Diagnostics.DiagnosticSource, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Diagnostics.IDeveloperPageExceptionFilter>)
@@ -902,6 +917,9 @@ open class ExceptionHandlerFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_ExceptionHandlerFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1069,6 +1087,9 @@ open class ExceptionHandlerMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_ExceptionHandlerMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>, System.Diagnostics.DiagnosticListener)
@@ -1126,6 +1147,9 @@ open class StatusCodeContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_StatusCodeContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1233,6 +1257,9 @@ open class StatusCodePagesFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_StatusCodePagesFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1301,6 +1328,9 @@ open class StatusCodePagesMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_StatusCodePagesMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.StatusCodePagesOptions>)
@@ -1357,6 +1387,9 @@ open class StatusCodeReExecuteFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_StatusCodeReExecuteFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1488,6 +1521,9 @@ open class WelcomePageMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_WelcomePageMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.WelcomePageOptions>)
@@ -1562,7 +1598,7 @@ public struct ExceptionHandlerServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddExceptionHandler(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddExceptionHandler(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>(configureOptions);
         return try AddExceptionHandler(services: services, configureOptions: del_configureOptions);
     }
@@ -1588,7 +1624,7 @@ public struct ExceptionHandlerServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddExceptionHandler<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddExceptionHandler<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions,UTService>(configureOptions);
         return try AddExceptionHandler(services: services, configureOptions: del_configureOptions);
     }
@@ -1633,7 +1669,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func UseExceptionHandler(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseExceptionHandler(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1666,7 +1702,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.UseStatusCodePages(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), handler: handler);
     }
     // delegate closure overload
-    public func UseStatusCodePages(handler : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseStatusCodePages(handler : @escaping (aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_handler = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Diagnostics.StatusCodeContext,dotnet.System.Threading.Tasks.Task>(handler);
         return try aspnetcore.Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.UseStatusCodePages(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), handler: del_handler);
     }
@@ -1692,7 +1728,7 @@ extension Microsoft_AspNetCore_Builder_IApplicationBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.UseStatusCodePages(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configuration: configuration);
     }
     // delegate closure overload
-    public func UseStatusCodePages(configuration : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    public func UseStatusCodePages(configuration : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_configuration = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configuration);
         return try aspnetcore.Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.UseStatusCodePages(app: aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder(hndl: __copy_handle(self.get_handle())), configuration: del_configuration);
     }
@@ -1739,7 +1775,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions.AddExceptionHandler(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddExceptionHandler(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddExceptionHandler(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions.AddExceptionHandler(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -1751,7 +1787,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions.AddExceptionHandler(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddExceptionHandler<UTService : SGBridgeGenericValue>(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddExceptionHandler<UTService : SGBridgeGenericValue>(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.ExceptionHandlerOptions,UTService>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ExceptionHandlerServiceCollectionExtensions.AddExceptionHandler(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

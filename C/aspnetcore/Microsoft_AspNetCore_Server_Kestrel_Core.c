@@ -193,23 +193,29 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL timeSpan);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL timeSpan), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL timeSpan), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_i32__get_StreamId_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_MinDataRate__get_MinDataRate_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_void__set_MinDataRate_0__1__MinDataRate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_MinDataRate__get_MinDataRate_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_void__set_MinDataRate_0__1__MinDataRate)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_System_ReadOnlyMemory_u8___get_ApplicationProtocol_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpMethod_get_type_handle)(void);
     uint8_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpMethod_get_Get)(void);
     uint8_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpMethod_get_Put)(void);
@@ -249,9 +255,11 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, const void* _Nonnull __name_spanptr, const void* _Nonnull __value_spanptr);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t endStream);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index, const void* _Nonnull __value_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nonnull __name_spanptr, const void* _Nonnull __value_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t endStream), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL versionAndMethod, SG_HNDL_NONNULL targetPath, const void* _Nonnull __startLine_spanptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL versionAndMethod, SG_HNDL_NONNULL targetPath, const void* _Nonnull __startLine_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength_ctor_0__3__i32_i32_bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t offset, int32_t length, int32_t isEncoded);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_TargetOffsetPathLength_i32__get_Offset_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -1746,6 +1754,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTim
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL timeSpan), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL timeSpan), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_create(__thrown, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__SetTimeout_0__1__TimeSpan, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__ResetTimeout_0__1__TimeSpan, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_void__CancelTimeout_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_get_type_handle) {
         my_init();
@@ -1766,6 +1782,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConc
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_create(__thrown, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_void__ReleaseConnection_0__0, __deinit);
     return ret;
 }
 
@@ -1790,6 +1814,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamId
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1824,6 +1856,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinReques
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_get_type_handle) {
         my_init();
@@ -1855,6 +1895,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRespon
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_get_type_handle) {
         my_init();
@@ -1876,6 +1924,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicatio
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -2186,6 +2242,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHead
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t index, const void* _Nonnull __value_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nonnull __name_spanptr, const void* _Nonnull __value_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t endStream), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_create(__thrown, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__1__i32, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnStaticIndexedHeader_0__2__i32_rospanu8, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeader_0__2__rospanu8_rospanu8, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_void__OnHeadersComplete_0__1__bool, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_get_type_handle) {
         my_init();
@@ -2206,6 +2270,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequ
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL versionAndMethod, SG_HNDL_NONNULL targetPath, const void* _Nonnull __startLine_spanptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_Kestrel_Core._fp_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_create(__thrown, __cb_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8, __pdata_Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_void__OnStartLine_0__3__HttpVersionAndMethod_TargetOffsetPathLength_spanu8, __deinit);
     return ret;
 }
 

@@ -37,7 +37,7 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_CacheControlHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__get_NoCache_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_void__set_NoCache_0__1__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_System_Collections_Generic_ICollection_Microsoft_Extensions_Primitives_StringSegment___get_NoCacheHeaders_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -76,7 +76,7 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_ContentDispositionHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_StringSegment__get_DispositionType_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_void__set_DispositionType_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue___get_Parameters_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -119,11 +119,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_ctor_0__2__StringSegment_StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL name, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_String__ToString_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_CookieHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_CookieHeaderValue_StringSegment__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -142,8 +142,8 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParse_0__2__StringSegment_outEntityTagHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_EntityTagHeaderValue__get_Any_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_StringSegment__get_Tag_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__get_IsWeak_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -364,11 +364,11 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_MediaTypeHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_StringSegment__get_Charset_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_void__set_Charset_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_Encoding__get_Encoding_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -404,11 +404,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_StringSegment__GetUnescapedValue_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_void__SetAndEscapeValue_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_NameValueHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_String__ToString_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_NameValueHeaderValue__Find_0__2__System_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE values, SG_HNDL_NONNULL name);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_StringSegment__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -424,7 +424,7 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_RangeConditionHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_System_Nullable_System_DateTimeOffset___get_LastModified_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_EntityTagHeaderValue__get_EntityTag_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -459,11 +459,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_String__ToString_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_void__AppendToStringBuilder_0__1__StringBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL builder);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_SetCookieHeaderValue__Parse_0__1__StringSegment)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__Equals_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE obj);
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_i32__GetHashCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_StringSegment__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -496,8 +496,8 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParse_0__2__StringSegment_outStringWithQualityHeaderValue)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue___ParseList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_System_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue___ParseStrictList_0__1__System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_StringSegment__get_Value_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_System_Nullable_f64___get_Quality_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -739,7 +739,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_CacheControlHeaderValue_CacheControlH
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_CacheControlHeaderValue_bool__TryParse_0__2__StringSegment_outCacheControlHeaderValue) {
         my_init();
     }
@@ -1036,7 +1036,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_Content
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_bool__TryParse_0__2__StringSegment_outContentDispositionHeaderValue) {
         my_init();
     }
@@ -1371,7 +1371,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_CookieHeaderValue_CookieHeaderValue__
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParse_0__2__StringSegment_outCookieHeaderValue) {
         my_init();
     }
@@ -1395,7 +1395,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_CookieHeaderValue_System_Collections_
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_) {
         my_init();
     }
@@ -1403,7 +1403,7 @@ int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseList_0__2__Sy
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_CookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_CookieHeaderValue_) {
         my_init();
     }
@@ -1553,7 +1553,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_EntityTagHeaderValue_System_Collectio
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_) {
         my_init();
     }
@@ -1561,7 +1561,7 @@ int32_t Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseList_0__2_
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_EntityTagHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_EntityTagHeaderValue_) {
         my_init();
     }
@@ -3233,7 +3233,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_MediaTypeHeaderValue_MediaTypeHeaderV
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParse_0__2__StringSegment_outMediaTypeHeaderValue) {
         my_init();
     }
@@ -3257,7 +3257,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_MediaTypeHeaderValue_System_Collectio
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_) {
         my_init();
     }
@@ -3265,7 +3265,7 @@ int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseList_0__2_
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_MediaTypeHeaderValue_) {
         my_init();
     }
@@ -3547,7 +3547,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_NameValueHeaderValue_NameValueHeaderV
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParse_0__2__StringSegment_outNameValueHeaderValue) {
         my_init();
     }
@@ -3571,7 +3571,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_NameValueHeaderValue_System_Collectio
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_) {
         my_init();
     }
@@ -3579,7 +3579,7 @@ int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseList_0__2_
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_NameValueHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_NameValueHeaderValue_) {
         my_init();
     }
@@ -3706,7 +3706,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_RangeConditionHeaderValue_RangeCondit
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_RangeConditionHeaderValue_bool__TryParse_0__2__StringSegment_outRangeConditionHeaderValue) {
         my_init();
     }
@@ -3984,7 +3984,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_SetCookieHeaderValue_SetCookieHeaderV
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NONNULL* _Nonnull __parsedValue_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL input, SG_HNDL_NULLABLE* _Nonnull __parsedValue_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParse_0__2__StringSegment_outSetCookieHeaderValue) {
         my_init();
     }
@@ -4008,7 +4008,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_SetCookieHeaderValue_System_Collectio
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_) {
         my_init();
     }
@@ -4016,7 +4016,7 @@ int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseList_0__2_
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE inputs, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_SetCookieHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_SetCookieHeaderValue_) {
         my_init();
     }
@@ -4271,7 +4271,7 @@ SG_HNDL_NONNULL Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_System_C
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_) {
         my_init();
     }
@@ -4279,7 +4279,7 @@ int32_t Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseLi
     return ret;
 }
 
-int32_t Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NONNULL* _Nonnull __parsedValues_out_ptr) {
+int32_t Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE input, SG_HNDL_NULLABLE* _Nonnull __parsedValues_out_ptr) {
     if (!_g_Microsoft_Net_Http_Headers._fp_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_bool__TryParseStrictList_0__2__System_Collections_Generic_IList_string__outSystem_Collections_Generic_IList_Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_) {
         my_init();
     }

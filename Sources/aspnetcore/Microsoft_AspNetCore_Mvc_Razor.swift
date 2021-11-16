@@ -23,6 +23,9 @@ open class CompiledRazorAssemblyApplicationPartFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationParts_CompiledRazorAssemblyApplicationPartFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -89,6 +92,9 @@ open class CompiledRazorAssemblyPart
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationParts_CompiledRazorAssemblyPart_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -172,6 +178,9 @@ public final class ConsolidatedAssemblyApplicationPartFactory
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationParts_ConsolidatedAssemblyApplicationPartFactory_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -216,6 +225,9 @@ open class IRazorCompiledItemProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -256,6 +268,9 @@ public final class AfterViewPageEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -397,6 +412,9 @@ public final class BeforeViewPageEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewPageEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -544,6 +562,9 @@ open class HelperResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_HelperResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Func<System.IO.TextWriter,System.Threading.Tasks.Task>)
@@ -624,6 +645,9 @@ open class IRazorPage
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_IRazorPage_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -643,13 +667,13 @@ open class IRazorPage
     - Returns: A task representing the result of executing the page.
 
     */
-    open func ExecuteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_IRazorPage_Task__ExecuteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void EnsureRenderedBodyOrSections()
@@ -839,6 +863,9 @@ open class IRazorPageActivator
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -884,6 +911,9 @@ open class IRazorPageFactoryProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -932,6 +962,9 @@ open class IRazorViewEngine
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1034,6 +1067,9 @@ open class ITagHelperActivator
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1061,6 +1097,9 @@ open class ITagHelperFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1090,6 +1129,9 @@ open class ITagHelperInitializer_1<TTagHelper : SGBridgeGenericValue>
     public typealias TTagHelper_ITagHelperInitializer_1 = TTagHelper;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_get_type_handle(TTagHelper.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1137,6 +1179,9 @@ open class IViewLocationExpander
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1208,6 +1253,9 @@ open class LanguageViewLocationExpander
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpander_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1335,6 +1383,9 @@ open class RazorPage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void IgnoreBody()
@@ -1375,7 +1426,7 @@ open class RazorPage
         }
     }
     // delegate closure overload
-    open override func DefineSection(name : dotnet.System.String, section : @escaping () throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open override func DefineSection(name : dotnet.System.String, section : @escaping () async throws -> Void) throws {
         let del_section = try aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate(section);
         return try DefineSection(name: name, section: del_section);
     }
@@ -1461,13 +1512,13 @@ open class RazorPage
             
 
     */
-    open func RenderSectionAsync(name : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.HtmlString> {
+    open func RenderSectionAsync(name : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Html.HtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_RazorPage_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_HtmlString___RenderSectionAsync_0__1__String(&__thrown, self.get_handle(), name.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.HtmlString> RenderSectionAsync(System.String, bool)
@@ -1485,13 +1536,13 @@ open class RazorPage
             
 
     */
-    open func RenderSectionAsync(name : dotnet.System.String, required : Bool) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.HtmlString> {
+    open func RenderSectionAsync(name : dotnet.System.String, required : Bool) async throws -> aspnetcore.Microsoft.AspNetCore.Html.HtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_RazorPage_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_HtmlString___RenderSectionAsync_0__2__String_bool(&__thrown, self.get_handle(), name.get_handle(), Swift.Int32(required ? 1 : 0));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // void IgnoreSection(System.String)
@@ -1587,6 +1638,9 @@ open class RazorPageActivator
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPageActivator_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory, Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper, System.Diagnostics.DiagnosticSource, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider)
@@ -1637,19 +1691,22 @@ open class RazorPageBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPageBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task ExecuteAsync()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorPageBase.ExecuteAsync
     /**
     */
-    open func ExecuteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_RazorPageBase_Task__ExecuteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.String InvalidTagHelperIndexerAssignment(System.String, System.String, System.String)
@@ -1792,7 +1849,7 @@ open class RazorPageBase
         }
     }
     // delegate closure overload
-    open func DefineSection(name : dotnet.System.String, section : @escaping () throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func DefineSection(name : dotnet.System.String, section : @escaping () async throws -> Void) throws {
         let del_section = try aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RenderAsyncDelegate(section);
         return try DefineSection(name: name, section: del_section);
     }
@@ -2005,13 +2062,13 @@ open class RazorPageBase
             completion returns an empty .
 
     */
-    open func FlushAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Html.HtmlString> {
+    open func FlushAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Html.HtmlString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_RazorPageBase_System_Threading_Tasks_Task_Microsoft_AspNetCore_Html_HtmlString___FlushAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Html.HtmlString SetAntiforgeryCookieAndHeader()
@@ -2469,6 +2526,9 @@ public final class RazorPageFactoryResult
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPageFactoryResult_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -2586,6 +2646,9 @@ public final class RazorPageResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPageResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2722,6 +2785,9 @@ open class RazorPage_1<TModel : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorPage_1_get_type_handle(TModel.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] TModel get_Model()
@@ -2801,6 +2867,9 @@ open class RazorView
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorView_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine, Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator, System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Mvc.Razor.IRazorPage>, Microsoft.AspNetCore.Mvc.Razor.IRazorPage, System.Text.Encodings.Web.HtmlEncoder, System.Diagnostics.DiagnosticListener)
@@ -2831,13 +2900,13 @@ open class RazorView
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
     /**
     */
-    open func RenderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RenderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_RazorView_Task__RenderAsync_0__1__ViewContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_Path()
@@ -2920,6 +2989,9 @@ open class RazorViewEngine
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorViewEngine_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3064,6 +3136,9 @@ open class RazorViewEngineOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RazorViewEngineOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3207,6 +3282,9 @@ public final class RenderAsyncDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task Invoke()
@@ -3246,16 +3324,36 @@ public final class RenderAsyncDelegate
         return dotnet.System.Threading.Tasks.Task(hndl : __return);
         }
     }
-    public init(_ callback : @escaping () throws -> dotnet.System.Threading.Tasks.Task) throws
+    public convenience init(_ __closure_Invoke : @escaping () async throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback();
-                return __copy_handle(ret.get_handle());
+                let tcs = try System.Threading.Tasks.TaskCompletionSource();
+                Task
+                {
+                    do
+                    {
+                    try await __closure_Invoke();
+                    try tcs.SetResult();
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -3269,24 +3367,24 @@ public final class RenderAsyncDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
-            return f(thrown);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
+            return f_interlude(thrown);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task Invoke()
@@ -3312,6 +3410,9 @@ open class TagHelperInitializer_1<TTagHelper : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelperInitializer_1_get_type_handle(TTagHelper.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3362,6 +3463,9 @@ open class ViewLocationExpanderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_ViewLocationExpanderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3590,6 +3694,9 @@ open class CompiledViewDescriptor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3723,9 +3830,6 @@ open class CompiledViewDescriptor
     }
     // [IsSpecialName] Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem get_Item()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor.get_Item
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor_RazorCompiledItem__get_Item_0__0(&__thrown, self.get_handle());
@@ -3850,6 +3954,9 @@ open class IViewCompiler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3870,13 +3977,13 @@ open class IViewCompiler
     - Returns: A .
 
     */
-    open func CompileAsync(relativePath : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor> {
+    open func CompileAsync(relativePath : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor___CompileAsync_0__1__String(&__thrown, self.get_handle(), relativePath.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IViewCompiler
@@ -3896,6 +4003,9 @@ open class IViewCompilerProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3941,6 +4051,9 @@ open class RazorViewAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Compilation_RazorViewAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4024,6 +4137,9 @@ open class ViewsFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Compilation_ViewsFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4080,6 +4196,9 @@ public final class TagHelperMemoryCacheProvider
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Infrastructure_TagHelperMemoryCacheProvider_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4156,6 +4275,9 @@ open class RazorInjectAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_Internal_RazorInjectAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4189,6 +4311,9 @@ open class BodyTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4228,6 +4353,9 @@ open class HeadTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4270,6 +4398,9 @@ open class ITagHelperComponentManager
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentManager_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4307,6 +4438,9 @@ open class ITagHelperComponentPropertyActivator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4354,6 +4488,9 @@ open class TagHelperComponentTagHelper
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -4394,13 +4531,13 @@ open class TagHelperComponentTagHelper
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
     /**
     */
-    open func ProcessAsync(context : aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, output : aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ProcessAsync(context : aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, output : aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput(&__thrown, self.get_handle(), context.get_handle(), output.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator get_PropertyActivator()
@@ -4495,6 +4632,9 @@ open class TagHelperFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4548,6 +4688,9 @@ open class TagHelperFeatureProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeatureProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4590,6 +4733,9 @@ open class UrlResolutionTagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4714,7 +4860,7 @@ public struct MvcRazorMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRazorOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddRazorOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>(setupAction);
         return try AddRazorOptions(builder: builder, setupAction: del_setupAction);
     }
@@ -4761,7 +4907,7 @@ public struct MvcRazorMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, initialize : @escaping (UTTagHelper, Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, initialize : @escaping (UTTagHelper, aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_initialize = try dotnet.System.Action_2<UTTagHelper,aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>(initialize);
         return try InitializeTagHelper(builder: builder, initialize: del_initialize);
     }
@@ -4812,7 +4958,7 @@ public struct MvcRazorMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRazorViewEngine(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddRazorViewEngine(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>(setupAction);
         return try AddRazorViewEngine(builder: builder, setupAction: del_setupAction);
     }
@@ -4859,7 +5005,7 @@ public struct MvcRazorMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, initialize : @escaping (UTTagHelper, Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, initialize : @escaping (UTTagHelper, aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_initialize = try dotnet.System.Action_2<UTTagHelper,aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>(initialize);
         return try InitializeTagHelper(builder: builder, initialize: del_initialize);
     }
@@ -4955,7 +5101,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions.AddRazorOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddRazorOptions(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddRazorOptions(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions.AddRazorOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -4974,7 +5120,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions.InitializeTagHelper(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), initialize: initialize);
     }
     // delegate closure overload
-    public func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(initialize : @escaping (UTTagHelper, Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(initialize : @escaping (UTTagHelper, aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_initialize = try dotnet.System.Action_2<UTTagHelper,aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>(initialize);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcBuilderExtensions.InitializeTagHelper(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), initialize: del_initialize);
     }
@@ -4993,7 +5139,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions.AddRazorViewEngine(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddRazorViewEngine(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddRazorViewEngine(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions.AddRazorViewEngine(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -5012,7 +5158,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions.InitializeTagHelper(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), initialize: initialize);
     }
     // delegate closure overload
-    public func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(initialize : @escaping (UTTagHelper, Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func InitializeTagHelper<UTTagHelper : SGBridgeGenericValue>(initialize : @escaping (UTTagHelper, aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_initialize = try dotnet.System.Action_2<UTTagHelper,aspnetcore.Microsoft.AspNetCore.Mvc.Rendering.ViewContext>(initialize);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorMvcCoreBuilderExtensions.InitializeTagHelper(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), initialize: del_initialize);
     }

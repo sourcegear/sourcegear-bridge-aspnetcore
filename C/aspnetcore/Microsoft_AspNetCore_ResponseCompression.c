@@ -44,12 +44,16 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_String__get_EncodingName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_bool__get_SupportsFlush_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL outputStream), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_type_handle)(void);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_MimeTypes)(void);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_set_MimeTypes)(SG_HNDL_NONNULL __v);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionMiddleware_get_type_handle)(void);
@@ -369,6 +373,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_ca
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL outputStream), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_create(__thrown, __cb_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream, __pdata_Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_Stream__CreateStream_0__1__Stream, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_get_type_handle) {
         my_init();
@@ -409,12 +421,35 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_IResponseCompressionPro
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_create(__thrown, __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext, __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_ICompressionProvider__GetCompressionProvider_0__1__HttpContext, __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext, __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__ShouldCompressResponse_0__1__HttpContext, __cb_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext, __pdata_Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_bool__CheckRequestAcceptsCompression_0__1__HttpContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_type_handle) {
         my_init();
     }
     TYP ret = _g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_type_handle();
     return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_MimeTypes(void) {
+    if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_MimeTypes) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_MimeTypes();
+    return ret;
+}
+
+void Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_set_MimeTypes(SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_set_MimeTypes) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_ResponseCompression._fp_Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_set_MimeTypes(__v);
 }
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown) {

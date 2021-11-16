@@ -24,6 +24,9 @@ public final class HubEndpointConventionBuilder
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_HubEndpointConventionBuilder_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
@@ -45,7 +48,7 @@ public final class HubEndpointConventionBuilder
         }
     }
     // delegate closure overload
-    public func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
+    public func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
         let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
         return try Add(convention: del_convention);
     }
@@ -74,6 +77,9 @@ open class IHubEndpointConventionBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_IHubEndpointConventionBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

@@ -23,6 +23,9 @@ open class AuthenticationState
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthenticationState_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Security.Claims.ClaimsPrincipal)
@@ -82,6 +85,9 @@ public final class AuthenticationStateChangedHandler
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Invoke(System.Threading.Tasks.Task<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)
@@ -121,15 +127,15 @@ public final class AuthenticationStateChangedHandler
             return;
         }
     }
-    public init(_ callback : @escaping (dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> Void) throws
+    public convenience init(_ __closure_Invoke : @escaping (dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, task : NonnullHandle) -> Void in
             do
             {
                 thrown.pointee = nil;
-                try callback(dotnet.System.Threading.Tasks.Task_1(hndl: task));
+                try __closure_Invoke(dotnet.System.Threading.Tasks.Task_1(hndl: task));
             }
             catch let e as dotnet.System.Exception
             {
@@ -141,24 +147,24 @@ public final class AuthenticationStateChangedHandler
                 thrown.pointee = __copy_handle(e.get_handle());
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, task : NonnullHandle) -> Void
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, task : NonnullHandle) -> Void
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void;
-            f(thrown, task);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void;
+            f_interlude(thrown, task);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // void Invoke(System.Threading.Tasks.Task<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)
@@ -189,6 +195,9 @@ open class AuthenticationStateProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Components.Authorization.AuthenticationState> GetAuthenticationStateAsync()
@@ -201,13 +210,13 @@ open class AuthenticationStateProvider
     - Returns: A task that, when resolved, gives an  instance that describes the current user.
 
     */
-    open func GetAuthenticationStateAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState> {
+    open func GetAuthenticationStateAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState___GetAuthenticationStateAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] void add_AuthenticationStateChanged(Microsoft.AspNetCore.Components.Authorization.AuthenticationStateChangedHandler)
@@ -264,6 +273,9 @@ public final class AuthorizeRouteView
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthorizeRouteView_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -310,7 +322,7 @@ public final class AuthorizeRouteView
         }
     }
     // delegate closure overload
-    public func set_NotAuthorized(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    public func set_NotAuthorized(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>(value);
         return try set_NotAuthorized(value: del_value);
     }
@@ -430,6 +442,9 @@ open class AuthorizeView
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthorizeView_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -546,6 +561,9 @@ open class AuthorizeViewCore
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_AuthorizeViewCore_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Authorization.AuthenticationState> get_ChildContent()
@@ -575,7 +593,7 @@ open class AuthorizeViewCore
         }
     }
     // delegate closure overload
-    open func set_ChildContent(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_ChildContent(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>(value);
         return try set_ChildContent(value: del_value);
     }
@@ -606,7 +624,7 @@ open class AuthorizeViewCore
         }
     }
     // delegate closure overload
-    open func set_NotAuthorized(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_NotAuthorized(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>(value);
         return try set_NotAuthorized(value: del_value);
     }
@@ -637,7 +655,7 @@ open class AuthorizeViewCore
         }
     }
     // delegate closure overload
-    open func set_Authorized(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_Authorized(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState>(value);
         return try set_Authorized(value: del_value);
     }
@@ -781,6 +799,9 @@ open class CascadingAuthenticationState
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_CascadingAuthenticationState_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -857,6 +878,9 @@ open class IHostEnvironmentAuthenticationStateProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

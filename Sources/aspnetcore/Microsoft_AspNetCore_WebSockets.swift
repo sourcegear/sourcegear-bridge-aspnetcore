@@ -78,6 +78,9 @@ open class WebSocketOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_WebSocketOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -108,7 +111,17 @@ open class WebSocketOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+    // [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Builder.WebSocketOptions.set_KeepAliveInterval(System.TimeSpan)
+    open func set_KeepAliveInterval(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Builder_WebSocketOptions_void__set_KeepAliveInterval_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Int32 get_ReceiveBufferSize()
 // docid: M:Microsoft.AspNetCore.Builder.WebSocketOptions.get_ReceiveBufferSize
     open func get_ReceiveBufferSize() throws -> Swift.Int32 {
@@ -165,7 +178,9 @@ open class WebSocketOptions
         get {
             return try! get_KeepAliveInterval();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+        set(v) {
+            return try! set_KeepAliveInterval(value: v);
+        }
     }
     /**
     
@@ -202,6 +217,9 @@ open class ExtendedWebSocketAcceptContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebSockets_ExtendedWebSocketAcceptContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -329,6 +347,9 @@ open class WebSocketMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebSockets_WebSocketMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.WebSocketOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -399,7 +420,7 @@ public struct WebSocketsDependencyInjectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddWebSockets(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddWebSockets(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions>(configure);
         return try AddWebSockets(services: services, configure: del_configure);
     }
@@ -430,7 +451,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions.AddWebSockets(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddWebSockets(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddWebSockets(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.WebSocketOptions>(configure);
         return try aspnetcore.Microsoft.AspNetCore.WebSockets.WebSocketsDependencyInjectionExtensions.AddWebSockets(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

@@ -195,6 +195,9 @@ open class XmlConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Xml_XmlConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource)
@@ -250,6 +253,9 @@ open class XmlConfigurationSource
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Xml_XmlConfigurationSource_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -304,6 +310,9 @@ open class XmlDocumentDecryptor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Xml_XmlDocumentDecryptor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor Instance
@@ -315,8 +324,8 @@ open class XmlDocumentDecryptor
     */
     open class var Instance : Optional<aspnetcore.Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor> {
         get {
-        let __h = Microsoft_Extensions_Configuration_Xml_XmlDocumentDecryptor_get_Instance();
-        let __return = (__h != nil) ? aspnetcore.Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Configuration_Xml_XmlDocumentDecryptor_get_Instance();
+        let __return = (__h___return != nil) ? aspnetcore.Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -357,6 +366,9 @@ open class XmlStreamConfigurationProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -437,6 +449,9 @@ open class XmlStreamConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

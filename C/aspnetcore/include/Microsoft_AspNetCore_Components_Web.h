@@ -110,6 +110,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_IBrowserFile_String__get_C
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_IBrowserFile_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_IBrowserFile_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Forms_IBrowserFile_Stream__OpenReadStream_0__2__i64_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t maxAllowedSize, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Forms_IBrowserFile_Stream__OpenReadStream_0__2__i64_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Components_Forms_InputBase_1_get_type_handle(TYP TValue);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Forms_InputBase_1_Task__SetParametersAsync_0__1__ParameterView(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parameters);
@@ -678,11 +680,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_ValueTa
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_ValueTask__LogErrorAsync_0__1__Exception)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL exception), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_ValueTask__LogErrorAsync_0__1__Exception, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration_JSComponentConfigurationStore__get_JSComponents_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 void Microsoft_AspNetCore_Components_Web_JSComponentConfigurationExtensions_void__RegisterForJavaScript_1__2__IJSComponentConfiguration_String(TYP TComponent, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configuration, SG_HNDL_NONNULL identifier);
 
@@ -1056,7 +1062,7 @@ SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Components_Web_Virtualization_It
 
 SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_1_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Components_Web_Virtualization_Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderResult_TItem____EndInvoke_0__1__IAsyncResult(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_1_create(TYP TItem, SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL request));
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_1_create(TYP TItem, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL request), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderRequest_get_type_handle(void);
 

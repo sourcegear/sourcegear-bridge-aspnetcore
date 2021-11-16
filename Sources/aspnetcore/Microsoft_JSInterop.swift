@@ -50,6 +50,9 @@ public final class DotNetObjectReference_1<TValue : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_DotNetObjectReference_1_get_type_handle(TValue.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Dispose()
@@ -110,6 +113,9 @@ public final class DotNetStreamReference
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_DotNetStreamReference_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -209,6 +215,9 @@ open class IJSInProcessObjectReference
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSInProcessObjectReference_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -237,6 +246,9 @@ open class IJSInProcessRuntime
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSInProcessRuntime_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -267,6 +279,9 @@ open class IJSObjectReference
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSObjectReference_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -295,6 +310,9 @@ open class IJSRuntime
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSRuntime_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -325,6 +343,9 @@ open class IJSStreamReference
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSStreamReference_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -386,6 +407,9 @@ open class IJSUnmarshalledObjectReference
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSUnmarshalledObjectReference_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -419,6 +443,9 @@ open class IJSUnmarshalledRuntime
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_IJSUnmarshalledRuntime_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -492,6 +519,19 @@ public struct JSCallResultType : SGBridgeGenericValue {
             return __return;
         }
     }
+    // static field: Microsoft.JSInterop.JSCallResultType JSVoidResult
+    /**
+    
+            Indicates a void result type.
+            
+
+    */
+    public static var JSVoidResult : aspnetcore.Microsoft.JSInterop.JSCallResultType {
+        get {
+        let __return = aspnetcore.Microsoft.JSInterop.JSCallResultType(val: Microsoft_JSInterop_JSCallResultType_get_JSVoidResult());
+            return __return;
+        }
+    }
 } // JSCallResultType
 
 
@@ -508,6 +548,9 @@ public final class JSDisconnectedException
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_JSDisconnectedException_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -545,6 +588,9 @@ open class JSException
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_JSException_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -628,6 +674,9 @@ open class JSInProcessRuntime
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_JSInProcessRuntime_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 // TODO COPE (write_all_methods) (unused generic param) TValue Invoke<TValue>(System.String, System.Object[])
@@ -674,6 +723,9 @@ public final class JSInvokableAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_JSInvokableAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -800,7 +852,29 @@ public struct JSObjectReferenceExtensions {
         }
     }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
-// TODO COPE (write_all_methods) (span) System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
+    // System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
+// docid: M:Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(Microsoft.JSInterop.IJSObjectReference,System.String,System.TimeSpan,System.Object[])
+    /**
+    
+            Invokes the specified JavaScript function asynchronously.
+            
+
+    - Parameter jsObjectReference: The .
+    - Parameter identifier: An identifier for the function to invoke. For example, the value "someScope.someFunction" will invoke the function someScope.someFunction on the target instance.
+    - Parameter timeout: The duration after which to cancel the async operation. Overrides default timeouts ().
+    - Parameter args: JSON-serializable arguments.
+    - Returns: A  that represents the asynchronous invocation operation.
+
+    */
+    public static func InvokeVoidAsync(jsObjectReference : aspnetcore.Microsoft.JSInterop.IJSObjectReference, identifier : dotnet.System.String, timeout : dotnet.System.TimeSpan, args : Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Threading.Tasks.ValueTask {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_JSInterop_JSObjectReferenceExtensions_ValueTask__InvokeVoidAsync_0__4__IJSObjectReference_String_TimeSpan_ObjectArray(&__thrown, jsObjectReference.get_handle(), identifier.get_handle(), timeout.get_handle(), (args?.get_handle()));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.Threading.Tasks.ValueTask(hndl : __return);
+        }
+    }
 } // JSObjectReferenceExtensions
 
 
@@ -819,6 +893,9 @@ open class JSRuntime
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_JSRuntime_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -897,7 +974,29 @@ public struct JSRuntimeExtensions {
         }
     }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
-// TODO COPE (write_all_methods) (span) System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
+    // System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
+// docid: M:Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime,System.String,System.TimeSpan,System.Object[])
+    /**
+    
+            Invokes the specified JavaScript function asynchronously.
+            
+
+    - Parameter jsRuntime: The .
+    - Parameter identifier: An identifier for the function to invoke. For example, the value "someScope.someFunction" will invoke the function window.someScope.someFunction.
+    - Parameter timeout: The duration after which to cancel the async operation. Overrides default timeouts ().
+    - Parameter args: JSON-serializable arguments.
+    - Returns: A  that represents the asynchronous invocation operation.
+
+    */
+    public static func InvokeVoidAsync(jsRuntime : aspnetcore.Microsoft.JSInterop.IJSRuntime, identifier : dotnet.System.String, timeout : dotnet.System.TimeSpan, args : Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Threading.Tasks.ValueTask {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_JSInterop_JSRuntimeExtensions_ValueTask__InvokeVoidAsync_0__4__IJSRuntime_String_TimeSpan_ObjectArray(&__thrown, jsRuntime.get_handle(), identifier.get_handle(), timeout.get_handle(), (args?.get_handle()));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.Threading.Tasks.ValueTask(hndl : __return);
+        }
+    }
 } // JSRuntimeExtensions
 
 
@@ -919,6 +1018,9 @@ open class JSInProcessObjectReference
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_Implementation_JSInProcessObjectReference_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -955,6 +1057,9 @@ open class JSObjectReference
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_Implementation_JSObjectReference_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Object[])
@@ -977,6 +1082,7 @@ open class JSObjectReference
 
 // type: Microsoft.JSInterop.Implementation.JSObjectReferenceJsonWorker
 public struct JSObjectReferenceJsonWorker {
+// TODO COPE (parm byref span): System.Int64 ReadJSObjectReferenceIdentifier(ref System.Text.Json.Utf8JsonReader)
     // void WriteJSObjectReference(System.Text.Json.Utf8JsonWriter, Microsoft.JSInterop.Implementation.JSObjectReference)
 // docid: M:Microsoft.JSInterop.Implementation.JSObjectReferenceJsonWorker.WriteJSObjectReference(System.Text.Json.Utf8JsonWriter,Microsoft.JSInterop.Implementation.JSObjectReference)
     /**
@@ -1013,6 +1119,9 @@ public final class JSStreamReference
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_Implementation_JSStreamReference_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1149,6 +1258,9 @@ public final class DotNetInvocationInfo
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_Infrastructure_DotNetInvocationInfo_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1293,6 +1405,9 @@ public final class DotNetInvocationResult
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_JSInterop_Infrastructure_DotNetInvocationResult_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -1402,6 +1517,37 @@ public final class DotNetInvocationResult
 } // DotNetInvocationResult
 
 
+// type: Microsoft.JSInterop.Infrastructure.IJSVoidResult
+    /**
+    
+            Represents a void result from a JavaScript call.
+            This property is public to support cross-assembly accessibility for WebAssembly and should not be used by user code.
+            
+
+    */
+open class IJSVoidResult
+    :
+    SGBridgeGenericValue,
+    Microsoft_JSInterop_Infrastructure_IJSVoidResult
+{
+    open class func get_type_handle() -> TypeHandle {
+        return Microsoft_JSInterop_Infrastructure_IJSVoidResult_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    let h : NonnullHandle;
+    public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
+    public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
+    public required init(gval: GVal) { self.h = NonnullHandle(bitPattern: Swift.Int(truncatingIfNeeded: gval))!; }
+    public required init(hndl: NonnullHandle) { self.h = hndl; }
+    public func get_handle() -> NonnullHandle { return self.h; }
+
+    deinit { __drop_handle(self.h); }
+
+} // IJSVoidResult
+
+
 }
 
 
@@ -1449,6 +1595,12 @@ public protocol Microsoft_JSInterop_IJSUnmarshalledRuntime
 {
 }
 
+public protocol Microsoft_JSInterop_Infrastructure_IJSVoidResult
+    :
+    SGBridgeGetHandle
+{
+}
+
 // EXTENSION METHOD void InvokeVoid(Microsoft.JSInterop.IJSInProcessObjectReference, System.String, System.Object[])
 extension Microsoft_JSInterop_IJSInProcessObjectReference {
     public func InvokeVoid(identifier : dotnet.System.String, args : Optional<dotnet.System_Arr<dotnet.System.Object>>) throws {
@@ -1487,7 +1639,11 @@ extension Microsoft_JSInterop_IJSObjectReference {
 // TODO COPE extension method (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
 
 // EXTENSION METHOD System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
-// TODO COPE extension method (span) System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSObjectReference, System.String, System.TimeSpan, System.Object[])
+extension Microsoft_JSInterop_IJSObjectReference {
+    public func InvokeVoidAsync(identifier : dotnet.System.String, timeout : dotnet.System.TimeSpan, args : Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Threading.Tasks.ValueTask {
+        return try aspnetcore.Microsoft.JSInterop.JSObjectReferenceExtensions.InvokeVoidAsync(jsObjectReference: aspnetcore.Microsoft.JSInterop.IJSObjectReference(hndl: __copy_handle(self.get_handle())), identifier: identifier, timeout: timeout, args: args);
+    }
+}
 
 // EXTENSION METHOD System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime, System.String, System.Object[])
 extension Microsoft_JSInterop_IJSRuntime {
@@ -1513,5 +1669,9 @@ extension Microsoft_JSInterop_IJSRuntime {
 // TODO COPE extension method (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
 
 // EXTENSION METHOD System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
-// TODO COPE extension method (span) System.Threading.Tasks.ValueTask InvokeVoidAsync(Microsoft.JSInterop.IJSRuntime, System.String, System.TimeSpan, System.Object[])
+extension Microsoft_JSInterop_IJSRuntime {
+    public func InvokeVoidAsync(identifier : dotnet.System.String, timeout : dotnet.System.TimeSpan, args : Optional<dotnet.System_Arr<dotnet.System.Object>>) throws -> dotnet.System.Threading.Tasks.ValueTask {
+        return try aspnetcore.Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync(jsRuntime: aspnetcore.Microsoft.JSInterop.IJSRuntime(hndl: __copy_handle(self.get_handle())), identifier: identifier, timeout: timeout, args: args);
+    }
+}
 

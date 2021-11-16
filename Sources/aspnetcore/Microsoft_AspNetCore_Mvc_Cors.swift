@@ -26,6 +26,9 @@ open class CorsAuthorizationFilter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Cors_CorsAuthorizationFilter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Cors.Infrastructure.ICorsService, Microsoft.AspNetCore.Cors.Infrastructure.ICorsPolicyProvider)
@@ -71,13 +74,13 @@ open class CorsAuthorizationFilter
 // docid: M:Microsoft.AspNetCore.Mvc.Cors.CorsAuthorizationFilter.OnAuthorizationAsync(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
     /**
     */
-    open /* method final */ func OnAuthorizationAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func OnAuthorizationAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Cors_CorsAuthorizationFilter_Task__OnAuthorizationAsync_0__1__AuthorizationFilterContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_PolicyName()
@@ -192,7 +195,7 @@ public struct MvcCorsMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCors(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddCors(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try AddCors(builder: builder, setupAction: del_setupAction);
     }
@@ -218,7 +221,7 @@ public struct MvcCorsMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureCors(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func ConfigureCors(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try ConfigureCors(builder: builder, setupAction: del_setupAction);
     }
@@ -242,7 +245,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions.AddCors(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddCors(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddCors(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions.AddCors(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -254,7 +257,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions.ConfigureCors(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func ConfigureCors(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func ConfigureCors(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcCorsMvcCoreBuilderExtensions.ConfigureCors(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

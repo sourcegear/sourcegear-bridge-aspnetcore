@@ -22,6 +22,9 @@ open class IISServerOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_IISServerOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -243,6 +246,9 @@ public final class BadHttpRequestException
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IIS_BadHttpRequestException_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Int32 get_StatusCode()
@@ -313,6 +319,9 @@ open class IISServerDefaults
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IIS_IISServerDefaults_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String AuthenticationScheme
@@ -360,6 +369,9 @@ open class IISServerAuthenticationHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IIS_Core_IISServerAuthenticationHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -377,52 +389,52 @@ open class IISServerAuthenticationHandler
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.IISServerAuthenticationHandler.AuthenticateAsync
     /**
     */
-    open /* method final */ func AuthenticateAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult> {
+    open /* method final */ func AuthenticateAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_IISServerAuthenticationHandler_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticateResult___AuthenticateAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.IISServerAuthenticationHandler.ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open /* method final */ func ChallengeAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ChallengeAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_IISServerAuthenticationHandler_Task__ChallengeAsync_0__1__AuthenticationProperties(&__thrown, self.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.IISServerAuthenticationHandler.ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
     /**
     */
-    open /* method final */ func ForbidAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ForbidAsync(properties : Optional<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationProperties>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_IISServerAuthenticationHandler_Task__ForbidAsync_0__1__AuthenticationProperties(&__thrown, self.get_handle(), properties?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task InitializeAsync(Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Http.HttpContext)
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.IISServerAuthenticationHandler.InitializeAsync(Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Http.HttpContext)
     /**
     */
-    open /* method final */ func InitializeAsync(scheme : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func InitializeAsync(scheme : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_IISServerAuthenticationHandler_Task__InitializeAsync_0__2__AuthenticationScheme_HttpContext(&__thrown, self.get_handle(), scheme.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IISServerAuthenticationHandler
@@ -441,6 +453,9 @@ open class ThrowingWasUpgradedWriteOnlyStream
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IIS_Core_ThrowingWasUpgradedWriteOnlyStream_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -472,13 +487,13 @@ open class ThrowingWasUpgradedWriteOnlyStream
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.ThrowingWasUpgradedWriteOnlyStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_ThrowingWasUpgradedWriteOnlyStream_Task__WriteAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Flush()
@@ -537,6 +552,9 @@ open class WriteOnlyStream
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_IIS_Core_WriteOnlyStream_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Int32 Read(System.Byte[], System.Int32, System.Int32)
@@ -556,13 +574,13 @@ open class WriteOnlyStream
 // docid: M:Microsoft.AspNetCore.Server.IIS.Core.WriteOnlyStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Swift.Int32> {
+    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Swift.Int32 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Server_IIS_Core_WriteOnlyStream_System_Threading_Tasks_Task_i32___ReadAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Int64 Seek(System.Int64, System.IO.SeekOrigin)

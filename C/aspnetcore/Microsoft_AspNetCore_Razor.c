@@ -52,11 +52,13 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context, SG_HNDL_NULLABLE output), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE context);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE context, SG_HNDL_NULLABLE output);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_i32__get_Order_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context, SG_HNDL_NULLABLE output), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder_String__Encode_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder_void__Encode_0__4__TextWriter_CharArray_i32_i32)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE output, SG_HNDL_NULLABLE value, int32_t startIndex, int32_t characterCount);
@@ -74,8 +76,8 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_ctor_0__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE attributes);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__ContainsName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NONNULL* _Nonnull __attribute_out_ptr);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NONNULL* _Nonnull __attributes_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE* _Nonnull __attribute_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE* _Nonnull __attributes_out_ptr);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_i32__IndexOfName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_TagHelperAttribute__get_Item_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -542,6 +544,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_cast(SG_HNDL_NU
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context, SG_HNDL_NULLABLE output), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_create(__thrown, __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_get_type_handle) {
         my_init();
@@ -578,6 +588,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_cast(S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE context, SG_HNDL_NULLABLE output), const void* _Nonnull __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_create(__thrown, __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_void__Init_0__1__TagHelperContext, __cb_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, __pdata_Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_Task__ProcessAsync_0__2__TagHelperContext_TagHelperOutput, __deinit);
     return ret;
 }
 
@@ -715,7 +733,7 @@ int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_boo
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NONNULL* _Nonnull __attribute_out_ptr) {
+int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE* _Nonnull __attribute_out_ptr) {
     if (!_g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute) {
         my_init();
     }
@@ -723,7 +741,7 @@ int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_boo
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NONNULL* _Nonnull __attributes_out_ptr) {
+int32_t Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name, SG_HNDL_NULLABLE* _Nonnull __attributes_out_ptr) {
     if (!_g_Microsoft_AspNetCore_Razor._fp_Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_) {
         my_init();
     }

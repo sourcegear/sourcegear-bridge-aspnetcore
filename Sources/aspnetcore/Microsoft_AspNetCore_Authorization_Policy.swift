@@ -22,6 +22,9 @@ open class AuthorizationMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_AuthorizationMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider)
@@ -79,6 +82,9 @@ open class IAuthorizationMiddlewareResultHandler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_IAuthorizationMiddlewareResultHandler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -102,19 +108,19 @@ open class IAuthorizationMiddlewareResultHandler
     - Parameter policy: The  for the resource.
     - Parameter authorizeResult: The result of authorization.
     */
-    open func HandleAsync(next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleAsync(next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_IAuthorizationMiddlewareResultHandler_Task__HandleAsync_0__4__RequestDelegate_HttpContext_AuthorizationPolicy_PolicyAuthorizationResult(&__thrown, self.get_handle(), next.get_handle(), context.get_handle(), policy.get_handle(), authorizeResult.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func HandleAsync(next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleAsync(next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(next);
-        return try HandleAsync(next: del_next, context: context, policy: policy, authorizeResult: authorizeResult);
+        return try await HandleAsync(next: del_next, context: context, policy: policy, authorizeResult: authorizeResult);
     }
 } // IAuthorizationMiddlewareResultHandler
 
@@ -137,6 +143,9 @@ open class AuthorizationMiddlewareResultHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Policy_AuthorizationMiddlewareResultHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -154,19 +163,19 @@ open class AuthorizationMiddlewareResultHandler
 // docid: M:Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authorization.AuthorizationPolicy,Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult)
     /**
     */
-    open /* method final */ func HandleAsync(next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func HandleAsync(next : aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Policy_AuthorizationMiddlewareResultHandler_Task__HandleAsync_0__4__RequestDelegate_HttpContext_AuthorizationPolicy_PolicyAuthorizationResult(&__thrown, self.get_handle(), next.get_handle(), context.get_handle(), policy.get_handle(), authorizeResult.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open /* method final */ func HandleAsync(next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func HandleAsync(next : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authorizeResult : aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(next);
-        return try HandleAsync(next: del_next, context: context, policy: policy, authorizeResult: authorizeResult);
+        return try await HandleAsync(next: del_next, context: context, policy: policy, authorizeResult: authorizeResult);
     }
 } // AuthorizationMiddlewareResultHandler
 
@@ -185,6 +194,9 @@ open class IPolicyEvaluator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -208,13 +220,13 @@ open class IPolicyEvaluator
     - Returns:  unless all schemes specified by  fail to authenticate.  
 
     */
-    open func AuthenticateAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult> {
+    open func AuthenticateAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticateResult___AuthenticateAsync_0__2__AuthorizationPolicy_HttpContext(&__thrown, self.get_handle(), policy.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.AuthorizationPolicy, Microsoft.AspNetCore.Authentication.AuthenticateResult, Microsoft.AspNetCore.Http.HttpContext, System.Object)
@@ -236,13 +248,13 @@ open class IPolicyEvaluator
             returns  
 
     */
-    open func AuthorizeAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authenticationResult : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, resource : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult> {
+    open func AuthorizeAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authenticationResult : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, resource : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Policy_IPolicyEvaluator_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_Policy_PolicyAuthorizationResult___AuthorizeAsync_0__4__AuthorizationPolicy_AuthenticateResult_HttpContext_Object(&__thrown, self.get_handle(), policy.get_handle(), authenticationResult.get_handle(), context.get_handle(), resource?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IPolicyEvaluator
@@ -261,6 +273,9 @@ open class PolicyAuthorizationResult
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Policy_PolicyAuthorizationResult_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -451,6 +466,9 @@ open class PolicyEvaluator
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authorization_Policy_PolicyEvaluator_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Authorization.IAuthorizationService)
@@ -484,13 +502,13 @@ open class PolicyEvaluator
     - Returns:  unless all schemes specified by  failed to authenticate.  
 
     */
-    open func AuthenticateAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult> {
+    open func AuthenticateAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Policy_PolicyEvaluator_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticateResult___AuthenticateAsync_0__2__AuthorizationPolicy_HttpContext(&__thrown, self.get_handle(), policy.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult> AuthorizeAsync(Microsoft.AspNetCore.Authorization.AuthorizationPolicy, Microsoft.AspNetCore.Authentication.AuthenticateResult, Microsoft.AspNetCore.Http.HttpContext, System.Object)
@@ -512,13 +530,13 @@ open class PolicyEvaluator
             returns  
 
     */
-    open func AuthorizeAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authenticationResult : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, resource : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult> {
+    open func AuthorizeAsync(policy : aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationPolicy, authenticationResult : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticateResult, context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, resource : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Authorization.Policy.PolicyAuthorizationResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authorization_Policy_PolicyEvaluator_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authorization_Policy_PolicyAuthorizationResult___AuthorizeAsync_0__4__AuthorizationPolicy_AuthenticateResult_HttpContext_Object(&__thrown, self.get_handle(), policy.get_handle(), authenticationResult.get_handle(), context.get_handle(), resource?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // PolicyEvaluator
@@ -718,7 +736,7 @@ public struct PolicyServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAuthorization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddAuthorization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>(configure);
         return try AddAuthorization(services: services, configure: del_configure);
     }
@@ -780,7 +798,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddAuthorization(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddAuthorization(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authorization.AuthorizationOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.PolicyServiceCollectionExtensions.AddAuthorization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

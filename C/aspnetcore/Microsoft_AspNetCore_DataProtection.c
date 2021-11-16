@@ -44,13 +44,16 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL protectedData, int32_t ignoreRevocationErrors, int32_t* _Nonnull __requiresMigration_out_ptr, int32_t* _Nonnull __wasRevoked_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protectedData, int32_t ignoreRevocationErrors, int32_t* _Nonnull __requiresMigration_out_ptr, int32_t* _Nonnull __wasRevoked_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintext), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protectedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_ISecret_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL buffer);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_ISecret_i32__get_Length_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_ISecret_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_ISecret_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL buffer), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Secret_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Secret_ctor_0__1__System_ArraySegment_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Secret_ctor_0__1__u8Array)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL value);
@@ -85,9 +88,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL ciphertext, SG_HNDL_NONNULL additionalAuthenticatedData);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL plaintext, SG_HNDL_NONNULL additionalAuthenticatedData);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL ciphertext, SG_HNDL_NONNULL additionalAuthenticatedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintext, SG_HNDL_NONNULL additionalAuthenticatedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ManagedAuthenticatedEncryptorFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ManagedAuthenticatedEncryptorFactory_ctor_0__1__ILoggerFactory)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL loggerFactory);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ManagedAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
@@ -157,9 +162,11 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL element);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL element), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorConfiguration_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorConfiguration_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorConfiguration_IAuthenticatedEncryptorDescriptor__CreateNewDescriptor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -187,6 +194,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL expectedBaseType, SG_HNDL_NONNULL implementationTypeName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL expectedBaseType, SG_HNDL_NONNULL implementationTypeName), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_DateTimeOffset__get_ActivationDate_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -196,9 +204,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_Guid__get_KeyId_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptorDescriptor__get_Descriptor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL element);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL element), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -206,6 +216,7 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyId, SG_HNDL_NULLABLE reason);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions_bool__get_AutoGenerateKeys_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -243,22 +254,27 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL now);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL now), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL now, SG_HNDL_NONNULL allKeys);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL now, SG_HNDL_NONNULL allKeys), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL creationDate, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyElement);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL creationDate, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL keyId, int32_t* _Nonnull __isRevoked_out_ptr);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__get_DefaultAuthenticatedEncryptor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_Guid__get_DefaultKeyId_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, int32_t* _Nonnull __isRevoked_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository_ctor_0__2__DirectoryInfo_ILoggerFactory)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL directory, SG_HNDL_NONNULL loggerFactory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -270,6 +286,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL element, SG_HNDL_NONNULL friendlyName);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL element, SG_HNDL_NONNULL friendlyName), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository_ctor_0__2__RegistryKey_ILoggerFactory)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL registryKey, SG_HNDL_NONNULL loggerFactory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -321,12 +338,15 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL thumbprint);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL thumbprint), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL encryptedElement);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL encryptedElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL plaintextElement);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintextElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlDecryptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlDecryptor_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlDecryptor_XElement__Decrypt_0__1__XElement)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL encryptedElement);
@@ -639,6 +659,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_cast(
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_get_type_handle) {
         my_init();
@@ -660,6 +688,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_cast
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protectedData, int32_t ignoreRevocationErrors, int32_t* _Nonnull __requiresMigration_out_ptr, int32_t* _Nonnull __wasRevoked_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintext), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL protectedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool, __pdata_Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_u8Array__DangerousUnprotect_0__4__u8Array_bool_outbool_outbool, __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array, __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Protect_0__1__u8Array, __cb_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array, __pdata_Microsoft_AspNetCore_DataProtection_IDataProtector_u8Array__Unprotect_0__1__u8Array, __cb_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, __pdata_Microsoft_AspNetCore_DataProtection_IDataProtectionProvider_IDataProtector__CreateProtector_0__1__String, __deinit);
     return ret;
 }
 
@@ -691,6 +727,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_ISecret_cast(SG_HNDL_NULLABL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_ISecret_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_ISecret_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL buffer), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_ISecret_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_ISecret_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_, __pdata_Microsoft_AspNetCore_DataProtection_ISecret_void__WriteSecretIntoBuffer_0__1__System_ArraySegment_u8_, __cb_System_IDisposable_void__Dispose_0__0, __pdata_System_IDisposable_void__Dispose_0__0, __deinit);
     return ret;
 }
 
@@ -963,6 +1007,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAut
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL ciphertext, SG_HNDL_NONNULL additionalAuthenticatedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintext, SG_HNDL_NONNULL additionalAuthenticatedData), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Decrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_u8Array__Encrypt_0__2__System_ArraySegment_u8__System_ArraySegment_u8_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_get_type_handle) {
         my_init();
@@ -984,6 +1036,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAut
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey, __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_IAuthenticatedEncryptor__CreateEncryptorInstance_0__1__IKey, __deinit);
     return ret;
 }
 
@@ -1529,6 +1589,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_Conf
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0, __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_XmlSerializedDescriptorInfo__ExportToXml_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_get_type_handle) {
         my_init();
@@ -1550,6 +1618,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_Conf
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL element), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement, __pdata_Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_IAuthenticatedEncryptorDescriptor__ImportFromXml_0__1__XElement, __deinit);
     return ret;
 }
 
@@ -1765,6 +1841,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Internal_IActivator_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Internal_IActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL expectedBaseType, SG_HNDL_NONNULL implementationTypeName), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_Internal_IActivator_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String, __pdata_Microsoft_AspNetCore_DataProtection_Internal_IActivator_Object__CreateInstance_0__2__Type_String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_get_type_handle) {
         my_init();
@@ -1837,6 +1921,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_cast(SG_H
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_IAuthenticatedEncryptor__CreateEncryptor_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_get_type_handle) {
         my_init();
@@ -1857,6 +1949,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL element), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_void__Store_0__2__Guid_XElement, __deinit);
     return ret;
 }
 
@@ -1911,6 +2011,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_IKey__CreateNewKey_0__2__DateTimeOffset_DateTimeOffset, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_System_Collections_Generic_IReadOnlyCollection_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey___GetAllKeys_0__0, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_CancellationToken__GetCacheExpirationToken_0__0, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeKey_0__2__Guid_String, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_void__RevokeAllKeys_0__2__DateTimeOffset_String, __deinit);
     return ret;
 }
 
@@ -2200,6 +2308,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICach
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL now), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_CacheableKeyRing__GetCacheableKeyRing_0__1__DateTimeOffset, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_get_type_handle) {
         my_init();
@@ -2221,6 +2337,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefa
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL now, SG_HNDL_NONNULL allKeys), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_DefaultKeyResolution__ResolveDefaultKeyPolicy_0__2__DateTimeOffset_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_, __deinit);
     return ret;
 }
 
@@ -2260,6 +2384,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInte
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL creationDate, SG_HNDL_NONNULL activationDate, SG_HNDL_NONNULL expirationDate), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, SG_HNDL_NONNULL revocationDate, SG_HNDL_NULLABLE reason), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IKey__CreateNewKey_0__4__Guid_DateTimeOffset_DateTimeOffset_DateTimeOffset, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_IAuthenticatedEncryptorDescriptor__DeserializeDescriptorFromKeyElement_0__1__XElement, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_void__RevokeSingleKey_0__3__Guid_DateTimeOffset_String, __deinit);
     return ret;
 }
 
@@ -2303,6 +2435,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyR
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL keyId, int32_t* _Nonnull __isRevoked_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_IAuthenticatedEncryptor__GetAuthenticatedEncryptorByKeyId_0__2__Guid_outbool, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_get_type_handle) {
         my_init();
@@ -2324,6 +2464,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyR
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0, __pdata_Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_IKeyRing__GetCurrentKeyRing_0__0, __deinit);
     return ret;
 }
 
@@ -2410,6 +2558,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL element, SG_HNDL_NONNULL friendlyName), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0, __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_System_Collections_Generic_IReadOnlyCollection_System_Xml_Linq_XElement___GetAllElements_0__0, __cb_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String, __pdata_Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_void__StoreElement_0__2__XElement_String, __deinit);
     return ret;
 }
 
@@ -2820,6 +2976,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateRe
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL thumbprint), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String, __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_X509Certificate2__ResolveCertificate_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_get_type_handle) {
         my_init();
@@ -2844,6 +3008,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL encryptedElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement, __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_XElement__Decrypt_0__1__XElement, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_get_type_handle) {
         my_init();
@@ -2865,6 +3037,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL plaintextElement), const void* _Nonnull __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_DataProtection._fp_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_create(__thrown, __cb_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement, __pdata_Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_EncryptedXmlInfo__Encrypt_0__1__XElement, __deinit);
     return ret;
 }
 

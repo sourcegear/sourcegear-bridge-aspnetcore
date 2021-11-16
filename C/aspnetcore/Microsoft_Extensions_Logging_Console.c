@@ -22,9 +22,9 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_ConsoleLoggerExtensions_ILoggingBuilder__AddSystemdConsole_0__1__ILoggingBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE builder);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_ConsoleLoggerExtensions_ILoggingBuilder__AddSystemdConsole_0__2__ILoggingBuilder_System_Action_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE builder, SG_HNDL_NULLABLE configure);
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_get_type_handle)(void);
-    void (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter);
+    void (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter)(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown);
-    void (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter);
+    void (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Json)(void);
@@ -208,7 +208,7 @@ TYP Microsoft_Extensions_Logging_Console_ConsoleFormatter_get_type_handle(void) 
     return ret;
 }
 
-void Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter) {
+void Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter(TYP TState, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter) {
     if (!_g_Microsoft_Extensions_Logging_Console._fp_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter) {
         my_init();
     }
@@ -223,7 +223,7 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Logging_Console_ConsoleFormatter
     return ret;
 }
 
-void invoke_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter) {
+void invoke_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __logEntry_in_ptr, SG_HNDL_NULLABLE scopeProvider, SG_HNDL_NULLABLE textWriter) {
     if (!_g_Microsoft_Extensions_Logging_Console._fp_invoke_Microsoft_Extensions_Logging_Console_ConsoleFormatter_void__Write_1__3__inMicrosoft_Extensions_Logging_Abstractions_LogEntry_UTState__IExternalScopeProvider_TextWriter) {
         my_init();
     }

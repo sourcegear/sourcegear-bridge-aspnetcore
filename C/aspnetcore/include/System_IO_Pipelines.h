@@ -32,6 +32,8 @@ SG_HNDL_NONNULL System_IO_Pipelines_IDuplexPipe_PipeWriter__get_Output_0__0(SG_H
 
 SG_HNDL_NONNULL System_IO_Pipelines_IDuplexPipe_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL System_IO_Pipelines_IDuplexPipe_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP System_IO_Pipelines_Pipe_get_type_handle(void);
 
 SG_HNDL_NONNULL System_IO_Pipelines_Pipe_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -96,7 +98,7 @@ SG_HNDL_NONNULL System_IO_Pipelines_PipeReader_System_Threading_Tasks_ValueTask_
 
 SG_HNDL_NONNULL System_IO_Pipelines_PipeReader_System_Threading_Tasks_ValueTask_System_IO_Pipelines_ReadResult___ReadAtLeastAsync_0__2__i32_CancellationToken(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t minimumSize, SG_HNDL_NONNULL cancellationToken);
 
-int32_t System_IO_Pipelines_PipeReader_bool__TryRead_0__1__outReadResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __result_out_ptr);
+int32_t System_IO_Pipelines_PipeReader_bool__TryRead_0__1__outReadResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __result_out_ptr);
 
 SG_HNDL_NONNULL System_IO_Pipelines_PipeReader_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 

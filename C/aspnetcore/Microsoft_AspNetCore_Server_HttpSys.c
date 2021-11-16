@@ -78,12 +78,15 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL destination);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_bool__get_CanDelegate_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL destination), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_System_Collections_Generic_IReadOnlyDictionary_i32_System_System_ReadOnlyMemory_u8____get_RequestInfo_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL queueName, SG_HNDL_NONNULL urlPrefix);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL queueName, SG_HNDL_NONNULL urlPrefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_RequestQueueMode_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_RequestQueueMode_get_Create)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Server_HttpSys_RequestQueueMode_get_Attach)(void);
@@ -684,6 +687,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFea
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL destination), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_create(__thrown, __cb_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule, __pdata_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_void__DelegateRequest_0__1__DelegationRule, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_get_type_handle) {
         my_init();
@@ -708,6 +719,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_get_type_handle) {
         my_init();
@@ -729,6 +748,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_cas
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL queueName, SG_HNDL_NONNULL urlPrefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Server_HttpSys._fp_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_create(__thrown, __cb_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String, __pdata_Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_DelegationRule__CreateDelegationRule_0__2__String_String, __deinit);
     return ret;
 }
 

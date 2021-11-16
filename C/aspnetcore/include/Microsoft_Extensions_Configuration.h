@@ -32,7 +32,7 @@ void Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Load_
 
 void Microsoft_Extensions_Configuration_ChainedConfigurationProvider_void__Set_0__2__String_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value);
 
-int32_t Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Configuration_ChainedConfigurationProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
@@ -104,7 +104,7 @@ void Microsoft_Extensions_Configuration_ConfigurationProvider_void__Set_0__2__St
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Configuration_ConfigurationProvider_String__ToString_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
-int32_t Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Configuration_ConfigurationProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 

@@ -75,7 +75,7 @@ public struct DataProtectionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddKeyEscrowSink(builder : aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, factory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public static func AddKeyEscrowSink(builder : aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, factory : @escaping (dotnet.System.IServiceProvider) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_factory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink>(factory);
         return try AddKeyEscrowSink(builder: builder, factory: del_factory);
     }
@@ -101,7 +101,7 @@ public struct DataProtectionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddKeyManagementOptions(builder : aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public static func AddKeyManagementOptions(builder : aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions>(setupAction);
         return try AddKeyManagementOptions(builder: builder, setupAction: del_setupAction);
     }
@@ -320,7 +320,29 @@ public struct DataProtectionBuilderExtensions {
         return aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, System.TimeSpan)
+    // Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.TimeSpan)
+    /**
+    
+            Sets the default lifetime of keys created by the data protection system.
+            
+
+    - Parameter builder: The .
+    - Parameter lifetime: The lifetime (time before expiration) for newly-created keys.
+            See  for more information and
+            usage notes.
+    - Returns: A reference to the  after this operation has completed.
+
+    */
+    public static func SetDefaultKeyLifetime(builder : aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, lifetime : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_DataProtection_DataProtectionBuilderExtensions_IDataProtectionBuilder__SetDefaultKeyLifetime_0__2__IDataProtectionBuilder_TimeSpan(&__thrown, builder.get_handle(), lifetime.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl : __return);
+        }
+    }
     // Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder UseCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration)
 // docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.UseCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration)
     /**
@@ -453,6 +475,9 @@ open class DataProtectionOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_DataProtectionOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -557,6 +582,9 @@ public final class EphemeralDataProtectionProvider
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_EphemeralDataProtectionProvider_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -627,6 +655,9 @@ open class IDataProtectionBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -666,6 +697,9 @@ open class IPersistedDataProtector
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_IPersistedDataProtector_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -732,6 +766,9 @@ open class ISecret
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_ISecret_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -788,6 +825,9 @@ public final class Secret
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_Secret_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -977,6 +1017,9 @@ public final class AuthenticatedEncryptorFactory
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_AuthenticatedEncryptorFactory_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1032,6 +1075,9 @@ public final class CngCbcAuthenticatedEncryptorFactory
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_CngCbcAuthenticatedEncryptorFactory_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILoggerFactory)
@@ -1086,6 +1132,9 @@ public final class CngGcmAuthenticatedEncryptorFactory
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_CngGcmAuthenticatedEncryptorFactory_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1241,6 +1290,9 @@ open class IAuthenticatedEncryptor
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptor_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1315,6 +1367,9 @@ open class IAuthenticatedEncryptorFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_IAuthenticatedEncryptorFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1364,6 +1419,9 @@ public final class ManagedAuthenticatedEncryptorFactory
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ManagedAuthenticatedEncryptorFactory_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1469,6 +1527,9 @@ open class AlgorithmConfiguration
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AlgorithmConfiguration_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.IAuthenticatedEncryptorDescriptor CreateNewDescriptor()
@@ -1508,6 +1569,9 @@ public final class AuthenticatedEncryptorConfiguration
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorConfiguration_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1626,6 +1690,9 @@ public final class AuthenticatedEncryptorDescriptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorDescriptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration, Microsoft.AspNetCore.DataProtection.ISecret)
@@ -1679,6 +1746,9 @@ public final class AuthenticatedEncryptorDescriptorDeserializer
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_AuthenticatedEncryptorDescriptorDeserializer_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1726,6 +1796,9 @@ public final class CngCbcAuthenticatedEncryptorConfiguration
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorConfiguration_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1969,6 +2042,9 @@ public final class CngCbcAuthenticatedEncryptorDescriptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorDescriptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngCbcAuthenticatedEncryptorConfiguration, Microsoft.AspNetCore.DataProtection.ISecret)
@@ -2022,6 +2098,9 @@ public final class CngCbcAuthenticatedEncryptorDescriptorDeserializer
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngCbcAuthenticatedEncryptorDescriptorDeserializer_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2069,6 +2148,9 @@ public final class CngGcmAuthenticatedEncryptorConfiguration
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorConfiguration_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2232,6 +2314,9 @@ public final class CngGcmAuthenticatedEncryptorDescriptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorDescriptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.CngGcmAuthenticatedEncryptorConfiguration, Microsoft.AspNetCore.DataProtection.ISecret)
@@ -2285,6 +2370,9 @@ public final class CngGcmAuthenticatedEncryptorDescriptorDeserializer
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_CngGcmAuthenticatedEncryptorDescriptorDeserializer_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2333,6 +2421,9 @@ open class IAuthenticatedEncryptorDescriptor
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptor_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2383,6 +2474,9 @@ open class IAuthenticatedEncryptorDescriptorDeserializer
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_IAuthenticatedEncryptorDescriptorDeserializer_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2430,6 +2524,9 @@ public final class ManagedAuthenticatedEncryptorConfiguration
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorConfiguration_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2589,6 +2686,9 @@ public final class ManagedAuthenticatedEncryptorDescriptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorDescriptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.ManagedAuthenticatedEncryptorConfiguration, Microsoft.AspNetCore.DataProtection.ISecret)
@@ -2641,6 +2741,9 @@ public final class ManagedAuthenticatedEncryptorDescriptorDeserializer
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_ManagedAuthenticatedEncryptorDescriptorDeserializer_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2713,6 +2816,9 @@ public final class XmlSerializedDescriptorInfo
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_AuthenticatedEncryption_ConfigurationModel_XmlSerializedDescriptorInfo_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2805,6 +2911,9 @@ open class IActivator
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_Internal_IActivator_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2853,6 +2962,9 @@ open class IKey
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_IKey_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2971,6 +3083,9 @@ open class IKeyEscrowSink
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyEscrowSink_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3016,6 +3131,9 @@ open class IKeyManager
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_IKeyManager_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3152,6 +3270,9 @@ open class KeyManagementOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3204,7 +3325,17 @@ open class KeyManagementOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_NewKeyLifetime(System.TimeSpan)
+    // [IsSpecialName] void set_NewKeyLifetime(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions.set_NewKeyLifetime(System.TimeSpan)
+    open func set_NewKeyLifetime(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_DataProtection_KeyManagement_KeyManagementOptions_void__set_NewKeyLifetime_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AlgorithmConfiguration get_AuthenticatedEncryptorConfiguration()
 // docid: M:Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions.get_AuthenticatedEncryptorConfiguration
     open func get_AuthenticatedEncryptorConfiguration() throws -> Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AlgorithmConfiguration> {
@@ -3368,7 +3499,9 @@ open class KeyManagementOptions
         get {
             return try! get_NewKeyLifetime();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_NewKeyLifetime(System.TimeSpan)
+        set(v) {
+            return try! set_NewKeyLifetime(value: v);
+        }
     }
     /**
     
@@ -3416,6 +3549,9 @@ public final class XmlKeyManager
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_XmlKeyManager_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3543,6 +3679,9 @@ public final class CacheableKeyRing
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_CacheableKeyRing_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // CacheableKeyRing
@@ -3563,6 +3702,9 @@ public final class DefaultKeyResolution
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_DefaultKeyResolution_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3588,6 +3730,9 @@ open class ICacheableKeyRingProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_ICacheableKeyRingProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3634,6 +3779,9 @@ open class IDefaultKeyResolver
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IDefaultKeyResolver_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3678,6 +3826,9 @@ open class IInternalXmlKeyManager
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IInternalXmlKeyManager_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3760,6 +3911,9 @@ open class IKeyRing
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRing_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3839,6 +3993,9 @@ open class IKeyRingProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_KeyManagement_Internal_IKeyRingProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3888,6 +4045,9 @@ open class FileSystemXmlRepository
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_Repositories_FileSystemXmlRepository_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4004,6 +4164,9 @@ open class IXmlRepository
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_Repositories_IXmlRepository_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4069,6 +4232,9 @@ open class RegistryXmlRepository
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_Repositories_RegistryXmlRepository_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4189,6 +4355,9 @@ open class CertificateResolver
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_CertificateResolver_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4243,6 +4412,9 @@ public final class CertificateXmlEncryptor
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_CertificateXmlEncryptor_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4386,6 +4558,9 @@ public final class DpapiNGXmlDecryptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiNGXmlDecryptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4461,6 +4636,9 @@ public final class DpapiNGXmlEncryptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiNGXmlEncryptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiNGProtectionDescriptorFlags, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -4524,6 +4702,9 @@ public final class DpapiXmlDecryptor
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiXmlDecryptor_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4600,6 +4781,9 @@ public final class DpapiXmlEncryptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_DpapiXmlEncryptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(bool, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -4663,6 +4847,9 @@ public final class EncryptedXmlDecryptor
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_EncryptedXmlDecryptor_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4738,6 +4925,9 @@ public final class EncryptedXmlInfo
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_EncryptedXmlInfo_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4824,6 +5014,9 @@ open class ICertificateResolver
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_ICertificateResolver_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4875,6 +5068,9 @@ open class IXmlDecryptor
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlDecryptor_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4921,6 +5117,9 @@ open class IXmlEncryptor
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_IXmlEncryptor_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4973,6 +5172,9 @@ public final class NullXmlDecryptor
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlDecryptor_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5023,6 +5225,9 @@ public final class NullXmlEncryptor
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_XmlEncryption_NullXmlEncryptor_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5138,7 +5343,7 @@ public struct DataProtectionServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddDataProtection(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public static func AddDataProtection(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions>(setupAction);
         return try AddDataProtection(services: services, setupAction: del_setupAction);
     }
@@ -5299,7 +5504,7 @@ extension Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
         return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.AddKeyEscrowSink(builder: aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl: __copy_handle(self.get_handle())), factory: factory);
     }
     // delegate closure overload
-    public func AddKeyEscrowSink(factory : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public func AddKeyEscrowSink(factory : @escaping (dotnet.System.IServiceProvider) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_factory = try dotnet.System.Func_2<dotnet.System.IServiceProvider,aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.IKeyEscrowSink>(factory);
         return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.AddKeyEscrowSink(builder: aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl: __copy_handle(self.get_handle())), factory: del_factory);
     }
@@ -5311,7 +5516,7 @@ extension Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
         return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.AddKeyManagementOptions(builder: aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddKeyManagementOptions(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public func AddKeyManagementOptions(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.KeyManagement.KeyManagementOptions>(setupAction);
         return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.AddKeyManagementOptions(builder: aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -5388,7 +5593,11 @@ extension Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
 }
 
 // EXTENSION METHOD Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder SetDefaultKeyLifetime(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, System.TimeSpan)
+extension Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
+    public func SetDefaultKeyLifetime(lifetime : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionBuilderExtensions.SetDefaultKeyLifetime(builder: aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder(hndl: __copy_handle(self.get_handle())), lifetime: lifetime);
+    }
+}
 
 // EXTENSION METHOD Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder UseCryptographicAlgorithms(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder, Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorConfiguration)
 extension Microsoft_AspNetCore_DataProtection_IDataProtectionBuilder {
@@ -5445,7 +5654,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.AddDataProtection(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddDataProtection(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
+    public func AddDataProtection(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.DataProtectionServiceCollectionExtensions.AddDataProtection(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

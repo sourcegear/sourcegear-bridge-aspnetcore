@@ -24,6 +24,9 @@ public final class ComponentEndpointConventionBuilder
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_ComponentEndpointConventionBuilder_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
@@ -45,7 +48,7 @@ public final class ComponentEndpointConventionBuilder
         }
     }
     // delegate closure overload
-    public func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
+    public func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
         let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
         return try Add(convention: del_convention);
     }
@@ -117,7 +120,7 @@ public struct ComponentEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapBlazorHub(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
+    public static func MapBlazorHub(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>(configureOptions);
         return try MapBlazorHub(endpoints: endpoints, configureOptions: del_configureOptions);
     }
@@ -144,7 +147,7 @@ public struct ComponentEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapBlazorHub(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, path : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
+    public static func MapBlazorHub(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, path : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>(configureOptions);
         return try MapBlazorHub(endpoints: endpoints, path: path, configureOptions: del_configureOptions);
     }
@@ -169,6 +172,9 @@ public final class CircuitOptions
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_CircuitOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -216,7 +222,17 @@ public final class CircuitOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_DisconnectedCircuitRetentionPeriod(System.TimeSpan)
+    // [IsSpecialName] void set_DisconnectedCircuitRetentionPeriod(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Components.Server.CircuitOptions.set_DisconnectedCircuitRetentionPeriod(System.TimeSpan)
+    public func set_DisconnectedCircuitRetentionPeriod(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_Server_CircuitOptions_void__set_DisconnectedCircuitRetentionPeriod_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] bool get_DetailedErrors()
 // docid: M:Microsoft.AspNetCore.Components.Server.CircuitOptions.get_DetailedErrors
     public func get_DetailedErrors() throws -> Bool {
@@ -250,7 +266,17 @@ public final class CircuitOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_JSInteropDefaultCallTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_JSInteropDefaultCallTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Components.Server.CircuitOptions.set_JSInteropDefaultCallTimeout(System.TimeSpan)
+    public func set_JSInteropDefaultCallTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_Server_CircuitOptions_void__set_JSInteropDefaultCallTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Int32 get_MaxBufferedUnacknowledgedRenderBatches()
 // docid: M:Microsoft.AspNetCore.Components.Server.CircuitOptions.get_MaxBufferedUnacknowledgedRenderBatches
     public func get_MaxBufferedUnacknowledgedRenderBatches() throws -> Swift.Int32 {
@@ -343,7 +369,9 @@ public final class CircuitOptions
         get {
             return try! get_DisconnectedCircuitRetentionPeriod();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_DisconnectedCircuitRetentionPeriod(System.TimeSpan)
+        set(v) {
+            return try! set_DisconnectedCircuitRetentionPeriod(value: v);
+        }
     }
     /**
     
@@ -355,7 +383,9 @@ public final class CircuitOptions
         get {
             return try! get_JSInteropDefaultCallTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_JSInteropDefaultCallTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_JSInteropDefaultCallTimeout(value: v);
+        }
     }
     /**
     
@@ -400,6 +430,9 @@ open class CircuitRootComponentOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_CircuitRootComponentOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -487,6 +520,9 @@ open class RevalidatingServerAuthenticationStateProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_RevalidatingServerAuthenticationStateProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILoggerFactory)
@@ -525,6 +561,9 @@ open class ServerAuthenticationStateProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_ServerAuthenticationStateProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -542,13 +581,13 @@ open class ServerAuthenticationStateProvider
 // docid: M:Microsoft.AspNetCore.Components.Server.ServerAuthenticationStateProvider.GetAuthenticationStateAsync
     /**
     */
-    open override func GetAuthenticationStateAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState> {
+    open override func GetAuthenticationStateAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Components.Authorization.AuthenticationState {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Server_ServerAuthenticationStateProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState___GetAuthenticationStateAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // void SetAuthenticationState(System.Threading.Tasks.Task<Microsoft.AspNetCore.Components.Authorization.AuthenticationState>)
@@ -583,6 +622,9 @@ public final class Circuit
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_Circuits_Circuit_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -641,6 +683,9 @@ open class CircuitHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task OnCircuitOpenedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit, System.Threading.CancellationToken)
@@ -655,13 +700,13 @@ open class CircuitHandler
     - Returns:  that represents the asynchronous execution operation.
 
     */
-    open func OnCircuitOpenedAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnCircuitOpenedAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler_Task__OnCircuitOpenedAsync_0__2__Circuit_CancellationToken(&__thrown, self.get_handle(), circuit.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnConnectionUpAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit, System.Threading.CancellationToken)
@@ -680,13 +725,13 @@ open class CircuitHandler
     - Returns:  that represents the asynchronous execution operation.
 
     */
-    open func OnConnectionUpAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectionUpAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler_Task__OnConnectionUpAsync_0__2__Circuit_CancellationToken(&__thrown, self.get_handle(), circuit.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnConnectionDownAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit, System.Threading.CancellationToken)
@@ -701,13 +746,13 @@ open class CircuitHandler
     - Returns:  that represents the asynchronous execution operation.
 
     */
-    open func OnConnectionDownAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectionDownAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler_Task__OnConnectionDownAsync_0__2__Circuit_CancellationToken(&__thrown, self.get_handle(), circuit.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnCircuitClosedAsync(Microsoft.AspNetCore.Components.Server.Circuits.Circuit, System.Threading.CancellationToken)
@@ -722,13 +767,13 @@ open class CircuitHandler
     - Returns:  that represents the asynchronous execution operation.
 
     */
-    open func OnCircuitClosedAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnCircuitClosedAsync(circuit : aspnetcore.Microsoft.AspNetCore.Components.Server.Circuits.Circuit, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Server_Circuits_CircuitHandler_Task__OnCircuitClosedAsync_0__2__Circuit_CancellationToken(&__thrown, self.get_handle(), circuit.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Int32 get_Order()
@@ -778,6 +823,9 @@ open class ProtectedBrowserStorage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -876,6 +924,9 @@ public final class ProtectedBrowserStorageResult_1<TValue : SGBridgeGenericValue
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedBrowserStorageResult_1_get_type_handle(TValue.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -949,6 +1000,9 @@ public final class ProtectedLocalStorage
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedLocalStorage_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.JSInterop.IJSRuntime, Microsoft.AspNetCore.DataProtection.IDataProtectionProvider)
@@ -992,6 +1046,9 @@ public final class ProtectedSessionStorage
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Server_ProtectedBrowserStorage_ProtectedSessionStorage_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1049,7 +1106,7 @@ public struct ComponentServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddServerSideBlazor(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public static func AddServerSideBlazor(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>(configure);
         return try AddServerSideBlazor(services: services, configure: del_configure);
     }
@@ -1070,6 +1127,9 @@ open class IServerSideBlazorBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1118,7 +1178,7 @@ public struct ServerSideBlazorBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCircuitOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public static func AddCircuitOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>(configure);
         return try AddCircuitOptions(builder: builder, configure: del_configure);
     }
@@ -1144,7 +1204,7 @@ public struct ServerSideBlazorBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddHubOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public static func AddHubOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions>(configure);
         return try AddHubOptions(builder: builder, configure: del_configure);
     }
@@ -1181,7 +1241,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions.MapBlazorHub(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func MapBlazorHub(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
+    public func MapBlazorHub(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions.MapBlazorHub(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -1193,7 +1253,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions.MapBlazorHub(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), path: path, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func MapBlazorHub(path : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
+    public func MapBlazorHub(path : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointConventionBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ComponentEndpointRouteBuilderExtensions.MapBlazorHub(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), path: path, configureOptions: del_configureOptions);
     }
@@ -1205,7 +1265,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ComponentServiceCollectionExtensions.AddServerSideBlazor(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddServerSideBlazor(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public func AddServerSideBlazor(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ComponentServiceCollectionExtensions.AddServerSideBlazor(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1217,7 +1277,7 @@ extension Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions.AddCircuitOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddCircuitOptions(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public func AddCircuitOptions(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Server.CircuitOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions.AddCircuitOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1229,7 +1289,7 @@ extension Microsoft_Extensions_DependencyInjection_IServerSideBlazorBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions.AddHubOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddHubOptions(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
+    public func AddHubOptions(configure : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.SignalR.HubOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServerSideBlazorBuilderExtensions.AddHubOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IServerSideBlazorBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

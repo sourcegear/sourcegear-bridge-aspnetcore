@@ -24,6 +24,9 @@ open class IDirectoryContents
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_IDirectoryContents_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -61,6 +64,9 @@ open class IFileInfo
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_IFileInfo_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -186,6 +192,9 @@ open class IFileProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_IFileProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -284,6 +293,9 @@ open class NotFoundDirectoryContents
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_NotFoundDirectoryContents_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -384,6 +396,9 @@ open class NotFoundFileInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_NotFoundFileInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -582,6 +597,9 @@ open class NullChangeToken
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_NullChangeToken_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.IDisposable RegisterChangeCallback(System.Action<System.Object>, System.Object)
@@ -701,6 +719,9 @@ open class NullFileProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_NullFileProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

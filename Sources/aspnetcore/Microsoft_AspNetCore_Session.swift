@@ -68,6 +68,9 @@ open class SessionOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_SessionOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -114,7 +117,17 @@ open class SessionOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_IdleTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_IdleTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Builder.SessionOptions.set_IdleTimeout(System.TimeSpan)
+    open func set_IdleTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Builder_SessionOptions_void__set_IdleTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_IOTimeout()
 // docid: M:Microsoft.AspNetCore.Builder.SessionOptions.get_IOTimeout
     open func get_IOTimeout() throws -> dotnet.System.TimeSpan {
@@ -126,7 +139,17 @@ open class SessionOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_IOTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_IOTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Builder.SessionOptions.set_IOTimeout(System.TimeSpan)
+    open func set_IOTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Builder_SessionOptions_void__set_IOTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Determines the settings used to create the cookie.
@@ -159,7 +182,9 @@ open class SessionOptions
         get {
             return try! get_IOTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_IOTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_IOTimeout(value: v);
+        }
     }
     /**
     
@@ -172,7 +197,9 @@ open class SessionOptions
         get {
             return try! get_IdleTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_IdleTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_IdleTimeout(value: v);
+        }
     }
 } // SessionOptions
 
@@ -196,18 +223,52 @@ open class DistributedSession
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Session_DistributedSession_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
-// TODO COPE ctor (span) .ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, Microsoft.Extensions.Logging.ILoggerFactory, bool)
+    // .ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache, System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, Microsoft.Extensions.Logging.ILoggerFactory, bool)
+// docid: M:Microsoft.AspNetCore.Session.DistributedSession.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.TimeSpan,System.TimeSpan,System.Func{System.Boolean},Microsoft.Extensions.Logging.ILoggerFactory,System.Boolean)
+    /**
+    
+            Initializes a new instance of .
+            
+
+    - Parameter cache: The  used to store the session data.
+    - Parameter sessionKey: A unique key used to lookup the session.
+    - Parameter idleTimeout: How long the session can be inactive (e.g. not accessed) before it will expire.
+    - Parameter ioTimeout: 
+            The maximum amount of time  and  are allowed take.
+            
+    - Parameter tryEstablishSession: 
+            A callback invoked during  to verify that modifying the session is currently valid.
+            If the callback returns ,  throws an .
+             provides a callback that returns  if the session was not established
+            prior to sending the response.
+            
+    - Parameter loggerFactory: The .
+    - Parameter isNewSessionKey:  if establishing a new session;  if resuming a session.
+    */
+    public init(cache : aspnetcore.Microsoft.Extensions.Caching.Distributed.IDistributedCache, sessionKey : dotnet.System.String, idleTimeout : dotnet.System.TimeSpan, ioTimeout : dotnet.System.TimeSpan, tryEstablishSession : dotnet.System.Func_1<Bool>, loggerFactory : aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory, isNewSessionKey : Bool) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Session_DistributedSession_ctor_0__7__IDistributedCache_String_TimeSpan_TimeSpan_System_Func_bool__ILoggerFactory_bool(&__thrown, cache.get_handle(), sessionKey.get_handle(), idleTimeout.get_handle(), ioTimeout.get_handle(), tryEstablishSession.get_handle(), loggerFactory.get_handle(), Swift.Int32(isNewSessionKey ? 1 : 0));
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
     // bool TryGetValue(System.String, ref System.Byte[])
 // docid: M:Microsoft.AspNetCore.Session.DistributedSession.TryGetValue(System.String,System.Byte[]@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout dotnet.System_Arr<Swift.UInt8>) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System_Arr<Swift.UInt8>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System_Arr<Swift.UInt8>(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System_Arr<Swift.UInt8>(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -258,26 +319,26 @@ open class DistributedSession
 // docid: M:Microsoft.AspNetCore.Session.DistributedSession.LoadAsync(System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func LoadAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func LoadAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Session_DistributedSession_Task__LoadAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CommitAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Session.DistributedSession.CommitAsync(System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func CommitAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func CommitAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Session_DistributedSession_Task__CommitAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_IsAvailable()
@@ -352,6 +413,9 @@ open class DistributedSessionStore
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Session_DistributedSessionStore_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -373,7 +437,24 @@ open class DistributedSessionStore
             super.init(hndl: h);
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.Http.ISession Create(System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, bool)
+    // Microsoft.AspNetCore.Http.ISession Create(System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, bool)
+// docid: M:Microsoft.AspNetCore.Session.DistributedSessionStore.Create(System.String,System.TimeSpan,System.TimeSpan,System.Func{System.Boolean},System.Boolean)
+    /**
+    */
+    open /* method final */ func Create(sessionKey : dotnet.System.String, idleTimeout : dotnet.System.TimeSpan, ioTimeout : dotnet.System.TimeSpan, tryEstablishSession : dotnet.System.Func_1<Bool>, isNewSessionKey : Bool) throws -> aspnetcore.Microsoft.AspNetCore.Http.ISession {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Session_DistributedSessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool(&__thrown, self.get_handle(), sessionKey.get_handle(), idleTimeout.get_handle(), ioTimeout.get_handle(), tryEstablishSession.get_handle(), Swift.Int32(isNewSessionKey ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Http.ISession(hndl : __return);
+        }
+    }
+    // delegate closure overload
+    open /* method final */ func Create(sessionKey : dotnet.System.String, idleTimeout : dotnet.System.TimeSpan, ioTimeout : dotnet.System.TimeSpan, tryEstablishSession : @escaping () throws -> Bool, isNewSessionKey : Bool) throws -> aspnetcore.Microsoft.AspNetCore.Http.ISession {
+        let del_tryEstablishSession = try dotnet.System.Func_1<Swift.Bool>(tryEstablishSession);
+        return try Create(sessionKey: sessionKey, idleTimeout: idleTimeout, ioTimeout: ioTimeout, tryEstablishSession: del_tryEstablishSession, isNewSessionKey: isNewSessionKey);
+    }
 } // DistributedSessionStore
 
 
@@ -392,6 +473,9 @@ open class ISessionStore
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Session_ISessionStore_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -401,7 +485,43 @@ open class ISessionStore
 
     deinit { __drop_handle(self.h); }
 
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.Http.ISession Create(System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, bool)
+    // Microsoft.AspNetCore.Http.ISession Create(System.String, System.TimeSpan, System.TimeSpan, System.Func<bool>, bool)
+// docid: M:Microsoft.AspNetCore.Session.ISessionStore.Create(System.String,System.TimeSpan,System.TimeSpan,System.Func{System.Boolean},System.Boolean)
+    /**
+    
+            Create a new or resume an .
+            
+
+    - Parameter sessionKey: A unique key used to lookup the session.
+    - Parameter idleTimeout: How long the session can be inactive (e.g. not accessed) before it will expire.
+    - Parameter ioTimeout: 
+            The maximum amount of time  and
+             are allowed take.
+            
+    - Parameter tryEstablishSession: 
+            A callback invoked during  to verify that modifying the session is currently valid.
+            If the callback returns ,  should throw an .
+             provides a callback that returns  if the session was not established
+            prior to sending the response.
+            
+    - Parameter isNewSessionKey:  if establishing a new session;  if resuming a session.
+    - Returns: The  that was created or resumed.
+
+    */
+    open func Create(sessionKey : dotnet.System.String, idleTimeout : dotnet.System.TimeSpan, ioTimeout : dotnet.System.TimeSpan, tryEstablishSession : dotnet.System.Func_1<Bool>, isNewSessionKey : Bool) throws -> aspnetcore.Microsoft.AspNetCore.Http.ISession {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool(&__thrown, self.get_handle(), sessionKey.get_handle(), idleTimeout.get_handle(), ioTimeout.get_handle(), tryEstablishSession.get_handle(), Swift.Int32(isNewSessionKey ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Http.ISession(hndl : __return);
+        }
+    }
+    // delegate closure overload
+    open func Create(sessionKey : dotnet.System.String, idleTimeout : dotnet.System.TimeSpan, ioTimeout : dotnet.System.TimeSpan, tryEstablishSession : @escaping () throws -> Bool, isNewSessionKey : Bool) throws -> aspnetcore.Microsoft.AspNetCore.Http.ISession {
+        let del_tryEstablishSession = try dotnet.System.Func_1<Swift.Bool>(tryEstablishSession);
+        return try Create(sessionKey: sessionKey, idleTimeout: idleTimeout, ioTimeout: ioTimeout, tryEstablishSession: del_tryEstablishSession, isNewSessionKey: isNewSessionKey);
+    }
 } // ISessionStore
 
 
@@ -446,6 +566,9 @@ open class SessionFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Session_SessionFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -508,6 +631,9 @@ open class SessionMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Session_SessionMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -606,7 +732,7 @@ public struct SessionServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddSession(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddSession(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions>(configure);
         return try AddSession(services: services, configure: del_configure);
     }
@@ -650,7 +776,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.SessionServiceCollectionExtensions.AddSession(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddSession(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddSession(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.SessionOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.SessionServiceCollectionExtensions.AddSession(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

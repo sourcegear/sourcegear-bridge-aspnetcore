@@ -36,6 +36,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_ApiDescriptionGroupCollection__get_ApiDescriptionGroups_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_EndpointMetadataApiExplorerServiceCollectionExtensions_IServiceCollection__AddEndpointsApiExplorer_0__1__IServiceCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_MvcApiExplorerMvcCoreBuilderExtensions_IMvcCoreBuilder__AddApiExplorer_0__1__IMvcCoreBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder);
 } _g_Microsoft_AspNetCore_Mvc_ApiExplorer;
@@ -269,6 +270,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollect
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_ApiExplorer._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_ApiExplorer._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_ApiExplorer._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupCollectionProvider_create(__thrown, __deinit);
     return ret;
 }
 

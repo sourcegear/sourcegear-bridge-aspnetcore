@@ -55,7 +55,7 @@ public struct HstsServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddHsts(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddHsts(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions>(configureOptions);
         return try AddHsts(services: services, configureOptions: del_configureOptions);
     }
@@ -111,7 +111,7 @@ public struct HttpsRedirectionServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddHttpsRedirection(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddHttpsRedirection(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions>(configureOptions);
         return try AddHttpsRedirection(services: services, configureOptions: del_configureOptions);
     }
@@ -136,6 +136,9 @@ open class HstsMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpsPolicy_HstsMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -215,6 +218,9 @@ open class HstsOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpsPolicy_HstsOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -239,7 +245,17 @@ open class HstsOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_MaxAge(System.TimeSpan)
+    // [IsSpecialName] void set_MaxAge(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.HttpsPolicy.HstsOptions.set_MaxAge(System.TimeSpan)
+    open func set_MaxAge(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_HttpsPolicy_HstsOptions_void__set_MaxAge_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] bool get_IncludeSubDomains()
 // docid: M:Microsoft.AspNetCore.HttpsPolicy.HstsOptions.get_IncludeSubDomains
     open func get_IncludeSubDomains() throws -> Bool {
@@ -330,7 +346,9 @@ open class HstsOptions
         get {
             return try! get_MaxAge();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_MaxAge(System.TimeSpan)
+        set(v) {
+            return try! set_MaxAge(value: v);
+        }
     }
     /**
     
@@ -362,6 +380,9 @@ open class HttpsRedirectionMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpsPolicy_HttpsRedirectionMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -444,6 +465,9 @@ open class HttpsRedirectionOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpsPolicy_HttpsRedirectionOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -550,7 +574,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.AspNetCore.Builder.HstsServicesExtensions.AddHsts(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddHsts(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddHsts(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HstsOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.HstsServicesExtensions.AddHsts(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -569,7 +593,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.AspNetCore.Builder.HttpsRedirectionServicesExtensions.AddHttpsRedirection(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddHttpsRedirection(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddHttpsRedirection(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.HttpsRedirectionServicesExtensions.AddHttpsRedirection(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

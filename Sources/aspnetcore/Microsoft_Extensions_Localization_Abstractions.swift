@@ -23,6 +23,9 @@ open class IStringLocalizer
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_IStringLocalizer_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -56,9 +59,6 @@ open class IStringLocalizer
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String)
 // docid: M:Microsoft.Extensions.Localization.IStringLocalizer.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_IStringLocalizer_LocalizedString__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -70,9 +70,6 @@ open class IStringLocalizer
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.Extensions.Localization.IStringLocalizer.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_IStringLocalizer_LocalizedString__get_Item_0__2__String_ObjectArray(&__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());
@@ -99,6 +96,9 @@ open class IStringLocalizerFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_IStringLocalizerFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -171,6 +171,9 @@ open class IStringLocalizer_1<T : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_IStringLocalizer_1_get_type_handle(T.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -196,6 +199,9 @@ open class LocalizedString
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_LocalizedString_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -471,6 +477,9 @@ open class StringLocalizer_1<TResourceSource : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_StringLocalizer_1_get_type_handle(TResourceSource.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory)
@@ -506,9 +515,6 @@ open class StringLocalizer_1<TResourceSource : SGBridgeGenericValue>
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String)
 // docid: M:Microsoft.Extensions.Localization.StringLocalizer`1.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_StringLocalizer_1_LocalizedString__get_Item_0__1__String(TResourceSource.get_type_handle(), &__thrown, self.get_handle(), name.get_handle());
@@ -520,9 +526,6 @@ open class StringLocalizer_1<TResourceSource : SGBridgeGenericValue>
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.Extensions.Localization.StringLocalizer`1.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_StringLocalizer_1_LocalizedString__get_Item_0__2__String_ObjectArray(TResourceSource.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());

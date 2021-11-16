@@ -24,6 +24,9 @@ open class PhysicalFileProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_PhysicalFileProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -299,6 +302,9 @@ open class PhysicalDirectoryContents
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Internal_PhysicalDirectoryContents_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -479,6 +485,9 @@ open class PhysicalDirectoryInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -669,6 +678,9 @@ open class PhysicalFileInfo
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Physical_PhysicalFileInfo_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.FileInfo)
@@ -849,6 +861,9 @@ open class PhysicalFilesWatcher
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Physical_PhysicalFilesWatcher_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.IO.FileSystemWatcher, bool)
@@ -974,6 +989,9 @@ open class PollingFileChangeToken
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Physical_PollingFileChangeToken_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.FileInfo)
@@ -1086,6 +1104,9 @@ open class PollingWildCardChangeToken
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_FileProviders_Physical_PollingWildCardChangeToken_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

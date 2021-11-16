@@ -53,7 +53,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_Task__Invoke_0__1__ConnectionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL connection);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_IAsyncResult__BeginInvoke_0__3__ConnectionContext_AsyncCallback_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL connection, SG_HNDL_NULLABLE callback, SG_HNDL_NULLABLE object_);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_Task__EndInvoke_0__1__IAsyncResult)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection));
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionHandler_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionHandler_Task__OnConnectedAsync_0__1__ConnectionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL connection);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_ConnectionHandler_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -104,33 +104,41 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_IServiceProvider__get_ApplicationServices_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL middleware), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_EndPoint__get_EndPoint_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListener_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL middleware);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IServiceProvider__get_ApplicationServices_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL middleware), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_EndPoint__get_EndPoint_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionBuilder_ctor_0__1__IServiceProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL applicationServices);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL middleware);
@@ -145,7 +153,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Task__Invoke_0__1__MultiplexedConnectionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL connection);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_IAsyncResult__BeginInvoke_0__3__MultiplexedConnectionContext_AsyncCallback_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL connection, SG_HNDL_NULLABLE callback, SG_HNDL_NULLABLE object_);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Task__EndInvoke_0__1__IAsyncResult)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection));
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_TransferFormat_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_TransferFormat_get_Binary)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_TransferFormat_get_Text)(void);
@@ -157,68 +165,85 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL callback, SG_HNDL_NONNULL state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL callback, SG_HNDL_NONNULL state), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_EndPoint__get_LocalEndPoint_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_void__set_LocalEndPoint_0__1__EndPoint)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_EndPoint__get_RemoteEndPoint_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_void__set_RemoteEndPoint_0__1__EndPoint)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL action, SG_HNDL_NONNULL state);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL action, SG_HNDL_NONNULL state), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_String__get_ConnectionId_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_void__set_ConnectionId_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_bool__get_HasInherentKeepAlive_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_System_Collections_Generic_IDictionary_object_object___get_Items_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_void__set_Items_0__1__System_Collections_Generic_IDictionary_object_object_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_CancellationToken__get_ConnectionClosed_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__set_ConnectionClosed_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_CancellationToken__get_ConnectionClosedRequested_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__set_ConnectionClosedRequested_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_Socket__get_Socket_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_IDuplexPipe__get_Transport_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_void__set_Transport_0__1__IDuplexPipe)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_ClaimsPrincipal__get_User_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_void__set_User_0__1__ClaimsPrincipal)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_System_Buffers_MemoryPool_u8___get_MemoryPool_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_System_Collections_Generic_IDictionary_object_object___get_State_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_get_type_handle)(void);
     int64_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_i64__get_Error_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_void__set_Error_0__1__i64)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int64_t value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int64_t errorCode, SG_HNDL_NONNULL abortReason);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int64_t errorCode, SG_HNDL_NONNULL abortReason);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t errorCode, SG_HNDL_NONNULL abortReason), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t errorCode, SG_HNDL_NONNULL abortReason), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_bool__get_CanRead_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_bool__get_CanWrite_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_get_type_handle)(void);
     int64_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_i64__get_StreamId_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_SslProtocols__get_Protocol_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_CipherAlgorithmType__get_CipherAlgorithm_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -228,11 +253,13 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_ExchangeAlgorithmType__get_KeyExchangeAlgorithm_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_i32__get_KeyExchangeStrength_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_TransferFormat__get_SupportedFormats_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_TransferFormat__get_ActiveFormat_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_void__set_ActiveFormat_0__1__TransferFormat)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_AspNetCore_Connections_Abstractions;
 
 static void my_init() {
@@ -597,11 +624,11 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_ConnectionDelegate_Task__EndInv
     return ret;
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_ConnectionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection)) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_ConnectionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_create) {
         my_init();
     }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_create(__thrown, __pdata, __deinit, __cb);
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_ConnectionDelegate_create(__thrown, __cb, __pdata, __deinit);
     return ret;
 }
 
@@ -996,6 +1023,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionBuilder_cast(SG_HNDL
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL middleware), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_, __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_IConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_ConnectionDelegate_Microsoft_AspNetCore_Connections_ConnectionDelegate_, __cb_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0, __pdata_Microsoft_AspNetCore_Connections_IConnectionBuilder_ConnectionDelegate__Build_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_IConnectionFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionFactory_get_type_handle) {
         my_init();
@@ -1017,6 +1052,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionFactory_cast(SG_HNDL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionFactory_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___ConnectAsync_0__2__EndPoint_CancellationToken, __deinit);
     return ret;
 }
 
@@ -1060,6 +1103,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionListener_cast(SG_HND
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionListener_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListener_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListener_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_ConnectionContext___AcceptAsync_0__1__CancellationToken, __cb_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_IConnectionListenerFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_get_type_handle) {
         my_init();
@@ -1081,6 +1132,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionListenerFactory_cast
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IConnectionListenerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IConnectionListener___BindAsync_0__2__EndPoint_CancellationToken, __deinit);
     return ret;
 }
 
@@ -1124,6 +1183,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL middleware), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_IMultiplexedConnectionBuilder__Use_0__1__System_Func_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_MultiplexedConnectionDelegate__Build_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_get_type_handle) {
         my_init();
@@ -1145,6 +1212,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_c
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___ConnectAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, __deinit);
     return ret;
 }
 
@@ -1188,6 +1263,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_ValueTask__UnbindAsync_0__1__CancellationToken, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_MultiplexedConnectionContext___AcceptAsync_0__2__IFeatureCollection_CancellationToken, __cb_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, __pdata_System_IAsyncDisposable_ValueTask__DisposeAsync_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_get_type_handle) {
         my_init();
@@ -1209,6 +1292,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerF
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL endpoint, SG_HNDL_NULLABLE features, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_create(__thrown, __cb_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, __pdata_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_System_Threading_Tasks_ValueTask_Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener___BindAsync_0__3__EndPoint_IFeatureCollection_CancellationToken, __deinit);
     return ret;
 }
 
@@ -1324,11 +1415,11 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_T
     return ret;
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection)) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL connection), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create) {
         my_init();
     }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create(__thrown, __pdata, __deinit, __cb);
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create(__thrown, __cb, __pdata, __deinit);
     return ret;
 }
 
@@ -1419,6 +1510,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFea
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL callback, SG_HNDL_NONNULL state), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_create(__thrown, __cb_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object, __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_void__OnCompleted_0__2__System_Func_object_Task__Object, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_get_type_handle) {
         my_init();
@@ -1465,6 +1564,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFea
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_get_type_handle) {
         my_init();
@@ -1485,6 +1592,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFe
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL action, SG_HNDL_NONNULL state), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_create(__thrown, __cb_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object, __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_void__OnHeartbeat_0__2__System_Action_object__Object, __deinit);
     return ret;
 }
 
@@ -1519,6 +1634,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_get_type_handle) {
         my_init();
@@ -1540,6 +1663,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionInherentKee
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1571,6 +1702,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeatur
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1612,6 +1751,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFea
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_create(__thrown, __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0, __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_void__Abort_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_get_type_handle) {
         my_init();
@@ -1650,6 +1797,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNot
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_create(__thrown, __cb_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0, __pdata_Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_void__RequestClose_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_get_type_handle) {
         my_init();
@@ -1671,6 +1826,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeatu
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1705,6 +1868,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionTransportFe
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_get_type_handle) {
         my_init();
@@ -1736,6 +1907,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_get_type_handle) {
         my_init();
@@ -1760,6 +1939,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_get_type_handle) {
         my_init();
@@ -1781,6 +1968,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IPersistentStateFeatur
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1815,6 +2010,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeat
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_get_type_handle) {
         my_init();
@@ -1842,6 +2045,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t errorCode, SG_HNDL_NONNULL abortReason), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException, void (* _Nonnull  __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, int64_t errorCode, SG_HNDL_NONNULL abortReason), const void* _Nonnull __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_create(__thrown, __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException, __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortRead_0__2__i64_ConnectionAbortedException, __cb_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException, __pdata_Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_void__AbortWrite_0__2__i64_ConnectionAbortedException, __deinit);
     return ret;
 }
 
@@ -1877,6 +2088,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeatur
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_get_type_handle) {
         my_init();
@@ -1898,6 +2117,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_cast(
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_create(__thrown, __deinit);
     return ret;
 }
 
@@ -1973,6 +2200,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_get_type_handle) {
         my_init();
@@ -2009,6 +2244,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Connections_Abstractions._fp_Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_create(__thrown, __deinit);
     return ret;
 }
 

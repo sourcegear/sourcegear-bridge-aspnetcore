@@ -58,7 +58,7 @@ public struct HostFilteringServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddHostFiltering(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddHostFiltering(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>(configureOptions);
         return try AddHostFiltering(services: services, configureOptions: del_configureOptions);
     }
@@ -82,6 +82,9 @@ open class HostFilteringMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HostFiltering_HostFilteringMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -141,6 +144,9 @@ open class HostFilteringOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HostFiltering_HostFilteringOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -283,7 +289,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.AspNetCore.Builder.HostFilteringServicesExtensions.AddHostFiltering(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddHostFiltering(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddHostFiltering(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HostFiltering.HostFilteringOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.HostFilteringServicesExtensions.AddHostFiltering(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

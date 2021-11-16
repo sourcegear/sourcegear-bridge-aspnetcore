@@ -137,6 +137,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array)(TYP TModel, SG_HNDL_NULLABLE * _Nonnull __thrown);
     GVAL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL data);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_IDataSerializer_1_cast)(TYP TModel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_IDataSerializer_1_create)(TYP TModel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL model), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL data), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_get_type_handle)(TYP TData);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData)(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL data);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData)(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -151,9 +152,11 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String)(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown);
     GVAL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE protectedText, SG_HNDL_NULLABLE purpose);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_cast)(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_create)(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL data), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL data, SG_HNDL_NULLABLE purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE protectedText), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE protectedText, SG_HNDL_NULLABLE purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISystemClock_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISystemClock_DateTimeOffset__get_UtcNow_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISystemClock_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_ISystemClock_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_JsonDocumentAuthExtensions_String__GetString_0__2__JsonElement_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL element, SG_HNDL_NONNULL key);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_PolicySchemeHandler_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Authentication_PolicySchemeHandler_ctor_0__4__Microsoft_Extensions_Options_IOptionsMonitor_Microsoft_AspNetCore_Authentication_PolicySchemeOptions__ILoggerFactory_UrlEncoder_ISystemClock)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL options, SG_HNDL_NONNULL logger, SG_HNDL_NONNULL encoder, SG_HNDL_NONNULL clock);
@@ -1383,6 +1386,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_IDataSerializer_1_cast(TYP T
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_IDataSerializer_1_create(TYP TModel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL model), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL data), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_IDataSerializer_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_IDataSerializer_1_create(TModel, __thrown, __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel, __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_u8Array__Serialize_0__1__TModel, __cb_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array, __pdata_Microsoft_AspNetCore_Authentication_IDataSerializer_1_TModel__Deserialize_0__1__u8Array, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_get_type_handle(TYP TData) {
     if (!_g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_get_type_handle) {
         my_init();
@@ -1495,6 +1506,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_cast(TYP
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_create(TYP TData, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL data), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL data, SG_HNDL_NULLABLE purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE protectedText), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE protectedText, SG_HNDL_NULLABLE purpose), const void* _Nonnull __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_create(TData, __thrown, __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData, __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__1__TData, __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String, __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_String__Protect_0__2__TData_String, __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String, __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__1__String, __cb_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String, __pdata_Microsoft_AspNetCore_Authentication_ISecureDataFormat_1_TData__Unprotect_0__2__String_String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Authentication_ISystemClock_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISystemClock_get_type_handle) {
         my_init();
@@ -1516,6 +1535,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_ISystemClock_cast(SG_HNDL_NU
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISystemClock_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Authentication_ISystemClock_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISystemClock_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Authentication._fp_Microsoft_AspNetCore_Authentication_ISystemClock_create(__thrown, __deinit);
     return ret;
 }
 

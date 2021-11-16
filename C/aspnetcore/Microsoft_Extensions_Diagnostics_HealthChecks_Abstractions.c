@@ -61,9 +61,11 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL report, SG_HNDL_NONNULL cancellationToken);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL report, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions;
 
 static void my_init() {
@@ -497,6 +499,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_cast(
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_create(__thrown, __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken, __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_get_type_handle(void) {
     if (!_g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_get_type_handle) {
         my_init();
@@ -518,6 +528,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublis
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL report, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Diagnostics_HealthChecks_Abstractions._fp_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_create(__thrown, __cb_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken, __pdata_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken, __deinit);
     return ret;
 }
 

@@ -22,6 +22,9 @@ public final class BindInputElementAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_BindInputElementAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.String, System.String, bool, System.String)
@@ -273,6 +276,9 @@ open class WebElementReferenceContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_WebElementReferenceContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.JSInterop.IJSRuntime)
@@ -415,6 +421,9 @@ open class EditForm
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_EditForm_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -539,7 +548,7 @@ open class EditForm
         }
     }
     // delegate closure overload
-    open func set_ChildContent(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Forms.EditContext>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_ChildContent(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Forms.EditContext) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Forms.EditContext>(value);
         return try set_ChildContent(value: del_value);
     }
@@ -734,6 +743,9 @@ open class FieldCssClassProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_FieldCssClassProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -789,6 +801,9 @@ open class IBrowserFile
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_IBrowserFile_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -898,19 +913,22 @@ open class InputBase_1<TValue : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputBase_1_get_type_handle(TValue.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
 // docid: M:Microsoft.AspNetCore.Components.Forms.InputBase`1.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open override func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Forms_InputBase_1_Task__SetParametersAsync_0__1__ParameterView(TValue.get_type_handle(), &__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object> get_AdditionalAttributes()
@@ -1123,6 +1141,9 @@ open class InputCheckbox
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputCheckbox_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1264,6 +1285,9 @@ open class InputDate_1<TValue : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputDate_1_get_type_handle(TValue.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1413,6 +1437,9 @@ open class InputFile
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputFile_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1558,6 +1585,9 @@ public final class InputFileChangeEventArgs
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputFileChangeEventArgs_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Components.Forms.IBrowserFile>)
@@ -1660,6 +1690,9 @@ open class InputNumber_1<TValue : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputNumber_1_get_type_handle(TValue.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1765,6 +1798,9 @@ open class InputRadioGroup_1<TValue : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputRadioGroup_1_get_type_handle(TValue.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1880,6 +1916,9 @@ open class InputRadio_1<TValue : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputRadio_1_get_type_handle(TValue.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2027,6 +2066,9 @@ open class InputSelect_1<TValue : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputSelect_1_get_type_handle(TValue.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2147,6 +2189,9 @@ open class InputText
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputText_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2215,6 +2260,9 @@ open class InputTextArea
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_InputTextArea_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2285,6 +2333,9 @@ open class RemoteBrowserFileStreamOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_RemoteBrowserFileStreamOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2353,7 +2404,17 @@ open class RemoteBrowserFileStreamOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_SegmentFetchTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_SegmentFetchTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Components.Forms.RemoteBrowserFileStreamOptions.set_SegmentFetchTimeout(System.TimeSpan)
+    open func set_SegmentFetchTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_Forms_RemoteBrowserFileStreamOptions_void__set_SegmentFetchTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Gets or sets the maximum internal buffer size for unread data sent over a SignalR circuit.
@@ -2402,7 +2463,9 @@ open class RemoteBrowserFileStreamOptions
         get {
             return try! get_SegmentFetchTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_SegmentFetchTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_SegmentFetchTimeout(value: v);
+        }
     }
 } // RemoteBrowserFileStreamOptions
 
@@ -2421,6 +2484,9 @@ open class ValidationMessage_1<TValue : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_ValidationMessage_1_get_type_handle(TValue.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2538,6 +2604,9 @@ open class ValidationSummary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Forms_ValidationSummary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2660,6 +2729,9 @@ public final class WebEventDescriptor
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_WebEventDescriptor_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2803,6 +2875,9 @@ open class WebRenderer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_WebRenderer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Json.JsonSerializerOptions, Microsoft.AspNetCore.Components.Web.Infrastructure.JSComponentInterop)
@@ -2848,6 +2923,9 @@ open class FocusOnNavigate
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_FocusOnNavigate_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2962,6 +3040,9 @@ open class NavLink
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_NavLink_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3226,6 +3307,9 @@ open class ClipboardEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_ClipboardEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3293,6 +3377,9 @@ open class DataTransfer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_DataTransfer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3513,6 +3600,9 @@ open class DataTransferItem
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_DataTransferItem_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3615,6 +3705,9 @@ open class DragEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_DragEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3682,6 +3775,9 @@ open class ErrorBoundary
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_ErrorBoundary_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3711,6 +3807,9 @@ open class ErrorEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_ErrorEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3939,6 +4038,9 @@ open class FocusEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_FocusEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4008,6 +4110,9 @@ public final class HeadContent
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_HeadContent_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4084,6 +4189,9 @@ public final class HeadOutlet
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_HeadOutlet_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4114,6 +4222,9 @@ open class IErrorBoundaryLogger
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_IErrorBoundaryLogger_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4161,6 +4272,9 @@ open class IJSComponentConfiguration
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_IJSComponentConfiguration_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4249,6 +4363,9 @@ public final class JSComponentConfigurationStore
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_JSComponentConfigurationStore_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4278,6 +4395,9 @@ open class KeyboardEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_KeyboardEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4636,6 +4756,9 @@ open class MouseEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_MouseEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5254,6 +5377,9 @@ public final class PageTitle
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_PageTitle_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5328,6 +5454,9 @@ open class PointerEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_PointerEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5651,6 +5780,9 @@ open class ProgressEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_ProgressEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5826,6 +5958,9 @@ open class TouchEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_TouchEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6185,6 +6320,9 @@ open class TouchPoint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_TouchPoint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6483,7 +6621,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6511,7 +6649,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6539,7 +6677,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6567,7 +6705,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6595,7 +6733,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6623,7 +6761,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6651,7 +6789,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6679,7 +6817,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6707,7 +6845,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6735,7 +6873,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6763,7 +6901,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6791,7 +6929,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6819,7 +6957,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6847,7 +6985,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6875,7 +7013,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6903,7 +7041,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6931,7 +7069,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6959,7 +7097,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -6987,7 +7125,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -7015,7 +7153,7 @@ public struct WebEventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -7084,6 +7222,9 @@ open class WheelEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_WheelEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7264,6 +7405,9 @@ open class JSComponentInterop
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Infrastructure_JSComponentInterop_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore)
@@ -7306,6 +7450,9 @@ public final class ItemsProviderDelegate_1<TItem : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_1_get_type_handle(TItem.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult<TItem>> Invoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest)
@@ -7345,15 +7492,15 @@ public final class ItemsProviderDelegate_1<TItem : SGBridgeGenericValue>
         return dotnet.System.Threading.Tasks.ValueTask_1(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest) throws -> dotnet.System.Threading.Tasks.ValueTask_1<aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult_1<TItem>>) throws
+    public convenience init(_ __closure_Invoke : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest) throws -> dotnet.System.Threading.Tasks.ValueTask_1<aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult_1<TItem>>) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, request : NonnullHandle) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest(hndl: request));
+                let ret = try __closure_Invoke(aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest(hndl: request));
                 return __copy_handle(ret.get_handle());
             }
             catch let e as dotnet.System.Exception
@@ -7368,25 +7515,25 @@ public final class ItemsProviderDelegate_1<TItem : SGBridgeGenericValue>
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, request : NonnullHandle) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, request : NonnullHandle) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
-            return f(thrown, request);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
+            return f_interlude(thrown, request);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_1_create(
             TItem.get_type_handle(),
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderResult<TItem>> Invoke(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderRequest)
@@ -7417,6 +7564,9 @@ public final class ItemsProviderRequest
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderRequest_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7531,6 +7681,9 @@ public final class ItemsProviderResult_1<TItem : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderResult_1_get_type_handle(TItem.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -7617,6 +7770,9 @@ public final class PlaceholderContext
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Virtualization_PlaceholderContext_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7709,6 +7865,9 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_get_type_handle(TItem.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -7734,13 +7893,13 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     - Returns: A  representing the completion of the operation.
 
     */
-    public func RefreshDataAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    public func RefreshDataAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_Task__RefreshDataAsync_0__0(TItem.get_type_handle(), &__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -7773,9 +7932,9 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_ChildContent(Microsoft.AspNetCore.Components.RenderFragment<TItem>)
 // docid: M:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1.set_ChildContent(Microsoft.AspNetCore.Components.RenderFragment{`0})
-    public func set_ChildContent(value : aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<TItem>) throws {
+    public func set_ChildContent(value : Optional<aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<TItem>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ChildContent_0__1__Microsoft_AspNetCore_Components_RenderFragment_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ChildContent_0__1__Microsoft_AspNetCore_Components_RenderFragment_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7804,9 +7963,9 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_ItemContent(Microsoft.AspNetCore.Components.RenderFragment<TItem>)
 // docid: M:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1.set_ItemContent(Microsoft.AspNetCore.Components.RenderFragment{`0})
-    public func set_ItemContent(value : aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<TItem>) throws {
+    public func set_ItemContent(value : Optional<aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<TItem>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ItemContent_0__1__Microsoft_AspNetCore_Components_RenderFragment_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ItemContent_0__1__Microsoft_AspNetCore_Components_RenderFragment_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7845,7 +8004,7 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
         }
     }
     // delegate closure overload
-    public func set_Placeholder(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    public func set_Placeholder(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.PlaceholderContext>(value);
         return try set_Placeholder(value: del_value);
     }
@@ -7888,9 +8047,9 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_ItemsProvider(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate<TItem>)
 // docid: M:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1.set_ItemsProvider(Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate{`0})
-    public func set_ItemsProvider(value : aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate_1<TItem>) throws {
+    public func set_ItemsProvider(value : Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.Virtualization.ItemsProviderDelegate_1<TItem>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ItemsProvider_0__1__Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_ItemsProvider_0__1__Microsoft_AspNetCore_Components_Web_Virtualization_ItemsProviderDelegate_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -7919,9 +8078,9 @@ public final class Virtualize_1<TItem : SGBridgeGenericValue>
     }
     // [IsSpecialName] void set_Items(System.Collections.Generic.ICollection<TItem>)
 // docid: M:Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize`1.set_Items(System.Collections.Generic.ICollection{`0})
-    public func set_Items(value : dotnet.System.Collections.Generic.ICollection_1<TItem>) throws {
+    public func set_Items(value : Optional<dotnet.System.Collections.Generic.ICollection_1<TItem>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_Items_0__1__System_Collections_Generic_ICollection_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), nil);
+        Microsoft_AspNetCore_Components_Web_Virtualization_Virtualize_1_void__set_Items_0__1__System_Collections_Generic_ICollection_TItem_(TItem.get_type_handle(), &__thrown, self.get_handle(), (value?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8146,7 +8305,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8158,7 +8317,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ClipboardEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8170,7 +8329,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8182,7 +8341,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.DragEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8194,7 +8353,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8206,7 +8365,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ErrorEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8218,7 +8377,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8230,7 +8389,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.FocusEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8242,7 +8401,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8254,7 +8413,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.KeyboardEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8266,7 +8425,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8278,7 +8437,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.MouseEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8290,7 +8449,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8302,7 +8461,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.PointerEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8314,7 +8473,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8326,7 +8485,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.ProgressEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8338,7 +8497,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8350,7 +8509,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.TouchEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8362,7 +8521,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -8374,7 +8533,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.Web.WheelEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.Web.WebEventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }

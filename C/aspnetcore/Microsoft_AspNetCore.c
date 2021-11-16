@@ -76,6 +76,8 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_ApplicationName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_String__get_ContentRootPath_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_ContentRootPath_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
+    SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_String__get_WebRootPath_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_WebRootPath_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Hosting_GenericHostBuilderExtensions_IHostBuilder__ConfigureWebHostDefaults_0__2__IHostBuilder_System_Action_Microsoft_AspNetCore_Hosting_IWebHostBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL configure);
 } _g_Microsoft_AspNetCore;
@@ -629,6 +631,21 @@ void Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_ContentRootPat
         my_init();
     }
     _g_Microsoft_AspNetCore._fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_ContentRootPath_0__1__String(__thrown, __self_h, value);
+}
+
+SG_HNDL_NULLABLE Microsoft_AspNetCore_Builder_WebApplicationOptions_String__get_WebRootPath_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_AspNetCore._fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_String__get_WebRootPath_0__0) {
+        my_init();
+    }
+    SG_HNDL_NULLABLE ret = _g_Microsoft_AspNetCore._fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_String__get_WebRootPath_0__0(__thrown, __self_h);
+    return ret;
+}
+
+void Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_WebRootPath_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value) {
+    if (!_g_Microsoft_AspNetCore._fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_WebRootPath_0__1__String) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore._fp_Microsoft_AspNetCore_Builder_WebApplicationOptions_void__set_WebRootPath_0__1__String(__thrown, __self_h, value);
 }
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_WebApplicationOptions_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h) {

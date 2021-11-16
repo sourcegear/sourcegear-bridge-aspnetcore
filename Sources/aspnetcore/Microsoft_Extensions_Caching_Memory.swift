@@ -18,6 +18,9 @@ open class MemoryDistributedCache
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Distributed_MemoryDistributedCache_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions>)
@@ -174,6 +177,9 @@ open class MemoryCache
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_MemoryCache_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Caching.Memory.MemoryCacheOptions>)
@@ -271,11 +277,12 @@ open class MemoryCache
 // docid: M:Microsoft.Extensions.Caching.Memory.MemoryCache.TryGetValue(System.Object,System.Object@)
     /**
     */
-    open /* method final */ func TryGetValue(key : Optional<dotnet.System.Object>, result : inout dotnet.System.Object) throws -> Bool {
+    open /* method final */ func TryGetValue(key : Optional<dotnet.System.Object>, result : inout Optional<dotnet.System.Object>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_result = result.get_handle();
+            var _tmp_out_result = (result != nil) ? (result!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Caching_Memory_MemoryCache_bool__TryGetValue_0__2__Object_outObject(&__thrown, self.get_handle(), key?.get_handle() ?? nil, &_tmp_out_result);
-        let _tmp2_result = dotnet.System.Object(hndl: _tmp_out_result);
+        let __h__tmp2_result = _tmp_out_result;
+        let _tmp2_result = (__h__tmp2_result != nil) ? dotnet.System.Object(hndl: __h__tmp2_result!) : nil;
             result = _tmp2_result;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -315,6 +322,9 @@ open class MemoryCacheOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_MemoryCacheOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -388,7 +398,17 @@ open class MemoryCacheOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_ExpirationScanFrequency(System.TimeSpan)
+    // [IsSpecialName] void set_ExpirationScanFrequency(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.set_ExpirationScanFrequency(System.TimeSpan)
+    open func set_ExpirationScanFrequency(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Caching_Memory_MemoryCacheOptions_void__set_ExpirationScanFrequency_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Nullable<System.Int64> get_SizeLimit()
 // docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.get_SizeLimit
     open func get_SizeLimit() throws -> Optional<Swift.Int64> {
@@ -443,7 +463,9 @@ open class MemoryCacheOptions
         get {
             return try! get_ExpirationScanFrequency();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_ExpirationScanFrequency(System.TimeSpan)
+        set(v) {
+            return try! set_ExpirationScanFrequency(value: v);
+        }
     }
     /**
     
@@ -469,6 +491,9 @@ open class MemoryDistributedCacheOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Caching_Memory_MemoryDistributedCacheOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

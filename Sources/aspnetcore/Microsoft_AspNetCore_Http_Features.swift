@@ -22,6 +22,9 @@ open class CookieOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_CookieOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -357,6 +360,9 @@ open class IFormCollection
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IFormCollection_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -461,9 +467,6 @@ open class IFormCollection
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IFormCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IFormCollection_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -490,6 +493,9 @@ open class IFormFile
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IFormFile_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -545,13 +551,13 @@ open class IFormFile
     - Parameter target: The stream to copy the file contents to.
     - Parameter cancellationToken: 
     */
-    open func CopyToAsync(target : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func CopyToAsync(target : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IFormFile_Task__CopyToAsync_0__2__Stream_CancellationToken(&__thrown, self.get_handle(), target.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_ContentType()
@@ -641,6 +647,9 @@ open class IFormFileCollection
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IFormFileCollection_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -702,9 +711,6 @@ open class IFormFileCollection
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IFormFile get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IFormFileCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Http.IFormFile> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IFormFileCollection_IFormFile__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -739,6 +745,9 @@ open class IHeaderDictionary
     public typealias T_IEnumerable_1 = dotnet.System.Collections.Generic.KeyValuePair_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues>;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IHeaderDictionary_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2731,9 +2740,6 @@ open class IHeaderDictionary
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IHeaderDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IHeaderDictionary_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -2772,6 +2778,9 @@ open class IQueryCollection
     public typealias T_IEnumerable_1 = dotnet.System.Collections.Generic.KeyValuePair_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues>;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IQueryCollection_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2866,9 +2875,6 @@ open class IQueryCollection
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IQueryCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IQueryCollection_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -2896,6 +2902,9 @@ open class IRequestCookieCollection
     public typealias T_IEnumerable_1 = dotnet.System.Collections.Generic.KeyValuePair_2<dotnet.System.String,dotnet.System.String>;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IRequestCookieCollection_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2954,11 +2963,12 @@ open class IRequestCookieCollection
             
 
     */
-    open func TryGetValue(key : dotnet.System.String, value : inout dotnet.System.String) throws -> Bool {
+    open func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Http_IRequestCookieCollection_bool__TryGetValue_0__2__String_outString(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -2990,9 +3000,6 @@ open class IRequestCookieCollection
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IRequestCookieCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.String) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_IRequestCookieCollection_String__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -3023,6 +3030,9 @@ open class IResponseCookies
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IResponseCookies_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3072,6 +3082,7 @@ open class IResponseCookies
             return;
         }
     }
+// TODO COPE (parm span other): void Append(System.ReadOnlySpan<System.Collections.Generic.KeyValuePair<System.String,System.String>>, Microsoft.AspNetCore.Http.CookieOptions)
     // void Delete(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IResponseCookies.Delete(System.String)
     /**
@@ -3131,6 +3142,9 @@ open class ISession
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_ISession_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3150,13 +3164,13 @@ open class ISession
     - Returns: 
 
     */
-    open func LoadAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func LoadAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_ISession_Task__LoadAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CommitAsync(System.Threading.CancellationToken)
@@ -3169,13 +3183,13 @@ open class ISession
     - Returns: 
 
     */
-    open func CommitAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func CommitAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_ISession_Task__CommitAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // bool TryGetValue(System.String, ref System.Byte[])
@@ -3190,11 +3204,12 @@ open class ISession
     - Returns: The retrieved value.
 
     */
-    open func TryGetValue(key : dotnet.System.String, value : inout dotnet.System_Arr<Swift.UInt8>) throws -> Bool {
+    open func TryGetValue(key : dotnet.System.String, value : inout Optional<dotnet.System_Arr<Swift.UInt8>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Http_ISession_bool__TryGetValue_0__2__String_outu8Array(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System_Arr<Swift.UInt8>(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System_Arr<Swift.UInt8>(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -3372,6 +3387,9 @@ open class WebSocketAcceptContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_WebSocketAcceptContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3657,6 +3675,9 @@ open class IBadRequestExceptionFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IBadRequestExceptionFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3698,6 +3719,9 @@ open class IFormFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IFormFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3743,13 +3767,13 @@ open class IFormFeature
     - Returns: 
 
     */
-    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
+    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IFormFeature_System_Threading_Tasks_Task_Microsoft_AspNetCore_Http_IFormCollection___ReadFormAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_HasFormContentType()
@@ -3807,6 +3831,9 @@ open class IHttpBodyControlFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpBodyControlFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3855,6 +3882,9 @@ open class IHttpConnectionFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpConnectionFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4001,6 +4031,9 @@ open class IHttpMaxRequestBodySizeFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpMaxRequestBodySizeFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4061,6 +4094,9 @@ open class IHttpRequestBodyDetectionFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpRequestBodyDetectionFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4099,6 +4135,9 @@ open class IHttpRequestFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpRequestFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4325,6 +4364,9 @@ open class IHttpRequestIdentifierFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpRequestIdentifierFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4373,6 +4415,9 @@ open class IHttpRequestLifetimeFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpRequestLifetimeFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4441,6 +4486,9 @@ open class IHttpRequestTrailersFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpRequestTrailersFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4490,6 +4538,9 @@ open class IHttpResetFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpResetFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4535,6 +4586,9 @@ open class IHttpResponseBodyFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpResponseBodyFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4569,13 +4623,13 @@ open class IHttpResponseBodyFeature
             
 
     */
-    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IHttpResponseBodyFeature_Task__StartAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(System.String, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -4592,13 +4646,13 @@ open class IHttpResponseBodyFeature
     - Returns: 
 
     */
-    open func SendFileAsync(path : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendFileAsync(path : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IHttpResponseBodyFeature_Task__SendFileAsync_0__4__String_i64_System_Nullable_i64__CancellationToken(&__thrown, self.get_handle(), path.get_handle(), offset, (count != nil) ? System_Int64_box(count!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CompleteAsync()
@@ -4612,13 +4666,13 @@ open class IHttpResponseBodyFeature
     - Returns: 
 
     */
-    open func CompleteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func CompleteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IHttpResponseBodyFeature_Task__CompleteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.IO.Stream get_Stream()
@@ -4661,6 +4715,9 @@ open class IHttpResponseFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpResponseFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4694,7 +4751,7 @@ open class IHttpResponseFeature
         }
     }
     // delegate closure overload
-    open func OnStarting(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnStarting(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnStarting(callback: del_callback, state: state);
     }
@@ -4719,7 +4776,7 @@ open class IHttpResponseFeature
         }
     }
     // delegate closure overload
-    open func OnCompleted(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnCompleted(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnCompleted(callback: del_callback, state: state);
     }
@@ -4848,6 +4905,9 @@ open class IHttpResponseTrailersFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpResponseTrailersFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4897,6 +4957,9 @@ open class IHttpUpgradeFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpUpgradeFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4918,13 +4981,13 @@ open class IHttpUpgradeFeature
     - Returns: 
 
     */
-    open func UpgradeAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.IO.Stream> {
+    open func UpgradeAsync() async throws -> dotnet.System.IO.Stream {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IHttpUpgradeFeature_System_Threading_Tasks_Task_System_IO_Stream___UpgradeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_IsUpgradableRequest()
@@ -4956,6 +5019,9 @@ open class IHttpWebSocketFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpWebSocketFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4977,13 +5043,13 @@ open class IHttpWebSocketFeature
     - Returns: A .
 
     */
-    open func AcceptAsync(context : aspnetcore.Microsoft.AspNetCore.Http.WebSocketAcceptContext) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Net.WebSockets.WebSocket> {
+    open func AcceptAsync(context : aspnetcore.Microsoft.AspNetCore.Http.WebSocketAcceptContext) async throws -> dotnet.System.Net.WebSockets.WebSocket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IHttpWebSocketFeature_System_Threading_Tasks_Task_System_Net_WebSockets_WebSocket___AcceptAsync_0__1__WebSocketAcceptContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_IsWebSocketRequest()
@@ -5014,6 +5080,9 @@ open class IHttpsCompressionFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpsCompressionFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5064,6 +5133,9 @@ open class IItemsFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IItemsFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5112,6 +5184,9 @@ open class IQueryFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IQueryFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5162,6 +5237,9 @@ open class IRequestBodyPipeFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IRequestBodyPipeFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5199,6 +5277,9 @@ open class IRequestCookiesFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IRequestCookiesFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5249,6 +5330,9 @@ open class IResponseCookiesFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IResponseCookiesFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5287,6 +5371,9 @@ open class IServerVariablesFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IServerVariablesFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5298,9 +5385,6 @@ open class IServerVariablesFeature
 
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.Features.IServerVariablesFeature.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(variableName : dotnet.System.String) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IServerVariablesFeature_String__get_Item_0__1__String(&__thrown, self.get_handle(), variableName.get_handle());
@@ -5342,6 +5426,9 @@ open class IServiceProvidersFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5392,6 +5479,9 @@ open class ISessionFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ISessionFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5441,6 +5531,9 @@ open class ITlsConnectionFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5458,13 +5551,13 @@ open class ITlsConnectionFeature
             
 
     */
-    open func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2> {
+    open func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature_System_Threading_Tasks_Task_System_Security_Cryptography_X509Certificates_X509Certificate2___GetClientCertificateAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Security.Cryptography.X509Certificates.X509Certificate2 get_ClientCertificate()
@@ -5510,6 +5603,9 @@ open class ITlsTokenBindingFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ITlsTokenBindingFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5582,6 +5678,9 @@ open class ITrackingConsentFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ITrackingConsentFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5698,6 +5797,9 @@ open class IHttpAuthenticationFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

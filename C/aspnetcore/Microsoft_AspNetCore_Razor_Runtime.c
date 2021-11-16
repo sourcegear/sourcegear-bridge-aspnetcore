@@ -12,6 +12,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_String__get_ChecksumAlgorithm_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_String__get_Identifier_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_String__get_Identifier_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_String__get_Kind_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -121,6 +122,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Razor_Runtime._fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Razor_Runtime._fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Razor_Runtime._fp_Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_create(__thrown, __deinit);
     return ret;
 }
 

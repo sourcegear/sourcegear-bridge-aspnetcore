@@ -23,6 +23,9 @@ open class ApplicationBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_ApplicationBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider)
@@ -83,7 +86,7 @@ open class ApplicationBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
+    open /* method final */ func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate,aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -229,6 +232,9 @@ open class BindingAddress
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_BindingAddress_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -459,6 +465,9 @@ public final class DefaultHttpContext
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_DefaultHttpContext_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -939,6 +948,9 @@ open class FormCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_FormCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.Http.FormCollection Empty
@@ -1057,9 +1069,6 @@ open class FormCollection
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.FormCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_FormCollection_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -1113,6 +1122,9 @@ public final class FormCollection_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_FormCollection_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1193,6 +1205,9 @@ open class FormFile
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_FormFile_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.Stream, System.Int64, System.Int64, System.String, System.String)
@@ -1262,13 +1277,13 @@ open class FormFile
     - Parameter target: The stream to copy the file contents to.
     - Parameter cancellationToken: 
     */
-    open /* method final */ func CopyToAsync(target : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func CopyToAsync(target : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_FormFile_Task__CopyToAsync_0__2__Stream_CancellationToken(&__thrown, self.get_handle(), target.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_ContentDisposition()
@@ -1462,6 +1477,9 @@ open class FormFileCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_FormFileCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1507,9 +1525,6 @@ open class FormFileCollection
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IFormFile get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.FormFileCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(name : dotnet.System.String) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Http.IFormFile> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_FormFileCollection_IFormFile__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -1540,6 +1555,9 @@ open class HeaderDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HeaderDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1863,9 +1881,6 @@ open class HeaderDictionary
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.HeaderDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HeaderDictionary_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -1963,6 +1978,9 @@ public final class HeaderDictionary_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HeaderDictionary_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -2041,6 +2059,9 @@ open class HttpContextAccessor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HttpContextAccessor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2208,6 +2229,9 @@ open class MiddlewareFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_MiddlewareFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider)
@@ -2275,6 +2299,9 @@ open class QueryCollection
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_QueryCollection_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2449,9 +2476,6 @@ open class QueryCollection
     }
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.QueryCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_QueryCollection_StringValues__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -2502,6 +2526,9 @@ public final class QueryCollection_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_QueryCollection_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2583,13 +2610,13 @@ public struct RequestFormReaderExtensions {
     - Returns: The parsed form.
 
     */
-    public static func ReadFormAsync(request : aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, options : aspnetcore.Microsoft.AspNetCore.Http.Features.FormOptions, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
+    public static func ReadFormAsync(request : aspnetcore.Microsoft.AspNetCore.Http.HttpRequest, options : aspnetcore.Microsoft.AspNetCore.Http.Features.FormOptions, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_RequestFormReaderExtensions_System_Threading_Tasks_Task_Microsoft_AspNetCore_Http_IFormCollection___ReadFormAsync_0__3__HttpRequest_FormOptions_CancellationToken(&__thrown, request.get_handle(), options.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // RequestFormReaderExtensions
@@ -2612,13 +2639,13 @@ public struct SendFileFallback {
     - Returns: 
 
     */
-    public static func SendFileAsync(destination : dotnet.System.IO.Stream, filePath : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendFileAsync(destination : dotnet.System.IO.Stream, filePath : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_SendFileFallback_Task__SendFileAsync_0__5__Stream_String_i64_System_Nullable_i64__CancellationToken(&__thrown, destination.get_handle(), filePath.get_handle(), offset, (count != nil) ? System_Int64_box(count!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // SendFileFallback
@@ -2638,6 +2665,9 @@ open class StreamResponseBodyFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_StreamResponseBodyFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2710,13 +2740,13 @@ open class StreamResponseBodyFeature
     - Returns: 
 
     */
-    open func SendFileAsync(path : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendFileAsync(path : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_StreamResponseBodyFeature_Task__SendFileAsync_0__4__String_i64_System_Nullable_i64__CancellationToken(&__thrown, self.get_handle(), path.get_handle(), offset, (count != nil) ? System_Int64_box(count!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task StartAsync(System.Threading.CancellationToken)
@@ -2730,13 +2760,13 @@ open class StreamResponseBodyFeature
     - Returns: 
 
     */
-    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_StreamResponseBodyFeature_Task__StartAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CompleteAsync()
@@ -2750,13 +2780,13 @@ open class StreamResponseBodyFeature
     - Returns: 
 
     */
-    open func CompleteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func CompleteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_StreamResponseBodyFeature_Task__CompleteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Dispose()
@@ -2868,6 +2898,9 @@ open class DefaultSessionFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_DefaultSessionFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2930,6 +2963,9 @@ open class FormFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_FormFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3005,26 +3041,26 @@ open class FormFeature
 // docid: M:Microsoft.AspNetCore.Http.Features.FormFeature.ReadFormAsync
     /**
     */
-    open func ReadFormAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
+    open func ReadFormAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_FormFeature_System_Threading_Tasks_Task_Microsoft_AspNetCore_Http_IFormCollection___ReadFormAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.IFormCollection> ReadFormAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Http.Features.FormFeature.ReadFormAsync(System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
+    open /* method final */ func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_FormFeature_System_Threading_Tasks_Task_Microsoft_AspNetCore_Http_IFormCollection___ReadFormAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_HasFormContentType()
@@ -3097,6 +3133,9 @@ open class FormOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_FormOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3566,6 +3605,9 @@ open class HttpConnectionFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_HttpConnectionFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3764,6 +3806,9 @@ open class HttpRequestFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_HttpRequestFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4090,6 +4135,9 @@ open class HttpRequestIdentifierFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_HttpRequestIdentifierFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4152,6 +4200,9 @@ open class HttpRequestLifetimeFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_HttpRequestLifetimeFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4229,6 +4280,9 @@ open class HttpResponseFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_HttpResponseFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4262,7 +4316,7 @@ open class HttpResponseFeature
         }
     }
     // delegate closure overload
-    open func OnStarting(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnStarting(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnStarting(callback: del_callback, state: state);
     }
@@ -4280,7 +4334,7 @@ open class HttpResponseFeature
         }
     }
     // delegate closure overload
-    open func OnCompleted(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnCompleted(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnCompleted(callback: del_callback, state: state);
     }
@@ -4452,6 +4506,9 @@ open class IHttpActivityFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IHttpActivityFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4500,6 +4557,9 @@ open class ItemsFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ItemsFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4569,6 +4629,9 @@ open class QueryFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_QueryFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4658,6 +4721,9 @@ open class RequestBodyPipeFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_RequestBodyPipeFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext)
@@ -4713,6 +4779,9 @@ open class RequestCookiesFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_RequestCookiesFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4803,6 +4872,9 @@ open class RequestServicesFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_RequestServicesFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4901,6 +4973,9 @@ open class ResponseCookiesFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ResponseCookiesFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.Features.IFeatureCollection)
@@ -4983,6 +5058,9 @@ open class RouteValuesFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_RouteValuesFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5051,6 +5129,9 @@ open class ServiceProvidersFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_ServiceProvidersFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5114,6 +5195,9 @@ open class TlsConnectionFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_TlsConnectionFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5131,13 +5215,13 @@ open class TlsConnectionFeature
 // docid: M:Microsoft.AspNetCore.Http.Features.TlsConnectionFeature.GetClientCertificateAsync(System.Threading.CancellationToken)
     /**
     */
-    open /* method final */ func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2> {
+    open /* method final */ func GetClientCertificateAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_TlsConnectionFeature_System_Threading_Tasks_Task_System_Security_Cryptography_X509Certificates_X509Certificate2___GetClientCertificateAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Security.Cryptography.X509Certificates.X509Certificate2 get_ClientCertificate()
@@ -5196,6 +5280,9 @@ open class HttpAuthenticationFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_Authentication_HttpAuthenticationFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5322,8 +5409,8 @@ extension aspnetcore.Microsoft.AspNetCore.Http.HttpRequest {
 
 // EXTENSION METHOD System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.IFormCollection> ReadFormAsync(Microsoft.AspNetCore.Http.HttpRequest, Microsoft.AspNetCore.Http.Features.FormOptions, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpRequest {
-    public func ReadFormAsync(options : aspnetcore.Microsoft.AspNetCore.Http.Features.FormOptions, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Http.IFormCollection> {
-        return try aspnetcore.Microsoft.AspNetCore.Http.RequestFormReaderExtensions.ReadFormAsync(request: self, options: options, cancellationToken: cancellationToken);
+    public func ReadFormAsync(options : aspnetcore.Microsoft.AspNetCore.Http.Features.FormOptions, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.AspNetCore.Http.IFormCollection {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.RequestFormReaderExtensions.ReadFormAsync(request: self, options: options, cancellationToken: cancellationToken);
     }
 }
 

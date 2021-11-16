@@ -68,6 +68,9 @@ open class CookiePolicyOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_CookiePolicyOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -196,7 +199,7 @@ open class CookiePolicyOptions
         }
     }
     // delegate closure overload
-    open func set_CheckConsentNeeded(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> Bool) throws {
+    open func set_CheckConsentNeeded(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,Swift.Bool>(value);
         return try set_CheckConsentNeeded(value: del_value);
     }
@@ -227,7 +230,7 @@ open class CookiePolicyOptions
         }
     }
     // delegate closure overload
-    open func set_OnAppendCookie(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.CookiePolicy.AppendCookieContext>) throws -> Void) throws {
+    open func set_OnAppendCookie(value : @escaping (aspnetcore.Microsoft.AspNetCore.CookiePolicy.AppendCookieContext) throws -> Void) throws {
         let del_value = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.CookiePolicy.AppendCookieContext>(value);
         return try set_OnAppendCookie(value: del_value);
     }
@@ -258,7 +261,7 @@ open class CookiePolicyOptions
         }
     }
     // delegate closure overload
-    open func set_OnDeleteCookie(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext>) throws -> Void) throws {
+    open func set_OnDeleteCookie(value : @escaping (aspnetcore.Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext) throws -> Void) throws {
         let del_value = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.CookiePolicy.DeleteCookieContext>(value);
         return try set_OnDeleteCookie(value: del_value);
     }
@@ -381,6 +384,9 @@ open class AppendCookieContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_CookiePolicy_AppendCookieContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -619,6 +625,9 @@ open class CookiePolicyMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_CookiePolicy_CookiePolicyMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.CookiePolicyOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -730,6 +739,9 @@ open class DeleteCookieContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_CookiePolicy_DeleteCookieContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -995,7 +1007,7 @@ public struct CookiePolicyServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCookiePolicy(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddCookiePolicy(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>(configureOptions);
         return try AddCookiePolicy(services: services, configureOptions: del_configureOptions);
     }
@@ -1021,7 +1033,7 @@ public struct CookiePolicyServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCookiePolicy<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddCookiePolicy<UTService : SGBridgeGenericValue>(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions,UTService>(configureOptions);
         return try AddCookiePolicy(services: services, configureOptions: del_configureOptions);
     }
@@ -1052,7 +1064,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions.AddCookiePolicy(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddCookiePolicy(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddCookiePolicy(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions.AddCookiePolicy(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -1064,7 +1076,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions.AddCookiePolicy(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddCookiePolicy<UTService : SGBridgeGenericValue>(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions>, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddCookiePolicy<UTService : SGBridgeGenericValue>(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions, UTService) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Builder.CookiePolicyOptions,UTService>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookiePolicyServiceCollectionExtensions.AddCookiePolicy(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

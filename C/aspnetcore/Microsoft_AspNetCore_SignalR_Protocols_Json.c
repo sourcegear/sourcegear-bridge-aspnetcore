@@ -16,7 +16,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_ctor_0__1__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_SignalR_JsonHubProtocolOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL options);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__IsVersionSupported_0__1__i32)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t version);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NONNULL* _Nonnull __message_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_void__WriteMessage_0__2__HubMessage_System_Buffers_IBufferWriter_u8_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL message, SG_HNDL_NONNULL output);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_System_ReadOnlyMemory_u8___GetMessageBytes_0__1__HubMessage)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL message);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -106,7 +106,7 @@ int32_t Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__IsVersionSup
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NONNULL* _Nonnull __message_out_ptr) {
+int32_t Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE* _Nonnull __input_ref_ptr, SG_HNDL_NONNULL binder, SG_HNDL_NULLABLE* _Nonnull __message_out_ptr) {
     if (!_g_Microsoft_AspNetCore_SignalR_Protocols_Json._fp_Microsoft_AspNetCore_SignalR_Protocol_JsonHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage) {
         my_init();
     }

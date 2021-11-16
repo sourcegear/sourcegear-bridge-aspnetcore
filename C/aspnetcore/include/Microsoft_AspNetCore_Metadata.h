@@ -18,6 +18,8 @@ TYP Microsoft_AspNetCore_Authorization_IAllowAnonymous_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Authorization_IAllowAnonymous_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Authorization_IAllowAnonymous_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Authorization_IAuthorizeData_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Authorization_IAuthorizeData_String__get_Policy_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -33,6 +35,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Authorization_IAuthorizeData_String__get_A
 void Microsoft_AspNetCore_Authorization_IAuthorizeData_void__set_AuthenticationSchemes_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Authorization_IAuthorizeData_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Authorization_IAuthorizeData_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

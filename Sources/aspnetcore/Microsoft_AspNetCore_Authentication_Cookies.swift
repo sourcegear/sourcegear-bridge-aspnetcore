@@ -25,6 +25,9 @@ open class ChunkingCookieManager
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_ChunkingCookieManager_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.Int32 DefaultChunkSize
@@ -309,6 +312,9 @@ open class CookieAuthenticationEvents
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationEvents_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -489,7 +495,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnValidatePrincipal(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnValidatePrincipal(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieValidatePrincipalContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnValidatePrincipal(value: del_value);
     }
@@ -516,7 +522,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnCheckSlidingExpiration(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnCheckSlidingExpiration(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnCheckSlidingExpiration(value: del_value);
     }
@@ -543,7 +549,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnSigningIn(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnSigningIn(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningInContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnSigningIn(value: del_value);
     }
@@ -570,7 +576,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnSignedIn(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnSignedIn(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSignedInContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnSignedIn(value: del_value);
     }
@@ -597,7 +603,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnSigningOut(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnSigningOut(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieSigningOutContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnSigningOut(value: del_value);
     }
@@ -624,7 +630,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnRedirectToLogin(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRedirectToLogin(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRedirectToLogin(value: del_value);
     }
@@ -651,7 +657,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnRedirectToAccessDenied(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRedirectToAccessDenied(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRedirectToAccessDenied(value: del_value);
     }
@@ -678,7 +684,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnRedirectToLogout(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRedirectToLogout(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRedirectToLogout(value: del_value);
     }
@@ -705,7 +711,7 @@ open class CookieAuthenticationEvents
         }
     }
     // delegate closure overload
-    open func set_OnRedirectToReturnUrl(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRedirectToReturnUrl(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRedirectToReturnUrl(value: del_value);
     }
@@ -852,6 +858,9 @@ open class CookieAuthenticationHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
@@ -891,6 +900,9 @@ open class CookieAuthenticationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1172,7 +1184,17 @@ open class CookieAuthenticationOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_ExpireTimeSpan(System.TimeSpan)
+    // [IsSpecialName] void set_ExpireTimeSpan(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions.set_ExpireTimeSpan(System.TimeSpan)
+    open func set_ExpireTimeSpan(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Authentication_Cookies_CookieAuthenticationOptions_void__set_ExpireTimeSpan_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             The AccessDeniedPath property is used by the handler for the redirection target when handling ForbidAsync.
@@ -1257,7 +1279,9 @@ open class CookieAuthenticationOptions
         get {
             return try! get_ExpireTimeSpan();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_ExpireTimeSpan(System.TimeSpan)
+        set(v) {
+            return try! set_ExpireTimeSpan(value: v);
+        }
     }
     /**
     
@@ -1368,6 +1392,9 @@ open class CookieSignedInContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieSignedInContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authentication.AuthenticationProperties, Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions)
@@ -1408,6 +1435,9 @@ open class CookieSigningInContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieSigningInContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1488,6 +1518,9 @@ open class CookieSigningOutContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieSigningOutContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions, Microsoft.AspNetCore.Authentication.AuthenticationProperties, Microsoft.AspNetCore.Http.CookieOptions)
@@ -1566,9 +1599,34 @@ open class CookieSlidingExpirationContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieSlidingExpirationContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
-// TODO COPE ctor (span) .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions, Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.TimeSpan, System.TimeSpan)
+    // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions, Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.TimeSpan, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext.#ctor(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Authentication.AuthenticationScheme,Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions,Microsoft.AspNetCore.Authentication.AuthenticationTicket,System.TimeSpan,System.TimeSpan)
+    /**
+    
+            Creates a new instance of the context object.
+            
+
+    - Parameter context: 
+    - Parameter scheme: 
+    - Parameter ticket: Contains the initial values for identity and extra data
+    - Parameter elapsedTime: 
+    - Parameter remainingTime: 
+    - Parameter options: 
+    */
+    public init(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, scheme : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationScheme, options : aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions, ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket, elapsedTime : dotnet.System.TimeSpan, remainingTime : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Authentication_Cookies_CookieSlidingExpirationContext_ctor_0__6__HttpContext_AuthenticationScheme_CookieAuthenticationOptions_AuthenticationTicket_TimeSpan_TimeSpan(&__thrown, context.get_handle(), scheme.get_handle(), options.get_handle(), ticket.get_handle(), elapsedTime.get_handle(), remainingTime.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_ElapsedTime()
 // docid: M:Microsoft.AspNetCore.Authentication.Cookies.CookieSlidingExpirationContext.get_ElapsedTime
     open func get_ElapsedTime() throws -> dotnet.System.TimeSpan {
@@ -1666,6 +1724,9 @@ open class CookieValidatePrincipalContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_CookieValidatePrincipalContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1782,6 +1843,9 @@ open class ICookieManager
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_ICookieManager_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1877,6 +1941,9 @@ open class ITicketStore
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1897,13 +1964,13 @@ open class ITicketStore
     - Returns: The key that can be used to retrieve the identity later.
 
     */
-    open func StoreAsync(ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open func StoreAsync(ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket) async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_System_Threading_Tasks_Task_string___StoreAsync_0__1__AuthenticationTicket(&__thrown, self.get_handle(), ticket.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<System.String> StoreAsync(Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.Threading.CancellationToken)
@@ -1918,13 +1985,13 @@ open class ITicketStore
     - Returns: The key that can be used to retrieve the identity later.
 
     */
-    open func StoreAsync(ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open func StoreAsync(ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_System_Threading_Tasks_Task_string___StoreAsync_0__2__AuthenticationTicket_CancellationToken(&__thrown, self.get_handle(), ticket.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RenewAsync(System.String, Microsoft.AspNetCore.Authentication.AuthenticationTicket)
@@ -1939,13 +2006,13 @@ open class ITicketStore
     - Returns: 
 
     */
-    open func RenewAsync(key : dotnet.System.String, ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RenewAsync(key : dotnet.System.String, ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_Task__RenewAsync_0__2__String_AuthenticationTicket(&__thrown, self.get_handle(), key.get_handle(), ticket.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RenewAsync(System.String, Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.Threading.CancellationToken)
@@ -1961,13 +2028,13 @@ open class ITicketStore
     - Returns: 
 
     */
-    open func RenewAsync(key : dotnet.System.String, ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RenewAsync(key : dotnet.System.String, ticket : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_Task__RenewAsync_0__3__String_AuthenticationTicket_CancellationToken(&__thrown, self.get_handle(), key.get_handle(), ticket.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationTicket> RetrieveAsync(System.String)
@@ -1981,13 +2048,13 @@ open class ITicketStore
     - Returns: The identity associated with the given key, or null if not found.
 
     */
-    open func RetrieveAsync(key : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket> {
+    open func RetrieveAsync(key : dotnet.System.String) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationTicket___RetrieveAsync_0__1__String(&__thrown, self.get_handle(), key.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationTicket> RetrieveAsync(System.String, System.Threading.CancellationToken)
@@ -2002,13 +2069,13 @@ open class ITicketStore
     - Returns: The identity associated with the given key, or null if not found.
 
     */
-    open func RetrieveAsync(key : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket> {
+    open func RetrieveAsync(key : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationTicket {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_System_Threading_Tasks_Task_Microsoft_AspNetCore_Authentication_AuthenticationTicket___RetrieveAsync_0__2__String_CancellationToken(&__thrown, self.get_handle(), key.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RemoveAsync(System.String)
@@ -2022,13 +2089,13 @@ open class ITicketStore
     - Returns: 
 
     */
-    open func RemoveAsync(key : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RemoveAsync(key : dotnet.System.String) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_Task__RemoveAsync_0__1__String(&__thrown, self.get_handle(), key.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RemoveAsync(System.String, System.Threading.CancellationToken)
@@ -2043,13 +2110,13 @@ open class ITicketStore
     - Returns: 
 
     */
-    open func RemoveAsync(key : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RemoveAsync(key : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Authentication_Cookies_ITicketStore_Task__RemoveAsync_0__2__String_CancellationToken(&__thrown, self.get_handle(), key.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ITicketStore
@@ -2068,6 +2135,9 @@ open class PostConfigureCookieAuthenticationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_Cookies_PostConfigureCookieAuthenticationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2194,7 +2264,7 @@ public struct CookieExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try AddCookie(builder: builder, configureOptions: del_configureOptions);
     }
@@ -2224,7 +2294,7 @@ public struct CookieExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try AddCookie(builder: builder, authenticationScheme: authenticationScheme, configureOptions: del_configureOptions);
     }
@@ -2255,7 +2325,7 @@ public struct CookieExtensions {
         }
     }
     // delegate closure overload
-    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddCookie(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try AddCookie(builder: builder, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: del_configureOptions);
     }
@@ -2298,7 +2368,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddCookie(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddCookie(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, configureOptions: del_configureOptions);
     }
@@ -2310,7 +2380,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, authenticationScheme: authenticationScheme, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddCookie(authenticationScheme : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddCookie(authenticationScheme : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, authenticationScheme: authenticationScheme, configureOptions: del_configureOptions);
     }
@@ -2322,7 +2392,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddCookie(authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddCookie(authenticationScheme : dotnet.System.String, displayName : Optional<dotnet.System.String>, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.CookieExtensions.AddCookie(builder: self, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: del_configureOptions);
     }

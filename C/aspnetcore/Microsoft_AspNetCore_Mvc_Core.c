@@ -34,17 +34,6 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MvcAreaRouteBuilderExtensions_IRouteBuilder__MapAreaRoute_0__5__IRouteBuilder_String_String_String_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NONNULL name, SG_HNDL_NONNULL areaName, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MvcAreaRouteBuilderExtensions_IRouteBuilder__MapAreaRoute_0__6__IRouteBuilder_String_String_String_Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NONNULL name, SG_HNDL_NONNULL areaName, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults, SG_HNDL_NULLABLE constraints);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_MvcAreaRouteBuilderExtensions_IRouteBuilder__MapAreaRoute_0__7__IRouteBuilder_String_String_String_Object_Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL routeBuilder, SG_HNDL_NONNULL name, SG_HNDL_NONNULL areaName, SG_HNDL_NULLABLE template_, SG_HNDL_NULLABLE defaults, SG_HNDL_NULLABLE constraints, SG_HNDL_NULLABLE dataTokens);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ExcludeFromDescription_0__1__DelegateEndpointConventionBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray)(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray)(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_0__5__DelegateEndpointConventionBuilder_i32_Type_String_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE responseType, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesProblem_0__3__DelegateEndpointConventionBuilder_i32_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesValidationProblem_0__3__DelegateEndpointConventionBuilder_i32_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray)(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_0__4__DelegateEndpointConventionBuilder_Type_String_StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_AcceptVerbsAttribute_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_AcceptVerbsAttribute_ctor_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL method);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_AcceptVerbsAttribute_ctor_0__1__StringArray)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL methods);
@@ -244,6 +233,8 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__SetContentTypes_0__1__MediaTypeCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL contentTypes);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_MediaTypeCollection__get_ContentTypes_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_ContentTypes_0__1__MediaTypeCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_bool__get_IsOptional_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_IsOptional_0__1__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ContentResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ContentResult_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -619,10 +610,13 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL builder);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_JsonOptions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_JsonOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_JsonOptions_bool__get_AllowInputFormatterExceptionMessages_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -1113,26 +1107,33 @@ struct {
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_ApiConventionTypeMatchBehavior_get_AssignableFrom)(void);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_String__get_GroupName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_bool__get_IgnoreApi_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL contentTypes);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL contentTypes);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_Type__get_Type_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_i32__get_StatusCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ActionModel_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ActionModel_ctor_0__2__MethodInfo_System_Collections_Generic_IReadOnlyList_object_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionMethod, SG_HNDL_NONNULL attributes);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ActionModel_ctor_0__1__ActionModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL other);
@@ -1235,42 +1236,53 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL action);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL action), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_ApiExplorerModel__get_ApiExplorer_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_void__set_ApiExplorer_0__1__ApiExplorerModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL application);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL application), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_i32__get_Order_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_BindingInfo__get_BindingInfo_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_void__set_BindingInfo_0__1__BindingInfo)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_System_Collections_Generic_IReadOnlyList_object___get_Attributes_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_MemberInfo__get_MemberInfo_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL controller);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata___get_Filters_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parameter);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameter), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parameter);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameter), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_System_Collections_Generic_IDictionary_object_object___get_Properties_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_InferParameterBindingInfoConvention_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_InferParameterBindingInfoConvention_ctor_0__1__IModelMetadataProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL modelMetadataProvider);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationModels_InferParameterBindingInfoConvention_void__Apply_0__1__ActionModel)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL action);
@@ -1356,17 +1368,21 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_DefaultApplicationPartFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_get_type_handle)(TYP TFeature);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature)(TYP TFeature, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parts, GVAL feature);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature)(TYP TFeature, SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parts, GVAL feature);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_cast)(TYP TFeature, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_create)(TYP TFeature, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parts, GVAL feature), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_System_Collections_Generic_IEnumerable_System_Reflection_TypeInfo___get_Types_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_NullApplicationPartFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_NullApplicationPartFactory_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ApplicationParts_NullApplicationPartFactory_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart___GetApplicationParts_0__1__Assembly)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL assembly);
@@ -1437,21 +1453,25 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL descriptor);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator_Object__Create_0__1__ControllerContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL actionContext);
@@ -1459,6 +1479,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Controllers_ServiceBasedControllerActivator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionEventData_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionEventData_get_EventName)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Diagnostics_AfterActionEventData_ctor_0__3__ActionDescriptor_HttpContext_RouteData)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionDescriptor, SG_HNDL_NONNULL httpContext, SG_HNDL_NONNULL routeData);
@@ -1888,59 +1909,76 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_ActionContext__get_ActionContext_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_void__set_ActionContext_0__1__ActionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_ActionDescriptorCollection__get_ActionDescriptors_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL actionContext);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_get_type_handle)(TYP TResult);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult)(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, GVAL result);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult)(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, GVAL result);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_cast)(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_create)(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, GVAL result), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL returnType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value, SG_HNDL_NONNULL returnType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL returnType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value, SG_HNDL_NONNULL returnType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL candidates);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL candidates), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL actionContext, SG_HNDL_NONNULL clientError);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext, SG_HNDL_NONNULL clientError), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_bool__get_IsValueSet_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_Object__get_Value_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_void__set_Value_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_ParameterInfo__get_ParameterInfo_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_PropertyInfo__get_PropertyInfo_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_System_Nullable_i32___get_StatusCode_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_LocalRedirectResultExecutor_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_LocalRedirectResultExecutor_ctor_0__2__ILoggerFactory_IUrlHelperFactory)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL loggerFactory, SG_HNDL_NONNULL urlHelperFactory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Infrastructure_LocalRedirectResultExecutor_Task__ExecuteAsync_0__2__ActionContext_LocalRedirectResult)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL result);
@@ -2095,18 +2133,23 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL bindingSource);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL bindingSource), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL targetType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL targetType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL bindingContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL prefix);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryFormValueProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryFormValueProvider_ctor_0__3__BindingSource_System_Collections_Generic_IDictionary_string_Microsoft_Extensions_Primitives_StringValues__CultureInfo)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL bindingSource, SG_HNDL_NONNULL values, SG_HNDL_NULLABLE culture);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_JQueryFormValueProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
@@ -2607,16 +2650,21 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_MetadataDetailsProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_)(TYP TMetadataDetailsProvider, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL list);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_MetadataDetailsProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_)(TYP TMetadataDetailsProvider, SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_MetadataDetailsProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL list);
@@ -2659,9 +2707,11 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL modelType, SG_HNDL_NONNULL validatorMetadata);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL modelType, SG_HNDL_NONNULL validatorMetadata), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL actionContext, SG_HNDL_NULLABLE validationState, SG_HNDL_NONNULL prefix, SG_HNDL_NULLABLE model);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext, SG_HNDL_NULLABLE validationState, SG_HNDL_NONNULL prefix, SG_HNDL_NULLABLE model), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidatorProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_)(TYP TModelValidatorProvider, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL list);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidatorProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_)(TYP TModelValidatorProvider, SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidatorProviderExtensions_void__RemoveType_1__1__System_Collections_Generic_IList_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL list);
@@ -2703,18 +2753,22 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_System_Collections_Generic_IEnumerable_string___get_HttpMethods_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_String__get_Template_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_System_Nullable_i32___get_Order_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_String__get_Name_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_String__get_RouteKey_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_String__get_RouteValue_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint_ctor_0__1__IActionDescriptorCollectionProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionDescriptorCollectionProvider);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_KnownRouteValueConstraint_bool__Match_0__5__HttpContext_IRouter_String_RouteValueDictionary_RouteDirection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpContext, SG_HNDL_NULLABLE route, SG_HNDL_NONNULL routeKey, SG_HNDL_NONNULL values, int32_t routeDirection);
@@ -2742,6 +2796,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_Routing_UrlHelperFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ControllerLinkGeneratorExtensions_String__GetPathByAction_0__8__LinkGenerator_HttpContext_String_String_Object_System_Nullable_Microsoft_AspNetCore_Http_PathString__FragmentString_LinkOptions)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL httpContext, SG_HNDL_NULLABLE action, SG_HNDL_NULLABLE controller, SG_HNDL_NULLABLE values, SG_HNDL_NULLABLE pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ControllerLinkGeneratorExtensions_String__GetPathByAction_0__7__LinkGenerator_String_String_Object_PathString_FragmentString_LinkOptions)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL action, SG_HNDL_NONNULL controller, SG_HNDL_NULLABLE values, SG_HNDL_NONNULL pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Routing_ControllerLinkGeneratorExtensions_String__GetUriByAction_0__10__LinkGenerator_HttpContext_String_String_Object_String_System_Nullable_Microsoft_AspNetCore_Http_HostString__System_Nullable_Microsoft_AspNetCore_Http_PathString__FragmentString_LinkOptions)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL httpContext, SG_HNDL_NULLABLE action, SG_HNDL_NULLABLE controller, SG_HNDL_NULLABLE values, SG_HNDL_NULLABLE scheme, SG_HNDL_NULLABLE host, SG_HNDL_NULLABLE pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options);
@@ -2762,10 +2817,12 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_ApplicationPartManager__get_PartManager_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_IServiceCollection__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_ApplicationPartManager__get_PartManager_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_MvcCoreMvcBuilderExtensions_IMvcBuilder__AddMvcOptions_0__2__IMvcBuilder_System_Action_Microsoft_AspNetCore_Mvc_MvcOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL setupAction);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_MvcCoreMvcBuilderExtensions_IMvcBuilder__AddJsonOptions_0__2__IMvcBuilder_System_Action_Microsoft_AspNetCore_Mvc_JsonOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL configure);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_MvcCoreMvcBuilderExtensions_IMvcBuilder__AddFormatterMappings_0__2__IMvcBuilder_System_Action_Microsoft_AspNetCore_Mvc_Formatters_FormatterMappings_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL setupAction);
@@ -2999,94 +3056,6 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Builder_MvcAreaRouteBuilderExtensions_IRout
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Builder_MvcAreaRouteBuilderExtensions_IRouteBuilder__MapAreaRoute_0__7__IRouteBuilder_String_String_String_Object_Object_Object(__thrown, routeBuilder, name, areaName, template_, defaults, constraints, dataTokens);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ExcludeFromDescription_0__1__DelegateEndpointConventionBuilder(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ExcludeFromDescription_0__1__DelegateEndpointConventionBuilder) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ExcludeFromDescription_0__1__DelegateEndpointConventionBuilder(__thrown, builder);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(TResponse, __thrown, builder, statusCode, contentType, additionalContentTypes);
-    return ret;
-}
-
-SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(TYP TResponse, SG_HNDL_NULLABLE * _Nonnull __thrown) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(TResponse, __thrown);
-    return ret;
-}
-
-SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_1__4__DelegateEndpointConventionBuilder_i32_String_StringArray(____hdel, __thrown, builder, statusCode, contentType, additionalContentTypes);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_0__5__DelegateEndpointConventionBuilder_i32_Type_String_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE responseType, SG_HNDL_NULLABLE contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_0__5__DelegateEndpointConventionBuilder_i32_Type_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Produces_0__5__DelegateEndpointConventionBuilder_i32_Type_String_StringArray(__thrown, builder, statusCode, responseType, contentType, additionalContentTypes);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesProblem_0__3__DelegateEndpointConventionBuilder_i32_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesProblem_0__3__DelegateEndpointConventionBuilder_i32_String) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesProblem_0__3__DelegateEndpointConventionBuilder_i32_String(__thrown, builder, statusCode, contentType);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesValidationProblem_0__3__DelegateEndpointConventionBuilder_i32_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, int32_t statusCode, SG_HNDL_NULLABLE contentType) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesValidationProblem_0__3__DelegateEndpointConventionBuilder_i32_String) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__ProducesValidationProblem_0__3__DelegateEndpointConventionBuilder_i32_String(__thrown, builder, statusCode, contentType);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(TRequest, __thrown, builder, contentType, additionalContentTypes);
-    return ret;
-}
-
-SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(TYP TRequest, SG_HNDL_NULLABLE * _Nonnull __thrown) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_specialize_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(TRequest, __thrown);
-    return ret;
-}
-
-SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_invoke_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_1__3__DelegateEndpointConventionBuilder_String_StringArray(____hdel, __thrown, builder, contentType, additionalContentTypes);
-    return ret;
-}
-
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_0__4__DelegateEndpointConventionBuilder_Type_String_StringArray(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder, SG_HNDL_NONNULL requestType, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL additionalContentTypes) {
-    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_0__4__DelegateEndpointConventionBuilder_Type_String_StringArray) {
-        my_init();
-    }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Http_OpenApiEndpointConventionBuilderExtensions_DelegateEndpointConventionBuilder__Accepts_0__4__DelegateEndpointConventionBuilder_Type_String_StringArray(__thrown, builder, requestType, contentType, additionalContentTypes);
     return ret;
 }
 
@@ -4637,6 +4606,21 @@ void Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_ContentTypes_0__1__Med
         my_init();
     }
     _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_ContentTypes_0__1__MediaTypeCollection(__thrown, __self_h, value);
+}
+
+int32_t Microsoft_AspNetCore_Mvc_ConsumesAttribute_bool__get_IsOptional_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_bool__get_IsOptional_0__0) {
+        my_init();
+    }
+    int32_t ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_bool__get_IsOptional_0__0(__thrown, __self_h);
+    return ret;
+}
+
+void Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_IsOptional_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_IsOptional_0__1__bool) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ConsumesAttribute_void__set_IsOptional_0__1__bool(__thrown, __self_h, value);
 }
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ConsumesAttribute_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h) {
@@ -7593,6 +7577,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_cast
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder, __pdata_Microsoft_AspNetCore_Mvc_IDesignTimeMvcBuilderConfiguration_void__ConfigureMvc_0__1__IMvcBuilder, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_get_type_handle) {
         my_init();
@@ -7609,6 +7601,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_cast(SG_HNDL_N
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestFormLimitsPolicy_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_IRequestSizePolicy_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_get_type_handle) {
         my_init();
@@ -7622,6 +7622,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IRequestSizePolicy_cast(SG_HNDL_NULLABL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_IRequestSizePolicy_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_IRequestSizePolicy_create(__thrown, __deinit);
     return ret;
 }
 
@@ -11435,6 +11443,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadata
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDefaultResponseMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_get_type_handle) {
         my_init();
@@ -11456,6 +11472,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNamePro
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionGroupNameProvider_create(__thrown, __deinit);
     return ret;
 }
 
@@ -11483,6 +11507,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityPr
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionVisibilityProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_get_type_handle) {
         my_init();
@@ -11507,6 +11539,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataPr
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestFormatMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_get_type_handle) {
         my_init();
@@ -11527,6 +11567,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiRequestMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __deinit);
     return ret;
 }
 
@@ -11569,6 +11617,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvide
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentTypes), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseMetadataProvider_void__SetContentTypes_0__1__MediaTypeCollection, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_get_type_handle) {
         my_init();
@@ -11590,6 +11646,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataPro
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contentType, SG_HNDL_NONNULL objectType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, __pdata_Microsoft_AspNetCore_Mvc_ApiExplorer_IApiResponseTypeMetadataProvider_System_Collections_Generic_IReadOnlyList_string___GetSupportedContentTypes_0__2__String_Type, __deinit);
     return ret;
 }
 
@@ -12389,6 +12453,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConventio
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL action), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IActionModelConvention_void__Apply_0__1__ActionModel, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_get_type_handle) {
         my_init();
@@ -12420,6 +12492,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApiExplorerModel_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_get_type_handle) {
         my_init();
@@ -12440,6 +12520,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConv
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL application), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelConvention_void__Apply_0__1__ApplicationModel, __deinit);
     return ret;
 }
 
@@ -12481,6 +12569,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProv
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuting_0__1__ApplicationModelProviderContext, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IApplicationModelProvider_void__OnProvidersExecuted_0__1__ApplicationModelProviderContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_get_type_handle) {
         my_init();
@@ -12509,6 +12605,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_cast(SG
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IBindingModel_create(__thrown, __deinit);
     return ret;
 }
 
@@ -12552,6 +12656,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_ICommonModel_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_get_type_handle) {
         my_init();
@@ -12572,6 +12684,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConve
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IControllerModelConvention_void__Apply_0__1__ControllerModel, __deinit);
     return ret;
 }
 
@@ -12599,6 +12719,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IFilterModel_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_get_type_handle) {
         my_init();
@@ -12619,6 +12747,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseCo
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameter), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelBaseConvention_void__Apply_0__1__ParameterModelBase, __deinit);
     return ret;
 }
 
@@ -12645,6 +12781,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConven
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameter), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel, __pdata_Microsoft_AspNetCore_Mvc_ApplicationModels_IParameterModelConvention_void__Apply_0__1__ParameterModel, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_get_type_handle) {
         my_init();
@@ -12666,6 +12810,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_cast(S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationModels_IPropertyModel_create(__thrown, __deinit);
     return ret;
 }
 
@@ -13337,6 +13489,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeaturePro
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_get_type_handle(TYP TFeature) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_get_type_handle) {
         my_init();
@@ -13375,6 +13535,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeaturePro
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_create(TYP TFeature, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parts, GVAL feature), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_create(TFeature, __thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature, __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationFeatureProvider_1_void__PopulateFeature_0__2__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Mvc_ApplicationParts_ApplicationPart__TFeature, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_get_type_handle) {
         my_init();
@@ -13399,6 +13567,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypePr
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_IApplicationPartTypeProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_get_type_handle) {
         my_init();
@@ -13420,6 +13596,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferences
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0, __pdata_Microsoft_AspNetCore_Mvc_ApplicationParts_ICompilationReferencesProvider_System_Collections_Generic_IEnumerable_string___GetReferencePaths_0__0, __deinit);
     return ret;
 }
 
@@ -13974,6 +14158,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_cast(S
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_Object__Create_0__1__ControllerContext, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_void__Release_0__2__ControllerContext_Object, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivator_ValueTask__ReleaseAsync_0__2__ControllerContext_Object, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_get_type_handle) {
         my_init();
@@ -14011,6 +14203,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvide
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateActivator_0__1__ControllerActionDescriptor, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateReleaser_0__1__ControllerActionDescriptor, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerActivatorProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncReleaser_0__1__ControllerActionDescriptor, __deinit);
     return ret;
 }
 
@@ -14053,6 +14253,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL controller), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_Object__CreateController_0__1__ControllerContext, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_void__ReleaseController_0__2__ControllerContext_Object, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactory_ValueTask__ReleaseControllerAsync_0__2__ControllerContext_Object, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_get_type_handle) {
         my_init();
@@ -14090,6 +14298,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL descriptor), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerFactory_0__1__ControllerActionDescriptor, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Action_Microsoft_AspNetCore_Mvc_ControllerContext_object___CreateControllerReleaser_0__1__ControllerActionDescriptor, __cb_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor, __pdata_Microsoft_AspNetCore_Mvc_Controllers_IControllerFactoryProvider_System_Func_Microsoft_AspNetCore_Mvc_ControllerContext_object_System_Threading_Tasks_ValueTask___CreateAsyncControllerReleaser_0__1__ControllerActionDescriptor, __deinit);
     return ret;
 }
 
@@ -14145,6 +14361,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidat
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Core_Infrastructure_IAntiforgeryValidationFailedResult_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __deinit);
     return ret;
 }
 
@@ -17548,6 +17772,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionContextAccessor_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_get_type_handle) {
         my_init();
@@ -17569,6 +17801,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeP
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorChangeProvider_IChangeToken__GetChangeToken_0__0, __deinit);
     return ret;
 }
 
@@ -17596,6 +17836,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollect
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionDescriptorCollectionProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_get_type_handle) {
         my_init();
@@ -17617,6 +17865,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_ca
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionInvokerFactory_IActionInvoker__CreateInvoker_0__1__ActionContext, __deinit);
     return ret;
 }
 
@@ -17660,6 +17916,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_create(TYP TResult, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, GVAL result), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_create(TResult, __thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultExecutor_1_Task__ExecuteAsync_0__2__ActionContext_TResult, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_get_type_handle) {
         my_init();
@@ -17689,6 +17953,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL returnType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value, SG_HNDL_NONNULL returnType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_Type__GetResultDataType_0__1__Type, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionResultTypeMapper_IActionResult__Convert_0__2__Object_Type, __deinit);
     return ret;
 }
 
@@ -17724,6 +17996,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL candidates), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor___SelectCandidates_0__1__RouteContext, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IActionSelector_ActionDescriptor__SelectBestCandidate_0__2__RouteContext_System_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_get_type_handle) {
         my_init();
@@ -17740,6 +18020,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IApiBehaviorMetadata_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_get_type_handle) {
         my_init();
@@ -17753,6 +18041,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorActionResult_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __deinit);
     return ret;
 }
 
@@ -17777,6 +18073,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_cast
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext, SG_HNDL_NONNULL clientError), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IClientErrorFactory_IActionResult__GetClientError_0__2__ActionContext_IClientErrorActionResult, __deinit);
     return ret;
 }
 
@@ -17827,6 +18131,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_ICompatibilitySwitch_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_get_type_handle) {
         my_init();
@@ -17848,6 +18160,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_c
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IConvertToActionResult_IActionResult__Convert_0__0, __deinit);
     return ret;
 }
 
@@ -17875,6 +18195,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReader
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpRequestStreamReaderFactory_TextReader__CreateReader_0__2__Stream_Encoding, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_get_type_handle) {
         my_init();
@@ -17896,6 +18224,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWrite
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL stream, SG_HNDL_NONNULL encoding), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding, __pdata_Microsoft_AspNetCore_Mvc_Infrastructure_IHttpResponseStreamWriterFactory_TextWriter__CreateWriter_0__2__Stream_Encoding, __deinit);
     return ret;
 }
 
@@ -17923,6 +18259,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterD
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IParameterInfoParameterDescriptor_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_get_type_handle) {
         my_init();
@@ -17947,6 +18291,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDe
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IPropertyInfoParameterDescriptor_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_get_type_handle) {
         my_init();
@@ -17968,6 +18320,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Infrastructure_IStatusCodeActionResult_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __deinit);
     return ret;
 }
 
@@ -19186,6 +19546,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvide
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL bindingSource), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceValueProvider_IValueProvider__Filter_0__1__BindingSource, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_get_type_handle) {
         my_init();
@@ -19207,6 +19575,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_cas
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL targetType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL bindingContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_ICollectionModelBinder_bool__CanCreateInstance_0__1__Type, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext, __deinit);
     return ret;
 }
 
@@ -19234,6 +19610,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_c
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IEnumerableValueProvider_System_Collections_Generic_IDictionary_string_string___GetKeysFromPrefix_0__1__String, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_get_type_handle) {
         my_init();
@@ -19258,6 +19642,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL prefix), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IKeyRewriterValueProvider_IValueProvider__Filter_0__0, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_bool__ContainsPrefix_0__1__String, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_ValueProviderResult__GetValue_0__1__String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_get_type_handle) {
         my_init();
@@ -19279,6 +19671,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_cast(S
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderFactory_IModelBinder__CreateBinder_0__1__ModelBinderFactoryContext, __deinit);
     return ret;
 }
 
@@ -23211,6 +23611,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataP
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_get_type_handle) {
         my_init();
@@ -23224,6 +23632,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadat
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ICompositeMetadataDetailsProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IBindingMetadataProvider_void__CreateBindingMetadata_0__1__BindingMetadataProviderContext, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, __deinit);
     return ret;
 }
 
@@ -23250,6 +23666,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataP
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IDisplayMetadataProvider_void__CreateDisplayMetadata_0__1__DisplayMetadataProviderContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_get_type_handle) {
         my_init();
@@ -23263,6 +23687,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsP
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IMetadataDetailsProvider_create(__thrown, __deinit);
     return ret;
 }
 
@@ -23286,6 +23718,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetada
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_IValidationMetadataProvider_void__CreateValidationMetadata_0__1__ValidationMetadataProviderContext, __deinit);
     return ret;
 }
 
@@ -23616,6 +24056,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedM
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL modelType, SG_HNDL_NONNULL validatorMetadata), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IMetadataBasedModelValidatorProvider_bool__HasValidators_0__2__Type_System_Collections_Generic_IList_object_, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_void__CreateValidators_0__1__ModelValidatorProviderContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_get_type_handle) {
         my_init();
@@ -23636,6 +24084,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelVal
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL actionContext, SG_HNDL_NULLABLE validationState, SG_HNDL_NONNULL prefix, SG_HNDL_NULLABLE model), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IObjectModelValidator_void__Validate_0__4__ActionContext_ValidationStateDictionary_String_Object, __deinit);
     return ret;
 }
 
@@ -23959,6 +24415,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_cast(
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IActionHttpMethodProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_get_type_handle) {
         my_init();
@@ -23999,6 +24463,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_cast(SG_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteTemplateProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_get_type_handle) {
         my_init();
@@ -24031,6 +24503,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_cast(SG_HND
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IRouteValueProvider_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_get_type_handle) {
         my_init();
@@ -24052,6 +24532,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_cast(SG_HNDL_
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_Routing_IUrlHelperFactory_IUrlHelper__GetUrlHelper_0__1__ActionContext, __deinit);
     return ret;
 }
 
@@ -24271,6 +24759,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_cast(S
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Mvc_ViewFeatures_IKeepTempDataResult_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __pdata_Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext, __deinit);
+    return ret;
+}
+
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Routing_ControllerLinkGeneratorExtensions_String__GetPathByAction_0__8__LinkGenerator_HttpContext_String_String_Object_System_Nullable_Microsoft_AspNetCore_Http_PathString__FragmentString_LinkOptions(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL generator, SG_HNDL_NONNULL httpContext, SG_HNDL_NULLABLE action, SG_HNDL_NULLABLE controller, SG_HNDL_NULLABLE values, SG_HNDL_NULLABLE pathBase, SG_HNDL_NONNULL fragment, SG_HNDL_NULLABLE options) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_AspNetCore_Routing_ControllerLinkGeneratorExtensions_String__GetPathByAction_0__8__LinkGenerator_HttpContext_String_String_Object_System_Nullable_Microsoft_AspNetCore_Http_PathString__FragmentString_LinkOptions) {
         my_init();
@@ -24424,6 +24920,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IMvcBuilder_cast(SG_HND
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IMvcBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcBuilder_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_get_type_handle) {
         my_init();
@@ -24453,6 +24957,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_cast(SG
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_Core._fp_Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder_create(__thrown, __deinit);
     return ret;
 }
 

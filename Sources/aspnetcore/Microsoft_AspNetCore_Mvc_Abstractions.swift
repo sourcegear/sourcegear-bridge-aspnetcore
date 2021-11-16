@@ -22,6 +22,9 @@ open class ActionContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -248,6 +251,9 @@ open class IActionResult
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_IActionResult_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -270,13 +276,13 @@ open class IActionResult
     - Returns: A task that represents the asynchronous execute operation.
 
     */
-    open func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_IActionResult_Task__ExecuteResultAsync_0__1__ActionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IActionResult
@@ -296,6 +302,9 @@ open class IUrlHelper
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_IUrlHelper_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -462,6 +471,9 @@ open class ActionDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -885,6 +897,9 @@ open class ActionDescriptorProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_ActionDescriptorProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -937,6 +952,9 @@ open class ActionInvokerProviderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_ActionInvokerProviderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1038,6 +1056,9 @@ open class IActionDescriptorProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_IActionDescriptorProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1115,6 +1136,9 @@ open class IActionInvoker
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_IActionInvoker_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1134,13 +1158,13 @@ open class IActionInvoker
     - Returns: A  which will complete when action processing has completed.
 
     */
-    open func InvokeAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Abstractions_IActionInvoker_Task__InvokeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IActionInvoker
@@ -1161,6 +1185,9 @@ open class IActionInvokerProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_IActionInvokerProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1235,6 +1262,9 @@ open class ParameterDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Abstractions_ParameterDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1382,6 +1412,9 @@ open class ActionConstraintContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_ActionConstraintContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1522,6 +1555,9 @@ open class ActionConstraintItem
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_ActionConstraintItem_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionConstraints.IActionConstraintMetadata)
@@ -1657,6 +1693,9 @@ open class ActionConstraintProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_ActionConstraintProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.ActionConstraints.ActionConstraintItem>)
@@ -1763,6 +1802,9 @@ public final class ActionSelectorCandidate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_ActionSelectorCandidate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -1858,6 +1900,9 @@ open class IActionConstraint
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraint_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1917,6 +1962,9 @@ open class IActionConstraintFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1975,6 +2023,9 @@ open class IActionConstraintMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2001,6 +2052,9 @@ open class IActionConstraintProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ActionConstraints_IActionConstraintProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2081,6 +2135,9 @@ open class ApiDescription
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescription_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2356,6 +2413,9 @@ open class ApiDescriptionProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiDescriptionProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Mvc.Abstractions.ActionDescriptor>)
@@ -2436,6 +2496,9 @@ open class ApiParameterDescription
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterDescription_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2803,6 +2866,9 @@ open class ApiParameterRouteInfo
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiParameterRouteInfo_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2949,6 +3015,9 @@ open class ApiRequestFormat
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiRequestFormat_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3051,6 +3120,9 @@ open class ApiResponseFormat
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiResponseFormat_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3152,6 +3224,9 @@ open class ApiResponseType
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_ApiResponseType_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3372,6 +3447,9 @@ open class IApiDescriptionProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApiExplorer_IApiDescriptionProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3451,6 +3529,9 @@ open class IAllowAnonymousFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Authorization_IAllowAnonymousFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3480,6 +3561,9 @@ open class ActionExecutedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3737,6 +3821,9 @@ open class ActionExecutingContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, System.Collections.Generic.IDictionary<System.String,System.Object>, System.Object)
@@ -3865,6 +3952,9 @@ public final class ActionExecutionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ActionExecutionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext> Invoke()
@@ -3904,16 +3994,36 @@ public final class ActionExecutionDelegate
         return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
         }
     }
-    public init(_ callback : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext>) throws
+    public convenience init(_ __closure_Invoke : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback();
-                return __copy_handle(ret.get_handle());
+                let tcs : System.Threading.Tasks.TaskCompletionSource_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext> = try System.Threading.Tasks.TaskCompletionSource_1();
+                Task
+                {
+                    do
+                    {
+                    let ret = try await __closure_Invoke();
+                    try tcs.SetResult(result: ret);
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -3927,24 +4037,24 @@ public final class ActionExecutionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
-            return f(thrown);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
+            return f_interlude(thrown);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Mvc_Filters_ActionExecutionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext> Invoke()
@@ -3975,6 +4085,9 @@ open class AuthorizationFilterContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_AuthorizationFilterContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4055,6 +4168,9 @@ open class ExceptionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ExceptionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4247,6 +4363,9 @@ open class FilterContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_FilterContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>)
@@ -4330,6 +4449,9 @@ open class FilterDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_FilterDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4451,6 +4573,9 @@ open class FilterItem
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_FilterItem_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4606,6 +4731,9 @@ open class FilterProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_FilterProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.FilterItem>)
@@ -4722,6 +4850,9 @@ open class IActionFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IActionFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4786,6 +4917,9 @@ open class IAlwaysRunResultFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAlwaysRunResultFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4814,6 +4948,9 @@ open class IAsyncActionFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4837,19 +4974,19 @@ open class IAsyncActionFilter
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncActionFilter_Task__OnActionExecutionAsync_0__2__ActionExecutingContext_ActionExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnActionExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate(next);
-        return try OnActionExecutionAsync(context: context, next: del_next);
+        return try await OnActionExecutionAsync(context: context, next: del_next);
     }
 } // IAsyncActionFilter
 
@@ -4869,6 +5006,9 @@ open class IAsyncAlwaysRunResultFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncAlwaysRunResultFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4898,6 +5038,9 @@ open class IAsyncAuthorizationFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4920,13 +5063,13 @@ open class IAsyncAuthorizationFilter
             
 
     */
-    open func OnAuthorizationAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnAuthorizationAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncAuthorizationFilter_Task__OnAuthorizationAsync_0__1__AuthorizationFilterContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IAsyncAuthorizationFilter
@@ -4948,6 +5091,9 @@ open class IAsyncExceptionFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncExceptionFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4968,13 +5114,13 @@ open class IAsyncExceptionFilter
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnExceptionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ExceptionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnExceptionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ExceptionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncExceptionFilter_Task__OnExceptionAsync_0__1__ExceptionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IAsyncExceptionFilter
@@ -4996,6 +5142,9 @@ open class IAsyncResourceFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncResourceFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5023,19 +5172,19 @@ open class IAsyncResourceFilter
             
 
     */
-    open func OnResourceExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnResourceExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncResourceFilter_Task__OnResourceExecutionAsync_0__2__ResourceExecutingContext_ResourceExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnResourceExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnResourceExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutionDelegate(next);
-        return try OnResourceExecutionAsync(context: context, next: del_next);
+        return try await OnResourceExecutionAsync(context: context, next: del_next);
     }
 } // IAsyncResourceFilter
 
@@ -5055,6 +5204,9 @@ open class IAsyncResultFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5079,19 +5231,19 @@ open class IAsyncResultFilter
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnResultExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnResultExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncResultFilter_Task__OnResultExecutionAsync_0__2__ResultExecutingContext_ResultExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnResultExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnResultExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutionDelegate(next);
-        return try OnResultExecutionAsync(context: context, next: del_next);
+        return try await OnResultExecutionAsync(context: context, next: del_next);
     }
 } // IAsyncResultFilter
 
@@ -5111,6 +5263,9 @@ open class IAuthorizationFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAuthorizationFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5158,6 +5313,9 @@ open class IExceptionFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IExceptionFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5202,6 +5360,9 @@ open class IFilterContainer
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IFilterContainer_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5252,6 +5413,9 @@ open class IFilterFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IFilterFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5311,6 +5475,9 @@ open class IFilterMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5338,6 +5505,9 @@ open class IFilterProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IFilterProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5414,6 +5584,9 @@ open class IOrderedFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IOrderedFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5453,6 +5626,9 @@ open class IResourceFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IResourceFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5518,6 +5694,9 @@ open class IResultFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IResultFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5579,6 +5758,9 @@ open class ResourceExecutedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResourceExecutedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5819,6 +6001,9 @@ open class ResourceExecutingContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResourceExecutingContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.ModelBinding.IValueProviderFactory>)
@@ -5921,6 +6106,9 @@ public final class ResourceExecutionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResourceExecutionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext> Invoke()
@@ -5960,16 +6148,36 @@ public final class ResourceExecutionDelegate
         return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
         }
     }
-    public init(_ callback : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext>) throws
+    public convenience init(_ __closure_Invoke : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback();
-                return __copy_handle(ret.get_handle());
+                let tcs : System.Threading.Tasks.TaskCompletionSource_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext> = try System.Threading.Tasks.TaskCompletionSource_1();
+                Task
+                {
+                    do
+                    {
+                    let ret = try await __closure_Invoke();
+                    try tcs.SetResult(result: ret);
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -5983,24 +6191,24 @@ public final class ResourceExecutionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
-            return f(thrown);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
+            return f_interlude(thrown);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Mvc_Filters_ResourceExecutionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ResourceExecutedContext> Invoke()
@@ -6030,6 +6238,9 @@ open class ResultExecutedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResultExecutedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6273,6 +6484,9 @@ open class ResultExecutingContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResultExecutingContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, Microsoft.AspNetCore.Mvc.IActionResult, System.Object)
@@ -6409,6 +6623,9 @@ public final class ResultExecutionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_ResultExecutionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext> Invoke()
@@ -6448,16 +6665,36 @@ public final class ResultExecutionDelegate
         return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
         }
     }
-    public init(_ callback : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext>) throws
+    public convenience init(_ __closure_Invoke : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback();
-                return __copy_handle(ret.get_handle());
+                let tcs : System.Threading.Tasks.TaskCompletionSource_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext> = try System.Threading.Tasks.TaskCompletionSource_1();
+                Task
+                {
+                    do
+                    {
+                    let ret = try await __closure_Invoke();
+                    try tcs.SetResult(result: ret);
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -6471,24 +6708,24 @@ public final class ResultExecutionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
-            return f(thrown);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
+            return f_interlude(thrown);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Mvc_Filters_ResultExecutionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext> Invoke()
@@ -6522,6 +6759,9 @@ open class FormatterCollection_1<TFormatter : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_FormatterCollection_1_get_type_handle(TFormatter.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6598,6 +6838,9 @@ open class IInputFormatter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_IInputFormatter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -6642,13 +6885,13 @@ open class IInputFormatter
     - Returns: A  that on completion deserializes the request body.
 
     */
-    open func ReadAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open func ReadAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_IInputFormatter_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___ReadAsync_0__1__InputFormatterContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IInputFormatter
@@ -6670,6 +6913,9 @@ open class IInputFormatterExceptionPolicy
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_IInputFormatterExceptionPolicy_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -6708,6 +6954,9 @@ open class IOutputFormatter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -6750,13 +6999,13 @@ open class IOutputFormatter
     - Returns: A Task that serializes the value to the 's response message.
 
     */
-    open func WriteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func WriteAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_IOutputFormatter_Task__WriteAsync_0__1__OutputFormatterWriteContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IOutputFormatter
@@ -6775,6 +7024,9 @@ open class InputFormatterContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_InputFormatterContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7016,6 +7268,9 @@ open class InputFormatterException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_InputFormatterException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -7140,6 +7395,9 @@ open class InputFormatterResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult Failure()
@@ -7179,13 +7437,13 @@ open class InputFormatterResult
             
 
     */
-    open class func FailureAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open class func FailureAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___FailureAsync_0__0(&__thrown);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult Success(System.Object)
@@ -7227,13 +7485,13 @@ open class InputFormatterResult
             
 
     */
-    open class func SuccessAsync(model : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open class func SuccessAsync(model : Optional<dotnet.System.Object>) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___SuccessAsync_0__1__Object(&__thrown, model?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult NoValue()
@@ -7273,13 +7531,13 @@ open class InputFormatterResult
             
 
     */
-    open class func NoValueAsync() throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open class func NoValueAsync() async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___NoValueAsync_0__0(&__thrown);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_HasError()
@@ -7368,6 +7626,9 @@ open class OutputFormatterCanWriteContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_OutputFormatterCanWriteContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7579,6 +7840,9 @@ open class OutputFormatterWriteContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_OutputFormatterWriteContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, System.Func<System.IO.Stream,System.Text.Encoding,System.IO.TextWriter>, System.Type, System.Object)
@@ -7625,7 +7889,7 @@ open class OutputFormatterWriteContext
         }
     }
     // delegate closure overload
-    open func set_WriterFactory(value : @escaping (Optional<dotnet.System.IO.Stream>, Optional<dotnet.System.Text.Encoding>) throws -> dotnet.System.IO.TextWriter) throws {
+    open func set_WriterFactory(value : @escaping (dotnet.System.IO.Stream, dotnet.System.Text.Encoding) throws -> dotnet.System.IO.TextWriter) throws {
         let del_value = try dotnet.System.Func_3<dotnet.System.IO.Stream,dotnet.System.Text.Encoding,dotnet.System.IO.TextWriter>(value);
         return try set_WriterFactory(value: del_value);
     }
@@ -7668,6 +7932,9 @@ open class BindingInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_BindingInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7916,7 +8183,7 @@ open class BindingInfo
         }
     }
     // delegate closure overload
-    open func set_RequestPredicate(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext>) throws -> Bool) throws {
+    open func set_RequestPredicate(value : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext,Swift.Bool>(value);
         return try set_RequestPredicate(value: del_value);
     }
@@ -8044,6 +8311,9 @@ open class BindingSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_BindingSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8393,6 +8663,9 @@ open class CompositeBindingSource
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_CompositeBindingSource_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Mvc.ModelBinding.CompositeBindingSource Create(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource>, System.String)
@@ -8532,6 +8805,9 @@ public final class EnumGroupAndName
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_EnumGroupAndName_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -8640,6 +8916,9 @@ open class IBinderTypeProviderMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IBinderTypeProviderMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8681,6 +8960,9 @@ open class IBindingSourceMetadata
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IBindingSourceMetadata_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8724,6 +9006,9 @@ open class IModelBinder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8756,13 +9041,13 @@ open class IModelBinder
             
 
     */
-    open func BindModelAsync(bindingContext : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func BindModelAsync(bindingContext : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinder_Task__BindModelAsync_0__1__ModelBindingContext(&__thrown, self.get_handle(), bindingContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IModelBinder
@@ -8783,6 +9068,9 @@ open class IModelBinderProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IModelBinderProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8834,6 +9122,9 @@ open class IModelMetadataProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IModelMetadataProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -8902,6 +9193,9 @@ open class IModelNameProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IModelNameProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8944,6 +9238,9 @@ open class IPropertyFilterProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IPropertyFilterProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -8983,6 +9280,9 @@ open class IRequestPredicateProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IRequestPredicateProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -9020,6 +9320,9 @@ open class IValueProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IValueProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -9088,6 +9391,9 @@ open class IValueProviderFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -9110,13 +9416,13 @@ open class IValueProviderFactory
             to  list if applicable.
 
     */
-    open func CreateValueProviderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func CreateValueProviderAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderFactoryContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_IValueProviderFactory_Task__CreateValueProviderAsync_0__1__ValueProviderFactoryContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IValueProviderFactory
@@ -9135,6 +9441,9 @@ open class ModelBinderProviderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelBinderProviderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9285,6 +9594,9 @@ open class ModelBindingContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9621,7 +9933,7 @@ open class ModelBindingContext
         }
     }
     // delegate closure overload
-    open func set_PropertyFilter(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata>) throws -> Bool) throws {
+    open func set_PropertyFilter(value : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Swift.Bool>(value);
         return try set_PropertyFilter(value: del_value);
     }
@@ -9943,6 +10255,9 @@ public final class ModelBindingContext_NestedScope
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingContext_NestedScope_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext)
@@ -10001,6 +10316,9 @@ public final class ModelBindingResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelBindingResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -10212,6 +10530,9 @@ open class ModelError
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelError_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Exception)
@@ -10335,6 +10656,9 @@ open class ModelErrorCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelErrorCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -10401,6 +10725,9 @@ open class ModelMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11863,6 +12190,9 @@ open class ModelMetadataProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadataProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata> GetMetadataForProperties(System.Type)
@@ -12005,6 +12335,9 @@ open class ModelPropertyCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelPropertyCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata>)
@@ -12027,9 +12360,6 @@ open class ModelPropertyCollection
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ModelPropertyCollection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(propertyName : dotnet.System.String) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_ModelPropertyCollection_ModelMetadata__get_Item_0__1__String(&__thrown, self.get_handle(), propertyName.get_handle());
@@ -12061,6 +12391,9 @@ open class ModelStateDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12478,11 +12811,12 @@ open class ModelStateDictionary
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary.TryGetValue(System.String,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.String, value : inout Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_bool__TryGetValue_0__2__String_outModelStateEntry(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -12662,9 +12996,6 @@ open class ModelStateDictionary
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.String) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_ModelStateEntry__get_Item_0__1__String(&__thrown, self.get_handle(), key.get_handle());
@@ -12795,6 +13126,9 @@ public final class ModelStateDictionary_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -12896,6 +13230,9 @@ public final class ModelStateDictionary_KeyEnumerable
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_KeyEnumerable_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
@@ -12952,6 +13289,9 @@ public final class ModelStateDictionary_KeyEnumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_KeyEnumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13055,6 +13395,9 @@ public final class ModelStateDictionary_PrefixEnumerable
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_PrefixEnumerable_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, System.String)
@@ -13112,6 +13455,9 @@ public final class ModelStateDictionary_ValueEnumerable
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_ValueEnumerable_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
@@ -13168,6 +13514,9 @@ public final class ModelStateDictionary_ValueEnumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_ValueEnumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13267,6 +13616,9 @@ open class ModelStateEntry
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateEntry_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13595,6 +13947,9 @@ open class TooManyModelErrorsException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_TooManyModelErrorsException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -13632,6 +13987,9 @@ public final class ValueProviderException
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ValueProviderException_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13689,6 +14047,9 @@ open class ValueProviderFactoryContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ValueProviderFactoryContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -13774,6 +14135,9 @@ public final class ValueProviderResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_ValueProviderResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -14080,6 +14444,9 @@ open class ModelBindingMessageProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ModelBindingMessageProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Func<System.String,System.String> get_MissingBindRequiredValueAccessor()
@@ -14357,6 +14724,9 @@ public final class ModelMetadataIdentity
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_ModelMetadataIdentity_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -14803,6 +15173,9 @@ open class ClientModelValidationContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ClientModelValidationContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, System.Collections.Generic.IDictionary<System.String,System.String>)
@@ -14867,6 +15240,9 @@ open class ClientValidatorItem
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ClientValidatorItem_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15024,6 +15400,9 @@ open class ClientValidatorProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ClientValidatorProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorItem>)
@@ -15138,6 +15517,9 @@ open class IClientModelValidator
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -15182,6 +15564,9 @@ open class IClientModelValidatorProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidatorProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -15228,6 +15613,9 @@ open class IModelValidator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -15278,6 +15666,9 @@ open class IModelValidatorProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IModelValidatorProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -15325,6 +15716,9 @@ open class IPropertyValidationFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IPropertyValidationFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -15374,6 +15768,9 @@ open class IValidationStrategy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IValidationStrategy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -15422,6 +15819,9 @@ open class ModelValidationContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15515,6 +15915,9 @@ open class ModelValidationContextBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationContextBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15621,6 +16024,9 @@ open class ModelValidationResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidationResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String)
@@ -15702,6 +16108,9 @@ open class ModelValidatorProviderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ModelValidatorProviderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15824,6 +16233,9 @@ public final class ValidationEntry
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationEntry_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -15958,6 +16370,9 @@ open class ValidationStateDictionary
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationStateDictionary_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -16097,11 +16512,12 @@ open class ValidationStateDictionary
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary.TryGetValue(System.Object,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry@)
     /**
     */
-    open /* method final */ func TryGetValue(key : dotnet.System.Object, value : inout aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry) throws -> Bool {
+    open /* method final */ func TryGetValue(key : dotnet.System.Object, value : inout Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationStateDictionary_bool__TryGetValue_0__2__Object_outValidationStateEntry(&__thrown, self.get_handle(), key.get_handle(), &_tmp_out_value);
-        let _tmp2_value = aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -16155,9 +16571,6 @@ open class ValidationStateDictionary
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry get_Item(System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateDictionary.get_Item(System.Object)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.Object) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationStateEntry> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationStateDictionary_ValidationStateEntry__get_Item_0__1__Object(&__thrown, self.get_handle(), key.get_handle());
@@ -16227,6 +16640,9 @@ open class ValidationStateEntry
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidationStateEntry_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -16406,6 +16822,9 @@ open class ValidatorItem
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Validation_ValidatorItem_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -16562,6 +16981,9 @@ open class AttributeRouteInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Routing_AttributeRouteInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -16784,6 +17206,9 @@ open class UrlActionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Routing_UrlActionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -17056,6 +17481,9 @@ open class UrlRouteContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Routing_UrlRouteContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

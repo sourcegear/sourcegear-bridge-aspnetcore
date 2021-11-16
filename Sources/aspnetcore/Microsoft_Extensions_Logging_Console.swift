@@ -232,6 +232,9 @@ open class ConsoleFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_ConsoleFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 // TODO COPE (write_all_methods) (unused generic param) void Write<TState>(ref Microsoft.Extensions.Logging.Abstractions.LogEntry<TState>, Microsoft.Extensions.Logging.IExternalScopeProvider, System.IO.TextWriter)
@@ -275,8 +278,8 @@ public struct ConsoleFormatterNames {
     */
     public static var Json : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Json();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Json();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -289,8 +292,8 @@ public struct ConsoleFormatterNames {
     */
     public static var Simple : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Simple();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Simple();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -303,8 +306,8 @@ public struct ConsoleFormatterNames {
     */
     public static var Systemd : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Systemd();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Logging_Console_ConsoleFormatterNames_get_Systemd();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -324,6 +327,9 @@ open class ConsoleFormatterOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -512,6 +518,9 @@ open class ConsoleLoggerOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_ConsoleLoggerOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -806,6 +815,9 @@ open class ConsoleLoggerProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_ConsoleLoggerProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsMonitor<Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions>)
@@ -904,6 +916,9 @@ open class JsonConsoleFormatterOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_JsonConsoleFormatterOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1029,6 +1044,9 @@ open class SimpleConsoleFormatterOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Console_SimpleConsoleFormatterOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

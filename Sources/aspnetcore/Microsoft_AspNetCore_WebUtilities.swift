@@ -70,6 +70,9 @@ open class BufferedReadStream
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_BufferedReadStream_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.Stream, System.Int32)
@@ -154,13 +157,13 @@ open class BufferedReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.BufferedReadStream.FlushAsync(System.Threading.CancellationToken)
     /**
     */
-    open override func FlushAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func FlushAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_Task__FlushAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Write(System.Byte[], System.Int32, System.Int32)
@@ -180,13 +183,13 @@ open class BufferedReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.BufferedReadStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_Task__WriteAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Int32 Read(System.Byte[], System.Int32, System.Int32)
@@ -206,13 +209,13 @@ open class BufferedReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.BufferedReadStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Swift.Int32> {
+    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Swift.Int32 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_System_Threading_Tasks_Task_i32___ReadAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Byte>, System.Threading.CancellationToken)
@@ -258,13 +261,13 @@ open class BufferedReadStream
     - Returns: Returns true if the buffer is not empty; false otherwise.
 
     */
-    open func EnsureBufferedAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func EnsureBufferedAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_System_Threading_Tasks_Task_bool___EnsureBufferedAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // bool EnsureBuffered(System.Int32)
@@ -299,13 +302,13 @@ open class BufferedReadStream
     - Returns: Returns true if the minimum amount of buffered data is available; false otherwise.
 
     */
-    open func EnsureBufferedAsync(minCount : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func EnsureBufferedAsync(minCount : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_System_Threading_Tasks_Task_bool___EnsureBufferedAsync_0__2__i32_CancellationToken(&__thrown, self.get_handle(), minCount, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.String ReadLine(System.Int32)
@@ -344,13 +347,13 @@ open class BufferedReadStream
     - Returns: A line.
 
     */
-    open func ReadLineAsync(lengthLimit : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open func ReadLineAsync(lengthLimit : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_System_Threading_Tasks_Task_string___ReadLineAsync_0__2__i32_CancellationToken(&__thrown, self.get_handle(), lengthLimit, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.ArraySegment<System.Byte> get_BufferedData()
@@ -516,6 +519,9 @@ open class FileBufferingReadStream
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.Stream, System.Int32)
@@ -654,13 +660,13 @@ open class FileBufferingReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Swift.Int32> {
+    open override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Swift.Int32 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream_System_Threading_Tasks_Task_i32___ReadAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Byte>, System.Threading.CancellationToken)
@@ -693,13 +699,13 @@ open class FileBufferingReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream_Task__WriteAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void SetLength(System.Int64)
@@ -732,13 +738,13 @@ open class FileBufferingReadStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    open override func CopyToAsync(destination : dotnet.System.IO.Stream, bufferSize : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func CopyToAsync(destination : dotnet.System.IO.Stream, bufferSize : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream_Task__CopyToAsync_0__3__Stream_i32_CancellationToken(&__thrown, self.get_handle(), destination.get_handle(), bufferSize, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -951,6 +957,9 @@ public final class FileBufferingWriteStream
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Int32, System.Nullable<System.Int64>, System.Func<System.String>)
@@ -1011,13 +1020,13 @@ public final class FileBufferingWriteStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingWriteStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    public override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task_1<Swift.Int32> {
+    public override func ReadAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws -> Swift.Int32 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_System_Threading_Tasks_Task_i32___ReadAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // void Write(System.Byte[], System.Int32, System.Int32)
@@ -1037,13 +1046,13 @@ public final class FileBufferingWriteStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingWriteStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
     /**
     */
-    public override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public override func WriteAsync(buffer : dotnet.System_Arr<Swift.UInt8>, offset : Swift.Int32, count : Swift.Int32, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_Task__WriteAsync_0__4__u8Array_i32_i32_CancellationToken(&__thrown, self.get_handle(), buffer.get_handle(), offset, count, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask WriteAsync(System.ReadOnlyMemory<System.Byte>, System.Threading.CancellationToken)
@@ -1076,13 +1085,13 @@ public final class FileBufferingWriteStream
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingWriteStream.FlushAsync(System.Threading.CancellationToken)
     /**
     */
-    public override func FlushAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public override func FlushAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_Task__FlushAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void SetLength(System.Int64)
@@ -1110,13 +1119,13 @@ public final class FileBufferingWriteStream
     - Returns: A  that represents the asynchronous drain operation.
 
     */
-    public func DrainBufferAsync(destination : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public func DrainBufferAsync(destination : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_Task__DrainBufferAsync_0__2__Stream_CancellationToken(&__thrown, self.get_handle(), destination.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task DrainBufferAsync(System.IO.Pipelines.PipeWriter, System.Threading.CancellationToken)
@@ -1131,13 +1140,13 @@ public final class FileBufferingWriteStream
     - Returns: A  that represents the asynchronous drain operation.
 
     */
-    public func DrainBufferAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public func DrainBufferAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_Task__DrainBufferAsync_0__2__PipeWriter_CancellationToken(&__thrown, self.get_handle(), destination.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -1296,6 +1305,9 @@ open class FileMultipartSection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FileMultipartSection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
@@ -1444,6 +1456,9 @@ open class FormMultipartSection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FormMultipartSection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
@@ -1493,13 +1508,13 @@ open class FormMultipartSection
     - Returns: The form value
 
     */
-    open func GetValueAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open func GetValueAsync() async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FormMultipartSection_System_Threading_Tasks_Task_string___GetValueAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.WebUtilities.MultipartSection get_Section()
@@ -1564,6 +1579,9 @@ open class FormPipeReader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FormPipeReader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.Pipelines.PipeReader)
@@ -1614,13 +1632,13 @@ open class FormPipeReader
     - Returns: The collection containing the parsed HTTP form body.
 
     */
-    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.Dictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues>> {
+    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> dotnet.System.Collections.Generic.Dictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FormPipeReader_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_Dictionary_string_Microsoft_Extensions_Primitives_StringValues____ReadFormAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Int32 get_ValueCountLimit()
@@ -1748,6 +1766,9 @@ open class FormReader
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_FormReader_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1907,6 +1928,7 @@ open class FormReader
         return (__return != nil) ? (dotnet.System.Collections.Generic.KeyValuePair_2(hndl: __return!)) : nil;
         }
     }
+// TODO COPE (returns closedgeneric of nullable): System.Threading.Tasks.Task<System.Nullable<System.Collections.Generic.KeyValuePair<System.String,System.String>>> ReadNextPairAsync(System.Threading.CancellationToken)
     // System.Collections.Generic.Dictionary<System.String,Microsoft.Extensions.Primitives.StringValues> ReadForm()
 // docid: M:Microsoft.AspNetCore.WebUtilities.FormReader.ReadForm
     /**
@@ -1937,13 +1959,13 @@ open class FormReader
     - Returns: The collection containing the parsed HTTP form body.
 
     */
-    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.Dictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues>> {
+    open func ReadFormAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> dotnet.System.Collections.Generic.Dictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Primitives.StringValues> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_FormReader_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_Dictionary_string_Microsoft_Extensions_Primitives_StringValues____ReadFormAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // void Dispose()
@@ -2084,6 +2106,9 @@ open class HttpRequestStreamReader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IO.Stream, System.Text.Encoding)
@@ -2191,13 +2216,13 @@ open class HttpRequestStreamReader
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpRequestStreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)
     /**
     */
-    open override func ReadAsync(buffer : dotnet.System_Arr<dotnet.System.Char>, index : Swift.Int32, count : Swift.Int32) throws -> dotnet.System.Threading.Tasks.Task_1<Swift.Int32> {
+    open override func ReadAsync(buffer : dotnet.System_Arr<dotnet.System.Char>, index : Swift.Int32, count : Swift.Int32) async throws -> Swift.Int32 {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader_System_Threading_Tasks_Task_i32___ReadAsync_0__3__CharArray_i32_i32(&__thrown, self.get_handle(), buffer.get_handle(), index, count);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Char>, System.Threading.CancellationToken)
@@ -2217,13 +2242,13 @@ open class HttpRequestStreamReader
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpRequestStreamReader.ReadLineAsync
     /**
     */
-    open override func ReadLineAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open override func ReadLineAsync() async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader_System_Threading_Tasks_Task_string___ReadLineAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.String ReadLine()
@@ -2247,13 +2272,13 @@ open class HttpRequestStreamReader
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpRequestStreamReader.ReadToEndAsync
     /**
     */
-    open override func ReadToEndAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    open override func ReadToEndAsync() async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader_System_Threading_Tasks_Task_string___ReadToEndAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // HttpRequestStreamReader
@@ -2273,6 +2298,9 @@ open class HttpResponseStreamWriter
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2382,65 +2410,65 @@ open class HttpResponseStreamWriter
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.WriteAsync(System.Char)
     /**
     */
-    open override func WriteAsync(value : dotnet.System.Char) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteAsync(value : dotnet.System.Char) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__WriteAsync_0__1__Char(&__thrown, self.get_handle(), value.get_value());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.Char[], System.Int32, System.Int32)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)
     /**
     */
-    open func WriteAsync(values : dotnet.System_Arr<dotnet.System.Char>, index : Swift.Int32, count : Swift.Int32) throws -> dotnet.System.Threading.Tasks.Task {
+    open func WriteAsync(values : dotnet.System_Arr<dotnet.System.Char>, index : Swift.Int32, count : Swift.Int32) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__WriteAsync_0__3__CharArray_i32_i32(&__thrown, self.get_handle(), values.get_handle(), index, count);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.String)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.WriteAsync(System.String)
     /**
     */
-    open override func WriteAsync(value : Optional<dotnet.System.String>) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteAsync(value : Optional<dotnet.System.String>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__WriteAsync_0__1__String(&__thrown, self.get_handle(), value?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)
     /**
     */
-    open func WriteAsync(value : dotnet.System.ReadOnlyMemory_1<dotnet.System.Char>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func WriteAsync(value : dotnet.System.ReadOnlyMemory_1<dotnet.System.Char>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__WriteAsync_0__2__System_ReadOnlyMemory_System_Char__CancellationToken(&__thrown, self.get_handle(), value.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteLineAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)
     /**
     */
-    open func WriteLineAsync(value : dotnet.System.ReadOnlyMemory_1<dotnet.System.Char>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func WriteLineAsync(value : dotnet.System.ReadOnlyMemory_1<dotnet.System.Char>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__WriteLineAsync_0__2__System_ReadOnlyMemory_System_Char__CancellationToken(&__thrown, self.get_handle(), value.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Flush()
@@ -2460,13 +2488,13 @@ open class HttpResponseStreamWriter
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.FlushAsync
     /**
     */
-    open override func FlushAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open override func FlushAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_Task__FlushAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -2518,6 +2546,9 @@ public final class KeyValueAccumulator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_KeyValueAccumulator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2647,6 +2678,9 @@ open class MultipartReader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_MultipartReader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.Int32 DefaultHeadersCountLimit
@@ -2728,13 +2762,13 @@ open class MultipartReader
     - Returns: 
 
     */
-    open func ReadNextSectionAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection> {
+    open func ReadNextSectionAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_MultipartReader_System_Threading_Tasks_Task_Microsoft_AspNetCore_WebUtilities_MultipartSection___ReadNextSectionAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Int32 get_HeadersCountLimit()
@@ -2861,6 +2895,9 @@ open class MultipartSection
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_MultipartSection_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3133,13 +3170,13 @@ public struct MultipartSectionStreamExtensions {
     - Returns: The body steam as string
 
     */
-    public static func ReadAsStringAsync(section : aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection) throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
+    public static func ReadAsStringAsync(section : aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection) async throws -> dotnet.System.String {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_MultipartSectionStreamExtensions_System_Threading_Tasks_Task_string___ReadAsStringAsync_0__1__MultipartSection(&__thrown, section.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // MultipartSectionStreamExtensions
@@ -3294,6 +3331,9 @@ public final class QueryStringEnumerable
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -3372,6 +3412,9 @@ public final class QueryStringEnumerable_EncodedNameValuePair
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_EncodedNameValuePair_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3481,6 +3524,9 @@ public final class QueryStringEnumerable_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_WebUtilities_QueryStringEnumerable_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -3572,13 +3618,13 @@ public struct StreamHelperExtensions {
     - Parameter stream: The  to completely read.
     - Parameter cancellationToken: The token to monitor for cancellation requests.
     */
-    public static func DrainAsync(stream : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func DrainAsync(stream : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_StreamHelperExtensions_Task__DrainAsync_0__2__Stream_CancellationToken(&__thrown, stream.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -3596,13 +3642,13 @@ public struct StreamHelperExtensions {
     - Parameter limit: The maximum number of bytes to read. Throws if the  is larger than this limit.
     - Parameter cancellationToken: The token to monitor for cancellation requests.
     */
-    public static func DrainAsync(stream : dotnet.System.IO.Stream, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func DrainAsync(stream : dotnet.System.IO.Stream, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_StreamHelperExtensions_Task__DrainAsync_0__3__Stream_System_Nullable_i64__CancellationToken(&__thrown, stream.get_handle(), (limit != nil) ? System_Int64_box(limit!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Buffers.ArrayPool<System.Byte>, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -3621,13 +3667,13 @@ public struct StreamHelperExtensions {
     - Parameter limit: The maximum number of bytes to read. Throws if the  is larger than this limit.
     - Parameter cancellationToken: The token to monitor for cancellation requests.
     */
-    public static func DrainAsync(stream : dotnet.System.IO.Stream, bytePool : dotnet.System.Buffers.ArrayPool_1<Swift.UInt8>, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func DrainAsync(stream : dotnet.System.IO.Stream, bytePool : dotnet.System.Buffers.ArrayPool_1<Swift.UInt8>, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_WebUtilities_StreamHelperExtensions_Task__DrainAsync_0__4__Stream_System_Buffers_ArrayPool_u8__System_Nullable_i64__CancellationToken(&__thrown, stream.get_handle(), bytePool.get_handle(), (limit != nil) ? System_Int64_box(limit!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // StreamHelperExtensions
@@ -3859,29 +3905,29 @@ extension aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection {
 
 // EXTENSION METHOD System.Threading.Tasks.Task<System.String> ReadAsStringAsync(Microsoft.AspNetCore.WebUtilities.MultipartSection)
 extension aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSection {
-    public func ReadAsStringAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.String> {
-        return try aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSectionStreamExtensions.ReadAsStringAsync(section: self);
+    public func ReadAsStringAsync() async throws -> dotnet.System.String {
+        return try await aspnetcore.Microsoft.AspNetCore.WebUtilities.MultipartSectionStreamExtensions.ReadAsStringAsync(section: self);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Threading.CancellationToken)
 extension dotnet.System.IO.Stream {
-    public func DrainAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, cancellationToken: cancellationToken);
+    public func DrainAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Nullable<System.Int64>, System.Threading.CancellationToken)
 extension dotnet.System.IO.Stream {
-    public func DrainAsync(limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, limit: limit, cancellationToken: cancellationToken);
+    public func DrainAsync(limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, limit: limit, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Buffers.ArrayPool<System.Byte>, System.Nullable<System.Int64>, System.Threading.CancellationToken)
 extension dotnet.System.IO.Stream {
-    public func DrainAsync(bytePool : dotnet.System.Buffers.ArrayPool_1<Swift.UInt8>, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, bytePool: bytePool, limit: limit, cancellationToken: cancellationToken);
+    public func DrainAsync(bytePool : dotnet.System.Buffers.ArrayPool_1<Swift.UInt8>, limit : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(stream: self, bytePool: bytePool, limit: limit, cancellationToken: cancellationToken);
     }
 }
 

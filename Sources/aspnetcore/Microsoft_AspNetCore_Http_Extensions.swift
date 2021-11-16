@@ -195,13 +195,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_1__3__HttpResponse_UTValue_CancellationToken(UTValue.get_type_handle(), &__thrown, response.get_handle(), value.to_gval(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
@@ -219,13 +219,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_1__4__HttpResponse_UTValue_JsonSerializerOptions_CancellationToken(UTValue.get_type_handle(), &__thrown, response.get_handle(), value.to_gval(), options?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
@@ -244,13 +244,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_1__5__HttpResponse_UTValue_JsonSerializerOptions_String_CancellationToken(UTValue.get_type_handle(), &__thrown, response.get_handle(), value.to_gval(), options?.get_handle() ?? nil, contentType?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Threading.CancellationToken)
@@ -268,13 +268,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_0__4__HttpResponse_Object_Type_CancellationToken(&__thrown, response.get_handle(), value?.get_handle() ?? nil, type.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
@@ -293,13 +293,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_0__5__HttpResponse_Object_Type_JsonSerializerOptions_CancellationToken(&__thrown, response.get_handle(), value?.get_handle() ?? nil, type.get_handle(), options?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
@@ -319,13 +319,13 @@ public struct HttpResponseJsonExtensions {
     - Returns: The task object representing the asynchronous operation.
 
     */
-    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WriteAsJsonAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_HttpResponseJsonExtensions_Task__WriteAsJsonAsync_0__6__HttpResponse_Object_Type_JsonSerializerOptions_String_CancellationToken(&__thrown, response.get_handle(), value?.get_handle() ?? nil, type.get_handle(), options?.get_handle() ?? nil, contentType?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HttpResponseJsonExtensions
@@ -344,6 +344,9 @@ open class HttpValidationProblemDetails
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_HttpValidationProblemDetails_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -453,7 +456,7 @@ public struct RequestDelegateFactory {
         }
     }
     // delegate closure overload
-    public static func Create(methodInfo : dotnet.System.Reflection.MethodInfo, targetFactory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>) throws -> dotnet.System.Object, options : Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions>) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegateResult {
+    public static func Create(methodInfo : dotnet.System.Reflection.MethodInfo, targetFactory : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Object, options : Optional<aspnetcore.Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions>) throws -> aspnetcore.Microsoft.AspNetCore.Http.RequestDelegateResult {
         let del_targetFactory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,dotnet.System.Object>(targetFactory);
         return try Create(methodInfo: methodInfo, targetFactory: del_targetFactory, options: options);
     }
@@ -463,7 +466,7 @@ public struct RequestDelegateFactory {
 // type: Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions
     /**
     
-            Options for controlling the behavior of  when created using .
+            Options for controlling the behavior of the  when created using .
             
 
     */
@@ -473,6 +476,9 @@ public final class RequestDelegateFactoryOptions
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_RequestDelegateFactoryOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -539,6 +545,64 @@ public final class RequestDelegateFactoryOptions
             return;
         }
     }
+    // [IsSpecialName] bool get_ThrowOnBadRequest()
+// docid: M:Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions.get_ThrowOnBadRequest
+    public func get_ThrowOnBadRequest() throws -> Bool {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_RequestDelegateFactoryOptions_bool__get_ThrowOnBadRequest_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    // [IsSpecialName] void set_ThrowOnBadRequest(bool)
+// docid: M:Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions.set_ThrowOnBadRequest(System.Boolean)
+    public func set_ThrowOnBadRequest(value : Bool) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Http_RequestDelegateFactoryOptions_void__set_ThrowOnBadRequest_0__1__bool(&__thrown, self.get_handle(), Swift.Int32(value ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // [IsSpecialName] bool get_DisableInferBodyFromParameters()
+// docid: M:Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions.get_DisableInferBodyFromParameters
+    public func get_DisableInferBodyFromParameters() throws -> Bool {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_RequestDelegateFactoryOptions_bool__get_DisableInferBodyFromParameters_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    // [IsSpecialName] void set_DisableInferBodyFromParameters(bool)
+// docid: M:Microsoft.AspNetCore.Http.RequestDelegateFactoryOptions.set_DisableInferBodyFromParameters(System.Boolean)
+    public func set_DisableInferBodyFromParameters(value : Bool) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Http_RequestDelegateFactoryOptions_void__set_DisableInferBodyFromParameters_0__1__bool(&__thrown, self.get_handle(), Swift.Int32(value ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    /**
+    
+            Prevent the  from inferring a parameter should be bound from the request body without an attribute that implements .
+            
+
+    */
+    public var DisableInferBodyFromParameters : Bool {
+        get {
+            return try! get_DisableInferBodyFromParameters();
+        }
+        set(v) {
+            return try! set_DisableInferBodyFromParameters(value: v);
+        }
+    }
     /**
     
             The list of route parameter names that are specified for this handler.
@@ -565,6 +629,21 @@ public final class RequestDelegateFactoryOptions
         }
         set(v) {
             return try! set_ServiceProvider(value: v!);
+        }
+    }
+    /**
+    
+            Controls whether the  should throw a  in addition to
+            writing a  log when handling invalid requests.
+            
+
+    */
+    public var ThrowOnBadRequest : Bool {
+        get {
+            return try! get_ThrowOnBadRequest();
+        }
+        set(v) {
+            return try! set_ThrowOnBadRequest(value: v);
         }
     }
 } // RequestDelegateFactoryOptions
@@ -630,13 +709,13 @@ public struct SendFileResponseExtensions {
     - Parameter file: The file.
     - Parameter cancellationToken: The .
     */
-    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_SendFileResponseExtensions_Task__SendFileAsync_0__3__HttpResponse_IFileInfo_CancellationToken(&__thrown, response.get_handle(), file.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, Microsoft.Extensions.FileProviders.IFileInfo, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -654,13 +733,13 @@ public struct SendFileResponseExtensions {
     - Returns: 
 
     */
-    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_SendFileResponseExtensions_Task__SendFileAsync_0__5__HttpResponse_IFileInfo_i64_System_Nullable_i64__CancellationToken(&__thrown, response.get_handle(), file.get_handle(), offset, (count != nil) ? System_Int64_box(count!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Threading.CancellationToken)
@@ -676,13 +755,13 @@ public struct SendFileResponseExtensions {
     - Returns: 
 
     */
-    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, fileName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, fileName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_SendFileResponseExtensions_Task__SendFileAsync_0__3__HttpResponse_String_CancellationToken(&__thrown, response.get_handle(), fileName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -700,13 +779,13 @@ public struct SendFileResponseExtensions {
     - Returns: 
 
     */
-    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, fileName : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendFileAsync(response : aspnetcore.Microsoft.AspNetCore.Http.HttpResponse, fileName : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_SendFileResponseExtensions_Task__SendFileAsync_0__5__HttpResponse_String_i64_System_Nullable_i64__CancellationToken(&__thrown, response.get_handle(), fileName.get_handle(), offset, (count != nil) ? System_Int64_box(count!) : nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // SendFileResponseExtensions
@@ -822,6 +901,69 @@ public struct SessionExtensions {
 } // SessionExtensions
 
 
+// type: Microsoft.AspNetCore.Http.TagsAttribute
+    /**
+    
+            Specifies a collection of tags in .
+            
+
+    */
+public final class TagsAttribute
+    :
+    dotnet.System.Attribute,
+    Microsoft_AspNetCore_Http_Metadata_ITagsMetadata
+{
+    public class override func get_type_handle() -> TypeHandle {
+        return Microsoft_AspNetCore_Http_TagsAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
+    public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
+    public required init(gval: GVal) { super.init(gval: gval); }
+    // .ctor(System.String[])
+// docid: M:Microsoft.AspNetCore.Http.TagsAttribute.#ctor(System.String[])
+    /**
+    
+            Initializes an instance of the .
+            
+
+    - Parameter tags: The tags associated with the endpoint.
+    */
+    public init(tags : dotnet.System_Arr<dotnet.System.String>) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Http_TagsAttribute_ctor_0__1__StringArray(&__thrown, tags.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
+    // [IsSpecialName] System.Collections.Generic.IReadOnlyList<System.String> get_Tags()
+// docid: M:Microsoft.AspNetCore.Http.TagsAttribute.get_Tags
+    public func get_Tags() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_TagsAttribute_System_Collections_Generic_IReadOnlyList_string___get_Tags_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.Collections.Generic.IReadOnlyList_1(hndl : __return);
+        }
+    }
+    /**
+    
+            Gets the collection of tags associated with the endpoint.
+            
+
+    */
+    public var Tags : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
+        get {
+            return try! get_Tags();
+        }
+    }
+} // TagsAttribute
+
+
 }
 // Microsoft.AspNetCore.Http.Extensions
 extension Microsoft.AspNetCore.Http.Extensions {
@@ -864,6 +1006,9 @@ open class QueryBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Extensions_QueryBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1046,13 +1191,13 @@ public struct StreamCopyOperation {
     - Returns: A task that represents the asynchronous copy operation.
 
     */
-    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : dotnet.System.IO.Stream, count : Optional<Swift.Int64>, cancel : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : dotnet.System.IO.Stream, count : Optional<Swift.Int64>, cancel : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Extensions_StreamCopyOperation_Task__CopyToAsync_0__4__Stream_Stream_System_Nullable_i64__CancellationToken(&__thrown, source.get_handle(), destination.get_handle(), (count != nil) ? System_Int64_box(count!) : nil, cancel.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CopyToAsync(System.IO.Stream, System.IO.Stream, System.Nullable<System.Int64>, System.Int32, System.Threading.CancellationToken)
@@ -1068,13 +1213,13 @@ public struct StreamCopyOperation {
     - Returns: A task that represents the asynchronous copy operation.
 
     */
-    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : dotnet.System.IO.Stream, count : Optional<Swift.Int64>, bufferSize : Swift.Int32, cancel : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : dotnet.System.IO.Stream, count : Optional<Swift.Int64>, bufferSize : Swift.Int32, cancel : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Extensions_StreamCopyOperation_Task__CopyToAsync_0__5__Stream_Stream_System_Nullable_i64__i32_CancellationToken(&__thrown, source.get_handle(), destination.get_handle(), (count != nil) ? System_Int64_box(count!) : nil, bufferSize, cancel.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // StreamCopyOperation
@@ -1274,6 +1419,9 @@ open class RequestHeaders
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Headers_RequestHeaders_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.IHeaderDictionary)
@@ -1325,9 +1473,9 @@ open class RequestHeaders
     - Parameter name: The header name.
     - Parameter values: The sequence of header values.
     */
-    open func SetList<UT : SGBridgeGenericValue>(name : dotnet.System.String, values : dotnet.System.Collections.Generic.IList_1<UT>) throws {
+    open func SetList<UT : SGBridgeGenericValue>(name : dotnet.System.String, values : Optional<dotnet.System.Collections.Generic.IList_1<UT>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Http_Headers_RequestHeaders_void__SetList_1__2__String_System_Collections_Generic_IList_UT_(UT.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), nil);
+        Microsoft_AspNetCore_Http_Headers_RequestHeaders_void__SetList_1__2__String_System_Collections_Generic_IList_UT_(UT.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), (values?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2195,6 +2343,9 @@ open class ResponseHeaders
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Headers_ResponseHeaders_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.IHeaderDictionary)
@@ -2246,9 +2397,9 @@ open class ResponseHeaders
     - Parameter name: The header name.
     - Parameter values: The sequence of header values.
     */
-    open func SetList<UT : SGBridgeGenericValue>(name : dotnet.System.String, values : dotnet.System.Collections.Generic.IList_1<UT>) throws {
+    open func SetList<UT : SGBridgeGenericValue>(name : dotnet.System.String, values : Optional<dotnet.System.Collections.Generic.IList_1<UT>>) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Http_Headers_ResponseHeaders_void__SetList_1__2__String_System_Collections_Generic_IList_UT_(UT.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), nil);
+        Microsoft_AspNetCore_Http_Headers_ResponseHeaders_void__SetList_1__2__String_System_Collections_Generic_IList_UT_(UT.get_type_handle(), &__thrown, self.get_handle(), name.get_handle(), (values?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2757,6 +2908,9 @@ open class JsonOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Json_JsonOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2813,6 +2967,9 @@ open class ProblemDetails
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ProblemDetails_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3146,43 +3303,43 @@ extension aspnetcore.Microsoft.AspNetCore.Http.HttpRequest {
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, options: options, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, options: options, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, options: options, contentType: contentType, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync<UTValue : SGBridgeGenericValue>(value : UTValue, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, options: options, contentType: contentType, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, options: options, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, options: options, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, options: options, contentType: contentType, cancellationToken: cancellationToken);
+    public func WriteAsJsonAsync(value : Optional<dotnet.System.Object>, type : dotnet.System.Type_, options : Optional<dotnet.System.Text.Json.JsonSerializerOptions>, contentType : Optional<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.HttpResponseJsonExtensions.WriteAsJsonAsync(response: self, value: value, type: type, options: options, contentType: contentType, cancellationToken: cancellationToken);
     }
 }
 
@@ -3202,29 +3359,29 @@ extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, Microsoft.Extensions.FileProviders.IFileInfo, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func SendFileAsync(file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, file: file, cancellationToken: cancellationToken);
+    public func SendFileAsync(file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, file: file, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, Microsoft.Extensions.FileProviders.IFileInfo, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func SendFileAsync(file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, file: file, offset: offset, count: count, cancellationToken: cancellationToken);
+    public func SendFileAsync(file : aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, file: file, offset: offset, count: count, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func SendFileAsync(fileName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, fileName: fileName, cancellationToken: cancellationToken);
+    public func SendFileAsync(fileName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, fileName: fileName, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
 extension aspnetcore.Microsoft.AspNetCore.Http.HttpResponse {
-    public func SendFileAsync(fileName : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, fileName: fileName, offset: offset, count: count, cancellationToken: cancellationToken);
+    public func SendFileAsync(fileName : dotnet.System.String, offset : Swift.Int64, count : Optional<Swift.Int64>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsync(response: self, fileName: fileName, offset: offset, count: count, cancellationToken: cancellationToken);
     }
 }
 

@@ -288,7 +288,6 @@ extension Microsoft.AspNetCore.Server.Kestrel.Core { public struct Internal { } 
 extension Microsoft.AspNetCore.Server.Kestrel.Core.Internal { public struct Http { } }
 extension Microsoft.AspNetCore.Server.Kestrel { public struct Https { } }
 extension Microsoft.AspNetCore.Server.Kestrel { public struct Transport { } }
-extension Microsoft.AspNetCore.Server.Kestrel.Transport { public struct Quic { } }
 extension Microsoft.AspNetCore.Server.Kestrel.Transport { public struct Sockets { } }
 extension Microsoft.AspNetCore { public struct Session { } }
 extension Microsoft.AspNetCore { public struct SignalR { } }

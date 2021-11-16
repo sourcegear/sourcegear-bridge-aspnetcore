@@ -80,6 +80,9 @@ open class ChainedConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ChainedConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.ChainedConfigurationSource)
@@ -211,11 +214,12 @@ open class ChainedConfigurationProvider
     - Returns: True if a value for the specified key was found, otherwise false.
 
     */
-    open /* method final */ func TryGet(key : Optional<dotnet.System.String>, value : inout dotnet.System.String) throws -> Bool {
+    open /* method final */ func TryGet(key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Configuration_ChainedConfigurationProvider_bool__TryGet_0__2__String_outString(&__thrown, self.get_handle(), key?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -240,6 +244,9 @@ open class ChainedConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ChainedConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -373,6 +380,9 @@ open class ConfigurationBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -504,6 +514,9 @@ open class ConfigurationKeyComparer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationKeyComparer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -586,6 +599,9 @@ public final class ConfigurationManager
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationManager_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -654,9 +670,6 @@ public final class ConfigurationManager
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.Extensions.Configuration.ConfigurationManager.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(key : Optional<dotnet.System.String>) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Configuration_ConfigurationManager_String__get_Item_0__1__String(&__thrown, self.get_handle(), key?.get_handle() ?? nil);
@@ -698,6 +711,9 @@ open class ConfigurationProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -820,11 +836,12 @@ open class ConfigurationProvider
     - Returns: True if key has a value, false otherwise.
 
     */
-    open func TryGet(key : Optional<dotnet.System.String>, value : inout dotnet.System.String) throws -> Bool {
+    open func TryGet(key : Optional<dotnet.System.String>, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Configuration_ConfigurationProvider_bool__TryGet_0__2__String_outString(&__thrown, self.get_handle(), key?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -849,6 +866,9 @@ open class ConfigurationReloadToken
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationReloadToken_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -974,6 +994,9 @@ open class ConfigurationRoot
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationRoot_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1112,9 +1135,6 @@ open class ConfigurationRoot
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.Extensions.Configuration.ConfigurationRoot.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : Optional<dotnet.System.String>) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Configuration_ConfigurationRoot_String__get_Item_0__1__String(&__thrown, self.get_handle(), key?.get_handle() ?? nil);
@@ -1168,6 +1188,9 @@ open class ConfigurationSection
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_ConfigurationSection_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1318,9 +1341,6 @@ open class ConfigurationSection
     }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.Extensions.Configuration.ConfigurationSection.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : Optional<dotnet.System.String>) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Configuration_ConfigurationSection_String__get_Item_0__1__String(&__thrown, self.get_handle(), key?.get_handle() ?? nil);
@@ -1452,6 +1472,9 @@ open class StreamConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_StreamConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.StreamConfigurationSource)
@@ -1551,6 +1574,9 @@ open class StreamConfigurationSource
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_StreamConfigurationSource_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.Extensions.Configuration.IConfigurationProvider Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)
@@ -1638,6 +1664,9 @@ open class MemoryConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Memory_MemoryConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource)
@@ -1717,6 +1746,9 @@ open class MemoryConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Memory_MemoryConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

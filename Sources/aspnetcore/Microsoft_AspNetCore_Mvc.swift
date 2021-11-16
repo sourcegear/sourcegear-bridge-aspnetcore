@@ -52,7 +52,7 @@ public struct MvcServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddMvc(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddMvc(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(setupAction);
         return try AddMvc(services: services, setupAction: del_setupAction);
     }
@@ -100,7 +100,7 @@ public struct MvcServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddControllers(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddControllers(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(configure);
         return try AddControllers(services: services, configure: del_configure);
     }
@@ -148,7 +148,7 @@ public struct MvcServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddControllersWithViews(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddControllersWithViews(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(configure);
         return try AddControllersWithViews(services: services, configure: del_configure);
     }
@@ -194,7 +194,7 @@ public struct MvcServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRazorPages(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddRazorPages(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(configure);
         return try AddRazorPages(services: services, configure: del_configure);
     }
@@ -218,7 +218,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddMvc(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddMvc(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddMvc(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddMvc(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -237,7 +237,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddControllers(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddControllers(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllers(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -256,7 +256,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersWithViews(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddControllersWithViews(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddControllersWithViews(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.MvcOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddControllersWithViews(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -275,7 +275,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddRazorPages(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func AddRazorPages(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddRazorPages(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(configure);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddRazorPages(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }

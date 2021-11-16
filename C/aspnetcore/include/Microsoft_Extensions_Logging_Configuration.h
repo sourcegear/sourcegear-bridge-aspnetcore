@@ -20,6 +20,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfi
 
 SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE providerType), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_get_type_handle(TYP T);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_IConfiguration__get_Configuration_0__0(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -29,6 +31,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Logging_Configuration_ILoggerPro
 SG_HNDL_NULLABLE invoke_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_IConfiguration__get_Configuration_0__0(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_cast(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_create(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 void Microsoft_Extensions_Logging_Configuration_LoggerProviderOptions_void__RegisterProviderOptions_2__1__IServiceCollection(TYP TOptions, TYP TProvider, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE services);
 

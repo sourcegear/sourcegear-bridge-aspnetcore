@@ -22,6 +22,9 @@ open class DelegateStartup
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_DelegateStartup_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<Microsoft.Extensions.DependencyInjection.IServiceCollection>, System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
@@ -78,6 +81,9 @@ open class StartupBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_StartupBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -154,6 +160,9 @@ open class StartupBase_1<TBuilder : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_StartupBase_1_get_type_handle(TBuilder.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<TBuilder>)
@@ -229,6 +238,9 @@ open class WebHostBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_WebHostBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -312,7 +324,7 @@ open class WebHostBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func ConfigureServices(configureServices : @escaping (Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open /* method final */ func ConfigureServices(configureServices : @escaping (aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureServices = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>(configureServices);
         return try ConfigureServices(configureServices: del_configureServices);
     }
@@ -338,7 +350,7 @@ open class WebHostBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func ConfigureServices(configureServices : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open /* method final */ func ConfigureServices(configureServices : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureServices = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>(configureServices);
         return try ConfigureServices(configureServices: del_configureServices);
     }
@@ -363,7 +375,7 @@ open class WebHostBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func ConfigureAppConfiguration(configureDelegate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open /* method final */ func ConfigureAppConfiguration(configureDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureDelegate = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>(configureDelegate);
         return try ConfigureAppConfiguration(configureDelegate: del_configureDelegate);
     }
@@ -411,7 +423,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Configure(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureApp : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func Configure(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureApp : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureApp = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configureApp);
         return try Configure(hostBuilder: hostBuilder, configureApp: del_configureApp);
     }
@@ -437,7 +449,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Configure(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureApp : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func Configure(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureApp : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureApp = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configureApp);
         return try Configure(hostBuilder: hostBuilder, configureApp: del_configureApp);
     }
@@ -463,7 +475,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseStartup<UTStartup : SGBridgeGenericValue>(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, startupFactory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseStartup<UTStartup : SGBridgeGenericValue>(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, startupFactory : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_startupFactory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,UTStartup>(startupFactory);
         return try UseStartup(hostBuilder: hostBuilder, startupFactory: del_startupFactory);
     }
@@ -511,7 +523,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseDefaultServiceProvider(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseDefaultServiceProvider(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configure : @escaping (aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>(configure);
         return try UseDefaultServiceProvider(hostBuilder: hostBuilder, configure: del_configure);
     }
@@ -537,7 +549,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func UseDefaultServiceProvider(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseDefaultServiceProvider(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configure = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>(configure);
         return try UseDefaultServiceProvider(hostBuilder: hostBuilder, configure: del_configure);
     }
@@ -563,7 +575,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureAppConfiguration(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureDelegate : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func ConfigureAppConfiguration(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureDelegate : @escaping (aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureDelegate = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>(configureDelegate);
         return try ConfigureAppConfiguration(hostBuilder: hostBuilder, configureDelegate: del_configureDelegate);
     }
@@ -589,7 +601,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureLogging(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureLogging : @escaping (Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func ConfigureLogging(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureLogging : @escaping (aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureLogging = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>(configureLogging);
         return try ConfigureLogging(hostBuilder: hostBuilder, configureLogging: del_configureLogging);
     }
@@ -615,7 +627,7 @@ public struct WebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureLogging(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureLogging : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func ConfigureLogging(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureLogging : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureLogging = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>(configureLogging);
         return try ConfigureLogging(hostBuilder: hostBuilder, configureLogging: del_configureLogging);
     }
@@ -645,7 +657,28 @@ public struct WebHostBuilderExtensions {
 
 // type: Microsoft.AspNetCore.Hosting.WebHostExtensions
 public struct WebHostExtensions {
-// TODO COPE (write_all_methods) (span) System.Threading.Tasks.Task StopAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.TimeSpan)
+    // System.Threading.Tasks.Task StopAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Hosting.WebHostExtensions.StopAsync(Microsoft.AspNetCore.Hosting.IWebHost,System.TimeSpan)
+    /**
+    
+            Attempts to gracefully stop the host with the given timeout.
+            
+
+    - Parameter host: 
+    - Parameter timeout: The timeout for stopping gracefully. Once expired the
+            server may terminate any remaining active connections.
+    - Returns: A  that completes when the  stops.
+
+    */
+    public static func StopAsync(host : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost, timeout : dotnet.System.TimeSpan) async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Hosting_WebHostExtensions_Task__StopAsync_0__2__IWebHost_TimeSpan(&__thrown, host.get_handle(), timeout.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
     // void WaitForShutdown(Microsoft.AspNetCore.Hosting.IWebHost)
 // docid: M:Microsoft.AspNetCore.Hosting.WebHostExtensions.WaitForShutdown(Microsoft.AspNetCore.Hosting.IWebHost)
     /**
@@ -676,13 +709,13 @@ public struct WebHostExtensions {
     - Returns: A  that completes when shutdown is triggered via Ctrl+C or SIGTERM.
 
     */
-    public static func WaitForShutdownAsync(host : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost, token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func WaitForShutdownAsync(host : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost, token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_WebHostExtensions_Task__WaitForShutdownAsync_0__2__IWebHost_CancellationToken(&__thrown, host.get_handle(), token.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Run(Microsoft.AspNetCore.Hosting.IWebHost)
@@ -713,13 +746,13 @@ public struct WebHostExtensions {
     - Parameter host: The  to run.
     - Parameter token: The token to trigger shutdown.
     */
-    public static func RunAsync(host : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost, token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func RunAsync(host : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost, token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_WebHostExtensions_Task__RunAsync_0__2__IWebHost_CancellationToken(&__thrown, host.get_handle(), token.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // WebHostExtensions
@@ -742,6 +775,9 @@ open class ApplicationBuilderFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Builder_ApplicationBuilderFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -801,6 +837,9 @@ open class IApplicationBuilderFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Builder_IApplicationBuilderFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -853,6 +892,9 @@ open class ISupportsConfigureWebHost
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsConfigureWebHost_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -884,7 +926,7 @@ open class ISupportsConfigureWebHost
         }
     }
     // delegate closure overload
-    open func ConfigureWebHost(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>) throws -> Void, configureOptions : @escaping (Optional<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
+    open func ConfigureWebHost(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder) throws -> Void, configureOptions : @escaping (aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>(configure);
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>(configureOptions);
         return try ConfigureWebHost(configure: del_configure, configureOptions: del_configureOptions);
@@ -909,6 +951,9 @@ open class ISupportsStartup
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -918,6 +963,31 @@ open class ISupportsStartup
 
     deinit { __drop_handle(self.h); }
 
+    // Microsoft.AspNetCore.Hosting.IWebHostBuilder Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
+// docid: M:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup.Configure(System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder})
+    /**
+    
+            Specify the startup method to be used to configure the web application.
+            
+
+    - Parameter configure: The delegate that configures the .
+    - Returns: The .
+
+    */
+    open func Configure(configure : dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Hosting_Infrastructure_ISupportsStartup_IWebHostBuilder__Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_(&__thrown, self.get_handle(), configure.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl : __return);
+        }
+    }
+    // delegate closure overload
+    open func Configure(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+        let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configure);
+        return try Configure(configure: del_configure);
+    }
     // Microsoft.AspNetCore.Hosting.IWebHostBuilder Configure(System.Action<Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Builder.IApplicationBuilder>)
 // docid: M:Microsoft.AspNetCore.Hosting.Infrastructure.ISupportsStartup.Configure(System.Action{Microsoft.AspNetCore.Hosting.WebHostBuilderContext,Microsoft.AspNetCore.Builder.IApplicationBuilder})
     /**
@@ -939,7 +1009,7 @@ open class ISupportsStartup
         }
     }
     // delegate closure overload
-    open func Configure(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open func Configure(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configure = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configure);
         return try Configure(configure: del_configure);
     }
@@ -984,7 +1054,7 @@ open class ISupportsStartup
         }
     }
     // delegate closure overload
-    open func UseStartup<UTStartup : SGBridgeGenericValue>(startupFactory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open func UseStartup<UTStartup : SGBridgeGenericValue>(startupFactory : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_startupFactory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,UTStartup>(startupFactory);
         return try UseStartup(startupFactory: del_startupFactory);
     }
@@ -1010,6 +1080,9 @@ open class ServerAddressesFeature
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_Features_ServerAddressesFeature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1096,6 +1169,9 @@ open class StaticWebAssetsLoader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_StaticWebAssets_StaticWebAssetsLoader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1150,6 +1226,9 @@ open class DefaultHttpContextFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_DefaultHttpContextFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1241,7 +1320,7 @@ public struct GenericHostWebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureWebHost(builder : aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
+    public static func ConfigureWebHost(builder : aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>(configure);
         return try ConfigureWebHost(builder: builder, configure: del_configure);
     }
@@ -1268,7 +1347,7 @@ public struct GenericHostWebHostBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureWebHost(builder : aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>) throws -> Void, configureWebHostBuilder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
+    public static func ConfigureWebHost(builder : aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder) throws -> Void, configureWebHostBuilder : @escaping (aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>(configure);
         let del_configureWebHostBuilder = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>(configureWebHostBuilder);
         return try ConfigureWebHost(builder: builder, configure: del_configure, configureWebHostBuilder: del_configureWebHostBuilder);
@@ -1289,6 +1368,9 @@ open class WebHostBuilderOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_WebHostBuilderOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1371,7 +1453,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.Configure(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureApp: configureApp);
     }
     // delegate closure overload
-    public func Configure(configureApp : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func Configure(configureApp : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureApp = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configureApp);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.Configure(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureApp: del_configureApp);
     }
@@ -1383,7 +1465,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.Configure(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureApp: configureApp);
     }
     // delegate closure overload
-    public func Configure(configureApp : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func Configure(configureApp : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureApp = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(configureApp);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.Configure(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureApp: del_configureApp);
     }
@@ -1395,7 +1477,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), startupFactory: startupFactory);
     }
     // delegate closure overload
-    public func UseStartup<UTStartup : SGBridgeGenericValue>(startupFactory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseStartup<UTStartup : SGBridgeGenericValue>(startupFactory : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext) throws -> UTStartup) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_startupFactory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,UTStartup>(startupFactory);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseStartup(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), startupFactory: del_startupFactory);
     }
@@ -1417,7 +1499,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseDefaultServiceProvider(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func UseDefaultServiceProvider(configure : @escaping (Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseDefaultServiceProvider(configure : @escaping (aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseDefaultServiceProvider(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1429,7 +1511,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseDefaultServiceProvider(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func UseDefaultServiceProvider(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseDefaultServiceProvider(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configure = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceProviderOptions>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.UseDefaultServiceProvider(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1441,7 +1523,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureAppConfiguration(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureDelegate: configureDelegate);
     }
     // delegate closure overload
-    public func ConfigureAppConfiguration(configureDelegate : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func ConfigureAppConfiguration(configureDelegate : @escaping (aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureDelegate = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>(configureDelegate);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureAppConfiguration(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureDelegate: del_configureDelegate);
     }
@@ -1453,7 +1535,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureLogging(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureLogging: configureLogging);
     }
     // delegate closure overload
-    public func ConfigureLogging(configureLogging : @escaping (Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func ConfigureLogging(configureLogging : @escaping (aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureLogging = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>(configureLogging);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureLogging(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureLogging: del_configureLogging);
     }
@@ -1465,7 +1547,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureLogging(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureLogging: configureLogging);
     }
     // delegate closure overload
-    public func ConfigureLogging(configureLogging : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func ConfigureLogging(configureLogging : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureLogging = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.Logging.ILoggingBuilder>(configureLogging);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderExtensions.ConfigureLogging(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureLogging: del_configureLogging);
     }
@@ -1479,7 +1561,11 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task StopAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.TimeSpan)
-// TODO COPE extension method (span) System.Threading.Tasks.Task StopAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.TimeSpan)
+extension Microsoft_AspNetCore_Hosting_IWebHost {
+    public func StopAsync(timeout : dotnet.System.TimeSpan) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Hosting.WebHostExtensions.StopAsync(host: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost(hndl: __copy_handle(self.get_handle())), timeout: timeout);
+    }
+}
 
 // EXTENSION METHOD void WaitForShutdown(Microsoft.AspNetCore.Hosting.IWebHost)
 extension Microsoft_AspNetCore_Hosting_IWebHost {
@@ -1490,8 +1576,8 @@ extension Microsoft_AspNetCore_Hosting_IWebHost {
 
 // EXTENSION METHOD System.Threading.Tasks.Task WaitForShutdownAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_Hosting_IWebHost {
-    public func WaitForShutdownAsync(token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostExtensions.WaitForShutdownAsync(host: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost(hndl: __copy_handle(self.get_handle())), token: token);
+    public func WaitForShutdownAsync(token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Hosting.WebHostExtensions.WaitForShutdownAsync(host: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost(hndl: __copy_handle(self.get_handle())), token: token);
     }
 }
 
@@ -1504,8 +1590,8 @@ extension Microsoft_AspNetCore_Hosting_IWebHost {
 
 // EXTENSION METHOD System.Threading.Tasks.Task RunAsync(Microsoft.AspNetCore.Hosting.IWebHost, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_Hosting_IWebHost {
-    public func RunAsync(token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(host: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost(hndl: __copy_handle(self.get_handle())), token: token);
+    public func RunAsync(token : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(host: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHost(hndl: __copy_handle(self.get_handle())), token: token);
     }
 }
 
@@ -1515,7 +1601,7 @@ extension Microsoft_Extensions_Hosting_IHostBuilder {
         return try aspnetcore.Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions.ConfigureWebHost(builder: aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder(hndl: __copy_handle(self.get_handle())), configure: configure);
     }
     // delegate closure overload
-    public func ConfigureWebHost(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
+    public func ConfigureWebHost(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>(configure);
         return try aspnetcore.Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions.ConfigureWebHost(builder: aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure);
     }
@@ -1527,7 +1613,7 @@ extension Microsoft_Extensions_Hosting_IHostBuilder {
         return try aspnetcore.Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions.ConfigureWebHost(builder: aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder(hndl: __copy_handle(self.get_handle())), configure: configure, configureWebHostBuilder: configureWebHostBuilder);
     }
     // delegate closure overload
-    public func ConfigureWebHost(configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>) throws -> Void, configureWebHostBuilder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
+    public func ConfigureWebHost(configure : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder) throws -> Void, configureWebHostBuilder : @escaping (aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder>(configure);
         let del_configureWebHostBuilder = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Hosting.WebHostBuilderOptions>(configureWebHostBuilder);
         return try aspnetcore.Microsoft.Extensions.Hosting.GenericHostWebHostBuilderExtensions.ConfigureWebHost(builder: aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder(hndl: __copy_handle(self.get_handle())), configure: del_configure, configureWebHostBuilder: del_configureWebHostBuilder);

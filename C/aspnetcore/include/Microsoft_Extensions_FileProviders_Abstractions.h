@@ -20,6 +20,8 @@ int32_t Microsoft_Extensions_FileProviders_IDirectoryContents_bool__get_Exists_0
 
 SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IDirectoryContents_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IDirectoryContents_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_Microsoft_Extensions_FileProviders_IFileInfo___GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_Microsoft_Extensions_FileProviders_IFileInfo___GetEnumerator_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_FileProviders_IFileInfo_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_FileProviders_IFileInfo_Stream__CreateReadStream_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -38,6 +40,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_FileProviders_IFileInfo_String__get_Physic
 
 SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IFileInfo_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IFileInfo_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileProviders_IFileInfo_Stream__CreateReadStream_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_Extensions_FileProviders_IFileInfo_Stream__CreateReadStream_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_FileProviders_IFileProvider_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_FileProviders_IFileProvider_IDirectoryContents__GetDirectoryContents_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE subpath);
@@ -47,6 +51,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_FileProviders_IFileProvider_IFileInfo__Get
 SG_HNDL_NULLABLE Microsoft_Extensions_FileProviders_IFileProvider_IChangeToken__Watch_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE filter);
 
 SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IFileProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_FileProviders_IFileProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileProviders_IFileProvider_IDirectoryContents__GetDirectoryContents_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE subpath), const void* _Nonnull __pdata_Microsoft_Extensions_FileProviders_IFileProvider_IDirectoryContents__GetDirectoryContents_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileProviders_IFileProvider_IFileInfo__GetFileInfo_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE subpath), const void* _Nonnull __pdata_Microsoft_Extensions_FileProviders_IFileProvider_IFileInfo__GetFileInfo_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_FileProviders_IFileProvider_IChangeToken__Watch_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE filter), const void* _Nonnull __pdata_Microsoft_Extensions_FileProviders_IFileProvider_IChangeToken__Watch_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_FileProviders_NotFoundDirectoryContents_get_type_handle(void);
 

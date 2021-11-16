@@ -195,6 +195,9 @@ open class JsonConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Json_JsonConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.Json.JsonConfigurationSource)
@@ -250,6 +253,9 @@ open class JsonConfigurationSource
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Json_JsonConfigurationSource_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -303,6 +309,9 @@ open class JsonStreamConfigurationProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -358,6 +367,9 @@ open class JsonStreamConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

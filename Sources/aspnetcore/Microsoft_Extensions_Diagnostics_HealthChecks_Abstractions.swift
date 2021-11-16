@@ -23,6 +23,9 @@ public final class HealthCheckContext
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -88,6 +91,9 @@ public final class HealthCheckRegistration
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckRegistration_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -212,7 +218,7 @@ public final class HealthCheckRegistration
         }
     }
     // delegate closure overload
-    public func set_Factory(value : @escaping (Optional<dotnet.System.IServiceProvider>) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck) throws {
+    public func set_Factory(value : @escaping (dotnet.System.IServiceProvider) throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.IServiceProvider,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck>(value);
         return try set_Factory(value: del_value);
     }
@@ -249,7 +255,17 @@ public final class HealthCheckRegistration
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_Timeout(System.TimeSpan)
+    // [IsSpecialName] void set_Timeout(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration.set_Timeout(System.TimeSpan)
+    public func set_Timeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckRegistration_void__set_Timeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration.get_Name
     public func get_Name() throws -> dotnet.System.String {
@@ -346,7 +362,9 @@ public final class HealthCheckRegistration
         get {
             return try! get_Timeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_Timeout(System.TimeSpan)
+        set(v) {
+            return try! set_Timeout(value: v);
+        }
     }
 } // HealthCheckRegistration
 
@@ -365,6 +383,9 @@ public final class HealthCheckResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -572,10 +593,50 @@ public final class HealthReport
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
-// TODO COPE ctor (span) .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, System.TimeSpan)
-// TODO COPE ctor (span) .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.TimeSpan)
+    // .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry},System.TimeSpan)
+    /**
+    
+            Create a new  from the specified results.
+            
+
+    - Parameter entries: A  containing the results from each health check.
+    - Parameter totalDuration: A value indicating the time the health check service took to execute.
+    */
+    public init(entries : dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, totalDuration : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport_ctor_0__2__System_Collections_Generic_IReadOnlyDictionary_string_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry__TimeSpan(&__thrown, entries.get_handle(), totalDuration.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
+    // .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry},Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan)
+    /**
+    
+            Create a new  from the specified results.
+            
+
+    - Parameter entries: A  containing the results from each health check.
+    - Parameter status: A  representing the aggregate status of all the health checks.
+    - Parameter totalDuration: A value indicating the time the health check service took to execute.
+    */
+    public init(entries : dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry>, status : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, totalDuration : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport_ctor_0__3__System_Collections_Generic_IReadOnlyDictionary_string_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry__HealthStatus_TimeSpan(&__thrown, entries.get_handle(), status.get_value(), totalDuration.get_handle());
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyDictionary<System.String,Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry> get_Entries()
 // docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport.get_Entries
     public func get_Entries() throws -> dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry> {
@@ -661,6 +722,9 @@ public final class HealthReportEntry
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -729,8 +793,53 @@ public final class HealthReportEntry
             return try! get_Tags();
         }
     }
-// TODO COPE ctor (span) .ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.String, System.TimeSpan, System.Exception, System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>)
-// TODO COPE ctor (span) .ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.String, System.TimeSpan, System.Exception, System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>, System.Collections.Generic.IEnumerable<System.String>)
+    // .ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.String, System.TimeSpan, System.Exception, System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry.#ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
+    /**
+    
+            Creates a new  with the specified values for , ,
+            , and .
+            
+
+    - Parameter status: A value indicating the health status of the component that was checked.
+    - Parameter description: A human-readable description of the status of the component that was checked.
+    - Parameter duration: A value indicating the health execution duration.
+    - Parameter exception: An  representing the exception that was thrown when checking for status (if any).
+    - Parameter data: Additional key-value pairs describing the health of the component.
+    */
+    public init(status : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, description : Optional<dotnet.System.String>, duration : dotnet.System.TimeSpan, exception : Optional<dotnet.System.Exception>, data : Optional<dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,dotnet.System.Object>>) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry_ctor_0__5__HealthStatus_String_TimeSpan_Exception_System_Collections_Generic_IReadOnlyDictionary_string_object_(&__thrown, status.get_value(), description?.get_handle() ?? nil, duration.get_handle(), exception?.get_handle() ?? nil, (data?.get_handle()));
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
+    // .ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, System.String, System.TimeSpan, System.Exception, System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>, System.Collections.Generic.IEnumerable<System.String>)
+// docid: M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry.#ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IEnumerable{System.String})
+    /**
+    
+            Creates a new  with the specified values for , ,
+            , and .
+            
+
+    - Parameter status: A value indicating the health status of the component that was checked.
+    - Parameter description: A human-readable description of the status of the component that was checked.
+    - Parameter duration: A value indicating the health execution duration.
+    - Parameter exception: An  representing the exception that was thrown when checking for status (if any).
+    - Parameter data: Additional key-value pairs describing the health of the component.
+    - Parameter tags: Tags associated with the health check that generated the report entry.
+    */
+    public init(status : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus, description : Optional<dotnet.System.String>, duration : dotnet.System.TimeSpan, exception : Optional<dotnet.System.Exception>, data : Optional<dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,dotnet.System.Object>>, tags : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws {
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry_ctor_0__6__HealthStatus_String_TimeSpan_Exception_System_Collections_Generic_IReadOnlyDictionary_string_object__System_Collections_Generic_IEnumerable_string_(&__thrown, status.get_value(), description?.get_handle() ?? nil, duration.get_handle(), exception?.get_handle() ?? nil, (data?.get_handle()), (tags?.get_handle()));
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            super.init(hndl: h);
+        }
+    }
     public override init() {
         let h = Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry_implicit_ctor();
             super.init(hndl: h);
@@ -888,6 +997,9 @@ open class IHealthCheck
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -909,13 +1021,13 @@ open class IHealthCheck
     - Returns: A  that completes when the health check has finished, yielding the status of the component being checked.
 
     */
-    open func CheckHealthAsync(context : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult> {
+    open func CheckHealthAsync(context : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws -> aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck_System_Threading_Tasks_Task_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult___CheckHealthAsync_0__2__HealthCheckContext_CancellationToken(&__thrown, self.get_handle(), context.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // IHealthCheck
@@ -935,6 +1047,9 @@ open class IHealthCheckPublisher
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -957,13 +1072,13 @@ open class IHealthCheckPublisher
     - Returns: A  which will complete when publishing is complete.
 
     */
-    open func PublishAsync(report : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func PublishAsync(report : aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher_Task__PublishAsync_0__2__HealthReport_CancellationToken(&__thrown, self.get_handle(), report.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IHealthCheckPublisher

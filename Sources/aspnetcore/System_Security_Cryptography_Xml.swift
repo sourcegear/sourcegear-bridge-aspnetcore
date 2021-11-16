@@ -17,6 +17,9 @@ public final class CipherData
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_CipherData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -157,6 +160,9 @@ public final class CipherReference
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_CipherReference_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -228,6 +234,9 @@ open class DSAKeyValue
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_DSAKeyValue_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -342,6 +351,9 @@ open class DataObject
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_DataObject_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -540,6 +552,9 @@ public final class DataReference
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_DataReference_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -585,6 +600,9 @@ public final class EncryptedData
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptedData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -635,6 +653,9 @@ public final class EncryptedKey
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptedKey_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -796,6 +817,9 @@ open class EncryptedReference
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptedReference_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void AddTransform(System.Security.Cryptography.Xml.Transform)
@@ -913,6 +937,9 @@ open class EncryptedType
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptedType_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1222,141 +1249,144 @@ open class EncryptedXml
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptedXml_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String XmlEncAES128KeyWrapUrl
     open class var XmlEncAES128KeyWrapUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES128KeyWrapUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES128KeyWrapUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncAES128Url
     open class var XmlEncAES128Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES128Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES128Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncAES192KeyWrapUrl
     open class var XmlEncAES192KeyWrapUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES192KeyWrapUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES192KeyWrapUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncAES192Url
     open class var XmlEncAES192Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES192Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES192Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncAES256KeyWrapUrl
     open class var XmlEncAES256KeyWrapUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES256KeyWrapUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES256KeyWrapUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncAES256Url
     open class var XmlEncAES256Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES256Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncAES256Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncDESUrl
     open class var XmlEncDESUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncDESUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncDESUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncElementContentUrl
     open class var XmlEncElementContentUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncElementContentUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncElementContentUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncElementUrl
     open class var XmlEncElementUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncElementUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncElementUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncEncryptedKeyUrl
     open class var XmlEncEncryptedKeyUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncEncryptedKeyUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncEncryptedKeyUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncNamespaceUrl
     open class var XmlEncNamespaceUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncNamespaceUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncNamespaceUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncRSA15Url
     open class var XmlEncRSA15Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncRSA15Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncRSA15Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncRSAOAEPUrl
     open class var XmlEncRSAOAEPUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncRSAOAEPUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncRSAOAEPUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncSHA256Url
     open class var XmlEncSHA256Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncSHA256Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncSHA256Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncSHA512Url
     open class var XmlEncSHA512Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncSHA512Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncSHA512Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncTripleDESKeyWrapUrl
     open class var XmlEncTripleDESKeyWrapUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncTripleDESKeyWrapUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncTripleDESKeyWrapUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlEncTripleDESUrl
     open class var XmlEncTripleDESUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncTripleDESUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_EncryptedXml_get_XmlEncTripleDESUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -1886,6 +1916,9 @@ open class EncryptionMethod
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptionMethod_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2010,6 +2043,9 @@ public final class EncryptionProperty
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptionProperty_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2148,6 +2184,9 @@ public final class EncryptionPropertyCollection
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_EncryptionPropertyCollection_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2413,6 +2452,9 @@ open class IRelDecryptor
     open class func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_IRelDecryptor_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2448,6 +2490,9 @@ open class KeyInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2590,6 +2635,9 @@ open class KeyInfoClause
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoClause_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Xml.XmlElement GetXml()
@@ -2628,6 +2676,9 @@ open class KeyInfoEncryptedKey
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoEncryptedKey_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2724,6 +2775,9 @@ open class KeyInfoName
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoName_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2819,6 +2873,9 @@ open class KeyInfoNode
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoNode_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2913,6 +2970,9 @@ open class KeyInfoRetrievalMethod
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoRetrievalMethod_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3053,6 +3113,9 @@ open class KeyInfoX509Data
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyInfoX509Data_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3306,6 +3369,9 @@ public final class KeyReference
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_KeyReference_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3351,6 +3417,9 @@ open class RSAKeyValue
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_RSAKeyValue_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3465,6 +3534,9 @@ open class Reference
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_Reference_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3756,6 +3828,9 @@ public final class ReferenceList
     public class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_ReferenceList_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -3975,6 +4050,9 @@ open class Signature
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_Signature_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4208,6 +4286,9 @@ open class SignedInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_SignedInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4540,197 +4621,200 @@ open class SignedXml
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_SignedXml_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String XmlDecryptionTransformUrl
     open class var XmlDecryptionTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDecryptionTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDecryptionTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigBase64TransformUrl
     open class var XmlDsigBase64TransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigBase64TransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigBase64TransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigC14NTransformUrl
     open class var XmlDsigC14NTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigC14NTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigC14NTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigC14NWithCommentsTransformUrl
     open class var XmlDsigC14NWithCommentsTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigC14NWithCommentsTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigC14NWithCommentsTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigCanonicalizationUrl
     open class var XmlDsigCanonicalizationUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigCanonicalizationUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigCanonicalizationUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigCanonicalizationWithCommentsUrl
     open class var XmlDsigCanonicalizationWithCommentsUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigCanonicalizationWithCommentsUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigCanonicalizationWithCommentsUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigDSAUrl
     open class var XmlDsigDSAUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigDSAUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigDSAUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigEnvelopedSignatureTransformUrl
     open class var XmlDsigEnvelopedSignatureTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigEnvelopedSignatureTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigEnvelopedSignatureTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigExcC14NTransformUrl
     open class var XmlDsigExcC14NTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigExcC14NTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigExcC14NTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigExcC14NWithCommentsTransformUrl
     open class var XmlDsigExcC14NWithCommentsTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigExcC14NWithCommentsTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigExcC14NWithCommentsTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigHMACSHA1Url
     open class var XmlDsigHMACSHA1Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigHMACSHA1Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigHMACSHA1Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigMinimalCanonicalizationUrl
     open class var XmlDsigMinimalCanonicalizationUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigMinimalCanonicalizationUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigMinimalCanonicalizationUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigNamespaceUrl
     open class var XmlDsigNamespaceUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigNamespaceUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigNamespaceUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigRSASHA1Url
     open class var XmlDsigRSASHA1Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA1Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA1Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigRSASHA256Url
     open class var XmlDsigRSASHA256Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA256Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA256Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigRSASHA384Url
     open class var XmlDsigRSASHA384Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA384Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA384Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigRSASHA512Url
     open class var XmlDsigRSASHA512Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA512Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigRSASHA512Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigSHA1Url
     open class var XmlDsigSHA1Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA1Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA1Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigSHA256Url
     open class var XmlDsigSHA256Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA256Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA256Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigSHA384Url
     open class var XmlDsigSHA384Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA384Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA384Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigSHA512Url
     open class var XmlDsigSHA512Url : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA512Url();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigSHA512Url();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigXPathTransformUrl
     open class var XmlDsigXPathTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigXPathTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigXPathTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlDsigXsltTransformUrl
     open class var XmlDsigXsltTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigXsltTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlDsigXsltTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String XmlLicenseTransformUrl
     open class var XmlLicenseTransformUrl : Optional<dotnet.System.String> {
         get {
-        let __h = System_Security_Cryptography_Xml_SignedXml_get_XmlLicenseTransformUrl();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = System_Security_Cryptography_Xml_SignedXml_get_XmlLicenseTransformUrl();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -4835,11 +4919,12 @@ open class SignedXml
     }
     // bool CheckSignatureReturningKey(ref System.Security.Cryptography.AsymmetricAlgorithm)
 // docid: M:System.Security.Cryptography.Xml.SignedXml.CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm@)
-    open func CheckSignatureReturningKey(signingKey : inout dotnet.System.Security.Cryptography.AsymmetricAlgorithm) throws -> Bool {
+    open func CheckSignatureReturningKey(signingKey : inout Optional<dotnet.System.Security.Cryptography.AsymmetricAlgorithm>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_signingKey = signingKey.get_handle();
+            var _tmp_out_signingKey = (signingKey != nil) ? (signingKey!.get_handle()) : nil;
         let __return = System_Security_Cryptography_Xml_SignedXml_bool__CheckSignatureReturningKey_0__1__outAsymmetricAlgorithm(&__thrown, self.get_handle(), &_tmp_out_signingKey);
-        let _tmp2_signingKey = dotnet.System.Security.Cryptography.AsymmetricAlgorithm(hndl: _tmp_out_signingKey);
+        let __h__tmp2_signingKey = _tmp_out_signingKey;
+        let _tmp2_signingKey = (__h__tmp2_signingKey != nil) ? dotnet.System.Security.Cryptography.AsymmetricAlgorithm(hndl: __h__tmp2_signingKey!) : nil;
             signingKey = _tmp2_signingKey;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -5229,6 +5314,9 @@ open class Transform
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_Transform_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Byte[] GetDigestedOutput(System.Security.Cryptography.HashAlgorithm)
@@ -5463,6 +5551,9 @@ open class TransformChain
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_TransformChain_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5515,9 +5606,6 @@ open class TransformChain
     }
     // [IsSpecialName] System.Security.Cryptography.Xml.Transform get_Item(System.Int32)
 // docid: M:System.Security.Cryptography.Xml.TransformChain.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(index : Swift.Int32) throws -> Optional<aspnetcore.System.Security.Cryptography.Xml.Transform> {
         var __thrown : NullableHandle = nil;
         let __return = System_Security_Cryptography_Xml_TransformChain_Transform__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -5546,6 +5634,9 @@ open class XmlDecryptionTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDecryptionTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5708,6 +5799,9 @@ open class XmlDsigBase64Transform
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigBase64Transform_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5823,6 +5917,9 @@ open class XmlDsigC14NTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigC14NTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5966,6 +6063,9 @@ open class XmlDsigC14NWithCommentsTransform
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigC14NWithCommentsTransform_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5989,6 +6089,9 @@ open class XmlDsigEnvelopedSignatureTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigEnvelopedSignatureTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6118,6 +6221,9 @@ open class XmlDsigExcC14NTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigExcC14NTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6317,6 +6423,9 @@ open class XmlDsigExcC14NWithCommentsTransform
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigExcC14NWithCommentsTransform_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6351,6 +6460,9 @@ open class XmlDsigXPathTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigXPathTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6467,6 +6579,9 @@ open class XmlDsigXsltTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlDsigXsltTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6594,6 +6709,9 @@ open class XmlLicenseTransform
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_Security_Cryptography_Xml_XmlLicenseTransform_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -22,6 +22,9 @@ open class HubException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -117,6 +120,9 @@ open class IInvocationBinder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IInvocationBinder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -204,6 +210,9 @@ open class ISignalRBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_ISignalRBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -244,6 +253,9 @@ open class CancelInvocationMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -280,6 +292,9 @@ open class CloseMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_CloseMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -401,6 +416,9 @@ open class CompletionMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_CompletionMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -581,6 +599,7 @@ open class CompletionMessage
 
 // type: Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol
 public struct HandshakeProtocol {
+// TODO COPE (returns byreflike): System.ReadOnlySpan<System.Byte> GetSuccessfulHandshake(Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol)
     // void WriteRequestMessage(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage, System.Buffers.IBufferWriter<System.Byte>)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.WriteRequestMessage(Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage,System.Buffers.IBufferWriter{System.Byte})
     /**
@@ -631,14 +650,16 @@ public struct HandshakeProtocol {
     - Returns: A value that is true if the  was successfully parsed; otherwise, false.
 
     */
-    public static func TryParseResponseMessage(buffer : inout dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>, responseMessage : inout aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeResponseMessage) throws -> Bool {
+    public static func TryParseResponseMessage(buffer : inout Optional<dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>>, responseMessage : inout Optional<aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeResponseMessage>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_buffer = buffer.get_handle();
-            var _tmp_out_responseMessage = responseMessage.get_handle();
+            var _tmp_ref_buffer = (buffer != nil) ? (buffer!.get_handle()) : nil;
+            var _tmp_out_responseMessage = (responseMessage != nil) ? (responseMessage!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseResponseMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeResponseMessage(&__thrown, &_tmp_ref_buffer, &_tmp_out_responseMessage);
-        let _tmp2_buffer = dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl : _tmp_ref_buffer);
+        let __h__tmp2_buffer = _tmp_ref_buffer;
+        let _tmp2_buffer = (__h__tmp2_buffer != nil) ? dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl: __h__tmp2_buffer!) : nil;
             buffer = _tmp2_buffer;
-        let _tmp2_responseMessage = aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeResponseMessage(hndl: _tmp_out_responseMessage);
+        let __h__tmp2_responseMessage = _tmp_out_responseMessage;
+        let _tmp2_responseMessage = (__h__tmp2_responseMessage != nil) ? aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeResponseMessage(hndl: __h__tmp2_responseMessage!) : nil;
             responseMessage = _tmp2_responseMessage;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -658,14 +679,16 @@ public struct HandshakeProtocol {
     - Returns: A value that is true if the  was successfully parsed; otherwise, false.
 
     */
-    public static func TryParseRequestMessage(buffer : inout dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>, requestMessage : inout aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeRequestMessage) throws -> Bool {
+    public static func TryParseRequestMessage(buffer : inout Optional<dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>>, requestMessage : inout Optional<aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeRequestMessage>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_buffer = buffer.get_handle();
-            var _tmp_out_requestMessage = requestMessage.get_handle();
+            var _tmp_ref_buffer = (buffer != nil) ? (buffer!.get_handle()) : nil;
+            var _tmp_out_requestMessage = (requestMessage != nil) ? (requestMessage!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_SignalR_Protocol_HandshakeProtocol_bool__TryParseRequestMessage_0__2__refSystem_Buffers_ReadOnlySequence_u8__outHandshakeRequestMessage(&__thrown, &_tmp_ref_buffer, &_tmp_out_requestMessage);
-        let _tmp2_buffer = dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl : _tmp_ref_buffer);
+        let __h__tmp2_buffer = _tmp_ref_buffer;
+        let _tmp2_buffer = (__h__tmp2_buffer != nil) ? dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl: __h__tmp2_buffer!) : nil;
             buffer = _tmp2_buffer;
-        let _tmp2_requestMessage = aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeRequestMessage(hndl: _tmp_out_requestMessage);
+        let __h__tmp2_requestMessage = _tmp_out_requestMessage;
+        let _tmp2_requestMessage = (__h__tmp2_requestMessage != nil) ? aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HandshakeRequestMessage(hndl: __h__tmp2_requestMessage!) : nil;
             requestMessage = _tmp2_requestMessage;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -689,6 +712,9 @@ open class HandshakeRequestMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -772,6 +798,9 @@ open class HandshakeResponseMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_HandshakeResponseMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage Empty
@@ -848,6 +877,9 @@ open class HubInvocationMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_HubInvocationMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -934,6 +966,9 @@ open class HubMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_HubMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // HubMessage
@@ -952,6 +987,9 @@ open class HubMethodInvocationMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_HubMethodInvocationMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1165,6 +1203,9 @@ open class IHubProtocol
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1187,14 +1228,16 @@ open class IHubProtocol
     - Returns: A value that is true if the  was successfully parsed; otherwise, false.
 
     */
-    open func TryParseMessage(input : inout dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>, binder : aspnetcore.Microsoft.AspNetCore.SignalR.IInvocationBinder, message : inout aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage) throws -> Bool {
+    open func TryParseMessage(input : inout Optional<dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>>, binder : aspnetcore.Microsoft.AspNetCore.SignalR.IInvocationBinder, message : inout Optional<aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_input = input.get_handle();
-            var _tmp_out_message = message.get_handle();
+            var _tmp_ref_input = (input != nil) ? (input!.get_handle()) : nil;
+            var _tmp_out_message = (message != nil) ? (message!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_bool__TryParseMessage_0__3__refSystem_Buffers_ReadOnlySequence_u8__IInvocationBinder_outHubMessage(&__thrown, self.get_handle(), &_tmp_ref_input, binder.get_handle(), &_tmp_out_message);
-        let _tmp2_input = dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl : _tmp_ref_input);
+        let __h__tmp2_input = _tmp_ref_input;
+        let _tmp2_input = (__h__tmp2_input != nil) ? dotnet.System.Buffers.ReadOnlySequence_1<Swift.UInt8>(hndl: __h__tmp2_input!) : nil;
             input = _tmp2_input;
-        let _tmp2_message = aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage(hndl: _tmp_out_message);
+        let __h__tmp2_message = _tmp_out_message;
+        let _tmp2_message = (__h__tmp2_message != nil) ? aspnetcore.Microsoft.AspNetCore.SignalR.Protocol_.HubMessage(hndl: __h__tmp2_message!) : nil;
             message = _tmp2_message;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1314,6 +1357,9 @@ open class InvocationBindingFailureMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.Runtime.ExceptionServices.ExceptionDispatchInfo)
@@ -1396,6 +1442,9 @@ open class InvocationMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_InvocationMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1489,6 +1538,9 @@ open class PingMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_PingMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.SignalR.Protocol.PingMessage Instance
@@ -1523,6 +1575,9 @@ open class StreamBindingFailureMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_StreamBindingFailureMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1606,6 +1661,9 @@ open class StreamInvocationMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_StreamInvocationMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.Object[])
@@ -1679,6 +1737,9 @@ open class StreamItemMessage
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Object)
@@ -1715,9 +1776,6 @@ open class StreamItemMessage
     }
     // [IsSpecialName] System.Object get_Item()
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage.get_Item
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item() throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage_Object__get_Item_0__0(&__thrown, self.get_handle());

@@ -21,9 +21,9 @@ public struct OptionsBuilderDataAnnotationsExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func ValidateDataAnnotations<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func ValidateDataAnnotations<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderDataAnnotationsExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___ValidateDataAnnotations_1__1__Microsoft_Extensions_Options_OptionsBuilder_UTOptions_(UTOptions.get_type_handle(), &__thrown, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderDataAnnotationsExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___ValidateDataAnnotations_1__1__Microsoft_Extensions_Options_OptionsBuilder_UTOptions_(UTOptions.get_type_handle(), &__thrown, (optionsBuilder?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -54,6 +54,9 @@ open class DataAnnotationValidateOptions_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_DataAnnotationValidateOptions_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

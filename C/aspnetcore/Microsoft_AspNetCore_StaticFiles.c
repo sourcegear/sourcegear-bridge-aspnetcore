@@ -72,7 +72,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_ctor_0__1__System_Collections_Generic_IDictionary_string_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL mapping);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NONNULL* _Nonnull __contentType_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_System_Collections_Generic_IDictionary_string_string___get_Mappings_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter_get_type_handle)(void);
@@ -80,11 +80,13 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL contents);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_get_type_handle)(void);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NONNULL* _Nonnull __contentType_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL contents);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL contents), const void* _Nonnull __pdata_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_StaticFileMiddleware_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_StaticFileMiddleware_ctor_0__4__RequestDelegate_IWebHostEnvironment_Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Builder_StaticFileOptions__ILoggerFactory)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next, SG_HNDL_NONNULL hostingEnv, SG_HNDL_NONNULL options, SG_HNDL_NONNULL loggerFactory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_StaticFiles_StaticFileMiddleware_Task__Invoke_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
@@ -629,7 +631,7 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvide
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NONNULL* _Nonnull __contentType_out_ptr) {
+int32_t Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr) {
     if (!_g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString) {
         my_init();
     }
@@ -693,7 +695,7 @@ TYP Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_get_type_handle(void) 
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NONNULL* _Nonnull __contentType_out_ptr) {
+int32_t Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr) {
     if (!_g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString) {
         my_init();
     }
@@ -706,6 +708,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_cast(SG_HN
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, int32_t (* _Nonnull  __cb_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL subpath, SG_HNDL_NULLABLE* _Nonnull __contentType_out_ptr), const void* _Nonnull __pdata_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_create(__thrown, __cb_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString, __pdata_Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString, __deinit);
     return ret;
 }
 
@@ -730,6 +740,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_cast(SG_HND
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL contents), const void* _Nonnull __pdata_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_StaticFiles._fp_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_create(__thrown, __cb_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_, __pdata_Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_, __deinit);
     return ret;
 }
 

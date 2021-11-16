@@ -266,7 +266,27 @@ public struct HostingAbstractionsWebHostBuilderExtensions {
         return aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) Microsoft.AspNetCore.Hosting.IWebHostBuilder UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.TimeSpan)
+    // Microsoft.AspNetCore.Hosting.IWebHostBuilder UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions.UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.TimeSpan)
+    /**
+    
+            Specify the amount of time to wait for the web host to shutdown.
+            
+
+    - Parameter hostBuilder: The  to configure.
+    - Parameter timeout: The amount of time to wait for server shutdown.
+    - Returns: The .
+
+    */
+    public static func UseShutdownTimeout(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, timeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Hosting_HostingAbstractionsWebHostBuilderExtensions_IWebHostBuilder__UseShutdownTimeout_0__2__IWebHostBuilder_TimeSpan(&__thrown, hostBuilder.get_handle(), timeout.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl : __return);
+        }
+    }
     // Microsoft.AspNetCore.Hosting.IWebHost Start(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.String[])
 // docid: M:Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions.Start(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.String[])
     /**
@@ -391,6 +411,9 @@ public final class HostingStartupAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_HostingStartupAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Type)
@@ -455,6 +478,9 @@ open class IApplicationLifetime
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IApplicationLifetime_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -536,6 +562,9 @@ open class IHostingEnvironment
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IHostingEnvironment_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -696,6 +725,9 @@ open class IHostingStartup
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IHostingStartup_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -740,6 +772,9 @@ open class IStartup
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IStartup_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -806,6 +841,9 @@ open class IStartupConfigureContainerFilter_1<TContainerBuilder : SGBridgeGeneri
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_get_type_handle(TContainerBuilder.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -859,6 +897,9 @@ open class IStartupConfigureServicesFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -889,7 +930,7 @@ open class IStartupConfigureServicesFilter
         }
     }
     // delegate closure overload
-    open func ConfigureServices(next : @escaping (Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>) throws -> Void) throws -> dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    open func ConfigureServices(next : @escaping (aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection) throws -> Void) throws -> dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         let del_next = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>(next);
         return try ConfigureServices(next: del_next);
     }
@@ -913,6 +954,9 @@ open class IStartupFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IStartupFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -944,7 +988,7 @@ open class IStartupFilter
         }
     }
     // delegate closure overload
-    open func Configure(next : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>) throws -> Void) throws -> dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder> {
+    open func Configure(next : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder) throws -> Void) throws -> dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder> {
         let del_next = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.IApplicationBuilder>(next);
         return try Configure(next: del_next);
     }
@@ -966,6 +1010,9 @@ open class IWebHost
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IWebHost_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1004,13 +1051,13 @@ open class IWebHost
     - Returns: A  that completes when the  starts.
 
     */
-    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StartAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task StopAsync(System.Threading.CancellationToken)
@@ -1024,13 +1071,13 @@ open class IWebHost
     - Returns: A  that completes when the  stops.
 
     */
-    open func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.Features.IFeatureCollection get_ServerFeatures()
@@ -1072,6 +1119,9 @@ open class IWebHostBuilder
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IWebHostBuilder_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1120,7 +1170,7 @@ open class IWebHostBuilder
         }
     }
     // delegate closure overload
-    open func ConfigureAppConfiguration(configureDelegate : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open func ConfigureAppConfiguration(configureDelegate : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureDelegate = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.Configuration.IConfigurationBuilder>(configureDelegate);
         return try ConfigureAppConfiguration(configureDelegate: del_configureDelegate);
     }
@@ -1146,7 +1196,7 @@ open class IWebHostBuilder
         }
     }
     // delegate closure overload
-    open func ConfigureServices(configureServices : @escaping (Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open func ConfigureServices(configureServices : @escaping (aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureServices = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>(configureServices);
         return try ConfigureServices(configureServices: del_configureServices);
     }
@@ -1172,7 +1222,7 @@ open class IWebHostBuilder
         }
     }
     // delegate closure overload
-    open func ConfigureServices(configureServices : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    open func ConfigureServices(configureServices : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureServices = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>(configureServices);
         return try ConfigureServices(configureServices: del_configureServices);
     }
@@ -1239,6 +1289,9 @@ open class IWebHostEnvironment
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_IWebHostEnvironment_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1309,6 +1362,9 @@ open class WebHostBuilderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_WebHostBuilderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1734,7 +1790,11 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
 }
 
 // EXTENSION METHOD Microsoft.AspNetCore.Hosting.IWebHostBuilder UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.AspNetCore.Hosting.IWebHostBuilder UseShutdownTimeout(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.TimeSpan)
+extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
+    public func UseShutdownTimeout(timeout : dotnet.System.TimeSpan) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+        return try aspnetcore.Microsoft.AspNetCore.Hosting.HostingAbstractionsWebHostBuilderExtensions.UseShutdownTimeout(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), timeout: timeout);
+    }
+}
 
 // EXTENSION METHOD Microsoft.AspNetCore.Hosting.IWebHost Start(Microsoft.AspNetCore.Hosting.IWebHostBuilder, System.String[])
 extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {

@@ -36,6 +36,8 @@ void invoke_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_void__Dispose
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_cast(TYP TContext, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_create(TYP TContext, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_TContext__CreateContext_0__1__IFeatureCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL contextFeatures), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_TContext__CreateContext_0__1__IFeatureCollection, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_Task__ProcessRequestAsync_0__1__TContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_Task__ProcessRequestAsync_0__1__TContext, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_void__DisposeContext_0__2__TContext_Exception)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL context, SG_HNDL_NULLABLE exception), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_void__DisposeContext_0__2__TContext_Exception, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Hosting_Server_IServer_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServer_Task__StartAsync_1__2__Microsoft_AspNetCore_Hosting_Server_IHttpApplication_UTContext__CancellationToken(TYP TContext, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL application, SG_HNDL_NONNULL cancellationToken);
@@ -50,6 +52,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServer_IFeatureCollection__
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServer_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServer_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_Server_IServer_Task__StartAsync_1__2__Microsoft_AspNetCore_Hosting_Server_IHttpApplication_UTContext__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL application, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_Server_IServer_Task__StartAsync_1__2__Microsoft_AspNetCore_Hosting_Server_IHttpApplication_UTContext__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_Server_IServer_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_Server_IServer_Task__StopAsync_0__1__CancellationToken, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_get_type_handle(void);
 
 int32_t Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_bool__get_IsEnabled_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -57,6 +61,8 @@ int32_t Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_bool__get_IsEn
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_String__get_AuthenticationScheme_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Hosting_Server_ServerIntegratedAuth_get_type_handle(void);
 
@@ -88,6 +94,8 @@ void invoke_Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContain
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1_cast(TYP TContext, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1_create(TYP TContext, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_System_Collections_Generic_ICollection_string___get_Addresses_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -97,6 +105,8 @@ int32_t Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_boo
 void Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_void__set_PreferHostingUrls_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t value);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

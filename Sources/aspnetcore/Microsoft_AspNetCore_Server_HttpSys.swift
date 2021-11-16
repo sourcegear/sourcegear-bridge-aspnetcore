@@ -62,7 +62,7 @@ public struct WebHostBuilderHttpSysExtensions {
         }
     }
     // delegate closure overload
-    public static func UseHttpSys(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseHttpSys(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions>(options);
         return try UseHttpSys(hostBuilder: hostBuilder, options: del_options);
     }
@@ -87,6 +87,9 @@ public final class AuthenticationManager
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_AuthenticationManager_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -404,6 +407,9 @@ open class DelegationRule
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_DelegationRule_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Dispose()
@@ -557,6 +563,9 @@ open class HttpSysException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_HttpSysException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.Int32 get_ErrorCode()
@@ -593,6 +602,9 @@ open class HttpSysOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_HttpSysOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1190,6 +1202,9 @@ open class IHttpSysRequestDelegationFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1250,6 +1265,9 @@ open class IHttpSysRequestInfoFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1287,6 +1305,9 @@ open class IServerDelegationFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1400,6 +1421,9 @@ public final class TimeoutManager
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.TimeSpan get_EntityBody()
@@ -1413,7 +1437,17 @@ public final class TimeoutManager
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_EntityBody(System.TimeSpan)
+    // [IsSpecialName] void set_EntityBody(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.set_EntityBody(System.TimeSpan)
+    public func set_EntityBody(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_void__set_EntityBody_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_DrainEntityBody()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_DrainEntityBody
     public func get_DrainEntityBody() throws -> dotnet.System.TimeSpan {
@@ -1425,7 +1459,17 @@ public final class TimeoutManager
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_DrainEntityBody(System.TimeSpan)
+    // [IsSpecialName] void set_DrainEntityBody(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.set_DrainEntityBody(System.TimeSpan)
+    public func set_DrainEntityBody(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_void__set_DrainEntityBody_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_RequestQueue()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_RequestQueue
     public func get_RequestQueue() throws -> dotnet.System.TimeSpan {
@@ -1437,7 +1481,17 @@ public final class TimeoutManager
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_RequestQueue(System.TimeSpan)
+    // [IsSpecialName] void set_RequestQueue(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.set_RequestQueue(System.TimeSpan)
+    public func set_RequestQueue(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_void__set_RequestQueue_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_IdleConnection()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_IdleConnection
     public func get_IdleConnection() throws -> dotnet.System.TimeSpan {
@@ -1449,7 +1503,17 @@ public final class TimeoutManager
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_IdleConnection(System.TimeSpan)
+    // [IsSpecialName] void set_IdleConnection(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.set_IdleConnection(System.TimeSpan)
+    public func set_IdleConnection(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_void__set_IdleConnection_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_HeaderWait()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_HeaderWait
     public func get_HeaderWait() throws -> dotnet.System.TimeSpan {
@@ -1461,7 +1525,17 @@ public final class TimeoutManager
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_HeaderWait(System.TimeSpan)
+    // [IsSpecialName] void set_HeaderWait(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.set_HeaderWait(System.TimeSpan)
+    public func set_HeaderWait(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_void__set_HeaderWait_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Int64 get_MinSendBytesPerSecond()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_MinSendBytesPerSecond
     public func get_MinSendBytesPerSecond() throws -> Swift.Int64 {
@@ -1502,7 +1576,9 @@ public final class TimeoutManager
         get {
             return try! get_DrainEntityBody();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_DrainEntityBody(System.TimeSpan)
+        set(v) {
+            return try! set_DrainEntityBody(value: v);
+        }
     }
     /**
     
@@ -1520,7 +1596,9 @@ public final class TimeoutManager
         get {
             return try! get_EntityBody();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_EntityBody(System.TimeSpan)
+        set(v) {
+            return try! set_EntityBody(value: v);
+        }
     }
     /**
     
@@ -1537,7 +1615,9 @@ public final class TimeoutManager
         get {
             return try! get_HeaderWait();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_HeaderWait(System.TimeSpan)
+        set(v) {
+            return try! set_HeaderWait(value: v);
+        }
     }
     /**
     
@@ -1553,7 +1633,9 @@ public final class TimeoutManager
         get {
             return try! get_IdleConnection();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_IdleConnection(System.TimeSpan)
+        set(v) {
+            return try! set_IdleConnection(value: v);
+        }
     }
     /**
     
@@ -1587,7 +1669,9 @@ public final class TimeoutManager
         get {
             return try! get_RequestQueue();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_RequestQueue(System.TimeSpan)
+        set(v) {
+            return try! set_RequestQueue(value: v);
+        }
     }
 } // TimeoutManager
 
@@ -1605,6 +1689,9 @@ open class UrlPrefix
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_UrlPrefix_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1879,6 +1966,9 @@ open class UrlPrefixCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_HttpSys_UrlPrefixCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Add(System.String)
@@ -2078,7 +2168,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderHttpSysExtensions.UseHttpSys(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: options);
     }
     // delegate closure overload
-    public func UseHttpSys(options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseHttpSys(options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions>(options);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderHttpSysExtensions.UseHttpSys(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: del_options);
     }

@@ -196,6 +196,9 @@ open class IniConfigurationProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Ini_IniConfigurationProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.Ini.IniConfigurationSource)
@@ -252,6 +255,9 @@ open class IniConfigurationSource
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Ini_IniConfigurationSource_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -305,6 +311,9 @@ open class IniStreamConfigurationProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -385,6 +394,9 @@ open class IniStreamConfigurationSource
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationSource_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

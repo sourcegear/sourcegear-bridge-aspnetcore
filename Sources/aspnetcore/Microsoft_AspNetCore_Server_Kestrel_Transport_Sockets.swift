@@ -62,7 +62,7 @@ public struct WebHostBuilderSocketExtensions {
         }
     }
     // delegate closure overload
-    public static func UseSockets(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseSockets(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>(configureOptions);
         return try UseSockets(hostBuilder: hostBuilder, configureOptions: del_configureOptions);
     }
@@ -90,6 +90,9 @@ public final class SocketConnectionContextFactory
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionContextFactory_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -161,6 +164,9 @@ open class SocketConnectionFactoryOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionFactoryOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -379,6 +385,9 @@ public final class SocketTransportFactory
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportFactory_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -419,6 +428,9 @@ open class SocketTransportOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -636,7 +648,7 @@ open class SocketTransportOptions
         }
     }
     // delegate closure overload
-    open func set_CreateBoundListenSocket(value : @escaping (Optional<dotnet.System.Net.EndPoint>) throws -> dotnet.System.Net.Sockets.Socket) throws {
+    open func set_CreateBoundListenSocket(value : @escaping (dotnet.System.Net.EndPoint) throws -> dotnet.System.Net.Sockets.Socket) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.Net.EndPoint,dotnet.System.Net.Sockets.Socket>(value);
         return try set_CreateBoundListenSocket(value: del_value);
     }
@@ -776,7 +788,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions.UseSockets(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseSockets(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseSockets(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderSocketExtensions.UseSockets(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

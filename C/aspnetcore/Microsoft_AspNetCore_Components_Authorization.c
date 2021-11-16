@@ -15,7 +15,7 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_void__Invoke_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL task);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_IAsyncResult__BeginInvoke_0__3__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState__AsyncCallback_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL task, SG_HNDL_NULLABLE callback, SG_HNDL_NULLABLE object_);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_void__EndInvoke_0__1__IAsyncResult)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), void (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task));
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState___GetAuthenticationStateAsync_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_void__add_AuthenticationStateChanged_0__1__AuthenticationStateChangedHandler)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
@@ -57,6 +57,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL authenticationStateTask);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL authenticationStateTask), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_AspNetCore_Components_Authorization;
 
 static void my_init() {
@@ -125,11 +126,11 @@ void Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHan
     _g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_void__EndInvoke_0__1__IAsyncResult(__thrown, __self_h, result);
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), void (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task)) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
     if (!_g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create) {
         my_init();
     }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(__thrown, __pdata, __deinit, __cb);
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(__thrown, __cb, __pdata, __deinit);
     return ret;
 }
 
@@ -444,6 +445,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAu
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL authenticationStateTask), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Components_Authorization._fp_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_create(__thrown, __cb_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_, __pdata_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_, __deinit);
     return ret;
 }
 

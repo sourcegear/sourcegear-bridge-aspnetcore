@@ -10,11 +10,13 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE providerType);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE providerType), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_get_type_handle)(TYP T);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_IConfiguration__get_Configuration_0__0)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_IConfiguration__get_Configuration_0__0)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_IConfiguration__get_Configuration_0__0)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_cast)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_create)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     void (* _Nonnull  _fp_Microsoft_Extensions_Logging_Configuration_LoggerProviderOptions_void__RegisterProviderOptions_2__1__IServiceCollection)(TYP TOptions, TYP TProvider, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE services);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_Extensions_Logging_Configuration_LoggerProviderOptions_void__RegisterProviderOptions_2__1__IServiceCollection)(TYP TOptions, TYP TProvider, SG_HNDL_NULLABLE * _Nonnull __thrown);
     void (* _Nonnull  _fp_invoke_Microsoft_Extensions_Logging_Configuration_LoggerProviderOptions_void__RegisterProviderOptions_2__1__IServiceCollection)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE services);
@@ -49,6 +51,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfig
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE providerType), const void* _Nonnull __pdata_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_create(__thrown, __cb_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type, __pdata_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_IConfiguration__GetConfiguration_0__1__Type, __deinit);
     return ret;
 }
 
@@ -89,6 +99,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfig
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_cast(T, __thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_create(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Logging_Configuration._fp_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_create(T, __thrown, __deinit);
     return ret;
 }
 

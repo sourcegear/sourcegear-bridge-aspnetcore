@@ -24,9 +24,9 @@ public struct OptionsBuilderConfigurationExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func BindConfiguration<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>, configSectionPath : Optional<dotnet.System.String>, configureBinder : Optional<dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>> = nil) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func BindConfiguration<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>, configSectionPath : Optional<dotnet.System.String>, configureBinder : Optional<dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>> = nil) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___BindConfiguration_1__3__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__String_System_Action_Microsoft_Extensions_Configuration_BinderOptions_(UTOptions.get_type_handle(), &__thrown, nil, configSectionPath?.get_handle() ?? nil, (configureBinder?.get_handle()));
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___BindConfiguration_1__3__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__String_System_Action_Microsoft_Extensions_Configuration_BinderOptions_(UTOptions.get_type_handle(), &__thrown, (optionsBuilder?.get_handle()), configSectionPath?.get_handle() ?? nil, (configureBinder?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -38,7 +38,7 @@ public struct OptionsBuilderConfigurationExtensions {
         }
     }
     // delegate closure overload
-    public static func BindConfiguration<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>, configSectionPath : Optional<dotnet.System.String>, configureBinder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>) throws -> Void) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func BindConfiguration<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>, configSectionPath : Optional<dotnet.System.String>, configureBinder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>) throws -> Void) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         let del_configureBinder = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>(configureBinder);
         return try BindConfiguration(optionsBuilder: optionsBuilder, configSectionPath: configSectionPath, configureBinder: del_configureBinder);
     }
@@ -54,9 +54,9 @@ public struct OptionsBuilderConfigurationExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___Bind_1__2__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__IConfiguration(UTOptions.get_type_handle(), &__thrown, nil, config?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___Bind_1__2__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__IConfiguration(UTOptions.get_type_handle(), &__thrown, (optionsBuilder?.get_handle()), config?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -80,9 +80,9 @@ public struct OptionsBuilderConfigurationExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>, configureBinder : Optional<dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>, configureBinder : Optional<dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___Bind_1__3__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__IConfiguration_System_Action_Microsoft_Extensions_Configuration_BinderOptions_(UTOptions.get_type_handle(), &__thrown, nil, config?.get_handle() ?? nil, (configureBinder?.get_handle()));
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsBuilderConfigurationExtensions_Microsoft_Extensions_Options_OptionsBuilder_UTOptions___Bind_1__3__Microsoft_Extensions_Options_OptionsBuilder_UTOptions__IConfiguration_System_Action_Microsoft_Extensions_Configuration_BinderOptions_(UTOptions.get_type_handle(), &__thrown, (optionsBuilder?.get_handle()), config?.get_handle() ?? nil, (configureBinder?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -94,7 +94,7 @@ public struct OptionsBuilderConfigurationExtensions {
         }
     }
     // delegate closure overload
-    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>, configureBinder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>) throws -> Void) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
+    public static func Bind<UTOptions : SGBridgeGenericValue>(optionsBuilder : Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>>, config : Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration>, configureBinder : @escaping (Optional<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>) throws -> Void) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<UTOptions>> {
         let del_configureBinder = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Configuration.BinderOptions>(configureBinder);
         return try Bind(optionsBuilder: optionsBuilder, config: config, configureBinder: del_configureBinder);
     }
@@ -128,6 +128,9 @@ open class ConfigurationChangeTokenSource_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigurationChangeTokenSource_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -234,6 +237,9 @@ open class ConfigureFromConfigurationOptions_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureFromConfigurationOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Configuration.IConfiguration)
@@ -270,6 +276,9 @@ open class NamedConfigureFromConfigurationOptions_1<TOptions : SGBridgeGenericVa
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_NamedConfigureFromConfigurationOptions_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

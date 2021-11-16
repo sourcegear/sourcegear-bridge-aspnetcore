@@ -24,13 +24,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__3__IClientProxy_String_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Threading.CancellationToken)
@@ -48,13 +48,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__4__IClientProxy_String_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Threading.CancellationToken)
@@ -73,13 +73,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__5__IClientProxy_String_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -99,13 +99,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__6__IClientProxy_String_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -126,13 +126,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__7__IClientProxy_String_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -154,13 +154,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__8__IClientProxy_String_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -183,13 +183,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__9__IClientProxy_String_Object_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, arg6?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -213,13 +213,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__10__IClientProxy_String_Object_Object_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, arg6?.get_handle() ?? nil, arg7?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -244,13 +244,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__11__IClientProxy_String_Object_Object_Object_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, arg6?.get_handle() ?? nil, arg7?.get_handle() ?? nil, arg8?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -276,13 +276,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__12__IClientProxy_String_Object_Object_Object_Object_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, arg6?.get_handle() ?? nil, arg7?.get_handle() ?? nil, arg8?.get_handle() ?? nil, arg9?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -309,13 +309,13 @@ public struct ClientProxyExtensions {
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, arg10 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func SendAsync(clientProxy : aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy, method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, arg10 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_ClientProxyExtensions_Task__SendAsync_0__13__IClientProxy_String_Object_Object_Object_Object_Object_Object_Object_Object_Object_Object_CancellationToken(&__thrown, clientProxy.get_handle(), method.get_handle(), arg1?.get_handle() ?? nil, arg2?.get_handle() ?? nil, arg3?.get_handle() ?? nil, arg4?.get_handle() ?? nil, arg5?.get_handle() ?? nil, arg6?.get_handle() ?? nil, arg7?.get_handle() ?? nil, arg8?.get_handle() ?? nil, arg9?.get_handle() ?? nil, arg10?.get_handle() ?? nil, cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ClientProxyExtensions
@@ -334,6 +334,9 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_get_type_handle(THub.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -359,169 +362,169 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.AddToGroupAsync(System.String,System.String,System.Threading.CancellationToken)
     /**
     */
-    open override func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__AddToGroupAsync_0__3__String_String_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.RemoveFromGroupAsync(System.String,System.String,System.Threading.CancellationToken)
     /**
     */
-    open override func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__RemoveFromGroupAsync_0__3__String_String_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAllAsync(System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendAllAsync(System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendAllAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendAllAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendAllAsync_0__3__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendConnectionAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendConnectionAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendConnectionAsync(connectionId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendConnectionAsync(connectionId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendConnectionAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendGroupAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendGroupAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendGroupAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendGroupAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupName.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendGroupsAsync(System.Collections.Generic.IReadOnlyList{System.String},System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendGroupsAsync(groupNames : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendGroupsAsync(groupNames : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendGroupsAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupNames.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupExceptAsync(System.String, System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendGroupExceptAsync(System.String,System.String,System.Object[],System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
     /**
     */
-    open override func SendGroupExceptAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendGroupExceptAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendGroupExceptAsync_0__5__String_String_ObjectArray_System_Collections_Generic_IReadOnlyList_string__CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupName.get_handle(), methodName.get_handle(), args.get_handle(), excludedConnectionIds.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendUserAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendUserAsync(System.String,System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendUserAsync(userId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendUserAsync(userId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendUserAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), userId.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
     /**
     */
-    open override func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__OnConnectedAsync_0__1__HubConnectionContext(THub.get_type_handle(), &__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
     /**
     */
-    open override func OnDisconnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func OnDisconnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__OnDisconnectedAsync_0__1__HubConnectionContext(THub.get_type_handle(), &__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAllExceptAsync(System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendAllExceptAsync(System.String,System.Object[],System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
     /**
     */
-    open override func SendAllExceptAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendAllExceptAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendAllExceptAsync_0__4__String_ObjectArray_System_Collections_Generic_IReadOnlyList_string__CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), methodName.get_handle(), args.get_handle(), excludedConnectionIds.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendConnectionsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendConnectionsAsync(System.Collections.Generic.IReadOnlyList{System.String},System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendConnectionsAsync(connectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendConnectionsAsync(connectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendConnectionsAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionIds.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendUsersAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.SendUsersAsync(System.Collections.Generic.IReadOnlyList{System.String},System.String,System.Object[],System.Threading.CancellationToken)
     /**
     */
-    open override func SendUsersAsync(userIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SendUsersAsync(userIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_Task__SendUsersAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), userIds.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // DefaultHubLifetimeManager_1
@@ -542,6 +545,9 @@ open class DefaultUserIdProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_DefaultUserIdProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -590,6 +596,9 @@ open class DynamicHub
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_DynamicHub_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.DynamicHubClients get_Clients()
@@ -631,6 +640,9 @@ open class DynamicHubClients
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_DynamicHubClients_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -916,6 +928,9 @@ open class Hub
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Hub_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task OnConnectedAsync()
@@ -928,13 +943,13 @@ open class Hub
     - Returns: A  that represents the asynchronous connect.
 
     */
-    open func OnConnectedAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectedAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_Hub_Task__OnConnectedAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(System.Exception)
@@ -947,13 +962,13 @@ open class Hub
     - Returns: A  that represents the asynchronous disconnect.
 
     */
-    open func OnDisconnectedAsync(exception : Optional<dotnet.System.Exception>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnDisconnectedAsync(exception : Optional<dotnet.System.Exception>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_Hub_Task__OnDisconnectedAsync_0__1__Exception(&__thrown, self.get_handle(), exception?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Dispose()
@@ -1093,6 +1108,9 @@ open class HubCallerContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubCallerContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2369,6 +2387,9 @@ open class HubConnectionContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubConnectionContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Connections.ConnectionContext, Microsoft.AspNetCore.SignalR.HubConnectionContextOptions, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -2654,6 +2675,9 @@ open class HubConnectionContextOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubConnectionContextOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2678,7 +2702,17 @@ open class HubConnectionContextOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+    // [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions.set_KeepAliveInterval(System.TimeSpan)
+    open func set_KeepAliveInterval(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_SignalR_HubConnectionContextOptions_void__set_KeepAliveInterval_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_ClientTimeoutInterval()
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions.get_ClientTimeoutInterval
     open func get_ClientTimeoutInterval() throws -> dotnet.System.TimeSpan {
@@ -2690,7 +2724,17 @@ open class HubConnectionContextOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_ClientTimeoutInterval(System.TimeSpan)
+    // [IsSpecialName] void set_ClientTimeoutInterval(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions.set_ClientTimeoutInterval(System.TimeSpan)
+    open func set_ClientTimeoutInterval(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_SignalR_HubConnectionContextOptions_void__set_ClientTimeoutInterval_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Int32 get_StreamBufferCapacity()
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions.get_StreamBufferCapacity
     open func get_StreamBufferCapacity() throws -> Swift.Int32 {
@@ -2767,7 +2811,9 @@ open class HubConnectionContextOptions
         get {
             return try! get_ClientTimeoutInterval();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_ClientTimeoutInterval(System.TimeSpan)
+        set(v) {
+            return try! set_ClientTimeoutInterval(value: v);
+        }
     }
     /**
     
@@ -2779,7 +2825,9 @@ open class HubConnectionContextOptions
         get {
             return try! get_KeepAliveInterval();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_KeepAliveInterval(System.TimeSpan)
+        set(v) {
+            return try! set_KeepAliveInterval(value: v);
+        }
     }
     /**
     
@@ -2840,6 +2888,9 @@ open class HubConnectionHandler_1<THub : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubConnectionHandler_1_get_type_handle(THub.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.SignalR.HubLifetimeManager<THub>, Microsoft.AspNetCore.SignalR.IHubProtocolResolver, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.SignalR.HubOptions>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.SignalR.HubOptions<THub>>, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.SignalR.IUserIdProvider, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)
@@ -2870,13 +2921,13 @@ open class HubConnectionHandler_1<THub : SGBridgeGenericValue>
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext)
     /**
     */
-    open override func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubConnectionHandler_1_Task__OnConnectedAsync_0__1__ConnectionContext(THub.get_type_handle(), &__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HubConnectionHandler_1
@@ -2895,6 +2946,9 @@ open class HubConnectionStore
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubConnectionStore_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2977,9 +3031,6 @@ open class HubConnectionStore
     }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.HubConnectionContext get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionStore.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(connectionId : dotnet.System.String) throws -> Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubConnectionStore_HubConnectionContext__get_Item_0__1__String(&__thrown, self.get_handle(), connectionId.get_handle());
@@ -3023,6 +3074,9 @@ public final class HubConnectionStore_Enumerator
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubConnectionStore_Enumerator_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3139,6 +3193,9 @@ open class HubInvocationContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubInvocationContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3313,6 +3370,9 @@ public final class HubLifetimeContext
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubLifetimeContext_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.SignalR.HubCallerContext, System.IServiceProvider, Microsoft.AspNetCore.SignalR.Hub)
@@ -3418,6 +3478,9 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_get_type_handle(THub.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
@@ -3431,13 +3494,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous connect.
 
     */
-    open func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__OnConnectedAsync_0__1__HubConnectionContext(THub.get_type_handle(), &__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
@@ -3451,13 +3514,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous disconnect.
 
     */
-    open func OnDisconnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnDisconnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.SignalR.HubConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__OnDisconnectedAsync_0__1__HubConnectionContext(THub.get_type_handle(), &__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAllAsync(System.String, System.Object[], System.Threading.CancellationToken)
@@ -3473,13 +3536,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendAllAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendAllAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendAllAsync_0__3__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendAllExceptAsync(System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -3496,13 +3559,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendAllExceptAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendAllExceptAsync(methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendAllExceptAsync_0__4__String_ObjectArray_System_Collections_Generic_IReadOnlyList_string__CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), methodName.get_handle(), args.get_handle(), excludedConnectionIds.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendConnectionAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3519,13 +3582,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendConnectionAsync(connectionId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendConnectionAsync(connectionId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendConnectionAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendConnectionsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3542,13 +3605,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendConnectionsAsync(connectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendConnectionsAsync(connectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendConnectionsAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionIds.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3565,13 +3628,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendGroupAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendGroupAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendGroupAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupName.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3588,13 +3651,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendGroupsAsync(groupNames : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendGroupsAsync(groupNames : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendGroupsAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupNames.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendGroupExceptAsync(System.String, System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -3612,13 +3675,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendGroupExceptAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendGroupExceptAsync(groupName : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, excludedConnectionIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendGroupExceptAsync_0__5__String_String_ObjectArray_System_Collections_Generic_IReadOnlyList_string__CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), groupName.get_handle(), methodName.get_handle(), args.get_handle(), excludedConnectionIds.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendUserAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3635,13 +3698,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendUserAsync(userId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendUserAsync(userId : dotnet.System.String, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendUserAsync_0__4__String_String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), userId.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task SendUsersAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3658,13 +3721,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous send.
 
     */
-    open func SendUsersAsync(userIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendUsersAsync(userIds : dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String>, methodName : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__SendUsersAsync_0__4__System_Collections_Generic_IReadOnlyList_string__String_ObjectArray_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), userIds.get_handle(), methodName.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task AddToGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -3680,13 +3743,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous add.
 
     */
-    open func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__AddToGroupAsync_0__3__String_String_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -3702,13 +3765,13 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     - Returns: A  that represents the asynchronous remove.
 
     */
-    open func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_Task__RemoveFromGroupAsync_0__3__String_String_CancellationToken(THub.get_type_handle(), &__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HubLifetimeManager_1
@@ -3727,6 +3790,9 @@ open class HubMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3787,6 +3853,9 @@ open class HubMethodNameAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubMethodNameAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -3845,6 +3914,9 @@ open class HubOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4214,6 +4286,9 @@ open class HubOptionsSetup
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubOptionsSetup_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol>)
@@ -4268,6 +4343,9 @@ open class HubOptionsSetup_1<THub : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubOptionsSetup_1_get_type_handle(THub.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4324,6 +4402,9 @@ open class HubOptions_1<THub : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_HubOptions_1_get_type_handle(THub.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4353,6 +4434,9 @@ open class Hub_1<T : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_Hub_1_get_type_handle(T.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4397,6 +4481,9 @@ open class IClientProxy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IClientProxy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4420,13 +4507,13 @@ open class IClientProxy
     - Returns: A  that represents the asynchronous invoke.
 
     */
-    open func SendCoreAsync(method : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SendCoreAsync(method : dotnet.System.String, args : dotnet.System_Arr<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_IClientProxy_Task__SendCoreAsync_0__3__String_ObjectArray_CancellationToken(&__thrown, self.get_handle(), method.get_handle(), args.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IClientProxy
@@ -4446,6 +4533,9 @@ open class IGroupManager
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IGroupManager_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4469,13 +4559,13 @@ open class IGroupManager
     - Returns: A  that represents the asynchronous add.
 
     */
-    open func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func AddToGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_IGroupManager_Task__AddToGroupAsync_0__3__String_String_CancellationToken(&__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -4491,13 +4581,13 @@ open class IGroupManager
     - Returns: A  that represents the asynchronous remove.
 
     */
-    open func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RemoveFromGroupAsync(connectionId : dotnet.System.String, groupName : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_IGroupManager_Task__RemoveFromGroupAsync_0__3__String_String_CancellationToken(&__thrown, self.get_handle(), connectionId.get_handle(), groupName.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IGroupManager
@@ -4518,6 +4608,9 @@ open class IHubActivator_1<THub : SGBridgeGenericValue>
     public typealias THub_IHubActivator_1 = THub;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubActivator_1_get_type_handle(THub.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4585,6 +4678,9 @@ open class IHubCallerClients
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubCallerClients_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4613,6 +4709,9 @@ open class IHubCallerClients_1<T : SGBridgeGenericValue>
     public typealias T_IHubClients_1 = T;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubCallerClients_1_get_type_handle(T.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4683,6 +4782,9 @@ open class IHubClients
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubClients_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4710,6 +4812,9 @@ open class IHubClients_1<T : SGBridgeGenericValue>
     public typealias T_IHubClients_1 = T;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubClients_1_get_type_handle(T.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4910,6 +5015,9 @@ open class IHubContext
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubContext_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4959,6 +5067,9 @@ open class IHubContext_1<THub : SGBridgeGenericValue>
     public typealias THub_IHubContext_1 = THub;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubContext_1_get_type_handle(THub.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5011,6 +5122,9 @@ open class IHubContext_2<THub : SGBridgeGenericValue,T : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubContext_2_get_type_handle(THub.get_type_handle(),T.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5060,6 +5174,9 @@ open class IHubFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5091,7 +5208,7 @@ open class IHubFilter
         }
     }
     // delegate closure overload
-    open func InvokeMethodAsync(invocationContext : aspnetcore.Microsoft.AspNetCore.SignalR.HubInvocationContext, next : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubInvocationContext>) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Object> {
+    open func InvokeMethodAsync(invocationContext : aspnetcore.Microsoft.AspNetCore.SignalR.HubInvocationContext, next : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.HubInvocationContext) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Object> {
         let del_next = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.SignalR.HubInvocationContext,dotnet.System.Threading.Tasks.ValueTask_1<dotnet.System.Object>>(next);
         return try InvokeMethodAsync(invocationContext: invocationContext, next: del_next);
     }
@@ -5107,19 +5224,19 @@ open class IHubFilter
     - Returns: 
 
     */
-    open func OnConnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, next : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, next : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Threading.Tasks.Task>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_IHubFilter_Task__OnConnectedAsync_0__2__HubLifetimeContext_System_Func_Microsoft_AspNetCore_SignalR_HubLifetimeContext_Task_(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnConnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, next : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, next : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext) throws -> dotnet.System.Threading.Tasks.Task) async throws {
         let del_next = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Threading.Tasks.Task>(next);
-        return try OnConnectedAsync(context: context, next: del_next);
+        return try await OnConnectedAsync(context: context, next: del_next);
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubLifetimeContext, System.Exception, System.Func<Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Threading.Tasks.Task>)
 // docid: M:Microsoft.AspNetCore.SignalR.IHubFilter.OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Func{Microsoft.AspNetCore.SignalR.HubLifetimeContext,System.Exception,System.Threading.Tasks.Task})
@@ -5134,19 +5251,19 @@ open class IHubFilter
     - Returns: 
 
     */
-    open func OnDisconnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, exception : Optional<dotnet.System.Exception>, next : dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Exception,dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnDisconnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, exception : Optional<dotnet.System.Exception>, next : dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Exception,dotnet.System.Threading.Tasks.Task>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_SignalR_IHubFilter_Task__OnDisconnectedAsync_0__3__HubLifetimeContext_Exception_System_Func_Microsoft_AspNetCore_SignalR_HubLifetimeContext_System_Exception_Task_(&__thrown, self.get_handle(), context.get_handle(), exception?.get_handle() ?? nil, next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnDisconnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, exception : Optional<dotnet.System.Exception>, next : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext>, Optional<dotnet.System.Exception>) throws -> dotnet.System.Threading.Tasks.Task) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnDisconnectedAsync(context : aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, exception : Optional<dotnet.System.Exception>, next : @escaping (aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext, Optional<dotnet.System.Exception>) throws -> dotnet.System.Threading.Tasks.Task) async throws {
         let del_next = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.SignalR.HubLifetimeContext,dotnet.System.Exception,dotnet.System.Threading.Tasks.Task>(next);
-        return try OnDisconnectedAsync(context: context, exception: exception, next: del_next);
+        return try await OnDisconnectedAsync(context: context, exception: exception, next: del_next);
     }
 } // IHubFilter
 
@@ -5165,6 +5282,9 @@ open class IHubProtocolResolver
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IHubProtocolResolver_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5230,6 +5350,9 @@ open class ISignalRServerBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5256,6 +5379,9 @@ open class IUserIdProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_IUserIdProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5306,6 +5432,9 @@ open class SerializedHubMessage
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_SerializedHubMessage_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5408,6 +5537,9 @@ public final class SerializedMessage
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_SignalR_SerializedMessage_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5589,78 +5721,78 @@ public protocol Microsoft_AspNetCore_SignalR_IUserIdProvider
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, arg9: arg9, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, arg9: arg9, cancellationToken: cancellationToken);
     }
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
 extension Microsoft_AspNetCore_SignalR_IClientProxy {
-    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, arg10 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, arg9: arg9, arg10: arg10, cancellationToken: cancellationToken);
+    public func SendAsync(method : dotnet.System.String, arg1 : Optional<dotnet.System.Object>, arg2 : Optional<dotnet.System.Object>, arg3 : Optional<dotnet.System.Object>, arg4 : Optional<dotnet.System.Object>, arg5 : Optional<dotnet.System.Object>, arg6 : Optional<dotnet.System.Object>, arg7 : Optional<dotnet.System.Object>, arg8 : Optional<dotnet.System.Object>, arg9 : Optional<dotnet.System.Object>, arg10 : Optional<dotnet.System.Object>, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.Microsoft.AspNetCore.SignalR.ClientProxyExtensions.SendAsync(clientProxy: aspnetcore.Microsoft.AspNetCore.SignalR.IClientProxy(hndl: __copy_handle(self.get_handle())), method: method, arg1: arg1, arg2: arg2, arg3: arg3, arg4: arg4, arg5: arg5, arg6: arg6, arg7: arg7, arg8: arg8, arg9: arg9, arg10: arg10, cancellationToken: cancellationToken);
     }
 }
 

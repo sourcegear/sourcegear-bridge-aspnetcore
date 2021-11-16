@@ -120,7 +120,7 @@ public struct ClaimActionCollectionMapExtensions {
         }
     }
     // delegate closure overload
-    public static func MapCustomJson(collection : aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection, claimType : dotnet.System.String, resolver : @escaping (Optional<dotnet.System.Text.Json.JsonElement>) throws -> dotnet.System.String) throws {
+    public static func MapCustomJson(collection : aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection, claimType : dotnet.System.String, resolver : @escaping (dotnet.System.Text.Json.JsonElement) throws -> dotnet.System.String) throws {
         let del_resolver = try dotnet.System.Func_2<dotnet.System.Text.Json.JsonElement,dotnet.System.String>(resolver);
         return try MapCustomJson(collection: collection, claimType: claimType, resolver: del_resolver);
     }
@@ -147,7 +147,7 @@ public struct ClaimActionCollectionMapExtensions {
         }
     }
     // delegate closure overload
-    public static func MapCustomJson(collection : aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection, claimType : dotnet.System.String, valueType : dotnet.System.String, resolver : @escaping (Optional<dotnet.System.Text.Json.JsonElement>) throws -> dotnet.System.String) throws {
+    public static func MapCustomJson(collection : aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActionCollection, claimType : dotnet.System.String, valueType : dotnet.System.String, resolver : @escaping (dotnet.System.Text.Json.JsonElement) throws -> dotnet.System.String) throws {
         let del_resolver = try dotnet.System.Func_2<dotnet.System.Text.Json.JsonElement,dotnet.System.String>(resolver);
         return try MapCustomJson(collection: collection, claimType: claimType, valueType: valueType, resolver: del_resolver);
     }
@@ -245,6 +245,9 @@ open class OAuthChallengeProperties
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthChallengeProperties_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -382,6 +385,9 @@ open class OAuthCodeExchangeContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthCodeExchangeContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -544,6 +550,9 @@ open class OAuthCreatingTicketContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthCreatingTicketContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -837,6 +846,9 @@ open class OAuthEvents
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthEvents_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -911,7 +923,7 @@ open class OAuthEvents
         }
     }
     // delegate closure overload
-    open func set_OnCreatingTicket(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthCreatingTicketContext>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnCreatingTicket(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthCreatingTicketContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthCreatingTicketContext,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnCreatingTicket(value: del_value);
     }
@@ -938,7 +950,7 @@ open class OAuthEvents
         }
     }
     // delegate closure overload
-    open func set_OnRedirectToAuthorizationEndpoint(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_OnRedirectToAuthorizationEndpoint(value : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Authentication.RedirectContext_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>,dotnet.System.Threading.Tasks.Task>(value);
         return try set_OnRedirectToAuthorizationEndpoint(value: del_value);
     }
@@ -987,6 +999,9 @@ open class OAuthHandler_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthHandler_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Authentication.ISystemClock)
@@ -1022,6 +1037,9 @@ open class OAuthOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1399,6 +1417,9 @@ open class OAuthTokenResponse
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_OAuthTokenResponse_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // Microsoft.AspNetCore.Authentication.OAuth.OAuthTokenResponse Success(System.Text.Json.JsonDocument)
@@ -1714,6 +1735,9 @@ open class ClaimAction
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimAction_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String)
@@ -1818,6 +1842,9 @@ open class ClaimActionCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_ClaimActionCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1914,6 +1941,9 @@ open class CustomJsonClaimAction
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_CustomJsonClaimAction_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.Func<System.Text.Json.JsonElement,System.String>)
@@ -1988,6 +2018,9 @@ open class DeleteClaimAction
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_DeleteClaimAction_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -2038,6 +2071,9 @@ open class JsonKeyClaimAction
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_JsonKeyClaimAction_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2115,6 +2151,9 @@ open class JsonSubKeyClaimAction
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_JsonSubKeyClaimAction_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.String, System.String)
@@ -2191,6 +2230,9 @@ open class MapAllClaimsAction
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Authentication_OAuth_Claims_MapAllClaimsAction_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2259,7 +2301,7 @@ public struct OAuthExtensions {
         }
     }
     // delegate closure overload
-    public static func AddOAuth(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddOAuth(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>(configureOptions);
         return try AddOAuth(builder: builder, authenticationScheme: authenticationScheme, configureOptions: del_configureOptions);
     }
@@ -2287,7 +2329,7 @@ public struct OAuthExtensions {
         }
     }
     // delegate closure overload
-    public static func AddOAuth(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, displayName : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public static func AddOAuth(builder : aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder, authenticationScheme : dotnet.System.String, displayName : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>(configureOptions);
         return try AddOAuth(builder: builder, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: del_configureOptions);
     }
@@ -2309,6 +2351,9 @@ open class OAuthPostConfigureOptions_2<TOptions : SGBridgeGenericValue,THandler 
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_OAuthPostConfigureOptions_2_get_type_handle(TOptions.get_type_handle(),THandler.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2384,7 +2429,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActio
         try aspnetcore.Microsoft.AspNetCore.Authentication.ClaimActionCollectionMapExtensions.MapCustomJson(collection: self, claimType: claimType, resolver: resolver);
     }
     // delegate closure overload
-    public func MapCustomJson(claimType : dotnet.System.String, resolver : @escaping (Optional<dotnet.System.Text.Json.JsonElement>) throws -> dotnet.System.String) throws {
+    public func MapCustomJson(claimType : dotnet.System.String, resolver : @escaping (dotnet.System.Text.Json.JsonElement) throws -> dotnet.System.String) throws {
         let del_resolver = try dotnet.System.Func_2<dotnet.System.Text.Json.JsonElement,dotnet.System.String>(resolver);
         try aspnetcore.Microsoft.AspNetCore.Authentication.ClaimActionCollectionMapExtensions.MapCustomJson(collection: self, claimType: claimType, resolver: del_resolver);
     }
@@ -2396,7 +2441,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.Claims.ClaimActio
         try aspnetcore.Microsoft.AspNetCore.Authentication.ClaimActionCollectionMapExtensions.MapCustomJson(collection: self, claimType: claimType, valueType: valueType, resolver: resolver);
     }
     // delegate closure overload
-    public func MapCustomJson(claimType : dotnet.System.String, valueType : dotnet.System.String, resolver : @escaping (Optional<dotnet.System.Text.Json.JsonElement>) throws -> dotnet.System.String) throws {
+    public func MapCustomJson(claimType : dotnet.System.String, valueType : dotnet.System.String, resolver : @escaping (dotnet.System.Text.Json.JsonElement) throws -> dotnet.System.String) throws {
         let del_resolver = try dotnet.System.Func_2<dotnet.System.Text.Json.JsonElement,dotnet.System.String>(resolver);
         try aspnetcore.Microsoft.AspNetCore.Authentication.ClaimActionCollectionMapExtensions.MapCustomJson(collection: self, claimType: claimType, valueType: valueType, resolver: del_resolver);
     }
@@ -2436,7 +2481,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OAuthExtensions.AddOAuth(builder: self, authenticationScheme: authenticationScheme, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddOAuth(authenticationScheme : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddOAuth(authenticationScheme : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OAuthExtensions.AddOAuth(builder: self, authenticationScheme: authenticationScheme, configureOptions: del_configureOptions);
     }
@@ -2448,7 +2493,7 @@ extension aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OAuthExtensions.AddOAuth(builder: self, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddOAuth(authenticationScheme : dotnet.System.String, displayName : dotnet.System.String, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
+    public func AddOAuth(authenticationScheme : dotnet.System.String, displayName : dotnet.System.String, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Authentication.AuthenticationBuilder {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Authentication.OAuth.OAuthOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OAuthExtensions.AddOAuth(builder: self, authenticationScheme: authenticationScheme, displayName: displayName, configureOptions: del_configureOptions);
     }

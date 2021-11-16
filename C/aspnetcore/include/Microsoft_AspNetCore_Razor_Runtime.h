@@ -24,6 +24,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_String__get_Identifier_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);

@@ -24,6 +24,8 @@ struct {
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureCollection_void__set_Item_0__2__Type_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureCollection_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_type_handle)(TYP T);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_Default)(void);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_set_Default)(SG_HNDL_NONNULL __v);
     GVAL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_T__Fetch_0__1__IFeatureCollection)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL features);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Http_Features_FeatureReference_1_T__Fetch_0__1__IFeatureCollection)(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown);
     GVAL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Http_Features_FeatureReference_1_T__Fetch_0__1__IFeatureCollection)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL features);
@@ -64,6 +66,7 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_Object__get_Item_0__1__Type)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__set_Item_0__2__Type_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL instance), const void* _Nonnull __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 } _g_Microsoft_Extensions_Features;
 
 static void my_init() {
@@ -201,6 +204,21 @@ TYP Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_type_handle(TYP T)
     }
     TYP ret = _g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_type_handle(T);
     return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_Default(void) {
+    if (!_g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_Default) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_Default();
+    return ret;
+}
+
+void Microsoft_AspNetCore_Http_Features_FeatureReference_1_set_Default(SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_set_Default) {
+        my_init();
+    }
+    _g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_FeatureReference_1_set_Default(__v);
 }
 
 GVAL Microsoft_AspNetCore_Http_Features_FeatureReference_1_T__Fetch_0__1__IFeatureCollection(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL features) {
@@ -513,6 +531,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_IFeatureCollection_cast(SG_HN
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Features_IFeatureCollection_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL instance), const void* _Nonnull __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Features._fp_Microsoft_AspNetCore_Http_Features_IFeatureCollection_create(__thrown, __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0, __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_UTFeature__Get_1__0, __cb_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature, __pdata_Microsoft_AspNetCore_Http_Features_IFeatureCollection_void__Set_1__1__UTFeature, __cb_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0, __pdata_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_IEnumerator_System_Collections_Generic_System_Collections_Generic_KeyValuePair_System_Type_object____GetEnumerator_0__0, __cb_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, __pdata_System_Collections_IEnumerable_IEnumerator__GetEnumerator_0__0, __deinit);
     return ret;
 }
 

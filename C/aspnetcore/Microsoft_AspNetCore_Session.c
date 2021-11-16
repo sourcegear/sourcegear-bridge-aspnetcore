@@ -20,7 +20,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Builder_SessionOptions_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_ctor_0__7__IDistributedCache_String_TimeSpan_TimeSpan_System_Func_bool__ILoggerFactory_bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cache, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, SG_HNDL_NONNULL loggerFactory, int32_t isNewSessionKey);
-    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+    int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_void__Set_0__2__String_u8Array)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL value);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_void__Remove_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Session_DistributedSession_void__Clear_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -37,6 +37,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Session_ISessionStore_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, int32_t isNewSessionKey);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_ISessionStore_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_ISessionStore_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, int32_t isNewSessionKey), const void* _Nonnull __pdata_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_SessionDefaults_get_CookieName)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Session_SessionDefaults_set_CookieName)(SG_HNDL_NONNULL __v);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Session_SessionDefaults_get_CookiePath)(void);
@@ -159,7 +160,7 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Session_DistributedSession_ctor_0__7__IDist
     return ret;
 }
 
-int32_t Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr) {
+int32_t Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr) {
     if (!_g_Microsoft_AspNetCore_Session._fp_Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array) {
         my_init();
     }
@@ -289,6 +290,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Session_ISessionStore_cast(SG_HNDL_NULLABLE
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Session._fp_Microsoft_AspNetCore_Session_ISessionStore_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Session_ISessionStore_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, int32_t isNewSessionKey), const void* _Nonnull __pdata_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Session._fp_Microsoft_AspNetCore_Session_ISessionStore_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Session._fp_Microsoft_AspNetCore_Session_ISessionStore_create(__thrown, __cb_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool, __pdata_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool, __deinit);
     return ret;
 }
 

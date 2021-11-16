@@ -83,9 +83,9 @@ public struct HttpClientBuilderExtensions {
     - Parameter builder: The .
     - Parameter factory: A factory function that will be used to construct the typed client.
     */
-    public static func AddTypedClient<UTClient : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>, factory : dotnet.System.Func_3<dotnet.System.Net.Http.HttpClient,dotnet.System.IServiceProvider,UTClient>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+    public static func AddTypedClient<UTClient : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>, factory : Optional<dotnet.System.Func_3<dotnet.System.Net.Http.HttpClient,dotnet.System.IServiceProvider,UTClient>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_HttpClientBuilderExtensions_IHttpClientBuilder__AddTypedClient_1__2__IHttpClientBuilder_System_Func_System_Net_Http_HttpClient_System_IServiceProvider_UTClient_(UTClient.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_HttpClientBuilderExtensions_IHttpClientBuilder__AddTypedClient_1__2__IHttpClientBuilder_System_Func_System_Net_Http_HttpClient_System_IServiceProvider_UTClient_(UTClient.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, (factory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -112,9 +112,9 @@ public struct HttpClientBuilderExtensions {
     - Parameter builder: The .
     - Parameter factory: A factory function that will be used to construct the typed client.
     */
-    public static func AddTypedClient<UTClient : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>, factory : dotnet.System.Func_2<dotnet.System.Net.Http.HttpClient,UTClient>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+    public static func AddTypedClient<UTClient : SGBridgeGenericValue>(builder : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>, factory : Optional<dotnet.System.Func_2<dotnet.System.Net.Http.HttpClient,UTClient>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_HttpClientBuilderExtensions_IHttpClientBuilder__AddTypedClient_1__2__IHttpClientBuilder_System_Func_System_Net_Http_HttpClient_UTClient_(UTClient.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_HttpClientBuilderExtensions_IHttpClientBuilder__AddTypedClient_1__2__IHttpClientBuilder_System_Func_System_Net_Http_HttpClient_UTClient_(UTClient.get_type_handle(), &__thrown, builder?.get_handle() ?? nil, (factory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -340,7 +340,29 @@ public struct HttpClientBuilderExtensions {
         let del_shouldRedactHeaderValue = try dotnet.System.Func_2<dotnet.System.String,Swift.Bool>(shouldRedactHeaderValue);
         return try RedactLoggedHeaders(builder: builder, shouldRedactHeaderValue: del_shouldRedactHeaderValue);
     }
-// TODO COPE (write_all_methods) (span) Microsoft.Extensions.DependencyInjection.IHttpClientBuilder SetHandlerLifetime(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.TimeSpan)
+    // Microsoft.Extensions.DependencyInjection.IHttpClientBuilder SetHandlerLifetime(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.TimeSpan)
+// docid: M:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder,System.TimeSpan)
+    /**
+    
+            Sets the length of time that a  instance can be reused. Each named
+            client can have its own configured handler lifetime value. The default value is two minutes. Set the lifetime to
+             to disable handler expiry.
+            
+
+    */
+    public static func SetHandlerLifetime(builder : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>, handlerLifetime : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_DependencyInjection_HttpClientBuilderExtensions_IHttpClientBuilder__SetHandlerLifetime_0__2__IHttpClientBuilder_TimeSpan(&__thrown, builder?.get_handle() ?? nil, handlerLifetime.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
 } // HttpClientBuilderExtensions
 
 
@@ -494,6 +516,9 @@ open class IHttpClientBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_IHttpClientBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -554,6 +579,9 @@ open class HttpClientFactoryOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_HttpClientFactoryOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -578,7 +606,17 @@ open class HttpClientFactoryOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_HandlerLifetime(System.TimeSpan)
+    // [IsSpecialName] void set_HandlerLifetime(System.TimeSpan)
+// docid: M:Microsoft.Extensions.Http.HttpClientFactoryOptions.set_HandlerLifetime(System.TimeSpan)
+    open func set_HandlerLifetime(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_Extensions_Http_HttpClientFactoryOptions_void__set_HandlerLifetime_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IList<System.Action<System.Net.Http.HttpClient>> get_HttpClientActions()
 // docid: M:Microsoft.Extensions.Http.HttpClientFactoryOptions.get_HttpClientActions
     open func get_HttpClientActions() throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.Action_1<dotnet.System.Net.Http.HttpClient>>> {
@@ -674,7 +712,9 @@ open class HttpClientFactoryOptions
         get {
             return try! get_HandlerLifetime();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_HandlerLifetime(System.TimeSpan)
+        set(v) {
+            return try! set_HandlerLifetime(value: v);
+        }
     }
     /**
     
@@ -750,6 +790,9 @@ open class HttpMessageHandlerBuilder
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_HttpMessageHandlerBuilder_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -933,6 +976,9 @@ open class IHttpMessageHandlerBuilderFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -989,6 +1035,9 @@ open class ITypedHttpClientFactory_1<TClient : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_ITypedHttpClientFactory_1_get_type_handle(TClient.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1035,6 +1084,9 @@ open class LoggingHttpMessageHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_Logging_LoggingHttpMessageHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILogger)
@@ -1069,6 +1121,9 @@ open class LoggingScopeHttpMessageHandler
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Http_Logging_LoggingScopeHttpMessageHandler_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1180,6 +1235,9 @@ open class IHttpClientFactory
     open class func get_type_handle() -> TypeHandle {
         return System_Net_Http_IHttpClientFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1232,6 +1290,9 @@ open class IHttpMessageHandlerFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return System_Net_Http_IHttpMessageHandlerFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1337,7 +1398,7 @@ extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IHttpClientBuilder AddTypedClient<TClient>(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.Func<System.Net.Http.HttpClient,System.IServiceProvider,TClient>)
 extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
-    public func AddTypedClient<UTClient : SGBridgeGenericValue>(factory : dotnet.System.Func_3<dotnet.System.Net.Http.HttpClient,dotnet.System.IServiceProvider,UTClient>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+    public func AddTypedClient<UTClient : SGBridgeGenericValue>(factory : Optional<dotnet.System.Func_3<dotnet.System.Net.Http.HttpClient,dotnet.System.IServiceProvider,UTClient>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder(hndl: __copy_handle(self.get_handle())), factory: factory);
     }
     // delegate closure overload
@@ -1349,7 +1410,7 @@ extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IHttpClientBuilder AddTypedClient<TClient>(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.Func<System.Net.Http.HttpClient,TClient>)
 extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
-    public func AddTypedClient<UTClient : SGBridgeGenericValue>(factory : dotnet.System.Func_2<dotnet.System.Net.Http.HttpClient,UTClient>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+    public func AddTypedClient<UTClient : SGBridgeGenericValue>(factory : Optional<dotnet.System.Func_2<dotnet.System.Net.Http.HttpClient,UTClient>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddTypedClient(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder(hndl: __copy_handle(self.get_handle())), factory: factory);
     }
     // delegate closure overload
@@ -1445,7 +1506,11 @@ extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
 }
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IHttpClientBuilder SetHandlerLifetime(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.TimeSpan)
-// TODO COPE extension method (span) Microsoft.Extensions.DependencyInjection.IHttpClientBuilder SetHandlerLifetime(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder, System.TimeSpan)
+extension Microsoft_Extensions_DependencyInjection_IHttpClientBuilder {
+    public func SetHandlerLifetime(handlerLifetime : dotnet.System.TimeSpan) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> {
+        return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IHttpClientBuilder(hndl: __copy_handle(self.get_handle())), handlerLifetime: handlerLifetime);
+    }
+}
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection AddHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {

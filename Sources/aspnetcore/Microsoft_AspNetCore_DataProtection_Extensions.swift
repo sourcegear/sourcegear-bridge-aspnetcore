@@ -10,7 +10,29 @@ import dotnet;
 extension Microsoft.AspNetCore.DataProtection {
 // type: Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions
 public struct DataProtectionAdvancedExtensions {
-// TODO COPE (write_all_methods) (span) System.Byte[] Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.Byte[], System.TimeSpan)
+    // System.Byte[] Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.Byte[], System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.Byte[],System.TimeSpan)
+    /**
+    
+            Cryptographically protects a piece of plaintext data, expiring the data after
+            the specified amount of time has elapsed.
+            
+
+    - Parameter protector: The protector to use.
+    - Parameter plaintext: The plaintext data to protect.
+    - Parameter lifetime: The amount of time after which the payload should no longer be unprotectable.
+    - Returns: The protected form of the plaintext data.
+
+    */
+    public static func Protect(protector : aspnetcore.Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, plaintext : dotnet.System_Arr<Swift.UInt8>, lifetime : dotnet.System.TimeSpan) throws -> dotnet.System_Arr<Swift.UInt8> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_DataProtection_DataProtectionAdvancedExtensions_u8Array__Protect_0__3__ITimeLimitedDataProtector_u8Array_TimeSpan(&__thrown, protector.get_handle(), plaintext.get_handle(), lifetime.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System_Arr<Swift.UInt8>(hndl : __return);
+        }
+    }
     // System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.DateTimeOffset)
 // docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.DateTimeOffset)
     /**
@@ -34,7 +56,29 @@ public struct DataProtectionAdvancedExtensions {
         return dotnet.System.String(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.TimeSpan)
+    // System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector,System.String,System.TimeSpan)
+    /**
+    
+            Cryptographically protects a piece of plaintext data, expiring the data after
+            the specified amount of time has elapsed.
+            
+
+    - Parameter protector: The protector to use.
+    - Parameter plaintext: The plaintext data to protect.
+    - Parameter lifetime: The amount of time after which the payload should no longer be unprotectable.
+    - Returns: The protected form of the plaintext data.
+
+    */
+    public static func Protect(protector : aspnetcore.Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, plaintext : dotnet.System.String, lifetime : dotnet.System.TimeSpan) throws -> dotnet.System.String {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_DataProtection_DataProtectionAdvancedExtensions_String__Protect_0__3__ITimeLimitedDataProtector_String_TimeSpan(&__thrown, protector.get_handle(), plaintext.get_handle(), lifetime.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return dotnet.System.String(hndl : __return);
+        }
+    }
     // Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector ToTimeLimitedDataProtector(Microsoft.AspNetCore.DataProtection.IDataProtector)
 // docid: M:Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.ToTimeLimitedDataProtector(Microsoft.AspNetCore.DataProtection.IDataProtector)
     /**
@@ -149,7 +193,7 @@ public struct DataProtectionProvider {
         }
     }
     // delegate closure overload
-    public static func Create(keyDirectory : dotnet.System.IO.DirectoryInfo, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionProvider {
+    public static func Create(keyDirectory : dotnet.System.IO.DirectoryInfo, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionProvider {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder>(setupAction);
         return try Create(keyDirectory: keyDirectory, setupAction: del_setupAction);
     }
@@ -219,7 +263,7 @@ public struct DataProtectionProvider {
         }
     }
     // delegate closure overload
-    public static func Create(keyDirectory : dotnet.System.IO.DirectoryInfo, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder>) throws -> Void, certificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionProvider {
+    public static func Create(keyDirectory : dotnet.System.IO.DirectoryInfo, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder) throws -> Void, certificate : dotnet.System.Security.Cryptography.X509Certificates.X509Certificate2) throws -> aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionProvider {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder>(setupAction);
         return try Create(keyDirectory: keyDirectory, setupAction: del_setupAction, certificate: certificate);
     }
@@ -242,6 +286,9 @@ open class ITimeLimitedDataProtector
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -335,7 +382,11 @@ public protocol Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector
 }
 
 // EXTENSION METHOD System.Byte[] Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.Byte[], System.TimeSpan)
-// TODO COPE extension method (span) System.Byte[] Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.Byte[], System.TimeSpan)
+extension Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
+    public func Protect(plaintext : dotnet.System_Arr<Swift.UInt8>, lifetime : dotnet.System.TimeSpan) throws -> dotnet.System_Arr<Swift.UInt8> {
+        return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.Protect(protector: aspnetcore.Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector(hndl: __copy_handle(self.get_handle())), plaintext: plaintext, lifetime: lifetime);
+    }
+}
 
 // EXTENSION METHOD System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.DateTimeOffset)
 extension Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
@@ -345,7 +396,11 @@ extension Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
 }
 
 // EXTENSION METHOD System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.TimeSpan)
-// TODO COPE extension method (span) System.String Protect(Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector, System.String, System.TimeSpan)
+extension Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector {
+    public func Protect(plaintext : dotnet.System.String, lifetime : dotnet.System.TimeSpan) throws -> dotnet.System.String {
+        return try aspnetcore.Microsoft.AspNetCore.DataProtection.DataProtectionAdvancedExtensions.Protect(protector: aspnetcore.Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector(hndl: __copy_handle(self.get_handle())), plaintext: plaintext, lifetime: lifetime);
+    }
+}
 
 // EXTENSION METHOD Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector ToTimeLimitedDataProtector(Microsoft.AspNetCore.DataProtection.IDataProtector)
 extension Microsoft_AspNetCore_DataProtection_IDataProtector {

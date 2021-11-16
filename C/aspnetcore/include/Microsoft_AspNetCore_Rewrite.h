@@ -32,6 +32,8 @@ void Microsoft_AspNetCore_Rewrite_IRule_void__ApplyRule_0__1__RewriteContext(SG_
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Rewrite_IRule_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Rewrite_IRule_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Rewrite_IRule_void__ApplyRule_0__1__RewriteContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Rewrite_IRule_void__ApplyRule_0__1__RewriteContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Rewrite_RewriteContext_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Rewrite_RewriteContext_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);

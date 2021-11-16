@@ -213,6 +213,9 @@ open class HealthCheckMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_HealthChecks_HealthCheckMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Diagnostics.HealthChecks.HealthCheckOptions>, Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService)
@@ -243,13 +246,13 @@ open class HealthCheckMiddleware
     - Returns: 
 
     */
-    open func InvokeAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Diagnostics_HealthChecks_HealthCheckMiddleware_Task__InvokeAsync_0__1__HttpContext(&__thrown, self.get_handle(), httpContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HealthCheckMiddleware
@@ -268,6 +271,9 @@ open class HealthCheckOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Diagnostics_HealthChecks_HealthCheckOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -309,7 +315,7 @@ open class HealthCheckOptions
         }
     }
     // delegate closure overload
-    open func set_Predicate(value : @escaping (Optional<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration>) throws -> Bool) throws {
+    open func set_Predicate(value : @escaping (aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration) throws -> Bool) throws {
         let del_value = try dotnet.System.Func_2<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Swift.Bool>(value);
         return try set_Predicate(value: del_value);
     }
@@ -358,7 +364,7 @@ open class HealthCheckOptions
         }
     }
     // delegate closure overload
-    open func set_ResponseWriter(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext>, Optional<aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport>) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_ResponseWriter(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext, aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport) throws -> dotnet.System.Threading.Tasks.Task) throws {
         let del_value = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Http.HttpContext,aspnetcore.Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,dotnet.System.Threading.Tasks.Task>(value);
         return try set_ResponseWriter(value: del_value);
     }

@@ -54,7 +54,7 @@ public struct LocalizationServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddLocalization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddLocalization(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try AddLocalization(services: services, setupAction: del_setupAction);
     }
@@ -79,6 +79,9 @@ open class IResourceNamesCache
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_IResourceNamesCache_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -115,7 +118,7 @@ open class IResourceNamesCache
         }
     }
     // delegate closure overload
-    open func GetOrAdd(name : dotnet.System.String, valueFactory : @escaping (Optional<dotnet.System.String>) throws -> dotnet.System.Collections.Generic.IList_1<dotnet.System.String>) throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>> {
+    open func GetOrAdd(name : dotnet.System.String, valueFactory : @escaping (dotnet.System.String) throws -> dotnet.System.Collections.Generic.IList_1<dotnet.System.String>) throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>> {
         let del_valueFactory = try dotnet.System.Func_2<dotnet.System.String,dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>(valueFactory);
         return try GetOrAdd(name: name, valueFactory: del_valueFactory);
     }
@@ -135,6 +138,9 @@ open class LocalizationOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_LocalizationOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -208,6 +214,9 @@ open class ResourceLocationAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_ResourceLocationAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -269,6 +278,9 @@ open class ResourceManagerStringLocalizer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_ResourceManagerStringLocalizer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Resources.ResourceManager, System.Reflection.Assembly, System.String, Microsoft.Extensions.Localization.IResourceNamesCache, Microsoft.Extensions.Logging.ILogger)
@@ -308,9 +320,6 @@ open class ResourceManagerStringLocalizer
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String)
 // docid: M:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_ResourceManagerStringLocalizer_LocalizedString__get_Item_0__1__String(&__thrown, self.get_handle(), name.get_handle());
@@ -322,9 +331,6 @@ open class ResourceManagerStringLocalizer
     }
     // [IsSpecialName] Microsoft.Extensions.Localization.LocalizedString get_Item(System.String, System.Object[])
 // docid: M:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer.get_Item(System.String,System.Object[])
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : dotnet.System.String, arguments : dotnet.System_Arr<dotnet.System.Object>) throws -> aspnetcore.Microsoft.Extensions.Localization.LocalizedString {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Localization_ResourceManagerStringLocalizer_LocalizedString__get_Item_0__2__String_ObjectArray(&__thrown, self.get_handle(), name.get_handle(), arguments.get_handle());
@@ -351,6 +357,9 @@ open class ResourceManagerStringLocalizerFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_ResourceManagerStringLocalizerFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -433,6 +442,9 @@ open class ResourceNamesCache
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_ResourceNamesCache_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -470,7 +482,7 @@ open class ResourceNamesCache
         }
     }
     // delegate closure overload
-    open /* method final */ func GetOrAdd(name : dotnet.System.String, valueFactory : @escaping (Optional<dotnet.System.String>) throws -> dotnet.System.Collections.Generic.IList_1<dotnet.System.String>) throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>> {
+    open /* method final */ func GetOrAdd(name : dotnet.System.String, valueFactory : @escaping (dotnet.System.String) throws -> dotnet.System.Collections.Generic.IList_1<dotnet.System.String>) throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>> {
         let del_valueFactory = try dotnet.System.Func_2<dotnet.System.String,dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>(valueFactory);
         return try GetOrAdd(name: name, valueFactory: del_valueFactory);
     }
@@ -491,6 +503,9 @@ open class RootNamespaceAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Localization_RootNamespaceAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -561,7 +576,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddLocalization(setupAction : @escaping (Optional<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddLocalization(setupAction : @escaping (aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.Extensions.Localization.LocalizationOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.LocalizationServiceCollectionExtensions.AddLocalization(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

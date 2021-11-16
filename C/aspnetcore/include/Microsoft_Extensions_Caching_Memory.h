@@ -52,7 +52,7 @@ void Microsoft_Extensions_Caching_Memory_MemoryCache_void__Dispose_0__0(SG_HNDL_
 
 void Microsoft_Extensions_Caching_Memory_MemoryCache_void__Remove_0__1__Object(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key);
 
-int32_t Microsoft_Extensions_Caching_Memory_MemoryCache_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __result_out_ptr);
+int32_t Microsoft_Extensions_Caching_Memory_MemoryCache_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __result_out_ptr);
 
 int32_t Microsoft_Extensions_Caching_Memory_MemoryCache_i32__get_Count_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 

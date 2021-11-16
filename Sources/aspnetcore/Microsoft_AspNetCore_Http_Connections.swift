@@ -23,6 +23,9 @@ public final class ConnectionEndpointRouteBuilder
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_ConnectionEndpointRouteBuilder_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
@@ -44,7 +47,7 @@ public final class ConnectionEndpointRouteBuilder
         }
     }
     // delegate closure overload
-    public func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
+    public func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
         let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
         return try Add(convention: del_convention);
     }
@@ -76,7 +79,7 @@ public struct ConnectionEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapConnections(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
+    public static func MapConnections(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>(configure);
         return try MapConnections(endpoints: endpoints, pattern: pattern, configure: del_configure);
     }
@@ -106,7 +109,7 @@ public struct ConnectionEndpointRouteBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func MapConnections(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, options : aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
+    public static func MapConnections(endpoints : aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder, pattern : dotnet.System.String, options : aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>(configure);
         return try MapConnections(endpoints: endpoints, pattern: pattern, options: options, configure: del_configure);
     }
@@ -131,6 +134,9 @@ open class ConnectionOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_ConnectionOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -197,6 +203,9 @@ open class ConnectionOptionsSetup
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_ConnectionOptionsSetup_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -287,6 +296,9 @@ open class HttpConnectionDispatcherOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_HttpConnectionDispatcherOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -439,7 +451,17 @@ open class HttpConnectionDispatcherOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_TransportSendTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_TransportSendTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions.set_TransportSendTimeout(System.TimeSpan)
+    open func set_TransportSendTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Http_Connections_HttpConnectionDispatcherOptions_void__set_TransportSendTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] bool get_CloseOnAuthenticationExpiration()
 // docid: M:Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions.get_CloseOnAuthenticationExpiration
     open func get_CloseOnAuthenticationExpiration() throws -> Bool {
@@ -553,7 +575,9 @@ open class HttpConnectionDispatcherOptions
         get {
             return try! get_TransportSendTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_TransportSendTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_TransportSendTimeout(value: v);
+        }
     }
     /**
     
@@ -597,6 +621,9 @@ open class LongPollingOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_LongPollingOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -621,7 +648,17 @@ open class LongPollingOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_PollTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_PollTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Http.Connections.LongPollingOptions.set_PollTimeout(System.TimeSpan)
+    open func set_PollTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Http_Connections_LongPollingOptions_void__set_PollTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     /**
     
             Gets or sets the poll timeout.
@@ -632,7 +669,9 @@ open class LongPollingOptions
         get {
             return try! get_PollTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_PollTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_PollTimeout(value: v);
+        }
     }
 } // LongPollingOptions
 
@@ -650,6 +689,9 @@ open class NegotiateMetadata
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_NegotiateMetadata_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -681,6 +723,9 @@ open class WebSocketOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_WebSocketOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -705,7 +750,17 @@ open class WebSocketOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_CloseTimeout(System.TimeSpan)
+    // [IsSpecialName] void set_CloseTimeout(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.Http.Connections.WebSocketOptions.set_CloseTimeout(System.TimeSpan)
+    open func set_CloseTimeout(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Http_Connections_WebSocketOptions_void__set_CloseTimeout_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] System.Func<System.Collections.Generic.IList<System.String>,System.String> get_SubProtocolSelector()
 // docid: M:Microsoft.AspNetCore.Http.Connections.WebSocketOptions.get_SubProtocolSelector
     open func get_SubProtocolSelector() throws -> Optional<dotnet.System.Func_2<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>,dotnet.System.String>> {
@@ -733,7 +788,7 @@ open class WebSocketOptions
         }
     }
     // delegate closure overload
-    open func set_SubProtocolSelector(value : @escaping (Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>>) throws -> dotnet.System.String) throws {
+    open func set_SubProtocolSelector(value : @escaping (dotnet.System.Collections.Generic.IList_1<dotnet.System.String>) throws -> dotnet.System.String) throws {
         let del_value = try dotnet.System.Func_2<dotnet.System.Collections.Generic.IList_1<dotnet.System.String>,dotnet.System.String>(value);
         return try set_SubProtocolSelector(value: del_value);
     }
@@ -747,7 +802,9 @@ open class WebSocketOptions
         get {
             return try! get_CloseTimeout();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_CloseTimeout(System.TimeSpan)
+        set(v) {
+            return try! set_CloseTimeout(value: v);
+        }
     }
     /**
     
@@ -786,6 +843,9 @@ open class IHttpContextFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -840,6 +900,9 @@ open class IHttpTransportFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -916,7 +979,7 @@ public struct ConnectionsDependencyInjectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddConnections(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddConnections(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, options : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions>(options);
         return try AddConnections(services: services, options: del_options);
     }
@@ -945,7 +1008,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilderExtensions.MapConnections(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, configure: configure);
     }
     // delegate closure overload
-    public func MapConnections(pattern : dotnet.System.String, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
+    public func MapConnections(pattern : dotnet.System.String, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilderExtensions.MapConnections(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, configure: del_configure);
     }
@@ -963,7 +1026,7 @@ extension Microsoft_AspNetCore_Routing_IEndpointRouteBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilderExtensions.MapConnections(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, options: options, configure: configure);
     }
     // delegate closure overload
-    public func MapConnections(pattern : dotnet.System.String, options : aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions, configure : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
+    public func MapConnections(pattern : dotnet.System.String, options : aspnetcore.Microsoft.AspNetCore.Http.Connections.HttpConnectionDispatcherOptions, configure : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilder {
         let del_configure = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder>(configure);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ConnectionEndpointRouteBuilderExtensions.MapConnections(endpoints: aspnetcore.Microsoft.AspNetCore.Routing.IEndpointRouteBuilder(hndl: __copy_handle(self.get_handle())), pattern: pattern, options: options, configure: del_configure);
     }
@@ -989,7 +1052,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ConnectionsDependencyInjectionExtensions.AddConnections(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), options: options);
     }
     // delegate closure overload
-    public func AddConnections(options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddConnections(options : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Http.Connections.ConnectionOptions>(options);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ConnectionsDependencyInjectionExtensions.AddConnections(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), options: del_options);
     }

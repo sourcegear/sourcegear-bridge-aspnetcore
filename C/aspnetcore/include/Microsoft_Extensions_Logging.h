@@ -110,6 +110,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Logging_ILoggingBuilder_IServiceCollection
 
 SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggingBuilder_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Logging_ILoggingBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Logging_LoggerFactory_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Logging_LoggerFactory_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);

@@ -408,6 +408,9 @@ public final class HttpLoggingOptions
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpLogging_HttpLoggingOptions_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -624,6 +627,9 @@ public final class MediaTypeOptions
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpLogging_MediaTypeOptions_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void AddText(System.String)
@@ -732,6 +738,9 @@ public final class W3CLoggerOptions
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_HttpLogging_W3CLoggerOptions_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -845,7 +854,17 @@ public final class W3CLoggerOptions
         return dotnet.System.TimeSpan(hndl : __return);
         }
     }
-// TODO COPE (write_all_methods) (span) [IsSpecialName] void set_FlushInterval(System.TimeSpan)
+    // [IsSpecialName] void set_FlushInterval(System.TimeSpan)
+// docid: M:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions.set_FlushInterval(System.TimeSpan)
+    public func set_FlushInterval(value : dotnet.System.TimeSpan) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_HttpLogging_W3CLoggerOptions_void__set_FlushInterval_0__1__TimeSpan(&__thrown, self.get_handle(), value.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.HttpLogging.W3CLoggingFields get_LoggingFields()
 // docid: M:Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions.get_LoggingFields
     public func get_LoggingFields() throws -> aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggingFields {
@@ -911,7 +930,9 @@ public final class W3CLoggerOptions
         get {
             return try! get_FlushInterval();
         }
-// TODO COPE prop set (span) [IsSpecialName] void set_FlushInterval(System.TimeSpan)
+        set(v) {
+            return try! set_FlushInterval(value: v);
+        }
     }
     /**
     
@@ -1336,7 +1357,7 @@ public struct HttpLoggingServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddHttpLogging(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddHttpLogging(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions>(configureOptions);
         return try AddHttpLogging(services: services, configureOptions: del_configureOptions);
     }
@@ -1362,7 +1383,7 @@ public struct HttpLoggingServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddW3CLogging(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddW3CLogging(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions>(configureOptions);
         return try AddW3CLogging(services: services, configureOptions: del_configureOptions);
     }
@@ -1393,7 +1414,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions.AddHttpLogging(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddHttpLogging(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddHttpLogging(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpLogging.HttpLoggingOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions.AddHttpLogging(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -1405,7 +1426,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions.AddW3CLogging(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddW3CLogging(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddW3CLogging(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.HttpLogging.W3CLoggerOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.HttpLoggingServicesExtensions.AddW3CLogging(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

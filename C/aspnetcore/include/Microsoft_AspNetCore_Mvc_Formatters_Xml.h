@@ -176,6 +176,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_Object__Unw
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_Object__Unwrap_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL declaredType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_Object__Unwrap_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_Object__Wrap_0__1__Object(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE original);
@@ -184,11 +186,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_Type__g
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_Object__Wrap_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE original), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_Object__Wrap_0__1__Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_IWrapperProvider__GetProvider_0__1__WrapperProviderContext(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_IWrapperProvider__GetProvider_0__1__WrapperProviderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_IWrapperProvider__GetProvider_0__1__WrapperProviderContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Formatters_Xml_MvcXmlOptions_get_type_handle(void);
 

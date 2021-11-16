@@ -517,6 +517,9 @@ open class ILoggingBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ILoggingBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -559,6 +562,9 @@ open class LoggerFactory
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerFactory_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -756,6 +762,9 @@ open class LoggerFactoryOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerFactoryOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -827,6 +836,9 @@ open class LoggerFilterOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerFilterOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -961,6 +973,9 @@ open class LoggerFilterRule
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_LoggerFilterRule_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1118,6 +1133,9 @@ open class ProviderAliasAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_ProviderAliasAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

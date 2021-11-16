@@ -22,6 +22,9 @@ open class AddressInUseException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_AddressInUseException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -78,6 +81,9 @@ open class BaseConnectionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_BaseConnectionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -362,6 +368,9 @@ open class ConnectionAbortedException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionAbortedException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -436,6 +445,9 @@ open class ConnectionBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider)
@@ -470,7 +482,7 @@ open class ConnectionBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    open /* method final */ func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate,aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -533,7 +545,7 @@ public struct ConnectionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Use(connectionBuilder : aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder, middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext>, Optional<dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    public static func Use(connectionBuilder : aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder, middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext, dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext,dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>,dotnet.System.Threading.Tasks.Task>(middleware);
         return try Use(connectionBuilder: connectionBuilder, middleware: del_middleware);
     }
@@ -559,7 +571,7 @@ public struct ConnectionBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func Run(connectionBuilder : aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder, middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    public static func Run(connectionBuilder : aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder, middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext,dotnet.System.Threading.Tasks.Task>(middleware);
         return try Run(connectionBuilder: connectionBuilder, middleware: del_middleware);
     }
@@ -579,6 +591,9 @@ open class ConnectionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -670,6 +685,9 @@ public final class ConnectionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Connections.ConnectionContext)
@@ -709,16 +727,36 @@ public final class ConnectionDelegate
         return dotnet.System.Threading.Tasks.Task(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) throws -> dotnet.System.Threading.Tasks.Task) throws
+    public convenience init(_ __closure_Invoke : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) async throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext(hndl: connection));
-                return __copy_handle(ret.get_handle());
+                let tcs = try System.Threading.Tasks.TaskCompletionSource();
+                Task
+                {
+                    do
+                    {
+                    try await __closure_Invoke(aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext(hndl: connection));
+                    try tcs.SetResult();
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -732,24 +770,24 @@ public final class ConnectionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
-            return f(thrown, connection);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
+            return f_interlude(thrown, connection);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Connections_ConnectionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Connections.ConnectionContext)
@@ -780,6 +818,9 @@ open class ConnectionHandler
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionHandler_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext)
@@ -793,13 +834,13 @@ open class ConnectionHandler
     - Returns: A  that represents the connection lifetime. When the task completes, the connection is complete.
 
     */
-    open func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnConnectedAsync(connection : aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Connections_ConnectionHandler_Task__OnConnectedAsync_0__1__ConnectionContext(&__thrown, self.get_handle(), connection.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // ConnectionHandler
@@ -819,6 +860,9 @@ open class ConnectionItems
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionItems_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -896,6 +940,9 @@ open class ConnectionResetException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_ConnectionResetException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -957,6 +1004,9 @@ open class DefaultConnectionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_DefaultConnectionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1350,6 +1400,9 @@ open class FileHandleEndPoint
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_FileHandleEndPoint_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.UInt64, Microsoft.AspNetCore.Connections.FileHandleType)
@@ -1474,6 +1527,9 @@ open class IConnectionBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IConnectionBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1504,7 +1560,7 @@ open class IConnectionBuilder
         }
     }
     // delegate closure overload
-    open func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    open func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate,aspnetcore.Microsoft.AspNetCore.Connections.ConnectionDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -1556,6 +1612,9 @@ open class IConnectionFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IConnectionFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1606,6 +1665,9 @@ open class IConnectionListener
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IConnectionListener_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1685,6 +1747,9 @@ open class IConnectionListenerFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IConnectionListenerFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1733,6 +1798,9 @@ open class IMultiplexedConnectionBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1763,7 +1831,7 @@ open class IMultiplexedConnectionBuilder
         }
     }
     // delegate closure overload
-    open func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder {
+    open func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -1814,6 +1882,9 @@ open class IMultiplexedConnectionFactory
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1866,6 +1937,9 @@ open class IMultiplexedConnectionListener
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1946,6 +2020,9 @@ open class IMultiplexedConnectionListenerFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1995,6 +2072,9 @@ open class MultiplexedConnectionBuilder
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_MultiplexedConnectionBuilder_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider)
@@ -2029,7 +2109,7 @@ open class MultiplexedConnectionBuilder
         }
     }
     // delegate closure overload
-    open /* method final */ func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate>) throws -> aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder {
+    open /* method final */ func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate>(middleware);
         return try Use(middleware: del_middleware);
     }
@@ -2080,6 +2160,9 @@ open class MultiplexedConnectionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_MultiplexedConnectionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2141,6 +2224,9 @@ public final class MultiplexedConnectionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Connections.MultiplexedConnectionContext)
@@ -2180,16 +2266,36 @@ public final class MultiplexedConnectionDelegate
         return dotnet.System.Threading.Tasks.Task(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionContext) throws -> dotnet.System.Threading.Tasks.Task) throws
+    public convenience init(_ __closure_Invoke : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionContext) async throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionContext(hndl: connection));
-                return __copy_handle(ret.get_handle());
+                let tcs = try System.Threading.Tasks.TaskCompletionSource();
+                Task
+                {
+                    do
+                    {
+                    try await __closure_Invoke(aspnetcore.Microsoft.AspNetCore.Connections.MultiplexedConnectionContext(hndl: connection));
+                    try tcs.SetResult();
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -2203,24 +2309,24 @@ public final class MultiplexedConnectionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, connection : NonnullHandle) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
-            return f(thrown, connection);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> NonnullHandle;
+            return f_interlude(thrown, connection);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Connections_MultiplexedConnectionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task Invoke(Microsoft.AspNetCore.Connections.MultiplexedConnectionContext)
@@ -2284,6 +2390,9 @@ open class UriEndPoint
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_UriEndPoint_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2359,6 +2468,9 @@ open class IConnectionCompleteFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2389,7 +2501,7 @@ open class IConnectionCompleteFeature
         }
     }
     // delegate closure overload
-    open func OnCompleted(callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
+    open func OnCompleted(callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task, state : dotnet.System.Object) throws {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try OnCompleted(callback: del_callback, state: state);
     }
@@ -2410,6 +2522,9 @@ open class IConnectionEndPointFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2490,6 +2605,9 @@ open class IConnectionHeartbeatFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2519,7 +2637,7 @@ open class IConnectionHeartbeatFeature
         }
     }
     // delegate closure overload
-    open func OnHeartbeat(action : @escaping (Optional<dotnet.System.Object>) throws -> Void, state : dotnet.System.Object) throws {
+    open func OnHeartbeat(action : @escaping (dotnet.System.Object) throws -> Void, state : dotnet.System.Object) throws {
         let del_action = try dotnet.System.Action_1<dotnet.System.Object>(action);
         return try OnHeartbeat(action: del_action, state: state);
     }
@@ -2540,6 +2658,9 @@ open class IConnectionIdFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2591,6 +2712,9 @@ open class IConnectionInherentKeepAliveFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2628,6 +2752,9 @@ open class IConnectionItemsFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2677,6 +2804,9 @@ open class IConnectionLifetimeFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2744,6 +2874,9 @@ open class IConnectionLifetimeNotificationFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2810,6 +2943,9 @@ open class IConnectionSocketFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2847,6 +2983,9 @@ open class IConnectionTransportFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2896,6 +3035,9 @@ open class IConnectionUserFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2950,6 +3092,9 @@ open class IMemoryPoolFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -2994,6 +3139,9 @@ open class IPersistentStateFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3031,6 +3179,9 @@ open class IProtocolErrorCodeFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3080,6 +3231,9 @@ open class IStreamAbortFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3146,6 +3300,9 @@ open class IStreamDirectionFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3195,6 +3352,9 @@ open class IStreamIdFeature
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3232,6 +3392,9 @@ open class ITlsHandshakeFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3336,6 +3499,9 @@ open class ITransferFormatFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -3558,7 +3724,7 @@ extension Microsoft_AspNetCore_Connections_IConnectionBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions.Use(connectionBuilder: aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder(hndl: __copy_handle(self.get_handle())), middleware: middleware);
     }
     // delegate closure overload
-    public func Use(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext>, Optional<dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    public func Use(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext, dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_3<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext,dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>,dotnet.System.Threading.Tasks.Task>(middleware);
         return try aspnetcore.Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions.Use(connectionBuilder: aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder(hndl: __copy_handle(self.get_handle())), middleware: del_middleware);
     }
@@ -3570,7 +3736,7 @@ extension Microsoft_AspNetCore_Connections_IConnectionBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions.Run(connectionBuilder: aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder(hndl: __copy_handle(self.get_handle())), middleware: middleware);
     }
     // delegate closure overload
-    public func Run(middleware : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
+    public func Run(middleware : @escaping (aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder {
         let del_middleware = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Connections.ConnectionContext,dotnet.System.Threading.Tasks.Task>(middleware);
         return try aspnetcore.Microsoft.AspNetCore.Connections.ConnectionBuilderExtensions.Run(connectionBuilder: aspnetcore.Microsoft.AspNetCore.Connections.IConnectionBuilder(hndl: __copy_handle(self.get_handle())), middleware: del_middleware);
     }

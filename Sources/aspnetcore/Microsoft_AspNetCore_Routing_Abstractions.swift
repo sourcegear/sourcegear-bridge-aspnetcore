@@ -25,6 +25,9 @@ open class IOutboundParameterTransformer
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IOutboundParameterTransformer_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -76,6 +79,9 @@ open class IParameterPolicy
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IParameterPolicy_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -104,6 +110,9 @@ open class IRouteConstraint
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouteConstraint_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -159,6 +168,9 @@ open class IRouteHandler
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouteHandler_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -210,6 +222,9 @@ open class IRouter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRouter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -228,13 +243,13 @@ open class IRouter
 
     - Parameter context: A  instance.
     */
-    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RouteAsync(context : aspnetcore.Microsoft.AspNetCore.Routing.RouteContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Routing_IRouter_Task__RouteAsync_0__1__RouteContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // Microsoft.AspNetCore.Routing.VirtualPathData GetVirtualPath(Microsoft.AspNetCore.Routing.VirtualPathContext)
@@ -278,6 +293,9 @@ open class IRoutingFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_IRoutingFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -330,6 +348,9 @@ open class LinkGenerator
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_LinkGenerator_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -494,6 +515,9 @@ open class LinkOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_LinkOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -634,6 +658,9 @@ open class RouteContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext)
@@ -681,7 +708,7 @@ open class RouteContext
         }
     }
     // delegate closure overload
-    open func set_Handler(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task) throws {
+    open func set_Handler(value : @escaping (aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Void) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Http.RequestDelegate(value);
         return try set_Handler(value: del_value);
     }
@@ -774,6 +801,9 @@ open class RouteData
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteData_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -954,6 +984,9 @@ public final class RouteData_RouteDataSnapshot
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_RouteData_RouteDataSnapshot_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Routing.RouteData, Microsoft.AspNetCore.Routing.RouteValueDictionary, System.Collections.Generic.IList<Microsoft.AspNetCore.Routing.IRouter>, Microsoft.AspNetCore.Routing.RouteValueDictionary)
@@ -1111,6 +1144,9 @@ open class VirtualPathContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_VirtualPathContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1278,6 +1314,9 @@ open class VirtualPathData
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Routing_VirtualPathData_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

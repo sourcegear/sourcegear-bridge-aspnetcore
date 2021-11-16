@@ -46,6 +46,9 @@ open class ResponseCachingFeature
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCaching_ResponseCachingFeature_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -112,6 +115,9 @@ open class ResponseCachingMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCaching_ResponseCachingMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions>, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.ObjectPool.ObjectPoolProvider)
@@ -171,6 +177,9 @@ open class ResponseCachingOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCaching_ResponseCachingOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -349,7 +358,7 @@ public struct ResponseCachingServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddResponseCaching(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddResponseCaching(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions>(configureOptions);
         return try AddResponseCaching(services: services, configureOptions: del_configureOptions);
     }
@@ -380,7 +389,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ResponseCachingServicesExtensions.AddResponseCaching(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddResponseCaching(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddResponseCaching(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions>(configureOptions);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ResponseCachingServicesExtensions.AddResponseCaching(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

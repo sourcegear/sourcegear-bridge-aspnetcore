@@ -21,10 +21,14 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL validationContext);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL validationContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL attribute, SG_HNDL_NULLABLE stringLocalizer);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL attribute, SG_HNDL_NULLABLE stringLocalizer), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_type_handle)(void);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_DataAnnotationLocalizerProvider)(SG_HNDL_NONNULL __self_h);
+    void (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_set_DataAnnotationLocalizerProvider)(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Mvc_DataAnnotations_RequiredAttributeAdapter_get_type_handle)(void);
@@ -170,6 +174,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_cast(
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL validationContext), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase, __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_String__GetErrorMessage_0__1__ModelValidationContextBase, __cb_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext, __pdata_Microsoft_AspNetCore_Mvc_ModelBinding_Validation_IClientModelValidator_void__AddValidation_0__1__ClientModelValidationContext, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_get_type_handle) {
         my_init();
@@ -194,12 +206,35 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAda
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL attribute, SG_HNDL_NULLABLE stringLocalizer), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_create(__thrown, __cb_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer, __pdata_Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_IAttributeAdapter__GetAttributeAdapter_0__2__ValidationAttribute_IStringLocalizer, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_type_handle) {
         my_init();
     }
     TYP ret = _g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_type_handle();
     return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_DataAnnotationLocalizerProvider(SG_HNDL_NONNULL __self_h) {
+    if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_DataAnnotationLocalizerProvider) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_get_DataAnnotationLocalizerProvider(__self_h);
+    return ret;
+}
+
+void Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_set_DataAnnotationLocalizerProvider(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v) {
+    if (!_g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_set_DataAnnotationLocalizerProvider) {
+        my_init();
+    }
+    _g_Microsoft_AspNetCore_Mvc_DataAnnotations._fp_Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_set_DataAnnotationLocalizerProvider(__self_h, __v);
 }
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown) {

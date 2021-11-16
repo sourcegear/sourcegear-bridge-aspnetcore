@@ -22,6 +22,9 @@ open class AntiforgeryOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Antiforgery_AntiforgeryOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String DefaultCookiePrefix
@@ -217,6 +220,9 @@ open class AntiforgeryTokenSet
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Antiforgery_AntiforgeryTokenSet_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String, System.String, System.String)
@@ -357,6 +363,9 @@ open class AntiforgeryValidationException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Antiforgery_AntiforgeryValidationException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -416,6 +425,9 @@ open class IAntiforgery
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Antiforgery_IAntiforgery_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -483,13 +495,13 @@ open class IAntiforgery
             
 
     */
-    open func IsRequestValidAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func IsRequestValidAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Antiforgery_IAntiforgery_System_Threading_Tasks_Task_bool___IsRequestValidAsync_0__1__HttpContext(&__thrown, self.get_handle(), httpContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task ValidateRequestAsync(Microsoft.AspNetCore.Http.HttpContext)
@@ -503,13 +515,13 @@ open class IAntiforgery
     - Returns: A  that completes when validation has completed.
 
     */
-    open func ValidateRequestAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ValidateRequestAsync(httpContext : aspnetcore.Microsoft.AspNetCore.Http.HttpContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Antiforgery_IAntiforgery_Task__ValidateRequestAsync_0__1__HttpContext(&__thrown, self.get_handle(), httpContext.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void SetCookieTokenAndHeader(Microsoft.AspNetCore.Http.HttpContext)
@@ -549,6 +561,9 @@ open class IAntiforgeryAdditionalDataProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Antiforgery_IAntiforgeryAdditionalDataProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -655,7 +670,7 @@ public struct AntiforgeryServiceCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func AddAntiforgery(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddAntiforgery(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions>(setupAction);
         return try AddAntiforgery(services: services, setupAction: del_setupAction);
     }
@@ -691,7 +706,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AntiforgeryServiceCollectionExtensions.AddAntiforgery(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddAntiforgery(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddAntiforgery(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Antiforgery.AntiforgeryOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.AntiforgeryServiceCollectionExtensions.AddAntiforgery(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

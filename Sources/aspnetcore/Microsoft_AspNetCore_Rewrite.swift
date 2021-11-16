@@ -163,6 +163,9 @@ open class IRule
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Rewrite_IRule_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -208,6 +211,9 @@ open class RewriteContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Rewrite_RewriteContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -384,6 +390,9 @@ open class RewriteMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Rewrite_RewriteMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Hosting.IWebHostEnvironment, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Rewrite.RewriteOptions>)
@@ -443,6 +452,9 @@ open class RewriteOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Rewrite_RewriteOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -563,7 +575,7 @@ public struct RewriteOptionsExtensions {
         }
     }
     // delegate closure overload
-    public static func Add(options : aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions, applyRule : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions {
+    public static func Add(options : aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions, applyRule : @escaping (aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions {
         let del_applyRule = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext>(applyRule);
         return try Add(options: options, applyRule: del_applyRule);
     }
@@ -1074,7 +1086,7 @@ extension aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions {
         return try aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions.Add(options: self, applyRule: applyRule);
     }
     // delegate closure overload
-    public func Add(applyRule : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions {
+    public func Add(applyRule : @escaping (aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptions {
         let del_applyRule = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteContext>(applyRule);
         return try aspnetcore.Microsoft.AspNetCore.Rewrite.RewriteOptionsExtensions.Add(options: self, applyRule: del_applyRule);
     }

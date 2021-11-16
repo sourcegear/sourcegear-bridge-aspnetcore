@@ -23,6 +23,9 @@ open class CancellationChangeToken
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_CancellationChangeToken_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Threading.CancellationToken)
@@ -150,9 +153,9 @@ public struct ChangeToken {
     - Returns: 
 
     */
-    public static func OnChange<UTState : SGBridgeGenericValue>(changeTokenProducer : Optional<dotnet.System.Func_1<aspnetcore.Microsoft.Extensions.Primitives.IChangeToken>>, changeTokenConsumer : dotnet.System.Action_1<UTState>, state : UTState) throws -> Optional<dotnet.System.IDisposable> {
+    public static func OnChange<UTState : SGBridgeGenericValue>(changeTokenProducer : Optional<dotnet.System.Func_1<aspnetcore.Microsoft.Extensions.Primitives.IChangeToken>>, changeTokenConsumer : Optional<dotnet.System.Action_1<UTState>>, state : UTState) throws -> Optional<dotnet.System.IDisposable> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Primitives_ChangeToken_IDisposable__OnChange_1__3__System_Func_Microsoft_Extensions_Primitives_IChangeToken__System_Action_UTState__UTState(UTState.get_type_handle(), &__thrown, (changeTokenProducer?.get_handle()), nil, state.to_gval());
+        let __return = Microsoft_Extensions_Primitives_ChangeToken_IDisposable__OnChange_1__3__System_Func_Microsoft_Extensions_Primitives_IChangeToken__System_Action_UTState__UTState(UTState.get_type_handle(), &__thrown, (changeTokenProducer?.get_handle()), (changeTokenConsumer?.get_handle()), state.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -186,6 +189,9 @@ open class CompositeChangeToken
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_CompositeChangeToken_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -339,6 +345,9 @@ open class IChangeToken
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_IChangeToken_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -418,6 +427,9 @@ public final class StringSegment
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringSegment_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -552,6 +564,9 @@ public final class StringSegment
         return dotnet.System.ReadOnlyMemory_1(hndl : __return);
         }
     }
+// TODO COPE (returns byreflike): System.ReadOnlySpan<System.Char> AsSpan()
+// TODO COPE (returns byreflike): System.ReadOnlySpan<System.Char> AsSpan(System.Int32)
+// TODO COPE (returns byreflike): System.ReadOnlySpan<System.Char> AsSpan(System.Int32, System.Int32)
     // System.Int32 Compare(Microsoft.Extensions.Primitives.StringSegment, Microsoft.Extensions.Primitives.StringSegment, System.StringComparison)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.Compare(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison)
     /**
@@ -953,6 +968,7 @@ public final class StringSegment
         return dotnet.System.ReadOnlyMemory_1(hndl : __return);
         }
     }
+// TODO COPE (returns byreflike): [IsSpecialName] System.ReadOnlySpan<System.Char> op_Implicit(Microsoft.Extensions.Primitives.StringSegment)
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringSegment op_Implicit(System.String)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.op_Implicit(System.String)
     public class func op_Implicit(value : Optional<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringSegment {
@@ -1270,9 +1286,6 @@ public final class StringSegment
     }
     // [IsSpecialName] System.Char get_Item(System.Int32)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(index : Swift.Int32) throws -> dotnet.System.Char {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Primitives_StringSegment_Char__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -1292,6 +1305,9 @@ open class StringSegmentComparer
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringSegmentComparer_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1387,6 +1403,9 @@ public final class StringTokenizer
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringTokenizer_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment, System.Char[])
@@ -1456,6 +1475,9 @@ public final class StringTokenizer_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public var Current : aspnetcore.Microsoft.Extensions.Primitives.StringSegment {
@@ -1465,11 +1487,12 @@ public final class StringTokenizer_Enumerator
     }
     // .ctor(ref Microsoft.Extensions.Primitives.StringTokenizer)
 // docid: M:Microsoft.Extensions.Primitives.StringTokenizer.Enumerator.#ctor(Microsoft.Extensions.Primitives.StringTokenizer@)
-    public init(tokenizer : inout aspnetcore.Microsoft.Extensions.Primitives.StringTokenizer) throws {
+    public init(tokenizer : inout Optional<aspnetcore.Microsoft.Extensions.Primitives.StringTokenizer>) throws {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_tokenizer = tokenizer.get_handle();
+            var _tmp_ref_tokenizer = (tokenizer != nil) ? (tokenizer!.get_handle()) : nil;
         let h = Microsoft_Extensions_Primitives_StringTokenizer_Enumerator_ctor_0__1__refStringTokenizer(&__thrown, &_tmp_ref_tokenizer);
-        let _tmp2_tokenizer = aspnetcore.Microsoft.Extensions.Primitives.StringTokenizer(hndl: _tmp_ref_tokenizer);
+        let __h__tmp2_tokenizer = _tmp_ref_tokenizer;
+        let _tmp2_tokenizer = (__h__tmp2_tokenizer != nil) ? aspnetcore.Microsoft.Extensions.Primitives.StringTokenizer(hndl: __h__tmp2_tokenizer!) : nil;
             tokenizer = _tmp2_tokenizer;
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1543,6 +1566,9 @@ public final class StringValues
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringValues_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1643,9 +1669,9 @@ public final class StringValues
     - Returns: The concatenation of  and .
 
     */
-    public class func Concat(values : inout aspnetcore.Microsoft.Extensions.Primitives.StringValues, value : Optional<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
+    public class func Concat(values : inout Optional<aspnetcore.Microsoft.Extensions.Primitives.StringValues>, value : Optional<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
-            var _tmp_in_values = values.get_handle();
+            var _tmp_in_values = (values != nil) ? (values!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__inStringValues_String(&__thrown, &_tmp_in_values, value?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1665,9 +1691,9 @@ public final class StringValues
     - Returns: The concatenation of  and .
 
     */
-    public class func Concat(value : Optional<dotnet.System.String>, values : inout aspnetcore.Microsoft.Extensions.Primitives.StringValues) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
+    public class func Concat(value : Optional<dotnet.System.String>, values : inout Optional<aspnetcore.Microsoft.Extensions.Primitives.StringValues>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
         var __thrown : NullableHandle = nil;
-            var _tmp_in_values = values.get_handle();
+            var _tmp_in_values = (values != nil) ? (values!.get_handle()) : nil;
         let __return = Microsoft_Extensions_Primitives_StringValues_StringValues__Concat_0__2__String_inStringValues(&__thrown, value?.get_handle() ?? nil, &_tmp_in_values);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -2286,9 +2312,6 @@ public final class StringValues
     }
     // [IsSpecialName] System.String get_Item(System.Int32)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(index : Swift.Int32) throws -> Optional<dotnet.System.String> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_Extensions_Primitives_StringValues_String__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -2322,6 +2345,9 @@ public final class StringValues_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Primitives_StringValues_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public var Current : Optional<dotnet.System.String> {
@@ -2331,11 +2357,12 @@ public final class StringValues_Enumerator
     }
     // .ctor(ref Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.Enumerator.#ctor(Microsoft.Extensions.Primitives.StringValues@)
-    public init(values : inout aspnetcore.Microsoft.Extensions.Primitives.StringValues) throws {
+    public init(values : inout Optional<aspnetcore.Microsoft.Extensions.Primitives.StringValues>) throws {
         var __thrown : NullableHandle = nil;
-            var _tmp_ref_values = values.get_handle();
+            var _tmp_ref_values = (values != nil) ? (values!.get_handle()) : nil;
         let h = Microsoft_Extensions_Primitives_StringValues_Enumerator_ctor_0__1__refStringValues(&__thrown, &_tmp_ref_values);
-        let _tmp2_values = aspnetcore.Microsoft.Extensions.Primitives.StringValues(hndl: _tmp_ref_values);
+        let __h__tmp2_values = _tmp_ref_values;
+        let _tmp2_values = (__h__tmp2_values != nil) ? aspnetcore.Microsoft.Extensions.Primitives.StringValues(hndl: __h__tmp2_values!) : nil;
             values = _tmp2_values;
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);

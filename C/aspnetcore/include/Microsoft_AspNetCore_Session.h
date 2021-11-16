@@ -40,7 +40,7 @@ TYP Microsoft_AspNetCore_Session_DistributedSession_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Session_DistributedSession_ctor_0__7__IDistributedCache_String_TimeSpan_TimeSpan_System_Func_bool__ILoggerFactory_bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cache, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, SG_HNDL_NONNULL loggerFactory, int32_t isNewSessionKey);
 
-int32_t Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Session_DistributedSession_bool__TryGetValue_0__2__String_outu8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 void Microsoft_AspNetCore_Session_DistributedSession_void__Set_0__2__String_u8Array(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NONNULL value);
 
@@ -73,6 +73,8 @@ TYP Microsoft_AspNetCore_Session_ISessionStore_get_type_handle(void);
 SG_HNDL_NONNULL Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, int32_t isNewSessionKey);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Session_ISessionStore_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Session_ISessionStore_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL sessionKey, SG_HNDL_NONNULL idleTimeout, SG_HNDL_NONNULL ioTimeout, SG_HNDL_NONNULL tryEstablishSession, int32_t isNewSessionKey), const void* _Nonnull __pdata_Microsoft_AspNetCore_Session_ISessionStore_ISession__Create_0__5__String_TimeSpan_TimeSpan_System_Func_bool__bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Session_SessionDefaults_get_CookieName(void);
 

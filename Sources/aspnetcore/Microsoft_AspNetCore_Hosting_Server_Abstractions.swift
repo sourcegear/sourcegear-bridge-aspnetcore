@@ -25,6 +25,9 @@ open class IHttpApplication_1<TContext : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_get_type_handle(TContext.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -63,13 +66,13 @@ open class IHttpApplication_1<TContext : SGBridgeGenericValue>
 
     - Parameter context: The TContext that the operation will process.
     */
-    open func ProcessRequestAsync(context : TContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ProcessRequestAsync(context : TContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_Task__ProcessRequestAsync_0__1__TContext(TContext.get_type_handle(), &__thrown, self.get_handle(), context.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void DisposeContext(TContext, System.Exception)
@@ -110,6 +113,9 @@ open class IServer
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_IServer_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -129,13 +135,13 @@ open class IServer
     - Parameter application: An instance of .
     - Parameter cancellationToken: Indicates if the server startup should be aborted.
     */
-    open func StartAsync<UTContext : SGBridgeGenericValue>(application : aspnetcore.Microsoft.AspNetCore.Hosting.Server.IHttpApplication_1<UTContext>, cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StartAsync<UTContext : SGBridgeGenericValue>(application : aspnetcore.Microsoft.AspNetCore.Hosting.Server.IHttpApplication_1<UTContext>, cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_Server_IServer_Task__StartAsync_1__2__Microsoft_AspNetCore_Hosting_Server_IHttpApplication_UTContext__CancellationToken(UTContext.get_type_handle(), &__thrown, self.get_handle(), application.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task StopAsync(System.Threading.CancellationToken)
@@ -147,13 +153,13 @@ open class IServer
 
     - Parameter cancellationToken: Indicates if the graceful shutdown should be aborted.
     */
-    open func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken) throws -> dotnet.System.Threading.Tasks.Task {
+    open func StopAsync(cancellationToken : dotnet.System.Threading.CancellationToken) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Hosting_Server_IServer_Task__StopAsync_0__1__CancellationToken(&__thrown, self.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.Features.IFeatureCollection get_Features()
@@ -184,6 +190,9 @@ open class IServerIntegratedAuth
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -233,6 +242,9 @@ open class ServerIntegratedAuth
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_ServerIntegratedAuth_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -342,6 +354,9 @@ open class IHostContextContainer_1<TContext : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1_get_type_handle(TContext.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -394,6 +409,9 @@ open class IServerAddressesFeature
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }

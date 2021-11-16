@@ -134,11 +134,15 @@ void Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_void__se
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_get_type_handle(void);
 
 int32_t Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_HttpTransportType__get_TransportType_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_ConnectionsDependencyInjectionExtensions_IServiceCollection__AddConnections_0__1__IServiceCollection(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services);
 

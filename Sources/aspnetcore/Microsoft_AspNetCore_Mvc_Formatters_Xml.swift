@@ -25,6 +25,9 @@ open class XmlDataContractSerializerInputFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerInputFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
@@ -49,13 +52,13 @@ open class XmlDataContractSerializerInputFormatter
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter.ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext,System.Text.Encoding)
     /**
     */
-    open override func ReadRequestBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext, encoding : dotnet.System.Text.Encoding) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open override func ReadRequestBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext, encoding : dotnet.System.Text.Encoding) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerInputFormatter_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___ReadRequestBodyAsync_0__2__InputFormatterContext_Encoding(&__thrown, self.get_handle(), context.get_handle(), encoding.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -213,6 +216,9 @@ open class XmlDataContractSerializerOutputFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerOutputFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -346,13 +352,13 @@ open class XmlDataContractSerializerOutputFormatter
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter.WriteResponseBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext,System.Text.Encoding)
     /**
     */
-    open override func WriteResponseBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext, selectedEncoding : dotnet.System.Text.Encoding) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteResponseBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext, selectedEncoding : dotnet.System.Text.Encoding) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerOutputFormatter_Task__WriteResponseBodyAsync_0__2__OutputFormatterWriteContext_Encoding(&__thrown, self.get_handle(), context.get_handle(), selectedEncoding.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -456,6 +462,9 @@ open class XmlSerializerInputFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerInputFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
@@ -480,13 +489,13 @@ open class XmlSerializerInputFormatter
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter.ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext,System.Text.Encoding)
     /**
     */
-    open override func ReadRequestBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext, encoding : dotnet.System.Text.Encoding) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> {
+    open override func ReadRequestBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext, encoding : dotnet.System.Text.Encoding) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerInputFormatter_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Formatters_InputFormatterResult___ReadRequestBodyAsync_0__2__InputFormatterContext_Encoding(&__thrown, self.get_handle(), context.get_handle(), encoding.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -606,6 +615,9 @@ open class XmlSerializerOutputFormatter
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerOutputFormatter_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -740,13 +752,13 @@ open class XmlSerializerOutputFormatter
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.WriteResponseBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext,System.Text.Encoding)
     /**
     */
-    open override func WriteResponseBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext, selectedEncoding : dotnet.System.Text.Encoding) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func WriteResponseBodyAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext, selectedEncoding : dotnet.System.Text.Encoding) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerOutputFormatter_Task__WriteResponseBodyAsync_0__2__OutputFormatterWriteContext_Encoding(&__thrown, self.get_handle(), context.get_handle(), selectedEncoding.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -814,6 +826,9 @@ open class DelegatingEnumerable_2<TWrapped : SGBridgeGenericValue,TDeclared : SG
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerable_2_get_type_handle(TWrapped.get_type_handle(),TDeclared.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -914,6 +929,9 @@ open class DelegatingEnumerator_2<TWrapped : SGBridgeGenericValue,TDeclared : SG
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerator_2_get_type_handle(TWrapped.get_type_handle(),TDeclared.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerator<TDeclared>, Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
@@ -1013,6 +1031,9 @@ open class EnumerableWrapperProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Type, Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
@@ -1090,6 +1111,9 @@ open class EnumerableWrapperProviderFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProviderFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory>)
@@ -1154,6 +1178,9 @@ open class IUnwrappable
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1200,6 +1227,9 @@ open class IWrapperProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1263,6 +1293,9 @@ open class IWrapperProviderFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1314,6 +1347,9 @@ open class MvcXmlOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_MvcXmlOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1345,6 +1381,9 @@ open class ProblemDetailsWrapper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_ProblemDetailsWrapper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1443,6 +1482,9 @@ public final class SerializableErrorWrapper
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapper_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1588,6 +1630,9 @@ open class SerializableErrorWrapperProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1654,6 +1699,9 @@ open class SerializableErrorWrapperProviderFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProviderFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1713,6 +1761,9 @@ open class ValidationProblemDetailsWrapper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_ValidationProblemDetailsWrapper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1781,6 +1832,9 @@ open class WrapperProviderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Formatters_Xml_WrapperProviderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1907,6 +1961,9 @@ open class DataMemberRequiredBindingMetadataProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DataMemberRequiredBindingMetadataProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1966,7 +2023,7 @@ public struct MvcXmlMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddXmlOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlOptions(builder: builder, setupAction: del_setupAction);
     }
@@ -2012,7 +2069,7 @@ public struct MvcXmlMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlDataContractSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddXmlDataContractSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlDataContractSerializerFormatters(builder: builder, setupAction: del_setupAction);
     }
@@ -2058,7 +2115,7 @@ public struct MvcXmlMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddXmlSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlSerializerFormatters(builder: builder, setupAction: del_setupAction);
     }
@@ -2089,7 +2146,7 @@ public struct MvcXmlMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddXmlOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlOptions(builder: builder, setupAction: del_setupAction);
     }
@@ -2135,7 +2192,7 @@ public struct MvcXmlMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlDataContractSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddXmlDataContractSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlDataContractSerializerFormatters(builder: builder, setupAction: del_setupAction);
     }
@@ -2181,7 +2238,7 @@ public struct MvcXmlMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddXmlSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddXmlSerializerFormatters(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try AddXmlSerializerFormatters(builder: builder, setupAction: del_setupAction);
     }
@@ -2223,7 +2280,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlOptions(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddXmlOptions(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -2242,7 +2299,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlDataContractSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlDataContractSerializerFormatters(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddXmlDataContractSerializerFormatters(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlDataContractSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -2261,7 +2318,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlSerializerFormatters(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddXmlSerializerFormatters(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcBuilderExtensions.AddXmlSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -2273,7 +2330,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlOptions(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddXmlOptions(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -2292,7 +2349,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlDataContractSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlDataContractSerializerFormatters(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddXmlDataContractSerializerFormatters(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlDataContractSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -2311,7 +2368,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddXmlSerializerFormatters(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddXmlSerializerFormatters(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcXmlMvcCoreBuilderExtensions.AddXmlSerializerFormatters(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }

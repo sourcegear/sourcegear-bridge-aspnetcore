@@ -48,9 +48,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func ConfigureAll<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func ConfigureAll<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__ConfigureAll_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__ConfigureAll_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -134,9 +134,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func Configure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func Configure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__Configure_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__Configure_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -166,9 +166,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func Configure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, name : Optional<dotnet.System.String>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func Configure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, name : Optional<dotnet.System.String>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__Configure_1__3__IServiceCollection_String_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, name?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__Configure_1__3__IServiceCollection_String_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, name?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -197,9 +197,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func PostConfigureAll<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func PostConfigureAll<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigureAll_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigureAll_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -228,9 +228,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func PostConfigure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func PostConfigure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigure_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigure_1__2__IServiceCollection_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -260,9 +260,9 @@ public struct OptionsServiceCollectionExtensions {
     - Returns: The  so that additional calls can be chained.
 
     */
-    public static func PostConfigure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, name : Optional<dotnet.System.String>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func PostConfigure<UTOptions : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, name : Optional<dotnet.System.String>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigure_1__3__IServiceCollection_String_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, name?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_IServiceCollection__PostConfigure_1__3__IServiceCollection_String_System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, services?.get_handle() ?? nil, name?.get_handle() ?? nil, (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -299,6 +299,9 @@ open class ConfigureNamedOptions_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Action<TOptions>)
@@ -311,9 +314,9 @@ open class ConfigureNamedOptions_1<TOptions : SGBridgeGenericValue>
     - Parameter name: The name of the options.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, action : dotnet.System.Action_1<TOptions>) throws {
+    public init(name : Optional<dotnet.System.String>, action : Optional<dotnet.System.Action_1<TOptions>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_1_ctor_0__2__String_System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_1_ctor_0__2__String_System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -426,6 +429,9 @@ open class ConfigureNamedOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBrid
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_2_get_type_handle(TOptions.get_type_handle(),TDep.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep, System.Action<TOptions,TDep>)
@@ -439,9 +445,9 @@ open class ConfigureNamedOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBrid
     - Parameter dependency: A dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep, action : dotnet.System.Action_2<TOptions,TDep>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep, action : Optional<dotnet.System.Action_2<TOptions,TDep>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_2_ctor_0__3__String_TDep_System_Action_TOptions_TDep_(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_2_ctor_0__3__String_TDep_System_Action_TOptions_TDep_(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -576,6 +582,9 @@ open class ConfigureNamedOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_3_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, System.Action<TOptions,TDep1,TDep2>)
@@ -590,9 +599,9 @@ open class ConfigureNamedOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     - Parameter dependency2: A second dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, action : dotnet.System.Action_3<TOptions,TDep1,TDep2>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, action : Optional<dotnet.System.Action_3<TOptions,TDep1,TDep2>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_3_ctor_0__4__String_TDep1_TDep2_System_Action_TOptions_TDep1_TDep2_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_3_ctor_0__4__String_TDep1_TDep2_System_Action_TOptions_TDep1_TDep2_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -749,6 +758,9 @@ open class ConfigureNamedOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_4_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Action<TOptions,TDep1,TDep2,TDep3>)
@@ -764,9 +776,9 @@ open class ConfigureNamedOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     - Parameter dependency3: A third dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, dependency3 : TDep3, action : dotnet.System.Action_4<TOptions,TDep1,TDep2,TDep3>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, dependency3 : TDep3, action : Optional<dotnet.System.Action_4<TOptions,TDep1,TDep2,TDep3>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_4_ctor_0__5__String_TDep1_TDep2_TDep3_System_Action_TOptions_TDep1_TDep2_TDep3_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), dependency3.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_4_ctor_0__5__String_TDep1_TDep2_TDep3_System_Action_TOptions_TDep1_TDep2_TDep3_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), dependency3.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -945,6 +957,9 @@ open class ConfigureNamedOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_5_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4>)
@@ -961,9 +976,9 @@ open class ConfigureNamedOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     - Parameter dependency4: A fourth dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, action : dotnet.System.Action_5<TOptions,TDep1,TDep2,TDep3,TDep4>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, action : Optional<dotnet.System.Action_5<TOptions,TDep1,TDep2,TDep3,TDep4>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_5_ctor_0__6__String_TDep1_TDep2_TDep3_TDep4_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_5_ctor_0__6__String_TDep1_TDep2_TDep3_TDep4_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1164,6 +1179,9 @@ open class ConfigureNamedOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureNamedOptions_6_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>)
@@ -1181,9 +1199,9 @@ open class ConfigureNamedOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     - Parameter dependency5: A fifth dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, action : dotnet.System.Action_6<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, action : Optional<dotnet.System.Action_6<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_6_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_ConfigureNamedOptions_6_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1406,6 +1424,9 @@ open class ConfigureOptions_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ConfigureOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Action<TOptions>)
@@ -1417,9 +1438,9 @@ open class ConfigureOptions_1<TOptions : SGBridgeGenericValue>
 
     - Parameter action: The action to register.
     */
-    public init(action : dotnet.System.Action_1<TOptions>) throws {
+    public init(action : Optional<dotnet.System.Action_1<TOptions>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ConfigureOptions_1_ctor_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, nil);
+        let h = Microsoft_Extensions_Options_ConfigureOptions_1_ctor_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1490,6 +1511,9 @@ open class IConfigureNamedOptions_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IConfigureNamedOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1538,6 +1562,9 @@ open class IConfigureOptions_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IConfigureOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1583,6 +1610,9 @@ open class IOptionsChangeTokenSource_1<TOptions : SGBridgeGenericValue>
     public typealias TOptions_IOptionsChangeTokenSource_1 = TOptions;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1650,6 +1680,9 @@ open class IOptionsFactory_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptionsFactory_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1695,6 +1728,9 @@ open class IOptionsMonitorCache_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptionsMonitorCache_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1733,9 +1769,9 @@ open class IOptionsMonitorCache_1<TOptions : SGBridgeGenericValue>
     - Returns: The options instance.
 
     */
-    open func GetOrAdd(name : Optional<dotnet.System.String>, createOptions : dotnet.System.Func_1<TOptions>) throws -> TOptions {
+    open func GetOrAdd(name : Optional<dotnet.System.String>, createOptions : Optional<dotnet.System.Func_1<TOptions>>) throws -> TOptions {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_IOptionsMonitorCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), name?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_Options_IOptionsMonitorCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), name?.get_handle() ?? nil, (createOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1807,6 +1843,9 @@ open class IOptionsMonitor_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptionsMonitor_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1844,9 +1883,9 @@ open class IOptionsMonitor_1<TOptions : SGBridgeGenericValue>
     - Returns: An  which should be disposed to stop listening for changes.
 
     */
-    open func OnChange(listener : dotnet.System.Action_2<TOptions,dotnet.System.String>) throws -> Optional<dotnet.System.IDisposable> {
+    open func OnChange(listener : Optional<dotnet.System.Action_2<TOptions,dotnet.System.String>>) throws -> Optional<dotnet.System.IDisposable> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_IOptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_IOptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_(TOptions.get_type_handle(), &__thrown, self.get_handle(), (listener?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1893,6 +1932,9 @@ open class IOptionsSnapshot_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptionsSnapshot_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1938,6 +1980,9 @@ open class IOptions_1<TOptions : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1977,6 +2022,9 @@ open class IPostConfigureOptions_1<TOptions : SGBridgeGenericValue>
     public typealias TOptions_IPostConfigureOptions_1 = TOptions;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IPostConfigureOptions_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2024,6 +2072,9 @@ open class IValidateOptions_1<TOptions : SGBridgeGenericValue>
     public typealias TOptions_IValidateOptions_1 = TOptions;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_IValidateOptions_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -2073,8 +2124,8 @@ public struct Options {
     */
     public static var DefaultName : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Options_Options_get_DefaultName();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Options_Options_get_DefaultName();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -2119,6 +2170,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsBuilder_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String)
@@ -2152,9 +2206,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure(configureOptions : dotnet.System.Action_1<TOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure(configureOptions : Optional<dotnet.System.Action_1<TOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2182,9 +2236,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure<UTDep : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_2<TOptions,UTDep>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure<UTDep : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_2<TOptions,UTDep>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_1__1__System_Action_TOptions_UTDep_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_1__1__System_Action_TOptions_UTDep_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2212,9 +2266,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_3<TOptions,UTDep1,UTDep2>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_3<TOptions,UTDep1,UTDep2>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_2__1__System_Action_TOptions_UTDep1_UTDep2_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_2__1__System_Action_TOptions_UTDep1_UTDep2_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2242,9 +2296,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_4<TOptions,UTDep1,UTDep2,UTDep3>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_4<TOptions,UTDep1,UTDep2,UTDep3>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_3__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_3__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2272,9 +2326,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_5<TOptions,UTDep1,UTDep2,UTDep3,UTDep4>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_5<TOptions,UTDep1,UTDep2,UTDep3,UTDep4>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_4__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_4__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2302,9 +2356,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Configure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_5__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Configure_5__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2330,9 +2384,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
 
     - Parameter configureOptions: The action used to configure the options.
     */
-    open func PostConfigure(configureOptions : dotnet.System.Action_1<TOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure(configureOptions : Optional<dotnet.System.Action_1<TOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_0__1__System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2360,9 +2414,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func PostConfigure<UTDep : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_2<TOptions,UTDep>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure<UTDep : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_2<TOptions,UTDep>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_1__1__System_Action_TOptions_UTDep_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_1__1__System_Action_TOptions_UTDep_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2390,9 +2444,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_3<TOptions,UTDep1,UTDep2>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_3<TOptions,UTDep1,UTDep2>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_2__1__System_Action_TOptions_UTDep1_UTDep2_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_2__1__System_Action_TOptions_UTDep1_UTDep2_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2420,9 +2474,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_4<TOptions,UTDep1,UTDep2,UTDep3>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_4<TOptions,UTDep1,UTDep2,UTDep3>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_3__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_3__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2450,9 +2504,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_5<TOptions,UTDep1,UTDep2,UTDep3,UTDep4>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_5<TOptions,UTDep1,UTDep2,UTDep3,UTDep4>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_4__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_4__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2480,9 +2534,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func PostConfigure<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_5__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___PostConfigure_5__1__System_Action_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), (configureOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2509,9 +2563,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate(validation : dotnet.System.Func_2<TOptions,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate(validation : Optional<dotnet.System.Func_2<TOptions,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_0__1__System_Func_TOptions_bool_(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_0__1__System_Func_TOptions_bool_(TOptions.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2539,9 +2593,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate(validation : dotnet.System.Func_2<TOptions,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate(validation : Optional<dotnet.System.Func_2<TOptions,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_0__2__System_Func_TOptions_bool__String(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_0__2__System_Func_TOptions_bool__String(TOptions.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2568,9 +2622,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep : SGBridgeGenericValue>(validation : dotnet.System.Func_3<TOptions,UTDep,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_3<TOptions,UTDep,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_1__1__System_Func_TOptions_UTDep_bool_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_1__1__System_Func_TOptions_UTDep_bool_(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2598,9 +2652,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep : SGBridgeGenericValue>(validation : dotnet.System.Func_3<TOptions,UTDep,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_3<TOptions,UTDep,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_1__2__System_Func_TOptions_UTDep_bool__String(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_1__2__System_Func_TOptions_UTDep_bool__String(TOptions.get_type_handle(), UTDep.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2627,9 +2681,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(validation : dotnet.System.Func_4<TOptions,UTDep1,UTDep2,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_4<TOptions,UTDep1,UTDep2,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_2__1__System_Func_TOptions_UTDep1_UTDep2_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_2__1__System_Func_TOptions_UTDep1_UTDep2_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2657,9 +2711,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(validation : dotnet.System.Func_4<TOptions,UTDep1,UTDep2,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_4<TOptions,UTDep1,UTDep2,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_2__2__System_Func_TOptions_UTDep1_UTDep2_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_2__2__System_Func_TOptions_UTDep1_UTDep2_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2686,9 +2740,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(validation : dotnet.System.Func_5<TOptions,UTDep1,UTDep2,UTDep3,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_5<TOptions,UTDep1,UTDep2,UTDep3,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_3__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_3__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2716,9 +2770,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(validation : dotnet.System.Func_5<TOptions,UTDep1,UTDep2,UTDep3,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_5<TOptions,UTDep1,UTDep2,UTDep3,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_3__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_3__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2745,9 +2799,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(validation : dotnet.System.Func_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_4__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_4__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2775,9 +2829,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(validation : dotnet.System.Func_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_6<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_4__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_4__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2804,9 +2858,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(validation : dotnet.System.Func_7<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5,Bool>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_7<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5,Bool>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_5__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_5__1__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_bool_(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2834,9 +2888,9 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     - Returns: The current .
 
     */
-    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(validation : dotnet.System.Func_7<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5,Bool>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
+    open func Validate<UTDep1 : SGBridgeGenericValue,UTDep2 : SGBridgeGenericValue,UTDep3 : SGBridgeGenericValue,UTDep4 : SGBridgeGenericValue,UTDep5 : SGBridgeGenericValue>(validation : Optional<dotnet.System.Func_7<TOptions,UTDep1,UTDep2,UTDep3,UTDep4,UTDep5,Bool>>, failureMessage : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.Extensions.Options.OptionsBuilder_1<TOptions>> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_5__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), nil, failureMessage?.get_handle() ?? nil);
+        let __return = Microsoft_Extensions_Options_OptionsBuilder_1_Microsoft_Extensions_Options_OptionsBuilder_TOptions___Validate_5__2__System_Func_TOptions_UTDep1_UTDep2_UTDep3_UTDep4_UTDep5_bool__String(TOptions.get_type_handle(), UTDep1.get_type_handle(), UTDep2.get_type_handle(), UTDep3.get_type_handle(), UTDep4.get_type_handle(), UTDep5.get_type_handle(), &__thrown, self.get_handle(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -2921,6 +2975,9 @@ open class OptionsCache_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsCache_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2963,9 +3020,9 @@ open class OptionsCache_1<TOptions : SGBridgeGenericValue>
     - Returns: The options instance.
 
     */
-    open func GetOrAdd(name : Optional<dotnet.System.String>, createOptions : dotnet.System.Func_1<TOptions>) throws -> TOptions {
+    open func GetOrAdd(name : Optional<dotnet.System.String>, createOptions : Optional<dotnet.System.Func_1<TOptions>>) throws -> TOptions {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), name?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_Options_OptionsCache_1_TOptions__GetOrAdd_0__2__String_System_Func_TOptions_(TOptions.get_type_handle(), &__thrown, self.get_handle(), name?.get_handle() ?? nil, (createOptions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3034,6 +3091,9 @@ open class OptionsFactory_1<TOptions : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsFactory_1_get_type_handle(TOptions.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3110,6 +3170,9 @@ open class OptionsManager_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsManager_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsFactory<TOptions>)
@@ -3121,9 +3184,9 @@ open class OptionsManager_1<TOptions : SGBridgeGenericValue>
 
     - Parameter factory: The factory to use to create options.
     */
-    public init(factory : aspnetcore.Microsoft.Extensions.Options.IOptionsFactory_1<TOptions>) throws {
+    public init(factory : Optional<aspnetcore.Microsoft.Extensions.Options.IOptionsFactory_1<TOptions>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_OptionsManager_1_ctor_0__1__Microsoft_Extensions_Options_IOptionsFactory_TOptions_(TOptions.get_type_handle(), &__thrown, nil);
+        let h = Microsoft_Extensions_Options_OptionsManager_1_ctor_0__1__Microsoft_Extensions_Options_IOptionsFactory_TOptions_(TOptions.get_type_handle(), &__thrown, (factory?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3186,9 +3249,9 @@ public struct OptionsMonitorExtensions {
     - Returns: An  which should be disposed to stop listening for changes.
 
     */
-    public static func OnChange<UTOptions : SGBridgeGenericValue>(monitor : aspnetcore.Microsoft.Extensions.Options.IOptionsMonitor_1<UTOptions>, listener : dotnet.System.Action_1<UTOptions>) throws -> Optional<dotnet.System.IDisposable> {
+    public static func OnChange<UTOptions : SGBridgeGenericValue>(monitor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptionsMonitor_1<UTOptions>>, listener : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<dotnet.System.IDisposable> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsMonitorExtensions_IDisposable__OnChange_1__2__Microsoft_Extensions_Options_IOptionsMonitor_UTOptions__System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, nil, nil);
+        let __return = Microsoft_Extensions_Options_OptionsMonitorExtensions_IDisposable__OnChange_1__2__Microsoft_Extensions_Options_IOptionsMonitor_UTOptions__System_Action_UTOptions_(UTOptions.get_type_handle(), &__thrown, (monitor?.get_handle()), (listener?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3200,7 +3263,7 @@ public struct OptionsMonitorExtensions {
         }
     }
     // delegate closure overload
-    public static func OnChange<UTOptions : SGBridgeGenericValue>(monitor : aspnetcore.Microsoft.Extensions.Options.IOptionsMonitor_1<UTOptions>, listener : @escaping (UTOptions) throws -> Void) throws -> Optional<dotnet.System.IDisposable> {
+    public static func OnChange<UTOptions : SGBridgeGenericValue>(monitor : Optional<aspnetcore.Microsoft.Extensions.Options.IOptionsMonitor_1<UTOptions>>, listener : @escaping (UTOptions) throws -> Void) throws -> Optional<dotnet.System.IDisposable> {
         let del_listener = try dotnet.System.Action_1<UTOptions>(listener);
         return try OnChange(monitor: monitor, listener: del_listener);
     }
@@ -3222,6 +3285,9 @@ open class OptionsMonitor_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsMonitor_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Options.IOptionsFactory<TOptions>, System.Collections.Generic.IEnumerable<Microsoft.Extensions.Options.IOptionsChangeTokenSource<TOptions>>, Microsoft.Extensions.Options.IOptionsMonitorCache<TOptions>)
@@ -3235,9 +3301,9 @@ open class OptionsMonitor_1<TOptions : SGBridgeGenericValue>
     - Parameter sources: The sources used to listen for changes to the options instance.
     - Parameter cache: The cache used to store options.
     */
-    public init(factory : aspnetcore.Microsoft.Extensions.Options.IOptionsFactory_1<TOptions>, sources : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.Options.IOptionsChangeTokenSource_1<TOptions>>>, cache : aspnetcore.Microsoft.Extensions.Options.IOptionsMonitorCache_1<TOptions>) throws {
+    public init(factory : Optional<aspnetcore.Microsoft.Extensions.Options.IOptionsFactory_1<TOptions>>, sources : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.Options.IOptionsChangeTokenSource_1<TOptions>>>, cache : Optional<aspnetcore.Microsoft.Extensions.Options.IOptionsMonitorCache_1<TOptions>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_OptionsMonitor_1_ctor_0__3__Microsoft_Extensions_Options_IOptionsFactory_TOptions__System_Collections_Generic_IEnumerable_Microsoft_Extensions_Options_Microsoft_Extensions_Options_IOptionsChangeTokenSource_TOptions___Microsoft_Extensions_Options_IOptionsMonitorCache_TOptions_(TOptions.get_type_handle(), &__thrown, nil, (sources?.get_handle()), nil);
+        let h = Microsoft_Extensions_Options_OptionsMonitor_1_ctor_0__3__Microsoft_Extensions_Options_IOptionsFactory_TOptions__System_Collections_Generic_IEnumerable_Microsoft_Extensions_Options_Microsoft_Extensions_Options_IOptionsChangeTokenSource_TOptions___Microsoft_Extensions_Options_IOptionsMonitorCache_TOptions_(TOptions.get_type_handle(), &__thrown, (factory?.get_handle()), (sources?.get_handle()), (cache?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3289,9 +3355,9 @@ open class OptionsMonitor_1<TOptions : SGBridgeGenericValue>
     - Returns: An  which should be disposed to stop listening for changes.
 
     */
-    open /* method final */ func OnChange(listener : dotnet.System.Action_2<TOptions,dotnet.System.String>) throws -> Optional<dotnet.System.IDisposable> {
+    open /* method final */ func OnChange(listener : Optional<dotnet.System.Action_2<TOptions,dotnet.System.String>>) throws -> Optional<dotnet.System.IDisposable> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Options_OptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_(TOptions.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Options_OptionsMonitor_1_IDisposable__OnChange_0__1__System_Action_TOptions_string_(TOptions.get_type_handle(), &__thrown, self.get_handle(), (listener?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3345,6 +3411,9 @@ open class OptionsValidationException
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsValidationException_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3479,6 +3548,9 @@ open class OptionsWrapper_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_OptionsWrapper_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(TOptions)
@@ -3538,6 +3610,9 @@ open class PostConfigureOptions_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Action<TOptions>)
@@ -3550,9 +3625,9 @@ open class PostConfigureOptions_1<TOptions : SGBridgeGenericValue>
     - Parameter name: The name of the options.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, action : dotnet.System.Action_1<TOptions>) throws {
+    public init(name : Optional<dotnet.System.String>, action : Optional<dotnet.System.Action_1<TOptions>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_1_ctor_0__2__String_System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_1_ctor_0__2__String_System_Action_TOptions_(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3647,6 +3722,9 @@ open class PostConfigureOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridg
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_2_get_type_handle(TOptions.get_type_handle(),TDep.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep, System.Action<TOptions,TDep>)
@@ -3660,9 +3738,9 @@ open class PostConfigureOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridg
     - Parameter dependency: A dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep, action : dotnet.System.Action_2<TOptions,TDep>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep, action : Optional<dotnet.System.Action_2<TOptions,TDep>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_2_ctor_0__3__String_TDep_System_Action_TOptions_TDep_(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_2_ctor_0__3__String_TDep_System_Action_TOptions_TDep_(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3797,6 +3875,9 @@ open class PostConfigureOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_3_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, System.Action<TOptions,TDep1,TDep2>)
@@ -3811,9 +3892,9 @@ open class PostConfigureOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     - Parameter dependency2: A second dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, action : dotnet.System.Action_3<TOptions,TDep1,TDep2>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, action : Optional<dotnet.System.Action_3<TOptions,TDep1,TDep2>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_3_ctor_0__4__String_TDep1_TDep2_System_Action_TOptions_TDep1_TDep2_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_3_ctor_0__4__String_TDep1_TDep2_System_Action_TOptions_TDep1_TDep2_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -3970,6 +4051,9 @@ open class PostConfigureOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_4_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Action<TOptions,TDep1,TDep2,TDep3>)
@@ -3985,9 +4069,9 @@ open class PostConfigureOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     - Parameter dependency3: A third dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, dependency3 : TDep3, action : dotnet.System.Action_4<TOptions,TDep1,TDep2,TDep3>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep1, dependency2 : TDep2, dependency3 : TDep3, action : Optional<dotnet.System.Action_4<TOptions,TDep1,TDep2,TDep3>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_4_ctor_0__5__String_TDep1_TDep2_TDep3_System_Action_TOptions_TDep1_TDep2_TDep3_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), dependency3.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_4_ctor_0__5__String_TDep1_TDep2_TDep3_System_Action_TOptions_TDep1_TDep2_TDep3_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), dependency2.to_gval(), dependency3.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4166,6 +4250,9 @@ open class PostConfigureOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_5_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4>)
@@ -4182,9 +4269,9 @@ open class PostConfigureOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     - Parameter dependency4: A fourth dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, action : dotnet.System.Action_5<TOptions,TDep1,TDep2,TDep3,TDep4>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, action : Optional<dotnet.System.Action_5<TOptions,TDep1,TDep2,TDep3,TDep4>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_5_ctor_0__6__String_TDep1_TDep2_TDep3_TDep4_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_5_ctor_0__6__String_TDep1_TDep2_TDep3_TDep4_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4385,6 +4472,9 @@ open class PostConfigureOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_PostConfigureOptions_6_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>)
@@ -4402,9 +4492,9 @@ open class PostConfigureOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     - Parameter dependency5: A fifth dependency.
     - Parameter action: The action to register.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, action : dotnet.System.Action_6<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, action : Optional<dotnet.System.Action_6<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_PostConfigureOptions_6_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), nil);
+        let h = Microsoft_Extensions_Options_PostConfigureOptions_6_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Action_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), (action?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -4627,6 +4717,9 @@ open class ValidateOptionsResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptionsResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.Extensions.Options.ValidateOptionsResult Skip
@@ -4638,8 +4731,8 @@ open class ValidateOptionsResult
     */
     open class var Skip : Optional<aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult> {
         get {
-        let __h = Microsoft_Extensions_Options_ValidateOptionsResult_get_Skip();
-        let __return = (__h != nil) ? aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Options_ValidateOptionsResult_get_Skip();
+        let __return = (__h___return != nil) ? aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -4652,8 +4745,8 @@ open class ValidateOptionsResult
     */
     open class var Success : Optional<aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult> {
         get {
-        let __h = Microsoft_Extensions_Options_ValidateOptionsResult_get_Success();
-        let __return = (__h != nil) ? aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Options_ValidateOptionsResult_get_Success();
+        let __return = (__h___return != nil) ? aspnetcore.Microsoft.Extensions.Options.ValidateOptionsResult(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -4921,6 +5014,9 @@ open class ValidateOptions_1<TOptions : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_1_get_type_handle(TOptions.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Func<TOptions,bool>, System.String)
@@ -4934,9 +5030,9 @@ open class ValidateOptions_1<TOptions : SGBridgeGenericValue>
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, validation : dotnet.System.Func_2<TOptions,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, validation : Optional<dotnet.System.Func_2<TOptions,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_1_ctor_0__3__String_System_Func_TOptions_bool__String(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_1_ctor_0__3__String_System_Func_TOptions_bool__String(TOptions.get_type_handle(), &__thrown, name?.get_handle() ?? nil, (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5063,6 +5159,9 @@ open class ValidateOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridgeGene
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_2_get_type_handle(TOptions.get_type_handle(),TDep.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep, System.Func<TOptions,TDep,bool>, System.String)
@@ -5077,9 +5176,9 @@ open class ValidateOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridgeGene
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, dependency : TDep, validation : dotnet.System.Func_3<TOptions,TDep,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency : TDep, validation : Optional<dotnet.System.Func_3<TOptions,TDep,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_2_ctor_0__4__String_TDep_System_Func_TOptions_TDep_bool__String(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_2_ctor_0__4__String_TDep_System_Func_TOptions_TDep_bool__String(TOptions.get_type_handle(), TDep.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency.to_gval(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5228,6 +5327,9 @@ open class ValidateOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_3_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, System.Func<TOptions,TDep1,TDep2,bool>, System.String)
@@ -5243,9 +5345,9 @@ open class ValidateOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, validation : dotnet.System.Func_4<TOptions,TDep1,TDep2,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, validation : Optional<dotnet.System.Func_4<TOptions,TDep1,TDep2,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_3_ctor_0__5__String_TDep1_TDep2_System_Func_TOptions_TDep1_TDep2_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_3_ctor_0__5__String_TDep1_TDep2_System_Func_TOptions_TDep1_TDep2_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5416,6 +5518,9 @@ open class ValidateOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_4_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Func<TOptions,TDep1,TDep2,TDep3,bool>, System.String)
@@ -5432,9 +5537,9 @@ open class ValidateOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, validation : dotnet.System.Func_5<TOptions,TDep1,TDep2,TDep3,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, validation : Optional<dotnet.System.Func_5<TOptions,TDep1,TDep2,TDep3,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_4_ctor_0__6__String_TDep1_TDep2_TDep3_System_Func_TOptions_TDep1_TDep2_TDep3_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_4_ctor_0__6__String_TDep1_TDep2_TDep3_System_Func_TOptions_TDep1_TDep2_TDep3_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5627,6 +5732,9 @@ open class ValidateOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_5_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Func<TOptions,TDep1,TDep2,TDep3,TDep4,bool>, System.String)
@@ -5644,9 +5752,9 @@ open class ValidateOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, validation : dotnet.System.Func_6<TOptions,TDep1,TDep2,TDep3,TDep4,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, validation : Optional<dotnet.System.Func_6<TOptions,TDep1,TDep2,TDep3,TDep4,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_5_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_System_Func_TOptions_TDep1_TDep2_TDep3_TDep4_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_5_ctor_0__7__String_TDep1_TDep2_TDep3_TDep4_System_Func_TOptions_TDep1_TDep2_TDep3_TDep4_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -5861,6 +5969,9 @@ open class ValidateOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Options_ValidateOptions_6_get_type_handle(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Func<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5,bool>, System.String)
@@ -5879,9 +5990,9 @@ open class ValidateOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     - Parameter validation: Validation function.
     - Parameter failureMessage: Validation failure message.
     */
-    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, validation : dotnet.System.Func_7<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5,Bool>, failureMessage : Optional<dotnet.System.String>) throws {
+    public init(name : Optional<dotnet.System.String>, dependency1 : TDep1, dependency2 : TDep2, dependency3 : TDep3, dependency4 : TDep4, dependency5 : TDep5, validation : Optional<dotnet.System.Func_7<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5,Bool>>, failureMessage : Optional<dotnet.System.String>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Options_ValidateOptions_6_ctor_0__8__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Func_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), nil, failureMessage?.get_handle() ?? nil);
+        let h = Microsoft_Extensions_Options_ValidateOptions_6_ctor_0__8__String_TDep1_TDep2_TDep3_TDep4_TDep5_System_Func_TOptions_TDep1_TDep2_TDep3_TDep4_TDep5_bool__String(TOptions.get_type_handle(), TDep1.get_type_handle(), TDep2.get_type_handle(), TDep3.get_type_handle(), TDep4.get_type_handle(), TDep5.get_type_handle(), &__thrown, name?.get_handle() ?? nil, dependency1.to_gval(), dependency2.to_gval(), dependency3.to_gval(), dependency4.to_gval(), dependency5.to_gval(), (validation?.get_handle()), failureMessage?.get_handle() ?? nil);
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -6197,7 +6308,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection ConfigureAll<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func ConfigureAll<UTOptions : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func ConfigureAll<UTOptions : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6226,7 +6337,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection Configure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func Configure<UTOptions : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func Configure<UTOptions : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6238,7 +6349,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection Configure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func Configure<UTOptions : SGBridgeGenericValue>(name : Optional<dotnet.System.String>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func Configure<UTOptions : SGBridgeGenericValue>(name : Optional<dotnet.System.String>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), name: name, configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6250,7 +6361,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection PostConfigureAll<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func PostConfigureAll<UTOptions : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func PostConfigureAll<UTOptions : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6262,7 +6373,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection PostConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func PostConfigure<UTOptions : SGBridgeGenericValue>(configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func PostConfigure<UTOptions : SGBridgeGenericValue>(configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6274,7 +6385,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection PostConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String, System.Action<TOptions>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func PostConfigure<UTOptions : SGBridgeGenericValue>(name : Optional<dotnet.System.String>, configureOptions : dotnet.System.Action_1<UTOptions>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func PostConfigure<UTOptions : SGBridgeGenericValue>(name : Optional<dotnet.System.String>, configureOptions : Optional<dotnet.System.Action_1<UTOptions>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), name: name, configureOptions: configureOptions);
     }
     // delegate closure overload
@@ -6286,7 +6397,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
 
 // EXTENSION METHOD System.IDisposable OnChange<TOptions>(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, System.Action<TOptions>)
 extension aspnetcore.Microsoft.Extensions.Options.IOptionsMonitor_1 {
-    public func OnChange(listener : dotnet.System.Action_1<TOptions>) throws -> Optional<dotnet.System.IDisposable> {
+    public func OnChange(listener : Optional<dotnet.System.Action_1<TOptions>>) throws -> Optional<dotnet.System.IDisposable> {
         return try aspnetcore.Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange(monitor: self, listener: listener);
     }
     // delegate closure overload

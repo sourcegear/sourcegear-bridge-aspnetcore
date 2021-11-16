@@ -24,6 +24,9 @@ open class ILoggerProviderConfigurationFactory
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -76,6 +79,9 @@ open class ILoggerProviderConfiguration_1<T : SGBridgeGenericValue>
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_get_type_handle(T.get_type_handle());
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -119,13 +125,16 @@ open class LoggerProviderOptionsChangeTokenSource_2<TOptions : SGBridgeGenericVa
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2_get_type_handle(TOptions.get_type_handle(),TProvider.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration<TProvider>)
 // docid: M:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2.#ctor(Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration{`1})
-    public init(providerConfiguration : aspnetcore.Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration_1<TProvider>) throws {
+    public init(providerConfiguration : Optional<aspnetcore.Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration_1<TProvider>>) throws {
         var __thrown : NullableHandle = nil;
-        let h = Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2_ctor_0__1__Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_TProvider_(TOptions.get_type_handle(), TProvider.get_type_handle(), &__thrown, nil);
+        let h = Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2_ctor_0__1__Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_TProvider_(TOptions.get_type_handle(), TProvider.get_type_handle(), &__thrown, (providerConfiguration?.get_handle()));
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {

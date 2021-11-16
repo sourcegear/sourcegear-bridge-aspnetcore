@@ -182,6 +182,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_DependencyInjection_IHttpClientBuilder_ISe
 
 SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IHttpClientBuilder_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_DependencyInjection_IHttpClientBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Http_HttpClientFactoryOptions_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Http_HttpClientFactoryOptions_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);
@@ -228,6 +230,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_Syst
 
 SG_HNDL_NONNULL Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_System_Action_Microsoft_Extensions_Http_HttpMessageHandlerBuilder___Configure_0__1__System_Action_Microsoft_Extensions_Http_HttpMessageHandlerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE next), const void* _Nonnull __pdata_Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_System_Action_Microsoft_Extensions_Http_HttpMessageHandlerBuilder___Configure_0__1__System_Action_Microsoft_Extensions_Http_HttpMessageHandlerBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Http_ITypedHttpClientFactory_1_get_type_handle(TYP TClient);
 
 GVAL Microsoft_Extensions_Http_ITypedHttpClientFactory_1_TClient__CreateClient_0__1__HttpClient(TYP TClient, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpClient);
@@ -237,6 +241,8 @@ SG_HNDL_NONNULL specialize_Microsoft_Extensions_Http_ITypedHttpClientFactory_1_T
 GVAL invoke_Microsoft_Extensions_Http_ITypedHttpClientFactory_1_TClient__CreateClient_0__1__HttpClient(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE httpClient);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Http_ITypedHttpClientFactory_1_cast(TYP TClient, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Http_ITypedHttpClientFactory_1_create(TYP TClient, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_Extensions_Http_ITypedHttpClientFactory_1_TClient__CreateClient_0__1__HttpClient)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE httpClient), const void* _Nonnull __pdata_Microsoft_Extensions_Http_ITypedHttpClientFactory_1_TClient__CreateClient_0__1__HttpClient, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Http_Logging_LoggingHttpMessageHandler_get_type_handle(void);
 
@@ -264,11 +270,15 @@ SG_HNDL_NULLABLE System_Net_Http_IHttpClientFactory_HttpClient__CreateClient_0__
 
 SG_HNDL_NONNULL System_Net_Http_IHttpClientFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL System_Net_Http_IHttpClientFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_System_Net_Http_IHttpClientFactory_HttpClient__CreateClient_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_System_Net_Http_IHttpClientFactory_HttpClient__CreateClient_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP System_Net_Http_IHttpMessageHandlerFactory_get_type_handle(void);
 
 SG_HNDL_NULLABLE System_Net_Http_IHttpMessageHandlerFactory_HttpMessageHandler__CreateHandler_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE name);
 
 SG_HNDL_NONNULL System_Net_Http_IHttpMessageHandlerFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL System_Net_Http_IHttpMessageHandlerFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_System_Net_Http_IHttpMessageHandlerFactory_HttpMessageHandler__CreateHandler_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE name), const void* _Nonnull __pdata_System_Net_Http_IHttpMessageHandlerFactory_HttpMessageHandler__CreateHandler_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus

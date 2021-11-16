@@ -9,6 +9,7 @@ extern void (*_sg_resolve_jumptable)(const char*, int, void*);
 struct {
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Http_IResultExtensions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_IResultExtensions_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_IResultExtensions_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Challenge_0__2__AuthenticationProperties_System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE properties, SG_HNDL_NULLABLE authenticationSchemes);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Forbid_0__2__AuthenticationProperties_System_Collections_Generic_IList_string_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE properties, SG_HNDL_NULLABLE authenticationSchemes);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__SignIn_0__3__ClaimsPrincipal_AuthenticationProperties_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL principal, SG_HNDL_NULLABLE properties, SG_HNDL_NULLABLE authenticationScheme);
@@ -33,8 +34,9 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__NoContent_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Ok_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__UnprocessableEntity_0__1__Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE error);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__5__String_String_System_Nullable_i32__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type);
-    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__6__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errors, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__6__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type, SG_HNDL_NULLABLE extensions);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__1__ProblemDetails)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL problemDetails);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__7__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errors, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type, SG_HNDL_NULLABLE extensions);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Created_0__2__String_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL uri, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__Created_0__2__Uri_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL uri, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Results_IResult__CreatedAtRoute_0__3__String_Object_Object)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE routeName, SG_HNDL_NULLABLE routeValues, SG_HNDL_NULLABLE value);
@@ -60,6 +62,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Http_IResultExtensions_cast(SG_HNDL_NULLABL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_IResultExtensions_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_IResultExtensions_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_IResultExtensions_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_IResultExtensions_create(__thrown, __deinit);
     return ret;
 }
 
@@ -255,19 +265,27 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__UnprocessableEntity_0
     return ret;
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__Problem_0__5__String_String_System_Nullable_i32__String_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type) {
-    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__5__String_String_System_Nullable_i32__String_String) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__Problem_0__6__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type, SG_HNDL_NULLABLE extensions) {
+    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__6__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_) {
         my_init();
     }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__5__String_String_System_Nullable_i32__String_String(__thrown, detail, instance, statusCode, title, type);
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__6__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(__thrown, detail, instance, statusCode, title, type, extensions);
     return ret;
 }
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__6__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errors, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type) {
-    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__6__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String) {
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__Problem_0__1__ProblemDetails(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL problemDetails) {
+    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__1__ProblemDetails) {
         my_init();
     }
-    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__6__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String(__thrown, errors, detail, instance, statusCode, title, type);
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__Problem_0__1__ProblemDetails(__thrown, problemDetails);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__7__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL errors, SG_HNDL_NULLABLE detail, SG_HNDL_NULLABLE instance, SG_HNDL_NULLABLE statusCode, SG_HNDL_NULLABLE title, SG_HNDL_NULLABLE type, SG_HNDL_NULLABLE extensions) {
+    if (!_g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__7__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Results._fp_Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__7__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(__thrown, errors, detail, instance, statusCode, title, type, extensions);
     return ret;
 }
 

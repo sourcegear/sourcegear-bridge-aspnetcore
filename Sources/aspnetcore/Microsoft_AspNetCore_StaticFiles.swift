@@ -89,6 +89,9 @@ open class DefaultFilesOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_DefaultFilesOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -245,6 +248,9 @@ open class DirectoryBrowserOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_DirectoryBrowserOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -427,6 +433,9 @@ open class FileServerOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_FileServerOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -669,6 +678,9 @@ open class StaticFileOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_StaticFileOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -821,7 +833,7 @@ open class StaticFileOptions
         }
     }
     // delegate closure overload
-    open func set_OnPrepareResponse(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext>) throws -> Void) throws {
+    open func set_OnPrepareResponse(value : @escaping (aspnetcore.Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext) throws -> Void) throws {
         let del_value = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.StaticFiles.StaticFileResponseContext>(value);
         return try set_OnPrepareResponse(value: del_value);
     }
@@ -1024,6 +1036,9 @@ open class DefaultFilesMiddleware
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_DefaultFilesMiddleware_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Hosting.IWebHostEnvironment, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Builder.DefaultFilesOptions>)
@@ -1084,6 +1099,9 @@ open class DirectoryBrowserMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_DirectoryBrowserMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1166,6 +1184,9 @@ open class FileExtensionContentTypeProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1216,11 +1237,12 @@ open class FileExtensionContentTypeProvider
     - Returns: True if MIME type could be determined
 
     */
-    open /* method final */ func TryGetContentType(subpath : dotnet.System.String, contentType : inout dotnet.System.String) throws -> Bool {
+    open /* method final */ func TryGetContentType(subpath : dotnet.System.String, contentType : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_contentType = contentType.get_handle();
+            var _tmp_out_contentType = (contentType != nil) ? (contentType!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_StaticFiles_FileExtensionContentTypeProvider_bool__TryGetContentType_0__2__String_outString(&__thrown, self.get_handle(), subpath.get_handle(), &_tmp_out_contentType);
-        let _tmp2_contentType = dotnet.System.String(hndl: _tmp_out_contentType);
+        let __h__tmp2_contentType = _tmp_out_contentType;
+        let _tmp2_contentType = (__h__tmp2_contentType != nil) ? dotnet.System.String(hndl: __h__tmp2_contentType!) : nil;
             contentType = _tmp2_contentType;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1268,6 +1290,9 @@ open class HtmlDirectoryFormatter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Text.Encodings.Web.HtmlEncoder)
@@ -1296,13 +1321,13 @@ open class HtmlDirectoryFormatter
             
 
     */
-    open func GenerateContentAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, contents : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func GenerateContentAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, contents : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_StaticFiles_HtmlDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_(&__thrown, self.get_handle(), context.get_handle(), contents.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // HtmlDirectoryFormatter
@@ -1322,6 +1347,9 @@ open class IContentTypeProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1344,11 +1372,12 @@ open class IContentTypeProvider
     - Returns: True if MIME type could be determined
 
     */
-    open func TryGetContentType(subpath : dotnet.System.String, contentType : inout dotnet.System.String) throws -> Bool {
+    open func TryGetContentType(subpath : dotnet.System.String, contentType : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_contentType = contentType.get_handle();
+            var _tmp_out_contentType = (contentType != nil) ? (contentType!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_StaticFiles_IContentTypeProvider_bool__TryGetContentType_0__2__String_outString(&__thrown, self.get_handle(), subpath.get_handle(), &_tmp_out_contentType);
-        let _tmp2_contentType = dotnet.System.String(hndl: _tmp_out_contentType);
+        let __h__tmp2_contentType = _tmp_out_contentType;
+        let _tmp2_contentType = (__h__tmp2_contentType != nil) ? dotnet.System.String(hndl: __h__tmp2_contentType!) : nil;
             contentType = _tmp2_contentType;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1374,6 +1403,9 @@ open class IDirectoryFormatter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1393,13 +1425,13 @@ open class IDirectoryFormatter
             
 
     */
-    open func GenerateContentAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, contents : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func GenerateContentAsync(context : aspnetcore.Microsoft.AspNetCore.Http.HttpContext, contents : dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileProviders.IFileInfo>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_StaticFiles_IDirectoryFormatter_Task__GenerateContentAsync_0__2__HttpContext_System_Collections_Generic_IEnumerable_Microsoft_Extensions_FileProviders_IFileInfo_(&__thrown, self.get_handle(), context.get_handle(), contents.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IDirectoryFormatter
@@ -1418,6 +1450,9 @@ open class StaticFileMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_StaticFileMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1478,6 +1513,9 @@ open class StaticFileResponseContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_StaticFileResponseContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1563,6 +1601,9 @@ open class SharedOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1711,6 +1752,9 @@ open class SharedOptionsBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_StaticFiles_Infrastructure_SharedOptionsBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -24,6 +24,9 @@ open class IResultExtensions
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_IResultExtensions_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -632,8 +635,8 @@ public struct Results {
         return aspnetcore.Microsoft.AspNetCore.Http.IResult(hndl : __return);
         }
     }
-    // Microsoft.AspNetCore.Http.IResult Problem(System.String, System.String, System.Nullable<System.Int32>, System.String, System.String)
-// docid: M:Microsoft.AspNetCore.Http.Results.Problem(System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+    // Microsoft.AspNetCore.Http.IResult Problem(System.String, System.String, System.Nullable<System.Int32>, System.String, System.String, System.Collections.Generic.IDictionary<System.String,System.Object>)
+// docid: M:Microsoft.AspNetCore.Http.Results.Problem(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
     /**
     
             Produces a  response.
@@ -644,20 +647,41 @@ public struct Results {
     - Parameter instance: The value for .
     - Parameter title: The value for .
     - Parameter type: The value for .
+    - Parameter extensions: The value for .
     - Returns: The created  for the response.
 
     */
-    public static func Problem(detail : Optional<dotnet.System.String> = nil, instance : Optional<dotnet.System.String> = nil, statusCode : Optional<Swift.Int32> = nil, title : Optional<dotnet.System.String> = nil, type : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Http.IResult {
+    public static func Problem(detail : Optional<dotnet.System.String> = nil, instance : Optional<dotnet.System.String> = nil, statusCode : Optional<Swift.Int32> = nil, title : Optional<dotnet.System.String> = nil, type : Optional<dotnet.System.String> = nil, extensions : Optional<dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System.Object>> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Http.IResult {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Http_Results_IResult__Problem_0__5__String_String_System_Nullable_i32__String_String(&__thrown, detail?.get_handle() ?? nil, instance?.get_handle() ?? nil, (statusCode != nil) ? System_Int32_box(statusCode!) : nil, title?.get_handle() ?? nil, type?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Http_Results_IResult__Problem_0__6__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(&__thrown, detail?.get_handle() ?? nil, instance?.get_handle() ?? nil, (statusCode != nil) ? System_Int32_box(statusCode!) : nil, title?.get_handle() ?? nil, type?.get_handle() ?? nil, (extensions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
         return aspnetcore.Microsoft.AspNetCore.Http.IResult(hndl : __return);
         }
     }
-    // Microsoft.AspNetCore.Http.IResult ValidationProblem(System.Collections.Generic.IDictionary<System.String,System.String[]>, System.String, System.String, System.Nullable<System.Int32>, System.String, System.String)
-// docid: M:Microsoft.AspNetCore.Http.Results.ValidationProblem(System.Collections.Generic.IDictionary{System.String,System.String[]},System.String,System.String,System.Nullable{System.Int32},System.String,System.String)
+    // Microsoft.AspNetCore.Http.IResult Problem(Microsoft.AspNetCore.Mvc.ProblemDetails)
+// docid: M:Microsoft.AspNetCore.Http.Results.Problem(Microsoft.AspNetCore.Mvc.ProblemDetails)
+    /**
+    
+            Produces a  response.
+            
+
+    - Parameter problemDetails: The   object to produce a response from.
+    - Returns: The created  for the response.
+
+    */
+    public static func Problem(problemDetails : aspnetcore.Microsoft.AspNetCore.Mvc.ProblemDetails) throws -> aspnetcore.Microsoft.AspNetCore.Http.IResult {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_Results_IResult__Problem_0__1__ProblemDetails(&__thrown, problemDetails.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return aspnetcore.Microsoft.AspNetCore.Http.IResult(hndl : __return);
+        }
+    }
+    // Microsoft.AspNetCore.Http.IResult ValidationProblem(System.Collections.Generic.IDictionary<System.String,System.String[]>, System.String, System.String, System.Nullable<System.Int32>, System.String, System.String, System.Collections.Generic.IDictionary<System.String,System.Object>)
+// docid: M:Microsoft.AspNetCore.Http.Results.ValidationProblem(System.Collections.Generic.IDictionary{System.String,System.String[]},System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})
     /**
     
             Produces a  response
@@ -668,14 +692,15 @@ public struct Results {
     - Parameter detail: The value for .
     - Parameter instance: The value for .
     - Parameter statusCode: The status code.
-    - Parameter title: The value for .
+    - Parameter title: The value for . Defaults to "One or more validation errors occurred."
     - Parameter type: The value for .
+    - Parameter extensions: The value for .
     - Returns: The created  for the response.
 
     */
-    public static func ValidationProblem(errors : dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System_Arr<dotnet.System.String>>, detail : Optional<dotnet.System.String> = nil, instance : Optional<dotnet.System.String> = nil, statusCode : Optional<Swift.Int32> = nil, title : Optional<dotnet.System.String> = nil, type : Optional<dotnet.System.String> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Http.IResult {
+    public static func ValidationProblem(errors : dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System_Arr<dotnet.System.String>>, detail : Optional<dotnet.System.String> = nil, instance : Optional<dotnet.System.String> = nil, statusCode : Optional<Swift.Int32> = nil, title : Optional<dotnet.System.String> = nil, type : Optional<dotnet.System.String> = nil, extensions : Optional<dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System.Object>> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Http.IResult {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__6__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String(&__thrown, errors.get_handle(), detail?.get_handle() ?? nil, instance?.get_handle() ?? nil, (statusCode != nil) ? System_Int32_box(statusCode!) : nil, title?.get_handle() ?? nil, type?.get_handle() ?? nil);
+        let __return = Microsoft_AspNetCore_Http_Results_IResult__ValidationProblem_0__7__System_Collections_Generic_IDictionary_string_stringArray__String_String_System_Nullable_i32__String_String_System_Collections_Generic_IDictionary_string_object_(&__thrown, errors.get_handle(), detail?.get_handle() ?? nil, instance?.get_handle() ?? nil, (statusCode != nil) ? System_Int32_box(statusCode!) : nil, title?.get_handle() ?? nil, type?.get_handle() ?? nil, (extensions?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {

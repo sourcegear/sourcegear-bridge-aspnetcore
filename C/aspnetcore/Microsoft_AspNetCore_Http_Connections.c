@@ -67,9 +67,11 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_HttpContext__get_HttpContext_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_void__set_HttpContext_0__1__HttpContext)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_get_type_handle)(void);
     int32_t (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_HttpTransportType__get_TransportType_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_ConnectionsDependencyInjectionExtensions_IServiceCollection__AddConnections_0__1__IServiceCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_DependencyInjection_ConnectionsDependencyInjectionExtensions_IServiceCollection__AddConnections_0__2__IServiceCollection_System_Action_Microsoft_AspNetCore_Http_Connections_ConnectionOptions_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services, SG_HNDL_NONNULL options);
 } _g_Microsoft_AspNetCore_Http_Connections;
@@ -544,6 +546,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeatu
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpContextFeature_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_get_type_handle) {
         my_init();
@@ -565,6 +575,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFea
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Http_Connections._fp_Microsoft_AspNetCore_Http_Connections_Features_IHttpTransportFeature_create(__thrown, __deinit);
     return ret;
 }
 

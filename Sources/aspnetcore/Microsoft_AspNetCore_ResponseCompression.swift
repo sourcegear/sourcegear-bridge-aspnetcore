@@ -75,7 +75,7 @@ public struct ResponseCompressionServicesExtensions {
         }
     }
     // delegate closure overload
-    public static func AddResponseCompression(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public static func AddResponseCompression(services : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions>(configureOptions);
         return try AddResponseCompression(services: services, configureOptions: del_configureOptions);
     }
@@ -100,6 +100,9 @@ open class BrotliCompressionProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_BrotliCompressionProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -187,6 +190,9 @@ open class BrotliCompressionProviderOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_BrotliCompressionProviderOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -253,6 +259,9 @@ open class CompressionProviderCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_CompressionProviderCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -302,6 +311,9 @@ open class GzipCompressionProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_GzipCompressionProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -389,6 +401,9 @@ open class GzipCompressionProviderOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_GzipCompressionProviderOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -455,6 +470,9 @@ open class ICompressionProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_ICompressionProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -524,6 +542,9 @@ open class IResponseCompressionProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_IResponseCompressionProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -615,8 +636,24 @@ open class ResponseCompressionDefaults
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // static field: System.Collections.Generic.IEnumerable`1[[System.String, System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]] MimeTypes
+    /**
+    
+            Default MIME types to compress responses for.
+            
+
+    */
+    open class var MimeTypes : dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String> {
+        get {
+        let __return = dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>(hndl: Microsoft_AspNetCore_ResponseCompression_ResponseCompressionDefaults_get_MimeTypes());
+            return __return;
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.ResponseCompression.ResponseCompressionDefaults.#ctor
     public override init() throws {
@@ -644,6 +681,9 @@ open class ResponseCompressionMiddleware
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_ResponseCompressionMiddleware_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -702,6 +742,9 @@ open class ResponseCompressionOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_ResponseCompressionOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -862,6 +905,9 @@ open class ResponseCompressionProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_ResponseCompression_ResponseCompressionProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions>)
@@ -965,7 +1011,7 @@ extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
         return try aspnetcore.Microsoft.AspNetCore.Builder.ResponseCompressionServicesExtensions.AddResponseCompression(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func AddResponseCompression(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
+    public func AddResponseCompression(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
         let del_configureOptions = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.ResponseCompression.ResponseCompressionOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Builder.ResponseCompressionServicesExtensions.AddResponseCompression(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

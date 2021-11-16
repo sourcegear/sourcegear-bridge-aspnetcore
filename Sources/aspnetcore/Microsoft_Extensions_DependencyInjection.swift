@@ -22,6 +22,9 @@ open class DefaultServiceProviderFactory
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_DefaultServiceProviderFactory_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -200,6 +203,9 @@ public final class ServiceProvider
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ServiceProvider_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Dispose()
@@ -268,6 +274,9 @@ open class ServiceProviderOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_DependencyInjection_ServiceProviderOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

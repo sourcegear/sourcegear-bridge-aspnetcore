@@ -22,6 +22,9 @@ open class DefaultObjectPoolProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_DefaultObjectPoolProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -100,6 +103,9 @@ open class DefaultObjectPool_1<T : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_DefaultObjectPool_1_get_type_handle(T.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -183,6 +189,9 @@ open class DefaultPooledObjectPolicy_1<T : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_DefaultPooledObjectPolicy_1_get_type_handle(T.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -240,6 +249,9 @@ open class IPooledObjectPolicy_1<T : SGBridgeGenericValue>
     public typealias T_IPooledObjectPolicy_1 = T;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1_get_type_handle(T.get_type_handle());
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -307,6 +319,9 @@ open class LeakTrackingObjectPoolProvider
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.ObjectPool.ObjectPoolProvider)
@@ -361,6 +376,9 @@ open class LeakTrackingObjectPool_1<T : SGBridgeGenericValue>
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_LeakTrackingObjectPool_1_get_type_handle(T.get_type_handle());
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -417,9 +435,9 @@ public struct ObjectPool {
 // docid: M:Microsoft.Extensions.ObjectPool.ObjectPool.Create``1(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy{``0})
     /**
     */
-    public static func Create<UT : SGBridgeGenericValue>(policy : aspnetcore.Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1<UT>/* TODO default closedgeneric crash */) throws -> aspnetcore.Microsoft.Extensions.ObjectPool.ObjectPool_1<UT> {
+    public static func Create<UT : SGBridgeGenericValue>(policy : Optional<aspnetcore.Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1<UT>> = nil) throws -> aspnetcore.Microsoft.Extensions.ObjectPool.ObjectPool_1<UT> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_ObjectPool_ObjectPool_Microsoft_Extensions_ObjectPool_ObjectPool_UT___Create_1__1__Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_UT_(UT.get_type_handle(), &__thrown, nil);
+        let __return = Microsoft_Extensions_ObjectPool_ObjectPool_Microsoft_Extensions_ObjectPool_ObjectPool_UT___Create_1__1__Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_UT_(UT.get_type_handle(), &__thrown, (policy?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -442,6 +460,9 @@ open class ObjectPoolProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_ObjectPoolProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -528,6 +549,9 @@ open class ObjectPool_1<T : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_ObjectPool_1_get_type_handle(T.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // T Get()
@@ -584,6 +608,9 @@ open class PooledObjectPolicy_1<T : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_PooledObjectPolicy_1_get_type_handle(T.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // T Create()
@@ -628,6 +655,9 @@ open class StringBuilderPooledObjectPolicy
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_ObjectPool_StringBuilderPooledObjectPolicy_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -12,6 +12,7 @@ struct {
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Localization_IResourceNamesCache_get_type_handle)(void);
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL name, SG_HNDL_NONNULL valueFactory);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Localization_IResourceNamesCache_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Localization_IResourceNamesCache_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL name, SG_HNDL_NONNULL valueFactory), const void* _Nonnull __pdata_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_Extensions_Localization_LocalizationOptions_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Localization_LocalizationOptions_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_Extensions_Localization_LocalizationOptions_String__get_ResourcesPath_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -83,6 +84,14 @@ SG_HNDL_NONNULL Microsoft_Extensions_Localization_IResourceNamesCache_cast(SG_HN
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Localization._fp_Microsoft_Extensions_Localization_IResourceNamesCache_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_Extensions_Localization_IResourceNamesCache_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL name, SG_HNDL_NONNULL valueFactory), const void* _Nonnull __pdata_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_Extensions_Localization._fp_Microsoft_Extensions_Localization_IResourceNamesCache_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_Extensions_Localization._fp_Microsoft_Extensions_Localization_IResourceNamesCache_create(__thrown, __cb_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__, __pdata_Microsoft_Extensions_Localization_IResourceNamesCache_System_Collections_Generic_IList_string___GetOrAdd_0__2__String_System_Func_string_System_Collections_Generic_System_Collections_Generic_IList_string__, __deinit);
     return ret;
 }
 

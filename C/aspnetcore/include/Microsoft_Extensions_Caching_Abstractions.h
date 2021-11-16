@@ -74,6 +74,8 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task
 
 SG_HNDL_NONNULL Microsoft_Extensions_Caching_Distributed_IDistributedCache_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Caching_Distributed_IDistributedCache_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_u8Array__Get_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_u8Array__Get_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_Tasks_Task_u8Array___GetAsync_0__2__String_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL token), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_System_Threading_Tasks_Task_u8Array___GetAsync_0__2__String_CancellationToken, void (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Refresh_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Refresh_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__RefreshAsync_0__2__String_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL token), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__RefreshAsync_0__2__String_CancellationToken, void (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Remove_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Remove_0__1__String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__RemoveAsync_0__2__String_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL token), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__RemoveAsync_0__2__String_CancellationToken, void (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Set_0__3__String_u8Array_DistributedCacheEntryOptions)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value, SG_HNDL_NULLABLE options), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_void__Set_0__3__String_u8Array_DistributedCacheEntryOptions, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__SetAsync_0__4__String_u8Array_DistributedCacheEntryOptions_CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value, SG_HNDL_NULLABLE options, SG_HNDL_NONNULL token), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Task__SetAsync_0__4__String_u8Array_DistributedCacheEntryOptions_CancellationToken, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Memory_CacheEntryExtensions_ICacheEntry__AddExpirationToken_0__2__ICacheEntry_IChangeToken(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE entry, SG_HNDL_NULLABLE expirationToken);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Memory_CacheEntryExtensions_ICacheEntry__RegisterPostEvictionCallback_0__2__ICacheEntry_PostEvictionDelegate(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE entry, SG_HNDL_NULLABLE callback);
@@ -208,15 +210,19 @@ void Microsoft_Extensions_Caching_Memory_ICacheEntry_void__set_Value_0__1__Objec
 
 SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_ICacheEntry_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_ICacheEntry_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_Extensions_Caching_Memory_IMemoryCache_get_type_handle(void);
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Memory_IMemoryCache_ICacheEntry__CreateEntry_0__1__Object(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key);
 
 void Microsoft_Extensions_Caching_Memory_IMemoryCache_void__Remove_0__1__Object(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key);
 
-int32_t Microsoft_Extensions_Caching_Memory_IMemoryCache_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_Extensions_Caching_Memory_IMemoryCache_bool__TryGetValue_0__2__Object_outObject(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_IMemoryCache_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_IMemoryCache_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_Extensions_Caching_Memory_IMemoryCache_ICacheEntry__CreateEntry_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Memory_IMemoryCache_ICacheEntry__CreateEntry_0__1__Object, void (* _Nonnull  __cb_Microsoft_Extensions_Caching_Memory_IMemoryCache_void__Remove_0__1__Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Memory_IMemoryCache_void__Remove_0__1__Object, int32_t (* _Nonnull  __cb_Microsoft_Extensions_Caching_Memory_IMemoryCache_bool__TryGetValue_0__2__Object_outObject)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr), const void* _Nonnull __pdata_Microsoft_Extensions_Caching_Memory_IMemoryCache_bool__TryGetValue_0__2__Object_outObject, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Memory_MemoryCacheEntryExtensions_MemoryCacheEntryOptions__AddExpirationToken_0__2__MemoryCacheEntryOptions_IChangeToken(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE options, SG_HNDL_NULLABLE expirationToken);
 
@@ -286,13 +292,15 @@ SG_HNDL_NULLABLE Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_IAsync
 
 void Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_void__EndInvoke_0__1__IAsyncResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), void (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value, int32_t reason, SG_HNDL_NULLABLE state));
+SG_HNDL_NONNULL Microsoft_Extensions_Caching_Memory_PostEvictionDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE key, SG_HNDL_NULLABLE value, int32_t reason, SG_HNDL_NULLABLE state), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Internal_ISystemClock_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Internal_ISystemClock_DateTimeOffset__get_UtcNow_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_Extensions_Internal_ISystemClock_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_Extensions_Internal_ISystemClock_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_Extensions_Internal_SystemClock_get_type_handle(void);
 

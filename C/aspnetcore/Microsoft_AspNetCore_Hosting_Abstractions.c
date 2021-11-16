@@ -39,6 +39,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_CancellationToken__get_ApplicationStopping_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_CancellationToken__get_ApplicationStopped_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_String__get_EnvironmentName_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_void__set_EnvironmentName_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
@@ -53,24 +54,30 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_IFileProvider__get_ContentRootFileProvider_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_void__set_ContentRootFileProvider_0__1__IFileProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingStartup_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL builder);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingStartup_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IHostingStartup_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartup_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL services);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL app);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartup_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartup_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL app), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_get_type_handle)(TYP TContainerBuilder);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_)(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL container);
     SG_HNDL_NONNULL (* _Nonnull  _fp_specialize_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_)(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_invoke_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_)(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL container);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_cast)(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_create)(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL container), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL next);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupFilter_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL next);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupFilter_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IStartupFilter_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_get_type_handle)(void);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL cancellationToken);
@@ -78,6 +85,7 @@ struct {
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_IFeatureCollection__get_ServerFeatures_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_IServiceProvider__get_Services_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHost_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL configureDelegate);
@@ -86,12 +94,14 @@ struct {
     SG_HNDL_NULLABLE (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureDelegate), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureServices), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureServices), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE value), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_String__get_WebRootPath_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_void__set_WebRootPath_0__1__String)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_IFileProvider__get_WebRootFileProvider_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
     void (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_void__set_WebRootFileProvider_0__1__IFileProvider)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL value);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_cast)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+    SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_create)(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
     TYP (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_get_type_handle)(void);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_ctor_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown);
     SG_HNDL_NONNULL (* _Nonnull  _fp_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_IWebHostEnvironment__get_HostingEnvironment_0__0)(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
@@ -387,6 +397,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IApplicationLifetime_cast(SG_HNDL_N
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IApplicationLifetime_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IApplicationLifetime_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0, __pdata_Microsoft_AspNetCore_Hosting_IApplicationLifetime_void__StopApplication_0__0, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Hosting_IHostingEnvironment_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_get_type_handle) {
         my_init();
@@ -493,6 +511,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IHostingEnvironment_cast(SG_HNDL_NU
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IHostingEnvironment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingEnvironment_create(__thrown, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Hosting_IHostingStartup_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingStartup_get_type_handle) {
         my_init();
@@ -513,6 +539,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IHostingStartup_cast(SG_HNDL_NULLAB
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingStartup_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IHostingStartup_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingStartup_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IHostingStartup_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder, __pdata_Microsoft_AspNetCore_Hosting_IHostingStartup_void__Configure_0__1__IWebHostBuilder, __deinit);
     return ret;
 }
 
@@ -544,6 +578,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartup_cast(SG_HNDL_NULLABLE * _N
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartup_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartup_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL services), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL app), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartup_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartup_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection, __pdata_Microsoft_AspNetCore_Hosting_IStartup_IServiceProvider__ConfigureServices_0__1__IServiceCollection, __cb_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder, __pdata_Microsoft_AspNetCore_Hosting_IStartup_void__Configure_0__1__IApplicationBuilder, __deinit);
     return ret;
 }
 
@@ -587,6 +629,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_create(TYP TContainerBuilder, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL container), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_create(TContainerBuilder, __thrown, __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_, __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_System_Action_TContainerBuilder___ConfigureContainer_0__1__System_Action_TContainerBuilder_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_get_type_handle) {
         my_init();
@@ -611,6 +661,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_cas
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __pdata_Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection___ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Hosting_IStartupFilter_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupFilter_get_type_handle) {
         my_init();
@@ -632,6 +690,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupFilter_cast(SG_HNDL_NULLABL
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupFilter_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IStartupFilter_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL next), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupFilter_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IStartupFilter_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_, __pdata_Microsoft_AspNetCore_Hosting_IStartupFilter_System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder___Configure_0__1__System_Action_Microsoft_AspNetCore_Builder_IApplicationBuilder_, __deinit);
     return ret;
 }
 
@@ -687,6 +753,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHost_cast(SG_HNDL_NULLABLE * _N
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHost_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHost_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL cancellationToken), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken, void (* _Nonnull  __cb_System_IDisposable_void__Dispose_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_System_IDisposable_void__Dispose_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHost_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHost_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0, __pdata_Microsoft_AspNetCore_Hosting_IWebHost_void__Start_0__0, __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken, __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StartAsync_0__1__CancellationToken, __cb_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken, __pdata_Microsoft_AspNetCore_Hosting_IWebHost_Task__StopAsync_0__1__CancellationToken, __cb_System_IDisposable_void__Dispose_0__0, __pdata_System_IDisposable_void__Dispose_0__0, __deinit);
     return ret;
 }
 
@@ -754,6 +828,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHostBuilder_cast(SG_HNDL_NULLAB
     return ret;
 }
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHostBuilder_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureDelegate), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureServices), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL configureServices), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL key, SG_HNDL_NULLABLE value), const void* _Nonnull __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostBuilder_create(__thrown, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHost__Build_0__0, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureAppConfiguration_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder_, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__ConfigureServices_0__1__System_Action_Microsoft_AspNetCore_Hosting_WebHostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection_, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_String__GetSetting_0__1__String, __cb_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String, __pdata_Microsoft_AspNetCore_Hosting_IWebHostBuilder_IWebHostBuilder__UseSetting_0__2__String_String, __deinit);
+    return ret;
+}
+
 TYP Microsoft_AspNetCore_Hosting_IWebHostEnvironment_get_type_handle(void) {
     if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_get_type_handle) {
         my_init();
@@ -797,6 +879,14 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHostEnvironment_cast(SG_HNDL_NU
         my_init();
     }
     SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_cast(__thrown, __h);
+    return ret;
+}
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Hosting_IWebHostEnvironment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata)) {
+    if (!_g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_create) {
+        my_init();
+    }
+    SG_HNDL_NONNULL ret = _g_Microsoft_AspNetCore_Hosting_Abstractions._fp_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_create(__thrown, __deinit);
     return ret;
 }
 

@@ -23,9 +23,9 @@ public struct ServiceCollectionHostedServiceExtensions {
     - Returns: The original .
 
     */
-    public static func AddHostedService<UTHostedService : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, implementationFactory : dotnet.System.Func_2<dotnet.System.IServiceProvider,UTHostedService>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public static func AddHostedService<UTHostedService : SGBridgeGenericValue>(services : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection>, implementationFactory : Optional<dotnet.System.Func_2<dotnet.System.IServiceProvider,UTHostedService>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_DependencyInjection_ServiceCollectionHostedServiceExtensions_IServiceCollection__AddHostedService_1__2__IServiceCollection_System_Func_System_IServiceProvider_UTHostedService_(UTHostedService.get_type_handle(), &__thrown, services?.get_handle() ?? nil, nil);
+        let __return = Microsoft_Extensions_DependencyInjection_ServiceCollectionHostedServiceExtensions_IServiceCollection__AddHostedService_1__2__IServiceCollection_System_Func_System_IServiceProvider_UTHostedService_(UTHostedService.get_type_handle(), &__thrown, services?.get_handle() ?? nil, (implementationFactory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -63,6 +63,9 @@ open class BackgroundService
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_BackgroundService_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -155,24 +158,24 @@ public struct EnvironmentName {
     // static field: System.String Development
     public static var Development : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_EnvironmentName_get_Development();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_EnvironmentName_get_Development();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String Production
     public static var Production : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_EnvironmentName_get_Production();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_EnvironmentName_get_Production();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String Staging
     public static var Staging : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_EnvironmentName_get_Staging();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_EnvironmentName_get_Staging();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -184,24 +187,24 @@ public struct Environments {
     // static field: System.String Development
     public static var Development : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_Environments_get_Development();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_Environments_get_Development();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String Production
     public static var Production : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_Environments_get_Production();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_Environments_get_Production();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
     // static field: System.String Staging
     public static var Staging : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_Environments_get_Staging();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_Environments_get_Staging();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -221,6 +224,9 @@ open class HostBuilderContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_HostBuilderContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -355,8 +361,8 @@ public struct HostDefaults {
     */
     public static var ApplicationKey : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_HostDefaults_get_ApplicationKey();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_HostDefaults_get_ApplicationKey();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -370,8 +376,8 @@ public struct HostDefaults {
     */
     public static var ContentRootKey : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_HostDefaults_get_ContentRootKey();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_HostDefaults_get_ContentRootKey();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -384,8 +390,8 @@ public struct HostDefaults {
     */
     public static var EnvironmentKey : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_Extensions_Hosting_HostDefaults_get_EnvironmentKey();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_Extensions_Hosting_HostDefaults_get_EnvironmentKey();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -596,7 +602,32 @@ public struct HostingAbstractionsHostExtensions {
             return;
         }
     }
-// TODO COPE (write_all_methods) (span) System.Threading.Tasks.Task StopAsync(Microsoft.Extensions.Hosting.IHost, System.TimeSpan)
+    // System.Threading.Tasks.Task StopAsync(Microsoft.Extensions.Hosting.IHost, System.TimeSpan)
+// docid: M:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.StopAsync(Microsoft.Extensions.Hosting.IHost,System.TimeSpan)
+    /**
+    
+            Attempts to gracefully stop the host with the given timeout.
+            
+
+    - Parameter host: The  to stop.
+    - Parameter timeout: The timeout for stopping gracefully. Once expired the
+            server may terminate any remaining active connections.
+    - Returns: The  that represents the asynchronous operation.
+
+    */
+    public static func StopAsync(host : Optional<aspnetcore.Microsoft.Extensions.Hosting.IHost>, timeout : dotnet.System.TimeSpan) throws -> Optional<dotnet.System.Threading.Tasks.Task> {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Hosting_HostingAbstractionsHostExtensions_Task__StopAsync_0__2__IHost_TimeSpan(&__thrown, host?.get_handle() ?? nil, timeout.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        if let __ret_unwrapped = __return {
+            return dotnet.System.Threading.Tasks.Task(hndl : __ret_unwrapped);
+        } else {
+            return nil;
+        }
+        }
+    }
     // void WaitForShutdown(Microsoft.Extensions.Hosting.IHost)
 // docid: M:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown(Microsoft.Extensions.Hosting.IHost)
     /**
@@ -748,6 +779,9 @@ open class IApplicationLifetime
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IApplicationLifetime_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -825,6 +859,9 @@ open class IHost
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHost_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -916,6 +953,9 @@ open class IHostApplicationLifetime
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostApplicationLifetime_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -993,6 +1033,9 @@ open class IHostBuilder
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostBuilder_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1069,9 +1112,9 @@ open class IHostBuilder
     - Returns: The same instance of the  for chaining.
 
     */
-    open func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.Hosting.HostBuilderContext,UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    open func ConfigureContainer<UTContainerBuilder : SGBridgeGenericValue>(configureDelegate : Optional<dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.Hosting.HostBuilderContext,UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__ConfigureContainer_1__1__System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), (configureDelegate?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1159,9 +1202,9 @@ open class IHostBuilder
     - Returns: The same instance of the  for chaining.
 
     */
-    open func UseServiceProviderFactory<UTContainerBuilder : SGBridgeGenericValue>(factory : aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceProviderFactory_1<UTContainerBuilder>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
+    open func UseServiceProviderFactory<UTContainerBuilder : SGBridgeGenericValue>(factory : Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceProviderFactory_1<UTContainerBuilder>>) throws -> Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostBuilder> {
         var __thrown : NullableHandle = nil;
-        let __return = Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), nil);
+        let __return = Microsoft_Extensions_Hosting_IHostBuilder_IHostBuilder__UseServiceProviderFactory_1__1__Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_UTContainerBuilder_(UTContainerBuilder.get_type_handle(), &__thrown, self.get_handle(), (factory?.get_handle()));
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -1232,6 +1275,9 @@ open class IHostEnvironment
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostEnvironment_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1358,6 +1404,9 @@ open class IHostLifetime
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostLifetime_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1434,6 +1483,9 @@ open class IHostedService
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostedService_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -1508,6 +1560,9 @@ open class IHostingEnvironment
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_Extensions_Hosting_IHostingEnvironment_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -1682,7 +1737,7 @@ public protocol Microsoft_Extensions_Hosting_IHostingEnvironment
 
 // EXTENSION METHOD Microsoft.Extensions.DependencyInjection.IServiceCollection AddHostedService<THostedService>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<System.IServiceProvider,THostedService>)
 extension Microsoft_Extensions_DependencyInjection_IServiceCollection {
-    public func AddHostedService<UTHostedService : SGBridgeGenericValue>(implementationFactory : dotnet.System.Func_2<dotnet.System.IServiceProvider,UTHostedService>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
+    public func AddHostedService<UTHostedService : SGBridgeGenericValue>(implementationFactory : Optional<dotnet.System.Func_2<dotnet.System.IServiceProvider,UTHostedService>>) throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService(services: aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection(hndl: __copy_handle(self.get_handle())), implementationFactory: implementationFactory);
     }
     // delegate closure overload
@@ -1756,7 +1811,11 @@ extension Microsoft_Extensions_Hosting_IHost {
 }
 
 // EXTENSION METHOD System.Threading.Tasks.Task StopAsync(Microsoft.Extensions.Hosting.IHost, System.TimeSpan)
-// TODO COPE extension method (span) System.Threading.Tasks.Task StopAsync(Microsoft.Extensions.Hosting.IHost, System.TimeSpan)
+extension Microsoft_Extensions_Hosting_IHost {
+    public func StopAsync(timeout : dotnet.System.TimeSpan) throws -> Optional<dotnet.System.Threading.Tasks.Task> {
+        return try aspnetcore.Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.StopAsync(host: aspnetcore.Microsoft.Extensions.Hosting.IHost(hndl: __copy_handle(self.get_handle())), timeout: timeout);
+    }
+}
 
 // EXTENSION METHOD void WaitForShutdown(Microsoft.Extensions.Hosting.IHost)
 extension Microsoft_Extensions_Hosting_IHost {

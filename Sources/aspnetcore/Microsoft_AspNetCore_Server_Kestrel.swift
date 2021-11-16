@@ -62,7 +62,7 @@ public struct WebHostBuilderKestrelExtensions {
         }
     }
     // delegate closure overload
-    public static func UseKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(options);
         return try UseKestrel(hostBuilder: hostBuilder, options: del_options);
     }
@@ -94,7 +94,7 @@ public struct WebHostBuilderKestrelExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func ConfigureKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(options);
         return try ConfigureKestrel(hostBuilder: hostBuilder, options: del_options);
     }
@@ -124,7 +124,7 @@ public struct WebHostBuilderKestrelExtensions {
         }
     }
     // delegate closure overload
-    public static func UseKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func UseKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(configureOptions);
         return try UseKestrel(hostBuilder: hostBuilder, configureOptions: del_configureOptions);
     }
@@ -154,7 +154,7 @@ public struct WebHostBuilderKestrelExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public static func ConfigureKestrel(hostBuilder : aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder, configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(configureOptions);
         return try ConfigureKestrel(hostBuilder: hostBuilder, configureOptions: del_configureOptions);
     }
@@ -178,7 +178,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.UseKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: options);
     }
     // delegate closure overload
-    public func UseKestrel(options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseKestrel(options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(options);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.UseKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: del_options);
     }
@@ -190,7 +190,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.ConfigureKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: options);
     }
     // delegate closure overload
-    public func ConfigureKestrel(options : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func ConfigureKestrel(options : @escaping (aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_options = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(options);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.ConfigureKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), options: del_options);
     }
@@ -202,7 +202,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.UseKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func UseKestrel(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func UseKestrel(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.UseKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }
@@ -214,7 +214,7 @@ extension Microsoft_AspNetCore_Hosting_IWebHostBuilder {
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.ConfigureKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: configureOptions);
     }
     // delegate closure overload
-    public func ConfigureKestrel(configureOptions : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext>, Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
+    public func ConfigureKestrel(configureOptions : @escaping (aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext, aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder {
         let del_configureOptions = try dotnet.System.Action_2<aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderContext,aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>(configureOptions);
         return try aspnetcore.Microsoft.AspNetCore.Hosting.WebHostBuilderKestrelExtensions.ConfigureKestrel(hostBuilder: aspnetcore.Microsoft.AspNetCore.Hosting.IWebHostBuilder(hndl: __copy_handle(self.get_handle())), configureOptions: del_configureOptions);
     }

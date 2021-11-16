@@ -82,7 +82,7 @@ SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Components_BindConverter_Object_
 
 SG_HNDL_NULLABLE invoke_Microsoft_AspNetCore_Components_BindConverter_Object__FormatValue_1__2__UT_CultureInfo(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL value, SG_HNDL_NULLABLE culture);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToString_0__3__Object_CultureInfo_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToString_0__3__Object_CultureInfo_outString(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToBool_0__3__Object_CultureInfo_outbool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, int32_t* _Nonnull __value_out_ptr);
 
@@ -96,23 +96,23 @@ int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToFloat_0_
 
 int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDouble_0__3__Object_CultureInfo_outf64(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, double* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDecimal_0__3__Object_CultureInfo_outDecimal(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDecimal_0__3__Object_CultureInfo_outDecimal(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__3__Object_CultureInfo_outDateTime(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__3__Object_CultureInfo_outDateTime(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__4__Object_CultureInfo_String_outDateTime(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__4__Object_CultureInfo_String_outDateTime(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__3__Object_CultureInfo_outDateTimeOffset(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__3__Object_CultureInfo_outDateTimeOffset(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__4__Object_CultureInfo_String_outDateTimeOffset(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__4__Object_CultureInfo_String_outDateTimeOffset(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__3__Object_CultureInfo_outDateOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__3__Object_CultureInfo_outDateOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__4__Object_CultureInfo_String_outDateOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__4__Object_CultureInfo_String_outDateOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__3__Object_CultureInfo_outTimeOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__3__Object_CultureInfo_outTimeOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
-int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__4__Object_CultureInfo_String_outTimeOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NONNULL* _Nonnull __value_out_ptr);
+int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__4__Object_CultureInfo_String_outTimeOnly(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, SG_HNDL_NONNULL format, SG_HNDL_NULLABLE* _Nonnull __value_out_ptr);
 
 int32_t Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertTo_1__3__Object_CultureInfo_outUT(TYP T, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE obj, SG_HNDL_NULLABLE culture, GVAL* _Nonnull __value_out_ptr);
 
@@ -232,9 +232,33 @@ TYP Microsoft_AspNetCore_Components_ComponentBase_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_ctor_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown);
 
+void Microsoft_AspNetCore_Components_ComponentBase_void__BuildRenderTree_0__1__RenderTreeBuilder(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL builder);
+
+void Microsoft_AspNetCore_Components_ComponentBase_void__OnInitialized_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__OnInitializedAsync_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+void Microsoft_AspNetCore_Components_ComponentBase_void__OnParametersSet_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__OnParametersSetAsync_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+void Microsoft_AspNetCore_Components_ComponentBase_void__StateHasChanged_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+int32_t Microsoft_AspNetCore_Components_ComponentBase_bool__ShouldRender_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
+
+void Microsoft_AspNetCore_Components_ComponentBase_void__OnAfterRender_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t firstRender);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__OnAfterRenderAsync_0__1__bool(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, int32_t firstRender);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__InvokeAsync_0__1__Action(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL workItem);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__InvokeAsync_0__1__System_Func_Task_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL workItem);
+
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_Task__SetParametersAsync_0__1__ParameterView(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL parameters);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_ComponentBase_subclass(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_ComponentBase_void__BuildRenderTree_0__1__RenderTreeBuilder)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_ComponentBase_void__BuildRenderTree_0__1__RenderTreeBuilder, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_Dispatcher_get_type_handle(void);
 
@@ -466,6 +490,10 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_EventCallbackWorkItem_implicit_c
 
 TYP Microsoft_AspNetCore_Components_EventCallback_1_get_type_handle(TYP TValue);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_EventCallback_1_get_Empty(void);
+
+void Microsoft_AspNetCore_Components_EventCallback_1_set_Empty(SG_HNDL_NONNULL __v);
+
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_EventCallback_1_ctor_0__2__IHandleEvent_MulticastDelegate(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE receiver, SG_HNDL_NULLABLE delegate_);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_EventCallback_1_Task__InvokeAsync_0__1__TValue(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL arg);
@@ -512,11 +540,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponent_Task__SetParametersAs
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponent_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponent_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IComponent_void__Attach_0__1__RenderHandle)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL renderHandle), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IComponent_void__Attach_0__1__RenderHandle, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IComponent_Task__SetParametersAsync_0__1__ParameterView)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL parameters), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IComponent_Task__SetParametersAsync_0__1__ParameterView, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Components_IComponentActivator_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponentActivator_IComponent__CreateInstance_0__1__Type(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL componentType);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponentActivator_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IComponentActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IComponentActivator_IComponent__CreateInstance_0__1__Type)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL componentType), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IComponentActivator_IComponent__CreateInstance_0__1__Type, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_IHandleAfterRender_get_type_handle(void);
 
@@ -524,11 +556,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleAfterRender_Task__OnAfter
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleAfterRender_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleAfterRender_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IHandleAfterRender_Task__OnAfterRenderAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IHandleAfterRender_Task__OnAfterRenderAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Components_IHandleEvent_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleEvent_Task__HandleEventAsync_0__2__EventCallbackWorkItem_Object(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL item, SG_HNDL_NULLABLE arg);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleEvent_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IHandleEvent_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IHandleEvent_Task__HandleEventAsync_0__2__EventCallbackWorkItem_Object)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL item, SG_HNDL_NULLABLE arg), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IHandleEvent_Task__HandleEventAsync_0__2__EventCallbackWorkItem_Object, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_IPersistentComponentStateStore_get_type_handle(void);
 
@@ -537,6 +573,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IPersistentComponentStateStore_S
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IPersistentComponentStateStore_Task__PersistStateAsync_0__1__System_Collections_Generic_IReadOnlyDictionary_string_u8Array_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL state);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IPersistentComponentStateStore_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_IPersistentComponentStateStore_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IPersistentComponentStateStore_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IDictionary_string_u8Array____GetPersistedStateAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IPersistentComponentStateStore_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IDictionary_string_u8Array____GetPersistedStateAsync_0__0, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_IPersistentComponentStateStore_Task__PersistStateAsync_0__1__System_Collections_Generic_IReadOnlyDictionary_string_u8Array_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL state), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_IPersistentComponentStateStore_Task__PersistStateAsync_0__1__System_Collections_Generic_IReadOnlyDictionary_string_u8Array_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_InjectAttribute_get_type_handle(void);
 
@@ -790,7 +828,7 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Components_RenderFragment_IAsyncResult__Be
 
 void Microsoft_AspNetCore_Components_RenderFragment_void__EndInvoke_0__1__IAsyncResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderFragment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), void (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder));
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderFragment_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL builder), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_RenderFragment_1_get_type_handle(TYP TValue);
 
@@ -812,7 +850,7 @@ SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Components_RenderFragment_1_Rend
 
 SG_HNDL_NONNULL invoke_Microsoft_AspNetCore_Components_RenderFragment_1_RenderFragment__EndInvoke_0__1__IAsyncResult(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderFragment_1_create(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL value));
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderFragment_1_create(TYP TValue, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL value), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_RenderHandle_get_type_handle(void);
 
@@ -932,6 +970,10 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderTree_ArrayBuilderSegment_1
 
 TYP Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_get_type_handle(TYP T);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_get_Array(SG_HNDL_NONNULL __self_h);
+
+void Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_set_Array(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v);
+
 int32_t Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_get_Count(SG_HNDL_NONNULL __self_h);
 
 void Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_set_Count(SG_HNDL_NONNULL __self_h, int32_t __v);
@@ -977,6 +1019,10 @@ TYP Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_get_type_handle(vo
 int32_t Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_get_ComponentId(SG_HNDL_NONNULL __self_h);
 
 void Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_set_ComponentId(SG_HNDL_NONNULL __self_h, int32_t __v);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_get_Edits(SG_HNDL_NONNULL __self_h);
+
+void Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_set_Edits(SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL __v);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_implicit_ctor(void);
 
@@ -1198,11 +1244,15 @@ void Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_v
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_void__Initialize_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL baseUri, SG_HNDL_NONNULL uri), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_void__Initialize_0__2__String_String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Components_Routing_INavigationInterception_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Routing_INavigationInterception_Task__EnableNavigationInterceptionAsync_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Routing_INavigationInterception_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Routing_INavigationInterception_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Routing_INavigationInterception_Task__EnableNavigationInterceptionAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Routing_INavigationInterception_Task__EnableNavigationInterceptionAsync_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_Routing_LocationChangedEventArgs_get_type_handle(void);
 

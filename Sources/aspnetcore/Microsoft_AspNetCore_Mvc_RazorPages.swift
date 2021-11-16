@@ -23,6 +23,9 @@ public final class PageActionEndpointConventionBuilder
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Builder_PageActionEndpointConventionBuilder_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
@@ -44,7 +47,7 @@ public final class PageActionEndpointConventionBuilder
         }
     }
     // delegate closure overload
-    public func Add(convention : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>) throws -> Void) throws {
+    public func Add(convention : @escaping (aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder) throws -> Void) throws {
         let del_convention = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Builder.EndpointBuilder>(convention);
         return try Add(convention: del_convention);
     }
@@ -188,6 +191,9 @@ open class IPageApplicationModelConvention
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelConvention_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -232,6 +238,9 @@ open class IPageApplicationModelPartsProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelPartsProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -344,6 +353,9 @@ open class IPageApplicationModelProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -418,6 +430,9 @@ open class IPageConvention
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -445,6 +460,9 @@ open class IPageHandlerModelConvention
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageHandlerModelConvention_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -492,6 +510,9 @@ open class IPageRouteModelConvention
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageRouteModelConvention_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -536,6 +557,9 @@ open class IPageRouteModelProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_IPageRouteModelProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -609,6 +633,9 @@ open class PageApplicationModel
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModel_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1067,6 +1094,9 @@ open class PageApplicationModelProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModelProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, System.Reflection.TypeInfo)
@@ -1185,6 +1215,9 @@ open class PageConventionCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1246,7 +1279,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddPageApplicationModelConvention(pageName : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    open func AddPageApplicationModelConvention(pageName : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>(action);
         return try AddPageApplicationModelConvention(pageName: pageName, action: del_action);
     }
@@ -1280,7 +1313,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddAreaPageApplicationModelConvention(areaName : dotnet.System.String, pageName : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    open func AddAreaPageApplicationModelConvention(areaName : dotnet.System.String, pageName : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>(action);
         return try AddAreaPageApplicationModelConvention(areaName: areaName, pageName: pageName, action: del_action);
     }
@@ -1307,7 +1340,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddFolderApplicationModelConvention(folderPath : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    open func AddFolderApplicationModelConvention(folderPath : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>(action);
         return try AddFolderApplicationModelConvention(folderPath: folderPath, action: del_action);
     }
@@ -1341,7 +1374,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddAreaFolderApplicationModelConvention(areaName : dotnet.System.String, folderPath : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    open func AddAreaFolderApplicationModelConvention(areaName : dotnet.System.String, folderPath : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>(action);
         return try AddAreaFolderApplicationModelConvention(areaName: areaName, folderPath: folderPath, action: del_action);
     }
@@ -1368,7 +1401,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddPageRouteModelConvention(pageName : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
+    open func AddPageRouteModelConvention(pageName : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>(action);
         return try AddPageRouteModelConvention(pageName: pageName, action: del_action);
     }
@@ -1402,7 +1435,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddAreaPageRouteModelConvention(areaName : dotnet.System.String, pageName : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
+    open func AddAreaPageRouteModelConvention(areaName : dotnet.System.String, pageName : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>(action);
         return try AddAreaPageRouteModelConvention(areaName: areaName, pageName: pageName, action: del_action);
     }
@@ -1429,7 +1462,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddFolderRouteModelConvention(folderPath : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
+    open func AddFolderRouteModelConvention(folderPath : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>(action);
         return try AddFolderRouteModelConvention(folderPath: folderPath, action: del_action);
     }
@@ -1463,7 +1496,7 @@ open class PageConventionCollection
         }
     }
     // delegate closure overload
-    open func AddAreaFolderRouteModelConvention(areaName : dotnet.System.String, folderPath : dotnet.System.String, action : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
+    open func AddAreaFolderRouteModelConvention(areaName : dotnet.System.String, folderPath : dotnet.System.String, action : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention {
         let del_action = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel>(action);
         return try AddAreaFolderRouteModelConvention(areaName: areaName, folderPath: folderPath, action: del_action);
     }
@@ -1504,6 +1537,9 @@ open class PageHandlerModel
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageHandlerModel_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1791,6 +1827,9 @@ open class PageParameterModel
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageParameterModel_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Reflection.ParameterInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
@@ -1943,6 +1982,9 @@ open class PagePropertyModel
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PagePropertyModel_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Reflection.PropertyInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
@@ -2093,6 +2135,9 @@ public final class PageRouteMetadata
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteMetadata_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.String)
@@ -2178,6 +2223,9 @@ open class PageRouteModel
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteModel_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2442,6 +2490,9 @@ open class PageRouteModelProviderContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteModelProviderContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2498,6 +2549,9 @@ open class PageRouteTransformerConvention
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteTransformerConvention_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Routing.IOutboundParameterTransformer)
@@ -2551,6 +2605,9 @@ public final class AfterHandlerMethodEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterHandlerMethodEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2720,6 +2777,9 @@ public final class AfterPageFilterOnPageHandlerExecutedEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutedEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -2837,6 +2897,9 @@ public final class AfterPageFilterOnPageHandlerExecutingEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutingEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2956,6 +3019,9 @@ public final class AfterPageFilterOnPageHandlerExecutionEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutionEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3073,6 +3139,9 @@ public final class AfterPageFilterOnPageHandlerSelectedEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectedEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3192,6 +3261,9 @@ public final class AfterPageFilterOnPageHandlerSelectionEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectionEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3309,6 +3381,9 @@ public final class BeforeHandlerMethodEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforeHandlerMethodEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3451,6 +3526,9 @@ public final class BeforePageFilterOnPageHandlerExecutedEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutedEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3568,6 +3646,9 @@ public final class BeforePageFilterOnPageHandlerExecutingEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutingEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3687,6 +3768,9 @@ public final class BeforePageFilterOnPageHandlerExecutionEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutionEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3805,6 +3889,9 @@ public final class BeforePageFilterOnPageHandlerSelectedEventData
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectedEventData_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String EventName
@@ -3922,6 +4009,9 @@ public final class BeforePageFilterOnPageHandlerSelectionEventData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectionEventData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4048,6 +4138,9 @@ open class IAsyncPageFilter
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4068,13 +4161,13 @@ open class IAsyncPageFilter
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnPageHandlerSelectionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerSelectionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter_Task__OnPageHandlerSelectionAsync_0__1__PageHandlerSelectedContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnPageHandlerExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate)
@@ -4091,19 +4184,19 @@ open class IAsyncPageFilter
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter_Task__OnPageHandlerExecutionAsync_0__2__PageHandlerExecutingContext_PageHandlerExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate(next);
-        return try OnPageHandlerExecutionAsync(context: context, next: del_next);
+        return try await OnPageHandlerExecutionAsync(context: context, next: del_next);
     }
 } // IAsyncPageFilter
 
@@ -4124,6 +4217,9 @@ open class IPageFilter
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_IPageFilter_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4206,6 +4302,9 @@ open class PageHandlerExecutedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4503,6 +4602,9 @@ open class PageHandlerExecutingContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutingContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor, System.Collections.Generic.IDictionary<System.String,System.Object>, System.Object)
@@ -4668,6 +4770,9 @@ public final class PageHandlerExecutionDelegate
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutionDelegate_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext> Invoke()
@@ -4707,16 +4812,36 @@ public final class PageHandlerExecutionDelegate
         return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
         }
     }
-    public init(_ callback : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext>) throws
+    public convenience init(_ __closure_Invoke : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback();
-                return __copy_handle(ret.get_handle());
+                let tcs : System.Threading.Tasks.TaskCompletionSource_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext> = try System.Threading.Tasks.TaskCompletionSource_1();
+                Task
+                {
+                    do
+                    {
+                    let ret = try await __closure_Invoke();
+                    try tcs.SetResult(result: ret);
+                    }
+                    catch let e as dotnet.System.Exception
+                    {
+                        try! tcs.SetException(exception: e);
+                    }
+                    catch
+                    {
+                        let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                        try! tcs.SetException(exception: e);
+                    }
+                }
+
+                let t = try tcs.get_Task();
+                let h_task = __copy_handle(t.get_handle());
+                return h_task;
             }
             catch let e as dotnet.System.Exception
             {
@@ -4730,24 +4855,24 @@ public final class PageHandlerExecutionDelegate
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
-            return f(thrown);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>) -> NonnullHandle;
+            return f_interlude(thrown);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutionDelegate_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext> Invoke()
@@ -4779,6 +4904,9 @@ open class PageHandlerSelectedContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_Filters_PageHandlerSelectedContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4896,6 +5024,9 @@ open class CompiledPageActionDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_CompiledPageActionDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5187,6 +5318,9 @@ open class IPageActivatorProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_IPageActivatorProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5281,6 +5415,9 @@ open class IPageFactoryProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_IPageFactoryProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5377,6 +5514,9 @@ open class IPageModelActivatorProvider
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -5471,6 +5611,9 @@ open class IPageModelFactoryProvider
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_IPageModelFactoryProvider_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -5570,6 +5713,9 @@ open class NonHandlerAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_NonHandlerAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -5600,6 +5746,9 @@ open class Page
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Page_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // Page
@@ -5618,6 +5767,9 @@ open class PageActionDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageActionDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5829,6 +5981,9 @@ open class PageBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7822,13 +7977,13 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__1__UTModel(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String)
@@ -7845,13 +8000,13 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__2__UTModel_String(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider)
@@ -7869,24 +8024,24 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__3__UTModel_String_IValueProvider(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle(), valueProvider.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, System.Linq.Expressions.Expression<System.Func<TModel,System.Object>>[])
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageBase.TryUpdateModelAsync``1(``0,System.String,System.Linq.Expressions.Expression`1[])
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, includeExpressions : dotnet.System_Arr<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,dotnet.System.Object>>>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, includeExpressions : dotnet.System_Arr<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,dotnet.System.Object>>>) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__3__UTModel_String_System_Linq_Expressions_Expression_System_System_Func_UTModel_object__Array(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle(), includeExpressions.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -7904,29 +8059,29 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__3__UTModel_String_System_Func_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadata_bool_(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle(), propertyFilter.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, propertyFilter : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata>) throws -> Bool) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, propertyFilter : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata) throws -> Bool) async throws -> Bool {
         let del_propertyFilter = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Swift.Bool>(propertyFilter);
-        return try TryUpdateModelAsync(model: model, prefix: prefix, propertyFilter: del_propertyFilter);
+        return try await TryUpdateModelAsync(model: model, prefix: prefix, propertyFilter: del_propertyFilter);
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Linq.Expressions.Expression<System.Func<TModel,System.Object>>[])
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageBase.TryUpdateModelAsync``1(``0,System.String,Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider,System.Linq.Expressions.Expression`1[])
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, includeExpressions : dotnet.System_Arr<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,dotnet.System.Object>>>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, includeExpressions : dotnet.System_Arr<dotnet.System.Linq.Expressions.Expression_1<dotnet.System.Func_2<UTModel,dotnet.System.Object>>>) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__4__UTModel_String_IValueProvider_System_Linq_Expressions_Expression_System_System_Func_UTModel_object__Array(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle(), valueProvider.get_handle(), includeExpressions.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -7945,19 +8100,19 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_1__4__UTModel_String_IValueProvider_System_Func_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadata_bool_(UTModel.get_type_handle(), &__thrown, self.get_handle(), model.to_gval(), prefix.get_handle(), valueProvider.get_handle(), propertyFilter.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata>) throws -> Bool) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync<UTModel : SGBridgeGenericValue>(model : UTModel, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata) throws -> Bool) async throws -> Bool {
         let del_propertyFilter = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Swift.Bool>(propertyFilter);
-        return try TryUpdateModelAsync(model: model, prefix: prefix, valueProvider: valueProvider, propertyFilter: del_propertyFilter);
+        return try await TryUpdateModelAsync(model: model, prefix: prefix, valueProvider: valueProvider, propertyFilter: del_propertyFilter);
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync(System.Object, System.Type, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageBase.TryUpdateModelAsync(System.Object,System.Type,System.String)
@@ -7974,13 +8129,13 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_0__3__Object_Type_String(&__thrown, self.get_handle(), model.get_handle(), modelType.get_handle(), prefix.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync(System.Object, System.Type, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -8000,19 +8155,19 @@ open class PageBase
     - Returns: A  that on completion returns true if the update is successful.
 
     */
-    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Bool>) async throws -> Bool {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_System_Threading_Tasks_Task_bool___TryUpdateModelAsync_0__5__Object_Type_String_IValueProvider_System_Func_Microsoft_AspNetCore_Mvc_ModelBinding_ModelMetadata_bool_(&__thrown, self.get_handle(), model.get_handle(), modelType.get_handle(), prefix.get_handle(), valueProvider.get_handle(), propertyFilter.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata>) throws -> Bool) throws -> dotnet.System.Threading.Tasks.Task_1<Bool> {
+    open func TryUpdateModelAsync(model : dotnet.System.Object, modelType : dotnet.System.Type_, prefix : dotnet.System.String, valueProvider : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, propertyFilter : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata) throws -> Bool) async throws -> Bool {
         let del_propertyFilter = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Swift.Bool>(propertyFilter);
-        return try TryUpdateModelAsync(model: model, modelType: modelType, prefix: prefix, valueProvider: valueProvider, propertyFilter: del_propertyFilter);
+        return try await TryUpdateModelAsync(model: model, modelType: modelType, prefix: prefix, valueProvider: valueProvider, propertyFilter: del_propertyFilter);
     }
     // bool TryValidateModel(System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageBase.TryValidateModel(System.Object)
@@ -8287,6 +8442,9 @@ open class PageContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -8473,6 +8631,9 @@ open class PageContextAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageContextAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -8505,6 +8666,9 @@ open class PageModel
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageModel_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -10579,13 +10743,13 @@ open class PageModel
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnPageHandlerSelectionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerSelectionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageModel_Task__OnPageHandlerSelectionAsync_0__1__PageHandlerSelectedContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task OnPageHandlerExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate)
@@ -10602,19 +10766,19 @@ open class PageModel
     - Returns: A  that on completion indicates the filter has executed.
 
     */
-    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageModel_Task__OnPageHandlerExecutionAsync_0__2__PageHandlerExecutingContext_PageHandlerExecutionDelegate(&__thrown, self.get_handle(), context.get_handle(), next.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnPageHandlerExecutionAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, next : @escaping () async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext) async throws {
         let del_next = try aspnetcore.Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate(next);
-        return try OnPageHandlerExecutionAsync(context: context, next: del_next);
+        return try await OnPageHandlerExecutionAsync(context: context, next: del_next);
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.RazorPages.PageContext get_PageContext()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageModel.get_PageContext
@@ -10931,6 +11095,9 @@ open class PageResult
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_PageResult_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -10948,13 +11115,13 @@ open class PageResult
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)
     /**
     */
-    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func ExecuteResultAsync(context : aspnetcore.Microsoft.AspNetCore.Mvc.ActionContext) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_PageResult_Task__ExecuteResultAsync_0__1__ActionContext(&__thrown, self.get_handle(), context.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.String get_ContentType()
@@ -11145,6 +11312,9 @@ open class RazorPagesOptions
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_RazorPagesOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -11253,6 +11423,9 @@ public final class CompiledPageActionDescriptorProvider
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_CompiledPageActionDescriptorProvider_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider>, Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcOptions>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>)
@@ -11337,6 +11510,9 @@ open class HandlerMethodDescriptor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerMethodDescriptor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11517,6 +11693,9 @@ open class HandlerParameterDescriptor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerParameterDescriptor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -11584,6 +11763,9 @@ open class IPageHandlerMethodSelector
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageHandlerMethodSelector_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -11635,6 +11817,9 @@ open class IPageLoader
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -11681,6 +11866,9 @@ open class PageActionDescriptorProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageActionDescriptorProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11780,6 +11968,9 @@ open class PageBoundPropertyDescriptor
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageBoundPropertyDescriptor_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -11847,6 +12038,9 @@ open class PageLoader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageLoader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor> LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor)
@@ -11860,13 +12054,13 @@ open class PageLoader
     - Returns: A  that on completion returns a .
 
     */
-    open func LoadAsync(actionDescriptor : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor> {
+    open func LoadAsync(actionDescriptor : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageLoader_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_RazorPages_CompiledPageActionDescriptor___LoadAsync_0__1__PageActionDescriptor(&__thrown, self.get_handle(), actionDescriptor.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor> LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, Microsoft.AspNetCore.Http.EndpointMetadataCollection)
@@ -11881,13 +12075,13 @@ open class PageLoader
     - Returns: A  that on completion returns a .
 
     */
-    open func LoadAsync(actionDescriptor : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, endpointMetadata : aspnetcore.Microsoft.AspNetCore.Http.EndpointMetadataCollection) throws -> dotnet.System.Threading.Tasks.Task_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor> {
+    open func LoadAsync(actionDescriptor : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, endpointMetadata : aspnetcore.Microsoft.AspNetCore.Http.EndpointMetadataCollection) async throws -> aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageLoader_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_RazorPages_CompiledPageActionDescriptor___LoadAsync_0__2__PageActionDescriptor_EndpointMetadataCollection(&__thrown, self.get_handle(), actionDescriptor.get_handle(), endpointMetadata.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
 } // PageLoader
@@ -11907,6 +12101,9 @@ open class PageModelAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageModelAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11937,6 +12134,9 @@ open class PageResultExecutor
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageResultExecutor_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -11971,13 +12171,13 @@ open class PageResultExecutor
             
 
     */
-    open func ExecuteAsync(pageContext : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageResult) throws -> dotnet.System.Threading.Tasks.Task {
+    open func ExecuteAsync(pageContext : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageContext, result : aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.PageResult) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageResultExecutor_Task__ExecuteAsync_0__2__PageContext_PageResult(&__thrown, self.get_handle(), pageContext.get_handle(), result.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // PageResultExecutor
@@ -11997,6 +12197,9 @@ open class PageViewLocationExpander
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageViewLocationExpander_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12057,6 +12260,9 @@ open class RazorPageAdapter
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAdapter_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.RazorPageBase, System.Type)
@@ -12095,13 +12301,13 @@ open class RazorPageAdapter
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter.ExecuteAsync
     /**
     */
-    open /* method final */ func ExecuteAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func ExecuteAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAdapter_Task__ExecuteAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Rendering.ViewContext get_ViewContext()
@@ -12339,6 +12545,9 @@ open class RazorPageAttribute
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAttribute_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Type, System.String)
@@ -12400,6 +12609,9 @@ open class ServiceBasedPageModelActivatorProvider
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_ServiceBasedPageModelActivatorProvider_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -12479,7 +12691,7 @@ public struct MvcRazorPagesMvcBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRazorPagesOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public static func AddRazorPagesOptions(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(setupAction);
         return try AddRazorPagesOptions(builder: builder, setupAction: del_setupAction);
     }
@@ -12571,7 +12783,7 @@ public struct MvcRazorPagesMvcCoreBuilderExtensions {
         }
     }
     // delegate closure overload
-    public static func AddRazorPages(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public static func AddRazorPages(builder : aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder, setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(setupAction);
         return try AddRazorPages(builder: builder, setupAction: del_setupAction);
     }
@@ -12623,7 +12835,7 @@ public struct PageConventionCollectionExtensions {
         }
     }
     // delegate closure overload
-    public static func ConfigureFilter(conventions : aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection, factory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    public static func ConfigureFilter(conventions : aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection, factory : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_factory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel,aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>(factory);
         return try ConfigureFilter(conventions: conventions, factory: del_factory);
     }
@@ -13175,7 +13387,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions.AddRazorPagesOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddRazorPagesOptions(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
+    public func AddRazorPagesOptions(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcBuilderExtensions.AddRazorPagesOptions(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -13208,7 +13420,7 @@ extension Microsoft_Extensions_DependencyInjection_IMvcCoreBuilder {
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions.AddRazorPages(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: setupAction);
     }
     // delegate closure overload
-    public func AddRazorPages(setupAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
+    public func AddRazorPages(setupAction : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions) throws -> Void) throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder {
         let del_setupAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>(setupAction);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.MvcRazorPagesMvcCoreBuilderExtensions.AddRazorPages(builder: aspnetcore.Microsoft.Extensions.DependencyInjection.IMvcCoreBuilder(hndl: __copy_handle(self.get_handle())), setupAction: del_setupAction);
     }
@@ -13227,7 +13439,7 @@ extension aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCo
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions.ConfigureFilter(conventions: self, factory: factory);
     }
     // delegate closure overload
-    public func ConfigureFilter(factory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel>) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
+    public func ConfigureFilter(factory : @escaping (aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention {
         let del_factory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel,aspnetcore.Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>(factory);
         return try aspnetcore.Microsoft.Extensions.DependencyInjection.PageConventionCollectionExtensions.ConfigureFilter(conventions: self, factory: del_factory);
     }

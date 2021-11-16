@@ -839,11 +839,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToString(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.String) throws -> Bool {
+    public static func TryConvertToString(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.String>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToString_0__3__Object_CultureInfo_outString(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.String(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.String(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -876,6 +877,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableBool(System.Object, System.Globalization.CultureInfo, ref System.Nullable<bool>)
     // bool TryConvertToInt(System.Object, System.Globalization.CultureInfo, ref System.Int32)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToInt(System.Object,System.Globalization.CultureInfo,System.Int32@)
     /**
@@ -901,6 +903,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableInt(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Int32>)
     // bool TryConvertToLong(System.Object, System.Globalization.CultureInfo, ref System.Int64)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToLong(System.Object,System.Globalization.CultureInfo,System.Int64@)
     /**
@@ -926,6 +929,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableLong(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Int64>)
     // bool TryConvertToShort(System.Object, System.Globalization.CultureInfo, ref System.Int16)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToShort(System.Object,System.Globalization.CultureInfo,System.Int16@)
     /**
@@ -951,6 +955,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableShort(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Int16>)
     // bool TryConvertToFloat(System.Object, System.Globalization.CultureInfo, ref System.Single)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToFloat(System.Object,System.Globalization.CultureInfo,System.Single@)
     /**
@@ -976,6 +981,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableFloat(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Single>)
     // bool TryConvertToDouble(System.Object, System.Globalization.CultureInfo, ref System.Double)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToDouble(System.Object,System.Globalization.CultureInfo,System.Double@)
     /**
@@ -1001,6 +1007,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDouble(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Double>)
     // bool TryConvertToDecimal(System.Object, System.Globalization.CultureInfo, ref System.Decimal)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToDecimal(System.Object,System.Globalization.CultureInfo,System.Decimal@)
     /**
@@ -1014,11 +1021,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDecimal(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.Decimal) throws -> Bool {
+    public static func TryConvertToDecimal(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.Decimal>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDecimal_0__3__Object_CultureInfo_outDecimal(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.Decimal(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.Decimal(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1026,6 +1034,7 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDecimal(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.Decimal>)
     // bool TryConvertToDateTime(System.Object, System.Globalization.CultureInfo, ref System.DateTime)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToDateTime(System.Object,System.Globalization.CultureInfo,System.DateTime@)
     /**
@@ -1039,11 +1048,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateTime(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.DateTime) throws -> Bool {
+    public static func TryConvertToDateTime(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.DateTime>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__3__Object_CultureInfo_outDateTime(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateTime(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateTime(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1065,11 +1075,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateTime(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout dotnet.System.DateTime) throws -> Bool {
+    public static func TryConvertToDateTime(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout Optional<dotnet.System.DateTime>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTime_0__4__Object_CultureInfo_String_outDateTime(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, format.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateTime(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateTime(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1077,6 +1088,8 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateTime(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.DateTime>)
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateTime(System.Object, System.Globalization.CultureInfo, System.String, ref System.Nullable<System.DateTime>)
     // bool TryConvertToDateTimeOffset(System.Object, System.Globalization.CultureInfo, ref System.DateTimeOffset)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToDateTimeOffset(System.Object,System.Globalization.CultureInfo,System.DateTimeOffset@)
     /**
@@ -1090,11 +1103,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateTimeOffset(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.DateTimeOffset) throws -> Bool {
+    public static func TryConvertToDateTimeOffset(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.DateTimeOffset>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__3__Object_CultureInfo_outDateTimeOffset(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateTimeOffset(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateTimeOffset(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1116,11 +1130,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateTimeOffset(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout dotnet.System.DateTimeOffset) throws -> Bool {
+    public static func TryConvertToDateTimeOffset(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout Optional<dotnet.System.DateTimeOffset>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateTimeOffset_0__4__Object_CultureInfo_String_outDateTimeOffset(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, format.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateTimeOffset(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateTimeOffset(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1128,6 +1143,8 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateTimeOffset(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.DateTimeOffset>)
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateTimeOffset(System.Object, System.Globalization.CultureInfo, System.String, ref System.Nullable<System.DateTimeOffset>)
     // bool TryConvertToDateOnly(System.Object, System.Globalization.CultureInfo, ref System.DateOnly)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToDateOnly(System.Object,System.Globalization.CultureInfo,System.DateOnly@)
     /**
@@ -1141,11 +1158,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.DateOnly) throws -> Bool {
+    public static func TryConvertToDateOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.DateOnly>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__3__Object_CultureInfo_outDateOnly(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateOnly(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateOnly(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1167,11 +1185,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToDateOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout dotnet.System.DateOnly) throws -> Bool {
+    public static func TryConvertToDateOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout Optional<dotnet.System.DateOnly>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToDateOnly_0__4__Object_CultureInfo_String_outDateOnly(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, format.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.DateOnly(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.DateOnly(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1179,6 +1198,8 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateOnly(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.DateOnly>)
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableDateOnly(System.Object, System.Globalization.CultureInfo, System.String, ref System.Nullable<System.DateOnly>)
     // bool TryConvertToTimeOnly(System.Object, System.Globalization.CultureInfo, ref System.TimeOnly)
 // docid: M:Microsoft.AspNetCore.Components.BindConverter.TryConvertToTimeOnly(System.Object,System.Globalization.CultureInfo,System.TimeOnly@)
     /**
@@ -1192,11 +1213,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToTimeOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout dotnet.System.TimeOnly) throws -> Bool {
+    public static func TryConvertToTimeOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, value : inout Optional<dotnet.System.TimeOnly>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__3__Object_CultureInfo_outTimeOnly(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, &_tmp_out_value);
-        let _tmp2_value = dotnet.System.TimeOnly(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.TimeOnly(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1218,11 +1240,12 @@ public struct BindConverter {
     - Returns: true if conversion is successful, otherwise false.
 
     */
-    public static func TryConvertToTimeOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout dotnet.System.TimeOnly) throws -> Bool {
+    public static func TryConvertToTimeOnly(obj : Optional<dotnet.System.Object>, culture : Optional<dotnet.System.Globalization.CultureInfo>, format : dotnet.System.String, value : inout Optional<dotnet.System.TimeOnly>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_value = value.get_handle();
+            var _tmp_out_value = (value != nil) ? (value!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Components_BindConverter_bool__TryConvertToTimeOnly_0__4__Object_CultureInfo_String_outTimeOnly(&__thrown, obj?.get_handle() ?? nil, culture?.get_handle() ?? nil, format.get_handle(), &_tmp_out_value);
-        let _tmp2_value = dotnet.System.TimeOnly(hndl: _tmp_out_value);
+        let __h__tmp2_value = _tmp_out_value;
+        let _tmp2_value = (__h__tmp2_value != nil) ? dotnet.System.TimeOnly(hndl: __h__tmp2_value!) : nil;
             value = _tmp2_value;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1230,6 +1253,8 @@ public struct BindConverter {
         return (__return) != 0;
         }
     }
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableTimeOnly(System.Object, System.Globalization.CultureInfo, ref System.Nullable<System.TimeOnly>)
+// TODO COPE (parm byref nullable of): bool TryConvertToNullableTimeOnly(System.Object, System.Globalization.CultureInfo, System.String, ref System.Nullable<System.TimeOnly>)
 // TODO COPE (write_all_methods) (unused generic param) bool TryConvertTo<T>(System.Object, System.Globalization.CultureInfo, ref T)
 } // BindConverter
 
@@ -1247,6 +1272,9 @@ public final class BindElementAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_BindElementAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1383,6 +1411,9 @@ public final class CascadingParameterAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_CascadingParameterAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1461,6 +1492,9 @@ public final class CascadingTypeParameterAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_CascadingTypeParameterAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -1521,6 +1555,9 @@ open class CascadingValue_1<TValue : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_CascadingValue_1_get_type_handle(TValue.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1551,13 +1588,13 @@ open class CascadingValue_1<TValue : SGBridgeGenericValue>
 // docid: M:Microsoft.AspNetCore.Components.CascadingValue`1.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_CascadingValue_1_Task__SetParametersAsync_0__1__ParameterView(TValue.get_type_handle(), &__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Components.RenderFragment get_ChildContent()
@@ -1741,6 +1778,9 @@ open class ChangeEventArgs
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ChangeEventArgs_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1815,6 +1855,9 @@ open class ComponentBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ComponentBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1834,6 +1877,234 @@ open class ComponentBase
             super.init(hndl: h);
         }
     }
+    // void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
+    /**
+    
+            Renders the component to the supplied .
+            
+
+    - Parameter builder: A  that will receive the render output.
+    */
+    open func BuildRenderTree(builder : aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_ComponentBase_void__BuildRenderTree_0__1__RenderTreeBuilder(&__thrown, self.get_handle(), builder.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // void OnInitialized()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitialized
+    /**
+    
+            Method invoked when the component is ready to start, having received its
+            initial parameters from its parent in the render tree.
+            
+
+    */
+    open func OnInitialized() throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_ComponentBase_void__OnInitialized_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // System.Threading.Tasks.Task OnInitializedAsync()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync
+    /**
+    
+             Method invoked when the component is ready to start, having received its
+             initial parameters from its parent in the render tree.
+            
+             Override this method if you will perform an asynchronous operation and
+             want the component to refresh when that operation is completed.
+             
+
+    - Returns: A  representing any asynchronous operation.
+
+    */
+    open func OnInitializedAsync() async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__OnInitializedAsync_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    // void OnParametersSet()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet
+    /**
+    
+            Method invoked when the component has received parameters from its parent in
+            the render tree, and the incoming values have been assigned to properties.
+            
+
+    */
+    open func OnParametersSet() throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_ComponentBase_void__OnParametersSet_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // System.Threading.Tasks.Task OnParametersSetAsync()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync
+    /**
+    
+            Method invoked when the component has received parameters from its parent in
+            the render tree, and the incoming values have been assigned to properties.
+            
+
+    - Returns: A  representing any asynchronous operation.
+
+    */
+    open func OnParametersSetAsync() async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__OnParametersSetAsync_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    // void StateHasChanged()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged
+    /**
+    
+            Notifies the component that its state has changed. When applicable, this will
+            cause the component to be re-rendered.
+            
+
+    */
+    open func StateHasChanged() throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_ComponentBase_void__StateHasChanged_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // bool ShouldRender()
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender
+    /**
+    
+            Returns a flag to indicate whether the component should render.
+            
+
+    - Returns: 
+
+    */
+    open func ShouldRender() throws -> Bool {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_bool__ShouldRender_0__0(&__thrown, self.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return (__return) != 0;
+        }
+    }
+    // void OnAfterRender(bool)
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender(System.Boolean)
+    /**
+    
+            Method invoked after each time the component has been rendered.
+            
+
+    - Parameter firstRender: 
+            Set to true if this is the first time  has been invoked
+            on this component instance; otherwise false.
+            
+    */
+    open func OnAfterRender(firstRender : Bool) throws {
+        var __thrown : NullableHandle = nil;
+        Microsoft_AspNetCore_Components_ComponentBase_void__OnAfterRender_0__1__bool(&__thrown, self.get_handle(), Swift.Int32(firstRender ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return;
+        }
+    }
+    // System.Threading.Tasks.Task OnAfterRenderAsync(bool)
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync(System.Boolean)
+    /**
+    
+            Method invoked after each time the component has been rendered. Note that the component does
+            not automatically re-render after the completion of any returned , because
+            that would cause an infinite render loop.
+            
+
+    - Parameter firstRender: 
+            Set to true if this is the first time  has been invoked
+            on this component instance; otherwise false.
+            
+    - Returns: A  representing any asynchronous operation.
+
+    */
+    open func OnAfterRenderAsync(firstRender : Bool) async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__OnAfterRenderAsync_0__1__bool(&__thrown, self.get_handle(), Swift.Int32(firstRender ? 1 : 0));
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    // System.Threading.Tasks.Task InvokeAsync(System.Action)
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Action)
+    /**
+    
+            Executes the supplied work item on the associated renderer's
+            synchronization context.
+            
+
+    - Parameter workItem: The work item to execute.
+    */
+    open func InvokeAsync(workItem : dotnet.System.Action) async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__InvokeAsync_0__1__Action(&__thrown, self.get_handle(), workItem.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    // delegate closure overload
+    open func InvokeAsync(workItem : @escaping () throws -> Void) async throws {
+        let del_workItem = try dotnet.System.Action(workItem);
+        return try await InvokeAsync(workItem: del_workItem);
+    }
+    // System.Threading.Tasks.Task InvokeAsync(System.Func<System.Threading.Tasks.Task>)
+// docid: M:Microsoft.AspNetCore.Components.ComponentBase.InvokeAsync(System.Func{System.Threading.Tasks.Task})
+    /**
+    
+            Executes the supplied work item on the associated renderer's
+            synchronization context.
+            
+
+    - Parameter workItem: The work item to execute.
+    */
+    open func InvokeAsync(workItem : dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) async throws {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__InvokeAsync_0__1__System_Func_Task_(&__thrown, self.get_handle(), workItem.get_handle());
+        if let __ex =  __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    // delegate closure overload
+    open func InvokeAsync(workItem : @escaping () throws -> dotnet.System.Threading.Tasks.Task) async throws {
+        let del_workItem = try dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>(workItem);
+        return try await InvokeAsync(workItem: del_workItem);
+    }
     // System.Threading.Tasks.Task SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
 // docid: M:Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
@@ -1845,13 +2116,55 @@ open class ComponentBase
     - Returns: A  that completes when the component has finished updating and rendering itself.
 
     */
-    open func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_ComponentBase_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        }
+    }
+    public static func subclass<T: aspnetcore.Microsoft.AspNetCore.Components.ComponentBase>(
+        BuildRenderTree __closure_BuildRenderTree : @escaping (T) -> (aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder) throws -> Void
+        ) throws -> System.Type_
+    {
+        let __interlude_BuildRenderTree : (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NonnullHandle) -> Void =
+        {
+            (thrown : UnsafeMutablePointer<NullableHandle>, selph : NonnullHandle, builder : NonnullHandle) -> Void in
+            do
+            {
+                thrown.pointee = nil;
+                try __closure_BuildRenderTree(T(hndl: selph))(aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder(hndl: builder));
+            }
+            catch let e as dotnet.System.Exception
+            {
+                thrown.pointee = __copy_handle(e.get_handle());
+            }
+            catch
+            {
+                let e = try! dotnet.System.Exception(message: "TODO fail inside closure");
+                thrown.pointee = __copy_handle(e.get_handle());
+            }
+        };
+        func __cb_BuildRenderTree(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, selph : NonnullHandle, builder : NonnullHandle) -> Void
+        {
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle, NonnullHandle) -> Void;
+            f_interlude(thrown, selph, builder);
+        }
+        let __pdata_BuildRenderTree = UnsafeRawPointer(Unmanaged.passRetained(__interlude_BuildRenderTree as AnyObject).toOpaque());
+
+        var __thrown : NullableHandle = nil;
+        let h = Microsoft_AspNetCore_Components_ComponentBase_subclass(
+            &__thrown,
+            __cb_BuildRenderTree,
+            __pdata_BuildRenderTree,
+            nil
+            );
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            return System.Type_(hndl: h);
         }
     }
 } // ComponentBase
@@ -1870,6 +2183,9 @@ open class Dispatcher
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Dispatcher_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1940,19 +2256,19 @@ open class Dispatcher
     - Returns: A  that will be completed when the action has finished executing.
 
     */
-    open func InvokeAsync(workItem : dotnet.System.Action) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(workItem : dotnet.System.Action) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Dispatcher_Task__InvokeAsync_0__1__Action(&__thrown, self.get_handle(), workItem.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func InvokeAsync(workItem : @escaping () throws -> Void) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(workItem : @escaping () throws -> Void) async throws {
         let del_workItem = try dotnet.System.Action(workItem);
-        return try InvokeAsync(workItem: del_workItem);
+        return try await InvokeAsync(workItem: del_workItem);
     }
     // System.Threading.Tasks.Task InvokeAsync(System.Func<System.Threading.Tasks.Task>)
 // docid: M:Microsoft.AspNetCore.Components.Dispatcher.InvokeAsync(System.Func{System.Threading.Tasks.Task})
@@ -1965,19 +2281,19 @@ open class Dispatcher
     - Returns: A  that will be completed when the action has finished executing.
 
     */
-    open func InvokeAsync(workItem : dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(workItem : dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Dispatcher_Task__InvokeAsync_0__1__System_Func_Task_(&__thrown, self.get_handle(), workItem.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func InvokeAsync(workItem : @escaping () throws -> dotnet.System.Threading.Tasks.Task) throws -> dotnet.System.Threading.Tasks.Task {
+    open func InvokeAsync(workItem : @escaping () throws -> dotnet.System.Threading.Tasks.Task) async throws {
         let del_workItem = try dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task>(workItem);
-        return try InvokeAsync(workItem: del_workItem);
+        return try await InvokeAsync(workItem: del_workItem);
     }
     // System.Threading.Tasks.Task<TResult> InvokeAsync<TResult>(System.Func<TResult>)
 // docid: M:Microsoft.AspNetCore.Components.Dispatcher.InvokeAsync``1(System.Func{``0})
@@ -1990,19 +2306,19 @@ open class Dispatcher
     - Returns: A  that will be completed when the function has finished executing.
 
     */
-    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : dotnet.System.Func_1<UTResult>) throws -> dotnet.System.Threading.Tasks.Task_1<UTResult> {
+    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : dotnet.System.Func_1<UTResult>) async throws -> UTResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Dispatcher_System_Threading_Tasks_Task_UTResult___InvokeAsync_1__1__System_Func_UTResult_(UTResult.get_type_handle(), &__thrown, self.get_handle(), workItem.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : @escaping () throws -> UTResult) throws -> dotnet.System.Threading.Tasks.Task_1<UTResult> {
+    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : @escaping () throws -> UTResult) async throws -> UTResult {
         let del_workItem = try dotnet.System.Func_1<UTResult>(workItem);
-        return try InvokeAsync(workItem: del_workItem);
+        return try await InvokeAsync(workItem: del_workItem);
     }
     // System.Threading.Tasks.Task<TResult> InvokeAsync<TResult>(System.Func<System.Threading.Tasks.Task<TResult>>)
 // docid: M:Microsoft.AspNetCore.Components.Dispatcher.InvokeAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
@@ -2015,19 +2331,19 @@ open class Dispatcher
     - Returns: A  that will be completed when the function has finished executing.
 
     */
-    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task_1<UTResult>>) throws -> dotnet.System.Threading.Tasks.Task_1<UTResult> {
+    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task_1<UTResult>>) async throws -> UTResult {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Dispatcher_System_Threading_Tasks_Task_UTResult___InvokeAsync_1__1__System_Func_System_Threading_Tasks_System_Threading_Tasks_Task_UTResult__(UTResult.get_type_handle(), &__thrown, self.get_handle(), workItem.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // delegate closure overload
-    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<UTResult>) throws -> dotnet.System.Threading.Tasks.Task_1<UTResult> {
+    open func InvokeAsync<UTResult : SGBridgeGenericValue>(workItem : @escaping () throws -> dotnet.System.Threading.Tasks.Task_1<UTResult>) async throws -> UTResult {
         let del_workItem = try dotnet.System.Func_1<dotnet.System.Threading.Tasks.Task_1<UTResult>>(workItem);
-        return try InvokeAsync(workItem: del_workItem);
+        return try await InvokeAsync(workItem: del_workItem);
     }
 } // Dispatcher
 
@@ -2047,6 +2363,9 @@ open class DynamicComponent
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_DynamicComponent_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2084,13 +2403,13 @@ open class DynamicComponent
 // docid: M:Microsoft.AspNetCore.Components.DynamicComponent.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_DynamicComponent_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] System.Type get_Type()
@@ -2217,6 +2536,9 @@ public final class EditorRequiredAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EditorRequiredAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -2247,6 +2569,9 @@ public final class ElementReference
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ElementReference_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2356,6 +2681,9 @@ open class ElementReferenceContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ElementReferenceContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // ElementReferenceContext
@@ -2374,6 +2702,9 @@ open class ErrorBoundaryBase
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ErrorBoundaryBase_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2453,7 +2784,7 @@ open class ErrorBoundaryBase
         }
     }
     // delegate closure overload
-    open func set_ErrorContent(value : @escaping (Optional<dotnet.System.Exception>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_ErrorContent(value : @escaping (dotnet.System.Exception) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<dotnet.System.Exception>(value);
         return try set_ErrorContent(value: del_value);
     }
@@ -2540,6 +2871,9 @@ public final class EventCallback
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EventCallback_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: Microsoft.AspNetCore.Components.EventCallbackFactory Factory
@@ -2614,13 +2948,13 @@ public final class EventCallback
     - Returns: A  which completes asynchronously once event processing has completed.
 
     */
-    public func InvokeAsync(arg : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task {
+    public func InvokeAsync(arg : Optional<dotnet.System.Object>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_EventCallback_Task__InvokeAsync_0__1__Object(&__thrown, self.get_handle(), arg?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task InvokeAsync()
@@ -2634,13 +2968,13 @@ public final class EventCallback
     - Returns: A  which completes asynchronously once event processing has completed.
 
     */
-    public func InvokeAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    public func InvokeAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_EventCallback_Task__InvokeAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_HasDelegate()
@@ -2671,6 +3005,9 @@ public final class EventCallbackFactory
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EventCallbackFactory_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2756,7 +3093,7 @@ public final class EventCallbackFactory
         }
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.Object>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (dotnet.System.Object) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback {
         let del_callback = try dotnet.System.Action_1<dotnet.System.Object>(callback);
         return try Create(receiver: receiver, callback: del_callback);
     }
@@ -2810,7 +3147,7 @@ public final class EventCallbackFactory
         }
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (dotnet.System.Object) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback {
         let del_callback = try dotnet.System.Func_2<dotnet.System.Object,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(receiver: receiver, callback: del_callback);
     }
@@ -3011,6 +3348,7 @@ public struct EventCallbackFactoryBinderExtensions {
         let del_setter = try dotnet.System.Action_1<Swift.Bool>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<bool>>, System.Nullable<bool>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Int32>, System.Int32, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.Int32},System.Int32,System.Globalization.CultureInfo)
     /**
@@ -3040,6 +3378,7 @@ public struct EventCallbackFactoryBinderExtensions {
         let del_setter = try dotnet.System.Action_1<Swift.Int32>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int32>>, System.Nullable<System.Int32>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Int64>, System.Int64, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.Int64},System.Int64,System.Globalization.CultureInfo)
     /**
@@ -3098,6 +3437,8 @@ public struct EventCallbackFactoryBinderExtensions {
         let del_setter = try dotnet.System.Action_1<Swift.Int16>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int64>>, System.Nullable<System.Int64>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int16>>, System.Nullable<System.Int16>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Single>, System.Single, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.Single},System.Single,System.Globalization.CultureInfo)
     /**
@@ -3127,6 +3468,7 @@ public struct EventCallbackFactoryBinderExtensions {
         let del_setter = try dotnet.System.Action_1<Swift.Float>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Single>>, System.Nullable<System.Single>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Double>, System.Double, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.Double},System.Double,System.Globalization.CultureInfo)
     /**
@@ -3156,6 +3498,7 @@ public struct EventCallbackFactoryBinderExtensions {
         let del_setter = try dotnet.System.Action_1<Swift.Double>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Double>>, System.Nullable<System.Double>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Decimal>, System.Decimal, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.Decimal},System.Decimal,System.Globalization.CultureInfo)
     /**
@@ -3181,10 +3524,11 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.Decimal>) throws -> Void, existingValue : dotnet.System.Decimal, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.Decimal) throws -> Void, existingValue : dotnet.System.Decimal, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.Decimal>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Decimal>>, System.Nullable<System.Decimal>, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateTime>, System.DateTime, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.DateTime},System.DateTime,System.Globalization.CultureInfo)
     /**
@@ -3210,7 +3554,7 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTime>) throws -> Void, existingValue : dotnet.System.DateTime, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTime) throws -> Void, existingValue : dotnet.System.DateTime, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTime>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -3240,10 +3584,12 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTime>) throws -> Void, existingValue : dotnet.System.DateTime, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTime) throws -> Void, existingValue : dotnet.System.DateTime, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTime>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTime>>, System.Nullable<System.DateTime>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTime>>, System.Nullable<System.DateTime>, System.String, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateTimeOffset>, System.DateTimeOffset, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.DateTimeOffset},System.DateTimeOffset,System.Globalization.CultureInfo)
     /**
@@ -3269,7 +3615,7 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTimeOffset>) throws -> Void, existingValue : dotnet.System.DateTimeOffset, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTimeOffset) throws -> Void, existingValue : dotnet.System.DateTimeOffset, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTimeOffset>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -3299,10 +3645,12 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTimeOffset>) throws -> Void, existingValue : dotnet.System.DateTimeOffset, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTimeOffset) throws -> Void, existingValue : dotnet.System.DateTimeOffset, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTimeOffset>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTimeOffset>>, System.Nullable<System.DateTimeOffset>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTimeOffset>>, System.Nullable<System.DateTimeOffset>, System.String, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateOnly>, System.DateOnly, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.DateOnly},System.DateOnly,System.Globalization.CultureInfo)
     /**
@@ -3328,7 +3676,7 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateOnly>) throws -> Void, existingValue : dotnet.System.DateOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateOnly) throws -> Void, existingValue : dotnet.System.DateOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateOnly>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -3358,10 +3706,12 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateOnly>) throws -> Void, existingValue : dotnet.System.DateOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateOnly) throws -> Void, existingValue : dotnet.System.DateOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateOnly>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateOnly>>, System.Nullable<System.DateOnly>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateOnly>>, System.Nullable<System.DateOnly>, System.String, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.TimeOnly>, System.TimeOnly, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{System.TimeOnly},System.TimeOnly,System.Globalization.CultureInfo)
     /**
@@ -3387,7 +3737,7 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.TimeOnly>) throws -> Void, existingValue : dotnet.System.TimeOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.TimeOnly) throws -> Void, existingValue : dotnet.System.TimeOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.TimeOnly>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -3417,10 +3767,12 @@ public struct EventCallbackFactoryBinderExtensions {
         }
     }
     // delegate closure overload
-    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.TimeOnly>) throws -> Void, existingValue : dotnet.System.TimeOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func CreateBinder(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, setter : @escaping (dotnet.System.TimeOnly) throws -> Void, existingValue : dotnet.System.TimeOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.TimeOnly>(setter);
         return try CreateBinder(factory: factory, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.TimeOnly>>, System.Nullable<System.TimeOnly>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.TimeOnly>>, System.Nullable<System.TimeOnly>, System.String, System.Globalization.CultureInfo)
     // Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder<T>(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<T>, T, System.Globalization.CultureInfo)
 // docid: M:Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder``1(Microsoft.AspNetCore.Components.EventCallbackFactory,System.Object,System.Action{``0},``0,System.Globalization.CultureInfo)
     /**
@@ -3479,7 +3831,7 @@ public struct EventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.EventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (dotnet.System.EventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
         let del_callback = try dotnet.System.Action_1<dotnet.System.EventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -3507,7 +3859,7 @@ public struct EventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.EventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (dotnet.System.EventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
         let del_callback = try dotnet.System.Func_2<dotnet.System.EventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -3535,7 +3887,7 @@ public struct EventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -3563,7 +3915,7 @@ public struct EventCallbackFactoryEventArgsExtensions {
         }
     }
     // delegate closure overload
-    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public static func Create(factory : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory, receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try Create(factory: factory, receiver: receiver, callback: del_callback);
     }
@@ -3584,6 +3936,9 @@ public final class EventCallbackWorkItem
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EventCallbackWorkItem_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3633,13 +3988,13 @@ public final class EventCallbackWorkItem
     - Returns: A  then will complete asynchronously once the delegate has completed.
 
     */
-    public func InvokeAsync(arg : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task {
+    public func InvokeAsync(arg : Optional<dotnet.System.Object>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_EventCallbackWorkItem_Task__InvokeAsync_0__1__Object(&__thrown, self.get_handle(), arg?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // EventCallbackWorkItem
@@ -3660,8 +4015,24 @@ public final class EventCallback_1<TValue : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EventCallback_1_get_type_handle(TValue.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // static field:  Empty
+    /**
+    
+            Gets an empty .
+            
+
+    */
+    public class var Empty : aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<TValue> {
+        get {
+        let __return = aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<TValue>(hndl: Microsoft_AspNetCore_Components_EventCallback_1_get_Empty());
+            return __return;
+        }
+    }
     /**
     
             Gets a value that indicates whether the delegate associated with this event dispatcher is non-null.
@@ -3708,13 +4079,13 @@ public final class EventCallback_1<TValue : SGBridgeGenericValue>
     - Returns: A  which completes asynchronously once event processing has completed.
 
     */
-    public func InvokeAsync(arg : TValue) throws -> dotnet.System.Threading.Tasks.Task {
+    public func InvokeAsync(arg : TValue) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_EventCallback_1_Task__InvokeAsync_0__1__TValue(TValue.get_type_handle(), &__thrown, self.get_handle(), arg.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task InvokeAsync()
@@ -3728,13 +4099,13 @@ public final class EventCallback_1<TValue : SGBridgeGenericValue>
     - Returns: A  which completes asynchronously once event processing has completed.
 
     */
-    public func InvokeAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    public func InvokeAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_EventCallback_1_Task__InvokeAsync_0__0(TValue.get_type_handle(), &__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] bool get_HasDelegate()
@@ -3764,6 +4135,9 @@ public final class EventHandlerAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_EventHandlerAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -3913,6 +4287,9 @@ open class IComponent
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_IComponent_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -3951,13 +4328,13 @@ open class IComponent
     - Returns: A  that completes when the component has finished updating and rendering itself.
 
     */
-    open func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_IComponent_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IComponent
@@ -3979,6 +4356,9 @@ open class IComponentActivator
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_IComponentActivator_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4027,6 +4407,9 @@ open class IHandleAfterRender
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_IHandleAfterRender_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4046,13 +4429,13 @@ open class IHandleAfterRender
     - Returns: A  that represents the asynchronous event handling operation.
 
     */
-    open func OnAfterRenderAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func OnAfterRenderAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_IHandleAfterRender_Task__OnAfterRenderAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IHandleAfterRender
@@ -4072,6 +4455,9 @@ open class IHandleEvent
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_IHandleEvent_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -4096,13 +4482,13 @@ open class IHandleEvent
             
 
     */
-    open func HandleEventAsync(item : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackWorkItem, arg : Optional<dotnet.System.Object>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func HandleEventAsync(item : aspnetcore.Microsoft.AspNetCore.Components.EventCallbackWorkItem, arg : Optional<dotnet.System.Object>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_IHandleEvent_Task__HandleEventAsync_0__2__EventCallbackWorkItem_Object(&__thrown, self.get_handle(), item.get_handle(), arg?.get_handle() ?? nil);
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IHandleEvent
@@ -4123,6 +4509,9 @@ open class IPersistentComponentStateStore
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_IPersistentComponentStateStore_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -4142,13 +4531,13 @@ open class IPersistentComponentStateStore
     - Returns: The persisted state.
 
     */
-    open func GetPersistedStateAsync() throws -> dotnet.System.Threading.Tasks.Task_1<dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System_Arr<Swift.UInt8>>> {
+    open func GetPersistedStateAsync() async throws -> dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System_Arr<Swift.UInt8>> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_IPersistentComponentStateStore_System_Threading_Tasks_Task_System_Collections_Generic_System_Collections_Generic_IDictionary_string_u8Array____GetPersistedStateAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task_1(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task PersistStateAsync(System.Collections.Generic.IReadOnlyDictionary<System.String,System.Byte[]>)
@@ -4162,13 +4551,13 @@ open class IPersistentComponentStateStore
     - Returns: A  that completes when the state is persisted to disk.
 
     */
-    open func PersistStateAsync(state : dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,dotnet.System_Arr<Swift.UInt8>>) throws -> dotnet.System.Threading.Tasks.Task {
+    open func PersistStateAsync(state : dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,dotnet.System_Arr<Swift.UInt8>>) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_IPersistentComponentStateStore_Task__PersistStateAsync_0__1__System_Collections_Generic_IReadOnlyDictionary_string_u8Array_(&__thrown, self.get_handle(), state.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // IPersistentComponentStateStore
@@ -4188,6 +4577,9 @@ public final class InjectAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_InjectAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4218,6 +4610,9 @@ public final class LayoutAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_LayoutAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4281,19 +4676,22 @@ open class LayoutComponentBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_LayoutComponentBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // System.Threading.Tasks.Task SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
 // docid: M:Microsoft.AspNetCore.Components.LayoutComponentBase.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open override func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open override func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_LayoutComponentBase_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Components.RenderFragment get_Body()
@@ -4360,6 +4758,9 @@ open class LayoutView
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_LayoutView_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -4390,13 +4791,13 @@ open class LayoutView
 // docid: M:Microsoft.AspNetCore.Components.LayoutView.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_LayoutView_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Components.RenderFragment get_ChildContent()
@@ -4494,6 +4895,9 @@ public final class LocationChangeException
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_LocationChangeException_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, System.Exception)
@@ -4532,6 +4936,9 @@ public final class MarkupString
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_MarkupString_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4620,6 +5027,9 @@ open class NavigationException
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_NavigationException_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -4677,6 +5087,9 @@ open class NavigationManager
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_NavigationManager_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -4839,7 +5252,7 @@ open class NavigationManager
         }
     }
     // delegate closure overload
-    open func add_LocationChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs>) throws -> Void) throws {
+    open func add_LocationChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs>(value);
         return try add_LocationChanged(value: del_value);
     }
@@ -4855,7 +5268,7 @@ open class NavigationManager
         }
     }
     // delegate closure overload
-    open func remove_LocationChanged(value : @escaping (Optional<dotnet.System.Object>, Optional<aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs>) throws -> Void) throws {
+    open func remove_LocationChanged(value : @escaping (Optional<dotnet.System.Object>, aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs) throws -> Void) throws {
         let del_value = try dotnet.System.EventHandler_1<aspnetcore.Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs>(value);
         return try remove_LocationChanged(value: del_value);
     }
@@ -5393,6 +5806,9 @@ public final class NavigationOptions
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_NavigationOptions_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -5490,6 +5906,9 @@ open class OwningComponentBase
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_OwningComponentBase_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // OwningComponentBase
@@ -5509,6 +5928,9 @@ open class OwningComponentBase_1<TService : SGBridgeGenericValue>
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_OwningComponentBase_1_get_type_handle(TService.get_type_handle());
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
 } // OwningComponentBase_1
@@ -5527,6 +5949,9 @@ public final class ParameterAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ParameterAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5596,6 +6021,9 @@ public final class ParameterValue
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ParameterValue_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5688,6 +6116,9 @@ public final class ParameterView
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ParameterView_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5836,6 +6267,9 @@ public final class ParameterView_Enumerator
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_ParameterView_Enumerator_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -5899,6 +6333,9 @@ open class PersistentComponentState
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_PersistentComponentState_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -5968,6 +6405,9 @@ public final class PersistingComponentStateSubscription
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_PersistingComponentStateSubscription_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public override init() {
@@ -6004,6 +6444,9 @@ public final class RenderFragment
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderFragment_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6044,15 +6487,15 @@ public final class RenderFragment
             return;
         }
     }
-    public init(_ callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder) throws -> Void) throws
+    public convenience init(_ __closure_Invoke : @escaping (aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder) throws -> Void) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, builder : NonnullHandle) -> Void in
             do
             {
                 thrown.pointee = nil;
-                try callback(aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder(hndl: builder));
+                try __closure_Invoke(aspnetcore.Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder(hndl: builder));
             }
             catch let e as dotnet.System.Exception
             {
@@ -6064,24 +6507,24 @@ public final class RenderFragment
                 thrown.pointee = __copy_handle(e.get_handle());
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, builder : NonnullHandle) -> Void
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, builder : NonnullHandle) -> Void
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void;
-            f(thrown, builder);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, NonnullHandle) -> Void;
+            f_interlude(thrown, builder);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Components_RenderFragment_create(
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // void Invoke(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder)
@@ -6112,6 +6555,9 @@ public final class RenderFragment_1<TValue : SGBridgeGenericValue>
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderFragment_1_get_type_handle(TValue.get_type_handle());
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6152,15 +6598,15 @@ public final class RenderFragment_1<TValue : SGBridgeGenericValue>
         return aspnetcore.Microsoft.AspNetCore.Components.RenderFragment(hndl : __return);
         }
     }
-    public init(_ callback : @escaping (TValue) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws
+    public convenience init(_ __closure_Invoke : @escaping (TValue) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws
     {
-        let __bridge : (UnsafeMutablePointer<NullableHandle>, GVal) -> NonnullHandle =
+        let __interlude_Invoke : (UnsafeMutablePointer<NullableHandle>, GVal) -> NonnullHandle =
         {
             (thrown : UnsafeMutablePointer<NullableHandle>, value : GVal) -> NonnullHandle in
             do
             {
                 thrown.pointee = nil;
-                let ret = try callback(TValue(gval: value));
+                let ret = try __closure_Invoke(TValue(gval: value));
                 return __copy_handle(ret.get_handle());
             }
             catch let e as dotnet.System.Exception
@@ -6175,25 +6621,25 @@ public final class RenderFragment_1<TValue : SGBridgeGenericValue>
                 return NonnullHandle(bitPattern: 8675309)!;
             }
         };
-        let cbarg = UnsafeRawPointer(Unmanaged.passRetained(__bridge as AnyObject).toOpaque());
-        func __cb(cb : UnsafeRawPointer?, thrown : UnsafeMutablePointer<NullableHandle>, value : GVal) -> NonnullHandle
+        func __cb_Invoke(pdata_interlude : UnsafeRawPointer, thrown : UnsafeMutablePointer<NullableHandle>, value : GVal) -> NonnullHandle
         {
-            let f = Unmanaged<AnyObject>.fromOpaque(cb!).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, GVal) -> NonnullHandle;
-            return f(thrown, value);
+            let f_interlude = Unmanaged<AnyObject>.fromOpaque(pdata_interlude).takeUnretainedValue() as! (UnsafeMutablePointer<NullableHandle>, GVal) -> NonnullHandle;
+            return f_interlude(thrown, value);
         }
+        let __pdata_Invoke = UnsafeRawPointer(Unmanaged.passRetained(__interlude_Invoke as AnyObject).toOpaque());
+
         var __thrown : NullableHandle = nil;
         let h = Microsoft_AspNetCore_Components_RenderFragment_1_create(
             TValue.get_type_handle(),
             &__thrown,
-            cbarg,
-            nil, // TODO deinit
-            __cb
+            __cb_Invoke,
+            __pdata_Invoke,
+            nil
             );
-            // TODO check thrown
         if let __ex = __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-            super.init(hndl: h);
+            self.init(hndl: h);
         }
     }
     // Microsoft.AspNetCore.Components.RenderFragment Invoke(TValue)
@@ -6224,6 +6670,9 @@ public final class RenderHandle
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderHandle_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6338,6 +6787,9 @@ public final class RouteAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RouteAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -6397,6 +6849,9 @@ public final class RouteData
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RouteData_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6482,6 +6937,9 @@ open class RouteView
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RouteView_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -6518,13 +6976,13 @@ open class RouteView
 // docid: M:Microsoft.AspNetCore.Components.RouteView.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_RouteView_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Components.RouteData get_RouteData()
@@ -6619,6 +7077,9 @@ public final class SupplyParameterFromQueryAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_SupplyParameterFromQueryAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6777,6 +7238,9 @@ open class ComponentStatePersistenceManager
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Infrastructure_ComponentStatePersistenceManager_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Components.Infrastructure.ComponentStatePersistenceManager>)
@@ -6807,13 +7271,13 @@ open class ComponentStatePersistenceManager
     - Returns: A  that will complete when the state has been restored.
 
     */
-    open func RestoreStateAsync(store : aspnetcore.Microsoft.AspNetCore.Components.IPersistentComponentStateStore) throws -> dotnet.System.Threading.Tasks.Task {
+    open func RestoreStateAsync(store : aspnetcore.Microsoft.AspNetCore.Components.IPersistentComponentStateStore) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Infrastructure_ComponentStatePersistenceManager_Task__RestoreStateAsync_0__1__IPersistentComponentStateStore(&__thrown, self.get_handle(), store.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task PersistStateAsync(Microsoft.AspNetCore.Components.IPersistentComponentStateStore, Microsoft.AspNetCore.Components.RenderTree.Renderer)
@@ -6828,13 +7292,13 @@ open class ComponentStatePersistenceManager
     - Returns: A  that will complete when the state has been restored.
 
     */
-    open func PersistStateAsync(store : aspnetcore.Microsoft.AspNetCore.Components.IPersistentComponentStateStore, renderer : aspnetcore.Microsoft.AspNetCore.Components.RenderTree.Renderer) throws -> dotnet.System.Threading.Tasks.Task {
+    open func PersistStateAsync(store : aspnetcore.Microsoft.AspNetCore.Components.IPersistentComponentStateStore, renderer : aspnetcore.Microsoft.AspNetCore.Components.RenderTree.Renderer) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Infrastructure_ComponentStatePersistenceManager_Task__PersistStateAsync_0__2__IPersistentComponentStateStore_Renderer(&__thrown, self.get_handle(), store.get_handle(), renderer.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Components.PersistentComponentState get_State()
@@ -6882,6 +7346,9 @@ public final class ArrayBuilderSegment_1<T : SGBridgeGenericValue>
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_ArrayBuilderSegment_1_get_type_handle(T.get_type_handle());
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -6957,9 +7424,6 @@ public final class ArrayBuilderSegment_1<T : SGBridgeGenericValue>
     }
     // [IsSpecialName] T get_Item(System.Int32)
 // docid: M:Microsoft.AspNetCore.Components.RenderTree.ArrayBuilderSegment`1.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//matches :
     public func get_Item(index : Swift.Int32) throws -> T {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_RenderTree_ArrayBuilderSegment_1_T__get_Item_0__1__i32(T.get_type_handle(), &__thrown, self.get_handle(), index);
@@ -6987,6 +7451,9 @@ public final class ArrayRange_1<T : SGBridgeGenericValue>
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_ArrayRange_1_get_type_handle(T.get_type_handle());
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7041,6 +7508,9 @@ open class EventFieldInfo
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_EventFieldInfo_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7145,6 +7615,9 @@ public final class RenderBatch
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_RenderBatch_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7261,6 +7734,9 @@ public final class RenderTreeDiff
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_RenderTreeDiff_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     public override init() {
@@ -7285,6 +7761,9 @@ public final class RenderTreeEdit
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_RenderTreeEdit_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -7468,6 +7947,9 @@ public final class RenderTreeFrame
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_RenderTreeFrame_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -8199,6 +8681,9 @@ open class Renderer
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_RenderTree_Renderer_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.IServiceProvider, Microsoft.Extensions.Logging.ILoggerFactory)
@@ -8256,13 +8741,13 @@ open class Renderer
             
 
     */
-    open func DispatchEventAsync(eventHandlerId : Swift.UInt64, fieldInfo : Optional<aspnetcore.Microsoft.AspNetCore.Components.RenderTree.EventFieldInfo>, eventArgs : dotnet.System.EventArgs) throws -> dotnet.System.Threading.Tasks.Task {
+    open func DispatchEventAsync(eventHandlerId : Swift.UInt64, fieldInfo : Optional<aspnetcore.Microsoft.AspNetCore.Components.RenderTree.EventFieldInfo>, eventArgs : dotnet.System.EventArgs) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_RenderTree_Renderer_Task__DispatchEventAsync_0__3__u64_EventFieldInfo_EventArgs(&__thrown, self.get_handle(), eventHandlerId, fieldInfo?.get_handle() ?? nil, eventArgs.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Type GetEventArgsType(System.UInt64)
@@ -8391,6 +8876,9 @@ public final class RenderTreeBuilder
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -8517,9 +9005,9 @@ public final class RenderTreeBuilder
     - Parameter fragment: Content to append.
     - Parameter value: The value used by .
     */
-    public func AddContent<UTValue : SGBridgeGenericValue>(sequence : Swift.Int32, fragment : aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<UTValue>, value : UTValue) throws {
+    public func AddContent<UTValue : SGBridgeGenericValue>(sequence : Swift.Int32, fragment : Optional<aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<UTValue>>, value : UTValue) throws {
         var __thrown : NullableHandle = nil;
-        Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_void__AddContent_1__3__i32_Microsoft_AspNetCore_Components_RenderFragment_UTValue__UTValue(UTValue.get_type_handle(), &__thrown, self.get_handle(), sequence, nil, value.to_gval());
+        Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_void__AddContent_1__3__i32_Microsoft_AspNetCore_Components_RenderFragment_UTValue__UTValue(UTValue.get_type_handle(), &__thrown, self.get_handle(), sequence, (fragment?.get_handle()), value.to_gval());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
@@ -8891,7 +9379,7 @@ public final class RenderTreeBuilder
         }
     }
     // delegate closure overload
-    public func AddElementReferenceCapture(sequence : Swift.Int32, elementReferenceCaptureAction : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.ElementReference>) throws -> Void) throws {
+    public func AddElementReferenceCapture(sequence : Swift.Int32, elementReferenceCaptureAction : @escaping (aspnetcore.Microsoft.AspNetCore.Components.ElementReference) throws -> Void) throws {
         let del_elementReferenceCaptureAction = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.ElementReference>(elementReferenceCaptureAction);
         return try AddElementReferenceCapture(sequence: sequence, elementReferenceCaptureAction: del_elementReferenceCaptureAction);
     }
@@ -8915,7 +9403,7 @@ public final class RenderTreeBuilder
         }
     }
     // delegate closure overload
-    public func AddComponentReferenceCapture(sequence : Swift.Int32, componentReferenceCaptureAction : @escaping (Optional<dotnet.System.Object>) throws -> Void) throws {
+    public func AddComponentReferenceCapture(sequence : Swift.Int32, componentReferenceCaptureAction : @escaping (dotnet.System.Object) throws -> Void) throws {
         let del_componentReferenceCaptureAction = try dotnet.System.Action_1<dotnet.System.Object>(componentReferenceCaptureAction);
         return try AddComponentReferenceCapture(sequence: sequence, componentReferenceCaptureAction: del_componentReferenceCaptureAction);
     }
@@ -9027,6 +9515,9 @@ open class IHostEnvironmentNavigationManager
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_IHostEnvironmentNavigationManager_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -9073,6 +9564,9 @@ open class INavigationInterception
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_INavigationInterception_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -9092,13 +9586,13 @@ open class INavigationInterception
     - Returns: A  that represents the asynchronous operation.
 
     */
-    open func EnableNavigationInterceptionAsync() throws -> dotnet.System.Threading.Tasks.Task {
+    open func EnableNavigationInterceptionAsync() async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Routing_INavigationInterception_Task__EnableNavigationInterceptionAsync_0__0(&__thrown, self.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // INavigationInterception
@@ -9117,6 +9611,9 @@ open class LocationChangedEventArgs
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_LocationChangedEventArgs_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -9201,6 +9698,9 @@ public final class NavigationContext
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_NavigationContext_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // [IsSpecialName] System.String get_Path()
@@ -9267,6 +9767,9 @@ open class Router
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Components_Routing_Router_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -9297,13 +9800,13 @@ open class Router
 // docid: M:Microsoft.AspNetCore.Components.Routing.Router.SetParametersAsync(Microsoft.AspNetCore.Components.ParameterView)
     /**
     */
-    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) throws -> dotnet.System.Threading.Tasks.Task {
+    open /* method final */ func SetParametersAsync(parameters : aspnetcore.Microsoft.AspNetCore.Components.ParameterView) async throws {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Components_Routing_Router_Task__SetParametersAsync_0__1__ParameterView(&__thrown, self.get_handle(), parameters.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // void Dispose()
@@ -9413,7 +9916,7 @@ open class Router
         }
     }
     // delegate closure overload
-    open func set_Found(value : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.RouteData>) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
+    open func set_Found(value : @escaping (aspnetcore.Microsoft.AspNetCore.Components.RouteData) throws -> aspnetcore.Microsoft.AspNetCore.Components.RenderFragment) throws {
         let del_value = try aspnetcore.Microsoft.AspNetCore.Components.RenderFragment_1<aspnetcore.Microsoft.AspNetCore.Components.RouteData>(value);
         return try set_Found(value: del_value);
     }
@@ -9667,6 +10170,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<bool>>, System.Nullable<bool>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Int32>, System.Int32, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<Swift.Int32>, existingValue : Swift.Int32, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
@@ -9679,6 +10183,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int32>>, System.Nullable<System.Int32>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Int64>, System.Int64, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<Swift.Int64>, existingValue : Swift.Int64, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
@@ -9703,6 +10208,8 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int64>>, System.Nullable<System.Int64>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Int16>>, System.Nullable<System.Int16>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Single>, System.Single, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<Swift.Float>, existingValue : Swift.Float, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
@@ -9715,6 +10222,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Single>>, System.Nullable<System.Single>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Double>, System.Double, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<Swift.Double>, existingValue : Swift.Double, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
@@ -9727,25 +10235,27 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Double>>, System.Nullable<System.Double>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Decimal>, System.Decimal, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<dotnet.System.Decimal>, existingValue : dotnet.System.Decimal, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.Decimal>) throws -> Void, existingValue : dotnet.System.Decimal, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.Decimal) throws -> Void, existingValue : dotnet.System.Decimal, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.Decimal>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.Decimal>>, System.Nullable<System.Decimal>, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateTime>, System.DateTime, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<dotnet.System.DateTime>, existingValue : dotnet.System.DateTime, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTime>) throws -> Void, existingValue : dotnet.System.DateTime, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTime) throws -> Void, existingValue : dotnet.System.DateTime, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTime>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -9757,19 +10267,21 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, format: format, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTime>) throws -> Void, existingValue : dotnet.System.DateTime, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTime) throws -> Void, existingValue : dotnet.System.DateTime, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTime>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTime>>, System.Nullable<System.DateTime>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTime>>, System.Nullable<System.DateTime>, System.String, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateTimeOffset>, System.DateTimeOffset, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<dotnet.System.DateTimeOffset>, existingValue : dotnet.System.DateTimeOffset, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTimeOffset>) throws -> Void, existingValue : dotnet.System.DateTimeOffset, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTimeOffset) throws -> Void, existingValue : dotnet.System.DateTimeOffset, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTimeOffset>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -9781,19 +10293,21 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, format: format, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateTimeOffset>) throws -> Void, existingValue : dotnet.System.DateTimeOffset, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateTimeOffset) throws -> Void, existingValue : dotnet.System.DateTimeOffset, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateTimeOffset>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTimeOffset>>, System.Nullable<System.DateTimeOffset>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateTimeOffset>>, System.Nullable<System.DateTimeOffset>, System.String, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.DateOnly>, System.DateOnly, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<dotnet.System.DateOnly>, existingValue : dotnet.System.DateOnly, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateOnly>) throws -> Void, existingValue : dotnet.System.DateOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateOnly) throws -> Void, existingValue : dotnet.System.DateOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateOnly>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -9805,19 +10319,21 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, format: format, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.DateOnly>) throws -> Void, existingValue : dotnet.System.DateOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.DateOnly) throws -> Void, existingValue : dotnet.System.DateOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.DateOnly>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateOnly>>, System.Nullable<System.DateOnly>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.DateOnly>>, System.Nullable<System.DateOnly>, System.String, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.TimeOnly>, System.TimeOnly, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<dotnet.System.TimeOnly>, existingValue : dotnet.System.TimeOnly, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.TimeOnly>) throws -> Void, existingValue : dotnet.System.TimeOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.TimeOnly) throws -> Void, existingValue : dotnet.System.TimeOnly, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.TimeOnly>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, culture: culture);
     }
@@ -9829,12 +10345,14 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: setter, existingValue: existingValue, format: format, culture: culture);
     }
     // delegate closure overload
-    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (Optional<dotnet.System.TimeOnly>) throws -> Void, existingValue : dotnet.System.TimeOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func CreateBinder(receiver : dotnet.System.Object, setter : @escaping (dotnet.System.TimeOnly) throws -> Void, existingValue : dotnet.System.TimeOnly, format : dotnet.System.String, culture : Optional<dotnet.System.Globalization.CultureInfo>) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_setter = try dotnet.System.Action_1<dotnet.System.TimeOnly>(setter);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryBinderExtensions.CreateBinder(factory: self, receiver: receiver, setter: del_setter, existingValue: existingValue, format: format, culture: culture);
     }
 }
 
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.TimeOnly>>, System.Nullable<System.TimeOnly>, System.Globalization.CultureInfo)
+// TODO COPE (parm closedgeneric of nullable): Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<System.Nullable<System.TimeOnly>>, System.Nullable<System.TimeOnly>, System.String, System.Globalization.CultureInfo)
 // EXTENSION METHOD Microsoft.AspNetCore.Components.EventCallback<Microsoft.AspNetCore.Components.ChangeEventArgs> CreateBinder<T>(Microsoft.AspNetCore.Components.EventCallbackFactory, System.Object, System.Action<T>, T, System.Globalization.CultureInfo)
 extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
     public func CreateBinder<UT : SGBridgeGenericValue>(receiver : dotnet.System.Object, setter : dotnet.System.Action_1<UT>, existingValue : UT, culture : Optional<dotnet.System.Globalization.CultureInfo> = nil) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
@@ -9853,7 +10371,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.EventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (dotnet.System.EventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
         let del_callback = try dotnet.System.Action_1<dotnet.System.EventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -9865,7 +10383,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<dotnet.System.EventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (dotnet.System.EventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<dotnet.System.EventArgs> {
         let del_callback = try dotnet.System.Func_2<dotnet.System.EventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -9877,7 +10395,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs) throws -> Void) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_callback = try dotnet.System.Action_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }
@@ -9889,7 +10407,7 @@ extension aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactory {
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: callback);
     }
     // delegate closure overload
-    public func Create(receiver : dotnet.System.Object, callback : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs>) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
+    public func Create(receiver : dotnet.System.Object, callback : @escaping (aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs) throws -> dotnet.System.Threading.Tasks.Task) throws -> aspnetcore.Microsoft.AspNetCore.Components.EventCallback_1<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs> {
         let del_callback = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Components.ChangeEventArgs,dotnet.System.Threading.Tasks.Task>(callback);
         return try aspnetcore.Microsoft.AspNetCore.Components.EventCallbackFactoryEventArgsExtensions.Create(factory: self, receiver: receiver, callback: del_callback);
     }

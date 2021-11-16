@@ -48,6 +48,8 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProv
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData_get_EventName(void);
@@ -124,17 +126,23 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPage_System_Collections_Gen
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPage_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPage_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorPage_Task__ExecuteAsync_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorPage_Task__ExecuteAsync_0__0, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorPage_void__EnsureRenderedBodyOrSections_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorPage_void__EnsureRenderedBodyOrSections_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_get_type_handle(void);
 
 void Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_void__Activate_0__2__IRazorPage_ViewContext(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL page, SG_HNDL_NONNULL context);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_void__Activate_0__2__IRazorPage_ViewContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL page, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_void__Activate_0__2__IRazorPage_ViewContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_RazorPageFactoryResult__CreateFactory_0__1__String(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL relativePath);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_RazorPageFactoryResult__CreateFactory_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL relativePath), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_RazorPageFactoryResult__CreateFactory_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_get_type_handle(void);
 
@@ -146,6 +154,8 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_String__GetAbso
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_RazorPageResult__FindPage_0__2__ActionContext_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL pageName), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_RazorPageResult__FindPage_0__2__ActionContext_String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_RazorPageResult__GetPage_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL executingFilePath, SG_HNDL_NONNULL pagePath), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_RazorPageResult__GetPage_0__2__String_String, SG_HNDL_NULLABLE (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_String__GetAbsolutePath_0__2__String_String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE executingFilePath, SG_HNDL_NULLABLE pagePath), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_String__GetAbsolutePath_0__2__String_String, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_ViewEngineResult__FindView_0__3__ActionContext_String_bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL viewName, int32_t isMainPage), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_ViewEngineResult__FindView_0__3__ActionContext_String_bool, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_ViewEngineResult__GetView_0__3__String_String_bool)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NULLABLE executingFilePath, SG_HNDL_NONNULL viewPath, int32_t isMainPage), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_ViewEngineResult__GetView_0__3__String_String_bool, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_get_type_handle(void);
 
 GVAL Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_UTTagHelper__Create_1__1__ViewContext(TYP TTagHelper, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
@@ -155,6 +165,8 @@ SG_HNDL_NONNULL specialize_Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_UT
 GVAL invoke_Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_UTTagHelper__Create_1__1__ViewContext(SG_HNDL_NONNULL ____hdel, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_UTTagHelper__Create_1__1__ViewContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_UTTagHelper__Create_1__1__ViewContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_get_type_handle(void);
 
@@ -166,6 +178,8 @@ GVAL invoke_Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_UTTagHelper__Create
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_create(SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_UTTagHelper__CreateTagHelper_1__1__ViewContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_UTTagHelper__CreateTagHelper_1__1__ViewContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_get_type_handle(TYP TTagHelper);
 
 void Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_void__Initialize_0__2__TTagHelper_ViewContext(TYP TTagHelper, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, GVAL helper, SG_HNDL_NONNULL context);
@@ -176,6 +190,8 @@ void invoke_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_void__Initial
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_cast(TYP TTagHelper, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_create(TYP TTagHelper, SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_void__Initialize_0__2__TTagHelper_ViewContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, GVAL helper, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_void__Initialize_0__2__TTagHelper_ViewContext, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_get_type_handle(void);
 
 void Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_void__PopulateValues_0__1__ViewLocationExpanderContext(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context);
@@ -183,6 +199,8 @@ void Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_void__PopulateValues_0
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_System_Collections_Generic_IEnumerable_string___ExpandViewLocations_0__2__ViewLocationExpanderContext_System_Collections_Generic_IEnumerable_string_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL viewLocations);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_void__PopulateValues_0__1__ViewLocationExpanderContext)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_void__PopulateValues_0__1__ViewLocationExpanderContext, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_System_Collections_Generic_IEnumerable_string___ExpandViewLocations_0__2__ViewLocationExpanderContext_System_Collections_Generic_IEnumerable_string_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL viewLocations), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_System_Collections_Generic_IEnumerable_string___ExpandViewLocations_0__2__ViewLocationExpanderContext_System_Collections_Generic_IEnumerable_string_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpander_get_type_handle(void);
 
@@ -444,7 +462,7 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_IAsyncResult
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_Task__EndInvoke_0__1__IAsyncResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown));
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_RenderAsyncDelegate_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_TagHelperInitializer_1_get_type_handle(TYP TTagHelper);
 
@@ -514,11 +532,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_System_
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor___CompileAsync_0__1__String)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL relativePath), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_System_Threading_Tasks_Task_Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor___CompileAsync_0__1__String, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_get_type_handle(void);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_IViewCompiler__GetCompiler_0__0(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_IViewCompiler__GetCompiler_0__0)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_IViewCompiler__GetCompiler_0__0, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_Compilation_RazorViewAttribute_get_type_handle(void);
 
@@ -572,11 +594,15 @@ SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentMan
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentManager_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
 
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentManager_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
+
 TYP Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_get_type_handle(void);
 
 void Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_void__Activate_0__2__ViewContext_ITagHelperComponent(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL context, SG_HNDL_NONNULL tagHelperComponent);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_void__Activate_0__2__ViewContext_ITagHelperComponent)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL context, SG_HNDL_NONNULL tagHelperComponent), const void* _Nonnull __pdata_Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_void__Activate_0__2__ViewContext_ITagHelperComponent, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper_get_type_handle(void);
 

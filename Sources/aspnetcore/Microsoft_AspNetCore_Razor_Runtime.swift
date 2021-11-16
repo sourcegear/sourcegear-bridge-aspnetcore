@@ -24,6 +24,9 @@ open class IRazorSourceChecksumMetadata
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -94,6 +97,9 @@ open class RazorCompiledItem
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -219,6 +225,9 @@ public final class RazorCompiledItemAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -375,6 +384,9 @@ open class RazorCompiledItemLoader
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemLoader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -428,6 +440,9 @@ public final class RazorCompiledItemMetadataAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemMetadataAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -519,6 +534,9 @@ public final class RazorConfigurationNameAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorConfigurationNameAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -581,6 +599,9 @@ public final class RazorExtensionAssemblyNameAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorExtensionAssemblyNameAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -672,6 +693,9 @@ public final class RazorLanguageVersionAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorLanguageVersionAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -735,6 +759,9 @@ public final class RazorSourceChecksumAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Hosting_RazorSourceChecksumAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -857,6 +884,9 @@ open class TagHelperExecutionContext
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperExecutionContext_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1191,6 +1221,9 @@ open class TagHelperRunner
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperRunner_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1246,6 +1279,9 @@ open class TagHelperScopeManager
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperScopeManager_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

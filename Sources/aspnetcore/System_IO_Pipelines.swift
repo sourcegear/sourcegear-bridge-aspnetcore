@@ -21,6 +21,9 @@ public final class FlushResult
     public class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_FlushResult_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     /**
@@ -100,6 +103,9 @@ open class IDuplexPipe
     open class func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_IDuplexPipe_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -145,6 +151,9 @@ public final class Pipe
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_Pipe_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -248,6 +257,9 @@ open class PipeOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_PipeOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -448,6 +460,9 @@ open class PipeReader
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_PipeReader_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // void AdvanceTo(System.SequencePosition)
@@ -560,13 +575,13 @@ open class PipeReader
     - Returns: A task that represents the asynchronous copy operation.
 
     */
-    open func CopyToAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func CopyToAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = System_IO_Pipelines_PipeReader_Task__CopyToAsync_0__2__PipeWriter_CancellationToken(&__thrown, self.get_handle(), destination.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.Threading.Tasks.Task CopyToAsync(System.IO.Stream, System.Threading.CancellationToken)
@@ -579,13 +594,13 @@ open class PipeReader
     - Returns: A task that represents the asynchronous copy operation.
 
     */
-    open func CopyToAsync(destination : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    open func CopyToAsync(destination : dotnet.System.IO.Stream, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = System_IO_Pipelines_PipeReader_Task__CopyToAsync_0__2__Stream_CancellationToken(&__thrown, self.get_handle(), destination.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
     // System.IO.Pipelines.PipeReader Create(System.Buffers.ReadOnlySequence<System.Byte>)
@@ -695,11 +710,12 @@ open class PipeReader
     - Returns:  if data was available, or if the call was canceled or the writer was completed; otherwise, .
 
     */
-    open func TryRead(result : inout aspnetcore.System.IO.Pipelines.ReadResult) throws -> Bool {
+    open func TryRead(result : inout Optional<aspnetcore.System.IO.Pipelines.ReadResult>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_result = result.get_handle();
+            var _tmp_out_result = (result != nil) ? (result!.get_handle()) : nil;
         let __return = System_IO_Pipelines_PipeReader_bool__TryRead_0__1__outReadResult(&__thrown, self.get_handle(), &_tmp_out_result);
-        let _tmp2_result = aspnetcore.System.IO.Pipelines.ReadResult(hndl: _tmp_out_result);
+        let __h__tmp2_result = _tmp_out_result;
+        let _tmp2_result = (__h__tmp2_result != nil) ? aspnetcore.System.IO.Pipelines.ReadResult(hndl: __h__tmp2_result!) : nil;
             result = _tmp2_result;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -721,6 +737,9 @@ open class PipeScheduler
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_PipeScheduler_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -800,6 +819,9 @@ open class PipeWriter
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_PipeWriter_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -941,6 +963,7 @@ open class PipeWriter
         return dotnet.System.Memory_1(hndl : __return);
         }
     }
+// TODO COPE (returns byreflike): System.Span<System.Byte> GetSpan(System.Int32)
     // void OnReaderCompleted(System.Action<System.Exception,System.Object>, System.Object)
 // docid: M:System.IO.Pipelines.PipeWriter.OnReaderCompleted(System.Action{System.Exception,System.Object},System.Object)
     /**
@@ -1039,6 +1062,9 @@ public final class ReadResult
 {
     public class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_ReadResult_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1140,13 +1166,13 @@ public struct StreamPipeExtensions {
     - Returns: A task that represents the asynchronous copy operation.
 
     */
-    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
+    public static func CopyToAsync(source : dotnet.System.IO.Stream, destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
         var __thrown : NullableHandle = nil;
         let __return = System_IO_Pipelines_StreamPipeExtensions_Task__CopyToAsync_0__3__Stream_PipeWriter_CancellationToken(&__thrown, source.get_handle(), destination.get_handle(), cancellationToken.get_handle());
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return dotnet.System.Threading.Tasks.Task(hndl : __return);
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
         }
     }
 } // StreamPipeExtensions
@@ -1163,6 +1189,9 @@ open class StreamPipeReaderOptions
 {
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_StreamPipeReaderOptions_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1320,6 +1349,9 @@ open class StreamPipeWriterOptions
     open class override func get_type_handle() -> TypeHandle {
         return System_IO_Pipelines_StreamPipeWriterOptions_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Buffers.MemoryPool<System.Byte>, System.Int32, bool)
@@ -1415,8 +1447,8 @@ public protocol System_IO_Pipelines_IDuplexPipe
 
 // EXTENSION METHOD System.Threading.Tasks.Task CopyToAsync(System.IO.Stream, System.IO.Pipelines.PipeWriter, System.Threading.CancellationToken)
 extension dotnet.System.IO.Stream {
-    public func CopyToAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) throws -> dotnet.System.Threading.Tasks.Task {
-        return try aspnetcore.System.IO.Pipelines.StreamPipeExtensions.CopyToAsync(source: self, destination: destination, cancellationToken: cancellationToken);
+    public func CopyToAsync(destination : aspnetcore.System.IO.Pipelines.PipeWriter, cancellationToken : dotnet.System.Threading.CancellationToken = System.Threading.CancellationToken.None) async throws {
+        return try await aspnetcore.System.IO.Pipelines.StreamPipeExtensions.CopyToAsync(source: self, destination: destination, cancellationToken: cancellationToken);
     }
 }
 

@@ -24,6 +24,9 @@ open class FeatureCollection
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_FeatureCollection_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -130,9 +133,6 @@ open class FeatureCollection
     }
     // [IsSpecialName] System.Object get_Item(System.Type)
 // docid: M:Microsoft.AspNetCore.Http.Features.FeatureCollection.get_Item(System.Type)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open /* method final */ func get_Item(key : dotnet.System.Type_) throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_FeatureCollection_Object__get_Item_0__1__Type(&__thrown, self.get_handle(), key.get_handle());
@@ -189,8 +189,24 @@ public final class FeatureReference_1<T : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_type_handle(T.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    // static field:  Default
+    /**
+    
+            Gets the default .
+            
+
+    */
+    public class var Default : aspnetcore.Microsoft.AspNetCore.Http.Features.FeatureReference_1<T> {
+        get {
+        let __return = aspnetcore.Microsoft.AspNetCore.Http.Features.FeatureReference_1<T>(hndl: Microsoft_AspNetCore_Http_Features_FeatureReference_1_get_Default());
+            return __return;
+        }
+    }
     public override init() {
         let h = Microsoft_AspNetCore_Http_Features_FeatureReference_1_implicit_ctor(T.get_type_handle());
             super.init(hndl: h);
@@ -254,8 +270,12 @@ public final class FeatureReferences_1<TCache : SGBridgeGenericValue>
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_FeatureReferences_1_get_type_handle(TCache.get_type_handle());
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+// TODO COPE (field class type param): Microsoft.AspNetCore.Http.Features.FeatureReferences`1.Cache
     /**
     
             Gets the .
@@ -383,7 +403,7 @@ public final class FeatureReferences_1<TCache : SGBridgeGenericValue>
         }
     }
     // delegate closure overload
-    public func Fetch<UTFeature : SGBridgeGenericValue>(cached : inout UTFeature, factory : @escaping (Optional<aspnetcore.Microsoft.AspNetCore.Http.Features.IFeatureCollection>) throws -> UTFeature) throws -> UTFeature {
+    public func Fetch<UTFeature : SGBridgeGenericValue>(cached : inout UTFeature, factory : @escaping (aspnetcore.Microsoft.AspNetCore.Http.Features.IFeatureCollection) throws -> UTFeature) throws -> UTFeature {
         let del_factory = try dotnet.System.Func_2<aspnetcore.Microsoft.AspNetCore.Http.Features.IFeatureCollection,UTFeature>(factory);
         return try Fetch(cached: &cached, factory: del_factory);
     }
@@ -427,6 +447,9 @@ open class IFeatureCollection
     public typealias T_IEnumerable_1 = dotnet.System.Collections.Generic.KeyValuePair_2<dotnet.System.Type_,dotnet.System.Object>;
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Http_Features_IFeatureCollection_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -480,9 +503,6 @@ open class IFeatureCollection
     }
     // [IsSpecialName] System.Object get_Item(System.Type)
 // docid: M:Microsoft.AspNetCore.Http.Features.IFeatureCollection.get_Item(System.Type)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(key : dotnet.System.Type_) throws -> Optional<dotnet.System.Object> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Http_Features_IFeatureCollection_Object__get_Item_0__1__Type(&__thrown, self.get_handle(), key.get_handle());

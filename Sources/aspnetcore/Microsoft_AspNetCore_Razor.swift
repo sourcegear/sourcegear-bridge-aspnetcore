@@ -23,6 +23,9 @@ open class DefaultTagHelperContent
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_DefaultTagHelperContent_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -243,6 +246,9 @@ public final class HtmlAttributeNameAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNameAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -393,6 +399,9 @@ public final class HtmlAttributeNotBoundAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNotBoundAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -471,13 +480,16 @@ public final class HtmlTargetElementAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // static field: System.String ElementCatchAllTarget
     public class var ElementCatchAllTarget : Optional<dotnet.System.String> {
         get {
-        let __h = Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute_get_ElementCatchAllTarget();
-        let __return = (__h != nil) ? dotnet.System.String(hndl: __h!) : nil;
+        let __h___return = Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute_get_ElementCatchAllTarget();
+        let __return = (__h___return != nil) ? dotnet.System.String(hndl: __h___return!) : nil;
             return __return;
         }
     }
@@ -687,6 +699,9 @@ open class ITagHelper
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_get_type_handle();
     }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
     public func dup_gval() -> GVal { return GVal(Swift.Int(bitPattern: __copy_handle(self.h))); }
@@ -713,6 +728,9 @@ open class ITagHelperComponent
 {
     open class func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_get_type_handle();
+    }
+    open class func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     let h : NonnullHandle;
     public func to_gval() -> GVal { return GVal(Swift.Int(bitPattern: self.h)); }
@@ -797,6 +815,9 @@ public final class NullHtmlEncoder
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -934,6 +955,9 @@ public final class OutputElementHintAttribute
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_OutputElementHintAttribute_get_type_handle();
     }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String)
@@ -999,6 +1023,9 @@ open class ReadOnlyTagHelperAttributeList
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.Collections.Generic.IList<Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>)
@@ -1062,11 +1089,12 @@ open class ReadOnlyTagHelperAttributeList
              exists in the collection; otherwise, false.
 
     */
-    open func TryGetAttribute(name : Optional<dotnet.System.String>, attribute : inout aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute) throws -> Bool {
+    open func TryGetAttribute(name : Optional<dotnet.System.String>, attribute : inout Optional<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_attribute = attribute.get_handle();
+            var _tmp_out_attribute = (attribute != nil) ? (attribute!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttribute_0__2__String_outTagHelperAttribute(&__thrown, self.get_handle(), name?.get_handle() ?? nil, &_tmp_out_attribute);
-        let _tmp2_attribute = aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute(hndl: _tmp_out_attribute);
+        let __h__tmp2_attribute = _tmp_out_attribute;
+        let _tmp2_attribute = (__h__tmp2_attribute != nil) ? aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute(hndl: __h__tmp2_attribute!) : nil;
             attribute = _tmp2_attribute;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1090,11 +1118,12 @@ open class ReadOnlyTagHelperAttributeList
              exists in the collection; otherwise, false.
 
     */
-    open func TryGetAttributes(name : Optional<dotnet.System.String>, attributes : inout dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>) throws -> Bool {
+    open func TryGetAttributes(name : Optional<dotnet.System.String>, attributes : inout Optional<dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>>) throws -> Bool {
         var __thrown : NullableHandle = nil;
-            var _tmp_out_attributes = attributes.get_handle();
+            var _tmp_out_attributes = (attributes != nil) ? (attributes!.get_handle()) : nil;
         let __return = Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_bool__TryGetAttributes_0__2__String_outSystem_Collections_Generic_IReadOnlyList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_(&__thrown, self.get_handle(), name?.get_handle() ?? nil, &_tmp_out_attributes);
-        let _tmp2_attributes = dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>(hndl : _tmp_out_attributes);
+        let __h__tmp2_attributes = _tmp_out_attributes;
+        let _tmp2_attributes = (__h__tmp2_attributes != nil) ? dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>(hndl: __h__tmp2_attributes!) : nil;
             attributes = _tmp2_attributes;
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
@@ -1127,9 +1156,6 @@ open class ReadOnlyTagHelperAttributeList
     }
     // [IsSpecialName] Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList.get_Item(System.String)
-//BEGIN method_is_override
-//matches_1
-//matches :
     open func get_Item(name : Optional<dotnet.System.String>) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_TagHelperAttribute__get_Item_0__1__String(&__thrown, self.get_handle(), name?.get_handle() ?? nil);
@@ -1159,6 +1185,9 @@ public final class RestrictChildrenAttribute
 {
     public class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_RestrictChildrenAttribute_get_type_handle();
+    }
+    public class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1229,6 +1258,9 @@ open class TagHelper
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelper_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1341,6 +1373,9 @@ open class TagHelperAttribute
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1574,6 +1609,9 @@ open class TagHelperAttributeList
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor()
@@ -1791,11 +1829,7 @@ open class TagHelperAttributeList
     }
     // [IsSpecialName] Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute get_Item(System.Int32)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList.get_Item(System.Int32)
-//BEGIN method_is_override
-//matches_1
-//    ReadOnlyCollection`1 : [IsSpecialName] Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute get_Item(System.Int32) -- ReadOnlyCollection`1 -- 100671421
-//excluding one for return override
-//matches :
+// TODO hackish check for this method
     open /* method final */ func get_Item(index : Swift.Int32) throws -> Optional<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute> {
         var __thrown : NullableHandle = nil;
         let __return = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_TagHelperAttribute__get_Item_0__1__i32(&__thrown, self.get_handle(), index);
@@ -1837,6 +1871,9 @@ open class TagHelperComponent
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperComponent_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -1927,6 +1964,9 @@ open class TagHelperContent
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
@@ -2327,6 +2367,9 @@ open class TagHelperContext
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_get_type_handle();
     }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
+    }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
     // .ctor(System.String, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, System.Collections.Generic.IDictionary<System.Object,System.Object>, System.String)
@@ -2533,6 +2576,9 @@ open class TagHelperOutput
 {
     open class override func get_type_handle() -> TypeHandle {
         return Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_get_type_handle();
+    }
+    open class override func AsType() -> dotnet.System.Type_ {
+        return dotnet.System.Type_(hndl: __copy_handle(get_type_handle()));
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }

@@ -30,7 +30,7 @@ SG_HNDL_NULLABLE Microsoft_AspNetCore_Components_Authorization_AuthenticationSta
 
 void Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_void__EndInvoke_0__1__IAsyncResult(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NULLABLE result);
 
-SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, const void* _Nullable __pdata, void (* _Nullable __deinit)(const void* _Nullable __pdata), void (* _Nonnull  __cb)(const void* _Nullable __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task));
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_AuthenticationStateChangedHandler_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL task), const void* _Nonnull __pdata, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 TYP Microsoft_AspNetCore_Components_Authorization_AuthenticationStateProvider_get_type_handle(void);
 
@@ -113,6 +113,8 @@ TYP Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthentication
 void Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __self_h, SG_HNDL_NONNULL authenticationStateTask);
 
 SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_cast(SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL __h);
+
+SG_HNDL_NONNULL Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_create(SG_HNDL_NULLABLE * _Nonnull __thrown, void (* _Nonnull  __cb_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_)(const void* _Nonnull __pdata, SG_HNDL_NULLABLE * _Nonnull __thrown, SG_HNDL_NONNULL authenticationStateTask), const void* _Nonnull __pdata_Microsoft_AspNetCore_Components_Authorization_IHostEnvironmentAuthenticationStateProvider_void__SetAuthenticationState_0__1__System_Threading_Tasks_Task_Microsoft_AspNetCore_Components_Authorization_AuthenticationState_, void (* _Nullable __deinit)(const void* _Nonnull __pdata));
 
 
 #ifdef __cplusplus
