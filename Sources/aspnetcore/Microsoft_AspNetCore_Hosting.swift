@@ -676,7 +676,7 @@ public struct WebHostExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void WaitForShutdown(Microsoft.AspNetCore.Hosting.IWebHost)
@@ -715,7 +715,7 @@ public struct WebHostExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void Run(Microsoft.AspNetCore.Hosting.IWebHost)
@@ -752,7 +752,7 @@ public struct WebHostExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // WebHostExtensions

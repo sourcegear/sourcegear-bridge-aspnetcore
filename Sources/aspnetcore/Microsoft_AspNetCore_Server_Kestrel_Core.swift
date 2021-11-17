@@ -1532,7 +1532,7 @@ open class KestrelServer
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task StopAsync(System.Threading.CancellationToken)
@@ -1545,7 +1545,7 @@ open class KestrelServer
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void Dispose()

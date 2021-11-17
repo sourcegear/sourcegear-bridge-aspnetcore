@@ -1970,7 +1970,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<System.String> StoreAsync(Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.Threading.CancellationToken)
@@ -1991,7 +1991,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task RenewAsync(System.String, Microsoft.AspNetCore.Authentication.AuthenticationTicket)
@@ -2012,7 +2012,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task RenewAsync(System.String, Microsoft.AspNetCore.Authentication.AuthenticationTicket, System.Threading.CancellationToken)
@@ -2034,7 +2034,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationTicket> RetrieveAsync(System.String)
@@ -2054,7 +2054,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticationTicket> RetrieveAsync(System.String, System.Threading.CancellationToken)
@@ -2075,7 +2075,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task RemoveAsync(System.String)
@@ -2095,7 +2095,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task RemoveAsync(System.String, System.Threading.CancellationToken)
@@ -2116,7 +2116,7 @@ open class ITicketStore
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ITicketStore

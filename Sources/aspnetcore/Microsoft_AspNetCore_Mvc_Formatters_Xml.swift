@@ -58,7 +58,7 @@ open class XmlDataContractSerializerInputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -358,7 +358,7 @@ open class XmlDataContractSerializerOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -495,7 +495,7 @@ open class XmlSerializerInputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()
@@ -758,7 +758,7 @@ open class XmlSerializerOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory> get_WrapperProviderFactories()

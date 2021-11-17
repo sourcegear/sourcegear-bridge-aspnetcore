@@ -163,7 +163,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void Write(System.Byte[], System.Int32, System.Int32)
@@ -189,7 +189,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Int32 Read(System.Byte[], System.Int32, System.Int32)
@@ -215,7 +215,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Byte>, System.Threading.CancellationToken)
@@ -267,7 +267,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // bool EnsureBuffered(System.Int32)
@@ -308,7 +308,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.String ReadLine(System.Int32)
@@ -353,7 +353,7 @@ open class BufferedReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.ArraySegment<System.Byte> get_BufferedData()
@@ -666,7 +666,7 @@ open class FileBufferingReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Byte>, System.Threading.CancellationToken)
@@ -705,7 +705,7 @@ open class FileBufferingReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void SetLength(System.Int64)
@@ -744,7 +744,7 @@ open class FileBufferingReadStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -1026,7 +1026,7 @@ public final class FileBufferingWriteStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // void Write(System.Byte[], System.Int32, System.Int32)
@@ -1052,7 +1052,7 @@ public final class FileBufferingWriteStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.ValueTask WriteAsync(System.ReadOnlyMemory<System.Byte>, System.Threading.CancellationToken)
@@ -1091,7 +1091,7 @@ public final class FileBufferingWriteStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void SetLength(System.Int64)
@@ -1125,7 +1125,7 @@ public final class FileBufferingWriteStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task DrainBufferAsync(System.IO.Pipelines.PipeWriter, System.Threading.CancellationToken)
@@ -1146,7 +1146,7 @@ public final class FileBufferingWriteStream
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -1514,7 +1514,7 @@ open class FormMultipartSection
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.WebUtilities.MultipartSection get_Section()
@@ -1638,7 +1638,7 @@ open class FormPipeReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Int32 get_ValueCountLimit()
@@ -1965,7 +1965,7 @@ open class FormReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // void Dispose()
@@ -2222,7 +2222,7 @@ open class HttpRequestStreamReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.ValueTask<System.Int32> ReadAsync(System.Memory<System.Char>, System.Threading.CancellationToken)
@@ -2248,7 +2248,7 @@ open class HttpRequestStreamReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.String ReadLine()
@@ -2278,7 +2278,7 @@ open class HttpRequestStreamReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
 } // HttpRequestStreamReader
@@ -2416,7 +2416,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.Char[], System.Int32, System.Int32)
@@ -2429,7 +2429,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.String)
@@ -2442,7 +2442,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)
@@ -2455,7 +2455,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteLineAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)
@@ -2468,7 +2468,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void Flush()
@@ -2494,7 +2494,7 @@ open class HttpResponseStreamWriter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -2768,7 +2768,7 @@ open class MultipartReader
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Int32 get_HeadersCountLimit()
@@ -3176,7 +3176,7 @@ public struct MultipartSectionStreamExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
 } // MultipartSectionStreamExtensions
@@ -3624,7 +3624,7 @@ public struct StreamHelperExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -3648,7 +3648,7 @@ public struct StreamHelperExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task DrainAsync(System.IO.Stream, System.Buffers.ArrayPool<System.Byte>, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -3673,7 +3673,7 @@ public struct StreamHelperExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // StreamHelperExtensions

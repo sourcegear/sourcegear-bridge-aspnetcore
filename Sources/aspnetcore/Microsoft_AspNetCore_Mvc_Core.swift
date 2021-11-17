@@ -1360,7 +1360,7 @@ open class ActionResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void ExecuteResult(Microsoft.AspNetCore.Mvc.ActionContext)
@@ -3096,7 +3096,7 @@ open class ChallengeResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<System.String> get_AuthenticationSchemes()
@@ -3727,7 +3727,7 @@ open class ContentResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.String get_Content()
@@ -7251,7 +7251,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String)
@@ -7274,7 +7274,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider)
@@ -7298,7 +7298,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, System.Linq.Expressions.Expression<System.Func<TModel,System.Object>>[])
@@ -7309,7 +7309,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -7333,7 +7333,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // delegate closure overload
@@ -7349,7 +7349,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync<TModel>(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -7374,7 +7374,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // delegate closure overload
@@ -7403,7 +7403,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> TryUpdateModelAsync(System.Object, System.Type, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func<Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,bool>)
@@ -7429,7 +7429,7 @@ open class ControllerBase
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // delegate closure overload
@@ -8880,7 +8880,7 @@ open class FileContentResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Byte[] get_FileContents()
@@ -9187,7 +9187,7 @@ open class FileStreamResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.IO.Stream get_FileStream()
@@ -9375,7 +9375,7 @@ open class ForbidResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<System.String> get_AuthenticationSchemes()
@@ -10716,7 +10716,7 @@ open class JsonResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.String get_ContentType()
@@ -10974,7 +10974,7 @@ open class LocalRedirectResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] bool get_Permanent()
@@ -12706,7 +12706,7 @@ open class ObjectResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void OnFormatting(Microsoft.AspNetCore.Mvc.ActionContext)
@@ -13068,7 +13068,7 @@ open class PhysicalFileResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.String get_FileName()
@@ -13756,7 +13756,7 @@ open class RedirectResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] bool get_Permanent()
@@ -14077,7 +14077,7 @@ open class RedirectToActionResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.IUrlHelper get_UrlHelper()
@@ -14580,7 +14580,7 @@ open class RedirectToPageResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.IUrlHelper get_UrlHelper()
@@ -15118,7 +15118,7 @@ open class RedirectToRouteResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.IUrlHelper get_UrlHelper()
@@ -16923,7 +16923,7 @@ open class SignInResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.String get_AuthenticationScheme()
@@ -17189,7 +17189,7 @@ open class SignOutResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<System.String> get_AuthenticationSchemes()
@@ -18585,7 +18585,7 @@ open class VirtualFileResult
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.String get_FileName()
@@ -23829,7 +23829,7 @@ open class AuthorizeFilter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider get_PolicyProvider()
@@ -28471,7 +28471,7 @@ open class ActionFilterAttribute
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // delegate closure overload
@@ -28515,7 +28515,7 @@ open class ActionFilterAttribute
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // delegate closure overload
@@ -28592,7 +28592,7 @@ open class ExceptionFilterAttribute
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
@@ -28893,7 +28893,7 @@ open class ResultFilterAttribute
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // delegate closure overload
@@ -29237,7 +29237,7 @@ open class HttpNoContentOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] bool get_TreatNullValueAsNoContent()
@@ -29324,7 +29324,7 @@ open class InputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext)
@@ -29344,7 +29344,7 @@ open class InputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Collections.Generic.IReadOnlyList<System.String> GetSupportedContentTypes(System.String, System.Type)
@@ -30138,7 +30138,7 @@ open class OutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void WriteResponseHeaders(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext)
@@ -30176,7 +30176,7 @@ open class OutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.Formatters.MediaTypeCollection get_SupportedMediaTypes()
@@ -30259,7 +30259,7 @@ open class StreamOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // StreamOutputFormatter
@@ -30324,7 +30324,7 @@ open class StringOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // StringOutputFormatter
@@ -30379,7 +30379,7 @@ open class SystemTextJsonInputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Text.Json.JsonSerializerOptions get_SerializerOptions()
@@ -30454,7 +30454,7 @@ open class SystemTextJsonOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Text.Json.JsonSerializerOptions get_SerializerOptions()
@@ -30511,7 +30511,7 @@ open class TextInputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Formatters.InputFormatterResult> ReadRequestBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext, System.Text.Encoding)
@@ -30532,7 +30532,7 @@ open class TextInputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<System.Text.Encoding> get_SupportedEncodings()
@@ -30613,7 +30613,7 @@ open class TextOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteResponseBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext)
@@ -30626,7 +30626,7 @@ open class TextOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteResponseBodyAsync(Microsoft.AspNetCore.Mvc.Formatters.OutputFormatterWriteContext, System.Text.Encoding)
@@ -30647,7 +30647,7 @@ open class TextOutputFormatter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] System.Collections.Generic.IList<System.Text.Encoding> get_SupportedEncodings()
@@ -31257,7 +31257,7 @@ open class ContentResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ContentResultExecutor
@@ -31430,7 +31430,7 @@ open class FileContentResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FileContentResultExecutor
@@ -31523,7 +31523,7 @@ open class FileStreamResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FileStreamResultExecutor
@@ -31781,7 +31781,7 @@ open class IActionResultExecutor_1<TResult : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // IActionResultExecutor_1
@@ -32465,7 +32465,7 @@ open class LocalRedirectResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // LocalRedirectResultExecutor
@@ -32723,7 +32723,7 @@ open class ObjectResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ObjectResultExecutor
@@ -32824,7 +32824,7 @@ open class PhysicalFileResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // PhysicalFileResultExecutor
@@ -32951,7 +32951,7 @@ open class RedirectResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // RedirectResultExecutor
@@ -33005,7 +33005,7 @@ open class RedirectToActionResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // RedirectToActionResultExecutor
@@ -33059,7 +33059,7 @@ open class RedirectToPageResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // RedirectToPageResultExecutor
@@ -33113,7 +33113,7 @@ open class RedirectToRouteResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // RedirectToRouteResultExecutor
@@ -33167,7 +33167,7 @@ open class VirtualFileResultExecutor
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // VirtualFileResultExecutor
@@ -33548,7 +33548,7 @@ open class CompositeValueProvider
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider> CreateAsync(Microsoft.AspNetCore.Mvc.ActionContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.ModelBinding.IValueProviderFactory>)
@@ -33573,7 +33573,7 @@ open class CompositeValueProvider
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // bool ContainsPrefix(System.String)
@@ -34459,7 +34459,7 @@ public final class FormFileValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FormFileValueProviderFactory
@@ -34614,7 +34614,7 @@ open class FormValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FormValueProviderFactory
@@ -34973,7 +34973,7 @@ open class JQueryFormValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // JQueryFormValueProviderFactory
@@ -35062,7 +35062,7 @@ open class JQueryQueryStringValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // JQueryQueryStringValueProviderFactory
@@ -35947,7 +35947,7 @@ open class ParameterBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult> BindModelAsync(Microsoft.AspNetCore.Mvc.ActionContext, Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, Microsoft.AspNetCore.Mvc.Abstractions.ParameterDescriptor, Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Object, System.Object)
@@ -36211,7 +36211,7 @@ open class QueryStringValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // QueryStringValueProviderFactory
@@ -36345,7 +36345,7 @@ open class RouteValueProviderFactory
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // RouteValueProviderFactory
@@ -36865,7 +36865,7 @@ open class BinderTypeModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // BinderTypeModelBinder
@@ -37023,7 +37023,7 @@ open class BodyModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // BodyModelBinder
@@ -37177,7 +37177,7 @@ open class ByteArrayModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ByteArrayModelBinder
@@ -37275,7 +37275,7 @@ open class CancellationTokenModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // CancellationTokenModelBinder
@@ -37488,7 +37488,7 @@ open class CollectionModelBinder_1<TElement : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // bool CanCreateInstance(System.Type)
@@ -37537,7 +37537,7 @@ public final class ComplexObjectModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ComplexObjectModelBinder
@@ -37781,7 +37781,7 @@ open class DateTimeModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // DateTimeModelBinder
@@ -37888,7 +37888,7 @@ open class DecimalModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // DecimalModelBinder
@@ -38045,7 +38045,7 @@ open class DictionaryModelBinder_2<TKey : SGBridgeGenericValue,TValue : SGBridge
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // bool CanCreateInstance(System.Type)
@@ -38114,7 +38114,7 @@ open class DoubleModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // DoubleModelBinder
@@ -38272,7 +38272,7 @@ open class FloatModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FloatModelBinder
@@ -38378,7 +38378,7 @@ open class FormCollectionModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FormCollectionModelBinder
@@ -38483,7 +38483,7 @@ open class FormFileModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // FormFileModelBinder
@@ -38610,7 +38610,7 @@ open class HeaderModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // HeaderModelBinder
@@ -38768,7 +38768,7 @@ open class KeyValuePairModelBinder_2<TKey : SGBridgeGenericValue,TValue : SGBrid
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // KeyValuePairModelBinder_2
@@ -38816,7 +38816,7 @@ open class ServicesModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ServicesModelBinder
@@ -38922,7 +38922,7 @@ open class SimpleTypeModelBinder
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // SimpleTypeModelBinder

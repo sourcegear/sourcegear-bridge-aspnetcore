@@ -216,7 +216,7 @@ open class AuthenticationStateProvider
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // [IsSpecialName] void add_AuthenticationStateChanged(Microsoft.AspNetCore.Components.Authorization.AuthenticationStateChangedHandler)

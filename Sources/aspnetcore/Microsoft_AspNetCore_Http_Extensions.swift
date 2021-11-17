@@ -201,7 +201,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
@@ -225,7 +225,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync<TValue>(Microsoft.AspNetCore.Http.HttpResponse, TValue, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
@@ -250,7 +250,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Threading.CancellationToken)
@@ -274,7 +274,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
@@ -299,7 +299,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task WriteAsJsonAsync(Microsoft.AspNetCore.Http.HttpResponse, System.Object, System.Type, System.Text.Json.JsonSerializerOptions, System.String, System.Threading.CancellationToken)
@@ -325,7 +325,7 @@ public struct HttpResponseJsonExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // HttpResponseJsonExtensions
@@ -715,7 +715,7 @@ public struct SendFileResponseExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, Microsoft.Extensions.FileProviders.IFileInfo, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -739,7 +739,7 @@ public struct SendFileResponseExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Threading.CancellationToken)
@@ -761,7 +761,7 @@ public struct SendFileResponseExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendFileAsync(Microsoft.AspNetCore.Http.HttpResponse, System.String, System.Int64, System.Nullable<System.Int64>, System.Threading.CancellationToken)
@@ -785,7 +785,7 @@ public struct SendFileResponseExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // SendFileResponseExtensions
@@ -1197,7 +1197,7 @@ public struct StreamCopyOperation {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task CopyToAsync(System.IO.Stream, System.IO.Stream, System.Nullable<System.Int64>, System.Int32, System.Threading.CancellationToken)
@@ -1219,7 +1219,7 @@ public struct StreamCopyOperation {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // StreamCopyOperation

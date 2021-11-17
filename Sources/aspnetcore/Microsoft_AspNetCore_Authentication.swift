@@ -336,7 +336,7 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authentication.AuthenticateResult> AuthenticateAsync()
@@ -349,7 +349,7 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -362,7 +362,7 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
@@ -375,7 +375,7 @@ open class AuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // [IsSpecialName] Microsoft.AspNetCore.Authentication.AuthenticationScheme get_Scheme()
@@ -2606,7 +2606,7 @@ open class RemoteAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
     // System.Threading.Tasks.Task<bool> HandleRequestAsync()
@@ -2625,7 +2625,7 @@ open class RemoteAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task_1(hndl: __return).to_async_result();
         }
     }
 } // RemoteAuthenticationHandler_1
@@ -3658,7 +3658,7 @@ open class SignInAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // SignInAuthenticationHandler_1
@@ -3715,7 +3715,7 @@ open class SignOutAuthenticationHandler_1<TOptions : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // SignOutAuthenticationHandler_1

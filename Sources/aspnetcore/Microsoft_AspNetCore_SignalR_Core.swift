@@ -30,7 +30,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Threading.CancellationToken)
@@ -54,7 +54,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Threading.CancellationToken)
@@ -79,7 +79,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -105,7 +105,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -132,7 +132,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -160,7 +160,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -189,7 +189,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -219,7 +219,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -250,7 +250,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -282,7 +282,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAsync(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Object, System.Threading.CancellationToken)
@@ -315,7 +315,7 @@ public struct ClientProxyExtensions {
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // ClientProxyExtensions
@@ -368,7 +368,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -381,7 +381,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAllAsync(System.String, System.Object[], System.Threading.CancellationToken)
@@ -394,7 +394,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendConnectionAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -407,7 +407,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -420,7 +420,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -433,7 +433,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupExceptAsync(System.String, System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -446,7 +446,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendUserAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -459,7 +459,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
@@ -472,7 +472,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
@@ -485,7 +485,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAllExceptAsync(System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -498,7 +498,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendConnectionsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -511,7 +511,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendUsersAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -524,7 +524,7 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // DefaultHubLifetimeManager_1
@@ -949,7 +949,7 @@ open class Hub
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(System.Exception)
@@ -968,7 +968,7 @@ open class Hub
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // void Dispose()
@@ -2927,7 +2927,7 @@ open class HubConnectionHandler_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // HubConnectionHandler_1
@@ -3500,7 +3500,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task OnDisconnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
@@ -3520,7 +3520,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAllAsync(System.String, System.Object[], System.Threading.CancellationToken)
@@ -3542,7 +3542,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendAllExceptAsync(System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -3565,7 +3565,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendConnectionAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3588,7 +3588,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendConnectionsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3611,7 +3611,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3634,7 +3634,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupsAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3657,7 +3657,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendGroupExceptAsync(System.String, System.String, System.Object[], System.Collections.Generic.IReadOnlyList<System.String>, System.Threading.CancellationToken)
@@ -3681,7 +3681,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendUserAsync(System.String, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3704,7 +3704,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task SendUsersAsync(System.Collections.Generic.IReadOnlyList<System.String>, System.String, System.Object[], System.Threading.CancellationToken)
@@ -3727,7 +3727,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task AddToGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -3749,7 +3749,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -3771,7 +3771,7 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // HubLifetimeManager_1
@@ -4513,7 +4513,7 @@ open class IClientProxy
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // IClientProxy
@@ -4565,7 +4565,7 @@ open class IGroupManager
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // System.Threading.Tasks.Task RemoveFromGroupAsync(System.String, System.String, System.Threading.CancellationToken)
@@ -4587,7 +4587,7 @@ open class IGroupManager
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
 } // IGroupManager
@@ -5230,7 +5230,7 @@ open class IHubFilter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // delegate closure overload
@@ -5257,7 +5257,7 @@ open class IHubFilter
         if let __ex =  __thrown {
             throw dotnet.System.Exception(hndl: __ex);
         } else {
-        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).ToAsync();
+        return try await dotnet.System.Threading.Tasks.Task(hndl: __return).to_async_void();
         }
     }
     // delegate closure overload
