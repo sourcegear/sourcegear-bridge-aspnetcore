@@ -28,6 +28,15 @@ public final class HiddenInputAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_HiddenInputAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.HiddenInputAttribute.#ctor
     /**
@@ -109,6 +118,15 @@ open class AttributeAdapterBase_1<TAttribute : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_AttributeAdapterBase_1_cast(TAttribute.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(TAttribute, Microsoft.Extensions.Localization.IStringLocalizer)
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.AttributeAdapterBase`1.#ctor(`0,Microsoft.Extensions.Localization.IStringLocalizer)
     /**
@@ -172,6 +190,15 @@ open class IAttributeAdapter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_IAttributeAdapter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase)
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter.GetErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ModelValidationContextBase)
     /**
@@ -222,6 +249,15 @@ open class IValidationAttributeAdapterProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_IValidationAttributeAdapterProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.DataAnnotations.IAttributeAdapter GetAttributeAdapter(System.ComponentModel.DataAnnotations.ValidationAttribute, Microsoft.Extensions.Localization.IStringLocalizer)
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.IValidationAttributeAdapterProvider.GetAttributeAdapter(System.ComponentModel.DataAnnotations.ValidationAttribute,Microsoft.Extensions.Localization.IStringLocalizer)
     /**
@@ -272,6 +308,15 @@ open class MvcDataAnnotationsLocalizationOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_MvcDataAnnotationsLocalizationOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // instance field: System.Func`3[[System.Type, System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Localization.IStringLocalizerFactory, Microsoft.Extensions.Localization.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Localization.IStringLocalizer, Microsoft.Extensions.Localization.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]] DataAnnotationLocalizerProvider
     /**
     
@@ -321,6 +366,15 @@ public final class RequiredAttributeAdapter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_RequiredAttributeAdapter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.ComponentModel.DataAnnotations.RequiredAttribute, Microsoft.Extensions.Localization.IStringLocalizer)
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.RequiredAttributeAdapter.#ctor(System.ComponentModel.DataAnnotations.RequiredAttribute,Microsoft.Extensions.Localization.IStringLocalizer)
     /**
@@ -389,6 +443,15 @@ open class ValidationAttributeAdapterProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapterProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapterProvider.#ctor
     public override init() throws {
@@ -448,6 +511,15 @@ open class ValidationAttributeAdapter_1<TAttribute : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationAttributeAdapter_1_cast(TAttribute.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(TAttribute, Microsoft.Extensions.Localization.IStringLocalizer)
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1.#ctor(`0,Microsoft.Extensions.Localization.IStringLocalizer)
     /**
@@ -525,6 +597,15 @@ open class ValidationProviderAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_DataAnnotations_ValidationProviderAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IEnumerable<System.ComponentModel.DataAnnotations.ValidationAttribute> GetValidationAttributes()
 // docid: M:Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationProviderAttribute.GetValidationAttributes
     /**

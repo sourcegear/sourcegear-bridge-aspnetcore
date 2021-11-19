@@ -201,6 +201,15 @@ open class IniConfigurationProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Configuration_Ini_IniConfigurationProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Configuration.Ini.IniConfigurationSource)
 // docid: M:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.Ini.IniConfigurationSource)
     /**
@@ -260,6 +269,15 @@ open class IniConfigurationSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Configuration_Ini_IniConfigurationSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Configuration.Ini.IniConfigurationSource.#ctor
     public init() throws {
@@ -317,6 +335,15 @@ open class IniStreamConfigurationProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationSource)
 // docid: M:Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationSource)
     /**
@@ -400,6 +427,15 @@ open class IniStreamConfigurationSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationSource.#ctor
     public init() throws {

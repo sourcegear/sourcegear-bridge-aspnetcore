@@ -103,6 +103,15 @@ open class DistributedCacheEntryOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions.#ctor
     public override init() throws {
@@ -452,6 +461,15 @@ open class IDistributedCache
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Distributed_IDistributedCache_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Byte[] Get(System.String)
 // docid: M:Microsoft.Extensions.Caching.Distributed.IDistributedCache.Get(System.String)
     /**
@@ -1183,6 +1201,15 @@ open class ICacheEntry
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Memory_ICacheEntry_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Nullable<System.DateTimeOffset> get_AbsoluteExpiration()
 // docid: M:Microsoft.Extensions.Caching.Memory.ICacheEntry.get_AbsoluteExpiration
     open func get_AbsoluteExpiration() throws -> Optional<dotnet.System.DateTimeOffset> {
@@ -1395,6 +1422,15 @@ open class IMemoryCache
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Memory_IMemoryCache_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Caching.Memory.ICacheEntry CreateEntry(System.Object)
 // docid: M:Microsoft.Extensions.Caching.Memory.IMemoryCache.CreateEntry(System.Object)
     /**
@@ -1701,6 +1737,15 @@ open class MemoryCacheEntryOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions.#ctor
     public override init() throws {
@@ -1962,6 +2007,15 @@ open class PostEvictionCallbackRegistration
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Caching_Memory_PostEvictionCallbackRegistration_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration.#ctor
     public override init() throws {
@@ -2191,6 +2245,15 @@ open class ISystemClock
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Internal_ISystemClock_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.DateTimeOffset get_UtcNow()
 // docid: M:Microsoft.Extensions.Internal.ISystemClock.get_UtcNow
     open func get_UtcNow() throws -> dotnet.System.DateTimeOffset {
@@ -2225,6 +2288,15 @@ open class SystemClock
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Internal_SystemClock_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Internal.SystemClock.#ctor
     public override init() throws {

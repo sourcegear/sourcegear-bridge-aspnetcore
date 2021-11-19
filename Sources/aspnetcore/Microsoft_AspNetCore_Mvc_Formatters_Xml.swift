@@ -30,6 +30,15 @@ open class XmlDataContractSerializerInputFormatter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerInputFormatter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerInputFormatter.#ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
     /**
@@ -221,6 +230,15 @@ open class XmlDataContractSerializerOutputFormatter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_XmlDataContractSerializerOutputFormatter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter.#ctor
     /**
@@ -467,6 +485,15 @@ open class XmlSerializerInputFormatter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerInputFormatter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerInputFormatter.#ctor(Microsoft.AspNetCore.Mvc.MvcOptions)
     /**
@@ -621,6 +648,15 @@ open class XmlSerializerOutputFormatter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_XmlSerializerOutputFormatter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.XmlSerializerOutputFormatter.#ctor
     /**
@@ -832,6 +868,15 @@ open class DelegatingEnumerable_2<TWrapped : SGBridgeGenericValue,TDeclared : SG
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerable_2_cast(TWrapped.get_type_handle(),TDeclared.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerable`2.#ctor
     /**
@@ -934,6 +979,15 @@ open class DelegatingEnumerator_2<TWrapped : SGBridgeGenericValue,TDeclared : SG
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_DelegatingEnumerator_2_cast(TWrapped.get_type_handle(),TDeclared.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerator<TDeclared>, Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.DelegatingEnumerator`2.#ctor(System.Collections.Generic.IEnumerator{`1},Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
     /**
@@ -1036,6 +1090,15 @@ open class EnumerableWrapperProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type, Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProvider.#ctor(System.Type,Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider)
     /**
@@ -1116,6 +1179,15 @@ open class EnumerableWrapperProviderFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_EnumerableWrapperProviderFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory>)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.EnumerableWrapperProviderFactory.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory})
     /**
@@ -1190,6 +1262,15 @@ open class IUnwrappable
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_IUnwrappable_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Object Unwrap(System.Type)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.IUnwrappable.Unwrap(System.Type)
     /**
@@ -1240,6 +1321,15 @@ open class IWrapperProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Object Wrap(System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider.Wrap(System.Object)
     /**
@@ -1305,6 +1395,15 @@ open class IWrapperProviderFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_IWrapperProviderFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProvider GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.IWrapperProviderFactory.GetProvider(Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext)
     /**
@@ -1352,6 +1451,15 @@ open class MvcXmlOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_MvcXmlOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.MvcXmlOptions.#ctor
     public override init() throws {
@@ -1387,6 +1495,15 @@ open class ProblemDetailsWrapper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_ProblemDetailsWrapper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetailsWrapper.#ctor
     /**
@@ -1488,6 +1605,15 @@ public final class SerializableErrorWrapper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapper.#ctor
     /**
@@ -1635,6 +1761,15 @@ open class SerializableErrorWrapperProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProvider.#ctor
     public override init() throws {
@@ -1704,6 +1839,15 @@ open class SerializableErrorWrapperProviderFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_SerializableErrorWrapperProviderFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.SerializableErrorWrapperProviderFactory.#ctor
     public override init() throws {
@@ -1767,6 +1911,15 @@ open class ValidationProblemDetailsWrapper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_ValidationProblemDetailsWrapper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetailsWrapper.#ctor
     /**
@@ -1838,6 +1991,15 @@ open class WrapperProviderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Formatters_Xml_WrapperProviderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type, bool)
 // docid: M:Microsoft.AspNetCore.Mvc.Formatters.Xml.WrapperProviderContext.#ctor(System.Type,System.Boolean)
     /**
@@ -1966,6 +2128,15 @@ open class DataMemberRequiredBindingMetadataProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ModelBinding_Metadata_DataMemberRequiredBindingMetadataProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DataMemberRequiredBindingMetadataProvider.#ctor
     public override init() throws {

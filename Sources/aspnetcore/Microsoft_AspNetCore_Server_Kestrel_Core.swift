@@ -505,6 +505,15 @@ open class EndpointConfiguration
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_EndpointConfiguration_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_IsHttps()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration.get_IsHttps
     open func get_IsHttps() throws -> Bool {
@@ -615,6 +624,15 @@ open class KestrelConfigurationLoader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_KestrelConfigurationLoader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader Endpoint(System.String, System.Action<Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration>)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Endpoint(System.String,System.Action{Microsoft.AspNetCore.Server.Kestrel.EndpointConfiguration})
     /**
@@ -973,6 +991,15 @@ public final class BadHttpRequestException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_BadHttpRequestException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int32 get_StatusCode()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException.get_StatusCode
     public override func get_StatusCode() throws -> Swift.Int32 {
@@ -1011,6 +1038,15 @@ open class Http2Limits
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Http2Limits_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Http2Limits.#ctor
     public override init() throws {
@@ -1366,6 +1402,15 @@ open class Http3Limits
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Http3Limits_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Http3Limits.#ctor
     public override init() throws {
@@ -1502,6 +1547,15 @@ open class KestrelServer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions>, Microsoft.AspNetCore.Connections.IConnectionListenerFactory, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions},Microsoft.AspNetCore.Connections.IConnectionListenerFactory,Microsoft.Extensions.Logging.ILoggerFactory)
     /**
@@ -1623,6 +1677,15 @@ open class KestrelServerLimits
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerLimits_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerLimits.#ctor
     public override init() throws {
@@ -2170,6 +2233,15 @@ open class KestrelServerOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_KestrelServerOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerOptions.#ctor
     public override init() throws {
@@ -2974,6 +3046,15 @@ open class ListenOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_ListenOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String ToString()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions.ToString
     /**
@@ -3309,6 +3390,15 @@ open class MinDataRate
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_MinDataRate_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Double, System.TimeSpan)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate.#ctor(System.Double,System.TimeSpan)
     /**
@@ -3418,6 +3508,15 @@ open class IConnectionTimeoutFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_IConnectionTimeoutFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void SetTimeout(System.TimeSpan)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IConnectionTimeoutFeature.SetTimeout(System.TimeSpan)
     /**
@@ -3503,6 +3602,15 @@ open class IDecrementConcurrentConnectionCountFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_IDecrementConcurrentConnectionCountFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void ReleaseConnection()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IDecrementConcurrentConnectionCountFeature.ReleaseConnection
     /**
@@ -3550,6 +3658,15 @@ open class IHttp2StreamIdFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttp2StreamIdFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int32 get_StreamId()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttp2StreamIdFeature.get_StreamId
     open func get_StreamId() throws -> Swift.Int32 {
@@ -3593,6 +3710,15 @@ open class IHttpMinRequestBodyDataRateFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinRequestBodyDataRateFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate get_MinDataRate()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinRequestBodyDataRateFeature.get_MinDataRate
     open func get_MinDataRate() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate> {
@@ -3651,6 +3777,15 @@ open class IHttpMinResponseDataRateFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_IHttpMinResponseDataRateFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate get_MinDataRate()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.IHttpMinResponseDataRateFeature.get_MinDataRate
     open func get_MinDataRate() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Core.MinDataRate> {
@@ -3707,6 +3842,15 @@ open class ITlsApplicationProtocolFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Features_ITlsApplicationProtocolFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.ReadOnlyMemory<System.Byte> get_ApplicationProtocol()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Features.ITlsApplicationProtocolFeature.get_ApplicationProtocol
     open func get_ApplicationProtocol() throws -> dotnet.System.ReadOnlyMemory_1<Swift.UInt8> {
@@ -3830,6 +3974,15 @@ open class HttpParser_1<TRequestHandler : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_HttpParser_1_cast(TRequestHandler.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpParser`1.#ctor
     public override init() throws {
@@ -4056,6 +4209,15 @@ open class IHttpHeadersHandler
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpHeadersHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnStaticIndexedHeader(System.Int32)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.IHttpHeadersHandler.OnStaticIndexedHeader(System.Int32)
     open func OnStaticIndexedHeader(index : Swift.Int32) throws {
@@ -4104,6 +4266,15 @@ open class IHttpRequestLineHandler
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Core_Internal_Http_IHttpRequestLineHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (span) void OnStartLine(Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpVersionAndMethod, Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.TargetOffsetPathLength, System.Span<System.Byte>)
 } // IHttpRequestLineHandler
 
@@ -4314,6 +4485,15 @@ open class HttpsConnectionAdapterOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Https_HttpsConnectionAdapterOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Https.HttpsConnectionAdapterOptions.#ctor
     /**
@@ -4704,6 +4884,15 @@ open class TlsHandshakeCallbackContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackContext.#ctor
     public override init() throws {
@@ -4958,6 +5147,15 @@ open class TlsHandshakeCallbackOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Https_TlsHandshakeCallbackOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Https.TlsHandshakeCallbackOptions.#ctor
     public override init() throws {

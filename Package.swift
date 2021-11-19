@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies : [
         .package(name: "sourcegear-bridge-lib-hook", url: "https://github.com/sourcegear/sourcegear-bridge-lib-hook", .exact("0.2.0")),
-        .package(name: "sourcegear-bridge-dotnet", url: "https://github.com/sourcegear/sourcegear-bridge-dotnet", .exact("0.3.1")),
+        .package(name: "sourcegear-bridge-dotnet", url: "https://github.com/sourcegear/sourcegear-bridge-dotnet", .exact("0.3.2")),
     ],
     targets : [
         .target(

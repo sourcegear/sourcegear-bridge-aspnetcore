@@ -340,6 +340,15 @@ open class DefaultHubLifetimeManager_1<THub : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_DefaultHubLifetimeManager_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager<THub>>)
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager`1.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.SignalR.DefaultHubLifetimeManager{`0}})
     /**
@@ -551,6 +560,15 @@ open class DefaultUserIdProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_DefaultUserIdProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.DefaultUserIdProvider.#ctor
     public override init() throws {
@@ -601,6 +619,15 @@ open class DynamicHub
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_DynamicHub_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.DynamicHubClients get_Clients()
 // docid: M:Microsoft.AspNetCore.SignalR.DynamicHub.get_Clients
     open func get_Clients() throws -> aspnetcore.Microsoft.AspNetCore.SignalR.DynamicHubClients {
@@ -646,6 +673,15 @@ open class DynamicHubClients
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_DynamicHubClients_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.SignalR.IHubCallerClients)
 // docid: M:Microsoft.AspNetCore.SignalR.DynamicHubClients.#ctor(Microsoft.AspNetCore.SignalR.IHubCallerClients)
     /**
@@ -933,6 +969,15 @@ open class Hub
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Hub_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task OnConnectedAsync()
 // docid: M:Microsoft.AspNetCore.SignalR.Hub.OnConnectedAsync
     /**
@@ -1114,6 +1159,15 @@ open class HubCallerContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubCallerContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort()
 // docid: M:Microsoft.AspNetCore.SignalR.HubCallerContext.Abort
     /**
@@ -2392,6 +2446,15 @@ open class HubConnectionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubConnectionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Connections.ConnectionContext, Microsoft.AspNetCore.SignalR.HubConnectionContextOptions, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContext.#ctor(Microsoft.AspNetCore.Connections.ConnectionContext,Microsoft.AspNetCore.SignalR.HubConnectionContextOptions,Microsoft.Extensions.Logging.ILoggerFactory)
     /**
@@ -2680,6 +2743,15 @@ open class HubConnectionContextOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubConnectionContextOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionContextOptions.#ctor
     public override init() throws {
@@ -2893,6 +2965,15 @@ open class HubConnectionHandler_1<THub : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubConnectionHandler_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.SignalR.HubLifetimeManager<THub>, Microsoft.AspNetCore.SignalR.IHubProtocolResolver, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.SignalR.HubOptions>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.SignalR.HubOptions<THub>>, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.SignalR.IUserIdProvider, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.#ctor(Microsoft.AspNetCore.SignalR.HubLifetimeManager{`0},Microsoft.AspNetCore.SignalR.IHubProtocolResolver,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.SignalR.HubOptions},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.SignalR.HubOptions{`0}},Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.SignalR.IUserIdProvider,Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)
     /**
@@ -2952,6 +3033,15 @@ open class HubConnectionStore
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubConnectionStore_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.HubConnectionStore.#ctor
     public override init() throws {
@@ -3199,6 +3289,15 @@ open class HubInvocationContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubInvocationContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.SignalR.HubCallerContext, System.IServiceProvider, Microsoft.AspNetCore.SignalR.Hub, System.Reflection.MethodInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.SignalR.HubInvocationContext.#ctor(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -3375,6 +3474,15 @@ public final class HubLifetimeContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubLifetimeContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.SignalR.HubCallerContext, System.IServiceProvider, Microsoft.AspNetCore.SignalR.Hub)
 // docid: M:Microsoft.AspNetCore.SignalR.HubLifetimeContext.#ctor(Microsoft.AspNetCore.SignalR.HubCallerContext,System.IServiceProvider,Microsoft.AspNetCore.SignalR.Hub)
     /**
@@ -3483,6 +3591,15 @@ open class HubLifetimeManager_1<THub : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubLifetimeManager_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
 // docid: M:Microsoft.AspNetCore.SignalR.HubLifetimeManager`1.OnConnectedAsync(Microsoft.AspNetCore.SignalR.HubConnectionContext)
     /**
@@ -3796,6 +3913,15 @@ open class HubMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type)
 // docid: M:Microsoft.AspNetCore.SignalR.HubMetadata.#ctor(System.Type)
     /**
@@ -3858,6 +3984,15 @@ open class HubMethodNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubMethodNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute.#ctor(System.String)
     /**
@@ -3920,6 +4055,15 @@ open class HubOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.HubOptions.#ctor
     public override init() throws {
@@ -4291,6 +4435,15 @@ open class HubOptionsSetup
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubOptionsSetup_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol>)
 // docid: M:Microsoft.AspNetCore.SignalR.HubOptionsSetup.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol})
     /**
@@ -4349,6 +4502,15 @@ open class HubOptionsSetup_1<THub : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubOptionsSetup_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.SignalR.HubOptions>)
 // docid: M:Microsoft.AspNetCore.SignalR.HubOptionsSetup`1.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.SignalR.HubOptions})
     /**
@@ -4407,6 +4569,15 @@ open class HubOptions_1<THub : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubOptions_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.HubOptions`1.#ctor
     public override init() throws {
@@ -4440,6 +4611,15 @@ open class Hub_1<T : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Hub_1_cast(T.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.IHubCallerClients<T> get_Clients()
 // docid: M:Microsoft.AspNetCore.SignalR.Hub`1.get_Clients
     open func get_Clients() throws -> aspnetcore.Microsoft.AspNetCore.SignalR.IHubCallerClients_1<T> {
@@ -4493,6 +4673,15 @@ open class IClientProxy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IClientProxy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SendCoreAsync(System.String, System.Object[], System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.IClientProxy.SendCoreAsync(System.String,System.Object[],System.Threading.CancellationToken)
     /**
@@ -4546,6 +4735,15 @@ open class IGroupManager
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IGroupManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task AddToGroupAsync(System.String, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.SignalR.IGroupManager.AddToGroupAsync(System.String,System.String,System.Threading.CancellationToken)
     /**
@@ -4621,6 +4819,15 @@ open class IHubActivator_1<THub : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubActivator_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // THub Create()
 // docid: M:Microsoft.AspNetCore.SignalR.IHubActivator`1.Create
     /**
@@ -4690,6 +4897,15 @@ open class IHubCallerClients
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubCallerClients_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IHubCallerClients
 
 
@@ -4722,6 +4938,15 @@ open class IHubCallerClients_1<T : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubCallerClients_1_cast(T.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // T OthersInGroup(System.String)
 // docid: M:Microsoft.AspNetCore.SignalR.IHubCallerClients`1.OthersInGroup(System.String)
     /**
@@ -4794,6 +5019,15 @@ open class IHubClients
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubClients_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IHubClients
 
 
@@ -4825,6 +5059,15 @@ open class IHubClients_1<T : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubClients_1_cast(T.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // T AllExcept(System.Collections.Generic.IReadOnlyList<System.String>)
 // docid: M:Microsoft.AspNetCore.SignalR.IHubClients`1.AllExcept(System.Collections.Generic.IReadOnlyList{System.String})
     /**
@@ -5027,6 +5270,15 @@ open class IHubContext
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.IHubClients get_Clients()
 // docid: M:Microsoft.AspNetCore.SignalR.IHubContext.get_Clients
     open func get_Clients() throws -> aspnetcore.Microsoft.AspNetCore.SignalR.IHubClients {
@@ -5080,6 +5332,15 @@ open class IHubContext_1<THub : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubContext_1_cast(THub.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.IHubClients get_Clients()
 // docid: M:Microsoft.AspNetCore.SignalR.IHubContext`1.get_Clients
     open func get_Clients() throws -> aspnetcore.Microsoft.AspNetCore.SignalR.IHubClients {
@@ -5134,6 +5395,15 @@ open class IHubContext_2<THub : SGBridgeGenericValue,T : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubContext_2_cast(THub.get_type_handle(),T.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.SignalR.IHubClients<T> get_Clients()
 // docid: M:Microsoft.AspNetCore.SignalR.IHubContext`2.get_Clients
     open func get_Clients() throws -> aspnetcore.Microsoft.AspNetCore.SignalR.IHubClients_1<T> {
@@ -5186,6 +5456,15 @@ open class IHubFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<System.Object> InvokeMethodAsync(Microsoft.AspNetCore.SignalR.HubInvocationContext, System.Func<Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Threading.Tasks.ValueTask<System.Object>>)
 // docid: M:Microsoft.AspNetCore.SignalR.IHubFilter.InvokeMethodAsync(Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Func{Microsoft.AspNetCore.SignalR.HubInvocationContext,System.Threading.Tasks.ValueTask{System.Object}})
     /**
@@ -5295,6 +5574,15 @@ open class IHubProtocolResolver
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IHubProtocolResolver_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol GetProtocol(System.String, System.Collections.Generic.IReadOnlyList<System.String>)
 // docid: M:Microsoft.AspNetCore.SignalR.IHubProtocolResolver.GetProtocol(System.String,System.Collections.Generic.IReadOnlyList{System.String})
     /**
@@ -5362,6 +5650,15 @@ open class ISignalRServerBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_ISignalRServerBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // ISignalRServerBuilder
 
 
@@ -5392,6 +5689,15 @@ open class IUserIdProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IUserIdProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String GetUserId(Microsoft.AspNetCore.SignalR.HubConnectionContext)
 // docid: M:Microsoft.AspNetCore.SignalR.IUserIdProvider.GetUserId(Microsoft.AspNetCore.SignalR.HubConnectionContext)
     /**
@@ -5438,6 +5744,15 @@ open class SerializedHubMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_SerializedHubMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.SignalR.SerializedMessage>)
 // docid: M:Microsoft.AspNetCore.SignalR.SerializedHubMessage.#ctor(System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.SignalR.SerializedMessage})
     /**

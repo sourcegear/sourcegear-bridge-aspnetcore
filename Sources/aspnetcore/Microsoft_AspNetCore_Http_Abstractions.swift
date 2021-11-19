@@ -27,6 +27,15 @@ open class EndpointBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_EndpointBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Http.Endpoint Build()
 // docid: M:Microsoft.AspNetCore.Builder.EndpointBuilder.Build
     /**
@@ -183,6 +192,15 @@ open class IApplicationBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_IApplicationBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Builder.IApplicationBuilder Use(System.Func<Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.RequestDelegate>)
 // docid: M:Microsoft.AspNetCore.Builder.IApplicationBuilder.Use(System.Func{Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.RequestDelegate})
     /**
@@ -321,6 +339,15 @@ open class IEndpointConventionBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_IEndpointConventionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
 // docid: M:Microsoft.AspNetCore.Builder.IEndpointConventionBuilder.Add(System.Action{Microsoft.AspNetCore.Builder.EndpointBuilder})
     /**
@@ -676,6 +703,15 @@ open class MapMiddleware
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_Extensions_MapMiddleware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Builder.Extensions.MapOptions)
 // docid: M:Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapOptions)
     /**
@@ -737,6 +773,15 @@ open class MapOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_Extensions_MapOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Builder.Extensions.MapOptions.#ctor
     public override init() throws {
@@ -888,6 +933,15 @@ open class MapWhenMiddleware
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_Extensions_MapWhenMiddleware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions)
 // docid: M:Microsoft.AspNetCore.Builder.Extensions.MapWhenMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions)
     /**
@@ -949,6 +1003,15 @@ open class MapWhenOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_Extensions_MapWhenOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Builder.Extensions.MapWhenOptions.#ctor
     public override init() throws {
@@ -1072,6 +1135,15 @@ open class UsePathBaseMiddleware
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_Extensions_UsePathBaseMiddleware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Builder.Extensions.UsePathBaseMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.PathString)
     /**
@@ -1147,6 +1219,15 @@ open class ICorsMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Cors_Infrastructure_ICorsMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // ICorsMetadata
 
 
@@ -1174,6 +1255,15 @@ open class BadHttpRequestException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_BadHttpRequestException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Int32)
 // docid: M:Microsoft.AspNetCore.Http.BadHttpRequestException.#ctor(System.String,System.Int32)
     /**
@@ -1294,6 +1384,15 @@ open class ConnectionInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_ConnectionInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Security.Cryptography.X509Certificates.X509Certificate2> GetClientCertificateAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Http.ConnectionInfo.GetClientCertificateAsync(System.Threading.CancellationToken)
     /**
@@ -1580,6 +1679,15 @@ open class CookieBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_CookieBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Http.CookieBuilder.#ctor
     public override init() throws {
@@ -2059,6 +2167,15 @@ open class Endpoint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Endpoint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Http.EndpointMetadataCollection, System.String)
 // docid: M:Microsoft.AspNetCore.Http.Endpoint.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Http.EndpointMetadataCollection,System.String)
     /**
@@ -2249,6 +2366,15 @@ public final class EndpointMetadataCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_EndpointMetadataCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.AspNetCore.Http.EndpointMetadataCollection Empty
     /**
     
@@ -3219,6 +3345,15 @@ open class HttpContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_HttpContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort()
 // docid: M:Microsoft.AspNetCore.Http.HttpContext.Abort
     /**
@@ -4148,6 +4283,15 @@ open class HttpRequest
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_HttpRequest_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Http.IFormCollection> ReadFormAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Http.HttpRequest.ReadFormAsync(System.Threading.CancellationToken)
     /**
@@ -4821,6 +4965,15 @@ open class HttpResponse
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_HttpResponse_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnStarting(System.Func<System.Object,System.Threading.Tasks.Task>, System.Object)
 // docid: M:Microsoft.AspNetCore.Http.HttpResponse.OnStarting(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)
     /**
@@ -5364,6 +5517,15 @@ open class IHttpContextAccessor
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IHttpContextAccessor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.HttpContext get_HttpContext()
 // docid: M:Microsoft.AspNetCore.Http.IHttpContextAccessor.get_HttpContext
     open func get_HttpContext() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Http.HttpContext> {
@@ -5420,6 +5582,15 @@ open class IHttpContextFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IHttpContextFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Http.HttpContext Create(Microsoft.AspNetCore.Http.Features.IFeatureCollection)
 // docid: M:Microsoft.AspNetCore.Http.IHttpContextFactory.Create(Microsoft.AspNetCore.Http.Features.IFeatureCollection)
     /**
@@ -5488,6 +5659,15 @@ open class IMiddleware
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IMiddleware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task InvokeAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Http.RequestDelegate)
 // docid: M:Microsoft.AspNetCore.Http.IMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Http.RequestDelegate)
     /**
@@ -5544,6 +5724,15 @@ open class IMiddlewareFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IMiddlewareFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Http.IMiddleware Create(System.Type)
 // docid: M:Microsoft.AspNetCore.Http.IMiddlewareFactory.Create(System.Type)
     /**
@@ -5616,6 +5805,15 @@ open class IResult
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task ExecuteAsync(Microsoft.AspNetCore.Http.HttpContext)
 // docid: M:Microsoft.AspNetCore.Http.IResult.ExecuteAsync(Microsoft.AspNetCore.Http.HttpContext)
     /**
@@ -6808,6 +7006,15 @@ public final class RequestDelegateResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_RequestDelegateResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.Http.RequestDelegateResult.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -7893,6 +8100,15 @@ open class WebSocketManager
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_WebSocketManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Net.WebSockets.WebSocket> AcceptWebSocketAsync()
 // docid: M:Microsoft.AspNetCore.Http.WebSocketManager.AcceptWebSocketAsync
     /**
@@ -8030,6 +8246,15 @@ open class IEndpointFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IEndpointFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.Endpoint get_Endpoint()
 // docid: M:Microsoft.AspNetCore.Http.Features.IEndpointFeature.get_Endpoint
     open func get_Endpoint() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Http.Endpoint> {
@@ -8087,6 +8312,15 @@ open class IRouteValuesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IRouteValuesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Routing.RouteValueDictionary get_RouteValues()
 // docid: M:Microsoft.AspNetCore.Http.Features.IRouteValuesFeature.get_RouteValues
     open func get_RouteValues() throws -> aspnetcore.Microsoft.AspNetCore.Routing.RouteValueDictionary {
@@ -8143,6 +8377,15 @@ open class IAcceptsMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IAcceptsMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<System.String> get_ContentTypes()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IAcceptsMetadata.get_ContentTypes
     open func get_ContentTypes() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
@@ -8210,6 +8453,15 @@ open class IFromBodyMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IFromBodyMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_AllowEmpty()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IFromBodyMetadata.get_AllowEmpty
     open func get_AllowEmpty() throws -> Bool {
@@ -8251,6 +8503,15 @@ open class IFromHeaderMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IFromHeaderMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IFromHeaderMetadata.get_Name
     open func get_Name() throws -> Optional<dotnet.System.String> {
@@ -8296,6 +8557,15 @@ open class IFromQueryMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IFromQueryMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IFromQueryMetadata.get_Name
     open func get_Name() throws -> Optional<dotnet.System.String> {
@@ -8341,6 +8611,15 @@ open class IFromRouteMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IFromRouteMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IFromRouteMetadata.get_Name
     open func get_Name() throws -> Optional<dotnet.System.String> {
@@ -8386,6 +8665,15 @@ open class IFromServiceMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IFromServiceMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IFromServiceMetadata
 
 
@@ -8416,6 +8704,15 @@ open class IProducesResponseTypeMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_IProducesResponseTypeMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Type get_Type()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.IProducesResponseTypeMetadata.get_Type
     open func get_Type() throws -> Optional<dotnet.System.Type_> {
@@ -8483,6 +8780,15 @@ open class ITagsMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Metadata_ITagsMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<System.String> get_Tags()
 // docid: M:Microsoft.AspNetCore.Http.Metadata.ITagsMetadata.get_Tags
     open func get_Tags() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
@@ -8522,6 +8828,15 @@ open class RouteValueDictionary
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteValueDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RouteValueDictionary.#ctor
     /**

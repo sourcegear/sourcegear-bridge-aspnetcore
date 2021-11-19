@@ -35,6 +35,15 @@ open class IAllowAnonymous
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAllowAnonymous_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IAllowAnonymous
 
 
@@ -65,6 +74,15 @@ open class IAuthorizeData
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizeData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Policy()
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizeData.get_Policy
     open func get_Policy() throws -> Optional<dotnet.System.String> {

@@ -31,6 +31,15 @@ open class AutoValidateAntiforgeryTokenAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_AutoValidateAntiforgeryTokenAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute.#ctor
     public init() throws {
@@ -136,6 +145,15 @@ open class Controller
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Controller_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewResult View()
 // docid: M:Microsoft.AspNetCore.Mvc.Controller.View
     /**
@@ -642,6 +660,15 @@ open class CookieTempDataProviderOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_CookieTempDataProviderOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.CookieTempDataProviderOptions.#ctor
     public override init() throws {
@@ -736,6 +763,15 @@ open class IViewComponentHelper
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_IViewComponentHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Html.IHtmlContent> InvokeAsync(System.String, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.IViewComponentHelper.InvokeAsync(System.String,System.Object)
     /**
@@ -818,6 +854,15 @@ open class IViewComponentResult
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_IViewComponentResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Execute(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
 // docid: M:Microsoft.AspNetCore.Mvc.IViewComponentResult.Execute(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
     /**
@@ -886,6 +931,15 @@ open class IgnoreAntiforgeryTokenAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_IgnoreAntiforgeryTokenAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.IgnoreAntiforgeryTokenAttribute.#ctor
     public init() throws {
@@ -957,6 +1011,15 @@ open class MvcViewOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_MvcViewOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.MvcViewOptions.#ctor
     public override init() throws {
@@ -1072,6 +1135,15 @@ open class PageRemoteAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_PageRemoteAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.PageRemoteAttribute.#ctor
     public init() throws {
@@ -1186,6 +1258,15 @@ open class PartialViewResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_PartialViewResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.PartialViewResult.#ctor
     public init() throws {
@@ -1487,6 +1568,15 @@ open class RemoteAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RemoteAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.RemoteAttribute.#ctor(System.String)
     /**
@@ -1578,6 +1668,15 @@ open class RemoteAttributeBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RemoteAttributeBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String FormatAdditionalFieldsForClientValidation(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.RemoteAttributeBase.FormatAdditionalFieldsForClientValidation(System.String)
     /**
@@ -1767,6 +1866,15 @@ open class SkipStatusCodePagesAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_SkipStatusCodePagesAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.SkipStatusCodePagesAttribute.#ctor
     public init() throws {
@@ -1828,6 +1936,15 @@ public final class TempDataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_TempDataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.TempDataAttribute.#ctor
     public init() throws {
@@ -1907,6 +2024,15 @@ open class ValidateAntiForgeryTokenAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ValidateAntiForgeryTokenAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.#ctor
     public init() throws {
@@ -2008,6 +2134,15 @@ open class ViewComponent
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult Content(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponent.Content(System.String)
     /**
@@ -2459,6 +2594,15 @@ open class ViewComponentAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponentAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponentAttribute.#ctor
     public init() throws {
@@ -2534,6 +2678,15 @@ open class ViewComponentResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponentResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponentResult.#ctor
     public init() throws {
@@ -2877,6 +3030,15 @@ public final class ViewDataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewDataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewDataAttribute.#ctor
     public init() throws {
@@ -2952,6 +3114,15 @@ open class ViewResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewResult.#ctor
     public init() throws {
@@ -3255,6 +3426,15 @@ public final class AfterViewComponentEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewComponentEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3416,6 +3596,15 @@ public final class AfterViewEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3523,6 +3712,15 @@ public final class BeforeViewComponentEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewComponentEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3657,6 +3855,15 @@ public final class BeforeViewEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3764,6 +3971,15 @@ public final class ViewComponentAfterViewExecuteEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentAfterViewExecuteEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3898,6 +4114,15 @@ public final class ViewComponentBeforeViewExecuteEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_ViewComponentBeforeViewExecuteEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -4032,6 +4257,15 @@ public final class ViewFoundEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_ViewFoundEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -4216,6 +4450,15 @@ public final class ViewNotFoundEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_ViewNotFoundEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -9538,6 +9781,15 @@ open class IHtmlHelper
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Html.IHtmlContent ActionLink(System.String, System.String, System.String, System.String, System.String, System.String, System.Object, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper.ActionLink(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)
     /**
@@ -10785,6 +11037,15 @@ open class IHtmlHelper_1<TModel : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_IHtmlHelper_1_cast(TModel.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Html.IHtmlContent CheckBoxFor(System.Linq.Expressions.Expression<System.Func<TModel,bool>>, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper`1.CheckBoxFor(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Object)
     /**
@@ -11493,6 +11754,15 @@ open class IJsonHelper
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_IJsonHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Html.IHtmlContent Serialize(System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper.Serialize(System.Object)
     /**
@@ -11542,6 +11812,15 @@ open class MultiSelectList
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_MultiSelectList_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.IEnumerable)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList.#ctor(System.Collections.IEnumerable)
     /**
@@ -11817,6 +12096,15 @@ open class MvcForm
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_MvcForm_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Rendering.ViewContext, System.Text.Encodings.Web.HtmlEncoder)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.MvcForm.#ctor(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.Text.Encodings.Web.HtmlEncoder)
     /**
@@ -11979,6 +12267,15 @@ open class SelectList
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_SelectList_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.IEnumerable)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.SelectList.#ctor(System.Collections.IEnumerable)
     /**
@@ -12134,6 +12431,15 @@ open class SelectListGroup
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_SelectListGroup_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.SelectListGroup.#ctor
     public override init() throws {
@@ -12245,6 +12551,15 @@ open class SelectListItem
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.SelectListItem.#ctor
     /**
@@ -12547,6 +12862,15 @@ open class TagBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_TagBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.TagBuilder.#ctor(System.String)
     /**
@@ -13095,6 +13419,15 @@ open class ViewContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Rendering_ViewContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Rendering.ViewContext.#ctor
     /**
@@ -13633,6 +13966,15 @@ open class ContentViewComponentResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ContentViewComponentResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ContentViewComponentResult.#ctor(System.String)
     /**
@@ -13734,6 +14076,15 @@ open class DefaultViewComponentDescriptorCollectionProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorCollectionProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.#ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider)
     /**
@@ -13797,6 +14148,15 @@ open class DefaultViewComponentDescriptorProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentDescriptorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.#ctor(Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager)
     /**
@@ -13855,6 +14215,15 @@ open class DefaultViewComponentFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentFactory.#ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator)
     /**
@@ -13942,6 +14311,15 @@ open class DefaultViewComponentHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector, Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory, Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider,System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector,Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory,Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope)
     /**
@@ -14028,6 +14406,15 @@ open class DefaultViewComponentSelector
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_DefaultViewComponentSelector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.#ctor(Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider)
     /**
@@ -14086,6 +14473,15 @@ open class HtmlContentViewComponentResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_HtmlContentViewComponentResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Html.IHtmlContent)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.HtmlContentViewComponentResult.#ctor(Microsoft.AspNetCore.Html.IHtmlContent)
     /**
@@ -14193,6 +14589,15 @@ open class IViewComponentActivator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Object Create(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentActivator.Create(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
     /**
@@ -14291,6 +14696,15 @@ open class IViewComponentDescriptorCollectionProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorCollectionProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection get_ViewComponents()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorCollectionProvider.get_ViewComponents
     open func get_ViewComponents() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection> {
@@ -14336,6 +14750,15 @@ open class IViewComponentDescriptorProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentDescriptorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor> GetViewComponents()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentDescriptorProvider.GetViewComponents
     /**
@@ -14389,6 +14812,15 @@ open class IViewComponentFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Object CreateViewComponent(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentFactory.CreateViewComponent(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
     /**
@@ -14483,6 +14915,15 @@ open class IViewComponentInvoker
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvoker_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task InvokeAsync(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvoker.InvokeAsync(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
     /**
@@ -14538,6 +14979,15 @@ open class IViewComponentInvokerFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentInvokerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvoker CreateInstance(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentInvokerFactory.CreateInstance(Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext)
     /**
@@ -14592,6 +15042,15 @@ open class IViewComponentSelector
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_IViewComponentSelector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor SelectComponent(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.IViewComponentSelector.SelectComponent(System.String)
     /**
@@ -14640,6 +15099,15 @@ open class ServiceBasedViewComponentActivator
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ServiceBasedViewComponentActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ServiceBasedViewComponentActivator.#ctor
     public override init() throws {
@@ -14703,6 +15171,15 @@ open class ViewComponentContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContext.#ctor
     /**
@@ -14978,6 +15455,15 @@ open class ViewComponentContextAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentContextAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentContextAttribute.#ctor
     public init() throws {
@@ -15101,6 +15587,15 @@ open class ViewComponentDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor.#ctor
     /**
@@ -15420,6 +15915,15 @@ open class ViewComponentDescriptorCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentDescriptorCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor>, System.Int32)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptorCollection.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentDescriptor},System.Int32)
     /**
@@ -15512,6 +16016,15 @@ open class ViewComponentFeature
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeature.#ctor
     public override init() throws {
@@ -15572,6 +16085,15 @@ open class ViewComponentFeatureProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewComponentFeatureProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewComponentFeatureProvider.#ctor
     public override init() throws {
@@ -15619,6 +16141,15 @@ open class ViewViewComponentResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewComponents_ViewViewComponentResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.#ctor
     public override init() throws {
@@ -15850,6 +16381,15 @@ open class CompositeViewEngine
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewEngines_CompositeViewEngine_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions})
     /**
@@ -15943,6 +16483,15 @@ open class ICompositeViewEngine
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewEngines_ICompositeViewEngine_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine> get_ViewEngines()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine.get_ViewEngines
     open func get_ViewEngines() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine> {
@@ -15984,6 +16533,15 @@ open class IView
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewEngines_IView_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task RenderAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewEngines.IView.RenderAsync(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
     /**
@@ -16045,6 +16603,15 @@ open class IViewEngine
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewEngines_IViewEngine_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult FindView(Microsoft.AspNetCore.Mvc.ActionContext, System.String, bool)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewEngines.IViewEngine.FindView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.Boolean)
     /**
@@ -16113,6 +16680,15 @@ open class ViewEngineResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewEngines_ViewEngineResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult NotFound(System.String, System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.NotFound(System.String,System.Collections.Generic.IEnumerable{System.String})
     /**
@@ -16326,6 +16902,15 @@ open class AttributeDictionary
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_AttributeDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.AttributeDictionary.#ctor
     public override init() throws {
@@ -16694,6 +17279,15 @@ open class CookieTempDataProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_CookieTempDataProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String CookieName
     /**
     
@@ -16795,6 +17389,15 @@ open class DefaultHtmlGenerator
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultHtmlGenerator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Antiforgery.IAntiforgery, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.#ctor(Microsoft.AspNetCore.Antiforgery.IAntiforgery,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions},Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory,System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider)
     /**
@@ -17337,6 +17940,15 @@ open class DefaultValidationHtmlAttributeProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_DefaultValidationHtmlAttributeProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions},Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ClientValidatorCache)
     /**
@@ -17393,6 +18005,15 @@ open class FormContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_FormContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.FormContext.#ctor
     public override init() throws {
@@ -17644,6 +18265,15 @@ open class HtmlHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String ValidationInputCssClassName
     /**
     
@@ -18611,6 +19241,15 @@ open class HtmlHelperOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelperOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelperOptions.#ctor
     public override init() throws {
@@ -18874,6 +19513,15 @@ open class HtmlHelper_1<TModel : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_HtmlHelper_1_cast(TModel.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope, System.Text.Encodings.Web.HtmlEncoder, System.Text.Encodings.Web.UrlEncoder, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpressionProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope,System.Text.Encodings.Web.HtmlEncoder,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpressionProvider)
     /**
@@ -19263,6 +19911,15 @@ open class IAntiforgeryPolicy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_IAntiforgeryPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IAntiforgeryPolicy
 
 
@@ -19293,6 +19950,15 @@ open class IFileVersionProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_IFileVersionProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String AddFileVersionToPath(Microsoft.AspNetCore.Http.PathString, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.IFileVersionProvider.AddFileVersionToPath(Microsoft.AspNetCore.Http.PathString,System.String)
     /**
@@ -19348,6 +20014,15 @@ open class IHtmlGenerator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String Encode(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator.Encode(System.String)
     /**
@@ -20240,6 +20915,15 @@ open class IModelExpressionProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_IModelExpressionProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression CreateModelExpression<TModel, TValue>(Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TModel>, System.Linq.Expressions.Expression<System.Func<TModel,TValue>>)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider.CreateModelExpression``2(Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})
     /**
@@ -20300,6 +20984,15 @@ open class ITempDataDictionary
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Load()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary.Load
     /**
@@ -20425,6 +21118,15 @@ open class ITempDataDictionaryFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataDictionaryFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionary GetTempData(Microsoft.AspNetCore.Http.HttpContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory.GetTempData(Microsoft.AspNetCore.Http.HttpContext)
     /**
@@ -20483,6 +21185,15 @@ open class ITempDataProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ITempDataProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IDictionary<System.String,System.Object> LoadTempData(Microsoft.AspNetCore.Http.HttpContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider.LoadTempData(Microsoft.AspNetCore.Http.HttpContext)
     /**
@@ -20556,6 +21267,15 @@ open class IViewContextAware
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_IViewContextAware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Contextualize(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.IViewContextAware.Contextualize(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
     /**
@@ -20681,6 +21401,15 @@ open class ModelExplorer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExplorer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,System.Object)
     /**
@@ -21137,6 +21866,15 @@ public final class ModelExpression
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression.#ctor(System.String,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer)
     /**
@@ -21287,6 +22025,15 @@ open class ModelExpressionProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpressionProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpressionProvider.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
     /**
@@ -21428,6 +22175,15 @@ open class PartialViewResultExecutor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_PartialViewResultExecutor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory, Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory, System.Diagnostics.DiagnosticListener, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.PartialViewResultExecutor.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory,System.Diagnostics.DiagnosticListener,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
     /**
@@ -21533,6 +22289,15 @@ open class SaveTempDataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_SaveTempDataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.SaveTempDataAttribute.#ctor
     /**
@@ -21636,6 +22401,15 @@ open class SessionStateTempDataProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_SessionStateTempDataProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.SessionStateTempDataProvider.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer)
     /**
@@ -21707,6 +22481,15 @@ open class StringHtmlContent
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_StringHtmlContent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.StringHtmlContent.#ctor(System.String)
     /**
@@ -21757,6 +22540,15 @@ open class TempDataDictionary
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary.#ctor(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider)
     /**
@@ -22043,6 +22835,15 @@ open class TempDataDictionaryFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_TempDataDictionaryFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionaryFactory.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider)
     /**
@@ -22100,6 +22901,15 @@ open class TemplateInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_TemplateInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.TemplateInfo.#ctor
     /**
@@ -22483,6 +23293,15 @@ open class ValidationHtmlAttributeProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ValidationHtmlAttributeProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void AddValidationAttributes(Microsoft.AspNetCore.Mvc.Rendering.ViewContext, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer, System.Collections.Generic.IDictionary<System.String,System.String>)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddValidationAttributes(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.Collections.Generic.IDictionary{System.String,System.String})
     /**
@@ -22557,6 +23376,15 @@ open class ViewComponentResultExecutor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewComponentResultExecutor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.Extensions.Logging.ILoggerFactory, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewComponentResultExecutor.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory,Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory)
     /**
@@ -22617,6 +23445,15 @@ open class ViewContextAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewContextAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewContextAttribute.#ctor
     public init() throws {
@@ -22651,6 +23488,15 @@ open class ViewDataDictionary
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
     /**
@@ -23186,6 +24032,15 @@ open class ViewDataDictionaryAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionaryAttribute.#ctor
     public init() throws {
@@ -23219,6 +24074,15 @@ open class ViewDataDictionaryControllerPropertyActivator
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionaryControllerPropertyActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionaryControllerPropertyActivator.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
     /**
@@ -23289,6 +24153,15 @@ open class ViewDataDictionary_1<TModel : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_1_cast(TModel.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary`1.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)
     /**
@@ -23454,6 +24327,15 @@ open class ViewDataInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Object, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataInfo.#ctor(System.Object,System.Object)
     /**
@@ -23632,6 +24514,15 @@ open class ViewExecutor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewExecutor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String DefaultContentType
     /**
     
@@ -23720,6 +24611,15 @@ open class ViewResultExecutor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_ViewResultExecutor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcViewOptions>, Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory, Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory, System.Diagnostics.DiagnosticListener, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcViewOptions},Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataDictionaryFactory,System.Diagnostics.DiagnosticListener,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider)
     /**
@@ -23811,6 +24711,15 @@ open class IViewBufferScope
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_Buffers_IViewBufferScope_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.ViewBufferValue[] GetPage(System.Int32)
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.Buffers.IViewBufferScope.GetPage(System.Int32)
     /**
@@ -23993,6 +24902,15 @@ open class TempDataSerializer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ViewFeatures_Infrastructure_TempDataSerializer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IDictionary<System.String,System.Object> Deserialize(System.Byte[])
 // docid: M:Microsoft.AspNetCore.Mvc.ViewFeatures.Infrastructure.TempDataSerializer.Deserialize(System.Byte[])
     /**

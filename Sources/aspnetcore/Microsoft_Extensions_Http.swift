@@ -528,6 +528,15 @@ open class IHttpClientBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IHttpClientBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder.get_Name
     open func get_Name() throws -> Optional<dotnet.System.String> {
@@ -584,6 +593,15 @@ open class HttpClientFactoryOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_HttpClientFactoryOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Http.HttpClientFactoryOptions.#ctor
     public override init() throws {
@@ -796,6 +814,15 @@ open class HttpMessageHandlerBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_HttpMessageHandlerBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Net.Http.HttpMessageHandler Build()
 // docid: M:Microsoft.Extensions.Http.HttpMessageHandlerBuilder.Build
     /**
@@ -988,6 +1015,15 @@ open class IHttpMessageHandlerBuilderFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Action<Microsoft.Extensions.Http.HttpMessageHandlerBuilder> Configure(System.Action<Microsoft.Extensions.Http.HttpMessageHandlerBuilder>)
 // docid: M:Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter.Configure(System.Action{Microsoft.Extensions.Http.HttpMessageHandlerBuilder})
     /**
@@ -1047,6 +1083,15 @@ open class ITypedHttpClientFactory_1<TClient : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_ITypedHttpClientFactory_1_cast(TClient.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TClient CreateClient(System.Net.Http.HttpClient)
 // docid: M:Microsoft.Extensions.Http.ITypedHttpClientFactory`1.CreateClient(System.Net.Http.HttpClient)
     /**
@@ -1089,6 +1134,15 @@ open class LoggingHttpMessageHandler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_Logging_LoggingHttpMessageHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.ILogger)
 // docid: M:Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.#ctor(Microsoft.Extensions.Logging.ILogger)
     public init(logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger>) throws {
@@ -1127,6 +1181,15 @@ open class LoggingScopeHttpMessageHandler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Http_Logging_LoggingScopeHttpMessageHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.ILogger)
 // docid: M:Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.#ctor(Microsoft.Extensions.Logging.ILogger)
     public init(logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger>) throws {
@@ -1247,6 +1310,15 @@ open class IHttpClientFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Net_Http_IHttpClientFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Net.Http.HttpClient CreateClient(System.String)
 // docid: M:System.Net.Http.IHttpClientFactory.CreateClient(System.String)
     /**
@@ -1303,6 +1375,15 @@ open class IHttpMessageHandlerFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Net_Http_IHttpMessageHandlerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Net.Http.HttpMessageHandler CreateHandler(System.String)
 // docid: M:System.Net.Http.IHttpMessageHandlerFactory.CreateHandler(System.String)
     /**

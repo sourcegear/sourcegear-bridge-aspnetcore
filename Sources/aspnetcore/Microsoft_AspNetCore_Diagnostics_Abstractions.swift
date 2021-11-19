@@ -27,6 +27,15 @@ open class CompilationFailure
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_CompilationFailure_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.String, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Diagnostics.DiagnosticMessage>)
 // docid: M:Microsoft.AspNetCore.Diagnostics.CompilationFailure.#ctor(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Diagnostics.DiagnosticMessage})
     /**
@@ -224,6 +233,15 @@ open class DiagnosticMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_DiagnosticMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.String, System.Int32, System.Int32, System.Int32, System.Int32)
 // docid: M:Microsoft.AspNetCore.Diagnostics.DiagnosticMessage.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
     /**
@@ -436,6 +454,15 @@ open class ErrorContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_ErrorContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.HttpContext, System.Exception)
 // docid: M:Microsoft.AspNetCore.Diagnostics.ErrorContext.#ctor(Microsoft.AspNetCore.Http.HttpContext,System.Exception)
     /**
@@ -529,6 +556,15 @@ open class ICompilationException
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_ICompilationException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Diagnostics.CompilationFailure> get_CompilationFailures()
 // docid: M:Microsoft.AspNetCore.Diagnostics.ICompilationException.get_CompilationFailures
     open func get_CompilationFailures() throws -> Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Diagnostics.CompilationFailure>> {
@@ -574,6 +610,15 @@ open class IDeveloperPageExceptionFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_IDeveloperPageExceptionFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task HandleExceptionAsync(Microsoft.AspNetCore.Diagnostics.ErrorContext, System.Func<Microsoft.AspNetCore.Diagnostics.ErrorContext,System.Threading.Tasks.Task>)
 // docid: M:Microsoft.AspNetCore.Diagnostics.IDeveloperPageExceptionFilter.HandleExceptionAsync(Microsoft.AspNetCore.Diagnostics.ErrorContext,System.Func{Microsoft.AspNetCore.Diagnostics.ErrorContext,System.Threading.Tasks.Task})
     /**
@@ -630,6 +675,15 @@ open class IExceptionHandlerFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_IExceptionHandlerFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Exception get_Error()
 // docid: M:Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature.get_Error
     open func get_Error() throws -> dotnet.System.Exception {
@@ -713,6 +767,15 @@ open class IExceptionHandlerPathFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_IExceptionHandlerPathFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Path()
 // docid: M:Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature.get_Path
     open func get_Path() throws -> dotnet.System.String {
@@ -754,6 +817,15 @@ open class IStatusCodePagesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_IStatusCodePagesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_Enabled()
 // docid: M:Microsoft.AspNetCore.Diagnostics.IStatusCodePagesFeature.get_Enabled
     open func get_Enabled() throws -> Bool {
@@ -808,6 +880,15 @@ open class IStatusCodeReExecuteFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Diagnostics_IStatusCodeReExecuteFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_OriginalPathBase()
 // docid: M:Microsoft.AspNetCore.Diagnostics.IStatusCodeReExecuteFeature.get_OriginalPathBase
     open func get_OriginalPathBase() throws -> dotnet.System.String {

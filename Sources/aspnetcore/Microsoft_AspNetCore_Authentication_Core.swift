@@ -28,6 +28,15 @@ open class AuthenticationFeature
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authentication_AuthenticationFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationFeature.#ctor
     public override init() throws {
@@ -134,6 +143,15 @@ open class AuthenticationHandlerProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authentication_AuthenticationHandlerProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider)
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.#ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider)
     /**
@@ -218,6 +236,15 @@ open class AuthenticationSchemeProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authentication_AuthenticationSchemeProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Authentication.AuthenticationOptions})
     /**
@@ -473,6 +500,15 @@ open class AuthenticationService
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authentication_AuthenticationService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider, Microsoft.AspNetCore.Authentication.IAuthenticationHandlerProvider, Microsoft.AspNetCore.Authentication.IClaimsTransformation, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Authentication.AuthenticationOptions>)
 // docid: M:Microsoft.AspNetCore.Authentication.AuthenticationService.#ctor(Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Authentication.IAuthenticationHandlerProvider,Microsoft.AspNetCore.Authentication.IClaimsTransformation,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Authentication.AuthenticationOptions})
     /**
@@ -715,6 +751,15 @@ open class NoopClaimsTransformation
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authentication_NoopClaimsTransformation_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authentication.NoopClaimsTransformation.#ctor
     public override init() throws {

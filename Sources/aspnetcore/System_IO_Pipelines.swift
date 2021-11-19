@@ -115,6 +115,15 @@ open class IDuplexPipe
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_IDuplexPipe_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.IO.Pipelines.PipeReader get_Input()
 // docid: M:System.IO.Pipelines.IDuplexPipe.get_Input
     open func get_Input() throws -> aspnetcore.System.IO.Pipelines.PipeReader {
@@ -157,6 +166,15 @@ public final class Pipe
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_Pipe_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.IO.Pipelines.Pipe.#ctor
     /**
@@ -263,6 +281,15 @@ open class PipeOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_PipeOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Buffers.MemoryPool<System.Byte>, System.IO.Pipelines.PipeScheduler, System.IO.Pipelines.PipeScheduler, System.Int64, System.Int64, System.Int32, bool)
 // docid: M:System.IO.Pipelines.PipeOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.IO.Pipelines.PipeScheduler,System.IO.Pipelines.PipeScheduler,System.Int64,System.Int64,System.Int32,System.Boolean)
     /**
@@ -465,6 +492,15 @@ open class PipeReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_PipeReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void AdvanceTo(System.SequencePosition)
 // docid: M:System.IO.Pipelines.PipeReader.AdvanceTo(System.SequencePosition)
     /**
@@ -743,6 +779,15 @@ open class PipeScheduler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_PipeScheduler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Schedule(System.Action<System.Object>, System.Object)
 // docid: M:System.IO.Pipelines.PipeScheduler.Schedule(System.Action{System.Object},System.Object)
     /**
@@ -825,6 +870,15 @@ open class PipeWriter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_PipeWriter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Advance(System.Int32)
 // docid: M:System.IO.Pipelines.PipeWriter.Advance(System.Int32)
     /**
@@ -1195,6 +1249,15 @@ open class StreamPipeReaderOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_StreamPipeReaderOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Buffers.MemoryPool<System.Byte>, System.Int32, System.Int32, bool)
 // docid: M:System.IO.Pipelines.StreamPipeReaderOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Int32,System.Boolean)
     /**
@@ -1354,6 +1417,15 @@ open class StreamPipeWriterOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_IO_Pipelines_StreamPipeWriterOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Buffers.MemoryPool<System.Byte>, System.Int32, bool)
 // docid: M:System.IO.Pipelines.StreamPipeWriterOptions.#ctor(System.Buffers.MemoryPool{System.Byte},System.Int32,System.Boolean)
     /**

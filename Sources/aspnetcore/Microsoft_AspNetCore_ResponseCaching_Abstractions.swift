@@ -35,6 +35,15 @@ open class IResponseCachingFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_ResponseCaching_IResponseCachingFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String[] get_VaryByQueryKeys()
 // docid: M:Microsoft.AspNetCore.ResponseCaching.IResponseCachingFeature.get_VaryByQueryKeys
     open func get_VaryByQueryKeys() throws -> Optional<dotnet.System_Arr<dotnet.System.String>> {

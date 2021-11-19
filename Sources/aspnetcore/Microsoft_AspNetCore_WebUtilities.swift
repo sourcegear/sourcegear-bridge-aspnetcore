@@ -75,6 +75,15 @@ open class BufferedReadStream
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_BufferedReadStream_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Stream, System.Int32)
 // docid: M:Microsoft.AspNetCore.WebUtilities.BufferedReadStream.#ctor(System.IO.Stream,System.Int32)
     /**
@@ -524,6 +533,15 @@ open class FileBufferingReadStream
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FileBufferingReadStream_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Stream, System.Int32)
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.#ctor(System.IO.Stream,System.Int32)
     /**
@@ -962,6 +980,15 @@ public final class FileBufferingWriteStream
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FileBufferingWriteStream_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32, System.Nullable<System.Int64>, System.Func<System.String>)
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileBufferingWriteStream.#ctor(System.Int32,System.Nullable{System.Int64},System.Func{System.String})
     /**
@@ -1310,6 +1337,15 @@ open class FileMultipartSection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FileMultipartSection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
 // docid: M:Microsoft.AspNetCore.WebUtilities.FileMultipartSection.#ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
     /**
@@ -1461,6 +1497,15 @@ open class FormMultipartSection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FormMultipartSection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
 // docid: M:Microsoft.AspNetCore.WebUtilities.FormMultipartSection.#ctor(Microsoft.AspNetCore.WebUtilities.MultipartSection)
     /**
@@ -1584,6 +1629,15 @@ open class FormPipeReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FormPipeReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Pipelines.PipeReader)
 // docid: M:Microsoft.AspNetCore.WebUtilities.FormPipeReader.#ctor(System.IO.Pipelines.PipeReader)
     /**
@@ -1772,6 +1826,15 @@ open class FormReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_FormReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.Int32 DefaultValueCountLimit
     /**
     
@@ -2111,6 +2174,15 @@ open class HttpRequestStreamReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_HttpRequestStreamReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Stream, System.Text.Encoding)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpRequestStreamReader.#ctor(System.IO.Stream,System.Text.Encoding)
     /**
@@ -2304,6 +2376,15 @@ open class HttpResponseStreamWriter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_HttpResponseStreamWriter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Stream, System.Text.Encoding)
 // docid: M:Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.#ctor(System.IO.Stream,System.Text.Encoding)
     /**
@@ -2683,6 +2764,15 @@ open class MultipartReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_MultipartReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.Int32 DefaultHeadersCountLimit
     /**
     
@@ -2901,6 +2991,15 @@ open class MultipartSection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_WebUtilities_MultipartSection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.WebUtilities.MultipartSection.#ctor
     public override init() throws {

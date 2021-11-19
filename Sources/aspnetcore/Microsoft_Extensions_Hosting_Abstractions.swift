@@ -69,6 +69,15 @@ open class BackgroundService
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_BackgroundService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Dispose()
 // docid: M:Microsoft.Extensions.Hosting.BackgroundService.Dispose
     open func Dispose() throws {
@@ -230,6 +239,15 @@ open class HostBuilderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_HostBuilderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IDictionary<System.Object,System.Object>)
 // docid: M:Microsoft.Extensions.Hosting.HostBuilderContext.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})
     public init(properties : Optional<dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.Object,dotnet.System.Object>>) throws {
@@ -791,6 +809,15 @@ open class IApplicationLifetime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IApplicationLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void StopApplication()
 // docid: M:Microsoft.Extensions.Hosting.IApplicationLifetime.StopApplication
     /**
@@ -872,6 +899,15 @@ open class IHost
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHost_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task StartAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.Extensions.Hosting.IHost.StartAsync(System.Threading.CancellationToken)
     /**
@@ -965,6 +1001,15 @@ open class IHostApplicationLifetime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostApplicationLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void StopApplication()
 // docid: M:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication
     /**
@@ -1045,6 +1090,15 @@ open class IHostBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Hosting.IHost Build()
 // docid: M:Microsoft.Extensions.Hosting.IHostBuilder.Build
     /**
@@ -1288,6 +1342,15 @@ open class IHostEnvironment
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostEnvironment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_ApplicationName()
 // docid: M:Microsoft.Extensions.Hosting.IHostEnvironment.get_ApplicationName
     open func get_ApplicationName() throws -> Optional<dotnet.System.String> {
@@ -1416,6 +1479,15 @@ open class IHostLifetime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task StopAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.Extensions.Hosting.IHostLifetime.StopAsync(System.Threading.CancellationToken)
     /**
@@ -1495,6 +1567,15 @@ open class IHostedService
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostedService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task StartAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
     /**
@@ -1573,6 +1654,15 @@ open class IHostingEnvironment
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_IHostingEnvironment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_ApplicationName()
 // docid: M:Microsoft.Extensions.Hosting.IHostingEnvironment.get_ApplicationName
     open func get_ApplicationName() throws -> Optional<dotnet.System.String> {

@@ -20,6 +20,15 @@ open class EntryWrittenEventArgs
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EntryWrittenEventArgs_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.EntryWrittenEventArgs.#ctor
     public override init() throws {
@@ -182,6 +191,15 @@ open class EventInstance
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventInstance_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int64, System.Int32)
 // docid: M:System.Diagnostics.EventInstance.#ctor(System.Int64,System.Int32)
     public init(instanceId : Swift.Int64, categoryId : Swift.Int32) throws {
@@ -311,6 +329,15 @@ open class EventLog
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventLog_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.EventLog.#ctor
     public override init() throws {
@@ -1058,6 +1085,15 @@ public final class EventLogEntry
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventLogEntry_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool Equals(System.Diagnostics.EventLogEntry)
 // docid: M:System.Diagnostics.EventLogEntry.Equals(System.Diagnostics.EventLogEntry)
     public func Equals(otherEntry : Optional<aspnetcore.System.Diagnostics.EventLogEntry>) throws -> Bool {
@@ -1339,6 +1375,15 @@ open class EventLogEntryCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventLogEntryCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void CopyTo(System.Diagnostics.EventLogEntry[], System.Int32)
 // docid: M:System.Diagnostics.EventLogEntryCollection.CopyTo(System.Diagnostics.EventLogEntry[],System.Int32)
     open func CopyTo(entries : Optional<dotnet.System_Arr<aspnetcore.System.Diagnostics.EventLogEntry>>, index : Swift.Int32) throws {
@@ -1461,6 +1506,15 @@ public final class EventLogTraceListener
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventLogTraceListener_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.EventLogTraceListener.#ctor
     public init() throws {
@@ -1648,6 +1702,15 @@ open class EventSourceCreationData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_EventSourceCreationData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:System.Diagnostics.EventSourceCreationData.#ctor(System.String,System.String)
     public init(source : Optional<dotnet.System.String>, logName : Optional<dotnet.System.String>) throws {
@@ -1948,6 +2011,15 @@ open class EventBookmark
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventBookmark_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // EventBookmark
 
 
@@ -1964,6 +2036,15 @@ public final class EventKeyword
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventKeyword_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventKeyword.get_DisplayName
     public func get_DisplayName() throws -> Optional<dotnet.System.String> {
@@ -2036,6 +2117,15 @@ public final class EventLevel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLevel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLevel.get_DisplayName
     public func get_DisplayName() throws -> Optional<dotnet.System.String> {
@@ -2109,6 +2199,15 @@ open class EventLogConfiguration
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogConfiguration_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String)
     public init(logName : Optional<dotnet.System.String>) throws {
@@ -2575,6 +2674,15 @@ open class EventLogException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogException.#ctor
     public override init() throws {
@@ -2651,6 +2759,15 @@ public final class EventLogInformation
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogInformation_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Nullable<System.Int32> get_Attributes()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogInformation.get_Attributes
     public func get_Attributes() throws -> Optional<Swift.Int32> {
@@ -2795,6 +2912,15 @@ open class EventLogInvalidDataException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogInvalidDataException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException.#ctor
     public override init() throws {
@@ -2879,6 +3005,15 @@ public final class EventLogLink
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogLink_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogLink.get_DisplayName
     public func get_DisplayName() throws -> Optional<dotnet.System.String> {
@@ -2986,6 +3121,15 @@ open class EventLogNotFoundException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogNotFoundException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor
     public override init() throws {
@@ -3036,6 +3180,15 @@ open class EventLogPropertySelector
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogPropertySelector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogPropertySelector.#ctor(System.Collections.Generic.IEnumerable{System.String})
     public init(propertyQueries : Optional<dotnet.System.Collections.Generic.IEnumerable_1<dotnet.System.String>>) throws {
@@ -3074,6 +3227,15 @@ open class EventLogProviderDisabledException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogProviderDisabledException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor
     public override init() throws {
@@ -3123,6 +3285,15 @@ open class EventLogQuery
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogQuery_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Diagnostics.Eventing.Reader.PathType)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogQuery.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)
     public init(path : Optional<dotnet.System.String>, pathType : aspnetcore.System.Diagnostics.Eventing.Reader.PathType) throws {
@@ -3256,6 +3427,15 @@ open class EventLogReader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogReader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
     public init(eventQuery : Optional<aspnetcore.System.Diagnostics.Eventing.Reader.EventLogQuery>) throws {
@@ -3451,6 +3631,15 @@ open class EventLogReadingException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogReadingException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogReadingException.#ctor
     public override init() throws {
@@ -3500,6 +3689,15 @@ open class EventLogRecord
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogRecord_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String FormatDescription()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription
     open override func FormatDescription() throws -> Optional<dotnet.System.String> {
@@ -3989,6 +4187,15 @@ open class EventLogSession
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogSession_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor
     public override init() throws {
@@ -4191,6 +4398,15 @@ public final class EventLogStatus
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogStatus_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_LogName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogStatus.get_LogName
     public func get_LogName() throws -> Optional<dotnet.System.String> {
@@ -4286,6 +4502,15 @@ open class EventLogWatcher
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventLogWatcher_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
 // docid: M:System.Diagnostics.Eventing.Reader.EventLogWatcher.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
     public init(eventQuery : Optional<aspnetcore.System.Diagnostics.Eventing.Reader.EventLogQuery>) throws {
@@ -4419,6 +4644,15 @@ public final class EventMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Description()
 // docid: M:System.Diagnostics.Eventing.Reader.EventMetadata.get_Description
     public func get_Description() throws -> Optional<dotnet.System.String> {
@@ -4607,6 +4841,15 @@ public final class EventOpcode
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventOpcode_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventOpcode.get_DisplayName
     public func get_DisplayName() throws -> Optional<dotnet.System.String> {
@@ -4679,6 +4922,15 @@ public final class EventProperty
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventProperty_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Object get_Value()
 // docid: M:System.Diagnostics.Eventing.Reader.EventProperty.get_Value
     public func get_Value() throws -> Optional<dotnet.System.Object> {
@@ -4716,6 +4968,15 @@ open class EventRecord
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventRecord_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Dispose()
 // docid: M:System.Diagnostics.Eventing.Reader.EventRecord.Dispose
     open /* method final */ func Dispose() throws {
@@ -5212,6 +5473,15 @@ public final class EventRecordWrittenEventArgs
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventRecordWrittenEventArgs_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Exception get_EventException()
 // docid: M:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs.get_EventException
     public func get_EventException() throws -> Optional<dotnet.System.Exception> {
@@ -5268,6 +5538,15 @@ public final class EventTask
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_EventTask_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:System.Diagnostics.Eventing.Reader.EventTask.get_DisplayName
     public func get_DisplayName() throws -> Optional<dotnet.System.String> {
@@ -5385,6 +5664,15 @@ open class ProviderMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = System_Diagnostics_Eventing_Reader_ProviderMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String)
     public init(providerName : Optional<dotnet.System.String>) throws {

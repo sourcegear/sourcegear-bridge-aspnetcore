@@ -27,6 +27,15 @@ open class CookieOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_CookieOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Http.CookieOptions.#ctor
     /**
@@ -372,6 +381,15 @@ open class IFormCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IFormCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool ContainsKey(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IFormCollection.ContainsKey(System.String)
     /**
@@ -506,6 +524,15 @@ open class IFormFile
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IFormFile_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.IO.Stream OpenReadStream()
 // docid: M:Microsoft.AspNetCore.Http.IFormFile.OpenReadStream
     /**
@@ -659,6 +686,15 @@ open class IFormFileCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IFormFileCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Http.IFormFile GetFile(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IFormFileCollection.GetFile(System.String)
     /**
@@ -758,6 +794,15 @@ open class IHeaderDictionary
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IHeaderDictionary_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Nullable<System.Int64> get_ContentLength()
 // docid: M:Microsoft.AspNetCore.Http.IHeaderDictionary.get_ContentLength
     open func get_ContentLength() throws -> Optional<Swift.Int64> {
@@ -2791,6 +2836,15 @@ open class IQueryCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IQueryCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool ContainsKey(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IQueryCollection.ContainsKey(System.String)
     /**
@@ -2915,6 +2969,15 @@ open class IRequestCookieCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IRequestCookieCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool ContainsKey(System.String)
 // docid: M:Microsoft.AspNetCore.Http.IRequestCookieCollection.ContainsKey(System.String)
     /**
@@ -3043,6 +3106,15 @@ open class IResponseCookies
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_IResponseCookies_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Append(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Http.IResponseCookies.Append(System.String,System.String)
     /**
@@ -3154,6 +3226,15 @@ open class ISession
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_ISession_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task LoadAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Http.ISession.LoadAsync(System.Threading.CancellationToken)
     /**
@@ -3393,6 +3474,15 @@ open class WebSocketAcceptContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_WebSocketAcceptContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Http.WebSocketAcceptContext.#ctor
     public override init() throws {
@@ -3687,6 +3777,15 @@ open class IBadRequestExceptionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IBadRequestExceptionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Exception get_Error()
 // docid: M:Microsoft.AspNetCore.Http.Features.IBadRequestExceptionFeature.get_Error
     open func get_Error() throws -> Optional<dotnet.System.Exception> {
@@ -3732,6 +3831,15 @@ open class IFormFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IFormFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Http.IFormCollection ReadForm()
 // docid: M:Microsoft.AspNetCore.Http.Features.IFormFeature.ReadForm
     /**
@@ -3843,6 +3951,15 @@ open class IHttpBodyControlFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpBodyControlFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_AllowSynchronousIO()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpBodyControlFeature.get_AllowSynchronousIO
     open func get_AllowSynchronousIO() throws -> Bool {
@@ -3895,6 +4012,15 @@ open class IHttpConnectionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpConnectionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_ConnectionId()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpConnectionFeature.get_ConnectionId
     open func get_ConnectionId() throws -> dotnet.System.String {
@@ -4043,6 +4169,15 @@ open class IHttpMaxRequestBodySizeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpMaxRequestBodySizeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_IsReadOnly()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpMaxRequestBodySizeFeature.get_IsReadOnly
     open func get_IsReadOnly() throws -> Bool {
@@ -4106,6 +4241,15 @@ open class IHttpRequestBodyDetectionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpRequestBodyDetectionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_CanHaveBody()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpRequestBodyDetectionFeature.get_CanHaveBody
     open func get_CanHaveBody() throws -> Bool {
@@ -4148,6 +4292,15 @@ open class IHttpRequestFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpRequestFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Protocol()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpRequestFeature.get_Protocol
     open func get_Protocol() throws -> dotnet.System.String {
@@ -4376,6 +4529,15 @@ open class IHttpRequestIdentifierFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpRequestIdentifierFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_TraceIdentifier()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpRequestIdentifierFeature.get_TraceIdentifier
     open func get_TraceIdentifier() throws -> dotnet.System.String {
@@ -4428,6 +4590,15 @@ open class IHttpRequestLifetimeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpRequestLifetimeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpRequestLifetimeFeature.Abort
     /**
@@ -4498,6 +4669,15 @@ open class IHttpRequestTrailersFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpRequestTrailersFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_Available()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpRequestTrailersFeature.get_Available
     open func get_Available() throws -> Bool {
@@ -4550,6 +4730,15 @@ open class IHttpResetFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpResetFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Reset(System.Int32)
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpResetFeature.Reset(System.Int32)
     /**
@@ -4598,6 +4787,15 @@ open class IHttpResponseBodyFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpResponseBodyFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void DisableBuffering()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpResponseBodyFeature.DisableBuffering
     /**
@@ -4727,6 +4925,15 @@ open class IHttpResponseFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpResponseFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnStarting(System.Func<System.Object,System.Threading.Tasks.Task>, System.Object)
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.OnStarting(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)
     /**
@@ -4917,6 +5124,15 @@ open class IHttpResponseTrailersFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpResponseTrailersFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IHeaderDictionary get_Trailers()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpResponseTrailersFeature.get_Trailers
     open func get_Trailers() throws -> aspnetcore.Microsoft.AspNetCore.Http.IHeaderDictionary {
@@ -4969,6 +5185,15 @@ open class IHttpUpgradeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpUpgradeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.IO.Stream> UpgradeAsync()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpUpgradeFeature.UpgradeAsync
     /**
@@ -5031,6 +5256,15 @@ open class IHttpWebSocketFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpWebSocketFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Net.WebSockets.WebSocket> AcceptAsync(Microsoft.AspNetCore.Http.WebSocketAcceptContext)
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpWebSocketFeature.AcceptAsync(Microsoft.AspNetCore.Http.WebSocketAcceptContext)
     /**
@@ -5093,6 +5327,15 @@ open class IHttpsCompressionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IHttpsCompressionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.Features.HttpsCompressionMode get_Mode()
 // docid: M:Microsoft.AspNetCore.Http.Features.IHttpsCompressionFeature.get_Mode
     open func get_Mode() throws -> aspnetcore.Microsoft.AspNetCore.Http.Features.HttpsCompressionMode {
@@ -5145,6 +5388,15 @@ open class IItemsFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IItemsFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IDictionary<System.Object,System.Object> get_Items()
 // docid: M:Microsoft.AspNetCore.Http.Features.IItemsFeature.get_Items
     open func get_Items() throws -> dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.Object,dotnet.System.Object> {
@@ -5197,6 +5449,15 @@ open class IQueryFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IQueryFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IQueryCollection get_Query()
 // docid: M:Microsoft.AspNetCore.Http.Features.IQueryFeature.get_Query
     open func get_Query() throws -> aspnetcore.Microsoft.AspNetCore.Http.IQueryCollection {
@@ -5249,6 +5510,15 @@ open class IRequestBodyPipeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IRequestBodyPipeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.IO.Pipelines.PipeReader get_Reader()
 // docid: M:Microsoft.AspNetCore.Http.Features.IRequestBodyPipeFeature.get_Reader
     open func get_Reader() throws -> aspnetcore.System.IO.Pipelines.PipeReader {
@@ -5290,6 +5560,15 @@ open class IRequestCookiesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IRequestCookiesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IRequestCookieCollection get_Cookies()
 // docid: M:Microsoft.AspNetCore.Http.Features.IRequestCookiesFeature.get_Cookies
     open func get_Cookies() throws -> aspnetcore.Microsoft.AspNetCore.Http.IRequestCookieCollection {
@@ -5342,6 +5621,15 @@ open class IResponseCookiesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IResponseCookiesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.IResponseCookies get_Cookies()
 // docid: M:Microsoft.AspNetCore.Http.Features.IResponseCookiesFeature.get_Cookies
     open func get_Cookies() throws -> aspnetcore.Microsoft.AspNetCore.Http.IResponseCookies {
@@ -5383,6 +5671,15 @@ open class IServerVariablesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IServerVariablesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Item(System.String)
 // docid: M:Microsoft.AspNetCore.Http.Features.IServerVariablesFeature.get_Item(System.String)
     open func get_Item(variableName : dotnet.System.String) throws -> Optional<dotnet.System.String> {
@@ -5439,6 +5736,15 @@ open class IServiceProvidersFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_IServiceProvidersFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.IServiceProvider get_RequestServices()
 // docid: M:Microsoft.AspNetCore.Http.Features.IServiceProvidersFeature.get_RequestServices
     open func get_RequestServices() throws -> dotnet.System.IServiceProvider {
@@ -5491,6 +5797,15 @@ open class ISessionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_ISessionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.ISession get_Session()
 // docid: M:Microsoft.AspNetCore.Http.Features.ISessionFeature.get_Session
     open func get_Session() throws -> aspnetcore.Microsoft.AspNetCore.Http.ISession {
@@ -5543,6 +5858,15 @@ open class ITlsConnectionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_ITlsConnectionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Security.Cryptography.X509Certificates.X509Certificate2> GetClientCertificateAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Http.Features.ITlsConnectionFeature.GetClientCertificateAsync(System.Threading.CancellationToken)
     /**
@@ -5616,6 +5940,15 @@ open class ITlsTokenBindingFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_ITlsTokenBindingFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Byte[] GetProvidedTokenBindingId()
 // docid: M:Microsoft.AspNetCore.Http.Features.ITlsTokenBindingFeature.GetProvidedTokenBindingId
     /**
@@ -5691,6 +6024,15 @@ open class ITrackingConsentFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_ITrackingConsentFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void GrantConsent()
 // docid: M:Microsoft.AspNetCore.Http.Features.ITrackingConsentFeature.GrantConsent
     /**
@@ -5810,6 +6152,15 @@ open class IHttpAuthenticationFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Http_Features_Authentication_IHttpAuthenticationFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Security.Claims.ClaimsPrincipal get_User()
 // docid: M:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature.get_User
     open func get_User() throws -> Optional<dotnet.System.Security.Claims.ClaimsPrincipal> {

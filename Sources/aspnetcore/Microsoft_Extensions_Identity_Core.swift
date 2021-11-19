@@ -27,6 +27,15 @@ open class AuthenticatorTokenProvider_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_AuthenticatorTokenProvider_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.AuthenticatorTokenProvider`1.#ctor
     public override init() throws {
@@ -138,6 +147,15 @@ open class ClaimsIdentityOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_ClaimsIdentityOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.ClaimsIdentityOptions.#ctor
     public override init() throws {
@@ -373,6 +391,15 @@ open class DefaultPersonalDataProtector
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_DefaultPersonalDataProtector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.ILookupProtectorKeyRing, Microsoft.AspNetCore.Identity.ILookupProtector)
 // docid: M:Microsoft.AspNetCore.Identity.DefaultPersonalDataProtector.#ctor(Microsoft.AspNetCore.Identity.ILookupProtectorKeyRing,Microsoft.AspNetCore.Identity.ILookupProtector)
     /**
@@ -462,6 +489,15 @@ open class DefaultUserConfirmation_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_DefaultUserConfirmation_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.DefaultUserConfirmation`1.#ctor
     public override init() throws {
@@ -520,6 +556,15 @@ open class EmailTokenProvider_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_EmailTokenProvider_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.EmailTokenProvider`1.#ctor
     public init() throws {
@@ -612,6 +657,15 @@ open class ILookupNormalizer
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_ILookupNormalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String NormalizeName(System.String)
 // docid: M:Microsoft.AspNetCore.Identity.ILookupNormalizer.NormalizeName(System.String)
     /**
@@ -690,6 +744,15 @@ open class ILookupProtector
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_ILookupProtector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String Protect(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Identity.ILookupProtector.Protect(System.String,System.String)
     /**
@@ -770,6 +833,15 @@ open class ILookupProtectorKeyRing
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_ILookupProtectorKeyRing_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IEnumerable<System.String> GetAllKeyIds()
 // docid: M:Microsoft.AspNetCore.Identity.ILookupProtectorKeyRing.GetAllKeyIds
     /**
@@ -854,6 +926,15 @@ open class IPasswordHasher_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IPasswordHasher_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String HashPassword(TUser, System.String)
 // docid: M:Microsoft.AspNetCore.Identity.IPasswordHasher`1.HashPassword(`0,System.String)
     /**
@@ -932,6 +1013,15 @@ open class IPasswordValidator_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IPasswordValidator_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult> ValidateAsync(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser, System.String)
 // docid: M:Microsoft.AspNetCore.Identity.IPasswordValidator`1.ValidateAsync(Microsoft.AspNetCore.Identity.UserManager{`0},`0,System.String)
     /**
@@ -988,6 +1078,15 @@ open class IPersonalDataProtector
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IPersonalDataProtector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String Protect(System.String)
 // docid: M:Microsoft.AspNetCore.Identity.IPersonalDataProtector.Protect(System.String)
     /**
@@ -1068,6 +1167,15 @@ open class IProtectedUserStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IProtectedUserStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IProtectedUserStore_1
 
 
@@ -1100,6 +1208,15 @@ open class IQueryableRoleStore_1<TRole : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IQueryableRoleStore_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Linq.IQueryable<TRole> get_Roles()
 // docid: M:Microsoft.AspNetCore.Identity.IQueryableRoleStore`1.get_Roles
     open func get_Roles() throws -> Optional<dotnet.System.Linq.IQueryable_1<TRole>> {
@@ -1147,6 +1264,15 @@ open class IQueryableUserStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IQueryableUserStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Linq.IQueryable<TUser> get_Users()
 // docid: M:Microsoft.AspNetCore.Identity.IQueryableUserStore`1.get_Users
     open func get_Users() throws -> Optional<dotnet.System.Linq.IQueryable_1<TUser>> {
@@ -1194,6 +1320,15 @@ open class IRoleClaimStore_1<TRole : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IRoleClaimStore_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Collections.Generic.IList<System.Security.Claims.Claim>> GetClaimsAsync(TRole, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IRoleClaimStore`1.GetClaimsAsync(`0,System.Threading.CancellationToken)
     /**
@@ -1305,6 +1440,15 @@ open class IRoleStore_1<TRole : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IRoleStore_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult> CreateAsync(TRole, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IRoleStore`1.CreateAsync(`0,System.Threading.CancellationToken)
     /**
@@ -1588,6 +1732,15 @@ open class IRoleValidator_1<TRole : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IRoleValidator_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult> ValidateAsync(Microsoft.AspNetCore.Identity.RoleManager<TRole>, TRole)
 // docid: M:Microsoft.AspNetCore.Identity.IRoleValidator`1.ValidateAsync(Microsoft.AspNetCore.Identity.RoleManager{`0},`0)
     /**
@@ -1645,6 +1798,15 @@ open class IUserAuthenticationTokenStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserAuthenticationTokenStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetTokenAsync(TUser, System.String, System.String, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore`1.SetTokenAsync(`0,System.String,System.String,System.String,System.Threading.CancellationToken)
     /**
@@ -1759,6 +1921,15 @@ open class IUserAuthenticatorKeyStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserAuthenticatorKeyStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetAuthenticatorKeyAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore`1.SetAuthenticatorKeyAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -1842,6 +2013,15 @@ open class IUserClaimStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserClaimStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Collections.Generic.IList<System.Security.Claims.Claim>> GetClaimsAsync(TUser, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserClaimStore`1.GetClaimsAsync(`0,System.Threading.CancellationToken)
     /**
@@ -2007,6 +2187,15 @@ open class IUserClaimsPrincipalFactory_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserClaimsPrincipalFactory_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Security.Claims.ClaimsPrincipal> CreateAsync(TUser)
 // docid: M:Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory`1.CreateAsync(`0)
     /**
@@ -2062,6 +2251,15 @@ open class IUserConfirmation_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserConfirmation_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<bool> IsConfirmedAsync(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser)
 // docid: M:Microsoft.AspNetCore.Identity.IUserConfirmation`1.IsConfirmedAsync(Microsoft.AspNetCore.Identity.UserManager{`0},`0)
     /**
@@ -2119,6 +2317,15 @@ open class IUserEmailStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserEmailStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetEmailAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserEmailStore`1.SetEmailAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -2338,6 +2545,15 @@ open class IUserLockoutStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserLockoutStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (returns closedgeneric of nullable): System.Threading.Tasks.Task<System.Nullable<System.DateTimeOffset>> GetLockoutEndDateAsync(TUser, System.Threading.CancellationToken)
     // System.Threading.Tasks.Task SetLockoutEndDateAsync(TUser, System.Nullable<System.DateTimeOffset>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserLockoutStore`1.SetLockoutEndDateAsync(`0,System.Nullable{System.DateTimeOffset},System.Threading.CancellationToken)
@@ -2526,6 +2742,15 @@ open class IUserLoginStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserLoginStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task AddLoginAsync(TUser, Microsoft.AspNetCore.Identity.UserLoginInfo, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserLoginStore`1.AddLoginAsync(`0,Microsoft.AspNetCore.Identity.UserLoginInfo,System.Threading.CancellationToken)
     /**
@@ -2667,6 +2892,15 @@ open class IUserPasswordStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserPasswordStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetPasswordHashAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserPasswordStore`1.SetPasswordHashAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -2778,6 +3012,15 @@ open class IUserPhoneNumberStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserPhoneNumberStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetPhoneNumberAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserPhoneNumberStore`1.SetPhoneNumberAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -2915,6 +3158,15 @@ open class IUserRoleStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserRoleStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task AddToRoleAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserRoleStore`1.AddToRoleAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -3080,6 +3332,15 @@ open class IUserSecurityStampStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserSecurityStampStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetSecurityStampAsync(TUser, System.String, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserSecurityStampStore`1.SetSecurityStampAsync(`0,System.String,System.Threading.CancellationToken)
     /**
@@ -3163,6 +3424,15 @@ open class IUserStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.String> GetUserIdAsync(TUser, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserStore`1.GetUserIdAsync(`0,System.Threading.CancellationToken)
     /**
@@ -3451,6 +3721,15 @@ open class IUserTwoFactorRecoveryCodeStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserTwoFactorRecoveryCodeStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task ReplaceCodesAsync(TUser, System.Collections.Generic.IEnumerable<System.String>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserTwoFactorRecoveryCodeStore`1.ReplaceCodesAsync(`0,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
     /**
@@ -3561,6 +3840,15 @@ open class IUserTwoFactorStore_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserTwoFactorStore_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SetTwoFactorEnabledAsync(TUser, bool, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Identity.IUserTwoFactorStore`1.SetTwoFactorEnabledAsync(`0,System.Boolean,System.Threading.CancellationToken)
     /**
@@ -3648,6 +3936,15 @@ open class IUserTwoFactorTokenProvider_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserTwoFactorTokenProvider_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.String> GenerateAsync(System.String, Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser)
 // docid: M:Microsoft.AspNetCore.Identity.IUserTwoFactorTokenProvider`1.GenerateAsync(System.String,Microsoft.AspNetCore.Identity.UserManager{`0},`0)
     /**
@@ -3770,6 +4067,15 @@ open class IUserValidator_1<TUser : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IUserValidator_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Identity.IdentityResult> ValidateAsync(Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser)
 // docid: M:Microsoft.AspNetCore.Identity.IUserValidator`1.ValidateAsync(Microsoft.AspNetCore.Identity.UserManager{`0},`0)
     /**
@@ -3817,6 +4123,15 @@ open class IdentityBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type, Microsoft.Extensions.DependencyInjection.IServiceCollection)
 // docid: M:Microsoft.AspNetCore.Identity.IdentityBuilder.#ctor(System.Type,Microsoft.Extensions.DependencyInjection.IServiceCollection)
     /**
@@ -3994,6 +4309,15 @@ open class IdentityError
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityError_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityError.#ctor
     public override init() throws {
@@ -4107,6 +4431,15 @@ open class IdentityErrorDescriber
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityErrorDescriber_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.#ctor
     public override init() throws {
@@ -4656,6 +4989,15 @@ open class IdentityOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityOptions.#ctor
     public override init() throws {
@@ -4969,6 +5311,15 @@ open class IdentityResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityResult.#ctor
     public override init() throws {
@@ -5138,6 +5489,15 @@ open class LockoutOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_LockoutOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.LockoutOptions.#ctor
     public override init() throws {
@@ -5326,6 +5686,15 @@ open class PasswordHasherOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PasswordHasherOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.PasswordHasherOptions.#ctor
     public override init() throws {
@@ -5431,6 +5800,15 @@ open class PasswordHasher_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PasswordHasher_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.PasswordHasherOptions>)
 // docid: M:Microsoft.AspNetCore.Identity.PasswordHasher`1.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.PasswordHasherOptions})
     /**
@@ -5518,6 +5896,15 @@ open class PasswordOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PasswordOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.PasswordOptions.#ctor
     public override init() throws {
@@ -5767,6 +6154,15 @@ open class PasswordValidator_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PasswordValidator_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.PasswordValidator`1.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**
@@ -5999,6 +6395,15 @@ open class PersonalDataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PersonalDataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.PersonalDataAttribute.#ctor
     public init() throws {
@@ -6033,6 +6438,15 @@ open class PhoneNumberTokenProvider_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_PhoneNumberTokenProvider_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.PhoneNumberTokenProvider`1.#ctor
     public init() throws {
@@ -6126,6 +6540,15 @@ open class ProtectedPersonalDataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_ProtectedPersonalDataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.ProtectedPersonalDataAttribute.#ctor
     public override init() throws {
@@ -6160,6 +6583,15 @@ open class RoleManager_1<TRole : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_RoleManager_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IRoleStore<TRole>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Identity.IRoleValidator<TRole>>, Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.RoleManager<TRole>>)
 // docid: M:Microsoft.AspNetCore.Identity.RoleManager`1.#ctor(Microsoft.AspNetCore.Identity.IRoleStore{`0},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{`0}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{`0}})
     /**
@@ -6811,6 +7243,15 @@ open class RoleValidator_1<TRole : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_RoleValidator_1_cast(TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.RoleValidator`1.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**
@@ -6876,6 +7317,15 @@ open class SignInOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_SignInOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.SignInOptions.#ctor
     public override init() throws {
@@ -7017,6 +7467,15 @@ open class SignInResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_SignInResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.SignInResult.#ctor
     public override init() throws {
@@ -7350,6 +7809,15 @@ open class StoreOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_StoreOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.StoreOptions.#ctor
     public override init() throws {
@@ -7457,6 +7925,15 @@ open class TokenOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_TokenOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String DefaultProvider
     /**
     
@@ -7826,6 +8303,15 @@ open class TokenProviderDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_TokenProviderDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type)
 // docid: M:Microsoft.AspNetCore.Identity.TokenProviderDescriptor.#ctor(System.Type)
     /**
@@ -7932,6 +8418,15 @@ open class TotpSecurityStampBasedTokenProvider_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_TotpSecurityStampBasedTokenProvider_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.String> GenerateAsync(System.String, Microsoft.AspNetCore.Identity.UserManager<TUser>, TUser)
 // docid: M:Microsoft.AspNetCore.Identity.TotpSecurityStampBasedTokenProvider`1.GenerateAsync(System.String,Microsoft.AspNetCore.Identity.UserManager{`0},`0)
     /**
@@ -8075,6 +8570,15 @@ public final class UpperInvariantLookupNormalizer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UpperInvariantLookupNormalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.UpperInvariantLookupNormalizer.#ctor
     public override init() throws {
@@ -8156,6 +8660,15 @@ open class UserClaimsPrincipalFactory_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.UserManager<TUser>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>)
 // docid: M:Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`1.#ctor(Microsoft.AspNetCore.Identity.UserManager{`0},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions})
     /**
@@ -8273,6 +8786,15 @@ open class UserClaimsPrincipalFactory_2<TUser : SGBridgeGenericValue,TRole : SGB
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserClaimsPrincipalFactory_2_cast(TUser.get_type_handle(),TRole.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.UserManager<TUser>, Microsoft.AspNetCore.Identity.RoleManager<TRole>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Identity.IdentityOptions>)
 // docid: M:Microsoft.AspNetCore.Identity.UserClaimsPrincipalFactory`2.#ctor(Microsoft.AspNetCore.Identity.UserManager{`0},Microsoft.AspNetCore.Identity.RoleManager{`1},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions})
     /**
@@ -8341,6 +8863,15 @@ open class UserLoginInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserLoginInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Identity.UserLoginInfo.#ctor(System.String,System.String,System.String)
     /**
@@ -8504,6 +9035,15 @@ open class UserManager_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserManager_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String ResetPasswordTokenPurpose
     /**
     
@@ -11413,6 +11953,15 @@ open class UserOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.UserOptions.#ctor
     public override init() throws {
@@ -11522,6 +12071,15 @@ open class UserValidator_1<TUser : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserValidator_1_cast(TUser.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.UserValidator`1.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**

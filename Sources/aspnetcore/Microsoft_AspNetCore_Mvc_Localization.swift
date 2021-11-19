@@ -30,6 +30,15 @@ open class HtmlLocalizer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Localization.IStringLocalizer)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer.#ctor(Microsoft.Extensions.Localization.IStringLocalizer)
     /**
@@ -201,6 +210,15 @@ open class HtmlLocalizerFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizerFactory.#ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory)
     /**
@@ -284,6 +302,15 @@ open class HtmlLocalizer_1<TResource : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_HtmlLocalizer_1_cast(TResource.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.HtmlLocalizer`1.#ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory)
     /**
@@ -394,6 +421,15 @@ open class IHtmlLocalizer
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Localization.LocalizedString GetString(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer.GetString(System.String)
     /**
@@ -509,6 +545,15 @@ open class IHtmlLocalizerFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizer Create(System.Type)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory.Create(System.Type)
     /**
@@ -583,6 +628,15 @@ open class IHtmlLocalizer_1<TResource : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_IHtmlLocalizer_1_cast(TResource.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IHtmlLocalizer_1
 
 
@@ -614,6 +668,15 @@ open class IViewLocalizer
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_IViewLocalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IViewLocalizer
 
 
@@ -637,6 +700,15 @@ open class LocalizedHtmlString
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_LocalizedHtmlString_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString.#ctor(System.String,System.String)
     /**
@@ -802,6 +874,15 @@ open class ViewLocalizer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Localization_ViewLocalizer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
 // docid: M:Microsoft.AspNetCore.Mvc.Localization.ViewLocalizer.#ctor(Microsoft.AspNetCore.Mvc.Localization.IHtmlLocalizerFactory,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
     /**

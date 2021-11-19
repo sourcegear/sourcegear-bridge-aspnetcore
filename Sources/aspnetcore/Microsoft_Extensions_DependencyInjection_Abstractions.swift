@@ -104,6 +104,15 @@ open class ActivatorUtilitiesConstructorAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_ActivatorUtilitiesConstructorAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute.#ctor
     public init() throws {
@@ -241,6 +250,15 @@ open class IServiceCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IServiceCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IServiceCollection
 
 
@@ -272,6 +290,15 @@ open class IServiceProviderFactory_1<TContainerBuilder : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1_cast(TContainerBuilder.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TContainerBuilder CreateBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
 // docid: M:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1.CreateBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection)
     /**
@@ -342,6 +369,15 @@ open class IServiceProviderIsService
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IServiceProviderIsService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool IsService(System.Type)
 // docid: M:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService.IsService(System.Type)
     /**
@@ -396,6 +432,15 @@ open class IServiceScope
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IServiceScope_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.IServiceProvider get_ServiceProvider()
 // docid: M:Microsoft.Extensions.DependencyInjection.IServiceScope.get_ServiceProvider
     open func get_ServiceProvider() throws -> dotnet.System.IServiceProvider {
@@ -438,6 +483,15 @@ open class IServiceScopeFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_IServiceScopeFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.DependencyInjection.IServiceScope CreateScope()
 // docid: M:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope
     /**
@@ -495,6 +549,15 @@ open class ISupportRequiredService
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_ISupportRequiredService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Object GetRequiredService(System.Type)
 // docid: M:Microsoft.Extensions.DependencyInjection.ISupportRequiredService.GetRequiredService(System.Type)
     /**
@@ -653,6 +716,15 @@ open class ServiceCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_ServiceCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.DependencyInjection.ServiceCollection.#ctor
     public override init() throws {
@@ -1218,6 +1290,15 @@ open class ServiceDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_DependencyInjection_ServiceDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type, System.Func<System.IServiceProvider,System.Object>, Microsoft.Extensions.DependencyInjection.ServiceLifetime)
 // docid: M:Microsoft.Extensions.DependencyInjection.ServiceDescriptor.#ctor(System.Type,System.Func{System.IServiceProvider,System.Object},Microsoft.Extensions.DependencyInjection.ServiceLifetime)
     /**

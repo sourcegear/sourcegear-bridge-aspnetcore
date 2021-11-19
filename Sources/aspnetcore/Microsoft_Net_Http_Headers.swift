@@ -28,6 +28,15 @@ open class CacheControlHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_CacheControlHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String PublicString
     /**
     
@@ -882,6 +891,15 @@ open class ContentDispositionHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_ContentDispositionHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -1400,6 +1418,15 @@ open class ContentRangeHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_ContentRangeHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int64, System.Int64, System.Int64)
 // docid: M:Microsoft.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64,System.Int64,System.Int64)
     /**
@@ -1708,6 +1735,15 @@ open class CookieHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_CookieHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.CookieHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -2013,6 +2049,15 @@ open class EntityTagHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_EntityTagHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.EntityTagHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -3711,6 +3756,15 @@ open class MediaTypeHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_MediaTypeHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.MediaTypeHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -4452,6 +4506,15 @@ open class MediaTypeHeaderValueComparer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_MediaTypeHeaderValueComparer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Int32 Compare(Microsoft.Net.Http.Headers.MediaTypeHeaderValue, Microsoft.Net.Http.Headers.MediaTypeHeaderValue)
 // docid: M:Microsoft.Net.Http.Headers.MediaTypeHeaderValueComparer.Compare(Microsoft.Net.Http.Headers.MediaTypeHeaderValue,Microsoft.Net.Http.Headers.MediaTypeHeaderValue)
     /**
@@ -4509,6 +4572,15 @@ open class NameValueHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_NameValueHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.NameValueHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -4923,6 +4995,15 @@ open class RangeConditionHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_RangeConditionHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.DateTimeOffset)
 // docid: M:Microsoft.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.DateTimeOffset)
     /**
@@ -5135,6 +5216,15 @@ open class RangeHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_RangeHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Net.Http.Headers.RangeHeaderValue.#ctor
     /**
@@ -5338,6 +5428,15 @@ open class RangeItemHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_RangeItemHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Nullable<System.Int64>, System.Nullable<System.Int64>)
 // docid: M:Microsoft.Net.Http.Headers.RangeItemHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})
     /**
@@ -5530,6 +5629,15 @@ open class SetCookieHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_SetCookieHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.SetCookieHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -6160,6 +6268,15 @@ open class StringWithQualityHeaderValue
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_StringWithQualityHeaderValue_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Net.Http.Headers.StringWithQualityHeaderValue.#ctor(Microsoft.Extensions.Primitives.StringSegment)
     /**
@@ -6440,6 +6557,15 @@ open class StringWithQualityHeaderValueComparer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Net_Http_Headers_StringWithQualityHeaderValueComparer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Int32 Compare(Microsoft.Net.Http.Headers.StringWithQualityHeaderValue, Microsoft.Net.Http.Headers.StringWithQualityHeaderValue)
 // docid: M:Microsoft.Net.Http.Headers.StringWithQualityHeaderValueComparer.Compare(Microsoft.Net.Http.Headers.StringWithQualityHeaderValue,Microsoft.Net.Http.Headers.StringWithQualityHeaderValue)
     /**

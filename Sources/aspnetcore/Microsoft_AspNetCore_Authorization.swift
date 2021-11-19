@@ -28,6 +28,15 @@ open class AllowAnonymousAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AllowAnonymousAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
     public init() throws {
@@ -61,6 +70,15 @@ open class AuthorizationFailure
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationFailure_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Authorization.AuthorizationFailure ExplicitFail()
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationFailure.ExplicitFail
     /**
@@ -207,6 +225,15 @@ open class AuthorizationFailureReason
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationFailureReason_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Authorization.IAuthorizationHandler, System.String)
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationFailureReason.#ctor(Microsoft.AspNetCore.Authorization.IAuthorizationHandler,System.String)
     /**
@@ -292,6 +319,15 @@ open class AuthorizationHandlerContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationHandlerContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>, System.Security.Claims.ClaimsPrincipal, System.Object)
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Authorization.IAuthorizationRequirement},System.Security.Claims.ClaimsPrincipal,System.Object)
     /**
@@ -549,6 +585,15 @@ open class AuthorizationHandler_1<TRequirement : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationHandler_1_cast(TRequirement.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler`1.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
@@ -591,6 +636,15 @@ open class AuthorizationHandler_2<TRequirement : SGBridgeGenericValue,TResource 
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationHandler_2_cast(TRequirement.get_type_handle(),TResource.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationHandler`2.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
@@ -631,6 +685,15 @@ open class AuthorizationOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationOptions.#ctor
     public override init() throws {
@@ -851,6 +914,15 @@ open class AuthorizationPolicy
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>, System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationPolicy.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Authorization.IAuthorizationRequirement},System.Collections.Generic.IEnumerable{System.String})
     /**
@@ -1014,6 +1086,15 @@ open class AuthorizationPolicyBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationPolicyBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String[])
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.#ctor(System.String[])
     /**
@@ -1429,6 +1510,15 @@ open class AuthorizationResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizationResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Authorization.AuthorizationResult Success()
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizationResult.Success
     /**
@@ -1665,6 +1755,15 @@ open class AuthorizeAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_AuthorizeAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
     /**
@@ -1843,6 +1942,15 @@ open class DefaultAuthorizationEvaluator
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_DefaultAuthorizationEvaluator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationEvaluator.#ctor
     public override init() throws {
@@ -1897,6 +2005,15 @@ open class DefaultAuthorizationHandlerContextFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerContextFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerContextFactory.#ctor
     public override init() throws {
@@ -1957,6 +2074,15 @@ open class DefaultAuthorizationHandlerProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_DefaultAuthorizationHandlerProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationHandler>)
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationHandlerProvider.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Authorization.IAuthorizationHandler})
     /**
@@ -2012,6 +2138,15 @@ open class DefaultAuthorizationPolicyProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_DefaultAuthorizationPolicyProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Authorization.AuthorizationOptions>)
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationPolicyProvider.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Authorization.AuthorizationOptions})
     /**
@@ -2111,6 +2246,15 @@ open class DefaultAuthorizationService
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_DefaultAuthorizationService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider, Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Authorization.DefaultAuthorizationService>, Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory, Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Authorization.AuthorizationOptions>)
 // docid: M:Microsoft.AspNetCore.Authorization.DefaultAuthorizationService.#ctor(Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider,Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Authorization.DefaultAuthorizationService},Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory,Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Authorization.AuthorizationOptions})
     /**
@@ -2214,6 +2358,15 @@ open class IAuthorizationEvaluator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationEvaluator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Authorization.AuthorizationResult Evaluate(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationEvaluator.Evaluate(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
@@ -2264,6 +2417,15 @@ open class IAuthorizationHandler
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationHandler.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
@@ -2312,6 +2474,15 @@ open class IAuthorizationHandlerContextFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationHandlerContextFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext CreateContext(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>, System.Security.Claims.ClaimsPrincipal, System.Object)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerContextFactory.CreateContext(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Authorization.IAuthorizationRequirement},System.Security.Claims.ClaimsPrincipal,System.Object)
     /**
@@ -2367,6 +2538,15 @@ open class IAuthorizationHandlerProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationHandlerProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationHandler>> GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationHandlerProvider.GetHandlersAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext)
     /**
@@ -2417,6 +2597,15 @@ open class IAuthorizationPolicyProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationPolicyProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationPolicy> GetPolicyAsync(System.String)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider.GetPolicyAsync(System.String)
     /**
@@ -2505,6 +2694,15 @@ open class IAuthorizationRequirement
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationRequirement_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IAuthorizationRequirement
 
 
@@ -2535,6 +2733,15 @@ open class IAuthorizationService
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_IAuthorizationService_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Authorization.AuthorizationResult> AuthorizeAsync(System.Security.Claims.ClaimsPrincipal, System.Object, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Authorization.IAuthorizationRequirement>)
 // docid: M:Microsoft.AspNetCore.Authorization.IAuthorizationService.AuthorizeAsync(System.Security.Claims.ClaimsPrincipal,System.Object,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Authorization.IAuthorizationRequirement})
     /**
@@ -2620,6 +2827,15 @@ open class AssertionRequirement
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_Infrastructure_AssertionRequirement_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Func<Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,bool>)
 // docid: M:Microsoft.AspNetCore.Authorization.Infrastructure.AssertionRequirement.#ctor(System.Func{Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,System.Boolean})
     /**
@@ -2736,6 +2952,15 @@ open class OperationAuthorizationRequirement
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_Infrastructure_OperationAuthorizationRequirement_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.Infrastructure.OperationAuthorizationRequirement.#ctor
     public override init() throws {
@@ -2820,6 +3045,15 @@ open class PassThroughAuthorizationHandler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Authorization_Infrastructure_PassThroughAuthorizationHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Authorization.Infrastructure.PassThroughAuthorizationHandler.#ctor
     public override init() throws {

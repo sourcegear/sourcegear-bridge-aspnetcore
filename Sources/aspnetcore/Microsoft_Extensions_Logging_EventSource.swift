@@ -61,6 +61,15 @@ open class EventSourceLoggerProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_EventSource_EventSourceLoggerProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.EventSource.LoggingEventSource)
 // docid: M:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider.#ctor(Microsoft.Extensions.Logging.EventSource.LoggingEventSource)
     public init(eventSource : Optional<aspnetcore.Microsoft.Extensions.Logging.EventSource.LoggingEventSource>) throws {
@@ -186,6 +195,15 @@ public final class LoggingEventSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_EventSource_LoggingEventSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // LoggingEventSource
 
 

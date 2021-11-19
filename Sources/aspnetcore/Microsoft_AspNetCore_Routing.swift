@@ -683,6 +683,15 @@ public final class RouteHandlerBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_RouteHandlerBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Builder.IEndpointConventionBuilder>)
 // docid: M:Microsoft.AspNetCore.Builder.RouteHandlerBuilder.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Builder.IEndpointConventionBuilder})
     /**
@@ -747,6 +756,15 @@ open class RouterMiddleware
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_RouterMiddleware_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.AspNetCore.Routing.IRouter)
 // docid: M:Microsoft.AspNetCore.Builder.RouterMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Routing.IRouter)
     /**
@@ -1189,6 +1207,15 @@ public final class CompositeEndpointDataSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_CompositeEndpointDataSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Routing.EndpointDataSource>)
 // docid: M:Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Routing.EndpointDataSource})
     /**
@@ -1296,6 +1323,15 @@ public final class DataTokensMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_DataTokensMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>)
 // docid: M:Microsoft.AspNetCore.Routing.DataTokensMetadata.#ctor(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object})
     /**
@@ -1358,6 +1394,15 @@ public final class DefaultEndpointDataSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_DefaultEndpointDataSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.Endpoint[])
 // docid: M:Microsoft.AspNetCore.Routing.DefaultEndpointDataSource.#ctor(Microsoft.AspNetCore.Http.Endpoint[])
     /**
@@ -1461,6 +1506,15 @@ open class DefaultInlineConstraintResolver
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_DefaultInlineConstraintResolver_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Routing.RouteOptions>, System.IServiceProvider)
 // docid: M:Microsoft.AspNetCore.Routing.DefaultInlineConstraintResolver.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Routing.RouteOptions},System.IServiceProvider)
     /**
@@ -1519,6 +1573,15 @@ open class EndpointDataSource
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_EndpointDataSource_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Primitives.IChangeToken GetChangeToken()
 // docid: M:Microsoft.AspNetCore.Routing.EndpointDataSource.GetChangeToken
     /**
@@ -1584,6 +1647,15 @@ public final class EndpointGroupNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_EndpointGroupNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.EndpointGroupNameAttribute.#ctor(System.String)
     /**
@@ -1643,6 +1715,15 @@ public final class EndpointNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_EndpointNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.EndpointNameAttribute.#ctor(System.String)
     /**
@@ -1702,6 +1783,15 @@ open class EndpointNameMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_EndpointNameMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.EndpointNameMetadata.#ctor(System.String)
     /**
@@ -1765,6 +1855,15 @@ public final class ExcludeFromDescriptionAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_ExcludeFromDescriptionAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.ExcludeFromDescriptionAttribute.#ctor
     public init() throws {
@@ -1817,6 +1916,15 @@ public final class HostAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_HostAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.HostAttribute.#ctor(System.String)
     /**
@@ -1907,6 +2015,15 @@ public final class HttpMethodMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_HttpMethodMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:Microsoft.AspNetCore.Routing.HttpMethodMetadata.#ctor(System.Collections.Generic.IEnumerable{System.String})
     /**
@@ -2027,6 +2144,15 @@ open class IDataTokensMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IDataTokensMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object> get_DataTokens()
 // docid: M:Microsoft.AspNetCore.Routing.IDataTokensMetadata.get_DataTokens
     open func get_DataTokens() throws -> dotnet.System.Collections.Generic.IReadOnlyDictionary_2<dotnet.System.String,dotnet.System.Object> {
@@ -2069,6 +2195,15 @@ open class IDynamicEndpointMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IDynamicEndpointMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_IsDynamic()
 // docid: M:Microsoft.AspNetCore.Routing.IDynamicEndpointMetadata.get_IsDynamic
     open func get_IsDynamic() throws -> Bool {
@@ -2111,6 +2246,15 @@ open class IEndpointAddressScheme_1<TAddress : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IEndpointAddressScheme_1_cast(TAddress.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Http.Endpoint> FindEndpoints(TAddress)
 // docid: M:Microsoft.AspNetCore.Routing.IEndpointAddressScheme`1.FindEndpoints(`0)
     /**
@@ -2161,6 +2305,15 @@ open class IEndpointGroupNameMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IEndpointGroupNameMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_EndpointGroupName()
 // docid: M:Microsoft.AspNetCore.Routing.IEndpointGroupNameMetadata.get_EndpointGroupName
     open func get_EndpointGroupName() throws -> dotnet.System.String {
@@ -2202,6 +2355,15 @@ open class IEndpointNameMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IEndpointNameMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_EndpointName()
 // docid: M:Microsoft.AspNetCore.Routing.IEndpointNameMetadata.get_EndpointName
     open func get_EndpointName() throws -> dotnet.System.String {
@@ -2244,6 +2406,15 @@ open class IEndpointRouteBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IEndpointRouteBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Builder.IApplicationBuilder CreateApplicationBuilder()
 // docid: M:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder.CreateApplicationBuilder
     /**
@@ -2315,6 +2486,15 @@ open class IExcludeFromDescriptionMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IExcludeFromDescriptionMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_ExcludeFromDescription()
 // docid: M:Microsoft.AspNetCore.Routing.IExcludeFromDescriptionMetadata.get_ExcludeFromDescription
     open func get_ExcludeFromDescription() throws -> Bool {
@@ -2356,6 +2536,15 @@ open class IHostMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IHostMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<System.String> get_Hosts()
 // docid: M:Microsoft.AspNetCore.Routing.IHostMetadata.get_Hosts
     open func get_Hosts() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<dotnet.System.String> {
@@ -2397,6 +2586,15 @@ open class IHttpMethodMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IHttpMethodMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_AcceptCorsPreflight()
 // docid: M:Microsoft.AspNetCore.Routing.IHttpMethodMetadata.get_AcceptCorsPreflight
     open func get_AcceptCorsPreflight() throws -> Bool {
@@ -2449,6 +2647,15 @@ open class IInlineConstraintResolver
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IInlineConstraintResolver_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.IRouteConstraint ResolveConstraint(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.IInlineConstraintResolver.ResolveConstraint(System.String)
     /**
@@ -2504,6 +2711,15 @@ open class INamedRouter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_INamedRouter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Name()
 // docid: M:Microsoft.AspNetCore.Routing.INamedRouter.get_Name
     open func get_Name() throws -> Optional<dotnet.System.String> {
@@ -2550,6 +2766,15 @@ open class IRouteBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IRouteBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.IRouter Build()
 // docid: M:Microsoft.AspNetCore.Routing.IRouteBuilder.Build
     /**
@@ -2657,6 +2882,15 @@ open class IRouteCollection
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IRouteCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Add(Microsoft.AspNetCore.Routing.IRouter)
 // docid: M:Microsoft.AspNetCore.Routing.IRouteCollection.Add(Microsoft.AspNetCore.Routing.IRouter)
     /**
@@ -2706,6 +2940,15 @@ open class IRouteNameMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_IRouteNameMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_RouteName()
 // docid: M:Microsoft.AspNetCore.Routing.IRouteNameMetadata.get_RouteName
     open func get_RouteName() throws -> Optional<dotnet.System.String> {
@@ -2752,6 +2995,15 @@ open class ISuppressLinkGenerationMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_ISuppressLinkGenerationMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_SuppressLinkGeneration()
 // docid: M:Microsoft.AspNetCore.Routing.ISuppressLinkGenerationMetadata.get_SuppressLinkGeneration
     open func get_SuppressLinkGeneration() throws -> Bool {
@@ -2794,6 +3046,15 @@ open class ISuppressMatchingMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_ISuppressMatchingMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_SuppressMatching()
 // docid: M:Microsoft.AspNetCore.Routing.ISuppressMatchingMetadata.get_SuppressMatching
     open func get_SuppressMatching() throws -> Bool {
@@ -3154,6 +3415,15 @@ open class LinkParser
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_LinkParser_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.RouteValueDictionary ParsePathByAddress<TAddress>(TAddress, Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Routing.LinkParser.ParsePathByAddress``1(``0,Microsoft.AspNetCore.Http.PathString)
     /**
@@ -3243,6 +3513,15 @@ open class MatcherPolicy
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_MatcherPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int32 get_Order()
 // docid: M:Microsoft.AspNetCore.Routing.MatcherPolicy.get_Order
     open func get_Order() throws -> Swift.Int32 {
@@ -3289,6 +3568,15 @@ open class ParameterPolicyFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_ParameterPolicyFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.IParameterPolicy Create(Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPart, System.String)
 // docid: M:Microsoft.AspNetCore.Routing.ParameterPolicyFactory.Create(Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPart,System.String)
     /**
@@ -3858,6 +4146,15 @@ open class Route
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Route_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.IRouter, System.String, Microsoft.AspNetCore.Routing.IInlineConstraintResolver)
 // docid: M:Microsoft.AspNetCore.Routing.Route.#ctor(Microsoft.AspNetCore.Routing.IRouter,System.String,Microsoft.AspNetCore.Routing.IInlineConstraintResolver)
     /**
@@ -3975,6 +4272,15 @@ open class RouteBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, Microsoft.AspNetCore.Routing.IInlineConstraintResolver, Microsoft.AspNetCore.Routing.RouteValueDictionary, System.Collections.Generic.IDictionary<System.String,System.Object>, Microsoft.AspNetCore.Routing.RouteValueDictionary)
 // docid: M:Microsoft.AspNetCore.Routing.RouteBase.#ctor(System.String,System.String,Microsoft.AspNetCore.Routing.IInlineConstraintResolver,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IDictionary{System.String,System.Object},Microsoft.AspNetCore.Routing.RouteValueDictionary)
     /**
@@ -4244,6 +4550,15 @@ open class RouteBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Builder.IApplicationBuilder)
 // docid: M:Microsoft.AspNetCore.Routing.RouteBuilder.#ctor(Microsoft.AspNetCore.Builder.IApplicationBuilder)
     /**
@@ -4409,6 +4724,15 @@ open class RouteCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RouteCollection.#ctor
     public override init() throws {
@@ -4518,6 +4842,15 @@ open class RouteConstraintBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteConstraintBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.IInlineConstraintResolver, System.String)
 // docid: M:Microsoft.AspNetCore.Routing.RouteConstraintBuilder.#ctor(Microsoft.AspNetCore.Routing.IInlineConstraintResolver,System.String)
     /**
@@ -4669,6 +5002,15 @@ open class RouteCreationException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteCreationException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.RouteCreationException.#ctor(System.String)
     /**
@@ -4729,6 +5071,15 @@ public final class RouteEndpoint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteEndpoint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Int32, Microsoft.AspNetCore.Http.EndpointMetadataCollection, System.String)
 // docid: M:Microsoft.AspNetCore.Routing.RouteEndpoint.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Routing.Patterns.RoutePattern,System.Int32,Microsoft.AspNetCore.Http.EndpointMetadataCollection,System.String)
     /**
@@ -4819,6 +5170,15 @@ public final class RouteEndpointBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteEndpointBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate, Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.RouteEndpointBuilder.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Routing.Patterns.RoutePattern,System.Int32)
     /**
@@ -4948,6 +5308,15 @@ open class RouteHandler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.RequestDelegate)
 // docid: M:Microsoft.AspNetCore.Routing.RouteHandler.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
     /**
@@ -5032,6 +5401,15 @@ public final class RouteHandlerOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteHandlerOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RouteHandlerOptions.#ctor
     public override init() throws {
@@ -5103,6 +5481,15 @@ public final class RouteNameMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteNameMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.RouteNameMetadata.#ctor(System.String)
     /**
@@ -5169,6 +5556,15 @@ open class RouteOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RouteOptions.#ctor
     public override init() throws {
@@ -5395,6 +5791,15 @@ open class RouteValueEqualityComparer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteValueEqualityComparer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.AspNetCore.Routing.RouteValueEqualityComparer Default
     /**
     
@@ -5467,6 +5872,15 @@ open class RouteValuesAddress
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RouteValuesAddress_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RouteValuesAddress.#ctor
     public override init() throws {
@@ -5617,6 +6031,15 @@ open class RoutingFeature
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_RoutingFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.RoutingFeature.#ctor
     public override init() throws {
@@ -5688,6 +6111,15 @@ public final class SuppressLinkGenerationMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_SuppressLinkGenerationMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.SuppressLinkGenerationMetadata.#ctor
     public override init() throws {
@@ -5745,6 +6177,15 @@ public final class SuppressMatchingMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_SuppressMatchingMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.SuppressMatchingMetadata.#ctor
     public override init() throws {
@@ -5803,6 +6244,15 @@ open class AlphaRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_AlphaRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.AlphaRouteConstraint.#ctor
     /**
@@ -5845,6 +6295,15 @@ open class BoolRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_BoolRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.BoolRouteConstraint.#ctor
     public override init() throws {
@@ -5894,6 +6353,15 @@ open class CompositeRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_CompositeRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Routing.IRouteConstraint>)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.CompositeRouteConstraint.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Routing.IRouteConstraint})
     /**
@@ -5972,6 +6440,15 @@ open class DateTimeRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_DateTimeRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.DateTimeRouteConstraint.#ctor
     public override init() throws {
@@ -6021,6 +6498,15 @@ open class DecimalRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_DecimalRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.DecimalRouteConstraint.#ctor
     public override init() throws {
@@ -6070,6 +6556,15 @@ open class DoubleRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_DoubleRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.DoubleRouteConstraint.#ctor
     public override init() throws {
@@ -6121,6 +6616,15 @@ open class FileNameRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_FileNameRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.FileNameRouteConstraint.#ctor
     public override init() throws {
@@ -6170,6 +6674,15 @@ open class FloatRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_FloatRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.FloatRouteConstraint.#ctor
     public override init() throws {
@@ -6221,6 +6734,15 @@ open class GuidRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_GuidRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.GuidRouteConstraint.#ctor
     public override init() throws {
@@ -6269,6 +6791,15 @@ open class HttpMethodRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_HttpMethodRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String[])
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.HttpMethodRouteConstraint.#ctor(System.String[])
     /**
@@ -6348,6 +6879,15 @@ open class IntRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_IntRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.IntRouteConstraint.#ctor
     public override init() throws {
@@ -6397,6 +6937,15 @@ open class LengthRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_LengthRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.LengthRouteConstraint.#ctor(System.Int32)
     /**
@@ -6518,6 +7067,15 @@ open class LongRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_LongRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.LongRouteConstraint.#ctor
     public override init() throws {
@@ -6567,6 +7125,15 @@ open class MaxLengthRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_MaxLengthRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.MaxLengthRouteConstraint.#ctor(System.Int32)
     /**
@@ -6645,6 +7212,15 @@ open class MaxRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_MaxRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int64)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.MaxRouteConstraint.#ctor(System.Int64)
     /**
@@ -6723,6 +7299,15 @@ open class MinLengthRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_MinLengthRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.MinLengthRouteConstraint.#ctor(System.Int32)
     /**
@@ -6801,6 +7386,15 @@ open class MinRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_MinRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int64)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.MinRouteConstraint.#ctor(System.Int64)
     /**
@@ -6881,6 +7475,15 @@ open class NonFileNameRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_NonFileNameRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint.#ctor
     public override init() throws {
@@ -6929,6 +7532,15 @@ open class OptionalRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_OptionalRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.IRouteConstraint)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.OptionalRouteConstraint.#ctor(Microsoft.AspNetCore.Routing.IRouteConstraint)
     /**
@@ -7007,6 +7619,15 @@ open class RangeRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_RangeRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int64, System.Int64)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.RangeRouteConstraint.#ctor(System.Int64,System.Int64)
     /**
@@ -7105,6 +7726,15 @@ open class RegexInlineRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_RegexInlineRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.RegexInlineRouteConstraint.#ctor(System.String)
     /**
@@ -7148,6 +7778,15 @@ open class RegexRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_RegexRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Text.RegularExpressions.Regex)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.RegexRouteConstraint.#ctor(System.Text.RegularExpressions.Regex)
     /**
@@ -7243,6 +7882,15 @@ open class RequiredRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_RequiredRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.RequiredRouteConstraint.#ctor
     public override init() throws {
@@ -7292,6 +7940,15 @@ open class StringRouteConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Constraints_StringRouteConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.Constraints.StringRouteConstraint.#ctor(System.String)
     /**
@@ -7359,6 +8016,15 @@ open class DfaGraphWriter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Internal_DfaGraphWriter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IServiceProvider)
 // docid: M:Microsoft.AspNetCore.Routing.Internal.DfaGraphWriter.#ctor(System.IServiceProvider)
     /**
@@ -7424,6 +8090,15 @@ public final class CandidateSet
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_CandidateSet_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Http.Endpoint[], Microsoft.AspNetCore.Routing.RouteValueDictionary[], System.Int32[])
 // docid: M:Microsoft.AspNetCore.Routing.Matching.CandidateSet.#ctor(Microsoft.AspNetCore.Http.Endpoint[],Microsoft.AspNetCore.Routing.RouteValueDictionary[],System.Int32[])
     /**
@@ -7712,6 +8387,15 @@ public final class EndpointMetadataComparer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // EndpointMetadataComparer
 
 
@@ -7736,6 +8420,15 @@ open class EndpointMetadataComparer_1<TMetadata : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_EndpointMetadataComparer_1_cast(TMetadata.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field:  Default
     /**
     
@@ -7799,6 +8492,15 @@ open class EndpointSelector
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_EndpointSelector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task SelectAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Routing.Matching.CandidateSet)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.EndpointSelector.SelectAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.Matching.CandidateSet)
     /**
@@ -7846,6 +8548,15 @@ public final class HostMatcherPolicy
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_HostMatcherPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Matching.HostMatcherPolicy.#ctor
     public init() throws {
@@ -7958,6 +8669,15 @@ public final class HttpMethodMatcherPolicy
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_HttpMethodMatcherPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Matching.HttpMethodMatcherPolicy.#ctor
     public init() throws {
@@ -8108,6 +8828,15 @@ open class IEndpointComparerPolicy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_IEndpointComparerPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IComparer<Microsoft.AspNetCore.Http.Endpoint> get_Comparer()
 // docid: M:Microsoft.AspNetCore.Routing.Matching.IEndpointComparerPolicy.get_Comparer
     open func get_Comparer() throws -> dotnet.System.Collections.Generic.IComparer_1<aspnetcore.Microsoft.AspNetCore.Http.Endpoint> {
@@ -8152,6 +8881,15 @@ open class IEndpointSelectorPolicy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_IEndpointSelectorPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool AppliesToEndpoints(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Http.Endpoint>)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.IEndpointSelectorPolicy.AppliesToEndpoints(System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
     /**
@@ -8226,6 +8964,15 @@ open class INodeBuilderPolicy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_INodeBuilderPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool AppliesToEndpoints(System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Http.Endpoint>)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.INodeBuilderPolicy.AppliesToEndpoints(System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
     /**
@@ -8321,6 +9068,15 @@ open class IParameterLiteralNodeMatchingPolicy
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_IParameterLiteralNodeMatchingPolicy_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool MatchesLiteral(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.IParameterLiteralNodeMatchingPolicy.MatchesLiteral(System.String,System.String)
     /**
@@ -8364,6 +9120,15 @@ open class PolicyJumpTable
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Matching_PolicyJumpTable_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Int32 GetDestination(Microsoft.AspNetCore.Http.HttpContext)
 // docid: M:Microsoft.AspNetCore.Routing.Matching.PolicyJumpTable.GetDestination(Microsoft.AspNetCore.Http.HttpContext)
     /**
@@ -8592,6 +9357,15 @@ public final class RoutePattern
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePattern_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.Object RequiredValueAny
     /**
     
@@ -8835,6 +9609,15 @@ public final class RoutePatternException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternException.#ctor(System.String,System.String)
     /**
@@ -9531,6 +10314,15 @@ public final class RoutePatternLiteralPart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternLiteralPart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Content()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternLiteralPart.get_Content
     public func get_Content() throws -> dotnet.System.String {
@@ -9636,6 +10428,15 @@ public final class RoutePatternParameterPart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPolicyReference> get_ParameterPolicies()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPart.get_ParameterPolicies
     public func get_ParameterPolicies() throws -> dotnet.System.Collections.Generic.IReadOnlyList_1<aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPolicyReference> {
@@ -9819,6 +10620,15 @@ public final class RoutePatternParameterPolicyReference
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternParameterPolicyReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Content()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternParameterPolicyReference.get_Content
     public func get_Content() throws -> Optional<dotnet.System.String> {
@@ -9893,6 +10703,15 @@ open class RoutePatternPart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternPart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Routing.Patterns.RoutePatternPartKind get_PartKind()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternPart.get_PartKind
     open func get_PartKind() throws -> aspnetcore.Microsoft.AspNetCore.Routing.Patterns.RoutePatternPartKind {
@@ -10063,6 +10882,15 @@ public final class RoutePatternPathSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_IsSimple()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternPathSegment.get_IsSimple
     public func get_IsSimple() throws -> Bool {
@@ -10131,6 +10959,15 @@ public final class RoutePatternSeparatorPart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternSeparatorPart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Content()
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternSeparatorPart.get_Content
     public func get_Content() throws -> dotnet.System.String {
@@ -10175,6 +11012,15 @@ open class RoutePatternTransformer
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Patterns_RoutePatternTransformer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.Patterns.RoutePattern SubstituteRequiredValues(Microsoft.AspNetCore.Routing.Patterns.RoutePattern, System.Object)
 // docid: M:Microsoft.AspNetCore.Routing.Patterns.RoutePatternTransformer.SubstituteRequiredValues(Microsoft.AspNetCore.Routing.Patterns.RoutePattern,System.Object)
     /**
@@ -10229,6 +11075,15 @@ open class InlineConstraint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_InlineConstraint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Routing.Template.InlineConstraint.#ctor(System.String)
     /**
@@ -10354,6 +11209,15 @@ open class RouteTemplate
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_RouteTemplate_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.Patterns.RoutePattern)
 // docid: M:Microsoft.AspNetCore.Routing.Template.RouteTemplate.#ctor(Microsoft.AspNetCore.Routing.Patterns.RoutePattern)
     /**
@@ -10552,6 +11416,15 @@ open class TemplateBinder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplateBinder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.Template.TemplateValuesResult GetValues(Microsoft.AspNetCore.Routing.RouteValueDictionary, Microsoft.AspNetCore.Routing.RouteValueDictionary)
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplateBinder.GetValues(Microsoft.AspNetCore.Routing.RouteValueDictionary,Microsoft.AspNetCore.Routing.RouteValueDictionary)
     /**
@@ -10675,6 +11548,15 @@ open class TemplateBinderFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplateBinderFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.Template.TemplateBinder Create(Microsoft.AspNetCore.Routing.Template.RouteTemplate, Microsoft.AspNetCore.Routing.RouteValueDictionary)
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplateBinderFactory.Create(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary)
     /**
@@ -10739,6 +11621,15 @@ open class TemplateMatcher
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplateMatcher_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.Template.RouteTemplate, Microsoft.AspNetCore.Routing.RouteValueDictionary)
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplateMatcher.#ctor(Microsoft.AspNetCore.Routing.Template.RouteTemplate,Microsoft.AspNetCore.Routing.RouteValueDictionary)
     /**
@@ -10871,6 +11762,15 @@ open class TemplatePart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplatePart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplatePart.#ctor
     /**
@@ -11215,6 +12115,15 @@ open class TemplateSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplateSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplateSegment.#ctor
     /**
@@ -11335,6 +12244,15 @@ open class TemplateValuesResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Template_TemplateValuesResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Template.TemplateValuesResult.#ctor
     public override init() throws {
@@ -11444,6 +12362,15 @@ open class InboundMatch
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_InboundMatch_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Tree.InboundMatch.#ctor
     public override init() throws {
@@ -11558,6 +12485,15 @@ open class InboundRouteEntry
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_InboundRouteEntry_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry.#ctor
     public override init() throws {
@@ -11863,6 +12799,15 @@ open class OutboundMatch
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_OutboundMatch_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Tree.OutboundMatch.#ctor
     public override init() throws {
@@ -11977,6 +12922,15 @@ open class OutboundRouteEntry
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_OutboundRouteEntry_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Routing.Tree.OutboundRouteEntry.#ctor
     public override init() throws {
@@ -12363,6 +13317,15 @@ open class TreeRouteBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_TreeRouteBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Routing.Tree.InboundRouteEntry MapInbound(Microsoft.AspNetCore.Routing.IRouter, Microsoft.AspNetCore.Routing.Template.RouteTemplate, System.String, System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Tree.TreeRouteBuilder.MapInbound(Microsoft.AspNetCore.Routing.IRouter,Microsoft.AspNetCore.Routing.Template.RouteTemplate,System.String,System.Int32)
     /**
@@ -12560,6 +13523,15 @@ open class TreeRouter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_TreeRouter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String RouteGroupKey
     /**
     
@@ -12653,6 +13625,15 @@ open class UrlMatchingNode
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_UrlMatchingNode_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Tree.UrlMatchingNode.#ctor(System.Int32)
     /**
@@ -12967,6 +13948,15 @@ open class UrlMatchingTree
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Routing_Tree_UrlMatchingTree_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Int32)
 // docid: M:Microsoft.AspNetCore.Routing.Tree.UrlMatchingTree.#ctor(System.Int32)
     /**

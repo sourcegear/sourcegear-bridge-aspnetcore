@@ -27,6 +27,15 @@ open class AddressInUseException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_AddressInUseException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Connections.AddressInUseException.#ctor(System.String)
     /**
@@ -87,6 +96,15 @@ open class BaseConnectionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_BaseConnectionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort()
 // docid: M:Microsoft.AspNetCore.Connections.BaseConnectionContext.Abort
     /**
@@ -373,6 +391,15 @@ open class ConnectionAbortedException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionAbortedException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionAbortedException.#ctor
     /**
@@ -450,6 +477,15 @@ open class ConnectionBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IServiceProvider)
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionBuilder.#ctor(System.IServiceProvider)
     /**
@@ -597,6 +633,15 @@ open class ConnectionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException)
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionContext.Abort(Microsoft.AspNetCore.Connections.ConnectionAbortedException)
     /**
@@ -823,6 +868,15 @@ open class ConnectionHandler
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionHandler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext)
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionHandler.OnConnectedAsync(Microsoft.AspNetCore.Connections.ConnectionContext)
     /**
@@ -866,6 +920,15 @@ open class ConnectionItems
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionItems_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionItems.#ctor
     /**
@@ -945,6 +1008,15 @@ open class ConnectionResetException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_ConnectionResetException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Connections.ConnectionResetException.#ctor(System.String)
     /**
@@ -1010,6 +1082,15 @@ open class DefaultConnectionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_DefaultConnectionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Connections.DefaultConnectionContext.#ctor
     /**
@@ -1405,6 +1486,15 @@ open class FileHandleEndPoint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_FileHandleEndPoint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.UInt64, Microsoft.AspNetCore.Connections.FileHandleType)
 // docid: M:Microsoft.AspNetCore.Connections.FileHandleEndPoint.#ctor(System.UInt64,Microsoft.AspNetCore.Connections.FileHandleType)
     /**
@@ -1539,6 +1629,15 @@ open class IConnectionBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IConnectionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Connections.IConnectionBuilder Use(System.Func<Microsoft.AspNetCore.Connections.ConnectionDelegate,Microsoft.AspNetCore.Connections.ConnectionDelegate>)
 // docid: M:Microsoft.AspNetCore.Connections.IConnectionBuilder.Use(System.Func{Microsoft.AspNetCore.Connections.ConnectionDelegate,Microsoft.AspNetCore.Connections.ConnectionDelegate})
     /**
@@ -1624,6 +1723,15 @@ open class IConnectionFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IConnectionFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.ConnectionContext> ConnectAsync(System.Net.EndPoint, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IConnectionFactory.ConnectAsync(System.Net.EndPoint,System.Threading.CancellationToken)
     /**
@@ -1678,6 +1786,15 @@ open class IConnectionListener
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IConnectionListener_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.ConnectionContext> AcceptAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IConnectionListener.AcceptAsync(System.Threading.CancellationToken)
     /**
@@ -1759,6 +1876,15 @@ open class IConnectionListenerFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IConnectionListenerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.IConnectionListener> BindAsync(System.Net.EndPoint, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IConnectionListenerFactory.BindAsync(System.Net.EndPoint,System.Threading.CancellationToken)
     /**
@@ -1810,6 +1936,15 @@ open class IMultiplexedConnectionBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IMultiplexedConnectionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder Use(System.Func<Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate>)
 // docid: M:Microsoft.AspNetCore.Connections.IMultiplexedConnectionBuilder.Use(System.Func{Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate,Microsoft.AspNetCore.Connections.MultiplexedConnectionDelegate})
     /**
@@ -1895,6 +2030,15 @@ open class IMultiplexedConnectionFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IMultiplexedConnectionFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.MultiplexedConnectionContext> ConnectAsync(System.Net.EndPoint, Microsoft.AspNetCore.Http.Features.IFeatureCollection, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IMultiplexedConnectionFactory.ConnectAsync(System.Net.EndPoint,Microsoft.AspNetCore.Http.Features.IFeatureCollection,System.Threading.CancellationToken)
     /**
@@ -1950,6 +2094,15 @@ open class IMultiplexedConnectionListener
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IMultiplexedConnectionListener_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask UnbindAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener.UnbindAsync(System.Threading.CancellationToken)
     /**
@@ -2032,6 +2185,15 @@ open class IMultiplexedConnectionListenerFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_IMultiplexedConnectionListenerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.IMultiplexedConnectionListener> BindAsync(System.Net.EndPoint, Microsoft.AspNetCore.Http.Features.IFeatureCollection, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.IMultiplexedConnectionListenerFactory.BindAsync(System.Net.EndPoint,Microsoft.AspNetCore.Http.Features.IFeatureCollection,System.Threading.CancellationToken)
     /**
@@ -2077,6 +2239,15 @@ open class MultiplexedConnectionBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_MultiplexedConnectionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IServiceProvider)
 // docid: M:Microsoft.AspNetCore.Connections.MultiplexedConnectionBuilder.#ctor(System.IServiceProvider)
     /**
@@ -2166,6 +2337,15 @@ open class MultiplexedConnectionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_MultiplexedConnectionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<Microsoft.AspNetCore.Connections.ConnectionContext> AcceptAsync(System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Connections.MultiplexedConnectionContext.AcceptAsync(System.Threading.CancellationToken)
     /**
@@ -2396,6 +2576,15 @@ open class UriEndPoint
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_UriEndPoint_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Uri)
 // docid: M:Microsoft.AspNetCore.Connections.UriEndPoint.#ctor(System.Uri)
     /**
@@ -2480,6 +2669,15 @@ open class IConnectionCompleteFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionCompleteFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnCompleted(System.Func<System.Object,System.Threading.Tasks.Task>, System.Object)
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionCompleteFeature.OnCompleted(System.Func{System.Object,System.Threading.Tasks.Task},System.Object)
     /**
@@ -2535,6 +2733,15 @@ open class IConnectionEndPointFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionEndPointFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Net.EndPoint get_LocalEndPoint()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionEndPointFeature.get_LocalEndPoint
     open func get_LocalEndPoint() throws -> Optional<dotnet.System.Net.EndPoint> {
@@ -2617,6 +2824,15 @@ open class IConnectionHeartbeatFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionHeartbeatFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnHeartbeat(System.Action<System.Object>, System.Object)
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionHeartbeatFeature.OnHeartbeat(System.Action{System.Object},System.Object)
     /**
@@ -2671,6 +2887,15 @@ open class IConnectionIdFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionIdFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_ConnectionId()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionIdFeature.get_ConnectionId
     open func get_ConnectionId() throws -> dotnet.System.String {
@@ -2724,6 +2949,15 @@ open class IConnectionInherentKeepAliveFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionInherentKeepAliveFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_HasInherentKeepAlive()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionInherentKeepAliveFeature.get_HasInherentKeepAlive
     open func get_HasInherentKeepAlive() throws -> Bool {
@@ -2765,6 +2999,15 @@ open class IConnectionItemsFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionItemsFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IDictionary<System.Object,System.Object> get_Items()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionItemsFeature.get_Items
     open func get_Items() throws -> dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.Object,dotnet.System.Object> {
@@ -2817,6 +3060,15 @@ open class IConnectionLifetimeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Abort()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeFeature.Abort
     /**
@@ -2886,6 +3138,15 @@ open class IConnectionLifetimeNotificationFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionLifetimeNotificationFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void RequestClose()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionLifetimeNotificationFeature.RequestClose
     /**
@@ -2955,6 +3216,15 @@ open class IConnectionSocketFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionSocketFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Net.Sockets.Socket get_Socket()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionSocketFeature.get_Socket
     open func get_Socket() throws -> dotnet.System.Net.Sockets.Socket {
@@ -2996,6 +3266,15 @@ open class IConnectionTransportFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionTransportFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.IO.Pipelines.IDuplexPipe get_Transport()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionTransportFeature.get_Transport
     open func get_Transport() throws -> aspnetcore.System.IO.Pipelines.IDuplexPipe {
@@ -3048,6 +3327,15 @@ open class IConnectionUserFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IConnectionUserFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Security.Claims.ClaimsPrincipal get_User()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IConnectionUserFeature.get_User
     open func get_User() throws -> Optional<dotnet.System.Security.Claims.ClaimsPrincipal> {
@@ -3104,6 +3392,15 @@ open class IMemoryPoolFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IMemoryPoolFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Buffers.MemoryPool<System.Byte> get_MemoryPool()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IMemoryPoolFeature.get_MemoryPool
     open func get_MemoryPool() throws -> dotnet.System.Buffers.MemoryPool_1<Swift.UInt8> {
@@ -3151,6 +3448,15 @@ open class IPersistentStateFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IPersistentStateFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IDictionary<System.Object,System.Object> get_State()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IPersistentStateFeature.get_State
     open func get_State() throws -> dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.Object,dotnet.System.Object> {
@@ -3192,6 +3498,15 @@ open class IProtocolErrorCodeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IProtocolErrorCodeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int64 get_Error()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IProtocolErrorCodeFeature.get_Error
     open func get_Error() throws -> Swift.Int64 {
@@ -3244,6 +3559,15 @@ open class IStreamAbortFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IStreamAbortFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void AbortRead(System.Int64, Microsoft.AspNetCore.Connections.ConnectionAbortedException)
 // docid: M:Microsoft.AspNetCore.Connections.Features.IStreamAbortFeature.AbortRead(System.Int64,Microsoft.AspNetCore.Connections.ConnectionAbortedException)
     /**
@@ -3312,6 +3636,15 @@ open class IStreamDirectionFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IStreamDirectionFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_CanRead()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IStreamDirectionFeature.get_CanRead
     open func get_CanRead() throws -> Bool {
@@ -3364,6 +3697,15 @@ open class IStreamIdFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_IStreamIdFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int64 get_StreamId()
 // docid: M:Microsoft.AspNetCore.Connections.Features.IStreamIdFeature.get_StreamId
     open func get_StreamId() throws -> Swift.Int64 {
@@ -3405,6 +3747,15 @@ open class ITlsHandshakeFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_ITlsHandshakeFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Security.Authentication.SslProtocols get_Protocol()
 // docid: M:Microsoft.AspNetCore.Connections.Features.ITlsHandshakeFeature.get_Protocol
     open func get_Protocol() throws -> dotnet.System.Security.Authentication.SslProtocols {
@@ -3512,6 +3863,15 @@ open class ITransferFormatFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Connections_Features_ITransferFormatFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Connections.TransferFormat get_SupportedFormats()
 // docid: M:Microsoft.AspNetCore.Connections.Features.ITransferFormatFeature.get_SupportedFormats
     open func get_SupportedFormats() throws -> aspnetcore.Microsoft.AspNetCore.Connections.TransferFormat {

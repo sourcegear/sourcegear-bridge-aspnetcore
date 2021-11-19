@@ -36,6 +36,15 @@ open class IDirectoryContents
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_IDirectoryContents_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_Exists()
 // docid: M:Microsoft.Extensions.FileProviders.IDirectoryContents.get_Exists
     open func get_Exists() throws -> Bool {
@@ -77,6 +86,15 @@ open class IFileInfo
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_IFileInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.IO.Stream CreateReadStream()
 // docid: M:Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
     /**
@@ -204,6 +222,15 @@ open class IFileProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_IFileProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.FileProviders.IDirectoryContents GetDirectoryContents(System.String)
 // docid: M:Microsoft.Extensions.FileProviders.IFileProvider.GetDirectoryContents(System.String)
     /**
@@ -299,6 +326,15 @@ open class NotFoundDirectoryContents
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_NotFoundDirectoryContents_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents.#ctor
     public override init() throws {
@@ -402,6 +438,15 @@ open class NotFoundFileInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_NotFoundFileInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.Extensions.FileProviders.NotFoundFileInfo.#ctor(System.String)
     /**
@@ -602,6 +647,15 @@ open class NullChangeToken
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_NullChangeToken_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.IDisposable RegisterChangeCallback(System.Action<System.Object>, System.Object)
 // docid: M:Microsoft.Extensions.FileProviders.NullChangeToken.RegisterChangeCallback(System.Action{System.Object},System.Object)
     /**
@@ -725,6 +779,15 @@ open class NullFileProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_NullFileProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileProviders.NullFileProvider.#ctor
     public override init() throws {

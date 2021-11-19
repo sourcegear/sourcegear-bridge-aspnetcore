@@ -416,6 +416,15 @@ public final class HostingStartupAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_HostingStartupAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type)
 // docid: M:Microsoft.AspNetCore.Hosting.HostingStartupAttribute.#ctor(System.Type)
     /**
@@ -491,6 +500,15 @@ open class IApplicationLifetime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IApplicationLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void StopApplication()
 // docid: M:Microsoft.AspNetCore.Hosting.IApplicationLifetime.StopApplication
     /**
@@ -575,6 +593,15 @@ open class IHostingEnvironment
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IHostingEnvironment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_EnvironmentName()
 // docid: M:Microsoft.AspNetCore.Hosting.IHostingEnvironment.get_EnvironmentName
     open func get_EnvironmentName() throws -> dotnet.System.String {
@@ -737,6 +764,15 @@ open class IHostingStartup
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IHostingStartup_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
 // docid: M:Microsoft.AspNetCore.Hosting.IHostingStartup.Configure(Microsoft.AspNetCore.Hosting.IWebHostBuilder)
     /**
@@ -785,6 +821,15 @@ open class IStartup
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IStartup_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.IServiceProvider ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
 // docid: M:Microsoft.AspNetCore.Hosting.IStartup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
     /**
@@ -853,6 +898,15 @@ open class IStartupConfigureContainerFilter_1<TContainerBuilder : SGBridgeGeneri
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IStartupConfigureContainerFilter_1_cast(TContainerBuilder.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Action<TContainerBuilder> ConfigureContainer(System.Action<TContainerBuilder>)
 // docid: M:Microsoft.AspNetCore.Hosting.IStartupConfigureContainerFilter`1.ConfigureContainer(System.Action{`0})
     /**
@@ -909,6 +963,15 @@ open class IStartupConfigureServicesFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IStartupConfigureServicesFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection> ConfigureServices(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
 // docid: M:Microsoft.AspNetCore.Hosting.IStartupConfigureServicesFilter.ConfigureServices(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
     /**
@@ -967,6 +1030,15 @@ open class IStartupFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IStartupFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder> Configure(System.Action<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
 // docid: M:Microsoft.AspNetCore.Hosting.IStartupFilter.Configure(System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder})
     /**
@@ -1023,6 +1095,15 @@ open class IWebHost
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IWebHost_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Start()
 // docid: M:Microsoft.AspNetCore.Hosting.IWebHost.Start
     /**
@@ -1132,6 +1213,15 @@ open class IWebHostBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IWebHostBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Hosting.IWebHost Build()
 // docid: M:Microsoft.AspNetCore.Hosting.IWebHostBuilder.Build
     /**
@@ -1302,6 +1392,15 @@ open class IWebHostEnvironment
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_IWebHostEnvironment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_WebRootPath()
 // docid: M:Microsoft.AspNetCore.Hosting.IWebHostEnvironment.get_WebRootPath
     open func get_WebRootPath() throws -> dotnet.System.String {
@@ -1368,6 +1467,15 @@ open class WebHostBuilderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_WebHostBuilderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Hosting.WebHostBuilderContext.#ctor
     public override init() throws {

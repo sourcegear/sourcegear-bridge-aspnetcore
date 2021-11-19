@@ -28,6 +28,15 @@ open class CompiledRazorAssemblyApplicationPartFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationParts_CompiledRazorAssemblyApplicationPartFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFactory.#ctor
     public init() throws {
@@ -98,6 +107,15 @@ open class CompiledRazorAssemblyPart
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationParts_CompiledRazorAssemblyPart_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Reflection.Assembly)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyPart.#ctor(System.Reflection.Assembly)
     /**
@@ -183,6 +201,15 @@ public final class ConsolidatedAssemblyApplicationPartFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationParts_ConsolidatedAssemblyApplicationPartFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationParts.ConsolidatedAssemblyApplicationPartFactory.#ctor
     public init() throws {
@@ -237,6 +264,15 @@ open class IRazorCompiledItemProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationParts_IRazorCompiledItemProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem> get_CompiledItems()
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationParts.IRazorCompiledItemProvider.get_CompiledItems
     open func get_CompiledItems() throws -> dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem> {
@@ -274,6 +310,15 @@ public final class AfterViewPageEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterViewPageEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -418,6 +463,15 @@ public final class BeforeViewPageEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeViewPageEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -567,6 +621,15 @@ open class HelperResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_HelperResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Func<System.IO.TextWriter,System.Threading.Tasks.Task>)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.HelperResult.#ctor(System.Func{System.IO.TextWriter,System.Threading.Tasks.Task})
     /**
@@ -657,6 +720,15 @@ open class IRazorPage
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_IRazorPage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task ExecuteAsync()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.IRazorPage.ExecuteAsync
     /**
@@ -875,6 +947,15 @@ open class IRazorPageActivator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_IRazorPageActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Activate(Microsoft.AspNetCore.Mvc.Razor.IRazorPage, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator.Activate(Microsoft.AspNetCore.Mvc.Razor.IRazorPage,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
     /**
@@ -924,6 +1005,15 @@ open class IRazorPageFactoryProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_IRazorPageFactoryProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.Razor.RazorPageFactoryResult CreateFactory(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.IRazorPageFactoryProvider.CreateFactory(System.String)
     /**
@@ -975,6 +1065,15 @@ open class IRazorViewEngine
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_IRazorViewEngine_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.Razor.RazorPageResult FindPage(Microsoft.AspNetCore.Mvc.ActionContext, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine.FindPage(Microsoft.AspNetCore.Mvc.ActionContext,System.String)
     /**
@@ -1079,6 +1178,15 @@ open class ITagHelperActivator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_ITagHelperActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TTagHelper Create<TTagHelper>(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 } // ITagHelperActivator
 
@@ -1110,6 +1218,15 @@ open class ITagHelperFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_ITagHelperFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TTagHelper CreateTagHelper<TTagHelper>(Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 } // ITagHelperFactory
 
@@ -1142,6 +1259,15 @@ open class ITagHelperInitializer_1<TTagHelper : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_ITagHelperInitializer_1_cast(TTagHelper.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Initialize(TTagHelper, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.ITagHelperInitializer`1.Initialize(`0,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
     /**
@@ -1192,6 +1318,15 @@ open class IViewLocationExpander
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_IViewLocationExpander_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void PopulateValues(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.IViewLocationExpander.PopulateValues(Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext)
     /**
@@ -1259,6 +1394,15 @@ open class LanguageViewLocationExpander
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_LanguageViewLocationExpander_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpander.#ctor
     /**
@@ -1388,6 +1532,15 @@ open class RazorPage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorPage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void IgnoreBody()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorPage.IgnoreBody
     /**
@@ -1643,6 +1796,15 @@ open class RazorPageActivator
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorPageActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider, Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory, Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper, System.Diagnostics.DiagnosticSource, System.Text.Encodings.Web.HtmlEncoder, Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.#ctor(Microsoft.AspNetCore.Mvc.ModelBinding.IModelMetadataProvider,Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory,Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper,System.Diagnostics.DiagnosticSource,System.Text.Encodings.Web.HtmlEncoder,Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider)
     /**
@@ -1696,6 +1858,15 @@ open class RazorPageBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorPageBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task ExecuteAsync()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorPageBase.ExecuteAsync
     /**
@@ -2790,6 +2961,15 @@ open class RazorPage_1<TModel : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorPage_1_cast(TModel.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] TModel get_Model()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorPage`1.get_Model
     open func get_Model() throws -> TModel {
@@ -2872,6 +3052,15 @@ open class RazorView
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorView_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine, Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator, System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Mvc.Razor.IRazorPage>, Microsoft.AspNetCore.Mvc.Razor.IRazorPage, System.Text.Encodings.Web.HtmlEncoder, System.Diagnostics.DiagnosticListener)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorView.#ctor(Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Mvc.Razor.IRazorPage},Microsoft.AspNetCore.Mvc.Razor.IRazorPage,System.Text.Encodings.Web.HtmlEncoder,System.Diagnostics.DiagnosticListener)
     /**
@@ -2995,6 +3184,15 @@ open class RazorViewEngine
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorViewEngine_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String ViewExtension
     /**
     
@@ -3141,6 +3339,15 @@ open class RazorViewEngineOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_RazorViewEngineOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions.#ctor
     public override init() throws {
@@ -3416,6 +3623,15 @@ open class TagHelperInitializer_1<TTagHelper : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelperInitializer_1_cast(TTagHelper.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Action<TTagHelper,Microsoft.AspNetCore.Mvc.Rendering.ViewContext>)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelperInitializer`1.#ctor(System.Action{`0,Microsoft.AspNetCore.Mvc.Rendering.ViewContext})
     /**
@@ -3469,6 +3685,15 @@ open class ViewLocationExpanderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_ViewLocationExpanderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.ActionContext, System.String, System.String, System.String, System.String, bool)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.ViewLocationExpanderContext.#ctor(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.String,System.String,System.String,System.Boolean)
     /**
@@ -3699,6 +3924,15 @@ open class CompiledViewDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Compilation_CompiledViewDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor.#ctor
     /**
@@ -3966,6 +4200,15 @@ open class IViewCompiler
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompiler_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.Razor.Compilation.CompiledViewDescriptor> CompileAsync(System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.IViewCompiler.CompileAsync(System.String)
     /**
@@ -4016,6 +4259,15 @@ open class IViewCompilerProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Compilation_IViewCompilerProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.Razor.Compilation.IViewCompiler GetCompiler()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.IViewCompilerProvider.GetCompiler
     /**
@@ -4057,6 +4309,15 @@ open class RazorViewAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Compilation_RazorViewAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Type)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute.#ctor(System.String,System.Type)
     /**
@@ -4142,6 +4403,15 @@ open class ViewsFeature
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Compilation_ViewsFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Compilation.ViewsFeature.#ctor
     public override init() throws {
@@ -4202,6 +4472,15 @@ public final class TagHelperMemoryCacheProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Infrastructure_TagHelperMemoryCacheProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Infrastructure.TagHelperMemoryCacheProvider.#ctor
     public override init() throws {
@@ -4280,6 +4559,15 @@ open class RazorInjectAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_Internal_RazorInjectAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute.#ctor
     public init() throws {
@@ -4317,6 +4605,15 @@ open class BodyTagHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper.#ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory)
     /**
@@ -4359,6 +4656,15 @@ open class HeadTagHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper.#ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory)
     /**
@@ -4410,6 +4716,15 @@ open class ITagHelperComponentManager
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.ICollection<Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent> get_Components()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager.get_Components
     open func get_Components() throws -> dotnet.System.Collections.Generic.ICollection_1<aspnetcore.Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent> {
@@ -4451,6 +4766,15 @@ open class ITagHelperComponentPropertyActivator
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_ITagHelperComponentPropertyActivator_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Activate(Microsoft.AspNetCore.Mvc.Rendering.ViewContext, Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentPropertyActivator.Activate(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent)
     /**
@@ -4493,6 +4817,15 @@ open class TagHelperComponentTagHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperComponentTagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperComponentTagHelper.#ctor(Microsoft.AspNetCore.Mvc.Razor.TagHelpers.ITagHelperComponentManager,Microsoft.Extensions.Logging.ILoggerFactory)
     /**
@@ -4637,6 +4970,15 @@ open class TagHelperFeature
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeature.#ctor
     public override init() throws {
@@ -4693,6 +5035,15 @@ open class TagHelperFeatureProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_TagHelperFeatureProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.TagHelperFeatureProvider.#ctor
     public override init() throws {
@@ -4739,6 +5090,15 @@ open class UrlResolutionTagHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory, System.Text.Encodings.Web.HtmlEncoder)
 // docid: M:Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper.#ctor(Microsoft.AspNetCore.Mvc.Routing.IUrlHelperFactory,System.Text.Encodings.Web.HtmlEncoder)
     /**

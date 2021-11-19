@@ -304,6 +304,15 @@ open class ConfigureNamedOptions_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Action<TOptions>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`1.#ctor(System.String,System.Action{`0})
     /**
@@ -434,6 +443,15 @@ open class ConfigureNamedOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBrid
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_2_cast(TOptions.get_type_handle(),TDep.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep, System.Action<TOptions,TDep>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`2.#ctor(System.String,`1,System.Action{`0,`1})
     /**
@@ -587,6 +605,15 @@ open class ConfigureNamedOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_3_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, System.Action<TOptions,TDep1,TDep2>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`3.#ctor(System.String,`1,`2,System.Action{`0,`1,`2})
     /**
@@ -763,6 +790,15 @@ open class ConfigureNamedOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_4_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Action<TOptions,TDep1,TDep2,TDep3>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`4.#ctor(System.String,`1,`2,`3,System.Action{`0,`1,`2,`3})
     /**
@@ -962,6 +998,15 @@ open class ConfigureNamedOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_5_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`5.#ctor(System.String,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
     /**
@@ -1184,6 +1229,15 @@ open class ConfigureNamedOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBri
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureNamedOptions_6_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>)
 // docid: M:Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
     /**
@@ -1429,6 +1483,15 @@ open class ConfigureOptions_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Action<TOptions>)
 // docid: M:Microsoft.Extensions.Options.ConfigureOptions`1.#ctor(System.Action{`0})
     /**
@@ -1523,6 +1586,15 @@ open class IConfigureNamedOptions_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IConfigureNamedOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Configure(System.String, TOptions)
 // docid: M:Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
     /**
@@ -1574,6 +1646,15 @@ open class IConfigureOptions_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IConfigureOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Configure(TOptions)
 // docid: M:Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
     /**
@@ -1623,6 +1704,15 @@ open class IOptionsChangeTokenSource_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptionsChangeTokenSource_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Primitives.IChangeToken GetChangeToken()
 // docid: M:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1.GetChangeToken
     /**
@@ -1692,6 +1782,15 @@ open class IOptionsFactory_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptionsFactory_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TOptions Create(System.String)
 // docid: M:Microsoft.Extensions.Options.IOptionsFactory`1.Create(System.String)
     /**
@@ -1740,6 +1839,15 @@ open class IOptionsMonitorCache_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptionsMonitorCache_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Clear()
 // docid: M:Microsoft.Extensions.Options.IOptionsMonitorCache`1.Clear
     /**
@@ -1855,6 +1963,15 @@ open class IOptionsMonitor_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptionsMonitor_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TOptions Get(System.String)
 // docid: M:Microsoft.Extensions.Options.IOptionsMonitor`1.Get(System.String)
     /**
@@ -1944,6 +2061,15 @@ open class IOptionsSnapshot_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptionsSnapshot_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TOptions Get(System.String)
 // docid: M:Microsoft.Extensions.Options.IOptionsSnapshot`1.Get(System.String)
     /**
@@ -1992,6 +2118,15 @@ open class IOptions_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] TOptions get_Value()
 // docid: M:Microsoft.Extensions.Options.IOptions`1.get_Value
     open func get_Value() throws -> TOptions {
@@ -2035,6 +2170,15 @@ open class IPostConfigureOptions_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IPostConfigureOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void PostConfigure(System.String, TOptions)
 // docid: M:Microsoft.Extensions.Options.IPostConfigureOptions`1.PostConfigure(System.String,`0)
     /**
@@ -2085,6 +2229,15 @@ open class IValidateOptions_1<TOptions : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_IValidateOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Options.ValidateOptionsResult Validate(System.String, TOptions)
 // docid: M:Microsoft.Extensions.Options.IValidateOptions`1.Validate(System.String,`0)
     /**
@@ -2175,6 +2328,15 @@ open class OptionsBuilder_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsBuilder_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.String)
 // docid: M:Microsoft.Extensions.Options.OptionsBuilder`1.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
     /**
@@ -2980,6 +3142,15 @@ open class OptionsCache_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsCache_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Options.OptionsCache`1.#ctor
     public override init() throws {
@@ -3097,6 +3268,15 @@ open class OptionsFactory_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsFactory_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.Extensions.Options.IConfigureOptions<TOptions>>, System.Collections.Generic.IEnumerable<Microsoft.Extensions.Options.IPostConfigureOptions<TOptions>>)
 // docid: M:Microsoft.Extensions.Options.OptionsFactory`1.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IConfigureOptions{`0}},System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IPostConfigureOptions{`0}})
     /**
@@ -3175,6 +3355,15 @@ open class OptionsManager_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsManager_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptionsFactory<TOptions>)
 // docid: M:Microsoft.Extensions.Options.OptionsManager`1.#ctor(Microsoft.Extensions.Options.IOptionsFactory{`0})
     /**
@@ -3290,6 +3479,15 @@ open class OptionsMonitor_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsMonitor_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptionsFactory<TOptions>, System.Collections.Generic.IEnumerable<Microsoft.Extensions.Options.IOptionsChangeTokenSource<TOptions>>, Microsoft.Extensions.Options.IOptionsMonitorCache<TOptions>)
 // docid: M:Microsoft.Extensions.Options.OptionsMonitor`1.#ctor(Microsoft.Extensions.Options.IOptionsFactory{`0},System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IOptionsChangeTokenSource{`0}},Microsoft.Extensions.Options.IOptionsMonitorCache{`0})
     /**
@@ -3417,6 +3615,15 @@ open class OptionsValidationException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsValidationException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Type, System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:Microsoft.Extensions.Options.OptionsValidationException.#ctor(System.String,System.Type,System.Collections.Generic.IEnumerable{System.String})
     /**
@@ -3553,6 +3760,15 @@ open class OptionsWrapper_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_OptionsWrapper_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(TOptions)
 // docid: M:Microsoft.Extensions.Options.OptionsWrapper`1.#ctor(`0)
     /**
@@ -3615,6 +3831,15 @@ open class PostConfigureOptions_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Action<TOptions>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`1.#ctor(System.String,System.Action{`0})
     /**
@@ -3727,6 +3952,15 @@ open class PostConfigureOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridg
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_2_cast(TOptions.get_type_handle(),TDep.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep, System.Action<TOptions,TDep>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`2.#ctor(System.String,`1,System.Action{`0,`1})
     /**
@@ -3880,6 +4114,15 @@ open class PostConfigureOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_3_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, System.Action<TOptions,TDep1,TDep2>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`3.#ctor(System.String,`1,`2,System.Action{`0,`1,`2})
     /**
@@ -4056,6 +4299,15 @@ open class PostConfigureOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_4_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Action<TOptions,TDep1,TDep2,TDep3>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`4.#ctor(System.String,`1,`2,`3,System.Action{`0,`1,`2,`3})
     /**
@@ -4255,6 +4507,15 @@ open class PostConfigureOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_5_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`5.#ctor(System.String,`1,`2,`3,`4,System.Action{`0,`1,`2,`3,`4})
     /**
@@ -4477,6 +4738,15 @@ open class PostConfigureOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBrid
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_PostConfigureOptions_6_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5>)
 // docid: M:Microsoft.Extensions.Options.PostConfigureOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
     /**
@@ -4722,6 +4992,15 @@ open class ValidateOptionsResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptionsResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.Extensions.Options.ValidateOptionsResult Skip
     /**
     
@@ -5019,6 +5298,15 @@ open class ValidateOptions_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Func<TOptions,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`1.#ctor(System.String,System.Func{`0,System.Boolean},System.String)
     /**
@@ -5164,6 +5452,15 @@ open class ValidateOptions_2<TOptions : SGBridgeGenericValue,TDep : SGBridgeGene
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_2_cast(TOptions.get_type_handle(),TDep.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep, System.Func<TOptions,TDep,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`2.#ctor(System.String,`1,System.Func{`0,`1,System.Boolean},System.String)
     /**
@@ -5332,6 +5629,15 @@ open class ValidateOptions_3<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_3_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, System.Func<TOptions,TDep1,TDep2,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`3.#ctor(System.String,`1,`2,System.Func{`0,`1,`2,System.Boolean},System.String)
     /**
@@ -5523,6 +5829,15 @@ open class ValidateOptions_4<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_4_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, System.Func<TOptions,TDep1,TDep2,TDep3,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`4.#ctor(System.String,`1,`2,`3,System.Func{`0,`1,`2,`3,System.Boolean},System.String)
     /**
@@ -5737,6 +6052,15 @@ open class ValidateOptions_5<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_5_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, System.Func<TOptions,TDep1,TDep2,TDep3,TDep4,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`5.#ctor(System.String,`1,`2,`3,`4,System.Func{`0,`1,`2,`3,`4,System.Boolean},System.String)
     /**
@@ -5974,6 +6298,15 @@ open class ValidateOptions_6<TOptions : SGBridgeGenericValue,TDep1 : SGBridgeGen
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ValidateOptions_6_cast(TOptions.get_type_handle(),TDep1.get_type_handle(),TDep2.get_type_handle(),TDep3.get_type_handle(),TDep4.get_type_handle(),TDep5.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Func<TOptions,TDep1,TDep2,TDep3,TDep4,TDep5,bool>, System.String)
 // docid: M:Microsoft.Extensions.Options.ValidateOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Func{`0,`1,`2,`3,`4,`5,System.Boolean},System.String)
     /**

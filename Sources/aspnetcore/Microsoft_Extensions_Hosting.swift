@@ -101,6 +101,15 @@ open class ConsoleLifetimeOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_ConsoleLifetimeOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Hosting.ConsoleLifetimeOptions.#ctor
     public override init() throws {
@@ -224,6 +233,15 @@ open class HostBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_HostBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Hosting.HostBuilder.#ctor
     public override init() throws {
@@ -483,6 +501,15 @@ open class HostOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_HostOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Hosting.HostOptions.#ctor
     public override init() throws {
@@ -1063,6 +1090,15 @@ open class ApplicationLifetime
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_Internal_ApplicationLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.ILogger<Microsoft.Extensions.Hosting.Internal.ApplicationLifetime>)
 // docid: M:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.Extensions.Hosting.Internal.ApplicationLifetime})
     public init(logger : Optional<aspnetcore.Microsoft.Extensions.Logging.ILogger_1<aspnetcore.Microsoft.Extensions.Hosting.Internal.ApplicationLifetime>>) throws {
@@ -1219,6 +1255,15 @@ open class ConsoleLifetime
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_Internal_ConsoleLifetime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Hosting.ConsoleLifetimeOptions>, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Hosting.IHostApplicationLifetime, Microsoft.Extensions.Options.IOptions<Microsoft.Extensions.Hosting.HostOptions>)
 // docid: M:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Hosting.ConsoleLifetimeOptions},Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions{Microsoft.Extensions.Hosting.HostOptions})
     public init(options : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.Extensions.Hosting.ConsoleLifetimeOptions>>, environment : Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostEnvironment>, applicationLifetime : Optional<aspnetcore.Microsoft.Extensions.Hosting.IHostApplicationLifetime>, hostOptions : Optional<aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.Extensions.Hosting.HostOptions>>) throws {
@@ -1307,6 +1352,15 @@ open class HostingEnvironment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Hosting_Internal_HostingEnvironment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Hosting.Internal.HostingEnvironment.#ctor
     public override init() throws {

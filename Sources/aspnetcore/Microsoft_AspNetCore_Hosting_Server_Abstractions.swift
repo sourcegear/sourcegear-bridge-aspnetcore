@@ -37,6 +37,15 @@ open class IHttpApplication_1<TContext : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_IHttpApplication_1_cast(TContext.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // TContext CreateContext(Microsoft.AspNetCore.Http.Features.IFeatureCollection)
 // docid: M:Microsoft.AspNetCore.Hosting.Server.IHttpApplication`1.CreateContext(Microsoft.AspNetCore.Http.Features.IFeatureCollection)
     /**
@@ -125,6 +134,15 @@ open class IServer
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_IServer_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task StartAsync<TContext>(Microsoft.AspNetCore.Hosting.Server.IHttpApplication<TContext>, System.Threading.CancellationToken)
 // docid: M:Microsoft.AspNetCore.Hosting.Server.IServer.StartAsync``1(Microsoft.AspNetCore.Hosting.Server.IHttpApplication{``0},System.Threading.CancellationToken)
     /**
@@ -203,6 +221,15 @@ open class IServerIntegratedAuth
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_IServerIntegratedAuth_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] bool get_IsEnabled()
 // docid: M:Microsoft.AspNetCore.Hosting.Server.IServerIntegratedAuth.get_IsEnabled
     open func get_IsEnabled() throws -> Bool {
@@ -248,6 +275,15 @@ open class ServerIntegratedAuth
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_ServerIntegratedAuth_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Hosting.Server.ServerIntegratedAuth.#ctor
     public override init() throws {
@@ -366,6 +402,15 @@ open class IHostContextContainer_1<TContext : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_Abstractions_IHostContextContainer_1_cast(TContext.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] TContext get_HostContext()
 // docid: M:Microsoft.AspNetCore.Hosting.Server.Abstractions.IHostContextContainer`1.get_HostContext
     open func get_HostContext() throws -> TContext {
@@ -422,6 +467,15 @@ open class IServerAddressesFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Hosting_Server_Features_IServerAddressesFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.ICollection<System.String> get_Addresses()
 // docid: M:Microsoft.AspNetCore.Hosting.Server.Features.IServerAddressesFeature.get_Addresses
     open func get_Addresses() throws -> dotnet.System.Collections.Generic.ICollection_1<dotnet.System.String> {

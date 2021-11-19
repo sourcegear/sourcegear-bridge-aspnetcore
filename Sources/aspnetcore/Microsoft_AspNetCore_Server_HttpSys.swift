@@ -93,6 +93,15 @@ public final class AuthenticationManager
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_AuthenticationManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes get_Schemes()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.AuthenticationManager.get_Schemes
     public func get_Schemes() throws -> aspnetcore.Microsoft.AspNetCore.Server.HttpSys.AuthenticationSchemes {
@@ -412,6 +421,15 @@ open class DelegationRule
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_DelegationRule_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Dispose()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.DelegationRule.Dispose
     /**
@@ -568,6 +586,15 @@ open class HttpSysException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_HttpSysException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int32 get_ErrorCode()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.HttpSysException.get_ErrorCode
     open override func get_ErrorCode() throws -> Swift.Int32 {
@@ -608,6 +635,15 @@ open class HttpSysOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_HttpSysOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.HttpSysOptions.#ctor
     /**
@@ -1214,6 +1250,15 @@ open class IHttpSysRequestDelegationFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestDelegationFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void DelegateRequest(Microsoft.AspNetCore.Server.HttpSys.DelegationRule)
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestDelegationFeature.DelegateRequest(Microsoft.AspNetCore.Server.HttpSys.DelegationRule)
     /**
@@ -1277,6 +1322,15 @@ open class IHttpSysRequestInfoFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_IHttpSysRequestInfoFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IReadOnlyDictionary<System.Int32,System.ReadOnlyMemory<System.Byte>> get_RequestInfo()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.IHttpSysRequestInfoFeature.get_RequestInfo
     open func get_RequestInfo() throws -> dotnet.System.Collections.Generic.IReadOnlyDictionary_2<Swift.Int32,dotnet.System.ReadOnlyMemory_1<Swift.UInt8>> {
@@ -1318,6 +1372,15 @@ open class IServerDelegationFeature
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_IServerDelegationFeature_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Server.HttpSys.DelegationRule CreateDelegationRule(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.IServerDelegationFeature.CreateDelegationRule(System.String,System.String)
     /**
@@ -1426,6 +1489,15 @@ public final class TimeoutManager
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_TimeoutManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.TimeSpan get_EntityBody()
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.TimeoutManager.get_EntityBody
     public func get_EntityBody() throws -> dotnet.System.TimeSpan {
@@ -1695,6 +1767,15 @@ open class UrlPrefix
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_UrlPrefix_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Server.HttpSys.UrlPrefix Create(System.String, System.String, System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.UrlPrefix.Create(System.String,System.String,System.String,System.String)
     /**
@@ -1971,6 +2052,15 @@ open class UrlPrefixCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_HttpSys_UrlPrefixCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Add(System.String)
 // docid: M:Microsoft.AspNetCore.Server.HttpSys.UrlPrefixCollection.Add(System.String)
     /**

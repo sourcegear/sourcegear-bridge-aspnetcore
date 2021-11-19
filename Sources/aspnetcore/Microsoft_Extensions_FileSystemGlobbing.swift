@@ -184,6 +184,15 @@ open class InMemoryDirectoryInfo
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_InMemoryDirectoryInfo_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Collections.Generic.IEnumerable<System.String>)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})
     /**
@@ -349,6 +358,15 @@ open class Matcher
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Matcher_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Matcher.#ctor
     /**
@@ -646,6 +664,15 @@ open class PatternMatchingResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_PatternMatchingResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch>)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch})
     /**
@@ -770,6 +797,15 @@ open class DirectoryInfoBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase> EnumerateFileSystemInfos()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase.EnumerateFileSystemInfos
     /**
@@ -864,6 +900,15 @@ open class DirectoryInfoWrapper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoWrapper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.DirectoryInfo)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper.#ctor(System.IO.DirectoryInfo)
     /**
@@ -1036,6 +1081,15 @@ open class FileInfoBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // FileInfoBase
 
 
@@ -1058,6 +1112,15 @@ open class FileInfoWrapper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoWrapper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.FileInfo)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper.#ctor(System.IO.FileInfo)
     /**
@@ -1176,6 +1239,15 @@ open class FileSystemInfoBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_FullName()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase.get_FullName
     open func get_FullName() throws -> Optional<dotnet.System.String> {
@@ -1290,6 +1362,15 @@ open class ILinearPattern
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IList<Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment> get_Segments()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern.get_Segments
     open func get_Segments() throws -> Optional<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment>> {
@@ -1336,6 +1417,15 @@ open class IPathSegment
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool Match(System.String)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment.Match(System.String)
     open func Match(value : Optional<dotnet.System.String>) throws -> Bool {
@@ -1389,6 +1479,15 @@ open class IPattern
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext CreatePatternContextForExclude()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern.CreatePatternContextForExclude
     open func CreatePatternContextForExclude() throws -> Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext> {
@@ -1450,6 +1549,15 @@ open class IPatternContext
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Declare(System.Action<Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,bool>)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext.Declare(System.Action{Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,System.Boolean})
     open func Declare(onDeclare : Optional<dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Bool>>) throws {
@@ -1542,6 +1650,15 @@ open class IRaggedPattern
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IList<System.Collections.Generic.IList<Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment>> get_Contains()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern.get_Contains
     open func get_Contains() throws -> Optional<dotnet.System.Collections.Generic.IList_1<dotnet.System.Collections.Generic.IList_1<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment>>> {
@@ -1625,6 +1742,15 @@ open class MatcherContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>, System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>, Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase, System.StringComparison)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.MatcherContext.#ctor(System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern},System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern},Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase,System.StringComparison)
     public init(includePatterns : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>>, excludePatterns : Optional<dotnet.System.Collections.Generic.IEnumerable_1<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern>>, directoryInfo : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase>, comparison : dotnet.System.StringComparison) throws {
@@ -1753,6 +1879,15 @@ open class CurrentPathSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_CurrentPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment.#ctor
     public override init() throws {
@@ -1808,6 +1943,15 @@ open class LiteralPathSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_LiteralPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.StringComparison)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment.#ctor(System.String,System.StringComparison)
     public init(value : Optional<dotnet.System.String>, comparisonType : dotnet.System.StringComparison) throws {
@@ -1905,6 +2049,15 @@ open class ParentPathSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_ParentPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment.#ctor
     public override init() throws {
@@ -1960,6 +2113,15 @@ open class RecursiveWildcardSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_RecursiveWildcardSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment.#ctor
     public override init() throws {
@@ -2015,6 +2177,15 @@ open class WildcardPathSegment
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_WildcardPathSegment_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment MatchAll
     open class var MatchAll : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment> {
         get {
@@ -2141,6 +2312,15 @@ open class PatternContextLinear
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
     public init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern>) throws {
@@ -2251,6 +2431,15 @@ open class PatternContextLinearExclude
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
     public override init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern>) throws {
@@ -2289,6 +2478,15 @@ open class PatternContextLinearInclude
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearInclude_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern)
     public override init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern>) throws {
@@ -2343,6 +2541,15 @@ open class PatternContextRagged
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
     public init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern>) throws {
@@ -2464,6 +2671,15 @@ open class PatternContextRaggedExclude
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
     public override init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern>) throws {
@@ -2502,6 +2718,15 @@ open class PatternContextRaggedInclude
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedInclude_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude.#ctor(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern)
     public override init(pattern : Optional<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern>) throws {
@@ -2557,6 +2782,15 @@ open class PatternContext_1<TFrame : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1_cast(TFrame.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Declare(System.Action<Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,bool>)
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext`1.Declare(System.Action{Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,System.Boolean})
     open func Declare(declare : Optional<dotnet.System.Action_2<aspnetcore.Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Bool>>) throws {
@@ -2637,6 +2871,15 @@ open class PatternBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileSystemGlobbing_Internal_Patterns_PatternBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder.#ctor
     public override init() throws {

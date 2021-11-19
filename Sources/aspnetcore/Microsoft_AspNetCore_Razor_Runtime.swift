@@ -36,6 +36,15 @@ open class IRazorSourceChecksumMetadata
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_IRazorSourceChecksumMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Checksum()
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.IRazorSourceChecksumMetadata.get_Checksum
     open func get_Checksum() throws -> Optional<dotnet.System.String> {
@@ -103,6 +112,15 @@ open class RazorCompiledItem
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItem_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Identifier()
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItem.get_Identifier
     open func get_Identifier() throws -> Optional<dotnet.System.String> {
@@ -231,6 +249,15 @@ public final class RazorCompiledItemAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Type, System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemAttribute.#ctor(System.Type,System.String,System.String)
     /**
@@ -389,6 +416,15 @@ open class RazorCompiledItemLoader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemLoader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemLoader.#ctor
     public override init() throws {
@@ -446,6 +482,15 @@ public final class RazorCompiledItemMetadataAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorCompiledItemMetadataAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorCompiledItemMetadataAttribute.#ctor(System.String,System.String)
     /**
@@ -539,6 +584,15 @@ public final class RazorConfigurationNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorConfigurationNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorConfigurationNameAttribute.#ctor(System.String)
     /**
@@ -605,6 +659,15 @@ public final class RazorExtensionAssemblyNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorExtensionAssemblyNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorExtensionAssemblyNameAttribute.#ctor(System.String,System.String)
     /**
@@ -698,6 +761,15 @@ public final class RazorLanguageVersionAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorLanguageVersionAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorLanguageVersionAttribute.#ctor(System.String)
     /**
@@ -765,6 +837,15 @@ public final class RazorSourceChecksumAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Hosting_RazorSourceChecksumAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute.#ctor(System.String,System.String,System.String)
     /**
@@ -890,6 +971,15 @@ open class TagHelperExecutionContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperExecutionContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, Microsoft.AspNetCore.Razor.TagHelpers.TagMode, System.Collections.Generic.IDictionary<System.Object,System.Object>, System.String, System.Func<System.Threading.Tasks.Task>, System.Action<System.Text.Encodings.Web.HtmlEncoder>, System.Func<Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent>)
 // docid: M:Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.#ctor(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagMode,System.Collections.Generic.IDictionary{System.Object,System.Object},System.String,System.Func{System.Threading.Tasks.Task},System.Action{System.Text.Encodings.Web.HtmlEncoder},System.Func{Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent})
     /**
@@ -1226,6 +1316,15 @@ open class TagHelperRunner
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperRunner_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.#ctor
     public override init() throws {
@@ -1285,6 +1384,15 @@ open class TagHelperScopeManager
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_Runtime_TagHelpers_TagHelperScopeManager_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Action<System.Text.Encodings.Web.HtmlEncoder>, System.Func<Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent>)
 // docid: M:Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager.#ctor(System.Action{System.Text.Encodings.Web.HtmlEncoder},System.Func{Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent})
     /**

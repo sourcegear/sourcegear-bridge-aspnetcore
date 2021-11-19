@@ -96,6 +96,15 @@ public final class SocketConnectionContextFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionContextFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions, Microsoft.Extensions.Logging.ILogger)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionContextFactory.#ctor(Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions,Microsoft.Extensions.Logging.ILogger)
     /**
@@ -170,6 +179,15 @@ open class SocketConnectionFactoryOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketConnectionFactoryOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionFactoryOptions.#ctor
     /**
@@ -390,6 +408,15 @@ public final class SocketTransportFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>, Microsoft.Extensions.Logging.ILoggerFactory)
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions},Microsoft.Extensions.Logging.ILoggerFactory)
     public init(options : aspnetcore.Microsoft.Extensions.Options.IOptions_1<aspnetcore.Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions>, loggerFactory : aspnetcore.Microsoft.Extensions.Logging.ILoggerFactory) throws {
@@ -434,6 +461,15 @@ open class SocketTransportOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Server_Kestrel_Transport_Sockets_SocketTransportOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.#ctor
     public override init() throws {

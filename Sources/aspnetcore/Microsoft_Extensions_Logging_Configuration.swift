@@ -36,6 +36,15 @@ open class ILoggerProviderConfigurationFactory
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.Extensions.Configuration.IConfiguration GetConfiguration(System.Type)
 // docid: M:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory.GetConfiguration(System.Type)
     /**
@@ -91,6 +100,15 @@ open class ILoggerProviderConfiguration_1<T : SGBridgeGenericValue>
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1_cast(T.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.Extensions.Configuration.IConfiguration get_Configuration()
 // docid: M:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1.get_Configuration
     open func get_Configuration() throws -> Optional<aspnetcore.Microsoft.Extensions.Configuration.IConfiguration> {
@@ -130,6 +148,15 @@ open class LoggerProviderOptionsChangeTokenSource_2<TOptions : SGBridgeGenericVa
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2_cast(TOptions.get_type_handle(),TProvider.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration<TProvider>)
 // docid: M:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2.#ctor(Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration{`1})
     public init(providerConfiguration : Optional<aspnetcore.Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration_1<TProvider>>) throws {

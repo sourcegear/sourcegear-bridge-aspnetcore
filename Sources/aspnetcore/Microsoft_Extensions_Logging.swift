@@ -529,6 +529,15 @@ open class ILoggingBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_ILoggingBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.Extensions.DependencyInjection.IServiceCollection get_Services()
 // docid: M:Microsoft.Extensions.Logging.ILoggingBuilder.get_Services
     open func get_Services() throws -> Optional<aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection> {
@@ -568,6 +577,15 @@ open class LoggerFactory
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_LoggerFactory_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Logging.LoggerFactory.#ctor
     /**
@@ -767,6 +785,15 @@ open class LoggerFactoryOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_LoggerFactoryOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Logging.LoggerFactoryOptions.#ctor
     /**
@@ -842,6 +869,15 @@ open class LoggerFilterOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_LoggerFilterOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.Extensions.Logging.LoggerFilterOptions.#ctor
     /**
@@ -979,6 +1015,15 @@ open class LoggerFilterRule
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_LoggerFilterRule_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.Nullable<Microsoft.Extensions.Logging.LogLevel>, System.Func<System.String,System.String,Microsoft.Extensions.Logging.LogLevel,bool>)
 // docid: M:Microsoft.Extensions.Logging.LoggerFilterRule.#ctor(System.String,System.String,System.Nullable{Microsoft.Extensions.Logging.LogLevel},System.Func{System.String,System.String,Microsoft.Extensions.Logging.LogLevel,System.Boolean})
     /**
@@ -1139,6 +1184,15 @@ open class ProviderAliasAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Logging_ProviderAliasAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.Extensions.Logging.ProviderAliasAttribute.#ctor(System.String)
     /**

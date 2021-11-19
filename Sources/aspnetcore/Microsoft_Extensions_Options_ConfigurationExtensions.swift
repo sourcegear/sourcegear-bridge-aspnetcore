@@ -134,6 +134,15 @@ open class ConfigurationChangeTokenSource_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigurationChangeTokenSource_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Configuration.IConfiguration)
 // docid: M:Microsoft.Extensions.Options.ConfigurationChangeTokenSource`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
     /**
@@ -242,6 +251,15 @@ open class ConfigureFromConfigurationOptions_1<TOptions : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_ConfigureFromConfigurationOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.Configuration.IConfiguration)
 // docid: M:Microsoft.Extensions.Options.ConfigureFromConfigurationOptions`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
     /**
@@ -282,6 +300,15 @@ open class NamedConfigureFromConfigurationOptions_1<TOptions : SGBridgeGenericVa
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_Options_NamedConfigureFromConfigurationOptions_1_cast(TOptions.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, Microsoft.Extensions.Configuration.IConfiguration)
 // docid: M:Microsoft.Extensions.Options.NamedConfigureFromConfigurationOptions`1.#ctor(System.String,Microsoft.Extensions.Configuration.IConfiguration)
     /**

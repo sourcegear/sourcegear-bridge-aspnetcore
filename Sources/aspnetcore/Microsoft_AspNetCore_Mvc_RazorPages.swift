@@ -28,6 +28,15 @@ public final class PageActionEndpointConventionBuilder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Builder_PageActionEndpointConventionBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Add(System.Action<Microsoft.AspNetCore.Builder.EndpointBuilder>)
 // docid: M:Microsoft.AspNetCore.Builder.PageActionEndpointConventionBuilder.Add(System.Action{Microsoft.AspNetCore.Builder.EndpointBuilder})
     /**
@@ -203,6 +212,15 @@ open class IPageApplicationModelConvention
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelConvention_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel)
     /**
@@ -251,6 +269,15 @@ open class IPageApplicationModelPartsProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelPartsProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel CreateHandlerModel(System.Reflection.MethodInfo)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelPartsProvider.CreateHandlerModel(System.Reflection.MethodInfo)
     /**
@@ -365,6 +392,15 @@ open class IPageApplicationModelProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageApplicationModelProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider.OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext)
     /**
@@ -442,6 +478,15 @@ open class IPageConvention
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageConvention_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IPageConvention
 
 
@@ -473,6 +518,15 @@ open class IPageHandlerModelConvention
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageHandlerModelConvention_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageHandlerModelConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel)
     /**
@@ -522,6 +576,15 @@ open class IPageRouteModelConvention
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageRouteModelConvention_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel)
     /**
@@ -570,6 +633,15 @@ open class IPageRouteModelProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_IPageRouteModelProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModelProviderContext)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider.OnProvidersExecuting(Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModelProviderContext)
     /**
@@ -639,6 +711,15 @@ open class PageApplicationModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, System.Reflection.TypeInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModel.#ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,System.Reflection.TypeInfo,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -1099,6 +1180,15 @@ open class PageApplicationModelProviderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModelProviderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor, System.Reflection.TypeInfo)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageApplicationModelProviderContext.#ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor,System.Reflection.TypeInfo)
     /**
@@ -1220,6 +1310,15 @@ open class PageConventionCollection
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageConventionCollection.#ctor
     /**
@@ -1543,6 +1642,15 @@ open class PageHandlerModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageHandlerModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Reflection.MethodInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageHandlerModel.#ctor(System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -1832,6 +1940,15 @@ open class PageParameterModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageParameterModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Reflection.ParameterInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageParameterModel.#ctor(System.Reflection.ParameterInfo,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -1987,6 +2104,15 @@ open class PagePropertyModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PagePropertyModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Reflection.PropertyInfo, System.Collections.Generic.IReadOnlyList<System.Object>)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PagePropertyModel.#ctor(System.Reflection.PropertyInfo,System.Collections.Generic.IReadOnlyList{System.Object})
     /**
@@ -2140,6 +2266,15 @@ public final class PageRouteMetadata
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteMetadata_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteMetadata.#ctor(System.String,System.String)
     /**
@@ -2229,6 +2364,15 @@ open class PageRouteModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModel.#ctor(System.String,System.String)
     /**
@@ -2495,6 +2639,15 @@ open class PageRouteModelProviderContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteModelProviderContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteModelProviderContext.#ctor
     public override init() throws {
@@ -2554,6 +2707,15 @@ open class PageRouteTransformerConvention
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_ApplicationModels_PageRouteTransformerConvention_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Routing.IOutboundParameterTransformer)
 // docid: M:Microsoft.AspNetCore.Mvc.ApplicationModels.PageRouteTransformerConvention.#ctor(Microsoft.AspNetCore.Routing.IOutboundParameterTransformer)
     /**
@@ -2611,6 +2773,15 @@ public final class AfterHandlerMethodEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterHandlerMethodEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -2782,6 +2953,15 @@ public final class AfterPageFilterOnPageHandlerExecutedEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutedEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -2903,6 +3083,15 @@ public final class AfterPageFilterOnPageHandlerExecutingEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutingEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3024,6 +3213,15 @@ public final class AfterPageFilterOnPageHandlerExecutionEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerExecutionEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3145,6 +3343,15 @@ public final class AfterPageFilterOnPageHandlerSelectedEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectedEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3266,6 +3473,15 @@ public final class AfterPageFilterOnPageHandlerSelectionEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_AfterPageFilterOnPageHandlerSelectionEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3387,6 +3603,15 @@ public final class BeforeHandlerMethodEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforeHandlerMethodEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3531,6 +3756,15 @@ public final class BeforePageFilterOnPageHandlerExecutedEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutedEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3652,6 +3886,15 @@ public final class BeforePageFilterOnPageHandlerExecutingEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutingEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3773,6 +4016,15 @@ public final class BeforePageFilterOnPageHandlerExecutionEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerExecutionEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -3894,6 +4146,15 @@ public final class BeforePageFilterOnPageHandlerSelectedEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectedEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -4015,6 +4276,15 @@ public final class BeforePageFilterOnPageHandlerSelectionEventData
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Diagnostics_BeforePageFilterOnPageHandlerSelectionEventData_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String EventName
     /**
     
@@ -4150,6 +4420,15 @@ open class IAsyncPageFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Filters_IAsyncPageFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task OnPageHandlerSelectionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter.OnPageHandlerSelectionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)
     /**
@@ -4230,6 +4509,15 @@ open class IPageFilter
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Filters_IPageFilter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void OnPageHandlerSelected(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)
 // docid: M:Microsoft.AspNetCore.Mvc.Filters.IPageFilter.OnPageHandlerSelected(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)
     /**
@@ -4308,6 +4596,15 @@ open class PageHandlerExecutedContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutedContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext.#ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList{Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata},Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor,System.Object)
     /**
@@ -4607,6 +4904,15 @@ open class PageHandlerExecutingContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Filters_PageHandlerExecutingContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor, System.Collections.Generic.IDictionary<System.String,System.Object>, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext.#ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList{Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata},Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor,System.Collections.Generic.IDictionary{System.String,System.Object},System.Object)
     /**
@@ -4910,6 +5216,15 @@ open class PageHandlerSelectedContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_Filters_PageHandlerSelectedContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext, System.Collections.Generic.IList<Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata>, System.Object)
 // docid: M:Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext.#ctor(Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Collections.Generic.IList{Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata},System.Object)
     /**
@@ -5030,6 +5345,15 @@ open class CompiledPageActionDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_CompiledPageActionDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor.#ctor
     /**
@@ -5330,6 +5654,15 @@ open class IPageActivatorProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_IPageActivatorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Func<Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.Object> CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.IPageActivatorProvider.CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
     /**
@@ -5428,6 +5761,15 @@ open class IPageFactoryProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_IPageFactoryProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Func<Microsoft.AspNetCore.Mvc.RazorPages.PageContext,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,System.Object> CreatePageFactory(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.IPageFactoryProvider.CreatePageFactory(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
     /**
@@ -5526,6 +5868,15 @@ open class IPageModelActivatorProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_IPageModelActivatorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Func<Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Object> CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelActivatorProvider.CreateActivator(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
     /**
@@ -5624,6 +5975,15 @@ open class IPageModelFactoryProvider
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_IPageModelFactoryProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Func<Microsoft.AspNetCore.Mvc.RazorPages.PageContext,System.Object> CreateModelFactory(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.IPageModelFactoryProvider.CreateModelFactory(Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor)
     /**
@@ -5718,6 +6078,15 @@ open class NonHandlerAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_NonHandlerAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.NonHandlerAttribute.#ctor
     public init() throws {
@@ -5751,6 +6120,15 @@ open class Page
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Page_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // Page
 
 
@@ -5773,6 +6151,15 @@ open class PageActionDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageActionDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor.#ctor
     /**
@@ -5987,6 +6374,15 @@ open class PageBase
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageBase_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void EnsureRenderedBodyOrSections()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageBase.EnsureRenderedBodyOrSections
     /**
@@ -8447,6 +8843,15 @@ open class PageContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageContext.#ctor
     /**
@@ -8636,6 +9041,15 @@ open class PageContextAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageContextAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageContextAttribute.#ctor
     public init() throws {
@@ -8672,6 +9086,15 @@ open class PageModel
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageModel_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.BadRequestResult BadRequest()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageModel.BadRequest
     /**
@@ -11100,6 +11523,15 @@ open class PageResult
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_PageResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.PageResult.#ctor
     public init() throws {
@@ -11317,6 +11749,15 @@ open class RazorPagesOptions
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_RazorPagesOptions_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions.#ctor
     public override init() throws {
@@ -11428,6 +11869,15 @@ public final class CompiledPageActionDescriptorProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_CompiledPageActionDescriptorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider>, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider>, Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcOptions>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.CompiledPageActionDescriptorProvider.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.ApplicationModels.IPageApplicationModelProvider},Microsoft.AspNetCore.Mvc.ApplicationParts.ApplicationPartManager,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcOptions},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions})
     /**
@@ -11516,6 +11966,15 @@ open class HandlerMethodDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerMethodDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor.#ctor
     public override init() throws {
@@ -11698,6 +12157,15 @@ open class HandlerParameterDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_HandlerParameterDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerParameterDescriptor.#ctor
     public override init() throws {
@@ -11775,6 +12243,15 @@ open class IPageHandlerMethodSelector
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageHandlerMethodSelector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.HandlerMethodDescriptor Select(Microsoft.AspNetCore.Mvc.RazorPages.PageContext)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageHandlerMethodSelector.Select(Microsoft.AspNetCore.Mvc.RazorPages.PageContext)
     /**
@@ -11829,6 +12306,15 @@ open class IPageLoader
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_IPageLoader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor Load(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.IPageLoader.Load(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor)
     /**
@@ -11872,6 +12358,15 @@ open class PageActionDescriptorProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageActionDescriptorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.MvcOptions>, Microsoft.Extensions.Options.IOptions<Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions>)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionDescriptorProvider.#ctor(System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Mvc.ApplicationModels.IPageRouteModelProvider},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.MvcOptions},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions})
     /**
@@ -11973,6 +12468,15 @@ open class PageBoundPropertyDescriptor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageBoundPropertyDescriptor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBoundPropertyDescriptor.#ctor
     public override init() throws {
@@ -12043,6 +12547,15 @@ open class PageLoader
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageLoader_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.RazorPages.CompiledPageActionDescriptor> LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageLoader.LoadAsync(Microsoft.AspNetCore.Mvc.RazorPages.PageActionDescriptor)
     /**
@@ -12107,6 +12620,15 @@ open class PageModelAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageModelAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageModelAttribute.#ctor
     public init() throws {
@@ -12140,6 +12662,15 @@ open class PageResultExecutor
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageResultExecutor_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory, Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine, Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine, Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator, System.Diagnostics.DiagnosticListener, System.Text.Encodings.Web.HtmlEncoder)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageResultExecutor.#ctor(Microsoft.AspNetCore.Mvc.Infrastructure.IHttpResponseStreamWriterFactory,Microsoft.AspNetCore.Mvc.ViewEngines.ICompositeViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine,Microsoft.AspNetCore.Mvc.Razor.IRazorPageActivator,System.Diagnostics.DiagnosticListener,System.Text.Encodings.Web.HtmlEncoder)
     /**
@@ -12203,6 +12734,15 @@ open class PageViewLocationExpander
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_PageViewLocationExpander_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageViewLocationExpander.#ctor
     public override init() throws {
@@ -12265,6 +12805,15 @@ open class RazorPageAdapter
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAdapter_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Mvc.Razor.RazorPageBase, System.Type)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAdapter.#ctor(Microsoft.AspNetCore.Mvc.Razor.RazorPageBase,System.Type)
     /**
@@ -12550,6 +13099,15 @@ open class RazorPageAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_RazorPageAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Type, System.String)
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute.#ctor(System.String,System.Type,System.String)
     /**
@@ -12615,6 +13173,15 @@ open class ServiceBasedPageModelActivatorProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Mvc_RazorPages_Infrastructure_ServiceBasedPageModelActivatorProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ServiceBasedPageModelActivatorProvider.#ctor
     public override init() throws {

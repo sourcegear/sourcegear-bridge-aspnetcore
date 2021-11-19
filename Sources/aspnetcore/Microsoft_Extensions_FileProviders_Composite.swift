@@ -28,6 +28,15 @@ open class CompositeFileProvider
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_CompositeFileProvider_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.Extensions.FileProviders.IFileProvider[])
 // docid: M:Microsoft.Extensions.FileProviders.CompositeFileProvider.#ctor(Microsoft.Extensions.FileProviders.IFileProvider[])
     /**
@@ -192,6 +201,15 @@ open class CompositeDirectoryContents
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_Extensions_FileProviders_Composite_CompositeDirectoryContents_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IList<Microsoft.Extensions.FileProviders.IFileProvider>, System.String)
 // docid: M:Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents.#ctor(System.Collections.Generic.IList{Microsoft.Extensions.FileProviders.IFileProvider},System.String)
     /**

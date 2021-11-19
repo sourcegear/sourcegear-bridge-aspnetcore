@@ -27,6 +27,15 @@ open class HubException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_HubException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.SignalR.HubException.#ctor
     /**
@@ -132,6 +141,15 @@ open class IInvocationBinder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_IInvocationBinder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Type GetReturnType(System.String)
 // docid: M:Microsoft.AspNetCore.SignalR.IInvocationBinder.GetReturnType(System.String)
     /**
@@ -222,6 +240,15 @@ open class ISignalRBuilder
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_ISignalRBuilder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] Microsoft.Extensions.DependencyInjection.IServiceCollection get_Services()
 // docid: M:Microsoft.AspNetCore.SignalR.ISignalRBuilder.get_Services
     open func get_Services() throws -> aspnetcore.Microsoft.Extensions.DependencyInjection.IServiceCollection {
@@ -258,6 +285,15 @@ open class CancelInvocationMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_CancelInvocationMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.CancelInvocationMessage.#ctor(System.String)
     /**
@@ -298,6 +334,15 @@ open class CloseMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_CloseMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.AspNetCore.SignalR.Protocol.CloseMessage Empty
     /**
     
@@ -422,6 +467,15 @@ open class CompletionMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_CompletionMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.Object, bool)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.CompletionMessage.#ctor(System.String,System.String,System.Object,System.Boolean)
     /**
@@ -718,6 +772,15 @@ open class HandshakeRequestMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_HandshakeRequestMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Int32)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.HandshakeRequestMessage.#ctor(System.String,System.Int32)
     /**
@@ -803,6 +866,15 @@ open class HandshakeResponseMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_HandshakeResponseMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.AspNetCore.SignalR.Protocol.HandshakeResponseMessage Empty
     /**
     
@@ -883,6 +955,15 @@ open class HubInvocationMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_HubInvocationMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Collections.Generic.IDictionary<System.String,System.String> get_Headers()
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.HubInvocationMessage.get_Headers
     open func get_Headers() throws -> Optional<dotnet.System.Collections.Generic.IDictionary_2<dotnet.System.String,dotnet.System.String>> {
@@ -971,6 +1052,15 @@ open class HubMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_HubMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // HubMessage
 
 
@@ -993,6 +1083,15 @@ open class HubMethodInvocationMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_HubMethodInvocationMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.String get_Target()
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.HubMethodInvocationMessage.get_Target
     open func get_Target() throws -> dotnet.System.String {
@@ -1215,6 +1314,15 @@ open class IHubProtocol
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_IHubProtocol_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // bool TryParseMessage(ref System.Buffers.ReadOnlySequence<System.Byte>, Microsoft.AspNetCore.SignalR.IInvocationBinder, ref Microsoft.AspNetCore.SignalR.Protocol.HubMessage)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.IHubProtocol.TryParseMessage(System.Buffers.ReadOnlySequence{System.Byte}@,Microsoft.AspNetCore.SignalR.IInvocationBinder,Microsoft.AspNetCore.SignalR.Protocol.HubMessage@)
     /**
@@ -1362,6 +1470,15 @@ open class InvocationBindingFailureMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_InvocationBindingFailureMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.Runtime.ExceptionServices.ExceptionDispatchInfo)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.InvocationBindingFailureMessage.#ctor(System.String,System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo)
     /**
@@ -1448,6 +1565,15 @@ open class InvocationMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_InvocationMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.InvocationMessage.#ctor(System.String,System.Object[])
     /**
@@ -1543,6 +1669,15 @@ open class PingMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_PingMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: Microsoft.AspNetCore.SignalR.Protocol.PingMessage Instance
     /**
     
@@ -1581,6 +1716,15 @@ open class StreamBindingFailureMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_StreamBindingFailureMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Runtime.ExceptionServices.ExceptionDispatchInfo)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.StreamBindingFailureMessage.#ctor(System.String,System.Runtime.ExceptionServices.ExceptionDispatchInfo)
     /**
@@ -1666,6 +1810,15 @@ open class StreamInvocationMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_StreamInvocationMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String, System.Object[])
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.StreamInvocationMessage.#ctor(System.String,System.String,System.Object[])
     /**
@@ -1742,6 +1895,15 @@ open class StreamItemMessage
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_SignalR_Protocol_StreamItemMessage_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.Object)
 // docid: M:Microsoft.AspNetCore.SignalR.Protocol.StreamItemMessage.#ctor(System.String,System.Object)
     /**

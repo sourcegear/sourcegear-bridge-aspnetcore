@@ -27,6 +27,15 @@ open class IdentityRole
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityRole_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityRole.#ctor
     /**
@@ -84,6 +93,15 @@ open class IdentityRoleClaim_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityRoleClaim_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityRoleClaim`1.#ctor
     public override init() throws {
@@ -310,6 +328,15 @@ open class IdentityRole_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityRole_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityRole`1.#ctor
     /**
@@ -546,6 +573,15 @@ open class IdentityUser
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUser_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUser.#ctor
     /**
@@ -603,6 +639,15 @@ open class IdentityUserClaim_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUserClaim_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUserClaim`1.#ctor
     public override init() throws {
@@ -829,6 +874,15 @@ open class IdentityUserLogin_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUserLogin_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUserLogin`1.#ctor
     public override init() throws {
@@ -1018,6 +1072,15 @@ open class IdentityUserRole_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUserRole_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUserRole`1.#ctor
     public override init() throws {
@@ -1123,6 +1186,15 @@ open class IdentityUserToken_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUserToken_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUserToken`1.#ctor
     public override init() throws {
@@ -1312,6 +1384,15 @@ open class IdentityUser_1<TKey : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_IdentityUser_1_cast(TKey.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Identity.IdentityUser`1.#ctor
     /**
@@ -1963,6 +2044,15 @@ open class RoleStoreBase_4<TRole : SGBridgeGenericValue,TKey : SGBridgeGenericVa
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_RoleStoreBase_4_cast(TRole.get_type_handle(),TKey.get_type_handle(),TUserRole.get_type_handle(),TRoleClaim.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.RoleStoreBase`4.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**
@@ -2460,6 +2550,15 @@ open class UserStoreBase_5<TUser : SGBridgeGenericValue,TKey : SGBridgeGenericVa
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserStoreBase_5_cast(TUser.get_type_handle(),TKey.get_type_handle(),TUserClaim.get_type_handle(),TUserLogin.get_type_handle(),TUserToken.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.UserStoreBase`5.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**
@@ -3963,6 +4062,15 @@ open class UserStoreBase_8<TUser : SGBridgeGenericValue,TRole : SGBridgeGenericV
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Identity_UserStoreBase_8_cast(TUser.get_type_handle(),TRole.get_type_handle(),TKey.get_type_handle(),TUserClaim.get_type_handle(),TUserRole.get_type_handle(),TUserLogin.get_type_handle(),TUserToken.get_type_handle(),TRoleClaim.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
 // docid: M:Microsoft.AspNetCore.Identity.UserStoreBase`8.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
     /**

@@ -299,6 +299,15 @@ open class ITimeLimitedDataProtector
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_DataProtection_ITimeLimitedDataProtector_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector CreateProtector(System.String)
 // docid: M:Microsoft.AspNetCore.DataProtection.ITimeLimitedDataProtector.CreateProtector(System.String)
     /**

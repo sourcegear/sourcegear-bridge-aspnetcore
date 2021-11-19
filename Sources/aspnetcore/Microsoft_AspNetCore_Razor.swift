@@ -28,6 +28,15 @@ open class DefaultTagHelperContent
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_DefaultTagHelperContent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.DefaultTagHelperContent.#ctor
     public init() throws {
@@ -251,6 +260,15 @@ public final class HtmlAttributeNameAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNameAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor
     /**
@@ -404,6 +422,15 @@ public final class HtmlAttributeNotBoundAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_HtmlAttributeNotBoundAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNotBoundAttribute.#ctor
     /**
@@ -485,6 +512,15 @@ public final class HtmlTargetElementAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_HtmlTargetElementAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // static field: System.String ElementCatchAllTarget
     public class var ElementCatchAllTarget : Optional<dotnet.System.String> {
         get {
@@ -711,6 +747,15 @@ open class ITagHelper
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_ITagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // ITagHelper
 
 
@@ -741,6 +786,15 @@ open class ITagHelperComponent
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_ITagHelperComponent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
     /**
@@ -821,6 +875,15 @@ public final class NullHtmlEncoder
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_NullHtmlEncoder_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.String Encode(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.NullHtmlEncoder.Encode(System.String)
     /**
@@ -960,6 +1023,15 @@ public final class OutputElementHintAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_OutputElementHintAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.OutputElementHintAttribute.#ctor(System.String)
     /**
@@ -1028,6 +1100,15 @@ open class ReadOnlyTagHelperAttributeList
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_ReadOnlyTagHelperAttributeList_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.Collections.Generic.IList<Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute>)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.ReadOnlyTagHelperAttributeList.#ctor(System.Collections.Generic.IList{Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute})
     /**
@@ -1191,6 +1272,15 @@ public final class RestrictChildrenAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_RestrictChildrenAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, System.String[])
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.RestrictChildrenAttribute.#ctor(System.String,System.String[])
     /**
@@ -1264,6 +1354,15 @@ open class TagHelper
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelper_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
     /**
@@ -1379,6 +1478,15 @@ open class TagHelperAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute.#ctor(System.String)
     /**
@@ -1614,6 +1722,15 @@ open class TagHelperAttributeList
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList.#ctor
     /**
@@ -1877,6 +1994,15 @@ open class TagHelperComponent
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperComponent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperComponent.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
     /**
@@ -1970,6 +2096,15 @@ open class TagHelperContent
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent SetHtmlContent(Microsoft.AspNetCore.Html.IHtmlContent)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent.SetHtmlContent(Microsoft.AspNetCore.Html.IHtmlContent)
     /**
@@ -2372,6 +2507,15 @@ open class TagHelperContext
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, System.Collections.Generic.IDictionary<System.Object,System.Object>, System.String)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext.#ctor(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.Collections.Generic.IDictionary{System.Object,System.Object},System.String)
     /**
@@ -2582,6 +2726,15 @@ open class TagHelperOutput
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, System.Func<bool,System.Text.Encodings.Web.HtmlEncoder,System.Threading.Tasks.Task<Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent>>)
 // docid: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput.#ctor(System.String,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.Func{System.Boolean,System.Text.Encodings.Web.HtmlEncoder,System.Threading.Tasks.Task{Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent}})
     /**

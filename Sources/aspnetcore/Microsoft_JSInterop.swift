@@ -55,6 +55,15 @@ public final class DotNetObjectReference_1<TValue : SGBridgeGenericValue>
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_DotNetObjectReference_1_cast(TValue.get_type_handle(),&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // void Dispose()
 // docid: M:Microsoft.JSInterop.DotNetObjectReference`1.Dispose
     /**
@@ -119,6 +128,15 @@ public final class DotNetStreamReference
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_DotNetStreamReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.IO.Stream, bool)
 // docid: M:Microsoft.JSInterop.DotNetStreamReference.#ctor(System.IO.Stream,System.Boolean)
     /**
@@ -227,6 +245,15 @@ open class IJSInProcessObjectReference
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSInProcessObjectReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TValue Invoke<TValue>(System.String, System.Object[])
 } // IJSInProcessObjectReference
 
@@ -259,6 +286,15 @@ open class IJSInProcessRuntime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSInProcessRuntime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TResult Invoke<TResult>(System.String, System.Object[])
 } // IJSInProcessRuntime
 
@@ -291,6 +327,15 @@ open class IJSObjectReference
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSObjectReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Object[])
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Threading.CancellationToken, System.Object[])
 } // IJSObjectReference
@@ -323,6 +368,15 @@ open class IJSRuntime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSRuntime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Object[])
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Threading.CancellationToken, System.Object[])
 } // IJSRuntime
@@ -356,6 +410,15 @@ open class IJSStreamReference
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSStreamReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // System.Threading.Tasks.ValueTask<System.IO.Stream> OpenReadStreamAsync(System.Int64, System.Threading.CancellationToken)
 // docid: M:Microsoft.JSInterop.IJSStreamReference.OpenReadStreamAsync(System.Int64,System.Threading.CancellationToken)
     /**
@@ -419,6 +482,15 @@ open class IJSUnmarshalledObjectReference
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSUnmarshalledObjectReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<TResult>(System.String)
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<T0, TResult>(System.String, T0)
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<T0, T1, TResult>(System.String, T0, T1)
@@ -456,6 +528,15 @@ open class IJSUnmarshalledRuntime
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_IJSUnmarshalledRuntime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<TResult>(System.String)
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<T0, TResult>(System.String, T0)
 // TODO COPE (write_all_methods) (unused generic param) TResult InvokeUnmarshalled<T0, T1, TResult>(System.String, T0, T1)
@@ -554,6 +635,15 @@ public final class JSDisconnectedException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_JSDisconnectedException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.JSInterop.JSDisconnectedException.#ctor(System.String)
     /**
@@ -594,6 +684,15 @@ open class JSException
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_JSException_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor(System.String)
 // docid: M:Microsoft.JSInterop.JSException.#ctor(System.String)
     /**
@@ -679,6 +778,15 @@ open class JSInProcessRuntime
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_JSInProcessRuntime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TValue Invoke<TValue>(System.String, System.Object[])
 } // JSInProcessRuntime
 
@@ -729,6 +837,15 @@ public final class JSInvokableAttribute
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_JSInvokableAttribute_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // .ctor()
 // docid: M:Microsoft.JSInterop.JSInvokableAttribute.#ctor
     /**
@@ -899,6 +1016,15 @@ open class JSRuntime
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_JSRuntime_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Object[])
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Threading.CancellationToken, System.Object[])
     // void Dispose()
@@ -1024,6 +1150,15 @@ open class JSInProcessObjectReference
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_Implementation_JSInProcessObjectReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) TValue Invoke<TValue>(System.String, System.Object[])
     // void Dispose()
 // docid: M:Microsoft.JSInterop.Implementation.JSInProcessObjectReference.Dispose
@@ -1062,6 +1197,15 @@ open class JSObjectReference
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_Implementation_JSObjectReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Object[])
 // TODO COPE (write_all_methods) (unused generic param) System.Threading.Tasks.ValueTask<TValue> InvokeAsync<TValue>(System.String, System.Threading.CancellationToken, System.Object[])
     // System.Threading.Tasks.ValueTask DisposeAsync()
@@ -1125,6 +1269,15 @@ public final class JSStreamReference
     }
     public required init(hndl: NonnullHandle) { super.init(hndl: hndl); }
     public required init(gval: GVal) { super.init(gval: gval); }
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_Implementation_JSStreamReference_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
     // [IsSpecialName] System.Int64 get_Length()
 // docid: M:Microsoft.JSInterop.Implementation.JSStreamReference.get_Length
     public func get_Length() throws -> Swift.Int64 {
@@ -1545,6 +1698,15 @@ open class IJSVoidResult
 
     deinit { __drop_handle(self.h); }
 
+    public convenience init (cast h_cast: NonnullHandle) throws {
+        var __thrown : NullableHandle = nil;
+        let h_res = Microsoft_JSInterop_Infrastructure_IJSVoidResult_cast(&__thrown,h_cast);
+        if let __ex = __thrown {
+            throw dotnet.System.Exception(hndl: __ex);
+        } else {
+            self.init(hndl: h_res);
+        }
+    }
 } // IJSVoidResult
 
 
