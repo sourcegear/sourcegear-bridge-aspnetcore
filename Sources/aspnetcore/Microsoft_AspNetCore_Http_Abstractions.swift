@@ -2833,6 +2833,10 @@ public final class FragmentString
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.AspNetCore.Http.FragmentString, right : aspnetcore.Microsoft.AspNetCore.Http.FragmentString) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Http.FragmentString, Microsoft.AspNetCore.Http.FragmentString)
 // docid: M:Microsoft.AspNetCore.Http.FragmentString.op_Inequality(Microsoft.AspNetCore.Http.FragmentString,Microsoft.AspNetCore.Http.FragmentString)
     /**
@@ -2853,6 +2857,10 @@ public final class FragmentString
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.AspNetCore.Http.FragmentString, right : aspnetcore.Microsoft.AspNetCore.Http.FragmentString) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // [IsSpecialName] System.String get_Value()
 // docid: M:Microsoft.AspNetCore.Http.FragmentString.get_Value
@@ -3258,6 +3266,10 @@ public final class HostString
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.AspNetCore.Http.HostString, right : aspnetcore.Microsoft.AspNetCore.Http.HostString) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Http.HostString, Microsoft.AspNetCore.Http.HostString)
 // docid: M:Microsoft.AspNetCore.Http.HostString.op_Inequality(Microsoft.AspNetCore.Http.HostString,Microsoft.AspNetCore.Http.HostString)
     /**
@@ -3278,6 +3290,10 @@ public final class HostString
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.AspNetCore.Http.HostString, right : aspnetcore.Microsoft.AspNetCore.Http.HostString) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // [IsSpecialName] System.String get_Value()
 // docid: M:Microsoft.AspNetCore.Http.HostString.get_Value
@@ -6285,6 +6301,10 @@ public final class PathString
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.AspNetCore.Http.PathString, right : aspnetcore.Microsoft.AspNetCore.Http.PathString) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Http.PathString, Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Inequality(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString)
     /**
@@ -6306,6 +6326,10 @@ public final class PathString
         return (__return) != 0;
         }
     }
+    public static func != (left : aspnetcore.Microsoft.AspNetCore.Http.PathString, right : aspnetcore.Microsoft.AspNetCore.Http.PathString) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
+    }
     // [IsSpecialName] System.String op_Addition(System.String, Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Addition(System.String,Microsoft.AspNetCore.Http.PathString)
     /**
@@ -6326,6 +6350,10 @@ public final class PathString
         return dotnet.System.String(hndl : __return);
         }
     }
+    public static func + (left : dotnet.System.String, right : aspnetcore.Microsoft.AspNetCore.Http.PathString) -> dotnet.System.String
+    {
+        return try! op_Addition(left: left, right: right);
+    }
     // [IsSpecialName] System.String op_Addition(Microsoft.AspNetCore.Http.PathString, System.String)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Addition(Microsoft.AspNetCore.Http.PathString,System.String)
     /**
@@ -6345,6 +6373,10 @@ public final class PathString
         } else {
         return dotnet.System.String(hndl : __return);
         }
+    }
+    public static func + (left : aspnetcore.Microsoft.AspNetCore.Http.PathString, right : dotnet.System.String) -> dotnet.System.String
+    {
+        return try! op_Addition(left: left, right: right);
     }
     // [IsSpecialName] Microsoft.AspNetCore.Http.PathString op_Addition(Microsoft.AspNetCore.Http.PathString, Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Addition(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.PathString)
@@ -6367,6 +6399,10 @@ public final class PathString
         return aspnetcore.Microsoft.AspNetCore.Http.PathString(hndl : __return);
         }
     }
+    public static func + (left : aspnetcore.Microsoft.AspNetCore.Http.PathString, right : aspnetcore.Microsoft.AspNetCore.Http.PathString) -> aspnetcore.Microsoft.AspNetCore.Http.PathString
+    {
+        return try! op_Addition(left: left, right: right);
+    }
     // [IsSpecialName] System.String op_Addition(Microsoft.AspNetCore.Http.PathString, Microsoft.AspNetCore.Http.QueryString)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Addition(Microsoft.AspNetCore.Http.PathString,Microsoft.AspNetCore.Http.QueryString)
     /**
@@ -6388,6 +6424,10 @@ public final class PathString
         return dotnet.System.String(hndl : __return);
         }
     }
+    public static func + (left : aspnetcore.Microsoft.AspNetCore.Http.PathString, right : aspnetcore.Microsoft.AspNetCore.Http.QueryString) -> dotnet.System.String
+    {
+        return try! op_Addition(left: left, right: right);
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.PathString op_Implicit(System.String)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Implicit(System.String)
     public class func op_Implicit(s : Optional<dotnet.System.String>) throws -> aspnetcore.Microsoft.AspNetCore.Http.PathString {
@@ -6398,6 +6438,14 @@ public final class PathString
         } else {
         return aspnetcore.Microsoft.AspNetCore.Http.PathString(hndl : __return);
         }
+    }
+// TODO conversion to Self [IsSpecialName] Microsoft.AspNetCore.Http.PathString op_Implicit(System.String)
+    public convenience init(s : Optional<dotnet.System.String>) 
+    {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_AspNetCore_Http_PathString_PathString__op_Implicit_0__1__String(&__thrown, s?.get_handle() ?? nil);
+        assert(__thrown == nil);
+            self.init(hndl: __return);
     }
     // [IsSpecialName] System.String op_Implicit(Microsoft.AspNetCore.Http.PathString)
 // docid: M:Microsoft.AspNetCore.Http.PathString.op_Implicit(Microsoft.AspNetCore.Http.PathString)
@@ -6410,6 +6458,7 @@ public final class PathString
         return dotnet.System.String(hndl : __return);
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String op_Implicit(Microsoft.AspNetCore.Http.PathString)
     // [IsSpecialName] System.String get_Value()
 // docid: M:Microsoft.AspNetCore.Http.PathString.get_Value
     public func get_Value() throws -> Optional<dotnet.System.String> {
@@ -6783,6 +6832,10 @@ public final class QueryString
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.AspNetCore.Http.QueryString, right : aspnetcore.Microsoft.AspNetCore.Http.QueryString) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Http.QueryString, Microsoft.AspNetCore.Http.QueryString)
 // docid: M:Microsoft.AspNetCore.Http.QueryString.op_Inequality(Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.QueryString)
     /**
@@ -6804,6 +6857,10 @@ public final class QueryString
         return (__return) != 0;
         }
     }
+    public static func != (left : aspnetcore.Microsoft.AspNetCore.Http.QueryString, right : aspnetcore.Microsoft.AspNetCore.Http.QueryString) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
+    }
     // [IsSpecialName] Microsoft.AspNetCore.Http.QueryString op_Addition(Microsoft.AspNetCore.Http.QueryString, Microsoft.AspNetCore.Http.QueryString)
 // docid: M:Microsoft.AspNetCore.Http.QueryString.op_Addition(Microsoft.AspNetCore.Http.QueryString,Microsoft.AspNetCore.Http.QueryString)
     /**
@@ -6824,6 +6881,10 @@ public final class QueryString
         } else {
         return aspnetcore.Microsoft.AspNetCore.Http.QueryString(hndl : __return);
         }
+    }
+    public static func + (left : aspnetcore.Microsoft.AspNetCore.Http.QueryString, right : aspnetcore.Microsoft.AspNetCore.Http.QueryString) -> aspnetcore.Microsoft.AspNetCore.Http.QueryString
+    {
+        return try! op_Addition(left: left, right: right);
     }
     // [IsSpecialName] System.String get_Value()
 // docid: M:Microsoft.AspNetCore.Http.QueryString.get_Value

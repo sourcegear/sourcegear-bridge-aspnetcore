@@ -984,6 +984,10 @@ public final class StringSegment
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, right : aspnetcore.Microsoft.Extensions.Primitives.StringSegment) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] System.ReadOnlyMemory<System.Char> op_Implicit(Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.op_Implicit(Microsoft.Extensions.Primitives.StringSegment)
     public class func op_Implicit(segment : aspnetcore.Microsoft.Extensions.Primitives.StringSegment) throws -> dotnet.System.ReadOnlyMemory_1<dotnet.System.Char> {
@@ -995,6 +999,7 @@ public final class StringSegment
         return dotnet.System.ReadOnlyMemory_1(hndl : __return);
         }
     }
+// TODO conversion from Self [IsSpecialName] System.ReadOnlyMemory<System.Char> op_Implicit(Microsoft.Extensions.Primitives.StringSegment)
 // TODO COPE (returns byreflike): [IsSpecialName] System.ReadOnlySpan<System.Char> op_Implicit(Microsoft.Extensions.Primitives.StringSegment)
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringSegment op_Implicit(System.String)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.op_Implicit(System.String)
@@ -1006,6 +1011,14 @@ public final class StringSegment
         } else {
         return aspnetcore.Microsoft.Extensions.Primitives.StringSegment(hndl : __return);
         }
+    }
+// TODO conversion to Self [IsSpecialName] Microsoft.Extensions.Primitives.StringSegment op_Implicit(System.String)
+    public convenience init(value : Optional<dotnet.System.String>) 
+    {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Primitives_StringSegment_StringSegment__op_Implicit_0__1__String(&__thrown, value?.get_handle() ?? nil);
+        assert(__thrown == nil);
+            self.init(hndl: __return);
     }
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Primitives.StringSegment, Microsoft.Extensions.Primitives.StringSegment)
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.op_Inequality(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment)
@@ -1027,6 +1040,10 @@ public final class StringSegment
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Primitives.StringSegment, right : aspnetcore.Microsoft.Extensions.Primitives.StringSegment) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // Microsoft.Extensions.Primitives.StringTokenizer Split(System.Char[])
 // docid: M:Microsoft.Extensions.Primitives.StringSegment.Split(System.Char[])
@@ -1993,6 +2010,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Equality(Microsoft.Extensions.Primitives.StringValues, System.Object)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(Microsoft.Extensions.Primitives.StringValues,System.Object)
     /**
@@ -2015,6 +2036,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System.Object) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Equality(Microsoft.Extensions.Primitives.StringValues, System.String)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(Microsoft.Extensions.Primitives.StringValues,System.String)
     /**
@@ -2028,6 +2053,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System.String) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Equality(Microsoft.Extensions.Primitives.StringValues, System.String[])
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(Microsoft.Extensions.Primitives.StringValues,System.String[])
     /**
@@ -2040,6 +2069,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System_Arr<dotnet.System.String>) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
     }
     // [IsSpecialName] bool op_Equality(System.Object, Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(System.Object,Microsoft.Extensions.Primitives.StringValues)
@@ -2063,6 +2096,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func == (left : dotnet.System.Object, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Equality(System.String, Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(System.String,Microsoft.Extensions.Primitives.StringValues)
     /**
@@ -2076,6 +2113,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func == (left : dotnet.System.String, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Equality(System.String[], Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Equality(System.String[],Microsoft.Extensions.Primitives.StringValues)
     /**
@@ -2088,6 +2129,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func == (left : dotnet.System_Arr<dotnet.System.String>, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
     }
     // [IsSpecialName] System.String op_Implicit(Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Implicit(Microsoft.Extensions.Primitives.StringValues)
@@ -2104,6 +2149,7 @@ public final class StringValues
         }
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String op_Implicit(Microsoft.Extensions.Primitives.StringValues)
     // [IsSpecialName] System.String[] op_Implicit(Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Implicit(Microsoft.Extensions.Primitives.StringValues)
     public class func op_Implicit(value : aspnetcore.Microsoft.Extensions.Primitives.StringValues) throws -> Optional<dotnet.System_Arr<dotnet.System.String>> {
@@ -2119,6 +2165,7 @@ public final class StringValues
         }
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String[] op_Implicit(Microsoft.Extensions.Primitives.StringValues)
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues op_Implicit(System.String)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Implicit(System.String)
     public class func op_Implicit(value : Optional<dotnet.System.String>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
@@ -2130,6 +2177,8 @@ public final class StringValues
         return aspnetcore.Microsoft.Extensions.Primitives.StringValues(hndl : __return);
         }
     }
+// TODO conversion to Self [IsSpecialName] Microsoft.Extensions.Primitives.StringValues op_Implicit(System.String)
+// skip because equivalent ctor
     // [IsSpecialName] Microsoft.Extensions.Primitives.StringValues op_Implicit(System.String[])
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Implicit(System.String[])
     public class func op_Implicit(values : Optional<dotnet.System_Arr<dotnet.System.String>>) throws -> aspnetcore.Microsoft.Extensions.Primitives.StringValues {
@@ -2141,6 +2190,8 @@ public final class StringValues
         return aspnetcore.Microsoft.Extensions.Primitives.StringValues(hndl : __return);
         }
     }
+// TODO conversion to Self [IsSpecialName] Microsoft.Extensions.Primitives.StringValues op_Implicit(System.String[])
+// skip because equivalent ctor
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Primitives.StringValues, Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues)
     /**
@@ -2161,6 +2212,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Primitives.StringValues, System.Object)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(Microsoft.Extensions.Primitives.StringValues,System.Object)
@@ -2184,6 +2239,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System.Object) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Primitives.StringValues, System.String)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(Microsoft.Extensions.Primitives.StringValues,System.String)
     /**
@@ -2204,6 +2263,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System.String) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Primitives.StringValues, System.String[])
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(Microsoft.Extensions.Primitives.StringValues,System.String[])
@@ -2226,6 +2289,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Primitives.StringValues, right : dotnet.System_Arr<dotnet.System.String>) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(System.Object, Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(System.Object,Microsoft.Extensions.Primitives.StringValues)
     /**
@@ -2246,6 +2313,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : dotnet.System.Object, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // [IsSpecialName] bool op_Inequality(System.String, Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(System.String,Microsoft.Extensions.Primitives.StringValues)
@@ -2268,6 +2339,10 @@ public final class StringValues
         return (__return) != 0;
         }
     }
+    public static func != (left : dotnet.System.String, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
+    }
     // [IsSpecialName] bool op_Inequality(System.String[], Microsoft.Extensions.Primitives.StringValues)
 // docid: M:Microsoft.Extensions.Primitives.StringValues.op_Inequality(System.String[],Microsoft.Extensions.Primitives.StringValues)
     /**
@@ -2288,6 +2363,10 @@ public final class StringValues
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : dotnet.System_Arr<dotnet.System.String>, right : aspnetcore.Microsoft.Extensions.Primitives.StringValues) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // System.String[] ToArray()
 // docid: M:Microsoft.Extensions.Primitives.StringValues.ToArray

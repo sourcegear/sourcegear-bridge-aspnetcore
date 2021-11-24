@@ -5193,6 +5193,8 @@ public final class MarkupString
         return aspnetcore.Microsoft.AspNetCore.Components.MarkupString(hndl : __return);
         }
     }
+// TODO conversion to Self [IsSpecialName] Microsoft.AspNetCore.Components.MarkupString op_Explicit(System.String)
+// skip because equivalent ctor
     // System.String ToString()
 // docid: M:Microsoft.AspNetCore.Components.MarkupString.ToString
     /**

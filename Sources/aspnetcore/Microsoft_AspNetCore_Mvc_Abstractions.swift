@@ -9138,6 +9138,10 @@ open class BindingSource
         return (__return) != 0;
         }
     }
+    public static func == (s1 : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource, s2 : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource) -> Bool
+    {
+        return try! op_Equality(s1: s1, s2: s2);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource, Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource.op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource,Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource)
     /**
@@ -9150,6 +9154,10 @@ open class BindingSource
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (s1 : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource, s2 : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource) -> Bool
+    {
+        return try! op_Inequality(s1: s1, s2: s2);
     }
     // [IsSpecialName] System.String get_DisplayName()
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.BindingSource.get_DisplayName
@@ -11177,6 +11185,10 @@ public final class ModelBindingResult
         return (__return) != 0;
         }
     }
+    public static func == (x : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult, y : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult) -> Bool
+    {
+        return try! op_Equality(x: x, y: y);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult, Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult.op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult,Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult)
     /**
@@ -11197,6 +11209,10 @@ public final class ModelBindingResult
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (x : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult, y : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult) -> Bool
+    {
+        return try! op_Inequality(x: x, y: y);
     }
     // [IsSpecialName] System.Object get_Model()
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingResult.get_Model
@@ -15124,6 +15140,7 @@ public final class ValueProviderResult
         return dotnet.System.String(hndl : __return);
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String op_Explicit(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
     // [IsSpecialName] System.String[] op_Explicit(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult.op_Explicit(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
     public class func op_Explicit(result : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult) throws -> dotnet.System_Arr<dotnet.System.String> {
@@ -15135,6 +15152,7 @@ public final class ValueProviderResult
         return dotnet.System_Arr<dotnet.System.String>(hndl : __return);
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String[] op_Explicit(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
     // [IsSpecialName] bool op_Equality(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult, Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult.op_Equality(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult,Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
     /**
@@ -15156,6 +15174,10 @@ public final class ValueProviderResult
         return (__return) != 0;
         }
     }
+    public static func == (x : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult, y : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult) -> Bool
+    {
+        return try! op_Equality(x: x, y: y);
+    }
     // [IsSpecialName] bool op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult, Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult.op_Inequality(Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult,Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult)
     /**
@@ -15176,6 +15198,10 @@ public final class ValueProviderResult
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (x : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult, y : aspnetcore.Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult) -> Bool
+    {
+        return try! op_Inequality(x: x, y: y);
     }
     // [IsSpecialName] System.Globalization.CultureInfo get_Culture()
 // docid: M:Microsoft.AspNetCore.Mvc.ModelBinding.ValueProviderResult.get_Culture

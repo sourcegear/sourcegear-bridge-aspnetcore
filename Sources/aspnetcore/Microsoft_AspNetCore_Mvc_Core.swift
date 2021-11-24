@@ -1534,6 +1534,7 @@ public final class ActionResult_1<TValue : SGBridgeGenericValue>
         return aspnetcore.Microsoft.AspNetCore.Mvc.ActionResult_1(hndl : __return);
         }
     }
+// TODO conversion generic [IsSpecialName] Microsoft.AspNetCore.Mvc.ActionResult<TValue> op_Implicit(TValue)
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ActionResult<TValue> op_Implicit(Microsoft.AspNetCore.Mvc.ActionResult)
 // docid: M:Microsoft.AspNetCore.Mvc.ActionResult`1.op_Implicit(Microsoft.AspNetCore.Mvc.ActionResult)
     public class func op_Implicit(result : aspnetcore.Microsoft.AspNetCore.Mvc.ActionResult) throws -> aspnetcore.Microsoft.AspNetCore.Mvc.ActionResult_1<TValue> {
@@ -1545,6 +1546,7 @@ public final class ActionResult_1<TValue : SGBridgeGenericValue>
         return aspnetcore.Microsoft.AspNetCore.Mvc.ActionResult_1(hndl : __return);
         }
     }
+// TODO conversion generic [IsSpecialName] Microsoft.AspNetCore.Mvc.ActionResult<TValue> op_Implicit(Microsoft.AspNetCore.Mvc.ActionResult)
     // [IsSpecialName] Microsoft.AspNetCore.Mvc.ActionResult get_Result()
 // docid: M:Microsoft.AspNetCore.Mvc.ActionResult`1.get_Result
     public func get_Result() throws -> Optional<aspnetcore.Microsoft.AspNetCore.Mvc.ActionResult> {

@@ -316,6 +316,7 @@ open class LocalizedString
         }
         }
     }
+// TODO conversion from Self [IsSpecialName] System.String op_Implicit(Microsoft.Extensions.Localization.LocalizedString)
     // System.String ToString()
 // docid: M:Microsoft.Extensions.Localization.LocalizedString.ToString
     /**

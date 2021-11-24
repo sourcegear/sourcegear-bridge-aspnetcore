@@ -140,6 +140,10 @@ public final class EventId
         return (__return) != 0;
         }
     }
+    public static func == (left : aspnetcore.Microsoft.Extensions.Logging.EventId, right : aspnetcore.Microsoft.Extensions.Logging.EventId) -> Bool
+    {
+        return try! op_Equality(left: left, right: right);
+    }
     // [IsSpecialName] Microsoft.Extensions.Logging.EventId op_Implicit(System.Int32)
 // docid: M:Microsoft.Extensions.Logging.EventId.op_Implicit(System.Int32)
     public class func op_Implicit(i : Swift.Int32) throws -> aspnetcore.Microsoft.Extensions.Logging.EventId {
@@ -150,6 +154,14 @@ public final class EventId
         } else {
         return aspnetcore.Microsoft.Extensions.Logging.EventId(hndl : __return);
         }
+    }
+// TODO conversion to Self [IsSpecialName] Microsoft.Extensions.Logging.EventId op_Implicit(System.Int32)
+    public convenience init(i : Swift.Int32) 
+    {
+        var __thrown : NullableHandle = nil;
+        let __return = Microsoft_Extensions_Logging_EventId_EventId__op_Implicit_0__1__i32(&__thrown, i);
+        assert(__thrown == nil);
+            self.init(hndl: __return);
     }
     // [IsSpecialName] bool op_Inequality(Microsoft.Extensions.Logging.EventId, Microsoft.Extensions.Logging.EventId)
 // docid: M:Microsoft.Extensions.Logging.EventId.op_Inequality(Microsoft.Extensions.Logging.EventId,Microsoft.Extensions.Logging.EventId)
@@ -171,6 +183,10 @@ public final class EventId
         } else {
         return (__return) != 0;
         }
+    }
+    public static func != (left : aspnetcore.Microsoft.Extensions.Logging.EventId, right : aspnetcore.Microsoft.Extensions.Logging.EventId) -> Bool
+    {
+        return try! op_Inequality(left: left, right: right);
     }
     // System.String ToString()
 // docid: M:Microsoft.Extensions.Logging.EventId.ToString
